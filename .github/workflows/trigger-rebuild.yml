@@ -1,0 +1,14 @@
+name: Trigger DID Registry Rebuild
+
+on:
+  push:
+    branches: [main]
+    paths: ['dids/**']
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages Deploy Hook
+        run: |
+          curl -X POST "${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}"

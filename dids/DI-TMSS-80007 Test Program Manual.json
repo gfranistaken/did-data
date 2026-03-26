@@ -6,16 +6,16 @@
     "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
     "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
     "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
-    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)"
   },
   "document_number": "DI-TMSS-80007",
   "slug": "di-tmss-80007",
-  "title": "Test Program Manual",
-  "summary": "This manual is used in the testing of a Printed Wiring Assembly (PWA) by technicians trained in the use of Automatic Test Equipment (ATE) to perform piece-part fault isolation.",
+  "title": "TEST Program Manual",
+  "summary": "This Data Item Description provides format and content instructions for a Test Program Manual, which technicians use with Automatic Test Equipment to perform fault isolation on Printed Wiring Assemblies.",
   "approval_date": "1985-05-28",
   "did_format": "dd_form_1664",
   "963c_compliant": false,
-  "amsc_number": "AMSC G3572",
+  "amsc_number": "G3572",
   "limitation": "",
   "dtic_applicable": "",
   "gidep_applicable": "",
@@ -26,7 +26,7 @@
   "approval_limitation": "",
   "form_version": "FEB 85",
   "use_relationship": "",
-  "description_purpose": "3.1 This manual is used in the testing of a Printed Wiring Assembly (PWA) by technicians trained in the use of Automatic Test Equipment (ATE) to perform piece-part fault isolation.",
+  "description_purpose": "This manual is used in the testing of a Printed Wiring Assembly (PWA) by technicians trained in the use of Automatic Test Equipment (ATE) to perform piece-part fault isolation.",
   "application_interrelationship": "7.1 This data item description contains the format and content preparation instructions for that data generated under the work task described by paragraph 3.3 of NSA DS-56 and prepared on magnetic tape conforming to Federal Specification No. W-T-0051.\n7.2 This data item may be applied in any contract or program phase which contains the requirement for a Test Program Manual.\n7.3 This DID supersedes DI-M-5492C.",
   "supersedes": [
     "DI-M-5492C"
@@ -50,8 +50,8 @@
         },
         {
           "number": "10.2",
-          "title": "General",
-          "content": "A Test Program Manual (TPM) shall be prepared as described herein.",
+          "title": "General A Test Program Manual (TPM) shall be prepared as described herein.",
+          "content": "",
           "asterisk": false,
           "children": [
             {
@@ -125,20 +125,20 @@
                   "children": []
                 }
               ]
-            },
-            {
-              "number": "10.2.2",
-              "title": "The front cover (Handling Instructions), Summary of Contents Page, Record of Amendments Page, Table of Contents, List of Illustrations, List of Tables, and Introduction will be prepared by the Government at the time of final publication and are not deliverable times in accordance with this Data Item.",
-              "content": "",
-              "asterisk": false,
-              "children": []
             }
           ]
         },
         {
+          "number": "10.2.2",
+          "title": "The front cover (Handling Instructions), Summary of Contents Page, Record of Amendments Page, Table of Contents, List of Illustrations, List of Tables, and Introduction will be prepared by the Government at the time of final publication and are not deliverable times in accordance with this Data Item.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
           "number": "10.3",
           "title": "Format and content. The manual shall contain 14 Chapters titled and arranged as follows:",
-          "content": "Where a Chapter is not applicable to the TPM for the UUT, the Chapter shall be accounted for with the notation \"Not Applicable.\" No Chapter shall be omitted without Government approval. For Example: Chapter 1 - Not Applicable",
+          "content": "1: Support Documentation\n2: ATE Building Blocks\n3: Waived Faults\n4: Test Philosophy\n5: Program Flow Chart\n6: Test Plan\n7: Label Definition\n8: All-Results Printout\n9: Program Printout\n10: Internal Node Information\n11: UUT Schematic Including Manual Probe Point Information\n12: UUT Assembly Drawing Including Manual Probe Point Information\n13: Channel-to-Pin Assignment\n14: Interconnection Schematic\nWhere a Chapter is not applicable to the TPM for the UUT, the Chapter shall be accounted for with the notation 'Not Applicable.' No Chapter shall be omitted without Government approval. For Example: Chapter 1 - Not Applicable",
           "asterisk": false,
           "children": [
             {
@@ -149,8 +149,8 @@
               "children": [
                 {
                   "number": "10.3.1.1",
-                  "title": "Equipment:",
-                  "content": "Short and long title(s) of equipment(s) which employ the UUT. Include \"Top Assembly\" nomenclature.",
+                  "title": "Equipment: Short and long title(s) of equipment(s) which employ the UUT. Include 'Top Assembly' nomenclature.",
+                  "content": "",
                   "asterisk": false,
                   "children": []
                 },
@@ -163,15 +163,15 @@
                 },
                 {
                   "number": "10.3.1.3",
-                  "title": "Maintenance Manual:",
-                  "content": "Short and long title(s), of the maintenance manual(s) covering the equipment(s) which employ the UUT.",
+                  "title": "Maintenance Manual: Short and long title(s), of the maintenance manual(s) covering the equipment(s) which employ the UUT.",
+                  "content": "",
                   "asterisk": false,
                   "children": []
                 },
                 {
                   "number": "10.3.1.4",
-                  "title": "Test Program:",
-                  "content": "Short and long title, nomenclature, and revision level.",
+                  "title": "Test Program: Short and long title, nomenclature, and revision level.",
+                  "content": "",
                   "asterisk": false,
                   "children": []
                 },
@@ -184,8 +184,8 @@
                 },
                 {
                   "number": "10.3.1.6",
-                  "title": "Runtime:",
-                  "content": "The minimum and maximum runtime to execute the program on the tester. Minimum runtime is for a good UUT and Maximum is for a faulty UUT through the longest isolation part of the program.",
+                  "title": "Runtime: The minimum and maximum runtime to execute the program on the tester. Minimum runtime is for a good UUT and Maximum is for a faulty UUT through the longest isolation part of the program.",
+                  "content": "",
                   "asterisk": false,
                   "children": []
                 }
@@ -199,7 +199,7 @@
               "children": [
                 {
                   "number": "10.3.2.1",
-                  "title": "Programmable Power Supplies (D1 through D7, AC supply).",
+                  "title": "Programmable Power Supplies (Dl through D7, AC supply).",
                   "content": "",
                   "asterisk": false,
                   "children": []
@@ -327,7 +327,7 @@
             },
             {
               "number": "10.3.5",
-              "title": "Chapter 5, Program Flow Chart. The program flow chart shall present a brief visual representation of the different program branches/options that can be selected by a test station operator. The flow chart shall identify each of the major sections of the program and how they fit into the flow of the program and their relationships to a particular branch or option. A major section is a group of Automatic Test Language (ATL) instructions which accomplish a specific task. These include but are not necessarily limited to: I.D. checks, set-up instructions, parametric tests, functional tests or diagnostic tests. The beginning statement number of each major section shall be included in the block that identifies the section in the flow chart. In addition, wherever ATL program linking (Re: ATL programmer's manual - link instruction) occurs, the flow chart shall identify the entry and exit points for each program. Any additional unique ATL programs which are \"linked to\" shall also be described in a flow chart. Standard flow chart template designs and descriptions shall be used in the program flow chart.",
+              "title": "Chapter 5, Program Flow Chart. The program flow chart shall present a brief visual representation of the different program branches/options that can be selected by a test station operator. The flow chart shall identify each of the major sections of the program and how they fit into the flow of the program and their relationships to a particular branch or option. A major section is a group of Automatic Test Language (ATL) instructions which accomplish a specific task. These include but are not necessarily limited to: I.D. checks, set-up instructions, parametric tests, functional tests or diagnostic tests. The beginning statement number of each major section shall be included in the block that identifies the section in the flow chart. In addition, wherever ATL program linking (Re: ATL programmer's manual - link instruction) occurs, the flow chart shall identify the entry and exit points for each program. Any additional unique ATL programs which are 'linked to' shall also be described in a flow chart. Standard flow chart template designs and descriptions shall be used in the program flow chart.",
               "content": "",
               "asterisk": false,
               "children": []
@@ -360,14 +360,14 @@
                     },
                     {
                       "number": "10.3.6.2.2",
-                      "title": "The second column shall be labeled STIM DEV and shall be 10 spaces wide, 8 for the documentation of the stimulus device and 2 for spacing. This column shall describe all the unique stimulus devices being used for a particular test, such as Power Supplies, WG1, or Digital Drivers. If a stimulus device is constant for a consecutive group of tests, the device does not have to be included for the consecutive tests following the first one. For example, a stimulus device constant over a group of tests would be a power supply. The stimulus device shall be included for each test if it is the first time it is sued, if the value of the setting of the device changes, or if the device is dropped to zero (turned off) after being used for a group of tests.",
+                      "title": "The second column shall be labeled STIM DEV and shall be 10 spaces wide, 8 for the documentation of the stimulus device and 2 for spacing. This column shall describe all the unique stimulus devices being used for a particular test, such as Power Supplies, WGI, or Digital Drivers. If a stimulus device is constant for a consecutive group of tests, the device does not have to be included for the consecutive tests following the first one. For example, a stimulus device constant over a group of tests would be a power supply. The stimulus device shall be included for each test if it is the first time it is sued, if the value of the setting of the device changes, or if the device is dropped to zero (turned off) after being used for a group of tests.",
                       "content": "",
                       "asterisk": false,
                       "children": []
                     },
                     {
                       "number": "10.3.6.2.3",
-                      "title": "The third column shall be labeled MEAS and shall be 13 spaces wide, 11 spaces for nomenclature and 2 for spacing. The nomenclature in this column shall be used to describe the programmed settings of the stimulus device, the parameter (for example: volts DC (VDC), volts peak (VP), and milliamps (MA), and then the plus and minus allowable tolerance. For multiple parameter devices, such as WG1, all the parameters shall be listed in order of importance. The tolerance indicated should be reflected by the ATE program. For Digital Drivers, the high and low voltages for the logic settings shall be followed by a list of the channels using those parameters. Short form techniques can be used to reduce the print by using such nomenclature as 1-10, 13, 15-20. This indicates that Channels 1 through 10, 13, and 15 through 20 are stimulus channels.",
+                      "title": "The third column shall be labeled MEAS and shall be 13 spaces wide, 11 spaces for nomenclature and 2 for spacing. The nomenclature in this column shall be used to describe the programmed settings of the stimulus device, the parameter (for example: volts DC (VDC), volts peak (VP), and milliamps (MA), and then the plus and minus allowable tolerance. For multiple parameter devices, such as WGI, all the parameters shall be listed in order of importance. The tolerance indicated should be reflected by the ATE program. For Digital Drivers, the high and low voltages for the logic settings shall be followed by a list of the channels using those parameters. Short form techniques can be used to reduce the print by using such nomenclature as 1-10, 13, 15-20. This indicates that Channels 1 through 10, 13, and 15 through 20 are stimulus channels.",
                       "content": "",
                       "asterisk": false,
                       "children": []
@@ -413,21 +413,21 @@
             },
             {
               "number": "10.3.7",
-              "title": "Chapter 7, Label Definition. Provide a tabular list, in alphabetical order, of all user-defined ATL labels. Include type (integer, decimal, array) and a brief description of the function of each. This description should clearly indicate what the label is used for and in what section of the test program it appears. A separate list shall be provided for all programs which are \"linked to\".",
+              "title": "Chapter 7, Label Definition. Provide a tabular list, in alphabetical order, of all user-defined ATL labels. Include type (integer, decimal, array) and a brief description of the function of each. This description should clearly indicate what the label is used for and in what section of the test program it appears. A separate list shall be provided for all programs which are 'linked to'.",
               "content": "",
               "asterisk": false,
               "children": []
             },
             {
               "number": "10.3.8",
-              "title": "Chapter 8, All-Results Printout. A copy of an All-Results printout (reference TSEC/ST-51 Analog/Digital Automatic Test System operator's manual, All-Results Mode) from a \"Good Board\" shall be included in the Test Program Manual in Chapter 8. The All-Result printout shall be output by the contractor during Government verification of the Automatic Test Program. This Chapter is included in the Test Program Manual to provide an example of typical measured values for a \"Good Board\".",
+              "title": "Chapter 8, All-Results Printout. A copy of an All-Results printout (reference TSEC/ST-51 Analog/Digital Automatic Test System operator's manual, All-Results Mode) from a 'Good Board' shall be included in the Test Program Manual in Chapter 8. The All-Result printout shall be output by the contractor during Government verification of the Automatic Test Program. This Chapter is included in the Test Program Manual to provide an example of typical measured values for a 'Good Board'.",
               "content": "",
               "asterisk": false,
               "children": []
             },
             {
               "number": "10.3.9",
-              "title": "Chapter 9, Program Printout. This printout shall be the latest revision of the program and shall begin with the statement 0001 and end with statement 9999. This chapter shall include all source files and programs which are \"linked to\" by the main program. The format of this program will be specified by the Government.",
+              "title": "Chapter 9, Program Printout. This printout shall be the latest revision of the program and shall begin with the statement 0001 and end with statement 9999. This chapter shall include all source files and programs which are 'linked to' by the main program. The format of this program will be specified by the Government.",
               "content": "",
               "asterisk": false,
               "children": []
@@ -440,7 +440,7 @@
               "children": [
                 {
                   "number": "10.3.10.1",
-                  "title": "For UUT diagnostics which are developed using Computer Aided Design (CAD) techniques, include timing diagrams and/or signal diagrams which are normal outputs of CAD. Include a definition of signals at all inputs, outputs, and internal nodes of the UUT and their interrelationship. Fake modules or nodes which are added to the computer coding shall be identified as a preface to this section. The requirement for timing diagrams and/or signal diagrams for CAD programs shall apply for digital, hybrid and analog UUTs.",
+                  "title": "For UUT diagnostics which are developed using Computer Aided Design (CAD) techniques, include timing diagrams and/or signal diagrams which are normal outputs of CAD. Include a definition of signals at all inputs, outputs, and internal nodes of the UUT and their interrelationship. Fake modules or nodes which are added to the computer coding shall be identified as a preface to this section. The requirement for timing diagrams and/or signal diagrams for CAD programs shall apply for digital, hybrid and analog UUTS.",
                   "content": "",
                   "asterisk": false,
                   "children": []
@@ -462,7 +462,7 @@
                 {
                   "number": "10.3.10.4",
                   "title": "For diagnostics which are developed using an automated probing algorithm or any similar techniques, include a printout of the files used to generate the diagnostics. Final selection of files to be included is subject to Government approval.",
-                  "content": "",
+                  "content": "An example of such files would be the data base, input language, and statistical data files for the ST-51 automatic probing algorithm.",
                   "asterisk": false,
                   "children": []
                 }
@@ -470,22 +470,22 @@
             },
             {
               "number": "10.3.11",
-              "title": "Chapter 11, UUT Schematic Including Manual Probe Point Information. Provide a single sheet (foldout if necessary) schematic of the UUT. This shall be an engineering drawing, reproduced from the schematic used in the engineering drawing package and shall include all manual programmer-added ATE test points. These probe points shall be labeled using P1 through P99 encircled and extended with a leader line to the point being probed. Provide a note on the drawing to indicate that these alphanumeric characters refer to ATE test points. If number of probe points exceeds 99, the Government shall be notified immediately to find an alternate method for indicating test points. If all electrical nodes are probe points, then probe points shall not be added to the schematic.",
+              "title": "Chapter 11, UUT Schematic Including Manual Probe Point Information. Provide a single sheet (foldout if necessary) schematic of the UUT. This shall be an engineering drawing, reproduced from the schematic used in the engineering drawing package and shall include all manual programmer-added ATE test points. These probe points shall be labeled using Pl through P99 encircled and extended with a leader line to the point being probed. Provide a note on the drawing to indicate that these alphanumeric characters refer to ATE test points. If number of probe points exceeds 99, the Government shall be notified immediately to find an alternate method for indicating test points. If all electrical nodes are probe points, then probe points shall not be added to the schematic.",
               "content": "In addition, the second page of this chapter shall contain a list of all alphanumeric characters corresponding to probe points and their associated module and pin number or device name, whichever is of more use to the operator.",
               "asterisk": false,
               "children": []
             },
             {
               "number": "10.3.12",
-              "title": "Chapter 12, UUT Assembly Drawing Including Manual Probe Point Information. Provide a single sheet (foldout if necessary) assembly drawing of the UUT. This shall be an engineering drawing, reproduced from the assembly drawing used in the engineering drawing package and shall include all programmer-added ATE test points. These probe points shall be labeled using P1 through P99 encircled and extended with a leader line to the point being probed. Provide a note on the drawing to indicate that these alphanumeric characters refer to ATE test points. These alphanumeric characters shall be identical with those used on the UUT schematic (see Chapter 11). If the number of probe points exceeds 99, the Government shall be notified immediately to find an alternate method for indicating test points. Probe point designators shall start in the lower left hand corner, proceed in ascending order and in a clockwise direction.",
+              "title": "Chapter 12, UUT Assembly Drawing Including Manual Probe Point Information. Provide a single sheet (foldout if necessary) assembly drawing of the UUT. This shall be an engineering drawing, reproduced from the assembly drawing used in the engineering drawing package and shall include all programmer-added ATE test points. These probe points shall be labeled using Pl through P99 encircled and extended with a leader line to the point being probed. Provide a note on the drawing to indicate that these alphanumeric characters refer to ATE test points. These alphanumeric characters shall be identical with those used on the UUT schematic (see Chapter 11). If the number of probe points exceeds 99, the Government shall be notified immediately to find an alternate method for indicating test points. Probe point designators shall start in the lower left hand corner, proceed in ascending order and in a clockwise direction.",
               "content": "",
               "asterisk": false,
               "children": []
             },
             {
               "number": "10.3.13",
-              "title": "Chapter 13, Channel-to-Pin Assignment. Provide a list of tester channels and the corresponding pin on the UUT.",
-              "content": "If a tester channel is not used, the list should indicate this by labeling that channel as not connected. If a tester channel is not connected directly to the UUT, but goes through some circuitry in the Test Head Adapter or Matrix, the list shall reflect that hardware connection. In all cases, every tester channel shall be accounted for. Channel 160 shall be labeled as \"autoprober\" if applicable. In addition, each tester channel shall be labeled as to its functions for the UUT (stimulus and/or measurement). Channels corresponding to the programmable power supplies should also be labeled with all values in volts that the power supply is required to apply. Channels corresponding to the UUT clocks should be labeled with the clock phase they are generating. If the channel-to-pin list should change during the testing of a board (e.g., more than one matrix used), a second list shall be provided.",
+              "title": "Chapter 13, Channel-to-Pin Assignment. Provide a list of tester channels and the corresponding pin on the UUT. If a tester channel is not used, the list should indicate this by labeling that channel as not connected. If a tester channel is not connected directly to the UUT, but goes through some circuitry in the Test Head Adapter or Matrix, the list shall reflect that hardware connection. In all cases, every tester channel shall be accounted for. Channel 160 shall be labeled as 'autoprober' if applicable. In addition, each tester channel shall be labeled as to its functions for the UUT (stimulus and/or measurement). Channels corresponding to the programmable power supplies should also be labeled with all values in volts that the power supply is required to apply. Channels corresponding to the UUT clocks should be labeled with the clock phase they are generating. If the channel-to-pin list should change during the testing of a board (e.g., more than one matrix used), a second list shall be provided.",
+              "content": "",
               "asterisk": false,
               "children": []
             },

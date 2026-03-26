@@ -1,0 +1,220 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82238A",
+  "slug": "di-sess-82238a",
+  "title": "TECHNICAL DATA PACKAGE LIST (TDPL)",
+  "summary": "A Technical Data Package List (TDPL) is an index listing documents in a Technical Data Package (TDP), used to establish a baseline for equipment/system review and evaluation.",
+  "approval_date": "2018-09-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9984",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "AR",
+  "preparing_activity": "",
+  "project_number": "SESS-2018-045",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "A Technical Data Package List (TDPL) is an index established at a point in time that lists the documents contained in a Technical Data Package (TDP). TDPLs identify specifications, engineering design data (i.e. 3D models, 3-Dimensional Intelligent (3Di) viewable items, or 2D drawings), inspection documents and Quality Assurance Provisions (QAPs), packaging documents, or other documents which comprise the TDP as defined by MIL-STD-31000. The principle use of the TDPL is to establish a baseline TDP for review and evaluation of the equipment/system being procured.\na. This Data Item Description (DID) contains the format, content and preparation instructions for the data product resulting from the work task specified in the solicitation.\nb. This DID is related to DI-SESS-80776A.\nc. This DID is approved for use by the US Department of Defense (DoD) standard MIL-STD-31000.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-80776A"
+  ],
+  "references": [
+    {
+      "label": "ANSI/EIA-649B",
+      "url": "https://www.techamerica.org/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of any documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the contract. If not cited in the contract, dates of any applicable amendments, notices, and revisions, shall be as cited in the ASSIST database, http://quicksearch.dla.mil, at the time of the solicitation, or for non-DoD listed documents as stated herein.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The TDPL shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The TDPL shall include the following information. (A notional example of the TDPL is included in Appendix A of this DID for reference.):",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "SECTION A: COVER PAGE - The TDPL shall include a cover page that specifies the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title of document, i.e. Technical Data Package List.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Government-assigned and authorized nomenclature of the end item being procured.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Prepared by (Preparing Activities name).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Prepared for (Acquiring Activity's name).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Government contract number(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Identification number of the document.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Identification of item specification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "National Stock Number and/or DoD Identification Code (DODIC) (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Highest security clearance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Most restrictive distribution code of documents listed on the TDPL per DOD Directive 5230.24.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Date TDPL was prepared.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Legend with definitions for any codes used as a part of the TDPL such as abbreviations used for document type, special codes, or file types.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Page 1 of ____ (last page number). Applicable page number shall appear on each page of the TDPL.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Thumbnail of end item and/or organizational logo (optional).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "SECTION B. PRODUCT DOCUMENTS AND ASSOCIATED LISTS - This section shall include a listing of engineering design data which defines the authorized configuration of the equipment/system.",
+          "content": "Each entry shall include the document number, document CAGE code, the latest authorized document revision, document date, the document title, distribution code, document type and any special codes, file type, and any associated notes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "SECTION C. PACKAGING DOCUMENTS AND ASSOCIATED LISTS - This section shall include a listing of engineering design data which defines the authorized packaging information required of the equipment/system.",
+          "content": "Each entry shall include the document number, document CAGE code, document revision, document date, the document title, distribution code, document type and any special codes, file type, and any associated notes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "SECTION D. INSPECTION DOCUMENTS AND ASSOCIATED LISTS - This section shall include a listing of engineering design data required to inspect/test the equipment system to include any quality assurance information documents.",
+          "content": "Each entry shall include the document number, document CAGE code, document revision, document date, the document title, distribution code, document type and any special codes, file type, and any associated notes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "SECTION E. SPECIFICATIONS AND STANDARDS - This section shall include a listing of specifications and standards which are part of the TDP.",
+          "content": "Each entry shall include the document number, document revision, any document amendments or changes, document date, the document title, document type and any special codes, file type, and any associated notes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "SECTION F. OUTSTANDING APPROVED ENGINEERING CHANGES - This section shall include a listing of approved engineering changes (if applicable) which have not been incorporated into the documents to which they apply.",
+          "content": "Each entry shall include the document number, document CAGE code and document revision to which the engineering change applies, the engineering change number and approval date and the engineering change classification, and any associated notes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "SECTION G. INDENTURED PARTS LIST (Optional unless required by the contract or CDRL) - This section, if included, shall include a top down product structure breakdown (reference ANSI/EIA-649B, para 5.2.3), of the equipment/system either in graphical view or indentured list view.",
+          "content": "The product structure breakdown shall include part identification numbers, nomenclature and reference to the documents identified in section B above and how they relate to the product structure.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "_source": {
+    "source_file": "DI-SESS-82238A Technical Data Package List TDPL.pdf",
+    "extraction_date": "2026-03-26",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

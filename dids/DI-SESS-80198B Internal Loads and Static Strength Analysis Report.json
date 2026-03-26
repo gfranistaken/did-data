@@ -1,0 +1,585 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-80198B",
+  "slug": "di-sess-80198b",
+  "title": "Internal LOADS AND Static Strength Analysis Report",
+  "summary": "The Internal Loads and Static Strength Analysis Report details load derivation, stress, and strength computations to substantiate structural integrity for aircraft and stores, ensuring compliance with contract and airworthiness requirements.",
+  "approval_date": "2014-04-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9462",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11 (AFLCMC/EZFS)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Internal Loads and Static Strength Analysis Report presents the derivation of internal loads, resulting stresses, and strength computations that analytically substantiate the structural ability of aircraft and aircraft-carried stores to react to critical external loading conditions. This analysis is used to substantiate the structural adequacy of the design for meeting contract requirements, and for showing compliance to airworthiness certification criteria. The report is also used to evaluate any engineering change proposals, to serve as a basis for modifications, structural repair, and damage limits, and to evaluate any possible incidents or accidents during operation.\na. The Internal Loads and Static Strength Analysis Report Data Item Description (DID) is applicable to the analyses of aircraft, missiles, aircraft-carried stores, and follow-on modification programs.\nb. This DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-GDRQ-80198A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Internal Loads and Static Strength Analysis Report shall use the format stated below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Title Page",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Table of contents",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "List of Symbols and Acronyms",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Executive Summary",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Revision status sheet",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "References",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Table of minimum margins of safety that includes part name, aircraft load condition, critical load condition on part, and analysis page number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Introduction",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "Material Properties and Allowables Summary",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "Coordinate Systems",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "External loads",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.12",
+          "title": "Internal loads",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.13",
+          "title": "Detailed stress analyses",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.14",
+          "title": "Appendix",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.15",
+          "title": "Analysis Checking by Approved Representative",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Internal Loads and Static Strength Analysis Report shall present detailed analyses of all safety-of-flight primary structure components and abbreviated analyses of all secondary structure components of the airframe to demonstrate load paths of adequate strength.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Aircraft structures.",
+          "content": "The Internal Loads and Static Strength Analysis Report shall present analysis of the structural components of the aircraft including the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Fuselage, including canopy, fuselage-attached engine mounts, fuselage-mounted speed reduction devices, tie-down structure for seats, litter, cargo, and equipment racks, and all actuating structure and attachments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Wing, including all attachments and actuating structures, hard points, moveable control surfaces, wing-mounted speed reduction devices and auxiliary lift devices.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Empennage, including fixed horizontal and vertical surfaces, moveable surfaces, their attachments, and actuating support structures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Control System and surfaces, either manual or powered, including cables, rods, bell cranks, automatic parts, devices, and actuators.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Landing and take-off gear, including actuators and attachments, and arresting gears.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Airframe-engine interface components to include engine mounts and nacelles.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Miscellaneous structure, including seats, equipment racks, pylons, armament attachments, fuselage and wing external fuel tanks, their fittings and attachment, Aerial refueling system. Cargo handling and aerial delivery system. as well as fittings, attachments and actuators not elsewhere analyzed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Missiles and aircraft-carried stores.",
+          "content": "The Internal Loads and Static Strength Analysis Report shall present analyses of the following major structural components:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Body structure, including pressure vessels and those serving as primary structures, engine mount structure, control surfaces and control systems support structure and its actuating structure",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Wing, either fixed or deployable, and attachments",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Control surfaces, including fixed, deployable, and moveable",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Control systems actuators, mechanisms, and attachment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Suspension structure, including lugs and captive-carry interface hardware",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Miscellaneous structure, including welded joints, mounted equipment and attachments, fittings, mechanisms, and actuators not elsewhere analyzed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Aircraft internal and external modifications.",
+          "content": "The report shall document revisions to previous airframe stress analyses and shall present strength analysis of new and modified installations and affected structures.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "External loads.",
+          "content": "The report shall provide:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Curves or tables showing maximum external loadings of shears, bending moments, torsion",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Where appropriate, temperatures and time and temperature gradients",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Documentation of all design conditions considered (maneuver, gust, ground loading, etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Rationale for analysis conditions selected. Considered loads should include: aerodynamic, inertial, thermal loading, fatigue loads, pressurization (if applicable), and bird strikes",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Documentation of magnitudes and distributions of all loads used for design of the system in its operational environment, and provide a free body diagram showing loads and reactions when applicable. Down select of worst case conditions, and include shear, bending moment, and torsion data for all conditions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "A detailed presentation of the analysis method along with sample calculations for determining loads",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "A list references and provide derivations for any assumptions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Internal loads.",
+          "content": "The internal loads section may be separately prepared or combined with the detailed stress analysis described in 3.6, below. Internal loads will be tabulated for all members, but repetitive structures may be substantiated by analysis of the common structural member having the maximum loading. The computation of internal loads on all structural members shall be shown to be complete for critical, external loading conditions and show the steps considered in their development. Internal loads are identified as limit or design ultimate loads. When internal loads computations are accomplished by computer programs, rather than classical, hand-solution methods, pertinent data considered integral to the report shall be included as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "An example of computer input and output with definitions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Sufficient geometric views or computer-generated plots showing the computer model or finite element model",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Finite element model description (constraints, assumptions, nodes, degrees of freedom, etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Coordinate system origins and orientations of applicable local and global systems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Node point locations and numbering",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Section property derivations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Applicable material properties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Element locations, numbering and types, with selection justification described",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Boundary constraints, with described justifications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.10",
+              "title": "Applied loads",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.11",
+              "title": "Critical load cases (if structure is repetitive use most critical case)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.12",
+              "title": "Types of applied stresses",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.13",
+              "title": "Special factors (fitting, bearing, casting, etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.14",
+              "title": "Realistic load paths that properly account for structure (holes, cutouts, etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.15",
+              "title": "Outputs of element forces, restraint forces and, where necessary, relative deflections",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Detailed stress analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "The report shall describe all structural components analyzed, stating the type of construction, arrangement, materials, coordinate locations of load carrying members. The report shall provide adequate sketches to minimize the necessity of referring to drawings. All sketches shall include pertinent dimensions and shall be labeled by name and part number. Free-body sketches shall be provided to indicate applied loads, reactions, and boundary forces and constraints.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "The report shall describe the critical load cases and types of applied stresses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "The report shall include calculations of stresses based on design ultimate loads. Where limit loads are more critical for material yield strength allowables, such calculations shall be shown. Allowable loads and stress calculations shall be shown or references listed. The analyses shall state the equations used and define the parameters within those equations prior to numerical solution. The report shall state factors used in the analysis such as but not limited to: fitting factors, casting factors, bearing factors, etc. The report shall list all margins of safety to adequately account for tensile, compressive, shear and torsional stresses, joint attachment strengths, beam column effects, crippling, panel buckling, and thermal stress effects. Substantiation of unconventional methods of analysis shall be included in the report by referencing the derivation source of unusual formulas.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Loads and boundary conditions shall be clearly defined. The load path as it travels from the aircraft to the structure being analyzed shall be clearly identified. Perform yield checks at limit load for structures made from materials which yield strength is less than two-thirds of its ultimate strength, and margins of safety at limit load and at ultimate load, ensuring minimum margin of safety of 25% is used for critical structures that are not tested.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "All results shall be presented using a consistent coordinate system, and that system shall be clearly shown on all model and result plots.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "All repetitious and simple calculations should be omitted. One sample calculation shall be shown and the remaining results summarized by tabular or graphical form (such calculations should be stated as typical).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Clearly define and display all mathematical variables used. Provide reference for analysis method, including equations, unless very simple or repetitious.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Substantiate unconventional methods of analysis for accuracy and applicability by referencing the derivation source of unusual formulas. Specific page number, table, or figure of referenced material that has been adequately described by title, referenced data, which may be conveniently included within the report's list of references, shall be readily available to the procuring activity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Provide reasoning on conditions chosen for analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.10",
+              "title": "Examine stability of structure through crippling and buckling (free flange, inter rivet, column, lateral, torsional, panel, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Include calculations for fastened joints (bearing, pullout, tear out, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.12",
+              "title": "Consider secondary effects (compression wrinkling of sheets, diagonal tension in shear webs casing, increased fastener loads, etc.)",
+              "content": "If a computer program does not adequately account for joint attachment strength, combined loadings, local discontinuities and eccentricities, beam column effects, crippling, panel buckling, etc., a separate hand-solution analysis shall be performed to develop correct margins of safety.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.13",
+              "title": "Include calculations of thermal stresses on structures that experience significant heating or cooling, whenever expansion or contraction is limited by external or internal constraints. Combine thermal stresses with concurrent stresses produced by other load sources.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.14",
+              "title": "Include inherent residual stresses due to manufacturing/machining.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.15",
+              "title": "For Finite Element Analyses (FEA), this section shall include a description of the mesh strategy, boundary conditions, load application, and convergence criteria. Where FEA results are used to compute margins of safety, a stress plot shall be provided with the maximum stress location and value noted on the figure. Information on how the FEA was validated must be provided (e.g. – hand analysis, test, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.16",
+              "title": "The report shall include specific page numbers, tables, and figures of reference material used in the analyses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Analysis-static test correlation.",
+          "content": "Whenever prior, design development test measurements are available; the report shall include the correlation of those results with the report's analytically-determined values.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-80198B.pdf",
+    "extraction_date": "2026-03-26",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

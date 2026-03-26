@@ -14,9 +14,8 @@ This repo is the **data source** for [DIDfinder](https://didfinder.com) ([source
 
 ## Adding a DID
 
-1. Fork this repo
-2. Add a new `.json` file to `dids/` following the schema in `SCHEMA.md`
-3. Open a pull request with a brief description of the DID and its source
+1. Add a new `.json` file to `dids/` following the schema in `SCHEMA.md`
+2. Open a pull request with a brief description of the DID and its source
 
 All submissions are validated against the schema before merge.
 

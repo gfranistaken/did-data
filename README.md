@@ -10,7 +10,7 @@ Community-maintained, machine-readable repository of DoD Data Item Descriptions 
 
 ## How It Works
 
-This repo is the **data source** for the [DID Registry viewer](https://github.com/gfranistaken/did-registry). When a change is merged to `main`, a GitHub Action automatically triggers a rebuild of the viewer site.
+This repo is the **data source** for [DIDfinder](https://didfinder.com) ([source](https://github.com/gfranistaked/did-registry)). When a change is merged to `master`, a GitHub Action automatically triggers a rebuild of the site.
 
 ## Adding a DID
 

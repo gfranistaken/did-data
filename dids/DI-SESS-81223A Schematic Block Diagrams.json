@@ -1,0 +1,145 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81223A",
+  "slug": "di-sess-81223a",
+  "title": "Schematic Block Diagrams",
+  "summary": "Schematic Block Diagrams (SBDs) are used as the basis for displaying functional and technical requirements and interfaces, supporting design synthesis, integration, and interface compatibility functions for data deliverables described in the solicitation.",
+  "approval_date": "2019-10-09",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10112",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "SESS-2019-049",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Schematic Block Diagrams (SBDs) are used as the basis for displaying functional and technical requirements and interfaces. As such, they support the design synthesis, integration, and interface compatibility functions.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nSBDs are used when a multi-contractor relationship exists, and there is a need for commonality or exchange of this data among the contractors. SBDs can also be used when there is a special requirement for this data to support technical reviews and audits.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-GDRQ-81223"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The SBDs format shall be in accordance with section 3 below.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The SBDs shall show the functional interfaces and apportionment or requirements between major systems; within the system between the elements of the system (e.g., equipment, personnel, facilities); and between end items, end-to-end, and closed-loop relationships. The SBDs shall also show the maintenance or check out aspects of the proposed design. Sufficient details shall illustrate how the design requirements are to be met. The SBDs shall delineate with symbols (e.g., schematic, architectural, electronic, mathematical, structural, mechanical, etc.) the features and relationships of end items, subsystems, and subsystems components and parts. The SBDs shall identify:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Intersystem relationships (e.g., a command and control system, interface with a strategic weapon system, etc.)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Intrasystem relationships, including the relationship between constituent elements of a subsystem (e.g., in a communication subsystem interfaces between closed-circuit television, work station intercom, remote site communication, spacecraft communication, etc.)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Subordinate detailed schematics, as required, to augment 3.1. and 3.2. above.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Characteristics. The SBDs and significant elements within the diagrams shall be uniquely identified to provide the basis for:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Generating a family of lower-level-of-detail diagrams traceable from the top down or from the bottom up.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Collecting and apportioning effective Requirements Allocation Sheets requirements or trade-study requirements against applicable system or subsystem equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Identifying major intersystem and intrasystem requirements and interrelationships.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Developing SBDs. The basic technique for developing SBDs is illustrated in Figure 1.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "The first-level SBDs shall be complete for the subsystem or subsystems being developed. The schematic shall depict a \"closed-loop,\" including a block depiction of intersystem interfaces.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "The second-level detail SBDs shall be technical expansions of the first-level SBDs, and shall relate contract and items within the subsystem. Input and output expansion shall be related to the interfaces expressed in the first-level SBDs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "The third-level detail SBDs shall be organized functionally to define significant end-to-end system logic across all hardware and facility interfaces involved (e.g., power subsystem, launch control, flight sequence, malfunction detection and control, etc.). Hardware designators established in first- and second-level detail SBDs shall be used against the logic elements to depict interfaces with facilities and equipment, and shall and maintain a traceable relationship to the other SBDs. For time-critical function(s) in any system (e.g., computer sequencing, launch control, staging, etc.) to be accomplished, time shall govern the layout of the drawing (i.e., reading from left to right, begin with the initial functions and proceed, so that the operations sequence of all applicable hardware is clearly shown). The third-level detail SBDs shall have significant waveforms, voltage levels, pressure, etc., appropriately noted in the diagrams.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_source": {
+    "source_file": "DI-SESS-81223A Schematic Block Diagrams.pdf",
+    "extraction_date": "2026-03-26",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

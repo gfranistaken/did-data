@@ -1,0 +1,97 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-80639E",
+  "slug": "di-sess-80639e",
+  "title": "ENGINEERING CHANGE PROPOSAL (ECP)",
+  "summary": "An Engineering Change Proposal (ECP) provides documentation describing engineering changes and how proposed changes will be implemented, and may be used with Notice of Revision.",
+  "approval_date": "2020-02-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10140",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "NM",
+  "project_number": "SESS-2020-003",
+  "applicable_forms": "DD Form 1692, Engineering Change Proposal (ECP)",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "An Engineering Change Proposal (ECP) provides the documentation in which the engineering change is described and specifies how the proposed change will be implemented.\n\na. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in EIA-649-1 and the principles of EIA-649 (Copies of these standards are available online at www.sae.org or from SAE International, 400 Commonwealth Drive, Warrendale, PA 15096-0001, Tel 877-606-7323 [inside USA and Canada] or 724-776-4970 [outside USA]).\n\nb. This DID may be used in conjunction with DI-SESS-80642, Notice of Revision (NOR). A requirement for NORs and Specification Change Notices (SCN) should be contractually imposed in conjunction with this DID.\n\nc. This DID supersedes DI-SESS-80639D.\n\nd. An electronic version of DD Form 1692, Engineering Change Proposal (ECP), is available online at https://www.esd.whs.mil/dd/.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-80639D"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of these standards are available online at",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "An electronic version of DD Form 1692, Engineering Change Proposal (ECP), is available online at",
+      "url": "https://www.esd.whs.mil/dd/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The ECP shall be in one of the following formats:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "DD Form 1692, Engineering Change Proposal (ECP),",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The schema required by the Acquirer's Integrated Digital Environment (IDE), or",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "The Supplier's preferred format.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The ECP shall contain all the information required by DD Form 1692.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "_source": {
+    "source_file": "DI-SESS-80639E Engineering Change Proposal (ECP).pdf",
+    "extraction_date": "2026-03-26",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

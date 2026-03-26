@@ -1,0 +1,117 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)"
+  },
+  "document_number": "DI-SESS-81011F",
+  "slug": "di-sess-81011f",
+  "title": "Document Number Assignment Report",
+  "summary": "This DID provides instructions for preparing a Document Number Assignment Report, detailing the format and content for reporting Government document numbers allocated for engineering design data documents.",
+  "approval_date": "2018-04-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9930",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AR",
+  "project_number": "SESS-2018-032",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Document Number Assignment Report provides the information necessary to maintain the Government's document number usage records. This provides information on allocated document numbers for engineering design data documents comprising the elements of a TDP including but not limited to drawings, models, specification, Special Inspection Equipment (SIE), special tooling, specifications, software documentation, Special Packaging Instructions (SPIs) and Quality Assurance Provisions (QAPs)\na. This Data Item Description (DID) contains the format and content preparation instructions for a Document Number Assignment Report resulting from the work task described by 5.13.3 of MIL-STD-31000.\nb. This DID may be applied whenever Government document numbers are allocated to a contractor for document identification.\nc. This DID supersedes DI-SESS-81011E. This DID was formerly called the Drawing/Model Number Assignment Report.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81011E"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General.",
+      "content": "The Document Number Assignment Report shall meet the requirements of MIL-STD-31000.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Format.",
+      "content": "The report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content.",
+      "content": "The report shall include the date of the report, contractor's name and address and the Government (prime) contract number for which the report is required. The report shall list all Government drawing numbers used or allocated under the contract in numerical sequence and identify the following for each number, as applicable:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Document CAGE Code.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Government document number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "Document type.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.4",
+          "title": "Document title.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "End item designation (e.g. weapon system) on which the document is used.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "Whether the document number represents an existing document number (a document number identifying a drawing which was prepared outside the scope of the contract for which the report is required), an assigned document number (a document number identifying a drawing prepared under the contract for which the report is required. It is a number allocated under the contract and used to identify a document), or an unused document number (A document number allocated under the contract but not used).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81011F.pdf",
+    "extraction_date": "2026-03-26",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

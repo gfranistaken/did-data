@@ -1,0 +1,437 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81889B",
+  "slug": "di-mgmt-81889b",
+  "title": "Manufacturing PLAN",
+  "summary": "This DID defines the Manufacturing Plan, outlining contractor's system factors for an effective manufacturing program, applied in RFP and contracts for system acquisition phases.",
+  "approval_date": "2022-03-21",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10305",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2022-011",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Manufacturing Plan identifies the contractor's overall system and detailed factors necessary to achieve an effective and efficient manufacturing program. This Data Item Description (DID) is applied in the Request for Proposal (RFP) and contract for all phases of system acquisition. Sections applicable to the acquisition will be identified by the buying activity by tailoring this DID in the Contract Data Requirements List (CDRL), DD Form 1423.\n\nThis DID contains the format, content and intended use information for the data deliverable resulting from work task requirements delineated in the contract.\n\nThis DID is consistent with the requirements of SAE International AS6500 (see 1.1). However, this DID does not require the contractual application of SAE AS6500.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81889A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "www.sae.org",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "https://quicksearch.dla.mil",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents. The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "SAE AS6500 - Manufacturing Management Program (available at www.sae.org.)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "For informational purposes only. MIL-HDBK-896 Manufacturing Management Program Guide (available at https://quicksearch.dla.mil.)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format. Contractor's format is acceptable.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content. The manufacturing plan shall provide an integrated collection of the processes, policies, business systems, and other tools required to plan, execute, and manage manufacturing operations, including the integration of corresponding supplier activities. Information shall be organized into sections comprising paragraphs as designated in the following paragraphs.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction – This section shall describe general implementing instructions for documenting the manufacturing management system. Manufacturing management requirements specified are applicable for all phases of the acquisition life cycle. The plan shall document how, when, and by whom each requirement is to be accomplished, and define the authority and responsibility for each element of the manufacturing management system.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Manufacturing organization - This section shall contain the contractor's organization showing each function, the flow of authority and responsibility for performance of manufacturing management and manufacturing management tasks required by contract from the highest level to the line supervision.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Manufacturing Management Program - Document and define the manufacturing strategy and provide a manufacturing management planning structure.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Design Analysis for Manufacturing – Describe how Manufacturing is integrated into the product design and development process and how Engineering will engage Manufacturing to support this effort.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Producibility Program Plan – Describe how producibility analyses are performed (including criteria used), a list of planned and potential studies to be performed, and a schedule of planned activities. Describe how suppliers participate in producibility analyses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Key and Critical Characteristics (and KCs CCs) - Discuss the approach for identifying key and critical characteristics and key and critical manufacturing processes and developing process control plans. Provide a listing of anticipated key and critical manufacturing processes and a potential list of parts requiring KCs and CCs and Process Control Plans. Provide estimated process yields for each process identified and indicate statistical or other method used to maintain control of process performance where applicable. Discuss how corrective actions will be taken to address low yields or unacceptable variation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Process Failure Modes Effects Analyses (PFMEA) – Describe the approach for conducting PFMEAs to identify potential failure modes for critical manufacturing processes to prevent or mitigate the failures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Manufacturing Risk Identification - This section shall include summary sheets, matrices or other artifacts prepared during assessment of manufacturing risk in accordance with the program's risk identification and handling process. Material provided shall address all issues related to the manufacturing process and shall relate to possible technical, schedule, and cost impacts.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Describe how Manufacturing Readiness Level (MRL) Assessments and Production Readiness Reviews (PRRs) are going to be conducted. Identify MRL targets, schedules for reviews, and suppliers to be reviewed. For PRRs, identify the topics to be addressed and criteria to be used during the review.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Manufacturing Planning – This section describes the proposed production processes and infrastructure to determine if they are sufficient to meet requirements. Planning documentation and analysis are used to plan manufacturing methods, processes and production flows and include:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Program Manufacturing Time-Phased Schedule – Provide time-phased schedules that logically represent events in the manufacturing process to ensure contract requirements are met. Schedules include:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Development, design, redesign, and test efforts for system elements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Facility construction or modifications.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Design, fabrication and delivery for special tooling, special test equipment and test support equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Implementation schedules of major elements of manufacturing processes.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.5",
+                  "title": "Development and testing of software necessary to support manufacturing or testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.6",
+                  "title": "Subcontractor deliveries including Critical/Strategic Material deliveries.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.7",
+                  "title": "Government-furnished property need dates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.8",
+                  "title": "First Article Inspections (FAI).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.9",
+                  "title": "End item delivery schedules.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Manufacturing Methods, Process and Flow - This section describes planning documentation used to plan manufacturing methods, processes and production flows including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Identify planned manufacturing methods and processes to produce the product. Include a major assembly sequence chart (w/corresponding Work Breakdown Structure [WBS]), identify and designate key/critical processes, identify critical path processes and discuss the maturity of the processes and their associated risks.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "Describe the approach to analyze the manufacturing flow and processes using Modeling & Simulation (M&S) techniques to identify potential bottlenecks or constraints. Confirm planned cycle times, staffing and capacity are achievable to the contract delivery schedule. Discuss key assumptions, rate and yield goals that must be achieved to meet contractual delivery schedules.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "Provide a high-level plant layout (or block diagram) of major in-plant, manufacturing operations employed in production of program hardware end items. This should briefly describe the operation, the equipment, and the location of the operation in plant.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Supply Chain and Material Management.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Subcontractor/Supplier Management – This section describes the process for how suppliers are chosen and managed. Provide a list of key/critical subcontractors/suppliers (as defined in AS6500A) and identify. Identify long-lead items and associated schedules, a list of critical parts (e.g. critical safety item, fracture), second sourcing efforts, part cost, and counterfeit parts program to minimize product vulnerability. When work is performed by other contractor's subsidiaries or affiliates, information describing the relationship between the performing entity and the contractor are to be included. Updates to this section will be required if work is moved to other locations. Contractor programs for maintaining quality of supplier subassemblies/parts shall be addressed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "Make-or-Buy Criteria - Describe the make-or-buy process, how decisions are made, with associated rationale for how manufacturing considerations are given to reductions of parts from foreign sources, capacity to support production requirements, second sourcing of parts, part standardization efforts, cost, etc. to minimize risk.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "Strategic and Critical Materials - Identify strategic and critical materials planned/used in the system, develop plans and procedures to conserve resources, minimize waste and scrap. This should also include steps taken to mitigate risks due to foreign dependence, materials shortages, and limited surge capacity.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.4",
+                  "title": "Diminishing Manufacturing Sources and Materials Shortages (DMSMS) - Identify all diminishing manufacturing sources and obsolete materials used or planned to be used in the program and provide plans/procedures to mitigate their risk. Discuss how the DMSMS monitoring system will be using the appropriate tools for GIDEP, assessing obsolescence, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.5",
+                  "title": "Requests for Special Priorities Assistance - List any requests for Special Priorities Assistance, identify sources requiring assistance and ensure Defense Priorities and Allocation System (DPAS) procedures will be followed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.6",
+                  "title": "Scrap Management and Reclamation - Describe scrap management to be used to support program requirements. Include scrap tracking and accountability, metrics used and efforts to reduce scrap over time.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Unique Manufacturing Technology - Identify any advanced or unique manufacturing technology required to produce components or end item(s). Include equipment/STE*/processes that require validation, proofing or demonstration to identify the necessary resources to develop, mature, and implement manufacturing technologies to meet requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Measurement System Analysis (MSA) – Describe the approach for conducting MSA for the measurement methods of Key and Critical Characteristics.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Tooling and Facilities Assessment – Describe requirements for the planned/existing facilities and how these will satisfy production needs. Ensure a facility review has been conducted that identifies the necessary tooling/equipment, facility size and number of facilities, plant layout, and any other special considerations needed to support production rates. Data will include information of shared assets (building, floor space, work cells, etc.). A time-phased schedule is required to ensure the contractor will meet contract schedule requirements. Updates to this assessment are to address impacts of planned/actual changes to facilities. The tooling portion of the assessment shall address any use of soft versus hard tooling. It shall also address the development and use of Special Test Equipment (STE) and Special Inspection Equipment (SIE). Planned schedules for the development and prove-out of the special tooling and STE/SIE shall be provided.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Capital Investment Commitment - This section describes the contractor's requirements for additional capital investments to support production and relevant resources (e.g. equipment, tooling).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Manpower Plan – Provide the plan that describes the workforce requirements to meet program needs. Discuss the planned approach to acquire and train the necessary workforce, including any special skills and certifications required. Provide a forecast of required manpower loading, by skill, and time phased. Periodic updates to this section will be needed to reflect changes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Surge and Mobilization Capacity Assessment - A surge and capacity assessment will be included that describes the contractor's ability to meet surge and mobilization needs; this includes ground rules, plans for meeting requirements, shortfalls, and mitigations to reduce risks. Identify maximum capacity and production rates with key assumptions that must be achieved to meet surge requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.9.1",
+                  "title": "In addition, include an analysis of existing business and how the contractor will integrate this effort into their facilities, tooling and manpower and assess the impacts on shared resources, capacity, schedules, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.10",
+              "title": "Government Furnished Equipment (GFE) - Describe the methods for managing, storing, and accounting for GFE. Include durations for performing inventories and reporting discrepancies to the government.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Labor Relations - For the prime contractor and each critical/sole source vendor, supplier, or subcontractor including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.11.1",
+                  "title": "The listing of Unions representing workers at the facility, types of unions represented (production, maintenance, test, etc.) and number of employees represented; indicate if no union is present.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.11.2",
+                  "title": "Expiration dates for each union's labor management agreement.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.11.3",
+                  "title": "The outcomes from the last two labor-management negotiations (no strike, 23-day strike, etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Manufacturing Operations Management.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Production control - Discuss the production control system, how it schedules work and resources, and how it ensures configuration control. Explain how planning will be verified prior to production.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Manufacturing Verification and Surveillance – Describe the planned approach for verification and surveillance of manufacturing processes including purchased parts, tooling/test equipment, facilities requirements, production processes, and personnel training and certification. Note: Pilot lines or existing lines with like product can be used to verify processes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Continuous Improvement - Provide descriptions of continuous improvement process, targeting factors that may adversely affect product quality, delivery, performance, cost, etc. Provide information for existing and planned initiatives affecting technology, material and production.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Variability Reduction and Process Capabilities – Discuss how process control plans will be developed to reduce part-to-part variation of Key and Critical Characteristics and how process capabilities will be measured and tracked for Key and Critical Processes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81889B.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

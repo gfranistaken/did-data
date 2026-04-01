@@ -1,0 +1,548 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82165",
+  "slug": "di-mgmt-82165",
+  "title": "Technical Data Report",
+  "summary": "This Data Item Description (DID) provides instructions for the Technical Data Report, the DoD system for collecting technical parameter data as part of the CSDR requirement, used for resource analysis and independent assessments.",
+  "approval_date": "2017-11-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9871",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "CAPE",
+  "project_number": "MGMT-2017-032",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Technical Data Report is the Department of Defense (DoD) system for collecting technical parameter data as part of the Cost, Software, and Data Reporting (CSDR) requirement. The resulting data repository serves as the primary source for contract cost, software, and technical data for many DoD resource analysis efforts; including cost database development, applied cost estimating, cost research, program reviews, Analysis of Alternatives (AoA), and life cycle cost estimates. The Technical Data Report allows the Government to produce independent assessments of technical and programmatic solutions, and the data provides context to the cost data that assists in developing cost estimating relationships. The Technical Data Report is structured around a format that contains the content and relationships required for the electronic submissions. This Data Item Description (DID) summarizes the Technical Data Report and provides instructions to complement the data requirements specified in the contract for CSDR reporting. Technical Data Report data will be used by DoD Component staff, including program managers, systems engineers, cost estimators, logisticians and financial management personnel to: (1) review and evaluate the program technical baseline; (2) describe the technical parameters required to develop a program life cycle cost estimate; and (3) collect technical and programmatic information in support of system trade off analysis and cost analysis activities. It is important that the data be as accurate as possible so that they may be used for their intended purposes. The Technical Data Report is related to other program acquisition requirements, including the including the Cost Data Summary Report (DI-FNCL-81565C), Functional Cost-Hour Report (DI-FNCL-81566C), Sustainment Functional Cost-Hour Report (DI-FNCL-81992), Cost and Hour Report (FlexFile) (DI-FNCL-82162), Quantity Data Report (DI-MGMT-82164), Maintenance and Repair Parts Report (DI-MGMT-82163) and SRDR Development/Maintenance (DI-MGMT-82035A). Reporting is required throughout the complete life cycle to include the Operating and Support (O&S) phase of the program. Contract reporting is required throughout the life of the contract. Software sustainment activities are captured using the separate SRDR, Software Maintenance and Data Dictionary DID (DI-MGMT-82035). For background and detailed requirements related to Cost, Software, and Data Reporting (CSDR), refer to DoD 5000.04-M-1 (or latest version), “Cost and Software Data Reporting (CSDR) Manual\" (or latest version). The Technical Data Report Data Item Description (DID) is structured around the four data groups below: Technical Data Group Name: Data Group\nReport Metadata: A\nDD FORM 2794 Data Elements: B\nTechnical Data Parameters: C\nTechnical Data WBS Mapping ID: D",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-FNCL-81565C",
+    "DI-FNCL-81566C",
+    "DI-FNCL-81992",
+    "DI-FNCL-82162",
+    "DI-MGMT-82164",
+    "DI-MGMT-82163",
+    "DI-MGMT-82035A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "REQUIREMENTS",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "References. All references below will be made available at http://cade.osd.mil/policy.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "1.1.1",
+              "title": "DoD Instruction 5000.02, “Operation of the Defense Acquisition System,” (current version).",
+              "content": "This instruction contains mandatory CSDR requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.2",
+              "title": "DoDI 5000.73, “Cost Analysis Guidance and Procedures,” (current version).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.3",
+              "title": "DoD 5000.04-M-1, \"Cost and Software Data Reporting (CSDR) Manual,” (current version).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.4",
+              "title": "\"Operating and Support Cost-Estimating Guide\".",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.5",
+              "title": "MIL-STD-881C, \"Work Breakdown Structure for Defense Materiel Items\", (current version).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.6",
+              "title": "DD FORM 2794 Template and Process (current publication date).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.7",
+              "title": "Technical Data Exchange Instructions (DEI) (current version).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.8",
+              "title": "Technical Data File Format Specifications (FFS) (current version).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.1.9",
+              "title": "Technical Data Report Implementation Guide (current version).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "1.2",
+          "title": "Implementation.",
+          "content": "The Technical Data Report requirement applies to program contracts and subcontracts regardless of contract type based on the dollar thresholds specified in DODI 5000.02 (Reference a above).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "1.2.1",
+              "title": "Reporting entities are responsible for implementing Technical Data Report requirements on all contracts and subcontracts that meet the reporting thresholds specified in DODI 5000.02 in conjunction with applicable Contract Data Requirement Lists (CDRLs).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.2.2",
+              "title": "Reporting is required throughout the complete life cycle of program phases.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "1.3",
+          "title": "Format. Provide Data Groups A through D using the electronic preparation instructions below. Data must be reported for each Work Breakdown Structure (WBS) Element for which an \"X\" is marked in Block 14c from the approved DD FORM 2794. Omit the other WBS Elements.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "1.3.1",
+              "title": "The Data Groups A through D of the Technical Data Report must be submitted electronically in accordance with a CAPE-approved Technical Data DEI/FFS, unless an alternative format has been specified in the contract requirements. The specific definition of the Technical Data DEI/FFS is provided under separate covers, (Reference g and h above). Electronic submittals shall be delivered to the OSD CAPE Defense Cost and Resource Center's (DCARC's) secure web-site using the Cost Assessment Data Enterprise (CADE) CSDR Submit-Review (CSDR-SR) system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.3.2",
+              "title": "Uploading data to the DCARC requires use of either a DoD Common Access Card (CAC) or a DoD-approved External Certification Authority (ECA) certificate. For portal registration instructions, see http://cade.osd.mil/Files/CADE_Portal_Registration_Instructions.pdf.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "GENERAL INSTRUCTIONS",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "All reporting under this Technical Data DID will be in accordance with the approved DD FORM 2794.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Security Requirements.",
+          "content": "Technical Data Reports shall be submitted to DCARC in accordance with this DID. Files shall be marked with the appropriate security classifications in Item 1 of Data Group A and proprietary/distribution statement in Item 2 of Data Group A. Only Unclassified documents should be submitted to the DCARC. Contact DCARC for special processing instructions for classified submissions, security concerns and/or other limited distribution requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "The Technical Data reporting frequency is referenced in Block 15 (Submission Events) of the approved contract or subcontract DD FORM 2794. When a corresponding FlexFile, Quantity, or Software Report is required, the Technical Data Report should align by the 'as of' date, as referenced in the approved plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Reporting Entities must report all technical data associated with the contract, including Advance Procurement, Long Lead Materials, Multiyear Procurement, Inter-Division or Inter-Company Work Orders (IWOs), Foreign Military Sales (FMS), Warranty, etc. Technical data should not be omitted based on Contract Line Item Number (CLIN) structure or definition. If IWO costs exceed $50M, separate reporting will be required for technical data.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "PREPARATION INSTRUCTIONS",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Data Group A – Metadata",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Classification: If unclassified, mark “Unclassified” in the security classification field. Contact DCARC for special processing instructions for classified submissions, security concerns and/or other limited distribution requirements. Only Unclassified documents should be submitted to the DCARC in accordance with this DID.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Proprietary/Distribution Statement: The reporting entity's distribution statement for this data submission.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Program Name: The name given to the program. The Program Name shall be the same as Block 1a of the DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Phase/Milestone",
+              "content": "The life cycle phase being reported. The Phase/Milestone shall be the same as Block 1b of the DD FORM 2794. Report all that apply:\nPre-A (Material Solution Analysis Phase);\nA (Technology Maturation and Risk Reduction Phase);\nB (Engineering and Manufacturing Development Phase);\nC-LRIP (Low-Rate Initial Production);\nC-FRP (Full-Rate Production); or\nO&S (Operations and Support Phase).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Prime Mission Product: The most current official military designation for the reported product as specified by the appropriate classification standard (e.g., DoD 4120.15-L, “Military Designation of Military Aerospace Vehicles,” would specify “F-35” for the Joint Strike Fighter). The defined Prime Mission Product shall be the same as Block 1c of the DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.5.1",
+                  "title": "For contract (or subcontract) DD FORM 2794 plans, the product being reported may have a different designation than the total program (e.g., the preparer would enter “AN/APG-81 Radar” for the F-35 Radar contract DD FORM 2794).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.2",
+                  "title": "If the product does not have a military designation, enter the type of product being developed or procured, for example, radar.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.6",
+              "title": "Reporting Organization Type",
+              "content": "Select one of the following for the appropriate organization type:\nPrime/Associate Contractor;\nDirect-Reporting Subcontractor; or\nGovernment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Performing Organization: Information for the organization actually performing and/or leading the work:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.7.1",
+                  "title": "Organization Name: Name of the organization. This shall be the same as Block 9a.i of the DD FORM 2794 plan.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.2",
+                  "title": "Division Name: Name of the division of the organization performing and/or leading the work, if applicable. This shall be the same as Block 9a.ii of the DD FORM 2794.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.3",
+                  "title": "Cage Code: Commercial and Government Entity Code, or CAGE Code, is a unique identifier assigned to suppliers, to various government or defense agencies, as well as to government agencies themselves and also various organizations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.4",
+                  "title": "Location: The location of the organization, or the division of the organization, if applicable. Include the following information:",
+                  "content": "Street Address\nCity\nState\nZip Code",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.8",
+              "title": "Approved DD FORM 2794 Number: The approved number of the current DD FORM 2794 that authorized the collection of data for this report (which may have been updated since contract start).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.8.1",
+                  "title": "DD FORM 2794 Number: The Approved Plan Number shall be the same as Block 10a of the current DD FORM 2794.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.2",
+                  "title": "Revision Number: The Revision number shall be the same as Block 10b of the current DD FORM 2794.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.9",
+              "title": "Customer Name (Direct-Reporting Subcontractor Use Only): Applies to direct-reporting subcontractor use only. Customer is the organization name of the prime reporting entity for which the work on the subcontract is being performed. Otherwise NA (for \"not applicable\").",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Contract Number: The assigned prime contract number the prime contractor has with the Government customer. This requirement is identical for both reporting entities and direct- reporting subcontractors. The Approved Contract Number shall be the same as Block 9b of the DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Period of Performance: The dates for the contract period of performance. The format for the dates shall be year, month, and day.",
+              "content": "Start Date: The actual contract work start date.\nEnd Date: The latest revised estimate for period of performance end date for all contracted work.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Submission Event: Information for the report submission event:",
+              "content": "Event ID: The submission event number for the report provided. This shall match Block 15a of the current DD FORM 2794.\nSubmission Event Name: The submission event name for the report provided. This shall match Block 15c of the current DD FORM 2794.\nEvent Type(s): This shall indicate whether the event type is a “Wildcard” as denoted by an “X” in Block 15d of the current DD FORM 2794.\nReport Type: Report Type is one of the following: Initial; Interim; or Final. This shall match Block 15e of the current DD FORM 2794.\nReport As Of: The report as of date is defined as the day of the month reflected by the reporting entity's internal financial reporting calendar that comes closest in terms of absolute value to the Report As Of Date provided by Block 15f of the DD FORM 2794. The format for the date shall be year, month, and day.\nResubmission Number: A resubmission occurs if prior submission(s) for the submission event were officially rejected with a memo signed by the DCARC. Enter \"0\" (zero) for original submission. If the report is a resubmission, enter the resubmission number, starting with “1” for the first resubmission, “2” for the second resubmission, and so on.\nSubmission Order/Lot: The lot/order, consistent with 17b of the current DD FORM 2794, associated with the reported technical data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Point of Contact: Information for the person to contact for answers to any questions about entries on the submission:",
+              "content": "Name: Last Name, First Name, and Middle Initial\nDepartment: (Department within the reporting entity business unit)\nTelephone Number: (including Area Code)\nE-mail Address",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Date Prepared: The date of report preparation. The format for the date shall be year, month, and day.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Data Group B – DD FORM 2794 Data Elements",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Work Breakdown Structure (WBS) Element Code: The WBS Element Code reflective of the DD FORM 2794 WBS Element Code for each reporting WBS element. The WBS Element Code shall be the same as Block 11b of the DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "WBS Element Level: The WBS level consistent with the WBS Element Code for each reporting WBS Element. The WBS Element Level shall be the same as Block 11c of the DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "WBS Element Name: The WBS element name reflective of the DD FORM 2794 WBS element name for each reporting WBS element. The WBS Element Name shall be the same as Block 11d of the DD FORM 2794. There will be no space indentations before the WBS Element Name representing indenture of the WBS Element Level.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Order/Lot: The Order/Lot as identified in Block 17 of DD FORM 2794. When appropriate, the Order/Lot will have sequence or fiscal year buy information associated with it. Examples include Technology Development (TD), Engineering and Manufacturing Design (EMD), Low Rate Initial Production (LRIP) #3, Full Rate Production (FRP) #5, and Operations and Support (O&S) FY17. Examples of Order Names on the same contract DD FORM 2794 include Lot 1, Lot 2, Lot 3, etc., or, Construction Preparation, Detailed Design & Construction, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "End Item: Uniquely identify a Platform, Model, Version, Flight, Variant, Kit or equivalent grouping or variant of a reported unit or system. The End Items shall be the same as Block 18 of the DD FORM 2794. There will always be at least one End Item on a technical data submission, which may be the same as the Program Name reported in Block 1a of the DD FORM 2794. Instead of naming each variant into elements of the WBS, the common WBS (provided in DD FORM 2794 Block 11) will be reported to each End Item (tagged per DD FORM 2794 Block 18). For example, a family of vehicles may have unique End Items for each variant bought, such as Cargo, Van, Tractor, Wrecker, Dump Truck, and Load Handling. Common material or software costs that span across End Items, if applicable, may also be given their unique End Item.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Data Group C – Technical Data Parameters General Instructions: Refer to Technical Parameter Requirements of the current DD FORM 2794 for the required Technical Parameter Item Type (Block 29), Parameter Name (Block 30a), Unit of Measure (Block 30b), Unit of Measure Qualifier (Block 30c), and Repeatable (Block 30d) instructions; and any CWIPT required Remarks (Block 30e). Definitions for each parameter are provided on the CADE website, http://cade.osd.mil/policy/techdata. The following data elements must be reported:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Mapping ID: A unique alphanumeric identifier used when only reporting common parameters across multiple variants is desired. A unique identifier by Item Type for each individual group of parameters. Unique identifiers are used only when reporting common parameters across multiple variants is desired. Otherwise the WBS Element Code may be repeated here and used as the Mapping ID.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Item Type: The Item Type for each required WBS element, referencing Block 29 of the current DD FORM 2794. The Item Type is required for management of the Technical Parameter database and will always be defined for the reporting organization as part of the DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Technical Parameter Name: The Technical Parameter Name as presented in Block 30a of the current DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Group Key: The Group Key indicator is used to keep like-rows together. This is necessary when a WBS element has repeated subsets of the same parameters. Reference Block 30d of the current DD FORM 2794 for specific instructions required for the repeating of parameters associated with the WBS Element and Item Type. For example, if an electronic box has multiple cards that perform different functions, the technical parameters will need to be repeated for each unique card. The Group Key is used to ensure these parameters are grouped together in the CADE database. Any unique alpha-numeric content will meet the IT-need to keep records grouped, but even-so, reasonable meaningful keys are recommended. These keys exist solely in the context of a single submission.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Value: A single value, excluding margin, for the associated Technical Parameter and hardware item identified by the Mapping ID. The value can be considered Estimated or Actual. The Type (numeric, text, multiple choice from list, etc.) of entry and the Unit of Measure (watts, percent, kilos, etc.) are defined by the parameter being requested. Parameters and their associated definition, allowable value, Unit of Measure, etc. will be specified in the current DD FORM 2794 language or by other means. (Note: Each parameter definition has instructions for the Item Type entry and the additional data type information elements specified below).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Unit of Measure: The Unit of Measure referenced in Block 30b of the current DD FORM 2794. Requirements and guidance for the Unit of Measure entry are specific to each Parameter (or grouping of Parameters) and are provided with each Parameter definition.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Unit of Measure Qualifier: The Unit of Measure Qualifier name referenced in Block 30c of the current DD FORM 2794. Requirements and guidance for the Unit of Measure Qualifier entry are specific to each Parameter (or grouping of Parameters) and are provided with each Parameter definition. For example, if the area of a Solar Array is required, the Unit of Measure might be square feet. The Unit of Measure Qualifier might be “Per Panel” if multiple array panels are specified or could be “Total” if the square footage is specified for the entire set of panel or entire array(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "Estimate/Actual: For each parameter value, “Estimate” or “Actual” shall be reported for the most representative valuation of the “pedigree” or derivation of the technical parameter values reported:",
+              "content": "Estimate – “Estimate” if the parameter value contains a threshold or spec value for any given parameter.\nActual -\"Actual\" if the parameter value is a measured or known value.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "Margin: The estimated margin (or contingency) for the associated Technical Parameter specified by the Mapping ID. The margin value may be reported anytime the parameter is routinely expressed as a single estimated value plus some amount of design/build margin. Margin is expressed in the same units as the parameter value – not as a percentage. Make use of the Remarks column if further description is necessary. For example, an item may have a best estimate of 200 lbs. with a contingency of an additional 6 lbs. This would be expressed with a Value=200; Margin=6; and Unit of Measure=\"Pounds.\" Do not enter three percent.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.10",
+              "title": "Remarks: Enter any information that would explain any peculiarities or ambiguities in any of the data reported in Data Group C. Reference Block 30e of the current DD FORM 2794, and enter any required information dictated by the CWIPT. Enter explanations of changes from previous submissions (e.g. error corrections or substantive changes in underlying equipment or products). Include any basis for, or calculations, used to derive any of the element responses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Data Group D – Technical Data WBS Mapping ID General Instructions: Refer to Technical Parameter Requirements of the current DD FORM 2794 for the required WBS Element Codes (Block 27) and WBS Element Names (Block 28), Order Name (Block 17b) and End Items (Block 18). For each combination of WBS Element Code, Order/Lot, and End Item a Mapping ID must be reported. As noted in Data Group C (Requirement a), unique Mapping IDs are used only when reporting common parameters across multiple variants is desired. Otherwise the WBS Element Code may be repeated as the Mapping ID. The following data elements must be reported:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Mapping ID: The Mapping ID from Data Group C (Technical Data Parameters), the reporting entity shall provide the Mapping ID for Item Types which uniquely identify the corresponding Order Name (Lot 1, Lot 2, Lot 3, etc.) and End Item (Model, Version, Flight, Variant, or equivalent grouping or variant of a reported unit or system). Each combination of WBS Element Code, Order/Lot, and End Item for which technical data is to be reported must be listed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "WBS Element Code: The WBS Element Code for each WBS element being reported. The code shall be the same as Block 27, referenced from the current DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "End Item: The End Item, consistent with Data Group B (DD FORM 2794 Data Elements), which applies to the reported parameter's Mapping ID. The End Item shall be the same as Block 18, referenced from the current DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Order/Lot: Enter the Order/Lot, consistent with Data Group B (DD FORM 2794 Data Elements), which applies to the reported parameter's Mapping ID. The Order/Lot shall be the same as Block 17b, referenced from the current DD FORM 2794.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Remarks: Enter any information that would explain any peculiarities or ambiguities in any of the data reported in Data Group D.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82165.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

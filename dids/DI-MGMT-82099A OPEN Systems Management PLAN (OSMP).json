@@ -1,0 +1,499 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)"
+  },
+  "document_number": "DI-MGMT-82099A",
+  "slug": "di-mgmt-82099a",
+  "title": "OPEN Systems Management PLAN (OSMP)",
+  "summary": "This Data Item Description outlines the requirements for an Open Systems Management Plan, detailing a developer's Modular Open Systems Approach for implementing a modular, open architecture and its life cycle sustainability.",
+  "approval_date": "2022-04-27",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9764",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "MGMT-2022-010",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The essence of Open Systems Architecture (OSA) is organized decomposition, using carefully defined execution boundaries, layered onto a framework of software and hardware shared services and a vibrant business model that facilitates competition. An Open Systems Management Plan (OSMP) describes the developer's Modular Open Systems Approach (MOSA) to implement an OSA. The OSMP includes a developer's plans for a modular, open architecture, to include: use of open standards, data models, and tools; design and management of, and dependencies between, Configuration Items (CIs); design information documentation; technology insertion; life cycle sustainability; treatment of proprietary or vendor-unique elements; and reuse of existing items. The OSMP includes a support plan addressing the five (5) Principles of MOSA: 1. Establish Enabling Environment, 2. Employ Modular Design, 3. Designate Key Interfaces, 4. Use Open Standards, and 5. Certify Conformance. The OSMP provides visibility into the developers' MOSA and implementation. This Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82099"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4 (Copies of this document are available online at)",
+      "url": "https://www.esd.whs.mil/DD"
+    },
+    {
+      "label": "DoDI 5200.48, Controlled Unclassified Information (CUI) (Copies of this document are available online at)",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "The DoD CUI Registry is available online at",
+      "url": "https://www.dodcui.mil/Home/DoD-CUI-Registry"
+    },
+    {
+      "label": "Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information (Copies of this document are available online at)",
+      "url": "https://www.esd.whs.mil/DD"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The plan shall be in contractor's paper or electronic media; or electronic format (such as the American Standard Code for Information Interchange (ASCII) or compatible with a specified word processor or other support software). The term 'document' in this DID shall mean a collection of data regardless of its medium. The terms 'section' and 'paragraph' in this DID shall mean the data or element(s) that fulfill the section or paragraph's requirements.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Open Systems Management Plan shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope.",
+          "content": "This section shall be divided into the following paragraphs:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Identification.",
+              "content": "This paragraph shall contain a full identification of the system, software, and hardware to which the OSMP applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "System overview.",
+              "content": "This paragraph shall briefly state the purpose of the system to which the plan applies and the overall system design. It shall describe the general nature of the system software and hardware; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Plan overview.",
+              "content": "This paragraph shall summarize the purpose and contents of the plan and shall describe any security or privacy considerations associated with its use. Include the applicable Distribution Statement (i.e., A, B, C, D, E, etc.) in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4. (Copies of this document are available online at www.esd.whs.mil/DD.) Include the applicable Controlled Unclassified Information (CUI) markings, as necessary, in accordance with DoDI 5200.48, Controlled Unclassified Information (CUI) (Copies of this document are available online at https://www.esd.whs.mil/), and the DoD CUI Registry. (The DoD CUI Registry is available online at https://www.dodcui.mil/Home/DoD-CUI-Registry.) Include the applicable classification marking, as necessary, in accordance with Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information. (Copies of this document are available online at www.esd.whs.mil/DD.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Referenced documents.",
+          "content": "This section shall list the number, title, revision, and date of all documents referenced in the plan. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Open Architecture Technical Approach and Processes.",
+          "content": "This section shall be divided into the following paragraphs and describe the proposed open architecture technical approach and processes to be employed in addressing and performing the contract.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Open Architecture Approach.",
+              "content": "This section shall describe, in detail, the selected approach for developing a system architecture that incorporates appropriate considerations for re-configurability, portability, maintainability, technology insertion, vendor independence, reusability, scalability, interoperability, upgradeability, and life cycle supportability. This section shall include identification of the open standards, interfaces, implementation guidance, conformance criteria, data models, and tools utilized in developing the system architecture.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Modular Architecture.",
+              "content": "This section shall describe, in detail, how the proposed system architecture is robust, layered, modular, adaptable, and makes maximum use of existing Government-Off-the-Shelf (GOTS) hardware and software and Commercial CIs, including: Commercial-Off-the-Shelf (COTS) software, COTS hardware, operating systems, and middleware that utilize well-defined, widely accepted and adopted open standards for the Application Programming Interfaces (APIs). The description shall define the approach for designing a system that reduces module coupling and increases module cohesion.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Rationale for Modularization Choices.",
+              "content": "This section shall describe, in detail, the rationale for the modularization choices made to generate the design and isolate the functionality of the CIs. The description shall include the hierarchy of software and hardware CIs and a discussion of how the modularization choices support competitive acquisition and ease technology refresh and reuse. The description shall explicitly address any tradeoffs performed, particularly those that compromise the modular and open nature of the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "MOSA Support Plan.",
+              "content": "This section shall describe how specific elements of the system design, including modularity choices and the selected architectures, open standards, implementation guidance, conformance criteria, data models, and tools support the five (5) Principles of MOSA: 1. Establish Enabling Environment, 2. Employ Modular Design, 3. Designate Key Interfaces, 4. Use Open Standards, and 5. Certify Conformance. Details in this section shall include how the system design is going to:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Enable the system to adapt to evolving requirements to maintain currency.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Enhance the ability of the systems integrator to integrate new and enhanced components into the system without requiring large scale system redesign.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Enable the system to survive various technology refresh strategies (e.g., insertion of COTS or GOTS CIs) and changes to the computing infrastructure, while limiting software changes to integration software with only minimal or no changes to the application logic of the new capabilities.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "Improve the ability to reuse capabilities with little or no modification to the application logic.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.5",
+                  "title": "Facilitate systems reconfiguration and integration during technology refresh.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.6",
+                  "title": "Reduce the development cycle time and total life cycle cost.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.7",
+                  "title": "Maintain access to technologies and products from multiple suppliers.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.8",
+                  "title": "Promote identification of multiple sources of supply and support flexible business strategies that enhance subcontractor competition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.9",
+                  "title": "Mitigate the risks associated with reliance on a single source of supply over the life of the system, including technology obsolescence and dependence on proprietary or vendor-unique technology.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Design Disclosure and Data Rights Strategy.",
+              "content": "The Government needs to have the ability to share design documentation, architecture definition, specifications, interfaces, and tools. This section shall provide a detailed description of the proposed delivery and disclosure of the proposed system design and documentation. In addition, this section shall include a summary of the Technical Data Rights strategy for the data deliverables included in the Request for Proposals (RFP) and subsequent contracts. This section shall address:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "The approach to facilitate the sharing of system or component (e.g., software, hardware, middleware) design information in support of peer reviews and the development process.",
+                  "content": "In addition, the description shall address how information is going to be provided to support third party development and delivery of competitive alternatives or designs for CIs on an ongoing basis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "The plan to establish early in the life cycle and maintain a process that provides frequent design disclosure, making design and interface information available as soon as possible after it is defined or established.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.3",
+                  "title": "The data management approach, including how data is going to be delivered, accessed, maintained, and protected.",
+                  "content": "This approach shall include details on how the exchange of information is going to be structured to protect the contractors and third party developers' proprietary or vendor-unique rights to the data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.4",
+                  "title": "How the design is going to be documented and modeled using industry standard formats (e.g., Unified Modeling Language), how it is going to use tools that are capable of exporting model information in a standard format (e.g., Extensible Markup Language Metadata Interchange (XMI) and Application Protocol (AP) 233/International Organization for Standardization (ISO) 10303), and identify the proposed standards and formats to be used.",
+                  "content": "Specific tools shall be identified and annotated whether they are commercially available or proprietary.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.5",
+                  "title": "The level of system design at which rights to technical data and computer software are going to be available or provided for system components.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.6",
+                  "title": "How the developer intends to provide licenses, source code, drawings, and repair and engineering documentation to the Government and third party contractors at specified key events or at defined intervals.",
+                  "content": "For Commercial CIs, copies of, or links to, license agreements related to the use of these CIs shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.7",
+                  "title": "How the data rights or licenses expected to be conveyed by the vendor and the vendor's subcontractors are going to affect support of the system over its life cycle.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Interface Design and Management.",
+          "content": "This section shall describe the process for clearly defining component and system interfaces. This section shall address the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Describe how interfaces are going to be selected from existing open or Government standards.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Describe how the selection of interfaces is going to maximize the ability of the system to readily accommodate technology insertion (both hardware and software) and facilitate the insertion of alternative or reusable modular system elements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Describe how all subsystem and CI level interfaces are going to be defined and documented.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Identify the processes for specifying the lowest level (i.e., subsystem or component) at or below which the contractor intends to control and define interfaces by proprietary, vendor- unique standards, as well as the impact of those standards on the proposed modularity and logistics approach.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Identify the interface and data exchange standards and the interconnecting or underlying information exchange medium.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Describe how the system interfaces are going to allow for:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.6.1",
+                  "title": "Quickly interconnecting, reconfiguring, and assembling existing systems, subsystems, and components",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.6.2",
+                  "title": "Interchanging and using information, services, or physical items among components within a system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.6.3",
+                  "title": "Supporting reuse of software and the use of common components across various product lines",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.6.4",
+                  "title": "Transferring a system, component, or data from one hardware or software environment to another",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.7",
+              "title": "Describe the process to address migration of proprietary, vendor-unique, or closed system equipment or interfaces to a modular open systems design when technological advances are available or when operational capability is upgraded.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Treatment of Proprietary or Vendor-Unique Elements.",
+          "content": "This section shall be divided into the following paragraphs and shall identify, describe, and justify any use of proprietary, vendor-unique, or closed CIs, including Commercial CIs such as COTS and interfaces in current or future designs. It shall describe the process for identifying and justifying proprietary, vendor-unique, or closed interfaces, code modules, hardware, firmware, or software to be used in current or future designs. This section shall be divided into the following paragraphs and shall address the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Partitioning of Proprietary or Vendor-Unique Elements.",
+              "content": "Describe decisions to employ partitioning, or other design techniques, to isolate all proprietary and vendor-unique portions of interfaces, hardware, firmware, and software.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Interfacing to Proprietary or Vendor-Unique Elements.",
+              "content": "Describe how the integration of closed, proprietary, or vendor-unique equipment, interfaces, data systems, or functions due to a unique or specific system requirement is not going to preclude or hinder other CI developers from interfacing with, or otherwise developing, replacing, or upgrading, open parts of the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Segregation of Proprietary or Vendor-Unique Elements.",
+              "content": "Identify the steps to prevent the open elements of the system from intertwining with proprietary or vendor-unique elements in a manner that restricts or limits the ability to replace or upgrade the open elements using an open competitive selection process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Modularity.",
+              "content": "Describe the modularity of the system design that promotes identification of multiple sources of supply and supports flexible business strategies that enhance subcontractor competition.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Licensing.",
+              "content": "Describe how the developer intends to provide all non-proprietary licenses, source code, drawings, and repair and engineering documentation to the Government and third party contractors at specified key events or at defined intervals. The data rights shall be specified to the CI level.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Third Party Development.",
+              "content": "Describe how the developer is going to provide information needed to support third party development and delivery of competitive alternatives or designs for software on an ongoing basis. This information will be used by the Government as part of peer review processes to support Integrated Product Teams (IPTs), and to facilitate competition. In addition, this paragraph shall provide a list of those proprietary or vendor-unique elements the developer requests be exempt from the peer review processes.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Life Cycle Management and Open Systems.",
+          "content": "This section shall describe the selected strategy for reducing product, system, and associated supportability costs through insertion of GOTS and Commercial CIs. The description shall cover the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Identify how open architecture requirements are going to enhance life cycle supportability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Identify and describe a strategy to insert hardware and software, including COTS and GOTS, into the system and describe how this strategy is logistically supported throughout the system's life cycle.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Identify what hardware and software is planned for reuse, their functionality, and the associated licenses and technical data rights.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Identify specific hardware and software of the subsystem designs that is planned for COTS and GOTS replacement and the supportability plans.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Describe how the subsystems are designed to allow timely and cost-effective replacement of software and hardware.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Address the selection processes for commercial components, including COTS, and include documentation of the decisions leading to the selection of the COTS product.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Provide a description of the processes that are going to be established to ensure that software, including COTS and GOTS products, is logistically supported throughout the life cycle.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Describe the availability of commercial repair parts and repair services, facilities, and manpower required for lifecycle support to ensure long term support for Cis, including COTS and GOTS products.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Provide the proposed methodology for pass-through of software warranties to the Government.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Notes.",
+          "content": "This section shall contain any general information that aids in the understanding of the OSMP (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in the OSMP and a list of any terms and definitions needed to understand the plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Appendices.",
+          "content": "Appendices shall provide information published separately for convenience in OSMP maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the plan where the data would normally have been provided. Appendices shall be bound as separate documents, as appropriate, for ease of handling. Appendices shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82099A.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

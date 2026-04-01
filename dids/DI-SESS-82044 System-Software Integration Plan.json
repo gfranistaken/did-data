@@ -1,0 +1,526 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82044",
+  "slug": "di-sess-82044",
+  "title": "System/Software Integration Plan",
+  "summary": "This DID specifies the format and content for a System/Software Integration Plan (SIP), detailing how software components integrate with target hardware to achieve full capability, including schedules, milestones, dependencies, and necessary resources.",
+  "approval_date": "2016-05-25",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9666",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2016-026",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The System/Software Integration Plan (SIP) consists of details regarding how the software will be built up over time to reach full capability in consonance with the target hardware. The SIP captures the evolution of software component to software component integration, Computer Software Configuration Item (CSCI) to CSCI integration, CSCI to Hardware Configuration Item (HWCI) integration and subsystem integration. The SIP includes an integration schedule with milestones and dependencies. The SIP specifies the staffing and facility resources needed to successfully execute the plan. This Data Item Description contains the format, content, and intended use information for the data product resulting from the work task described by the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents.",
+      "content": "This section shall list the number, title, revision, and date of all documents referenced in this plan. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor's format acceptable. The SIP shall adhere to the format described under Content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content:",
+      "content": "The content shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope.",
+          "content": "This section shall be divided into the following paragraphs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Identification.",
+              "content": "This paragraph shall contain a full identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "System overview.",
+              "content": "This paragraph shall briefly state the purpose of the system and the software to which this document applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Document overview.",
+              "content": "This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Relationship to other plans.",
+              "content": "This paragraph shall describe the relationship, if any, of the Software Development Plan or to other project management plans.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Overview of required work.",
+          "content": "This section shall be divided into paragraphs as needed to establish the context for the planning described in later sections. It shall include, as applicable, an overview of:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Requirements and constraints of the system and software to be developed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Requirements and constraints of the project documentation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Position of the project in the lifecycle.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Requirements and constraints of the selected development strategy.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Requirements and constraints on project resources and schedules.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Other requirements and constraints, such as security, safety, methods, standards, interdependencies, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Integration Strategy.",
+          "content": "This section informs the reader what the high level plan, or methodology, is for integration and, most importantly, why the integration is structured the way it is. The integration is dependent on many factors which will change during execution and will require this plan to be actively updated and managed.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Factors:",
+              "content": "Each of the following subsections shall describe the factors required for integration of software.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Integration team construct by personnel to facilitate discovery, analysis and correction of problems.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Detail incremental capability buildup through the use of use cases and sequence diagrams used to describe functional mission and support threads (from basic infrastructure to full mission capability).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Interface evaluation as described by use cases and activity data flow.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Interaction and dependencies of the Software Build Plan.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Interaction and dependencies with the ground/flight test plan of capability releases that can only be tested on a target platform.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Maturity definition(s) and criteria for a capability to exit integration (i.e. specification compliance).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Defect burn-down strategy.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Detail the integration facility to include: simulations, stimulations, hardware hosts, data collection, analysis tools and any specialized test equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "Regression test strategy.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Integration Processes.",
+              "content": "This section defines the processes and process execution used during integration of software. The follow subsections shall be described:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Integration Planning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.1.1",
+                      "title": "Linkage of the integration in the Integrated Master Schedule (IMS) and other applicable program plans for all relevant activities (i.e. flight test, formal testing, etc.).",
+                      "content": "Include expected software delivery dates for the integrators and test teams.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.2",
+                      "title": "Integration methodology.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.3",
+                      "title": "CSC integration and testing with special focus on the completeness (via coverage analysis of requirements-based testing) and the testing of the software cybersecurity requirements:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.2.1.3.1",
+                          "title": "Common Vulnerabilities and Exposure (CVE) List for the selection of security test tool(s).",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.3.2",
+                          "title": "Penetration testing.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.3.3",
+                          "title": "Modified condition and decision coverage testing.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.2.1.4",
+                      "title": "Identification of integration artifacts.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.5",
+                      "title": "Identification of required activities and/or resources.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.6",
+                      "title": "Identification of project functions, components and subsystems to be integrated regardless of purchased or developed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.7",
+                      "title": "Identification of all external systems to be integrated.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.8",
+                      "title": "Association of integration points to builds.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.9",
+                      "title": "Association of integration points by capability.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.10",
+                      "title": "Categorization of integration points, i.e. functional, performance, problem correction, stress, failure recovery, baseline maturity, associated to system test and associated with flight test.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.11",
+                      "title": "Setup and establishment of configuration of test environment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.12",
+                      "title": "Establishment of sequence and schedule for integration points.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.13",
+                      "title": "Meetings and agendas to facilitate execution.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.14",
+                      "title": "Record keeping and reporting.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Integration Entrance and Exit Criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Integration Execution",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.3.1",
+                      "title": "Personnel management",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.2",
+                      "title": "Lab Utilization (Shift planning, prioritization and de-confliction)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Integration Metrics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.4.1",
+                      "title": "Integration points: Plan versus Actual by build and subsystem",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.2",
+                      "title": "Capability Progress:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.2.4.2.1",
+                          "title": "Percent ( included complexity of integration points) -Complete / Attempted / Remaining",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.4.2.2",
+                          "title": "Count (integration points)- Complete / Attempted / Remaining",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.4.2.3",
+                          "title": "Corrections to defects required to continue integration (Closed / Verifying / In Work by Capability)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "Problem Report Management.",
+                  "content": "Include Configuration Control Board (CCB) participants and participation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "Regression testing.",
+                  "content": "This section should include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.6.1",
+                      "title": "Scope determination.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.6.2",
+                      "title": "Testing strategy assure that no changes have affected previously successfully tested functionality.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.6.3",
+                      "title": "Unit, component and CSCI level test procedures to be used.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Integration Points.",
+          "content": "This section shall provide the total integration points required for each capability.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Each integration point shall highlight the functions required and the interfaces needed to support the execution of the integration steps.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "The integration points shall provide coverage of all use cases, sequence diagrams and activity data flow as captured in the requirements and design phases.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Integration points may have more than one integration step.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Integration points shall be assigned a complexity value.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Notes.",
+          "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Appendices.",
+          "content": "Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82044.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)"
+  },
+  "document_number": "DI-SESS-81758A",
+  "slug": "di-sess-81758a",
+  "title": "Logistics Product DATA",
+  "summary": "Logistics Product Data (LPD) comprises the support and support-related engineering and logistics data acquired from contractors generated as a result of the product support analysis.",
+  "approval_date": "2013-05-22",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "9333",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "TM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Logistics Product Data (LPD) comprises the support and support-related engineering and logistics data acquired from contractors generated as a result of the product support analysis conducted during the design, development, and initial fielding of a system or end item that the requiring authority needs to develop their internal materiel management processes. This includes data for maintenance planning, logistics design requirements, reliability and maintainability, system safety, maintenance engineering, support and test equipment, training and training devices, manpower and skills, facilities, transportation, supply support, parts packaging, initial provisioning, cataloging, item management and in-service feedback.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81758"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and the dates of any applicable amendments, notices, and revisions, shall be specified in the contract.\nGEIA-STD-0007, Logistics Product Data\nGEIA-HB-0007, Logistics Product Data Handbook\nTA-HB-0007-1, Handbook and Guide for Logistics Product Data Reports",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "(Copies of these documents are available at TechAmerica(C), 2500 Wilson Boulevard, Arlington, VA 22201-309 3834; http://www.techamerica.org)\nThe XML Schemas and XML file formats defined in Appendix C and D of GEIA-STD-0007 shall be used as the format for delivery of the LPD or a format contained in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of the LPD is described in Section 2 and Appendix A of GEIA-STD-0007. The Attribute Selection Sheet (Appendix A, GEIA-HB-0007), or some other requirements identification tool contained in the contract, shall specify the selected data required to comprise the LPD.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81758.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

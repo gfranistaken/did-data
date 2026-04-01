@@ -1,0 +1,488 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81803A",
+  "slug": "di-mgmt-81803a",
+  "title": "ITEM Unique Identification (IUID) Marking PLAN",
+  "summary": "This DID specifies the Item Unique Identification (IUID) Marking Plan, detailing the Contractor's strategy for executing marking requirements in government contracts, including process, procedures, and quality assurance for military property.",
+  "approval_date": "2020-03-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10164",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "16 (AFMC/A4NL)",
+  "project_number": "MGMT-2019-028",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Item Unique Identification (IUID) Marking Plan details the Contractor's strategy to execute marking requirements identified in the Government contract document(s) and Defense Federal Acquisition Regulation Supplement (DFARS).\nThe purpose of the IUID Marking Plan is for the Contractor to identify and define, in detail, their IUID marking process and procedures to meet Government contract requirements in accordance with Military Standard (MIL-STD) -130, Identification Marking of U.S. Military Property, for item marking; MIL-STD-129, Military Marking for Shipment and Storage, for packaging marking; and the DoD Guide to Uniquely Identifying Items Assuring Valuation, Accountability and Control of Government Property. (Copies of MIL-STD-130 and MIL-STD-129 are available online at: https://quicksearch.dla.mil/qsSearch.aspx, and a copy of the Department of Defense (DoD) Guide is available online at https://dodprocurementtoolbox.com/site-pages/overview-implementation.)\nThe IUID Marking Plan shall include item and packaging marking requirements and methodology, encoding correct data, data management, facilities use, marking equipment, data carrier symbols, registration, quality assurance, validation, verification, registration of items being marked, and a master schedule to help the Contractor manage marking activities in a cost effective and timely manner.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract document(s).\nb. This DID is used on any contract that requires delivery of an IUID Marking Plan to the Government.\nc. This DID supersedes DI-MGMT-81803.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81803"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "MIL-STD-130 and MIL-STD-129 are available online at",
+      "url": "https://quicksearch.dla.mil/qsSearch.aspx"
+    },
+    {
+      "label": "a copy of the Department of Defense (DoD) Guide is available online at",
+      "url": "https://dodprocurementtoolbox.com/site-pages/overview-implementation."
+    },
+    {
+      "label": "DoD-recognized IUID equivalent, which can be found at",
+      "url": "http://www.acq.osd.mil/dpap/pdi/uid/iuid_equivalents.html"
+    },
+    {
+      "label": "Copies of DFARS clause 252.211-7003 can be obtained online at",
+      "url": "https://www.acquisition.gov/content/regulations."
+    },
+    {
+      "label": "Copies of ISO/IEC 15434 can be obtained at",
+      "url": "https://www.iso.org"
+    },
+    {
+      "label": "Copies of ANSI MH10.8.2 can be obtained at",
+      "url": "https://webstore.ansi.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents. The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, or revisions, shall be as specified in the contract.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format. The IUID Marking Plan shall be in contractor-developed, Government-approved format. Spreadsheet format shall be used when marking multiple items with IUID.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content. The IUID Marking Plan shall include the following, except when the data matrix mark containing IUID data is embedded in a data label or plate and is already documented in an approved drawing. In such cases, the requirements indicated with an asterisk (*) shall be omitted when describing the label or plate marking:",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "List the applicable reference document(s).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "List the end items and components marked with IUID under the requirements of the contract document(s), including DFARS 252.211-7003.",
+          "content": "(Copies of DFARS clause 252.211-7003 can be obtained online at: https://www.acquisition.gov/content/regulations.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Describe the marking methodology, which shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Marking method used for each item to be marked (e.g., by direct marking on the item's surface, or by indirect marking on a plate or label attached to the item).",
+              "content": "The marking method may differ for each item.",
+              "asterisk": true,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "When direct part marking is used, describe the methods used to apply the direct part mark.",
+                  "content": "",
+                  "asterisk": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Item Marking Specifications:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "When engineering drawings incorporating the IUID marking requirement exist, list and associate each drawing with the items requiring IUID marking.",
+                  "content": "If not, enter 'N/A.'",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Describe the following aspects of Machine Readable Mark generation:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.2.1",
+                      "title": "IUID construct to be encoded in the data matrix. (e.g., Construct 1, Construct 2, or a specific, DoD-recognized IUID equivalent, which can be found at: http://www.acq.osd.mil/dpap/pdi/uid/iuid_equivalents.html)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.2.2.1.1",
+                          "title": "When using Construct 1, state whether the item's Original Equipment Manufacturer (OEM) serial number is part of the Unique Item Identifier (UII), and, if not, how the serial number component of the UII is established.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.2.2.2",
+                      "title": "Type of Enterprise Identifier (EID) in the mark. (e.g., Commercial and Government Entity (CAGE) code, Data Universal Numbering System (DUNS), DoD Activity Address Code (DoDAAC), or Global Standards One (GS1)).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.3",
+                      "title": "The data elements to be encoded in the data matrix symbol, other than those from which the UII is derived, if any.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Describe the characteristics of the label or data plate:",
+                  "content": "",
+                  "asterisk": true,
+                  "children": [
+                    {
+                      "number": "3.3.2.3.1",
+                      "title": "Type of material used for the label or plate. (e.g., aluminum, polyacrylic, metal foil, polyester, polyvinyl, aluminum foil, stainless steel, etc.)",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.2",
+                      "title": "Method used to mark the data on the label or plate for each item to be marked. (e.g., laser etching, thermal transfer on polyester label stock, photo anodized aluminum plate, etc.)",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.3",
+                      "title": "Size of the label or plate, including units. (e.g., length, width, thickness, etc.)",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.4",
+                      "title": "Shape of the label or plate. (e.g., circle, square, rectangle, rounded corners, etc.)",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.5",
+                      "title": "Illustrate the label or plate to show the Human Readable Information (HRI) and the location of the data matrix.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.6",
+                      "title": "Location of the label or plate on the item, include an illustration or photo, if possible.",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.7",
+                      "title": "Human readable lettering. (e.g., serif, font, font size, color, etc.)",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.8",
+                      "title": "Attachment method. (e.g., adhesive, screws, rivets, etc.)",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.9",
+                      "title": "Type of adhesive used, if applicable.",
+                      "content": "",
+                      "asterisk": true,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "The process for marking legacy parts and Government Furnished Property (GFP).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "How Unit Packs, Intermediate Containers, and Exterior Containers shall be marked in compliance with the DFARS 252.211-7003; MIL-STD-129; International Organization for Standardization (ISO)/International Electrotechnical Commission (IEC) 15434, Information Technology – Automatic Identification and data capture techniques – Syntax for high-capacity ADS media; and American National Standards Institute (ANSI) MH10.8.2, Data Identifier and Application Identifier Standard.",
+              "content": "(Copies of ISO/IEC 15434 can be obtained at: https://www.iso.org. Copies of ANSI MH10.8.2 can be obtained at: https://webstore.ansi.org.):",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Portable Data File (PDF) 417 two (2) dimensional (2D) stacked linear barcode symbol format.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.4.1.1",
+                      "title": "For data elements encoded in a PDF417 on a unit pack's packaging, the actual item's data shall be provided, when possible. State the data elements to be encoded in the mark. Include a readable PDF417 barcode with the data encoded correctly; specify the data string encoded in the mark, including control characters; or both.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.4.1.2",
+                      "title": "For data elements encoded in a PDF417 barcode on an Exterior Container, state the data elements to be encoded in the mark. Include a readable PDF417 barcode with correctly encoded data; specify the data string encoded in the mark, including control characters; or both.",
+                      "content": "The actual item's data shall be provided, when possible.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "The Quality Assurance (QA) processes for the item mark, which ensure the item's Machine Readable Information (MRI) complies with MIL-STD-130.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Validation and verification. Include a description of the specific equipment used to perform validation and verification, and the sampling technique when 100% verification and validation is not planned.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "Format and frequency. Identify a format and frequency for contractually-required reporting of validation and verification results, to include a pass or fail rating for each mark verified and each mark validated.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.3",
+                  "title": "State where validation and verification is to be performed (i.e., contractor facility or sub-contractor facility).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.4",
+                  "title": "Describe the process used for replacing any marks that fail a QA check.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.5",
+                  "title": "State contract data item numbers from the Contract Data Requirements List (CDRL) that pertain to QA on IUID marks.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.6",
+              "title": "The packaging mark QA processes:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "Describe packaging mark validation. In the absence of packaging mark validation software, a manual comparison of the encoded data string to the requirements of MIL-STD-129 shall be included.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.7",
+              "title": "Facilities and marking equipment to be employed:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.7.1",
+                  "title": "State where item labels or plates are created (i.e., contractor or sub-contractor facility).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.2",
+                  "title": "Describe marking equipment used, to include any potential environmental impacts of the marking process and procedures designed to mitigate the risks of potential environmental impacts.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Describe data management processes:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Identify the actions required to register the pedigree data for the items marked with IUID in the DoD IUID Registry, in accordance with DFARS 252.211-7003.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "When the contract requires non-warranty repair of items designated for IUID, describe the processes to:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.2.1",
+                  "title": "Assess the readability of the data matrix marks on the items received that are marked with a data matrix.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.2.1.1",
+                      "title": "Re-mark items with unreadable data matrix marks, which encode the original UIIs.",
+                      "content": "The descriptions shall address the following: Will the complete data plate be remade? Will an additive label be applied? Will the original data matrix be obliterated?",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.4.2.2",
+                  "title": "Determine whether unmarked items were previously assigned a UII, and, if the mark is detached from the item, ensure that the remarked item uses the original UII.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.3",
+                  "title": "Assign and mark a UII on DoD-owned items requiring IUID, but not previously assigned a UII.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.2.3.1",
+                      "title": "Register new UIIs using the Repairable Receiving Report in Wide Area Work Flow (WAWF).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Provide the Master Schedule for IUID marking, to include:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Target dates for:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "First submission of the marking plan.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Government approval of the IUID marking plan.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "Commencement of marking (first item).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "First item acceptance by Government.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "Any other key events.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "When marking is contingent on non-recurring engineering actions or is to be sub-contracted, state the projected schedules related to those processes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81803A.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

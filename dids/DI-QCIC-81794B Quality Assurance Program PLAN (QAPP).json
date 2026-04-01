@@ -1,0 +1,307 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-81794B",
+  "slug": "di-qcic-81794b",
+  "title": "Quality Assurance Program PLAN (QAPP)",
+  "summary": "The Quality Assurance Program Plan (QAPP) describes how a contractor's Quality Management System complies with contractual requirements and ensures product design and production meet program needs, outlining implemented quality policies and procedures.",
+  "approval_date": "2025-07-02",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10572",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSM)",
+  "project_number": "QCIC-2025-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Quality Assurance Program Plan (QAPP) will be used as a stand-alone document, but it is intended to be a part of an integrated strategy, including: Manufacturing Management; Software Quality; Reliability; Parts, Materials, and Processes; and other related disciplines. The purpose of the QAPP is to describe how the Quality Management System complies with the program's contractual requirements and how the contractor ensures products are designed and produced to meet the program's contractual requirements. The QAPP describes how contractor quality policies and procedures are implemented at the program level. The principal use of the QAPP is to provide a detailed description of the contractor's quality program to be accomplished under the contract with emphasis on the areas described below.\nThis Data Item Description (DID) is intended to be compatible with SAE AS9100, Quality Management Systems – Requirements for Aviation, Space, and Defense Organizations. The QAPP shall address how requirements from SAE AS9100 are met and implemented across the program. (Copies of this document are available online at https://www.sae.org.)\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract. The customer is encouraged to tailor this document using the DD Form 1423 to meet program needs.\nThis DID supersedes DI-QCIC-81794A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-QCIC-81794A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "https://www.sae.org",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "https://www.acquisition.gov",
+      "url": "https://www.acquisition.gov"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents. The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format. The contractor's format for the QAPP is acceptable.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content. The QAPP shall describe how the Quality Program is conducted, the specific techniques and activities to be performed, and their integration and development in conjunction with other specified related plans. The QAPP shall include the following:",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Correlation Matrix.",
+          "content": "If the contract requires an industry standard for a Quality Management System, the plan shall include a matrix which depicts the relationship between the organization's policies and procedures and the requirements of the standard.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Scope.",
+          "content": "Identify the types of products and services covered and provide justification for any requirement of SAE AS9100 that the contractor determines is not applicable to the scope of its quality management system.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Leadership.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Quality Policy.",
+              "content": "Provide the quality policy and explain how it is communicated, understood, and applied within the organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Organizational Roles, Responsibilities, and Authorities.",
+              "content": "Provide the organizational structure and responsibilities that influence the quality of the products. Identify the responsibilities and authorities for relevant roles and provide verification that they are assigned, communicated, and understood within the organization.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Planning.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Quality Objectives.",
+              "content": "Identify quality objectives at relevant functions, levels, and processes needed for the quality management system. These objectives shall be consistent with the quality policy and measurable to assure customer satisfaction. The objectives shall also be reflected in the quality metrics shared with the Government as identified in 3.7.3. Describe the organization's Operational Risk Management process.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Support.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "People.",
+              "content": "Describe the necessary quality manpower, including special skills, and the plans for acquiring competent personnel to meet program technical, schedule, and capacity needs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Monitoring and Measuring Resources.",
+              "content": "Identify the equipment needed to verify conformity of the product and services and plans for designing, acquiring, and validating program-unique equipment. Describe the calibration program and traceability to national or international measurement standards.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Control of Quality Records.",
+              "content": "Describe what quality records are kept, for how long the quality records are required to be kept, where the quality records are kept, who keeps the quality records, and in what form the quality records are kept. Provide a description of how the records are stored, retrieved, dispositioned, and how any confidentiality requirements are maintained.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Operation.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Operational Planning and Control.",
+              "content": "Provide details of the method employed to verify process controls are in place and being used during manufacturing and assembly, to include: process documentation; procedures for monitoring and controlling key characteristics; workmanship standards; use of qualified processes, equipment, and personnel; and appropriate tooling and test equipment. Describe how Critical Safety Items will be controlled. List all critical processes used and the method or plan used to control each of them. Describe the statistical techniques used to evaluate and maintain acceptable quality levels.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Prevention of Counterfeit Parts.",
+              "content": "Describe the counterfeit parts prevention strategy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Design and Development Controls.",
+              "content": "Describe the quality processes in place to monitor the design process, including design changes to correct design errors. Identify and describe the standards, practices, conventions, and metrics that are applied. Also, identify and describe how compliance to these standards is monitored and how conformance to the requirements is verified. Where key and critical characteristics are required, provide a description of the methodologies of identification and management of these characteristics to ensure product quality.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Control of Externally Provided Processes, Products, and Services.",
+              "content": "Identify all critical parts (as defined in SAE AS6500, 4.6) that will be purchased and how conformance to requirements is ensured for these parts. Depict the method used to evaluate, select, and control suppliers. Describe how quality requirements are flowed down to subcontractors, and how compliance to requirements is verified to assure quality. Describe how the organization manages external suppliers to ensure those suppliers apply appropriate quality controls to their suppliers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Control of Production and Service Provision.",
+              "content": "Describe how production process verification is performed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Property Belonging to Customers or External Providers.",
+              "content": "Describe how the Government's and external providers' property is stored, tracked, and safeguarded.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Handling, Storage, Marking, Packaging, Preservation, and Delivery.",
+              "content": "Describe the methodology used to verify that specific parts and product handling, storage, marking, packaging, preservation, and delivery requirements are met, including: maintenance, configuration, and usage of reusable containers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Control of Nonconforming Outputs.",
+              "content": "Describe the Material Review Board process, including the responsibilities and authorities for reviewing and dispositioning nonconforming outputs. Describe how the organization processes variances that require customer approval. Describe how nonconformances affecting delivered products and services to the customer are reported. Describe the processes used to comply with DFARS 252.246-7003 Notification of Potential Safety Issues (if the clause is required by contract) and FAR 52.246-26 Reporting Nonconforming Items (if the clause is required by contract). (Copies of these documents are available online at https://www.acquisition.gov.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Identification and Traceability.",
+              "content": "Describe how unique identification of outputs is controlled when traceability is a requirement and how documented information is retained to enable traceability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.10",
+              "title": "Configuration Management.",
+              "content": "Describe how the organization plans, implements, and controls the process to ensure delivery of products with approved configuration and ensures that the documented information (e.g., requirements, design, verification, validation, and acceptance documentation) is consistent with the actual attributes of the products and services.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Product Safety.",
+              "content": "Describe how the organization plans, implements, and controls processes needed to assure product safety during the product lifecycle.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Performance Evaluation.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Monitoring, Measurement, Analysis, and Evaluation.",
+              "content": "Describe the methods for inspection, testing, and product acceptance needed to ensure product conformance with design requirements. Include the integration of customer or regulatory established witness points and use of third-party verification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Customer Satisfaction.",
+              "content": "Describe how the contractor's quality and improvement processes are integrated into the Government's Product Quality Deficiency Reporting process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Analysis and Evaluation (Quality Metrics).",
+              "content": "Identify what quality metrics are collected and reported. Metrics shall be appropriate for the life cycle phase. The QAPP shall describe how these metrics are collected and how they are used to control production processes and improve quality. The QAPP shall describe how the analysis of quality metrics is documented and how corrective actions are taken as a result of quality metrics. Describe how the quality metrics address all elements of manufacturing (e.g., suppliers, receiving inspection, fabrication, special processes, rework, assembly, inspections, acceptance testing, and customer failures).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Internal Audit.",
+              "content": "Identify the nature and extent of the quality audits to be performed (e.g., internal, customer, supplier, regulatory, seller, and SAE AS9100 registration), frequency, methodology for identifying which processes are audited, how the results are used in the corrective and preventive action system, and the extent of the Government's involvement in internal quality audits.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Improvement.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Problem Reporting and Preventive and Corrective Action.",
+              "content": "Identify methods used to detect, report, track, and resolve product and process problems and trends, including both shop floor processes and non-shop floor processes and throughout the supply chain. Provide a description of how the U.S. Government will interface with this process. Outline a program to continuously improve quality based on analysis of quality data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Nonconformity and Corrective Action.",
+              "content": "Describe the process for conducting root cause analyses, implementing corrective actions, measuring corrective action effectiveness, and controlling the process long-term to ensure there is no recurrence.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Continual Improvement.",
+              "content": "Describe how the organization will monitor and continually improve the suitability, adequacy, and effectiveness of the quality management system.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-81794B.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

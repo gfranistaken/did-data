@@ -1,0 +1,1886 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)"
+  },
+  "document_number": "DI-SESS-81526D",
+  "slug": "di-sess-81526d",
+  "title": "Instructional MEDIA Package",
+  "summary": "This DID describes requirements for instructional media packages, encompassing visual, textual, and audio information essential for developing and presenting comprehensive training content, including fully integrated presentations.",
+  "approval_date": "2024-06-26",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10488",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-021",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Instructional Media Package contains visual, textual, and audio information to be used in the development and presentation of training. It also includes the fully integrated instructional media presentation package.\n\nThis Data Item Description (DID) contains the preparation instructions for the content and format of the Instructional Media Package.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the performance requirements described by 3.2.10 of MIL-PRF-29612B, and is applicable to the acquisition of training data products. Data product performance evaluation criteria is specified in 4.3.10 and 4.3.9 of MIL-PRF-29612B.\n\nIt is not intended that all the requirements contained herein be applied to every program or program phase. Any individual data requirement contained in this DID is subject to deletion tailoring.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81526C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor format is acceptable. The format of data contained within this DID is as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Standard digital data, when specified must be in compliance with the content and format requirements specified in the DoD Data Architecture (DDA) and the Defense Data Dictionary System (DDDS).",
+          "content": "The deliverable of the product required by this DID meets the intent and requirements of DODINST 5000.2.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "For Interactive Multimedia Instruction (IMI) products, government accepted industry format standards are acceptable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Still and motion audio-visual products shall conform to the product standards as set forth in the Society for Motion Picture and Television Engineers (SMPTE) standard for Television Analog Recording.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Digital audio-visual products shall comply with the Job Task Analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Sharable Content Objects (SCO) as specified by the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Instructional Media Package shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "The content of front matter shall be in accordance with Appendix A of MIL-PRF-29612B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Legal data.",
+          "content": "Legal data that relates to the production shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Music clearances and rights.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Talent releases.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Location releases.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Intellectual property rights releases.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Any type of release required for production, replication, modification, distribution, or reuse.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Audiovisual production data.",
+          "content": "This data shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Treatment.",
+              "content": "The treatment is the general plan or approach to the production. The treatment shall be based upon the learning objectives of the instructional media audiovisual production, and shall describe the individual types of scripts to be used for the production, including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "The title of the instructional media production.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "A scope of the production content or subject matter.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Intended audience.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Requirement, if any, for closed captioning.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Proposed running time.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Types of audiovisual instructional media and how they are to be used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Types of audio instructional media and how they are to be used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Identification of the instructional media as linear or interactive.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "A general description of the types of shots desired.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.10",
+                  "title": "Existing audiovisual materials to be used including titles, control numbers, reel numbers, and SMPTE time codes.",
+                  "content": "Time code shall conform to the SMPTE standard for Television, Audio and Film - Time and Control Code.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.11",
+                  "title": "Identification of digital instructional materials used as file names or file format (e.g., Joint Photographic Experts Group (JPEG), Portable Document Format (PDF), etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.12",
+                  "title": "A description of how the production will satisfy each learning objective.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.13",
+                  "title": "An initial outline of an IMI (which includes, but not limited to: Interactive Courseware (ICW), Computer Aided Instruction (CAI), Computer-based Training (CBT) Web-based Training (WBT)) unit of instruction, including an initial flow chart depicting major branching design.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Scripts.",
+              "content": "This data shall include each scene or frame showing description, talent, props, audio, narration, sound effects, camera angle, image size, and shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Audio-visual script.",
+                  "content": "This data shall include the following data:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.1.1",
+                      "title": "Title and identification number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.2",
+                      "title": "Scene number, cross-referenced to script and storyboard.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.3",
+                      "title": "Scene description (including, when required, location, sets, talent, wardrobe, properties, stage directions, special effects, graphics and animation or art, and camera directions).",
+                      "content": "Indicate whether the scene has sound or is silent.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.4",
+                      "title": "Description of scenes to be shot shall identify the visual displayed still, motion, and sequence.",
+                      "content": "This description shall identify the primary and secondary subjects in separate and split screen video. Character generations to be mixed with the video and simulation sequence number for each shot in the order that the video will be presented shall also be identified.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.5",
+                      "title": "A description of special effects (e.g., animation, overlays, inserts, highlight, digitized video, computer generated video graphics, and animation).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.6",
+                      "title": "A description of words or text displayed in a visual.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.7",
+                      "title": "A description of character generator text and description.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.8",
+                      "title": "A description of any simulation attributes used in the video.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.9",
+                      "title": "A description of camera directions to include:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.2.1.9.1",
+                          "title": "Type of shot.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.9.2",
+                          "title": "Camera movement.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.9.3",
+                          "title": "Visual angle.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.9.4",
+                          "title": "Special equipment required (e.g., dollies, sound booms, special lenses, smoke generators).",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.2.1.10",
+                      "title": "A description of the type of scene transition.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.11",
+                      "title": "A description of the audio portion of the audiovisual script shall include the following:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.2.1.11.1",
+                          "title": "Details and suggested relationships to enhance the visual message.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.11.2",
+                          "title": "Identification of silence breaks on edits.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.11.3",
+                          "title": "A description of on or off camera, narration, music, and sound effects.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.2.1.12",
+                      "title": "A description of existing audio-visual materials to be used including titles, control numbers, reel numbers, and SMPTE time codes.",
+                      "content": "Time codes shall conform to the SMPTE standard for Television, Audio and Film - Time and Control Code. Include special requirements and conditions that must exist for the correct shot presentation (e.g., equipment switch configurations, specific operational conditions).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.13",
+                      "title": "A description of digital instructional materials used as file names or file format (e.g., JPEG, PDF).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.14",
+                      "title": "Additional comments and directions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Audio only scripts.",
+                  "content": "This data shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.2.1",
+                      "title": "The directions necessary for production of the audio only instructional material.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.2",
+                      "title": "A description of the contents of the program (e.g., which can include words of narration, character treatment, music, sound effects, pauses or stops).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.3",
+                      "title": "The audio script title, classification, listening requirements, preparing and procuring activity, and date produced.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Storyboards.",
+              "content": "This data shall be provided to represent each scene within the script.(Storyboards are rough sketches of the way each scene or shot will appear in the final production, and provide guidance for positioning talent, properties, and camera.) The storyboard shall include the following data:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Visual representation (e.g., artwork, photography, line drawing, camera angle, stage direction, special effects, editing transitions, graphics and animation, text, lighting).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Audio requirements (e.g., narration, dialogue, sound effects, music, ambient sound, talent direction).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Scene numbers which are consistent with the script.",
+                  "content": "Each storyboard shall be cross-referenced to the specific action point in the applicable flow diagrams it supports.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "Support material relationship which identifies and cross-references any shared or related course material and courses.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "Additional storyboard data required for IMI products as follows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.5.1",
+                      "title": "Detailed computer programming instructions for interaction, branching and courseware performance.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.2",
+                      "title": "Description of shot shall identify the visual displayed still, motion, and sequence.",
+                      "content": "The description shall identify the primary and additional subjects in separate and split screen video. Character generations to be mixed with the video shall also be identified. Provide simulation sequence number for each shot in the order that the video will be presented.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.3",
+                      "title": "Special effects (e.g., animation, overlays, inserts, highlight, digitized video, computer generated video graphics, and animation).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.4",
+                      "title": "Editing transition and type (e.g., wipe, dissolve, fade to black, fade from black).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.5",
+                      "title": "Words or text displayed in a visual.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.6",
+                      "title": "Character generator text and description.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.7",
+                      "title": "SMPTE time code shall identify the actual location of the shot on the premaster video using SMPTE time code.",
+                      "content": "(This data can be added to the storyboard during or after the video production requirement.)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.8",
+                      "title": "Linear play, start and stop frame in SMPTE time code.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.9",
+                      "title": "Resource video used.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.10",
+                      "title": "Description of resource video used shall describe special requirements and conditions that must exist for the correct shot presentation (e.g., equipment switch configurations, specific operational conditions).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.11",
+                      "title": "A description of any simulation attributes used in the video.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.12",
+                      "title": "Test item data shall include the following:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.3.5.12.1",
+                          "title": "Test item stem text.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.5.12.2",
+                          "title": "Test item distractors.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.5.12.3",
+                          "title": "A description of student feedback.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.5.12.4",
+                          "title": "A description of student remediation.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.5.12.5",
+                          "title": "A description of Course Management System (CMS) capability.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.5.12.6",
+                          "title": "A description of Learning Management System (LMS) capability.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.3.5.13",
+                      "title": "Additional comments and directions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Audio scene data.",
+              "content": "This data shall identify and describe the audio requirements for each scene as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Audio track and channels (default for monaural productions is audio channel 1 (left channel)).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Second language used and dedicated audio track.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Compressed or still frame audio used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "Music cuts.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.5",
+                  "title": "Ambient sound.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.6",
+                  "title": "Signature characteristics and sound effects used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.7",
+                  "title": "Narrative dialogue.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.8",
+                  "title": "Sampling rates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Audio-visual production plan.",
+              "content": "This data shall provide information for the coordination required for video production as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Equipment resources needed, including Government-Furnished Property (GFP), Government-Furnished Information (GFI), and GovernmentFurnished Equipment (GFE).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "Video shot list.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.5.2.1",
+                      "title": "Shot sequence order of motion and still frame shots.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.5.2.2",
+                      "title": "Schedule listing availability of times to shoot.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.5.3",
+                  "title": "A milestone chart of important production dates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.6",
+              "title": "Prototype audiovisual.",
+              "content": "This data shall be assembled from audiovisual footage or computer-generated audio and video files in accordance with the treatment and related scripts and shall demonstrate how the treatment and related scripts are used to produce the required audiovisual materials.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Edit Decision List (EDL).",
+              "content": "The EDL shall provide information on assembly of the first cut or master audiovisual by the audiovisual editor after completion of audiovisual edits. The EDL shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.7.1",
+                  "title": "Approved script number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.2",
+                  "title": "Edit sequence number that identifies the order in which the edits were performed, determined by edit sequence on the premaster or master video.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.3",
+                  "title": "Video resource reel number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.4",
+                  "title": "Resource video SMPTE time codes for start and end of each scene.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.5",
+                  "title": "Each video edit description shall include digital data frame edits, and beginning and ending SMPTE time codes.",
+                  "content": "Time code shall conform to the SMPTE standard for Television, Audio and Film - Time and Control Code.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.6",
+                  "title": "Audio instructions on the video EDL shall be broken down by track, and shall include location by track number, start and stop time, and scene.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.8",
+              "title": "Original video material.",
+              "content": "Shall include all original footage recorded and all computer-generated video files.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "Adjunctive material.",
+              "content": "Adjunctive material shall provide data that enhances and provides additional support to training that cannot be provided by the primary media.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.10",
+              "title": "Program media.",
+              "content": "Program media shall consist of all materials (e.g., software, firmware) necessary to execute the training system.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "IMI directions.",
+          "content": "This data shall include the required information and directions for the director, programmer, and instructional designer which will be presented by the content media. (Not required for audiovisual productions.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Programming requirements for graphics and animation.",
+          "content": "This data shall identify and describe the programming requirements for graphics and animation, and shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Type of input and output devices (e.g., joystick, light pen, mouse, touch panel, graphics and animation tablet, keyboard, optical digitizer, trackball, bar code reader, printer).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Frame number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Frame type with required logic.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.3.1",
+                  "title": "Alphanumeric in visuals.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.2",
+                  "title": "Graphics used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.3",
+                  "title": "Animation used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.4",
+                  "title": "Background colors to include color register number, and the font, size and color of text.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.4",
+              "title": "Visual angle of information presented.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Composite of visual display.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Program flow.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Display flow/sequence.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Software application and version number used to develop the original media file.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Additional comments and directions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Instructional media data files.",
+          "content": "The instructional media data files contain the design, development and programming data, and adjunctive materials required to maintain instructional media and provide life cycle support for the training system. This data shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Instructional media generation programs and files.",
+              "content": "This data shall consist of the application software programs used to design, develop, run and maintain the electronic programs. The generation programs are required to update design and development documentation and the course over its life cycle. The generation programs shall consist of the application software package and associated user documentation, and shall be provided in the exact version(s) used to produce the instructional media. The following instructional media programs and files shall be provided:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Flow diagram generation program.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Script storyboard generation program.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Instructional media authoring language.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Instructional media authoring system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.5",
+                  "title": "Instructional generation, video management, and manipulation programs to include:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.1.5.1",
+                      "title": "Media graphics.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.5.2",
+                      "title": "Animation generation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.5.3",
+                      "title": "Video management.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.5.4",
+                      "title": "Video manipulation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.5.5",
+                      "title": "Audio development programs.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.1.6",
+                  "title": "Provide an explanation of the set-up routine and installation files to include the set-up parameters.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.7",
+                  "title": "Provide an index or listing of all files, by topic, contained on Compact Disk-Read Only Memory (CD-ROM) or other storage medium.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.8",
+                  "title": "Uninstall program.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Courseware data files.",
+              "content": "This data shall contain all courseware content and structure data files generated and produced using the Government provided or approved authoring language/system, and data files produced using instructional media support software. The files shall be in order and format structure compatible with the development package. Data files shall reflect debugging corrections and shall run unmodified on specified media delivery system(s) with run-time programs. The data files shall include the following data:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "The data files which contain:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.2.1.1",
+                      "title": "Lesson text displays and overlays.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.1.2",
+                      "title": "Graphics and animation displays and overlays.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.1.3",
+                      "title": "Video displays, both motion and still.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.1.4",
+                      "title": "Audio tracks.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.1.5",
+                      "title": "Still frame audio.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "The data files which control:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.2.2.1",
+                      "title": "Lesson text displays and overlays.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.2.2",
+                      "title": "Graphics and animation displays and overlays.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.2.3",
+                      "title": "Video displays, both motion and still.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.2.4",
+                      "title": "Audio tracks.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.2.5",
+                      "title": "Still frame audio.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "The data files which control Electronic Performance Support System (EPSS) functions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Lesson logic data files.",
+              "content": "This data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Logic data files which define:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.3.1.1",
+                      "title": "Trainee performance requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.2",
+                      "title": "Trainee response requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.3",
+                      "title": "Criteria for altering the lesson presentation based upon trainee performance and response evaluation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "Logic data files which control:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.3.2.1",
+                      "title": "Sequence in which screens are displayed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.2.2",
+                      "title": "Sequence or pace of lesson presentation based upon trainee performance and response evaluation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "Logic data files which contain:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.3.3.1",
+                      "title": "Scoring and evaluation criteria for trainee responses and performance.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.3.2",
+                      "title": "CMS and LMS trainee identification performance and response records to include:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.6.3.3.2.1",
+                          "title": "The maximum score or total number that the student could have achieved.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.2",
+                          "title": "The minimum score the student could have achieved.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.3",
+                          "title": "The passing score as determined outside the lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.4",
+                          "title": "Indication of when the comment is made.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.5",
+                          "title": "Indication of when the student entered the lesson segment.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.6",
+                          "title": "Amount of time the student is allowed to have in the current attempt of the lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.7",
+                          "title": "An indication of how or why the student left the lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.8",
+                          "title": "The reason a student departed an element in the lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.9",
+                          "title": "Judgment of the student's response.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.10",
+                          "title": "Identifies if the student's comments on a lesson can be collected and made available by the LMS in a separate file.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.11",
+                          "title": "Indication of whether the student has been in the lesson before.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.12",
+                          "title": "How long the student spent in the element.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.13",
+                          "title": "Number of times the student has been in or previously used the lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.14",
+                          "title": "Identification of student-related information that may be used to change the behavior of the lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.15",
+                          "title": "Indicates suitability of preferences to current lesson.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.16",
+                          "title": "Pace of content delivery.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.17",
+                          "title": "Indication of when the interaction is available to the student.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.18",
+                          "title": "What the lesson is to do when the maximum time allowed is exceeded.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.19",
+                          "title": "Data related to each try.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.20",
+                          "title": "Indication of which category of interaction is recorded.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.3.3.2.21",
+                          "title": "How the system judges the described response.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Portability commands.",
+              "content": "A list of commands and interface mechanisms used to ensure portability shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Developmental source material.",
+              "content": "Development source materials are those design and development materials which contain information necessary for future updates to the courseware and design and development documents. This data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.5.1",
+                  "title": "The uncompiled source code and object code of each support software routine.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.2",
+                  "title": "A description of each routine's purpose and function.",
+                  "content": "The description shall include applicable command sets and variables.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.3",
+                  "title": "Complete instructions for using and changing each routine.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.4",
+                  "title": "Identification of the computer language used to develop support software shall include the specific release version and manufacturer of the language compiler.",
+                  "content": "When more than one language is used, identification information shall be provided for each.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.5",
+                  "title": "A reference matrix of support software routines to course modules/lessons where the routine is used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.6",
+                  "title": "A reference matrix that identifies hyperlinks within and among courseware files.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.7",
+                  "title": "A definition of each term, acronym, abbreviation, mnemonic, and symbol used within design and development documents, plans, and training program materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.8",
+                  "title": "The identification of all delivery devices which are capable of running the delivered courseware version(s).",
+                  "content": "The list shall identify the specific device configuration and capabilities required for the courseware version. The applicable configuration list shall include a description of the delivery system functions relative to the operational system, environment, and transportability of each module and lesson.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.9",
+                  "title": "A complete listing of publications, technical data, and other reference materials used and required to design, develop, and use the courseware.",
+                  "content": "The references shall be listed alphanumerically and include the exact publication dates and versions/editions of the basic document and all incorporated changes. Listed references shall be cross-referenced to the applicable courses, modules, and lessons.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.10",
+                  "title": "The identification of sources where technical assistance can be obtained for design and development issues.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.11",
+                  "title": "Software licensing and fee requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.6",
+              "title": "Transportability and maintainability data.",
+              "content": "This data contains information necessary for running files that have been compressed, and other unique characteristics necessary for operating, configuration management, and life cycle maintenance of courseware. This data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.6.1",
+                  "title": "A summary description of the compressed file.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.2",
+                  "title": "Type of target computer required.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.3",
+                  "title": "Target computer operating system required.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.4",
+                  "title": "Target computer video driver requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.5",
+                  "title": "Video driver installation description.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.6",
+                  "title": "Video driver uninstall description.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.7",
+                  "title": "Type of video compression (e.g., Audio Visual Interleave (AVI), Motion Joint Photographic Experts Group (MJPEG), Motion Pictures Expert Group (MPEG)).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.8",
+                  "title": "Description of video color palette impact.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.9",
+                  "title": "Video color palette file name.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.10",
+                  "title": "Video compression codex (e.g., Indeo, Cinpac).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.11",
+                  "title": "Video file data as follows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.11.1",
+                      "title": "File name.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.11.2",
+                      "title": "File size.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.11.3",
+                      "title": "Length of clip.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.11.4",
+                      "title": "Frames per second.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.11.5",
+                      "title": "Interleaf ratio.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.11.6",
+                      "title": "Window size.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.6.12",
+                  "title": "Internet, intranet, and extranet delivery requirements as follows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.12.1",
+                      "title": "Special browser requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.12.2",
+                      "title": "Browser limitations.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.12.3",
+                      "title": "Video viewer requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.12.4",
+                      "title": "Plug-in requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.12.5",
+                      "title": "Source code requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.12.6",
+                      "title": "Audio player requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.6.13",
+                  "title": "Audio data as follows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.13.1",
+                      "title": "Bit depth.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.13.2",
+                      "title": "Sampling rate.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.13.3",
+                      "title": "Type (e.g., stereo, mono).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.6.14",
+                  "title": "Animation file data as follows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.14.1",
+                      "title": "A summary description of the animation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.2",
+                      "title": "Caption.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.3",
+                      "title": "Font.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.4",
+                      "title": "Special effects.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.5",
+                      "title": "Source animation file name.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.6",
+                      "title": "Animation type.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.7",
+                      "title": "Type of beginning and ending transitions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.14.8",
+                      "title": "Restrictions on use.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.6.15",
+                  "title": "Graphics file data as follows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.15.1",
+                      "title": "A summary description of the graphic.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.15.2",
+                      "title": "File name.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.15.3",
+                      "title": "Type of file (e.g., Tag Image File Format (TIFF), JPEG, Graphics Interface Format (GIF), Bit Map (BMP)).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.15.4",
+                      "title": "Archive file type (e.g., native drawing format).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.15.5",
+                      "title": "Caption.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.15.6",
+                      "title": "Restrictions on use.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.6.16",
+                  "title": "Courseware flow chart.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Advanced Distributed Learning (ADL) requirements.",
+          "content": "Requirements for ADL shall support accessibility, interoperability, durability, reusability, adaptability, and affordability of courseware content.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Courseware interoperability.",
+              "content": "Training materials interoperability data shall provide information concerning the capability of training materials to be used in a variety of training management systems as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.1.1",
+                  "title": "SCO data that identifies the following:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.1.1.1",
+                      "title": "Electronic broadcast and transmission specifications applied.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.1.1.2",
+                      "title": "Metadata tags that will support courseware object interoperability across platforms and systems, reusability, and Internet protocol compatibility.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.7.1.2",
+                  "title": "A listing of CSF hierarchy, sub-structure, sequencing, global properties, assignable units, external references, and metadata tagging conventions and values that supports the capability for operating the course using a specific LMS.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.2",
+              "title": "Training portal infrastructure support.",
+              "content": "This data shall provide software required for administrators, developers, instructors, and students in an ADL environment to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.2.1",
+                  "title": "An LMS (i.e., the primary interface for administrative functions of the training site).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.2",
+                  "title": "A CMS (i.e., enables the direct interaction between the student and the courseware and is the presentation interface for the course).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.3",
+                  "title": "Courseware development/authoring tools (i.e., provides a means for developing course content and maintaining that content).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.4",
+                  "title": "Communication tools (i.e., used to enable instructor-to-student and student-to-student interaction (in both synchronous and asynchronous modes)).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.5",
+                  "title": "Resource references (i.e., links to library and reference sources).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.6",
+                  "title": "A description of hardware requirements and specifications required to operate the training portal infrastructure support software.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Standard digital data.",
+          "content": "Standard digital data shall be delivered for the Standard Data Elements (SDEs).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81526D.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

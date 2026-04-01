@@ -1,0 +1,60 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats — DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them — set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SDMP-81493A",
+  "slug": "di-sdmp-81493a",
+  "title": "Program-Unique Specification Documents",
+  "summary": "This Data Item Description provides instructions for preparing program-unique specification documents, outlining functional and performance requirements, design solutions, and compliance criteria for systems, items, and software in accordance with MIL-STD-961.",
+  "approval_date": "2003-08-01",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "D7503",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "OSD-SO",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "A program-unique specification will be used to specify functional and performance requirements and, where applicable, design solutions for systems, items, software, processes, and materials developed and manufactured for use with a single system, product, or application. Requirements are stated, as applicable, in terms of required results, the environment in which it must operate, interface, and interchange characteristics; materials to be used; how the item is to be fabricated or constructed; and criteria for verifying compliance. Program-unique specification documents are intended for reference in contracts.",
+  "description_purpose": "This Data Item Description (DID) contains the content and format preparation instructions for program-unique specification documents, and for revisions thereto, described in MIL-STD-961.",
+  "application_interrelationship": "This DID should not be invoked for items used in multiple systems, products, or applications. In multiple application cases, specification documents should be prepared in accordance with DI-SDMP-81464A and DI-SDMP-81465A. System specifications should not be prepared in accordance with this DID if DI-IPSC-81431A is included in the Contract Data Requirements List (CDRL). Software specifications should not be prepared in accordance with this DID if DI-IPSC-81433A, DI-IPSC-81434A, and DI-IPSC-81441A are included in the CDRL.",
+  "supersedes": [
+    "DI-SDMP-81493"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format and content.",
+      "content": "Format and content for program-unique specification documents, and revisions to program-unique specification documents, shall be in accordance with paragraphs 4.1 through 5.14 of MIL-STD-961.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SDMP-81493.pdf",
+    "extraction_date": "2026-04-01",
+    "extraction_method": "ai_studio_manual_validated"
+  }
+}

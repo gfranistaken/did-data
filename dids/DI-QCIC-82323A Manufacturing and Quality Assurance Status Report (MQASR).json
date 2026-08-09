@@ -1,0 +1,101 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-82323A",
+  "slug": "di-qcic-82323a",
+  "title": "Manufacturing and Quality Assurance Status Report (MQASR)",
+  "summary": "Provides the Government with the information needed to monitor the status of manufacturing development and production activities, supplier management, and quality performance.",
+  "approval_date": "2025-05-01",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10559",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSM)",
+  "project_number": "QCIC-2025-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Manufacturing and Quality Assurance Status Report (MQASR) provides the Government with the information needed to monitor the status of manufacturing development and production activities, supplier management, and quality performance.\na. This DID contains an extensive list of metrics that may not be applicable to every contract. The customer is encouraged to tailor this document using the DD Form 1423 to meet program needs.\nb. This DID is intended to obtain metrics from the prime contractor. If the customer desires to obtain any of these metrics from suppliers, the customer must include specific supplier requirements in the contract and DD Form 1423.\nc. This Data Item Description contains the format, content, and intended use information for the data deliverable resulting from the work tasks described in the solicitation.\nd. This DID supersedes DI-QCIC-82323.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-QCIC-82323"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of SAE AS6500, Manufacturing Management Program, are available online at",
+      "url": "https://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor's format for the MQASR is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The MQASR shall include factory performance metrics to monitor the effectiveness of the contractor's manufacturing, quality, and supplier management programs, including the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Manufacturing Development Activities.",
+          "content": "Include a comparison of completed activities to manufacturing schedule need dates. For behind schedule conditions, discuss reasons for delays, impacts to manufacturing schedules, and corrective actions. Information from manufacturing development activities shall address the following:\na. Design releases, which shall include a schedule of design releases compared to actual design releases.\nb. Tooling designs, fabrication, and qualifications, which shall include scheduled completions compared to actual completions.\nc. Test equipment designs, fabrication, and qualifications, which shall include scheduled completions compared to actual completions.\nd. Functional and Acceptance Test Procedure development, which shall include scheduled completions compared to actual completions.\ne. Work instructions and planning packages, which shall include scheduled completions compared to actual completions.\nf. Facility start-up activities (including movement of manufacturing operations to a different building), which shall include schedule status.\ng. Manufacturing and Quality Manpower, which shall include status of obtaining needed manpower, by skills or career field.\nh. Status / burndown of action items from Manufacturing and Quality reviews, including status of Manufacturing Maturity Plans from Manufacturing Readiness Level Assessments.\ni. Design change traffic (number of design changes over time), including major and minor design changes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Manufacturing Production Activities.",
+          "content": "Information from manufacturing production activities shall address the following:\na. Line of Balance: Manufacturing schedule performance for fabrication, assembly, and checkout, which shall include planned and actual delivery dates for each major work area, by unit, if appropriate. For behind schedule conditions, discuss reasons for delays, impacts to manufacturing schedules (including the critical path, which is defined as the sequence of activities that represents the longest path through a project which determines the shortest possible duration), and corrective actions.\nb. Traveled and Out of Station Work, which shall include the amount of work, in planned hours, that is not completed at the planned station (or supplier) and must be accomplished later in the production line. Data shall include which station (or supplier) should have accomplished the work per the plan, the number of hours traveled from that station, and the station to which the work was moved.\nc. Cycle Time vs Takt Time for each major work station, which shall include the actual cycle time compared to planned Takt Time, which is defined as the available production time divided by customer demand. Include the available capacity for each work center.\nd. Manufacturing and Quality manpower status, including planned vs. actual headcounts and skills and planned vs actual critical certifications.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Supplier Management.",
+          "content": "For behind schedule conditions, discuss reasons for delays, impacts to manufacturing schedules, and corrective actions. Information from supplier management shall address the following:\na. Purchase order releases compared to need dates.\nb. Supplier schedule delivery performance for major and critical suppliers (as defined by SAE AS6500, Manufacturing Management Program, section 4). (Copies of this document are available online at https://www.sae.org.)\nc. Supplier quality performance for major and critical suppliers.\nd. Planned schedules and actual deliveries of long lead items.\ne. Production line shortages, by supplier.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Quality Assurance.",
+          "content": "Information from Quality Assurance shall address the following:\na. Waivers, Deviations, and Variances: Include brief descriptions of waivers, deviations, and variances submitted to the customer for approval during the reporting period, which shall include a brief description of anticipated corrective actions for each.\nb. Material Review Board (MRB) Actions and Dispositions: The number of defects per unit or work area per reporting period (as appropriate). The numbers and types (e.g., rework, repair, scrap, return to vendor, use-as-is, etc.) of MRB dispositions for minor and major non-conformances per month.\nc. Process Yields: First pass yields (planned vs actual) for functional and acceptance tests.\nd. Process Capabilities: For critical manufacturing processes (as defined by SAE AS6500, section 4), include the process capability status, including the number of processes that fall into each category: insufficient data, not stable, stable but not capable (Cpk <1.0), minimally capable (Cpk 1.0 - 1.33), and capable (Cpk > 1.33) (where the process capability index [Cpk] is defined as a statistical measure of the ability of a process to produce output within the defined limits).\ne. Scrap, Rework, and Repair (SRR): Rework and repair hours and SRR cost as a percentage of touch labor, per major cost center.\nf. Foreign Object Damage (FOD) Prevention: Number of FOD findings sorted by where they were discovered in the manufacturing process, and, if known, where they originated. Include a description of corrective actions.\ng. Internal and External Escapes: Number of defect escapes occurring internally from station-to-station and externally to the end customer.\nh. First Article Inspections: Planned vs completed for prime contractors and suppliers.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DIQCIC82323.pdf",
+    "extraction_date": "2026-08-09",
+    "extraction_method": "claude_cowork"
+  }
+}

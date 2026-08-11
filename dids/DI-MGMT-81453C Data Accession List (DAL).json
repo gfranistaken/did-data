@@ -1,0 +1,103 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats - DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them - set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81453C",
+  "slug": "di-mgmt-81453c",
+  "title": "Data Accession List (DAL)",
+  "summary": "The Data Accession List identifies all data the contractor and its subcontractors generated performing the contract, which the Government may later order for delivery via the Deferred Ordering clause.",
+  "approval_date": "2024-07-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10495",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSC)",
+  "project_number": "MGMT-2024-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Data Accession List (DAL) shall identify all data (technical data, computer software, computer software documentation, contract administration information) the contractor and all its subcontractors generated in the performance of the contract or any subcontract at any tier issued under that contract. The DAL does not list data the contract requires the contractor to deliver in accordance with any other Contract Data Requirements List (CDRL). The DAL is not a requirement to deliver any of the data so listed. The Government can order data listed on the DAL via the Deferred Ordering clause (DFARS 252.227-7027) or as otherwise described in the contract.\na. This data item description (DID) is not a substitute for requiring delivery of data the Government knows it needs prior to award, as the Government shall require delivery of such data via CDRLs other than the DAL.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nc. This DID supersedes DI-MGMT-81453B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81453B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The DAL shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The DAL shall list all data (technical data, computer software, computer software documentation, contract administration information) the contractor and all its subcontractors at any tier developed or generated in the performance of the contract or any subcontract issued under that contract. The term \"developed\" is defined in the DFARS. The term \"generated\" shall be interpreted broadly.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The DAL shall include a title page, or equivalent, containing document identification information, for example: contract number, Contract Data Requirements List (CDRL) item number and title of the DAL, issue/revision, date, and data markings.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The list shall include the identification number of each item of data listed therein, its title which shall accurately and completely summarize its content, its security classification, its revision level, and its release date.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The list shall also identify the Government's Rights (in accordance with DFARS subparts 227.71 and 227.72, and their corresponding clauses) to the data using the following codes.",
+          "content": "If different portions of items, components, or processes (for technical data) or software subroutines that perform a specific function (for computer software), are subject to different Government Rights, the applicable level of rights shall be identified for each portion.\n\nUR - Unlimited Rights (in technical data, computer software, and computer software documentation - other than commercial products and commercial services).\n\nUR(C) - Unrestricted Rights (in technical data pertaining to commercial products and commercial services).\n\nGPR - Government Purpose Rights (in technical data, computer software, and computer software documentation - other than commercial products and commercial services).\n\nLR - Limited Rights (in technical data pertaining to other than commercial products and commercial services).\n\nRR - Restricted Rights (in computer software pertaining to other than commercial products and commercial services).\n\nOURCLR - Other than Unrestricted Rights to technical data pertaining to commercial products and commercial services.\n\nCSLR - Commercial Software License Rights for commercial computer software and commercial computer software documentation.\n\nSNLR - Specifically Negotiated License Rights.\n\nSBIR/STTR - Technical data and computer software developed or generated in the performance of a Small Business Innovative Research (SBIR)/Small Business Technology Transfer (STTR) award.\n\nOTHER - The Government's Rights are not reasonably characterized by any other Government's Rights code. This Government's Rights code may only be used with the written permission of the contracting officer.\n\nUND - Undetermined. Further research is necessary to determine the Government's Rights code. This Government's Rights code may only be used with the written permission of the contracting officer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Once data is listed on the DAL, the Government may order the contractor to deliver that data in accordance with DFARS 252.227-7027 or as otherwise described in the contract.",
+          "content": "Failure to list a data item in accordance with this DAL shall not excuse the contractor from the obligation to deliver data in accordance with DFARS 252.227-7027 or other requirement in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Listing data on a DAL does not constitute an identification or assertion of use, release, or disclosure restrictions (data rights assertion).",
+          "content": "Acceptance of a DAL does not constitute Government agreement with any Government's Rights code or the commercial nature of any product or service.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81453C.pdf",
+    "extraction_date": "2026-08-11",
+    "extraction_method": "claude_cowork"
+  }
+}

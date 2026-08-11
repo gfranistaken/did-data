@@ -1,0 +1,379 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81501A",
+  "slug": "di-mgmt-81501a",
+  "title": "Weight and Balance Report for Aircraft",
+  "summary": "The Weight and Balance Report for Aircraft provides up-to-date information required to maintain cognizance of deleterious trends, supports engineering activities, and provides safety of flight information regarding aircraft weight, balance, and inertia properties.",
+  "approval_date": "2007-09-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9014",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11 (ASC/ENFS)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Weight and Balance Report for Aircraft provides up-to-date information required to maintain cognizance of deleterious trends which may require program office action, provide data for use by various engineering activities, and provide safety of flight information to the field. Aircraft weight, balance, and inertia properties officially affect system performance.\na. This Data Item Description (DID) interrelates with DI-MGMT-81452, Mass Properties Control and Management Process Report; DI-MGMT-81504, Inertia Report for Aircraft; DI-MGMT-81503, Post-Design Weight Analysis Report; and DI-MGMT-81502, Sample Chart A and Chart E Report for Aircraft.\nb. This DID contains the format, content and intended use information for the data deliverable resulting from the work task described in the contract.\nc. DI-MGMT-81501A supersedes DI-MGMT-81501.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81501"
+  ],
+  "related_dids": [
+    "DI-MGMT-81452",
+    "DI-MGMT-81504",
+    "DI-MGMT-81503",
+    "DI-MGMT-81502"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The format shall be The Society of Allied Weight Engineers (SAWE) Recommended Practice number 8 (RP-8), Weight and Balance Data Reporting for Aircraft.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "Depending on project phase, the following weight and balance information shall be included: a. Estimated b. Calculated c. Status d. Actual",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The following shall be included in the report (except for status updates).",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, aircraft designation, acquiring activity, and contract identification or serial numbers, as appropriate, of the aircraft for which the data in the report is considered to be representative.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "A table summarizing the weight, center of gravity (c.g.), and moments of inertia for weight empty, maximum gross weight, structural design weights, most forward, most aft, and all weight conditions covered in the design mission description and specification. Dimensional data suitably illustrated, locating the longitudinal, vertical, lateral, and radii of gyration axes, and mean aerodynamic chord (MAC) or main rotor centerline. The recommended c.g. limits shall be provided.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Group Weight Statement.",
+              "content": "The useful load page shall detail the summary values in b. above.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Detail Weight Statement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Material breakdown by weight group for Structure Weight and Airframe Unit Weight.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Longitude, vertical, and lateral balance calculations for values in b. above.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "List of government supplied equipment in weight empty and associated weight.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Wetted areas of fuselage, wings, empennage, and all external items included in takeoff configurations (pylons, tanks, and weapons).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Volumes of the fuselage, wings, empennage, and all external items included in mission takeoff configurations.",
+              "content": "The volumes shall be calculated with flaps, gears, and air brakes retracted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Scalable dimensional three-view drawings locating and identifying the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.10.1",
+                  "title": "The major dimensional data including major structural stations of the wing, rotor, tails, fuselage, alighting gear, nacelles, and inlets.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.2",
+                  "title": "Reference data for longitudinal, lateral, and vertical moment arms and Mean Aerodynamic Chord (MAC).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.3",
+                  "title": "Major structural members, cutouts, control surfaces, and other structural features.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.4",
+                  "title": "Major items of equipment, fuel, or propellant",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.5",
+                  "title": "Types of construction and materials used in each major structural component section and tank.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.11",
+              "title": "Outline sketch of the main propulsion power transmission system showing gearboxes, shafting, rated horsepower, and torque reduction ratio.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Schematic diagram for major subsystems.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Center of gravity (c.g.) diagrams showing plots of weight vs. c.g. for all specification missions, most forward loadings, and most aft loadings.",
+              "content": "Label all applicable limits.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Oil and unusable fuel data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "Derivation of the moment change owing to retracting the alighting gear.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "Tip back calculations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "The following additional data are required on actual weight reports:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Weight empty weighting form.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "A detailed list of items, weights, arms, and moments to be added to or subtracted from the as-weighed condition to arrive at the weight empty.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "All weight and balance calculations for the final Estimated or Calculated Weight Report, corrected to agree with the actual weight and c.g. data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "A tabulation of specified and actual weights of all Government Furnished Aerospace Equipment (GFAE) included in the weight empty, based on weighing of the items prior to installation, and determination of the net underweight or overweight of this equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Tabulations of authorized and pending changes included in the reported weight empty and useful load, the weights, and the groups to which the weights are allocated and associated engineering change proposals (ECPs) or corresponding numbers.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "A tabulation deriving the contractor responsibility for weight empty under or overweight, as follows:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.6.1",
+                  "title": "The original weight empty guarantee or specification weight empty.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.2",
+                  "title": "The weight empty increases or decreases owing to the weights of authorized changes, pending changes, and the net underweight or overweight of GFAE.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.3",
+                  "title": "The aircraft actual weight empty.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.4",
+                  "title": "The contractor responsible weight.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.7",
+              "title": "Oil, unusable fuel, drainable fuel, and trapped fuel weight and c.g. data including description of how values were determined.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Brief summary of internal loads and points of load concentration.",
+              "content": "If information is presented by drawings, it is desired, but is not necessary, that the cross-section of the related structure be included. Reduced size drawings and copies are acceptable. These data are required on first and last aircraft only.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "The following shall be included in Status Updates.",
+          "content": "Reports reflect the changes from the previous weight report (estimated, status, or calculated) as the design and fabrication proceeds. As individual components become defined, the status reports shall represent a mixture of estimated, calculated, and actual weight. Each report shall represent the status as determined by the contractor's weight control records at the end of the reporting period noted by the date on the form. The report shall include separate sections listing all possible and planned changes not yet included in the weight control records. Additional data will be required by the acquiring activity if weight or c.g. are considered to show an undesirable trend. The following general instructions shall apply:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The values in the original specification or the original guarantee column shall be the same as in the original specification or approved Estimated Weight Report and shall not be changed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "The initial issues of the status report shall include reference to the source or the recommended c.g. limits, brief indication of the critical flying qualities or structural considerations which dictated these limits, and reasons for any tapered or special c.g. restrictions.",
+              "content": "Similar data shall be furnished whenever limits are revised.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "A brief discussion of each major government responsible weight change.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "A brief discussion describing the reason for each major contractor responsibility weight variation and c.g. shift, including any remedial measures being investigated or applied.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "At the times when the current weight status and c.g. are brought into agreement with the Calculated Weight Report or the results of the actual weighing of the completed aircraft, appropriate note to this effect shall be made and the calculated or actual weight report shall be referenced by number, date, and title.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "During the flight test phase, if changes in the current weight status in a status report period are less than 0.25 percent of the weight empty and the weight empty c.g. shift is less than 0.5 percent MAC for aircraft or 2 percent of allowable c.g. range for rotor craft, the status report for that period may be omitted and the acquiring activity notified by letter.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "If a major modification is to be incorporated in one or a group of aircraft on the contract, information on the weight and c.g. status of the modified aircraft shall be included as an appendix to the status report.",
+              "content": "Status information furnished may be in the form of differences over the basic model and shall continue as a separate report, if necessary, until the modified aircraft is delivered to the acquiring activity.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81501A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

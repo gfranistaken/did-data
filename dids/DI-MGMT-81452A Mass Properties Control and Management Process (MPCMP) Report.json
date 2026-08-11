@@ -1,0 +1,96 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81452A",
+  "slug": "di-mgmt-81452a",
+  "title": "Mass Properties Control and Management Process (MPCMP) Report",
+  "summary": "The MPCMP Report provides visibility and control of the contractor's intent, approach, and methods used to optimize mass properties, enabling efficient communications between the contractor, vendor, user, and acquiring agency.",
+  "approval_date": "2007-09-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9013",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11 (ASC-ENFS)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Mass Properties Control and Management Process (MPCMP) Report will provide visibility and control of the contractor's intent, approach, and methods employed to optimize the mass properties of the product. The report shall provide for maximum efficient communications between the contractor, vendor, user, and acquiring agency.\na. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nb. DI-MGMT-81452A supersedes DI-MGMT-84152.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-84152"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revision, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The MPCMP Report shall be in the contractor's format. A suggested format is provided (see 3.4 below).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The report shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The report shall depict the elements of a program for monitoring, controlling, and validating mass properties to insure the purchase of minimum weight air vehicles allowable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The report shall include scheduling information to show the integration of major mass properties tasks with the major program milestones.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Revisions to the original report shall reflect any program changes.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "A suggested format for the MPCMP Report is as follows:",
+          "content": "i. Foreword\nii. List of illustrations\niii. Summary\n1. Introduction\n2. Mass properties definitions\n2.1 Specification or guaranteed weight empty\n2.2 Aircraft reference axis\n2.3 Potential or possible weight change\n2.4 Planned, probable, or projected weight changes\n2.5 Target weight\n2.6 Goal weight\n2.7 Operating weight\n2.8 Current weight\n2.9 Actual weight\n2.10 Calculated weight\n2.11 Estimated weight\n2.12 Status weight\n2.13 Manufacturing variation\n2.14 Contingency or margin\n2.15 Management reserve\n2.16 Growth weight or allowance\n2.17 Weight empty\n2.18 Zero fuel weight or zero wing fuel weight\n2.19 Airframe unit weight\n2.20 Commercial items\n3. Mass properties organization and how it relates to other organizations\n4. Weight control process\n4.1 Design target weight system\n4.2 Aircraft target weight\n4.3 Job package or drawing target weight\n4.4 Guaranteed weight system\n4.5 Establishment of the guarantee and contract incentives and penalties\n4.6 Provisions for change\n4.7 Target weight system\n4.8 Identification of all weight changes\n4.9 Basis for weight increments for changes\n4.10 Weight reviews\n4.10.1 In-house weight reviews\n4.10.2 Subcontractor, vendor, and associate contractor weight reviews\n4.10.3 Government weight reviews\n4.11 Weight status reports\n4.13 Review and decision making process and interim thresholds\n4.14 Risk assessment and risk reduction\n4.15 Weight reduction process\n4.16 Value of a pound\n4.16.1 Value of the pound to the contractor\n4.16.2 Value of the pound to the government\n4.16.2.1 Delta range per pound\n4.16.2.2 Drag counts per pound\n4.16.2.3 Operating cost per pound\n4.17 Drawing board surveillance\n4.17.1 Significance of mass properties group signature\n4.18 Remedial actions or recovery action\n4.19 Subcontractor, vendor, and associate contractor weight control\n4.19.1 Incentives\n4.19.2 Penalties\n5. Balance and inertia control\n5.1 Balance control\n5.2 Inertia control\n6. Recording and reporting\n6.1 Government data requirements\n6.2 Internal contractor mass properties data\n6.3 Subcontractor, vendor, and associated contractor data reporting requirement\n7. Manpower requirements and key personnel\n8. Interface control: airframe, engine, and avionics subcontractor, vendor, or associate agreements.\n9. Aircraft mass properties validation\n9.1 Part validation\n9.2 Total aircraft validation\n9.3 Fuel calibration\n9.4 Scales\n9.5 Center of gravity\n9.6 Inertia\n10. Flight test support\n11. In-service requirements\n11.1 Technical orders\n11.2 Time weighing intervals or periodic weighing requirements\n11.3 Weight and balance computer\n11.4 Contractor services required\n11.5 Equipment required\n12. Mass properties detailed schedule",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81452A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

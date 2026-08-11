@@ -1,0 +1,212 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81502A",
+  "slug": "di-mgmt-81502a",
+  "title": "Sample Chart A and Chart E Report for Aircraft",
+  "summary": "This DID defines the format and content for the Sample Chart A and Chart E report used to document aircraft weight, balance, and center of gravity data.",
+  "approval_date": "2007-09-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9015",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11 (ASC/ENFS)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "DD Form 365-4",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Aircraft weight, balance, and inertia properties critically affect system performance. This report provides up-to-date information required to maintain cognizance of deleterious trends which may require program office action and provide safety of flight information to the field.\na. The purpose of the report is to provide engineering data in the format necessary for the preparation of field weight and balance technical orders. Sample chart A and Chart E, approved by the acquiring engineering activity shall be used as the contents of the weight and balance technical orders.\n(1) There are two primary purposes of the Chart A: The first is to provide a definition of what is included in Basic Weight for the particular aircraft. The second is to provide weight and center of Gravity (c.g.) data to the user for items that may be removed from or added to the Basic Weight of the aircraft.\n(2) Chart E provides the means for determining quickly and accurately the weight and longitudinal c.g. position of the aircraft under any loading condition.\nb. This DID interrelates with DI-MGMT-81452, Mass Properties Control and Management Process Report.\nc. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nd. DI-MGMT-81502A supersedes DI-MGMT-81502.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81502"
+  ],
+  "related_dids": [
+    "DI-MGMT-81452"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The format shall be the Society of Allied Weight Engineers (SAWE) Recommended Practice number 7 (RP-7), Weight and Balance Control for Aircraft.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Sample Chart A (Sample Basic Weight Checklist) and Chart E (Loading Data) shall reflect all the equipment and useful load items that may be in or carried on the aircraft. Items shall not be listed in both the Sample Chart A and Chart E.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The following shall be included in the Sample Chart A:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "A list of equipment and the equipment weight and arm which is installed or is approved for installation.",
+              "content": "Items shall be listed by descriptive name or type, part number or equipment designation, capacity, and other appropriate means to avoid ambiguity and to facilitate identification and inventory. The weight and arm shall reflect the line removable unit weight and arm. Equipment which are alternates to each other shall be identified. As an example, \"(alternate to item A-21).\" If an item can be in a \"stowed\" and an \"installed\" location, the item shall be listed for both locations and so labeled. All items weighing 2 pounds or more shall be listed for aircraft whose weight empty is between 5,000 and 50,000 pounds, and items weighting 5 pounds or more for heavier aircraft. Aircraft lighter than 5,000 pounds would list items weighing one pound or more. Items which weigh less than the above criteria may be listed if it facilitates the aircraft inventory process. The order in which items are listed shall facilitate taking the inventory. Generally, the moment arms increase progressively from the forward limit of the compartment. If a floor or partition divides a compartment into distinct sections, the Chart A items for that compartment are to be listed by sections. Not item or group of items is to be listed in a compartment unless the center of gravity (c.g.) of the item or group falls within the limits of the compartment. Items are numbered consecutively by compartment. As an example, the items in compartment A are designated A-1, A-2, A-3. It is recommended practice to leave 5 to 6 open lines on each page to facilitate additions in the future. Weights and moments are listed to the nearest whole number and the arms are listed to one decimal place. Moments are simplified by a constant (100, 1000, 10000). Values in the Chart A are rounded in respect to their actual value regardless if the stated weight times the stated arm equals the stated moment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Aircraft compartments shall be designated by capital letters and appropriate descriptive nomenclature.",
+              "content": "The compartment letter designation and name shall be shown at the top of each list of equipment items for each compartment. The compartment designation is underlined and separated from the equipment list by a blank line. The limits of each compartment in inches from the references datum are placed on the same line as the compartment designation. These compartment limits must agree with those shown on Chart E. Equipment located external to the body compartments, such as in the wings or nacelles, is listed at the end of Cart A under appropriate designations. Sketches of Chart A item locations are to be inserted as a facing page to the corresponding items.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Unusable and trapped fuel (weights, arms, and moments).",
+              "content": "These values shall be listed as two separate items and explained in the weighing section of the Chart E.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "When loading limitations or cautions are necessary to avoid adverse distribution, pertinent information is to be included in the appropriate tables of the Chart E.",
+          "content": "Additional data shall be included to ensure that Chart E will adequately fulfill its intended purpose. Loading data are presented in the form of tables, unless noted otherwise. Weight and moment data shall be listed to the nearest whole number. Moment data are simplified. Arms shall be listed to one decimal place. The following data shall be provided:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Weighing requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Weighing instructions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Aircraft configuration for weighing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Fuel draining procedures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Leveling procedures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Measuring procedures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Aircraft diagram showing reference datum, fuselage stations, leveling devices, prominent items, location and length of Mean Aerodynamic Chord (MAC), location of jig points, location of jacking points, alighting gear, and centroid of compartments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Loading data in the order of the DD Form 365-4; Form F, Weight and Balance Clearance Form F intended to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Miscellaneous restrictions (floor loading, special load combinations and the like).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Gear retraction moments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Center of gravity data, including a center of gravity diagram showing gross weight versus center of gravity limits and restrictions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Percent mean aerodynamic chord (MAC) vs. longitudinal arm.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "Cargo tie-down locations and capability diagram.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "Maximum package size data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "Typical loadings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81502A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

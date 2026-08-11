@@ -1,0 +1,347 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81238A",
+  "slug": "di-mgmt-81238a",
+  "title": "Contract Field Service Report",
+  "summary": "This DID describes data provided by the Field Service Representative documenting time distribution, work accomplished, on-the-job training, and equipment availability during the interim support period.",
+  "approval_date": "2025-04-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10550",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2025-013",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) describes data to be provided by the Field Service Representative (FSR). This report documents the Contractor Field Representative's time distribution, work accomplished, on-the-job training provided, and equipment availability during the interim support period.\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nThis DID supersedes DI-MGMT-81238",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81238"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor's format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The report shall provide a report to support the following data:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "To.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Device name.",
+          "content": "Identify by nomenclature the equipment which is the subject of the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Device number.",
+          "content": "Identify the Government equipment designation number:",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Device serial number.",
+          "content": "Identify the government serial number, if applicable",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Activity.",
+          "content": "Indicate activity serviced and location of equipment to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Flight operations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Flight hour totals.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Flight readiness.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Status of equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Parts/spare usage.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Supply stock level.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Name of senior contractor field service representative.",
+          "content": "List additional contractor personnel in 3.15.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Contractor.",
+          "content": "Name of contractor providing support service.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Contract number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Interim Support Period.",
+          "content": "Indicate starting and completion dates.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Date of report.",
+          "content": "Enter the date that the report is filled out.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Period covered.",
+          "content": "Enter the dates covered by the report (ex. 11/6 through 11/24/2025).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Report number.",
+          "content": "Number reports sequentially throughout the Interim Report Period.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Personnel time distribution.",
+          "content": "Show time distribution of all contractor personnel (ex. operation 10 hours, verification of documentation 10 hours).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Hours equipment down.",
+          "content": "Indicate the number of hours that the equipment was down and not available for use.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.14.1",
+              "title": "Remarks.",
+              "content": "Give a brief statement as to why the equipment was down and not available for use (ex. if modification, give control number, contract number, etc.).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.15",
+          "title": "Summary of work accomplished:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "Maintenance.",
+              "content": "Provide a narrative summary of work accomplished during troublesome or problem areas.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.2",
+              "title": "Modification.",
+              "content": "Describe all changes made to equipment configuration and what action has been taken to incorporate the changes into other units of the same type. If the change was not initiated by the government, state the related documentation which will be updated to reflect these changes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.3",
+              "title": "Engineering.",
+              "content": "Describe the nature and extent of the engineering effort and the area(s) of equipment involved.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.4",
+              "title": "Instruction.",
+              "content": "Describe the nature and extent of instruction. Include the name of person(s) giving the instruction and titles and rank of students.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.5",
+              "title": "Operation of equipment.",
+              "content": "Describe the nature and the extent of operation required by contractor personnel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.6",
+              "title": "Miscellaneous.",
+              "content": "The following dates are required for record purposes:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.15.6.1",
+                  "title": "Arrival of equipment on-site for installation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.6.2",
+                  "title": "Completion of installation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.6.3",
+                  "title": "Start of acceptance testing.",
+                  "content": "Include name(s) of Government and Contractor representatives participating in acceptance tests.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.6.4",
+                  "title": "Completion date of acceptance testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.6.5",
+                  "title": "Start date of Interim Support Period.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Signature of senior contract representative.",
+          "content": "Signature of senior person on site.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Security classification of report.",
+          "content": "Report originator will ensure proper classification in accordance with existing government regulations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Signature of field engineering representative.",
+          "content": "This signature does not attest to the validity of the report.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.18.1",
+              "title": "Remarks.",
+              "content": "Pertaining to the content of the report, the status of the equipment or other pertinent information.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.19",
+          "title": "Signature of cognizant officer in charge.",
+          "content": "Reviewed and signed by the designated military officer in charge/petty officer in charge and to attest to the accuracy of Item 3.13 (Personnel Time Distribution).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.19.1",
+              "title": "Remarks.",
+              "content": "Pertaining to the contents of the report, the status of the equipment, or other pertinent information.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81238A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

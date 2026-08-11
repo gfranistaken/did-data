@@ -1,0 +1,88 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81642",
+  "slug": "di-mgmt-81642",
+  "title": "Small Business Subcontractor Report",
+  "summary": "The Small Business Subcontractor Report identifies the name of the small business subcontractor, the tasks performed, and the associated costs for each scheduled availability used to verify Small Business requirements are being met by the contractor.",
+  "approval_date": "2004-02-09",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "7519",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "N PEO SHIPS-FL32",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Small Business Subcontractor Report identifies the name of the small business subcontractor, the tasks performed and the associated costs for each scheduled availability which will be used to ensure the Small Business requirements are being met by the contractor.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The Report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Section I - Name of the small business subcontractor, whether the subcontractor is:",
+          "content": "(1) Small Business;\n(2) Veteran-Owned Small Business;\n(3) Service-Disabled Veteran-Owned Small Business;\n(4) HUBZONE Small Business;\n(5) Small Disadvantaged Business;\n(6) Women-Owned Small Business;\n(7) Historically African-American Colleges and Universities and Minority Institutions;\nAlso, briefly describe the subcontractor efforts performed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Section II - This section shall provide:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Direct costs per CLIN associated with each scheduled availability, minus the costs of any directed subcontracts and execution planning efforts.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Total dollars with corresponding percentages of direct costs described above, subcontracted for each scheduled availability for the following:",
+              "content": "(1) Small Business Concerns;\n(2) Veteran-Owned Small Business Concerns;\n(3) Service-Disabled Veteran-Owned Small Business Concerns;\n(4) HUBZONE Small Business Concerns;\n(5) Small Disadvantaged Business Concerns;\n(6) Women-Owned Small Business Concerns;\n(7) Historically African-American Colleges and Universities and Minority Institutions Concerns;",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81642.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

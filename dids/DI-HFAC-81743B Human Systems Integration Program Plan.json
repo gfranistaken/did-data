@@ -1,0 +1,395 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81743B",
+  "slug": "di-hfac-81743b",
+  "title": "Human Systems Integration Program Plan",
+  "summary": "The Human Systems Integration Program Plan describes the contractor's HSI program elements, activities, and how they will be managed and integrated with other program elements specified in the contract.",
+  "approval_date": "2025-09-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10602",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "HFAC-2025-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Human Systems Integration Program Plan (HSIPP) describes the contractor's Human Systems Integration (HSI) program; its elements to support requirements and activities for HSI and how they will be managed and integrated with other program elements specified in the contract. The HSIPP does not take the place of related plans such as the System Safety Plan; Training Plan; Programmatic Environment, Safety, & Occupational Health Evaluation; Human Engineering Program Plan or an HSI section in the Systems Engineering Management Plan, unless the procuring agency so directs.\nThis Data Item Description (DID) contains the format and instructions for preparing the HSIPP content in response to applicable tasks delineated in the contract Statement of Work (SOW).\nWhere cited below, users refer, as applicable, to operators, maintainers, trainers, support personnel (including transporters), and manufacturers.\nThis DID supersedes DI-HFAC-81743A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-81743A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of SAE 6906 are available online at",
+      "url": "http://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "SAE 6906, \"Standard Practice for Human Systems Integration,\"",
+          "content": "(Copies of SAE 6906 are available online at http://www.sae.org.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The HSIPP format shall be contractor selected and contain all the content elements described below as tailored per paragraph 3. Unless effective presentation would be degraded, the format used initially shall be used for subsequent submissions. Revisions shall be clearly indicated in a manner consistent with standard editorial practices.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Tailoring.",
+          "content": "The HSIPP shall be tailored to reflect the SOW, system specification, adaptive acquisition framework pathway, and phase of development. The proposed tailoring of the HSIPP content shall identify the paragraph, the proposed changes, and a rationale. Tailoring specified by the procuring agency shall also be included. If no tailoring is proposed beyond that specified by the procuring agency, this shall be stated. Tailored SOW shall document any associated risks of characterizing the operator's contribution to Total System Performance and present that data in technical and certification reviews.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The HSIPP shall contain the information described in the following paragraphs:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "Table of contents; lists of tables, figures, and appendices, as applicable; and a list of acronyms and abbreviations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Overview.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Provide the HSIPP purpose and scope.",
+              "content": "Briefly describe the system, its concept of operations, mission, human role(s), operational environment, predecessor system(s), if any, and related HSI lessons learned. Provide the system acquisition category and current phase of development. If applicable, state when the next submission of the HSIPP is due.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Describe the overall HSI objectives for the program, the HSI domains that will be addressed, and the strategy for addressing HSI domain objectives individually and in domain trade studies.",
+                  "content": "If any HSI domains are not addressed, the HSIPP shall provide a rationale. Briefly describe the major activities that must be accomplished in applying HSI to the system development, consistent with the contract SOW, system requirements, specification(s), and work breakdown structure. Describe if the contracted SOW poses any risks of characterizing the operator and maintainer contribution to Total System Performance and ensure that those risks are presented in technical and certification reviews.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Provide a list of any other HSI-related contract deliverables or documents (e.g., Training Plan, Safety Plan, Manpower Estimate).",
+              "content": "For any section below whose content is substantially covered in another document, the contractor has the option of providing the required content in the HSIPP or providing a summary of the content and reference(s) or link(s) to the document section(s) that contain the content.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Organization",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Human Systems Integration organization.",
+              "content": "Identify, describe, and provide an organization chart of the contractor's primary organization elements(s) and primary HSI organization elements, including the HSI Integrated Product Team, if any. Identify the HSI domain(s) addressed by each element; to whom the HSI manager/lead and HSI domain leads report; and the reporting and responsibility relationships between the HSI manager/lead and the HSI domain leads. For key positions (e.g., HSI manager/lead, domain leads, key practitioners), provide summary job descriptions and the minimum required qualifications.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Human Systems Integration organization relationships.",
+              "content": "Describe the relationships of the contractor's HSI organization element(s) to other contractor organization elements responsible for areas affected by HSI, such as systems engineering; hardware and software design teams; training; test and evaluation; related disciplines (e.g., cyber security, information assurance, logistics, maintainability, product support analysis, reliability, supportability. Note: This list is given to provide examples of related disciplines and is not considered to be all-inclusive applicable working groups; and government HSI counterparts.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Human Systems Integration working group.",
+              "content": "Describe the composition of the HSI working group (e.g., contractor, subcontractor, and procuring agency HSI domain representatives and user group representatives,), and its responsibility, authority, and accountability for ensuring compliance with HSI requirements. Provide a charter for the working group.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Human Systems Integration in subcontractor efforts.",
+              "content": "If subcontractors are responsible for work on hardware or software components that have operator, maintainer, or supporter interfaces, or other HSI efforts (e.g. serving as subject matter experts, performing trade studies), describe the subcontractor's organization element responsible for HSI and the subcontractor's HSI activities. Describe the process by which requirements for HSI will be levied upon subcontractors, implemented, and integrated across subcontractors for all HSI domains. Describe the method(s) by which the prime contractor will monitor subcontract compliance with HSI requirements.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Human Systems Integration Key Performance Parameters (KPPs) and Key System Attributes.",
+          "content": "Describe HSI Key Performance Parameters, and HSI Key System Attributes, if any.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Human Systems Integration support of affordability and performance goals.",
+          "content": "Describe the methods by which the contractor will identify and conduct tradeoffs between HSI domains and other program elements in support of primary HSI goals: to reduce total system ownership costs; improve and characterize total system performance; and ensure that the system accommodates the characteristics of the user population that will operate, maintain, train, support, and, if applicable, manufacture it. Describe how the contractor will ensure that HSI cost, and performance factors will be formally considered during analysis, design, and procedure development; during technical reviews (e.g., System Requirements Review, Systems Functional Review, Preliminary Design Review, Critical Design Review); and in the engineering change management process.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Human Systems Integration Risks, Issues, and Opportunities.",
+          "content": "Describe the methods by which the contractor will identify, document, validate, prioritize, coordinate, track, report, and resolve or mitigate HSI issues and risks over the life of the program. Describe the process for trading off HSI issues and risks among HSI domains, and between HSI and other disciplines. Describe the process by which HSI risks will be elevated to formal program-level risk management status. Describe the process by which HSI opportunities will be identified, assessed, coordinated with program management and the customer, and implemented.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Human Systems Integration Pre-Milestone and Pre-development activities (AAA).",
+          "content": "Describe contractor tasks, including identification of risks and issues, proposal of an HSI strategy, conduct of Pre-Milestone B contract requirements, supporting development of the system concept and preliminary design, supporting the Analysis of Alternatives assessing human performance requirements and emergent technologies, and documentation of results.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Human Systems Integration Requirements Management.",
+          "content": "Describe how the contractor will identify, refine, decompose, allocate and track HSI and HSI-related requirements related to system capabilities and specifications. This includes subsystem, hardware, software and user (integration and performance) requirements. The HSIPP should also require the contractor to describe the flow-down and tracking of requirements to subcontractors.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Human Systems Integration in system analysis.",
+          "content": "Identify the HSI efforts in system analysis and the organization element(s) responsible for their conduct. Describe how HSI will participate in analyzing, flowing down, aligning, and deriving requirements; performing mission analysis; determining system functional requirements and capabilities; determining system architecture; allocating system functional requirements to humans, hardware, and/or software; developing system functional flows; and performing system effectiveness analyses, studies, and modeling. Describe how HSI practitioners will coordinate execution of HSI Domain analyses and ensure broad distribution of results to stakeholders. List the HSI-level analyses (as defined in SAE 6906) that will be performed to support system definition for all domains:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "HSI System Architecture Support Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "HSI Domain Tradeoff Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Risk, Issue, and Opportunity Assessment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "HSI Contribution to Technology Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.5",
+              "title": "HSI Contribution to Affordability Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.6",
+              "title": "For each HSI-level analysis, (1) provide a description or a reference to the paragraph(s) where it is described elsewhere in the HSIPP or other document(s) and (2) identify any data, software, databases, models, or equipment required from the procuring agency.",
+              "content": "For HSI trade studies, describe the process for planning, coordinating, executing and documenting HSI trade studies, including a description of how trade study criteria are identified and weighed. For all HSI-level analyses, state whether or not HSI analysis information needs, products and integration will be placed into the program Integrated Master Plan and Integrated Master Schedule.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Human Systems Integration in system design.",
+          "content": "Describe the HSI effort (for all applicable domains) in system design to ensure fulfillment with the requirements and guidance documents for HSI specified in the contract. Describe HSI participation in the preparation of system design and performance specifications; selection of commercial off-the-shelf or non-developmental items; trade studies and analyses; mock-up evaluations and dynamic simulations; usability assessments; tests; detailed drawing reviews; and system and program technical reviews. Describe the planned involvement of (and coordination to obtain) end-user personnel (e.g., operators, maintainers, trainers, and support personnel) in assessing the design, operation, maintenance, training, and support of the system. Describe and provide a rationale for the methodology and human performance criteria to be used. Describe how HSI practitioners will support acquisition-level reviews (e.g., milestone, systems engineering, and other reviews like Preliminary Design Reviews, Critical Design Reviews, Technical Interchange Meetings, Independent Technical Risk Assessment, Independent Logistics Assessments, etc.) by describing HSI concerns, potential program impacts, and suggested corrective actions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Human Systems Integration Support to Change Management/Configuration Management.",
+          "content": "Describe HSI participation in change management, including selection of candidate solutions, selection of preferred solutions and implementation of selected solutions. The section shall also describe how HSI will be informed of proposed changes to the system design baseline affecting HSI, HSI domains or system users.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Human Systems Integration in procedure development.",
+          "content": "Describe the HSI role in creating, reviewing, and validating procedures for users. This involves activities such as developing operator manuals, interactive electronic technical manuals, and training media.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Human Systems Integration in Habitability.",
+          "content": "Describe the methods by which the contractor will analyze and meet habitability requirements. Examples include requirements for the physical environment (e.g., adequate personnel work and living space and environment control); for personnel services (e.g., medical and mess); and for living conditions (e.g., rest/housing, education, recreation, and personal hygiene) that have an impact on human performance contributions to system performance or affect the quality of life.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Human Systems Integration in Force Protection and Survivability.",
+          "content": "For systems with missions that require exposure to natural and combat threats, describe the methods by which the contractor will analyze and meet requirements for personnel survivability. Issues to be addressed include protection from detection, fratricide, injury, and nuclear, biological, and chemical effects; the integrity of the crew compartment; life support equipment; and provisions for rapid egress when the system is severely damaged or destroyed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Human Systems Integration in manpower, personnel, and training (MPT).",
+          "content": "Describe the methods by which the contractor will analyze MPT constraints and requirements early in system acquisition and how the results will be used in the design process to meet manpower, personnel, and training requirements and KPPs. Include methods for the following, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "Analyses of tradeoffs among the numbers and aptitudes of personnel (e.g., active duty versus reserve, military versus civilian, contractor versus Department of Defense), training, and system performance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.2",
+              "title": "Experience-level analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.3",
+              "title": "Manpower affordability analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.4",
+              "title": "Analysis of tradeoffs between system design and training requirements (e.g., user interface commonality, usability, and complexity versus human performance versus training costs).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.5",
+              "title": "Manpower and personnel estimation, analysis, and reporting.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.6",
+              "title": "Estimates of the contributions of manpower, personnel, and training costs to the life cycle cost of operations and support.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.7",
+              "title": "Analysis of training and media requirements, including options for individual, collective, and joint training for operators, maintainers and support personnel; and the use of training effectiveness evaluations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.8",
+              "title": "Plan for developing training materials, including options to use simulation, embedded training, distributed learning, or other techniques to acquire and maintain skills, reduce costs, and provide training flexibility.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Human Systems Integration in Safety and Occupational Health (SOH)",
+          "content": "Describe the methods by which the contractor will analyze, prevent and/or control SOH hazards where possible and manage them when they cannot be avoided. Include plans for documenting and managing hazardous materials used in the system or system manufacturing, and for system demilitarization and disposal.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Human Systems Integration in Human Factors Engineering (HFE).",
+          "content": "Describe the methods by which the contractor will integrate and apply HFE principles, processes, methods, criteria, best practices, and standards to ensure that operator, maintainer, trainer, support personnel, and, if applicable, manufacturer user interfaces are designed to improve both human and total system performance. Describe any risks to the HFE approach to be able to improve, assess and characterize TSP.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Human Systems Integration in Test and Evaluation.",
+          "content": "Describe HSI participation in test and evaluation and other verification activities as part of the contractor's integrated test and evaluation program. Describe how (e.g., methods, metrics, and tools) and when the contractor will verify the design for compliance with HSI requirements. Identify the number and role(s) of HSI personnel who will support test and evaluation. Provide a summary schedule that depicts HSI tests, evaluations, and other verification activities (inspections, analyses, and demonstrations) in support of program descriptions of T&E including acquisition and AAA approaches.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Data sources.",
+          "content": "Identify contractor, industry, technical society, government standards, handbooks, and other documents that will be applied to the HSI effort and activities and any proposed tailoring.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "Human Systems Integration deliverable data products.",
+          "content": "Identify and briefly describe each HSI deliverable data product specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Time-Phase schedule and level of effort.",
+          "content": "Provide a milestone chart that identifies each separate HSI activity to be accomplished during the contract period of performance. Include key HSI decision points and their relationship to the program milestones. Provide information on the proposed number of personnel on an annual basis.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "HSI program quality control.",
+          "content": "Describe the approach for assessing and reporting on the quality (relative success and progress) of the overall HSI effort and each HSI domain over the course of contract. Describe the approach for assessing the following contributors to HSI success: implementation of HSI policy and processes; implementation of a human-centered design process; education and qualifications of HSI personnel; HSI involvement in subcontractor requirements and selection; availability and use of HSI tools; and HSI participation in verification.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81743B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

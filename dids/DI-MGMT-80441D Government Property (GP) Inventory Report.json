@@ -1,0 +1,194 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-80441D",
+  "slug": "di-mgmt-80441d",
+  "title": "Government Property (GP) Inventory Report",
+  "summary": "The Government Property (GP) Inventory Report enables the contractor to periodically provide the DoD Service or Agency an inventory listing of Government Furnished Property and Contractor Acquired Property in its possession.",
+  "approval_date": "2020-06-09",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10184",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "MGMT-2020-012",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Government Property (GP) Inventory Report enables the contractor to periodically provide to the Department of Defense (DoD) Service or Agency an inventory listing of GP (i.e., both Government Furnished Property (GFP) and Contractor Acquired Property (CAP)) in the contractor's possession (to include subcontractors) by contract.\nThis Data Item Description (DID) is applicable to all contracts where GP will be furnished by the Government (i.e., GFP) or acquired, fabricated, or otherwise provided by a contractor (i.e., CAP) in performance of a contract.\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nThis DID supersedes DI-MGMT-80441C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-80441C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The report shall be in an electronic .xls or .xlsx compatible format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The report shall contain the following column headers (i.e., data fields):",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Contract Number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Agency or Service Asset Identification Number (GFP Only)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Contractor Asset Identification Number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Item Description",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Manufacturer Part Number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Manufacturer Model Number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Manufacturer Serial Number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "National Stock Number (NSN) (if applicable)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Quantity",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Unit of Measure",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Unit Acquisition Cost",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Unique Item Identifier (if registered in the Item Unique Identification (IUID) Registry; GFP only)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Asset Location",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Asset Sub-Location (if applicable)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Type of Government Property (i.e., Government Furnished Property (GFP) or Contractor Acquired Property (CAP))",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Classification of Government Property (i.e., Communication Security (COMSEC), Equipment (EQP), Material (MAT), Special Test Equipment (STE), or Special Tooling (ST))",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Date of Last Physical Inventory",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Federal Condition Code",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-80441D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

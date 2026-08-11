@@ -1,0 +1,466 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-80745C",
+  "slug": "di-hfac-80745c",
+  "title": "Human Engineering Systems Analysis Report",
+  "summary": "The Human Engineering Systems Analysis Report describes human engineering efforts conducted during system analysis and provides data used to evaluate the appropriateness and feasibility of system functions and roles allocated to personnel.",
+  "approval_date": "2015-12-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9614",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AM",
+  "project_number": "HFAC-2015-020",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Human Engineering Systems Analysis Report (HESAR) describes the human engineering efforts conducted as part of the system analysis and provides data resulting from that analysis. The data are used by the procuring activity to evaluate the appropriateness and feasibility of system functions and roles allocated to operators, maintainers, and support personnel.\na. This data item description (DID) contains format and content preparation instructions for the data delivered resulting from the work task(s) delineated in the contract statement of work (SOW).\nb. The DID supersedes DI-HFAC-80745B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-80745B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The HESAR format shall be contractor selected. Unless effective presentation would be degraded, the initial format shall be used for all subsequent submissions. Revisions shall be indicated in a manner consistent with standard editorial practices.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The HESAR shall contain the following information. For any section below whose content is substantially covered in another document (e.g., system architecture documentation, concept of operations, system design analyses), the contractor has the option to provide the required content in the HESAR, or to provide a summary of the content and reference or link to the document section(s) that contain(s) the content.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Systems objective(s).",
+          "content": "The system objective(s) shall be described. If the objective(s) are to be met by the system operating in conjunction with other systems not within the scope of the contract, the following shall also be described:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "The overall (or higher level) objective(s) to be met through the combined operation of systems.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "The sub-objective(s) to be met by the system being developed under the contract.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Interactions required between systems to meet the overall objective(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "System mission(s).",
+          "content": "The system mission(s) shall be described. The mission description(s) shall describe the operational and physical environmental context(s) within which the system will meet its objective(s) (e.g., fixed installation versus mobile system operations, geography, mission time constraints, weather, day/night, humidity, terrain, vegetation density, enemy force concentration, enemy weapons and countermeasures capabilities, enemy order of battle, presence or absence of other cooperating systems).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "The organizational structure of the system and required communication with other operators or support personnel shall be described.",
+              "content": "This may include the various system or operational modes and associated environments.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "For legacy systems, any changes between the current and future mission environment shall be identified and described.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Any special requirements or considerations due to environmental factors or equipment (i.e., arctic mittens; chemical, biological, radiological, nuclear, and explosive [CBRNE] protective clothing; radios) shall be identified.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Scenarios.",
+          "content": "The system scenarios shall be identified as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "Mission use scenarios.",
+              "content": "Mission scenarios shall be provided that describe the high-level system functionality. The mission capabilities shall be expressed as end to end threads. Each thread shall include all system components that contribute to the execution of the operation described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.2",
+              "title": "Operational use scenarios.",
+              "content": "Operational use scenarios shall be provided that describe the individual operations that are used to fulfill the mission scenarios, either individually or in sequence to complete the mission scenarios. The operational use scenarios shall be representative of actual system use. The operational use scenarios shall describe the sequence of actions taken by the operator and performed by the system for different system operations, and may include high-level scenarios as well.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.4",
+          "title": "System functions.",
+          "content": "The system functions that must be performed to meet the system objective(s) within the mission context(s) shall be described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Allocation of system functions.",
+          "content": "The allocation of system functions shall be described and shall specifically address:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.5.1",
+              "title": "Information flow and processing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.2",
+              "title": "Estimates of potential operator, maintainer, and support personnel requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.3",
+              "title": "Allocation of functions to the system and to the human.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.6",
+          "title": "Equipment identification.",
+          "content": "The selected design configuration shall be described. Hardware and software component descriptions, including remote or external elements, shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Subsystems.",
+          "content": "Any subsystems defined during the system analysis and design process shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Internal interfaces.",
+          "content": "The interfaces between internal system elements shall be described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "External interfaces.",
+          "content": "The interfaces to external elements shall be described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "Personnel elements.",
+          "content": "The personnel required to operate, maintain, and support the system shall be identified.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.10.1",
+              "title": "Personnel descriptions.",
+              "content": "The numbers and types of operators, maintainers, and support personnel of the system shall be identified. This shall include the minimum number of personnel required to operate, maintain, and support the system during any given shift.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.10.1.1",
+                  "title": "Any special requirements that personnel must possess shall be identified (e.g., must have 20/20 vision or cannot be colorblind).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.1.2",
+                  "title": "Any assumptions made about the system or the personnel that influence the design of the system shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.1.3",
+                  "title": "Any derived requirements that are a result of analysis that influence design decisions or that are critical to system performance shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.1.4",
+                  "title": "An estimate (in percent) of the target population, by gender, that the system design will accommodate shall be provided.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.1.5",
+                  "title": "Any special strength requirements that personnel must possess shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.10.2",
+              "title": "Roles.",
+              "content": "The specific roles in the system (e.g., supervisor, operator, maintenance technician) shall be identified.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.10.2.1",
+                  "title": "The specific function(s) performed for each role shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.2.2",
+                  "title": "Any assumptions made about the personnel roles that affect or influence design decisions shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.2.3",
+                  "title": "Any assumptions made about the roles or the ability of personnel to fulfill these roles shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.10.3",
+              "title": "Profiles and skills.",
+              "content": "The personnel who will fulfill the system roles, including prerequisites such as rank and years of experience, shall be identified and described.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.10.3.1",
+                  "title": "The required skill sets of the system personnel (e.g., education, reading level, technical prerequisites, and occupational specialties) shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.10.3.2",
+                  "title": "Any assumptions made about the system personnel shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2.11",
+          "title": "Operational procedures.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.11.1",
+              "title": "Setup.",
+              "content": "Any required setup operations shall be described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.11.2",
+              "title": "Startup.",
+              "content": "System startup operations shall be described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.11.3",
+              "title": "Normal operations.",
+              "content": "Operations under normal working conditions shall be described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.11.4",
+              "title": "Failure modes.",
+              "content": "Operations when failure conditions occur shall be described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.11.5",
+              "title": "Emergencies.",
+              "content": "Operations under emergency situations shall be described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.11.6",
+              "title": "Shutdown.",
+              "content": "System shutdown operations shall be described.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.12",
+          "title": "Support.",
+          "content": "A description of the system support shall be provided.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.12.1",
+              "title": "Provisioning.",
+              "content": "The provisioning requirements and operations to fulfill those requirements shall be listed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.12.2",
+              "title": "Maintenance.",
+              "content": "The maintenance requirements and operations that need to be performed on the system shall be listed.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.12.2.1",
+                  "title": "Any special maintenance needs, tools, or equipment shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.12.2.2",
+                  "title": "All assumptions regarding who will complete the maintenance and where the maintenance will be performed shall be provided.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.12.2.3",
+                  "title": "If there is a legacy system, any changes in maintenance requirements between the legacy system and the system being developed shall be described.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.12.3",
+              "title": "Training.",
+              "content": "Any training that needs to be developed to educate personnel on the use, operation, and maintenance of the system shall be described.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.12.3.1",
+                  "title": "The training type, duration, and format shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.12.3.2",
+                  "title": "Any additional training, specialized training, or prerequisites shall be identified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.12.3.3",
+                  "title": "If there is a legacy system, any changes in training requirements between the legacy system and the system being developed shall be described.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.12.4",
+              "title": "Deployment.",
+              "content": "Where the system is to be deployed and in what configuration shall be identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.12.5",
+              "title": "Upgrade methodology.",
+              "content": "The process for upgrading the system hardware and/or software over the lifecycle of the program shall be described.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.13",
+          "title": "Security.",
+          "content": "A description of the physical and information security requirements of the system shall be provided. This description shall include the security requirements for the operational and non-operational environment (e.g., trusted systems, multi-level security schemes, or multi-tiered physical security levels).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.13.1",
+              "title": "The concepts for addressing the security issues in the system shall be identified.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.2",
+              "title": "For each of the scenarios identified in 2.c, a description of where security requirements are addressed and met (e.g., when log-on and passwords are required and performed) shall be provided.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-80745C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MFFP-82119",
+  "slug": "di-mffp-82119",
+  "title": "Program-Unique Material or Process Specifications",
+  "summary": "This Data Item Description specifies the content and format for developing a Program-Unique Process or Material Specification, covering unique materials and processes used in fabricating configuration items.",
+  "approval_date": "2017-04-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9792",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MFFP-2017-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) specifies the content and format for development of a Program-Unique Process or Material Specification.\na. This DID identifies the format and content preparation instructions for a Performance or Detail Specification resulting from the work task described in 5.2.1.4.2 through 5.2.1.4.2.2 MIL-STD-1587.\nb. Material specifications are used to identify the specific requirements for a raw material, mixtures, or semi-fabricated materials that are used in the fabrication of a product configuration item (CI). Normally, a material specification applies to production, but may be prepared to control the development of a material. A material specification is limited to those specific materials that are unique to the product in which they are used.\nc. Process specifications are used to identify a specific process that is essential to fabrication or procurement of a product or material used in a configuration item (CI). Normally, a process specification applies to production, but may be prepared to control the development of a process. A process specification is limited to those specific processes that are unique to the product or material to which they apply.\nThis DID supersedes DI-E-3130/C-143 and DI-E-3131/C-144.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-E-3130/C-143",
+    "DI-E-3131/C-144"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "A Program-Unique material and process specification in accordance with MIL-STD-961, \"Defense and Program-Unique Specifications Format and Content\", shall be prepared.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of the specifications shall be as specified in 5.2.1.4.2 through 5.2.1.4.2.2 of MIL-STD-1587 and shall include all test results.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MFFP-82119.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

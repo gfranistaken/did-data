@@ -1,0 +1,894 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82284",
+  "slug": "di-ipsc-82284",
+  "title": "Software/Hardware Design Description (SHDD)",
+  "summary": "The Software/Hardware Design Description (SHDD) describes the system- or subsystem-wide design, CSCI design, firmware configuration item, and architectural design down to the Computer Software Component (CSC)/unit level.",
+  "approval_date": "2019-08-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10066",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "NS",
+  "project_number": "IPSC-2019-012",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software/Hardware Design Description (SHDD) describes the system-or subsystem-wide design, Computer Software Configuration Item (CSCI) design, firmware configuration item, and the architectural design of each down to the Computer Software Component (CSC)/unit. The detailed design to be implemented shall also be included. The SHDD can be supplemented by Interface Design Descriptions (IDDs) (DI-IPSC-81436A) for external interfaces and Database Design Descriptions (DBDDs) (DI-IPSC-81437A). Design pertaining to interfaces can be presented in the SHDD or IDDs for external interfaces. Design pertaining to databases can be presented in the SHDD or DBDDs.\nThe SHDD, with it associated IDDs and DBDDs, is used as the basis for further system, subsystem, software, and firmware development. Throughout this Data Item Description (DID), the term \"system\" can be interpreted to mean \"subsystem, CSCI, software and/or firmware\" as applicable. The resulting document shall be titled Software/Hardware Design Description (SHDD).\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract.\nThis DID is used when the developer is tasked to define and record the design of a system, subsystem or CSCI.\nThe Contract Data Requirements List (CDRL) (DD 1423) will specify whether deliverable data are to be delivered on paper or electronic media; are to be in a given electronic form.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-IPSC-81436A",
+    "DI-IPSC-81437A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Automated techniques.",
+          "content": "The term \"document\" in this DID shall mean a collection of data regardless of its medium. In the case of a system model, the terms \"section\" and \"paragraph\" in this DID shall mean the system model element(s) which fulfill the section or paragraph's requirements. Diagrams, tables, matrices, Microsoft Word files, and other presentation styles shall be acceptable additions to the document or system model when data required by this DID can be made more readable using these styles.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Title page or identifier.",
+          "content": "The document shall include a title page containing, as applicable: document number; volume number; version/revision indicator; security markings or other restrictions on the handling of the document; date; document title; name, abbreviation, and any other identifier for the system, subsystem, or item to which the document applies; contract number; CDRL item number; organization for which the document has been prepared; name and address of the preparing organization; and distribution statement. For data in a database, system model, or other alternative form, this information shall be included on external and internal labels or by equivalent identification methods.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Table of contents.",
+          "content": "The document shall contain a table of contents providing the number, title, and page number of each titled paragraph, figure, table, and appendix. For data in a database, system model, or other alternative form, this information shall consist of an internal or external table of contents containing pointers to, or instructions for accessing, each paragraph, figure, table, and appendix or their equivalents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Page numbering/labeling.",
+          "content": "Each page shall contain a unique page number and display the document number, including version, volume, and date, as applicable. For data in a database or other alternative form, files, screens, or other entities shall be assigned names or numbers in such a way that desired data can be indexed and accessed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Response to tailoring instructions.",
+          "content": "If a paragraph is tailored out of this DID, the resulting document shall contain the corresponding paragraph number and title, followed by \"This paragraph has been tailored out.\" For data in a database or other alternative form, this representation need occur only in the table of contents or equivalent.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "Multiple paragraphs and subparagraphs.",
+          "content": "Any section, paragraph, or subparagraph in the SHDD can be written as multiple paragraphs or subparagraphs to enhance readability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Standard data descriptions.",
+          "content": "If a data description required by this DID has been published in a standard data element dictionary specified in the contract, reference to an entry in that dictionary is preferred over including the description itself.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The SHDD shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Identification.",
+          "content": "This SHDD shall contain a full identification of the system and the software to which this SHDD applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Overview.",
+          "content": "The SHDD shall briefly state the purpose of the system and the software to which the SHDD or system model applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other applicable documents. This paragraph shall summarize the purpose and contents of the SHDD and shall describe any security or privacy considerations associated with its use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "System-wide/CSCI design decisions.",
+          "content": "The document or system model shall present system-wide and CSCI design decisions, that is, decisions about the behavioral design (how it will behave, from a user's point of view, in meeting its requirements, ignoring internal implementation) and other decisions affecting the selection and design of components. If all such decisions are explicit in the requirements or are deferred to the design of the components, this section shall so state. This section shall include other decisions affecting the selection and design of the software units that make up the CSCI. If all such decisions are explicit in the CSCI requirements or are deferred to the design of the CSCI's software units, this section shall so state. Design decisions that respond to requirements designated critical, such as those for safety, security, or privacy, shall be placed in separate subparagraphs. If a design decision depends upon system states or modes, this dependency shall be indicated. Design conventions needed to understand the design shall be presented or referenced. Examples of system-wide design decisions are the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Design decisions regarding inputs the system and CSCIs will accept and outputs it produces,",
+              "content": "including interfaces with other systems, HWCIs, CSCIs, configuration items, and users (4.4.x identifies topics to be considered). If part or all of this information is given in the external IDDs, they shall be referenced.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Design decisions on system and CSCI behavior in response to each input or condition,",
+              "content": "including actions the system perform, response times and other performance characteristics, description of physical systems modeled, selected equations, algorithms, rules, and handling of un-allowed inputs or conditions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Design decisions on how system databases and data files will appear to the user",
+              "content": "(4.4.x of this DID identifies topics to be considered). If part or all of this information is given in DBDDs, they shall be referenced.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Selected approach to meeting safety, security, and privacy requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Design and construction choices for hardware or hardware-software systems,",
+              "content": "such as physical size, color, shape, mass, materials, and markings.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Other system-wide and CSCI-wide design decisions made in response to requirements,",
+              "content": "such as selected approach to providing required flexibility, availability, and maintainability.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "System/CSCI architectural design.",
+      "content": "The SHDD shall present to the system and CSCI architectural design. If part or all of the design depends upon system states or modes, this dependency shall be indicated. Design conventions needed to understand the design shall be presented or referenced.\nNote: For brevity, in terms of organizing a system directly into Hardware Configuration Items (HWCIs), Computer Software Configuration Items (CSCIs), and manual operations, but shall be interpreted to cover organizing a system into subsystems, organizing a subsystem into HWCIs, CSCIs, and manual operations, or other variations as appropriate.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "System components.",
+          "content": "The document or system model shall:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Identify the components of the system (HWCIs, CSCIs, firmware, and manual operations).",
+              "content": "Each component shall be assigned a project-unique identifier (including software/firmware units). Note: a database shall be treated as a CSCI or as part of a CSCI.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "Show the static (such as \"consists of\") relationship(s) of the components, software, firmware CSCIs (down to unit level for detailed design).",
+              "content": "Multiple relationships shall be presented, depending on the selected design methodology (for example, in an object-oriented design, the SHDD shall present the class and object structures as well as the module and process architectures of the CSCI).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.3",
+              "title": "Identify the purpose of each component, the system requirements and system-wide design decisions allocated to it.",
+              "content": "(Alternatively, the allocation of requirements can be provided in 6.a). For detailed design, include the purpose of each software/firmware unit and identify the CSCI requirements and CSCI-wide design decisions allocated to it. (Alternatively, the allocation of requirements can be provided in 6.a).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.4",
+              "title": "Identify each component's development status type (down to software/firmware unit), if known",
+              "content": "(such as new development, existing component to be reused as is, existing design to be reused as is, existing design or software, firmware to be reengineered, component, software, firmware to be developed for reuse, component planned for Build N, etc.) For existing design or components, include identifying information, such as name, version, documentation references, location, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.5",
+              "title": "For each computer system or other aggregate of computer hardware resources to be used in the system, identify its computer hardware resources",
+              "content": "(such as processors, memory, input/output devices, auxiliary storage, and communications network equipment. Each description shall also include, as applicable, growth capabilities, diagnostic capabilities, and any additional hardware capabilities relevant to the description. As applicable, identify the configuration items that will use the resource, identify the allocation of resource utilization to each CSCI that will use the resource (for example, 20% of the resource's capacity allocated to CSCI 1, 30% to CSCI 2), indicate the conditions under which utilization will be measured, and provide the characteristics of the resource including the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.1.5.1",
+                  "title": "Computer processors data shall include, as applicable, manufacturer name and model number, processor speed and capacity, identification of instruction set architecture, applicable compiler(s), word size (number of bits in each computer word), character set standard (such as American Standard Code for Information Interchange (ASCII), Extended Binary Coded Decimal Interchange Code (EBCDIC)), and interrupt capabilities.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.1.5.2",
+                  "title": "Memory shall include, as applicable, manufacturer name, model number, memory size, type, speed, and configuration",
+                  "content": "(such as 256K (kilobyte) cache memory, 16 MegaByte RAM (4MB X 4) random access memory).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.1.5.3",
+                  "title": "Input and output devices shall include, as applicable, manufacturer name and model number, type of device, and device speed and capacity.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.1.5.4",
+                  "title": "Auxiliary storage shall include, as applicable, manufacturer name and model number, type of storage, amount of installed storage, and storage speed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.1.5.5",
+                  "title": "Data on communications network equipment, such as modems, network interface cards, hubs, gateways, cabling, high speed data lines, or aggregates of these or other components,",
+                  "content": "shall include, as applicable, manufacturer name and model number, data transfer rates and capacities, network topologies, transmission techniques, and protocols used.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.1.6",
+              "title": "Present a specification tree for the system",
+              "content": "(e.g. a diagram that identifies and shows the relationships among the planned specifications for the system components).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "CSCI (software and firmware) components.",
+          "content": "The SHDD shall:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "Identify the software units that make up the CSCI.",
+              "content": "Each software unit shall be assigned a project-unique identifier.\nNote: A software unit is an element in the design of a CSCI, for example, a major subdivision of a CSCI, a component of that subdivision, a class, object, module, function, routine, or database. Software units can occur at different levels of a hierarchy and can consist of other software units. Software units in the design can have a one-to-one relationship with the code and data entities (routines, procedures, databases, data files, etc.) that implement them or with the computer files containing those entities. A database shall be treated as CSCI or as a software unit. The SHDD shall refer to software units by any name(s) consistent with the design methodology being used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "Show the static (such as \"consists of\") relationship(s) of the software units.",
+              "content": "Multiple relationships can be presented, depending on the selected software design methodology (for example, in an object-oriented design, the class and object structures shall be presented, as well as the module and process architectures of the CSCI).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "Indicate the purpose of each software unit and identify the CSCI requirements and CSCI-wide design decisions allocated to it.",
+              "content": "(Alternatively, the allocation of requirements can be provided in 6.a.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.4",
+              "title": "Identify each software unit's development status and type",
+              "content": "(such as new development, existing design or software to be reused as is, existing design or software to be reengineered, software to be developed for reuse, software planned for Build N, etc.) For existing design or software, identifying information, such as name, version, documentation references, library, etc. shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.5",
+              "title": "The CSCI's (and as applicable, each software unit's) planned utilization of computer hardware resources",
+              "content": "(such as processor capacity, memory capacity, input-output device capacity, auxiliary storage capacity, and communications network equipment capacity) shall be indicated. All computer hardware resources included in resource utilization requirements for the CSCI, in system-level resource allocations affecting the CSCI, and in resource utilization measurement planning in the Software Development Plan or Software Development Process Description Document shall be covered. If all utilization data for a given computer hardware resource are presented in a single location, such as in one SHDD, reference that source. Included for each computer hardware resource shall be:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.2.5.1",
+                  "title": "The CSCI requirements or system-level resource allocations being satisfied.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.2.5.2",
+                  "title": "The assumptions and conditions on which the utilization data are based",
+                  "content": "(for example, typical usage, worst-case usage, assumption of certain events).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.2.5.3",
+                  "title": "Any special considerations affecting the utilization",
+                  "content": "(such as use of virtual memory, overlays, or multiprocessors or the impacts of operating system overhead, library software, or other implementation overhead).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.2.5.4",
+                  "title": "The units of measure used",
+                  "content": "(such as percentage of processor capacity, cycles per second bytes of memory, kilobytes per second).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.2.5.5",
+                  "title": "The level(s) at which the estimates or measures are made",
+                  "content": "(such as software unit, CSCI, or executable program).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.2.6",
+              "title": "Identify the program library in which the software that implements each software unit is to be placed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "Concept of execution.",
+          "content": "The SHDD shall show the concept of execution among the system components, software and firmware units. It shall include diagrams and descriptions showing the dynamic relationship of the components, software, and firmware. Show how they will interact during system assembly, storage, deployment, and operation, including, as applicable, flow of execution control, data flow, dynamically controlled sequencing, state transition diagrams, and timing diagrams. Show the priorities among components and units, handling of interrupts, timing and sequencing relationships, exception handling, concurrent execution, dynamic allocation, deallocation, dynamic creation, deletion of objects, processes, tasks, assembly, storage, deployment, and other aspects of dynamic behavior.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.4",
+          "title": "Interface design.",
+          "content": "The SHDD shall describe the interface characteristics of the system components and then the software and firmware units. It shall include both interfaces among the components, units and their interfaces with external entities such as other systems, configuration items, and users. Note: There is no requirement for these interfaces to be completely designed at preliminary design level; this data is provided to allow the recording of interface design decisions made as part of system architectural design. If part or all of this information is contained in external IDDs or elsewhere, these sources shall be referenced.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.4.1",
+              "title": "Interface identification and diagrams.",
+              "content": "The SHDD shall state the project-unique identifier assigned to each interface and shall identify the interfacing entities (systems, configuration items, users, etc.) by name, number, version, and documentation references, as applicable. The identification shall include which entities have fixed interface characteristics (and therefore impose interface requirements on interfacing entities) and which are being developed or modified (thus having interface requirements imposed on them). One or more interface diagrams shall be provided, as appropriate, to depict the interfaces.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.2",
+              "title": "Project-unique identifier of interface.",
+              "content": "This paragraph (beginning with 4.4.2) shall identify an interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to describe the interface characteristics of one or both of the interfacing entities. If a given interfacing entity is not covered by the SHDD (for example, an external system) but its interface characteristics need to be included to describe interfacing entities that are, these characteristics shall be provided as assumptions or as \"When [the entity not covered] does this, [the entity that is covered] will ....\" Other documents (such as data dictionaries, standards for protocols, and standards for user interfaces) can be referenced in place of including the information here. The design description shall include the following, as applicable, presented in any order in the SHDD suited to the information to be provided, and shall note any differences in these characteristics from the point of view of the interfacing entities (such as different expectations about the size, frequency, or other characteristics of data elements):",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.4.2.1",
+                  "title": "Priority assigned to the interface by the interfacing entity(ies)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.4.2.2",
+                  "title": "Type of interface",
+                  "content": "(such as real-time data transfer, storage-and-retrieval of data, etc.) to be implemented",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.4.2.3",
+                  "title": "Characteristics of individual data elements that the interfacing entity(ies) will provide, store, send, access, receive, etc., such as:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.4.2.3.1",
+                      "title": "Names/identifiers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "4.4.2.3.1.1",
+                          "title": "Project-unique identifier",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.3.1.2",
+                          "title": "Non-technical (natural-language) name",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.3.1.3",
+                          "title": "Department of Defense (DoD) standard data element name",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.3.1.4",
+                          "title": "Technical name",
+                          "content": "(e.g., variable or field name in code or database)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.3.1.5",
+                          "title": "Abbreviation or synonymous names",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "4.4.2.3.2",
+                      "title": "Data type (alphanumeric, integer, etc.)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.3",
+                      "title": "Size and format",
+                      "content": "(such as length and punctuation of a character string)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.4",
+                      "title": "Units of measurement",
+                      "content": "(such as meters, dollars, nanoseconds)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.5",
+                      "title": "Range or enumeration of possible values",
+                      "content": "(such as 0-99)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.6",
+                      "title": "Accuracy (i.e. how correct) and precision (i.e. number of significant digits)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.7",
+                      "title": "Priority, timing, frequency, volume, sequencing, and other constraints,",
+                      "content": "such as whether the data element can be updated and whether business rules apply",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.8",
+                      "title": "Security and privacy constraints",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.3.9",
+                      "title": "Sources (setting/sending entities) and recipients (using/receiving entities)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.4.2.4",
+                  "title": "Characteristics of data element assemblies (e.g. records, messages, files, arrays, displays, reports, etc.) that the interfacing entity(ies) will provide, store, send, access, receive, etc., such as:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.4.2.4.1",
+                      "title": "Names/identifiers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "4.4.2.4.1.1",
+                          "title": "Project-unique identifier",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.4.1.2",
+                          "title": "Non-technical (natural-language) name",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.4.1.3",
+                          "title": "DoD standard data element name",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.4.1.4",
+                          "title": "Technical name",
+                          "content": "(e.g., variable or field name in code or database)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.4.2.4.1.5",
+                          "title": "Abbreviation or synonymous names",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "4.4.2.4.2",
+                      "title": "Data elements in the assembly and their structure (number, order, grouping)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.4.3",
+                      "title": "Medium (such as disk) and structure of data elements and assemblies on the medium",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.4.4",
+                      "title": "Visual and auditory characteristics of displays and other outputs",
+                      "content": "(such as colors, layouts, fonts, icons and other display elements, beeps, lights)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.4.5",
+                      "title": "Relationships among assemblies (such as sorting and access characteristics)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.4.6",
+                      "title": "Priority, timing, frequency, volume, sequencing, and other constraints,",
+                      "content": "such as whether the assembly can be updated and whether business rules apply",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.4.7",
+                      "title": "Security and privacy constraints",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.4.8",
+                      "title": "Sources (setting/sending entities) and recipients (using/receiving entities)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.4.2.5",
+                  "title": "Characteristics of communication methods that the interfacing entity(ies) will use for the interface such as:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.4.2.5.1",
+                      "title": "Project-unique identifier(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.2",
+                      "title": "Communication links, bands, frequencies, media and their characteristics",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.3",
+                      "title": "Message formatting",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.4",
+                      "title": "Flow control",
+                      "content": "(such as sequence numbering and buffer allocation)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.5",
+                      "title": "Data transfer rate, whether periodic or aperiodic, and interval between transfers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.6",
+                      "title": "Routing, addressing, and naming conventions",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.7",
+                      "title": "Transmission services, including priority and grade",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.5.8",
+                      "title": "Safety, security, privacy considerations, such encryption, user authentication, compartmentalization, and auditing",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.4.2.6",
+                  "title": "Characteristics of protocols that the interfacing entity(ies) will use for the interface, such as:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.4.2.6.1",
+                      "title": "Project-unique identifier(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.6.2",
+                      "title": "Priority/layer of the protocol",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.6.3",
+                      "title": "Packeting including fragmentation and reassembly, routing, and addressing",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.6.4",
+                      "title": "Legality checks, error control, and recovery procedures",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.6.5",
+                      "title": "Synchronization, including connection establishment, maintenance and termination",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.4.2.6.6",
+                      "title": "Status, identification, and any other reporting features",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.4.2.7",
+                  "title": "Other characteristics, such as physical compatibility of the interfacing entity(ies)",
+                  "content": "(e.g. dimensions, tolerances, loads, voltages, plug compatibility, etc.)",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "CSCI detailed design.",
+      "content": "The SHDD shall describe each software unit of the CSCI. If part or all of the design depends upon system states or modes, this dependency shall be indicated. Design conventions needed to understand the design shall be presented or referenced. Interface characteristics of software units shall be included here, in Section 5, or IDDs. Software units that are databases, or that are used to access or manipulate databases, shall be described here or in DBDDs.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "5.1",
+          "title": "Project-unique identifier of a software unit, or designator of a group of software units.",
+          "content": "The SHDD shall identify a software unit by project-unique identifier and shall describe the unit. Alternatively, the SHDD shall designate a group of software units and identify and describe the software units. Software units that contain other software units shall reference the descriptions of those units rather than repeating information. The following data shall be included, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "5.1.1",
+              "title": "Unit design decisions, if any, such as algorithms to be used, if not previously selected",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.1.2",
+              "title": "Any constraints, limitations, or unusual features in the design of the software unit",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.1.3",
+              "title": "The programming language to be used and rationale for its use if other than the specified CSCI language.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.1.4",
+              "title": "If the software unit consists of or contains procedural commands",
+              "content": "(such as menu selections in a database management system (DBMS) for defining forms and reports, on line DBMS queries for database access and manipulation, input to a graphical user interface (GUI) builder for automated code generation, commands to the operating system, or shell scripts), a list of the procedural commands and reference to user manuals or other documents that explain them",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.1.5",
+              "title": "If the software unit contains, receives, or outputs data,",
+              "content": "a description of its inputs, outputs, and other data elements and data element assemblies shall be included, as applicable. Paragraph 4.4.x provides a list of topics to be covered, as applicable. Data local to the software unit shall be described separately from data input to or output from the software unit. If the software unit is a database, a corresponding DBDD shall be referenced; interface characteristics shall be provided in the SHDD or in the corresponding IDDs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.1.6",
+              "title": "If the software unit contains logic, the logic to be used by the software unit, including, as applicable:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "5.1.6.1",
+                  "title": "Conditions in effect within the software unit when its execution is initiated",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5.1.6.2",
+                  "title": "Conditions under which control is passed to other software units",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5.1.6.3",
+                  "title": "Response and response time to each input, including data conversion, renaming, and data transfer operations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5.1.6.4",
+                  "title": "Sequence of operations and dynamically controlled sequencing during the software unit's operation, including:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "5.1.6.4.1",
+                      "title": "The method for sequence control",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "5.1.6.4.2",
+                      "title": "The logic and input conditions of that method,",
+                      "content": "such as timing variations and priority assignments",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "5.1.6.4.3",
+                      "title": "Data transfer in and out of memory",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "5.1.6.4.4",
+                      "title": "The sensing of discrete input signals, and timing relationships between interrupt operations within the software unit",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "5.1.6.5",
+                  "title": "Exception and error handling",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Requirements traceability.",
+      "content": "The SHDD shall contain:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "6.1",
+          "title": "Traceability from each system component and subsystem component, down to the software unit identified in the SHDD to the requirements allocated to it.",
+          "content": "(Alternatively, this traceability can be provided in 4.1.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.2",
+          "title": "Traceability from each CSCI requirement to the software units to which it is allocated.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Notes.",
+      "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used and a list of any terms and definitions needed to understand the SHDD.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "A",
+      "title": "Appendices.",
+      "content": "Appendices can be used to provide information published separately for convenience in document maintenance (e.g., charts classified data). As applicable, each appendix shall be referenced in the main body of the document, or its equivalent, where the data would normally have been provided. Appendices can be bound as separate documents for ease in handling.\nAppendices shall be lettered alphabetically (A, B, etc.).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82284.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

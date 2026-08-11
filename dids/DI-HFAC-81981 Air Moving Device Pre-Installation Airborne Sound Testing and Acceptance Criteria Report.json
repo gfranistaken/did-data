@@ -1,0 +1,487 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81981",
+  "slug": "di-hfac-81981",
+  "title": "Air Moving Device Pre-Installation Airborne Sound Testing and Acceptance Criteria Report",
+  "summary": "Describes the performance and results of pre-installation airborne sound tests for air moving devices, including fans, fan coil units, fan coil assemblies, and air handling units.",
+  "approval_date": "2015-04-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9540",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "HFAC-2015-015",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Air Moving Device Pre-Installation Airborne Sound Testing and Acceptance Criteria Report describes the performance and results of pre-installation airborne sound tests for air moving devices, specifically a fan, a fan coil unit, a fan coil assemblies, and an air handling unit.\na. This Data Item Description (DID) contains the format, content, and preparation instructions for that data generated in response to applicable tasks of MIL-STD-1474 and the contract statement of work to test the noise performance of an air moving device.\nb. The data reported by this DID may be used to support the analysis and design development described in DI-HFAC-81278, Airborne Noise Analysis and Control Design History Booklet.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-HFAC-81278"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Air Moving Device Pre-Installation Airborne Sound Testing and Acceptance Criteria Report shall be prepared in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Air Moving Device Pre-Installation Airborne Sound Testing and Acceptance Criteria Report shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title page that includes the item under test, ship hull number and name, contract number, equipment number and compartment wherein the item will be located onboard the ship, report date, and revision number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Executive summary.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Table of contents.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "List of figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "List of tables.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "List of appendixes, if applicable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Body of report.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Test and equipment information.",
+              "content": "This section shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.1.1",
+                  "title": "Make, model and serial number of the unit under test, including identification of major components.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.2",
+                  "title": "Ship name(s) and hull number(s) for which the unit is being acquired.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.3",
+                  "title": "Compartment or on-deck location where the unit will be installed. If identical units by make and model number will be installed in any one compartment, identify the specific location in that compartment where the units will be installed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.4",
+                  "title": "Overall unit dimensions and orientation of machinery and equipment item undergoing testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.5",
+                  "title": "Evaluating activity and test site, including name, phone number and e-mail addresses of the individuals who performed and supervised the tests.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.6",
+                  "title": "Test date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.7",
+                  "title": "Specified acceptance criteria, including reference units.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.8",
+                  "title": "Driver unit horsepower.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.9",
+                  "title": "Rated electrical characteristics, including volts, amps, phase.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.10",
+                  "title": "Rated fluid media parameters (e.g., flow rates, temperatures, pressures).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.11",
+                  "title": "Equipment rated operational speeds (e.g., driver and driven unit rpm).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.12",
+                  "title": "Expected equipment primary source excitation frequencies (e.g., rotational frequencies, gear tooth mesh frequencies, motor slot frequency, cylinder firing frequencies, vane frequencies, blade frequencies, piston frequencies, turbocharger frequencies).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.13",
+                  "title": "Resilient mount manufacturer, model number, and date of manufacture.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.14",
+                  "title": "Number of resilient mounts used. A photo shall be included showing each installed resilient mount.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.15",
+                  "title": "If the use of non-Navy standard resilient mounts has been approved, include the characteristics including load rating in pounds and resonant frequency of the mounts.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.16",
+                  "title": "Operational load (e.g., full, half) of the machinery and equipment undergoing testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.17",
+                  "title": "Operating speeds (rpm) used during test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.18",
+                  "title": "Throttling conditions, if any, and a description of how throttling conditions are set and verified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.19",
+                  "title": "Operating suction and discharge fluid media parameters during test (e.g., flow rates, pressures, temperatures).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.20",
+                  "title": "Electrical inputs and outputs used during the test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.21",
+                  "title": "Identification of make and model of measurement and analysis instrumentation used, including calibration instrumentation. Certificates of laboratory calibration shall be included.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.22",
+                  "title": "Details of instrument settings used during the testing (e.g., type of sampling window, coupling, sampling frequency, sampling time, number of averages, averaging type, and frequency resolution of the data, if appropriate.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.23",
+                  "title": "Name and other information identifying individuals representing the procuring activity who witnessed the test, including e-mail and phone number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.2",
+              "title": "Drawings, photographs, and calculations.",
+              "content": "This section shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.2.1",
+                  "title": "Identification and arrangement of major components and unit under test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.2",
+                  "title": "Make, model, load range, and natural frequency of resilient mounts used to support the device under test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.3",
+                  "title": "Resilient mount location and orientation, including any sway braces; and overall wet weight and center of gravity of the item undergoing testing with respect to a defined reference position.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.4",
+                  "title": "Calculated load on each resilient mount compared to specified load range of each mount; and calculated natural frequency of each mount when experiencing the calculated load.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.5",
+                  "title": "Drawing and dimensional description of the foundation and mounting structure used to support the machinery and equipment item undergoing testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.6",
+                  "title": "Arrangement and description of flexible hose assemblies and flexible duct connections showing configuration, diameter, and lengths of flexible sections, and details of how the weights of these were supported. Photos shall be included.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.7",
+                  "title": "Arrangement of piping and fittings used to facilitate testing and details of how the weights of these were supported.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.8",
+                  "title": "Arrangement of electrical power leads coupled with arrangements of cables used with instrumentation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.9",
+                  "title": "Location and orientation of each microphone relative to the envelope of the item under test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.10",
+                  "title": "Locations and sizes of equipment air inlet and discharge openings and dimensions of any attached ducts and plenums.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.11",
+                  "title": "Location of acoustical center of sound source.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.12",
+                  "title": "Acoustical environment (indoor).",
+                  "content": "When testing indoors, the following shall be included:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.8.2.12.1",
+                      "title": "Location and orientation of test unit relative to floor, walls, ceiling, and contents of test room.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.2.12.2",
+                      "title": "Test location (e.g., anechoic, reverberant); dimensions of the test environment (e.g., room, chamber); description of the physical treatment on walls, ceiling, and floor.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.2.12.3",
+                      "title": "Description of any exposed insulating materials installed on the walls, floor, and ceiling including manufacturer, model number, thickness, density, and facing.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.8.2.13",
+                  "title": "Acoustical environment (outdoor).",
+                  "content": "When testing outdoors, the following shall be included:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.8.2.13.1",
+                      "title": "Location and orientation of test unit relative to buildings, structures, and other reflecting surfaces and objects.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.2.13.2",
+                      "title": "Description of the ground surface, and wind direction and speed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.8.3",
+              "title": "Measured data.",
+              "content": "This section shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.3.1",
+                  "title": "Measured data in reference units that are identical to the specified reference units.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.2",
+                  "title": "Any measurements that are included in graphical form shall show ordinate (magnitude) values with 10 dB between major divisions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.3",
+                  "title": "Measured data, by measurement location and orientation, with accompanying information at that same location including background and ambient data and assigned limits.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.4",
+                  "title": "For airborne noise levels that exceed the specified limits, excesses shall be clearly indicated in any tabulated and plotted data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.5",
+                  "title": "If excesses to the specified octave band airborne levels are included in graphical form, plots of narrowband data measured at the offending microphone positions, with frequency resolution not to exceed 1 Hz, shall be included.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.6",
+                  "title": "The mechanisms that exist within the machinery and equipment that are specifically responsible for the measured excesses (e.g., rotational frequency, blade, vane and piston frequency, firing frequency, gear mesh frequency, coincidence of a forcing frequency with a natural frequency of the mounting system, resonance in the subbase).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Conclusions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81981.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

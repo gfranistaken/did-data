@@ -1,0 +1,217 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82471",
+  "slug": "di-ipsc-82471",
+  "title": "Software/Hardware Log & Telemetry Report (SHL&TR)",
+  "summary": "The Software/Hardware Log & Telemetry Report provides the format, content, and delivery requirements for aggregated telemetry data automatically collected from system logs, agents, and sensors.",
+  "approval_date": "2025-02-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10533",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "TM",
+  "project_number": "IPSC-2025-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The system telemetry information report contains the format, content, and delivery requirements for aggregated information generated from the automated collection of system security, health, and status data from system logs, agents, and/or sensors.\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The format of the SHL&TR shall adhere to the format described under content. Digital delivery is encouraged.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content:",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Data Types:",
+          "content": "the SHL&TR shall contain the following information types of system information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "System Performance Metrics:",
+              "content": "data and information pertaining to the physical performance characteristics of the system. Examples include CPU usage, disk usage, memory usage, power output, rotations per minute, and number of usage cycles.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "System Health Metrics:",
+              "content": "data and information pertaining to the correct functioning of the system. Examples include error rates, response times, error codes/messages, shock measurements, and non-nominal measurements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "User Activity Metrics:",
+              "content": "data and information pertaining to user actions and behavior. Examples include login attempts, page views, times of sessions, user inputs, subsystem/module usage, user persona information, and location data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Network Traffic Metrics:",
+              "content": "data related to network communications. Examples include bytes sent, bytes received, network addresses, ports and services, signal strengths, dropped packets, routing, and channel frequencies.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.5",
+              "title": "Security Metrics:",
+              "content": "data and information related to hostile action or system intrusion. Examples include login failures, invalid access attempts, improper privileges escalation attempts, invalid data exfiltration attempts, and alarm activations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.6",
+              "title": "Process Metrics:",
+              "content": "data and information related to the functioning of a process or team, often by data collected from an automated workflow tracking or ticketing system. Examples include work in progress (WIP), cycle times, throughput, velocity, number of deployments, and source code measurements.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Data formats:",
+          "content": "The SHL&TR shall contain data according to the following formats:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Aggregated data files.",
+              "content": "For use in periodic delivery of aggregated data in a file format. Due to the volume of data that is generated by automated telemetry, delivery in a file format should not be requested on an as-generated basis unless automated delivery to a government-accessible database is available. Deliver according to one of the file formats:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.2.1.1",
+                  "title": "JavaScript object notation (JSON)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.1.2",
+                  "title": "Comma separated values (CSV)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.1.3",
+                  "title": "Delimiter separated file",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.1.4",
+                  "title": "Extensible Markup Language (XML)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.1.5",
+                  "title": "Avro",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.1.6",
+                  "title": "Parquet",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.1.7",
+                  "title": "Microsoft Excel file (.xlsx)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.2.2",
+              "title": "Application Programming Interface/Automated Data Streams.",
+              "content": "Delivery of data via an automated data pull/delivery according to one of the following formats/methods:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.2.2.1",
+                  "title": "Representational state transfer (REST)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.2.2",
+                  "title": "Open API/Swagger",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.2.3",
+                  "title": "Message queue",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.2.4",
+                  "title": "Compatible COTS Software as specified in PWS",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.2.3",
+              "title": "Data visualization or automated report.",
+              "content": "Delivery of information in an automated console, data visualization software, or web page. Report must be accessible by the government.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82471.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

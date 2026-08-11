@@ -1,0 +1,295 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81977",
+  "slug": "di-hfac-81977",
+  "title": "Ship Noise Surveys",
+  "summary": "The Ship Noise Surveys document the results of noise surveys the Contractor performs during Builder's Trials to support acceptance decisions and hearing loss claim adjudication.",
+  "approval_date": "2015-04-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9530",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "HFAC-2015-014",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Ship Noise Surveys document the results of noise surveys that the Contractor performs during Builder's Trials. The Surveys provide the procuring activity with the information required to decide whether to accept the ship as is or to authorize additional design modifications. In addition, the Surveys provide the Government with information needed to adjudicate hearing loss claims.\na. This Data Item Description (DID) contains the format, content, and preparation instructions for that data generated in response to applicable tasks of MIL-STD-1474 and the contract statement of work.\nb. This DID provides the procuring activity with the data that demonstrates whether the as-built ship complies with specified noise performance requirements in the contract specifications.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Ship Noise Surveys shall be prepared in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Ship Noise Surveys report shall contain the following sections: a. Title page with report (drawing) number, b. Executive summary, c. Table of contents, d. List of figures, e. List of tables, f. List of appendixes, if applicable g. Introduction, h. Body of report with subsections as needed, and i. Conclusions.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The following types of noise surveys shall be",
+          "content": "identified for all compartments accessible by a door or hatch, and at all on-deck work stations. The space shall be listed by standard nomenclature (i.e., level or deck - frame - compartment number such as 02-28-05).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Underway at operating conditions as stated in the specification with machinery and with equipment in the \"normally operating\" state, including machinery items that cycle \"on and off\" on demand,",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Dockside while on shore power with only the heating, ventilation, and air conditioning (HVAC) system functioning in the \"normally operating\" state,",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Hazardous conditions survey for the underway \"normally operating\" state, and",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Hazardous conditions survey for the dockside \"normally operating\" state.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "For each of the noise surveys described in",
+          "content": "3.1 above, the sound pressure levels (SPL) as overall dB(A), overall dB(C), peak SPL, un-weighted octave band, and time weighted average (TWA) (if needed), in units of dB re 20 microPa shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "For each item in 3.1 that exceeds its",
+          "content": "acoustical requirements, the following shall be provided:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Diagnostic survey for the underway \"normally operating\" state.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Diagnostic survey for the dockside \"normally operating\" state.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Noise excesses due to radiation from vibrating structures such as decks and bulkheads.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Diagnostic octave band or one-third octave band data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Diagnostic structureborne noise data in units of dB re 1 micro-g.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Narrowband data in the frequency ranges of 1 to 100 Hz, 100 to 1,000 Hz and 1,000 to 10,000 Hz.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "The noise survey report shall include the underway",
+          "content": "measured data described in 3.1.1 and 3.1.5.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The noise survey report shall include the dockside",
+          "content": "measured data described in 3.1.2 and 3.1.6.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The noise survey report shall include a list",
+          "content": "of any HVAC system that was not balanced prior to performing the noise surveys described in 3.1.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "The noise survey report shall include a list",
+          "content": "of all fans, fan coil assemblies, fan coil units, unit heaters, unit coolers, air handling units and other air moving devices with item number and compartment location.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "For each fan, fan coil assembly, fan coil",
+          "content": "unit, unit heater, unit cooler, air handling unit and other air moving device listed in 3.6 above, the following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Identify which items were \"on\" and which were \"secured\" during each of the noise surveys described in 3.1.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Identify any items that were required to be operating but were not operational during the noise survey testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Identify the HVAC equipment number, compartment location, and system number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "The noise survey report shall include a list",
+          "content": "of all non-HVAC equipment that may contribute to the airborne noise with a given space.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "For each non-HVAC equipment item listed in",
+          "content": "3.9 above, the following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Identify which items were \"on\" and which were \"secured\" during each of the noise surveys described in 3.1.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Identify any items that were required to be operating but were not operational during the noise survey testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Identify the equipment number, compartment location, and system number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "The noise survey report shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "For each compartment and on-deck work station, the maximum measured noise level, assigned noise limit, and noise excess;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Compartments and on-deck stations experiencing hazardous noise conditions;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Compartments and on-deck stations experiencing noise levels in excess of 140 dBP; and",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.4",
+              "title": "The specific machinery and equipment items, HVAC systems, and high noise level compartments and areas responsible for the detected noise excesses, and the transmission and radiation paths controlling airborne or structureborne noise.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "If measured noise excesses exist, the noise survey",
+          "content": "report shall include a set of noise control options that could be implemented to eliminate the noise excesses detected.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81977.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

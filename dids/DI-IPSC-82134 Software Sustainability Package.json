@@ -1,0 +1,265 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82134",
+  "slug": "di-ipsc-82134",
+  "title": "Software Sustainability Package",
+  "summary": "The Software Sustainability Package provides the source code, design details, models, and related materials needed to reproduce, recreate, or recompile deliverable software for sustainment by non-developers or the OEM.",
+  "approval_date": "2017-06-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9821",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "IPSC-2017-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Sustainability Package (SSP) contains the superset of source code, design details, models, algorithms, processes, flow charts, formulae and related materials that would allow the software to be reproduced, recreated or recompiled, as needed for sustainment by non-developer(s) or the original equipment manufacturer (OEM). This includes all executable software, design models, source files, and software sustainment information, including \"as built\" design information and compilation, build, and modification procedures, for each Computer Software Configuration Item (CSCI).\nThe SSP is to be used in conjunction with a Contract Line Item Numbers (CLINs) or CLIN Options to procure the executable software and source files for a CSCI and is the primary software sustainment document for each CSCI which could be maintained by non-OEM(s). The SSP is the line item description of the data and products that are to be procured through the CLINs.\nNote: Different organizations have different policies for ordering delivery of software. These policies should be determined before applying this Data Item Description (DID).\nThis DID is used when the developer is tasked, either by CLIN, Statement of Work (SOW) or Statement of Objectives (SOO), to prepare executable software, source files, \"as built\" CSCI design, hardware and related sustainment information for delivery.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The SSP shall be in contractor format. The SSP shall adhere to the format described under Content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The specification shall contain the following items:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "A detailed and complete identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Briefly state the purpose of the system and the software to which this document applies.",
+              "content": "It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and sustainment agencies; identify current and planned operating sites.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Describe the relationship to other project management plans.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Provide a detailed listing of source files",
+          "content": "including source code in its original language, batch files, build scripts, data files, and libraries necessary to successfully regenerate the software product from scratch and to be able to successfully execute the regenerated software product on the target hardware without any involvement from the software product's OEM.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Identify and describe in detail the hardware and associated documentation needed to sustain the deliverable software.",
+          "content": "This hardware may include computers, peripherals, hardware simulators, stimulators, emulators, diagnostic equipment, programming equipment (e.g. erasure of software from, loading software onto, and verification of software on a hardware device), firmware devices, and non-computer equipment. The following shall be included in the description:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Specific models, versions and configurations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Operator manuals or instructions for each item, as applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Whether the item is furnished by the developer, by the OEM, as GFE/GFI, etc. and whether the item is still supported by that particular organization.",
+              "content": "If the item is no longer supported or manufactured, a plan for procuring replacements (e.g. new source of supply) should be identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Information about licensing, data rights, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Security and privacy considerations, limitations, or any other items of interest.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Information about the operational and environmental limits to which the item may be subjected and maintain satisfactory operation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Provide a detailed description of the complete software development environment (SDE) and software test environment.",
+          "content": "The following shall be included in the description:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "All software tools (Cybersecurity, compilers, linkers, loaders, debuggers, scripts, etc).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Procedural documentation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Operational data and settings, such as compiler flags and environmental variables required to regenerate and maintain the software product.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Provide a detailed listing and description of automated test tools associated with the software product.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "As an appendix to this document or as a standalone document, identify, detail and list all unit, component and CSCI level test procedures and all test scripts.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "As an appendix to this document or as a standalone document, identify, detail and list all CSCI, CSC, CSU and system integration procedures; hardware/software integration procedures; and instructions for use of integration procedures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "As an appendix to this document or as a standalone document, identify, detail and list all system development testing suites such as System Integration Lab (SIL) subsystems, and data acquisition, data reduction, and data analysis tools, along with all custom test equipment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Provide a detailed description of problem tracking, software configuration management, and data management tools and licenses.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Provide a detailed description of requirements, design, source code and processes for devices and software which load software into the subsystems.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Provide a detailed description of licenses, including commercial and open source, which are utilized at the SDE, software test environment, and SIL.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "As an appendix to this document identify and detail all software architecture artifacts, including Unified Modeling Language (UML) diagrams, UML modeling and executable code, and data models.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "As an appendix to this document identify and detail training materials to teach the sustainers the complexities of the systems and the interfaces with other systems.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Identify and detail other items required for software development and sustainment that are not previously requested or identified in the previous sections.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Notes.",
+      "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "5",
+      "title": "Appendixes.",
+      "content": "Appendixes may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82134.pdf",
+    "extraction_date": "2026-08-11",
+    "extraction_method": "claude_cowork"
+  }
+}

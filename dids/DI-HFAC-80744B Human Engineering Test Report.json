@@ -1,0 +1,416 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-80744B",
+  "slug": "di-hfac-80744b",
+  "title": "Human Engineering Test Report",
+  "summary": "The Human Engineering Test Report provides evidence that the human-system interface requirements for the operation, maintenance, and support of the system have been met.",
+  "approval_date": "1998-07-08",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "A7318",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "A/AMCOM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Human Engineering Test Report provides evidence that the human-system interface requirements for the operation, maintenance, and support of the system have been met. This report serves as the principal means of assessing the compatibility of the human performance requirements, personnel selection criteria, training program, and design of the human-equipment/software interfaces. This report will be used to determine whether and to what level or standard(s) each trained individual can perform in the specified sequence all assigned systems tasks, to determine whether and to what extent each individual's performance is affected by equipment configuration, the performance of other system personnel, or both; and to assess the impact of the measured human performance on the attainment of task, task group, and mission requirements.\na. This data item description (DID) contains the format and content preparation instructions for a Human Engineering Test Report resulting from the work task delineated in the SOW.\nb. This DID is related to DI-HFAC-80743A, \"Human Engineering Test Plan\".\nc. This DID supersedes DI-HFAC-80744A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-80744A"
+  ],
+  "related_dids": [
+    "DI-HFAC-80743A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "General.",
+      "content": "The Human Engineering Test Report shall be prepared for each personnel position in the system being developed. All of the operations and maintenance tasks required of the individual assigned to a personnel position shall be referred to as the \"task group\" of the position.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Human Engineering Test Report format shall be contractor selected. Unless effective presentation would be degraded, the initially used format arrangement shall be used for all subsequent submissions.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Human Engineering Test Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introductory information.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Specific title of test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Identification of equipment or concept being tested.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Specific purpose of this test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Objectives of this test",
+              "content": "(if appropriate, stated in terms of hypothesis, to be tested).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Date(s), location(s), names(s) of individuals present and supervising the conduct of the test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "For each task group or portion thereof reported, a list of all the discrete tasks and a brief description of the operational environment in which they are to be performed when the system is deployed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Description of test methods and controls.",
+          "content": "The following test methods and controls shall be described.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Human performance standards.",
+              "content": "State or reference any human performance standards (e.g., \"0.9 probability of operator launching missile within 10 seconds after detecting target\") or assumed contribution to error (e.g., \"aiming error less than 3 mils\") contained in system development documents. If none, so state.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Environment.",
+              "content": "Describe the environment at each distinct location of human performance: (Include noise and illumination levels, shock and vibration, air temperature and humidity, and ventilation. Also, state the concentration of, and test participant exposure time to any toxic or hazardous substances, and state whether that exposure was or was not within the applicable safety limits for each substance).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Test participants.",
+              "content": "Describe test participants. For each participant, where relevant, state age, weight, body dimensions applicable to performance tasks, visual acuity and hearing levels, any known physical disabilities, and educational and work experience.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Individual clothing and equipment.",
+              "content": "Describe individual clothing and equipment (including all clothing and equipment worn, carried or otherwise borne on the body, such weapon, communications equipment, headgear and protective mask).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Pre-test training.",
+              "content": "Describe type and amount (in hours) of system-specific pre-test training (differentiating \"hands on\" practice from other training) given to test participants; and type, content and results of training used. Also, state time intervals between end of training, training assessment, and start of tests being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Mockup or equipment.",
+              "content": "Describe the mockup or equipment on which test is conducted (including material used and type of fabrication, dimensions, and cross-reference to blueprints, drawings or sketches).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Deviations.",
+              "content": "Identify deviation(s) during the test from conditions of expected use (see paragraph 3a(6) above); narrative explanation of reason(s) for deviation(s), and presumed effect(s) of such deviation(s) on the validity of generalizations from test data.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Data collection and use.",
+          "content": "The following shall be identified or described, as indicated:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Identification of the quantitative and qualitative measures of both human and system performance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Description of methods, procedures, and instrumentation used in data collection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Description of techniques used for data reduction, statistical techniques employed, and confidence levels selected.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Results.",
+          "content": "The following results shall be summarized:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Quantitative human and system performance data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Qualitative data",
+              "content": "(including questionnaires, interviews, and checklists).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Human performance errors.",
+          "content": "The following considerations of human performance shall be described:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Each error",
+              "content": "(narrative description, with photograph(s) if appropriate) and frequency of occurrence.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Consequence",
+              "content": "(brief statement of the immediate effect of the error on system operation).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Causes",
+              "content": "(isolation of the immediate cause of each actual performance error and identification of the events, conditions, operator workload, environmental factors, and equipment configurations which may have contributed to it).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Explanation by participants making errors of the reasons for the errors.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Recommended solutions",
+              "content": "(stated in terms of equipment redesign, alteration of tasks, personnel selection, training, or a combination of these) and rationale.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Incompatibilities among human performance and equipment.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Identification.",
+              "content": "The following incompatibilities encountered during the test, shall be identified:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "The tasks of one task group that interfered with the performance of tasks of another task group.",
+                  "content": "(Identify both the interfering and affected tasks.) If none, so state.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "The human performance that was adversely affected by equipment configuration or characteristics.",
+                  "content": "(Identify the human performance, equipment involved, and controls or displays needed but not present.) If no adverse effects on human performance were encountered, so state.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Recommend solutions.",
+              "content": "Recommend solutions (stated in terms of equipment redesign, alteration of tasks, personnel selection, and training). Provide rationale.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Observed safety hazards.",
+          "content": "Descriptions of each safety hazard encountered during the test shall include the information below. If none were encountered, so state.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Narrative description, with photograph(s) if appropriate.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Frequency of occurrence.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Severity and consequences.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Recommended action to eliminate or minimize hazard.",
+              "content": "(State in terms of equipment redesign, alteration of tasks, personnel selection, training, or a combination of these, and provide rationale).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Analysis of impact of human performance on attainment of system performance goals.",
+          "content": "This analysis shall include a:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "statement of (or reference to) system performance goals.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "narrative explanation of reasons why any human performance tasks required by present equipment design are not feasible, or why any standards presently set for specific performance tasks are unattainable.",
+              "content": "(if all human performance requirements are feasible and any standards set appear to have been met, so state).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "narrative explanation of how measured human performance times and errors in operations and maintenance can affect system reliability and availability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "narrative explanation of how measured human performance times and error frequencies and magnitudes can affect system effectiveness.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "narrative explanation of how system performance goals would be affected by implementing the solutions recommended in paragraphs 3e, 3f, and 3g above.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Conclusions.",
+          "content": "Conclusions shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Summary of major findings from test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Implications of major findings",
+              "content": "(including anticipated effects on system reliability, availability, and effectiveness).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Recommended changes.",
+          "content": "List of recommended changes to equipment configuration, human performance tasks, personnel selection and training (in order of decreasing importance) with indication of government or contractor organization responsible for implementing recommended actions.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-80744B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

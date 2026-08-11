@@ -1,0 +1,282 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-80746C",
+  "slug": "di-hfac-80746c",
+  "title": "Human Engineering Design Approach Document - Operator",
+  "summary": "The HEDAD-O describes equipment that interfaces with operators, providing data to evaluate human performance and human engineering criteria and the design rationale.",
+  "approval_date": "2012-08-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "9277",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "AM - HQ US Army Materiel Command",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Human Engineering Design Approach Document \u2013 Operator (HEDAD-O) describes equipment that interfaces with operators. This document provides a source of data to evaluate the extent to which equipment having an interface with operators meets human performance requirements and human engineering criteria, and provides the human engineering rationale for the design.\na. This data item description (DID) contains the format and content preparation instructions for the HEDAD-O resulting from applicable tasks delineated in the statement of work (SOW).\nb. This DID supersedes DI-HFAC-80746B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-80746B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as cited in Acquisition Streamlining and Standardization Information System (ASSIST) database at the time of the solicitation.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General.",
+      "content": "The HEDAD-O shall describe the layout, detailed design, and human engineering design rationale of hardware and software operator interfaces, and provide information about operator tasks associated with the interfaces. The HEDAD-O shall describe the extent to which human performance requirements have been addressed and applicable human engineering design criteria (per specifications and standards cited in the SOW and system specification) have been incorporated into the layout and detailed design of hardware- and software-based operator interfaces. As applicable, results from analysis of operator tasks shall be presented as part of the rationale supporting the layout, design, and arrangement of operator interfaces.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Tailoring.",
+      "content": "The HEDAD-O shall be tailored to reflect the SOW, system specification, and the scope of the user interface development. The proposed tailoring of the HEDAD-O content shall identify the paragraph, the proposed changes, and a rationale. Tailoring specified by the procuring agency shall also be included. If no tailoring is proposed beyond that specified by the procuring agency, this shall be stated.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Format.",
+      "content": "The HEDAD-O format shall be contractor selected. Unless it would degrade effective presentation, the initially used format shall be used for all subsequent submissions. Revisions shall be clearly indicated in a manner consistent with standard editorial practices.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "5",
+      "title": "Content.",
+      "content": "For existing systems that are being modified, the following shall be described: operator interfaces and functions that are intended to remain unchanged; operator interfaces and function that are being developed or modified to meet the contract requirements; and how the new and modified operator interfaces and functions are integrated with the design. For existing systems, the content of the paragraphs below shall apply only to the new and modified equipment and its integration with existing design. The HEDAD-O shall contain the following information related to operator interfaces:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "5.1",
+          "title": "Operator interfaces.",
+          "content": "A list of the hardware and software user interfaces (grouped as appropriate) and the purpose of each shall be provided and described for each operator.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.2",
+          "title": "Specification and drawing list.",
+          "content": "A list of specifications and drawings approved by human engineering at the time of the HEDAD-O preparation shall be provided and described. The list shall also include documents where human engineering approval is required.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.3",
+          "title": "Operator Station description.",
+          "content": "Operator station(s) shall be described, emphasizing human engineering design features. The following aspects of each operator station shall be described:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "5.3.1",
+              "title": "Layout and arrangement.",
+              "content": "One drawing, photograph, or computer-aided design (CAD) rendering of each operator station. Each drawing, photograph, or CAD rendering shall contain operator- and equipment-related reference points (e.g., operator eye position, seat reference point) and scale.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.3.2",
+              "title": "Equipment.",
+              "content": "One drawing, photograph, or CAD rendering of each hardware user interface (e.g., item of equipment, control/display panel) shall also be provided. The point of reference shall be normal to the item of equipment and the scale shall be indicated.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.3.3",
+              "title": "Geometry.",
+              "content": "The position of each hardware user interface and the position of the operator's design eye position shall be described or provided in a CAD rendering in three-dimensional space (X, Y, Z coordinates) or system design coordinates.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.3.4",
+              "title": "Field of View (FOV).",
+              "content": "Operator FOV to operator station hardware user interfaces shall be described or rendered using the operator's normal eye position(s) as the point of reference. When applicable, operator external FOV shall also be described or rendered using the operator's normal eye position(s) as the point of reference. The extent of external FOV shall be related to system mission requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.3.5",
+              "title": "Reach.",
+              "content": "Operator reach to operator station hardware user interfaces shall be depicted or rendered as a reach envelope from the operator's normal operating position (e.g., seated or standing) while wearing operational clothing and equipment with standard restraint systems (e.g., seat belt and shoulder harness).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.3.6",
+              "title": "Operator posture/restraint control.",
+              "content": "Operator posture/restraint control including seating, restraint systems, and other postural control techniques shall be described.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "5.4",
+          "title": "Controls and displays.",
+          "content": "The layout and detail design for each hardware and software user interface shall be described with regard to the intended use by the operator in the context of primary mission performance. The descriptions shall include, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "5.4.1",
+              "title": "Hardware.",
+              "content": "A drawing, photograph, or computer rendering of the hardware user interface shall be provided with annotations or descriptions of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "5.4.1.1",
+                  "title": "Displays: display size, display technology (e.g., LED, plasma), brightness, resolution, contrast.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5.4.1.2",
+                  "title": "Controls: control type (e.g., rotary switch, toggle switch, handwheel), control states or range, default state, control/display ratio, control force.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "5.4.2",
+              "title": "Software.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "5.4.2.1",
+                  "title": "Software user interface design approach.",
+                  "content": "An overview of the design approach, including a copy or reference to the user-interface style guide and source (e.g., Microsoft Windows, FalconView), if any, shall be provided. The overview shall include, as appropriate, a description of the type and source of symbology (e.g., MIL-STD-2525), data entry, data display and option selection widgets, color-coding conventions).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5.4.2.2",
+                  "title": "Display Hierarchy.",
+                  "content": "For multifunction display devices, the hierarchy (page tree) used to access all display pages shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5.4.2.3",
+                  "title": "Display design and interaction.",
+                  "content": "For each software user-interface screen, a drawing, photo, screen shot, or other rendering of the interface shall be provided with annotations to identity and describe, as applicable, for each software widget: type (e.g., data entry field, toggle selection, pop-up menu), range of values/options, default option/value, and, if necessary for clarity, unit of measure. A brief description of the operator interaction with the user interface(s) shall be provided for each software screen or group of functionally related screens. If a separate software user interface design description document is available, it can be provided or referenced to fulfill provisions of this paragraph.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "5.4.3",
+              "title": "Automation.",
+              "content": "Automation features, including the rationale and intended effect on operator workload and performance, shall be described.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "5.5",
+          "title": "Operator alerting.",
+          "content": "Operator alerting systems, including audio and visual warning, caution, and advisory alerts shall be described with regard to alerting philosophy; type, coding, and organization of alerts; causes and responses to alerts; and crew control over alerts.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.6",
+          "title": "Multiple operator stations.",
+          "content": "Where applicable, a drawing, photograph, or CAD rendering of the number and arrangement of workstations for multiple operators in a workspace or functioning in a team environment shall be provided. The rationale for the number of operators, arrangement of operator stations, and allocation of functions to operators shall be provided. If function allocation is provided in a Human Engineering System Analysis Report (HESAR) or other document, it shall be referenced in lieu of providing the information in the HEDAD-O.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.7",
+          "title": "Operator station lighting.",
+          "content": "Operator station and as applicable, operator workspace lighting characteristics (e.g., type, color, location, compatibility with night vision imaging systems) and lighting control systems shall be described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.8",
+          "title": "Environmental factors.",
+          "content": "Noise, vibration, radiation, temperature, ambient illumination, climatic effects, and other relevant environmental parameters of the system that may have an effect on operator performance shall be described. Operator life support systems, and protective clothing and equipment shall be described, along with associated impacts on operator comfort, reach, vision, mobility, and accommodation.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.9",
+          "title": "Ingress/egress.",
+          "content": "Normal and emergency ingress and egress provisions and procedures shall be described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.10",
+          "title": "Communications systems.",
+          "content": "Communication systems and communication systems control shall be described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.11",
+          "title": "Human engineering design rationale.",
+          "content": "The rationale for human engineering design, layout, and arrangement of each operator interface shall be described as part of the design description. The rationale shall include, as applicable, specific considerations of system mission (or system function); equipment operation; operator selection, training, and skill requirements; operator task performance requirements; and any limitations imposed on design by the procuring agency. The basis for reaching specific design, layout, and arrangement decisions shall be presented (e.g., human engineering requirements or guidelines specified in the contract; system engineering analyses; systems analyses, task analysis, human engineering studies; trade-off analyses; mock-up and simulation results, and human engineering test results). For an existing system that is being modified, the operation and function of the systems and functions of the system being modified shall be described, with a rationale for how new functions and associated hardware and software operator interfaces are being integrated to meet new requirements. The design rationale can be presented with the design description for each user interface or functionally grouped set of interfaces.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.12",
+          "title": "Task analysis.",
+          "content": "If conducted, results from the analysis of new or significantly modified operator tasks (see MIL-HDBK-1908) shall be presented as part of the rationale for operator station design, integration, and layout. Any task analysis description shall include the methodology used to generate task analysis results (e.g., paper and pencil, computer-based simulation, dynamic simulation) and system-mission(s), function(s), or other external information use to \"drive\" the task analysis. Critical tasks (see MIL-HDBK-1908) shall be clearly identified. If the task analysis or supporting data is available through other sources, such as a task inventory or training analysis, that data shall be referenced to fulfill the intent of this paragraph, and an executive summary of the methods and results shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.13",
+          "title": "Alternative to baseline design.",
+          "content": "A drawing, photograph, or CAD/computer rendering of each hardware or software user interface being considered as a substantial (not incremental) alternative to the baseline user interface at the time of submission shall be provided, with a brief rationale for the alternative.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.14",
+          "title": "Design changes.",
+          "content": "A list of the design, arrangement, or layout changes made since the last HEDAD-O preparation shall be provided, with references to the section(s) where the new design, arrangement, or layout is described.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-80746C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

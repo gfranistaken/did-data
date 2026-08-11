@@ -1,0 +1,188 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82360",
+  "slug": "di-ipsc-82360",
+  "title": "Functional Description Data (FDD)",
+  "summary": "The Functional Description Data (FDD) supports agile software development by specifying the functional decomposition and requirements for a Capability Item (CI), including its Features and Components.",
+  "approval_date": "2021-09-29",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10271",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "IPSC-2021-006",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The government will use the Functional Description Data (FDD) for agile software development, vice waterfall development.\nIn agile development, software modularity is expected, where the FDD specifies the functional decomposition, and associated requirements, for a 'Capability Item' (CI). In this context, the FDD scope encompasses CI requirements definition that scales with the functional decomposition, employing a use-case framework to translate stakeholder user stories to use-cases (functional and non-functional).\nAgile development refines the FDD to specify Sprint team decomposition of Features into software Components capable of completion within a few hours (or a comparable Sprint team metric). As an aggregate, the FDD specifies functionality and requirements for a CI, inclusive of its Features and Components.\nRequirements pertaining to the CI external interfaces are presented in the FDD, or alternatively in one or more Interface Requirements Specifications (IRSs) (DI-IPSC-81434A) referenced from the FDD. The basis for CI design and qualification testing is presented in the FDD, supplemented by IRSs as applicable.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract. This DID is used when the developer is tasked to define and record the software requirements to be met by a CI accepted for Program Increment (PI) implementation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-IPSC-81434A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Following are the format requirements: the FDD shall be in contractor format. The deliverable data shall be on paper or electronic media; if intended delivery is to be in electronic form, items shall be compatible with a specified word processor or other common use support software. Any section, paragraph, or subparagraph in the FDD can be written as multiple paragraphs or subparagraphs to enhance readability.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The term 'document' in this DID shall mean a collection of data regardless of its medium. In the case of a FDD in a form other than a traditional document, the terms \"section\" and \"paragraph\" in this DID shall mean the element(s) that fulfill the section or paragraph's requirements. The FDD shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "FDD CASE Tools.",
+          "content": "If the FDD, or any sub portion thereof, originates from a Computer-Aided Software Engineering (CASE) or other automated tool, then the deliverable shall specify the CASE tool (e.g., name, make, version, and date), and if the CASE tool provides Configuration Management (CM) control for the associated FDD content, and whether deliverables include a baseline export from the CASE tool.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Title page or identifier.",
+          "content": "The FDD shall include a title page containing, as applicable: CI number; security markings or other restrictions on the handling of the document (e.g., DoDI 5200.48, DoDM 5000.01 Volume 2 compliant); date; document title; name, abbreviation, and any other identifier for the system, subsystem, or item to which the document applies; contract number; Contract Deliverable Requirements List (CDRL) item number; organization for which the document has been prepared; and distribution statement (e.g., DoDI 5230.24). For data in a database or other alternative form, this information shall be included on external and internal labels, or by equivalent identification methods.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Table of contents.",
+          "content": "The FDD shall contain a table of contents providing the number, title, and page number of each titled paragraph, figure, table, and appendix. For data in a database or other alternative form, this information shall consist of an internal or external table of contents containing pointers to, or instructions for accessing, each paragraph, figure, table, and appendix or their equivalents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Administrative overview.",
+          "content": "The FDD shall identify FDD Principle Investigator and Additional Contributors by name, organization, email, phone; applicable program baselines and variant applicability; and Participating Subsystems (Mandatory and Lead). Related information links and the FDD change record, including: version, date, change author, and change summary, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Page numbering/labeling.",
+          "content": "Each page shall contain a unique page number and display the document number, including version, volume, and date, as applicable. For data in a database or other alternative form, files, screens, or other entities shall be assigned names or numbers in such a way that the desired data can be indexed and accessed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Standard data descriptions.",
+          "content": "If a data description required by this DID has been published in a standard data element dictionary specified in the contract, reference to an entry in that dictionary is preferred over including the description itself.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Substitution of existing documents.",
+          "content": "Commercial or other existing documents can be substituted for all or part of the FDD if they contain the required data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Abstract.",
+          "content": "Provide a high-level summary of the purpose of the CI and why the changes of the intended design are important. Define the shortfall, operational need or capability gap, identify any associated stakeholder requirements (e.g., Submarine Tactical Requirements Group requirements document, Capability Development Document, Functional Requirements Document), and provide the implementation timeline (e.g., specific Program Increments).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Background.",
+          "content": "Provide a general description of the technical solution for the CI.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "User Stories.",
+          "content": "User Stories identify stakeholders and their goals as an initial stage of Use Case definition. User Stories express CI value and a commonly used format is structured as follows:\n\nAs a <type of user>, I want <to perform some task> so I can <achieve some goal/benefit/value>.\n\nUser Stories are scalable, provide a placeholder for sprint/scrum team conversation, and support progressive functional decomposition (refinement by team) and requirements derivation. User Stories support development of Acceptance Criteria which clarify desired behavior: what the development team will build and test, and what confirms product owner satisfaction.\n\nThe 'user role' can be written from the perspective of many stakeholder types such as: from a subsystem user with functional requirements, to a developer/integrator seeking process improvements, or a product owner confirming business or regulatory rule adherence.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Use Cases.",
+          "content": "As denoted in the prior section, User Stories are a low precision form of a Use Case. User Story and Use Case definition are scalable, and used as a framework which supports functional decomposition, revealing functional traceability. Use Case shall identify a primary scenario, which delineates successful steps (system interactions) that achieve the main user goal. Further precision is established by identification of alternate scenario(s), which may occur for each step, and definition of recovery actions for each alternate scenario.\n\nEach Use Case shall be in a separate section, providing a general description, purpose, and technical impacts including: software, interface, architecture, Operator-Machine Interface (OMI), Ship Safety/Self-Protect (SS/SP, or service specific Safety equivalent) facets, and resource utilization impacts. Provide a more detailed explanation of the CI changes in paragraph format. Depending on the complexity of the changes being introduced, paragraphs can be dedicated to addressing each of the changes being introduced. The reader shall be able to have a good understanding of what is being accomplished from reading each Use Case.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Acceptance Criteria.",
+          "content": "This section shall list the Acceptance Criteria for each CI. Initial Acceptance Criteria shall be derived from the User Stories from 3.j. above developed for a capability, and evolve as functional decomposition occurs for each CI. Acceptance Criteria is a set of statement(s) that specify the functional and nonfunctional requirements (NFR) associated with a user story or feature worked by the development team.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Definition of Done.",
+          "content": "This section shall list the Definition of Done (DoD) Criteria for this CI, as well as DoD Criteria applicable for the PI as a whole. Fundamental DoD criteria examples are identified below. The FDD shall include the example DoD criteria, as well as any CI tailored or unique DoD criteria the development team deems appropriate. DoD is achieved when all conditions of the product or capability have been met and are ready to be accepted by the customer or end user. The test events or procedures that will be used to verify the DoD for the CI shall be identified.\n\nDoD CI Examples:\n- Installed in production environment\n- Functional and NFR requirements met\n- Family of Systems (FoS) level integration completed (i.e., associated FoS under acquisition control of a program office)\n- Meets defined CI Acceptance Measures or Criteria\n\nDoD PI Examples (PI comprised of multiple CIs):\n- PI Acceptance Measures or Criteria met\n- Integrated into an Enterprise level release (i.e., program office FoS integrated with associated external subsystems)\n- Functional tests passed\n- NFR tests passed\n- Regression tests passed\n- Design & Integrated Logistic Support (ILS) documentation captured",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Technical Challenges and Risks.",
+          "content": "This section shall identify any technical challenges or design risks associated with the CI, dedicating a unique paragraph for each challenge or risk identified. Any retired challenge(s) or risk(s) shall be retained in FDD changes, with indications of reconciliation, including a description and date for each reconciliation.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Appendices.",
+          "content": "Appendices shall be used as necessary to provide information published separately for convenience in FDD maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the FDD where the data would normally have been provided. Appendices shall be bound as separate documents as necessary for ease in handling. Appendices shall be lettered alphabetically (A, B, etc.). Representative examples include acronyms and definitions.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "Acronyms (as example Appendix).",
+              "content": "An alphabetical listing of all acronyms, abbreviations, and their meanings as used in the FDD.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.2",
+              "title": "Definitions (as example Appendix).",
+              "content": "A list of any terms and definitions needed to understand the FDD.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82360.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

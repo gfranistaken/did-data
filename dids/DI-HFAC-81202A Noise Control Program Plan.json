@@ -1,0 +1,223 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81202A",
+  "slug": "di-hfac-81202a",
+  "title": "Noise Control Program Plan",
+  "summary": "The Noise Control Program Plan describes noise performance limits and the procedures the Contractor will implement to manage, procure, analyze, train, design, review, construct, inspect, and test compliance with ship noise specifications.",
+  "approval_date": "2015-04-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9534",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "HFAC-2015-009",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Noise Control Program Plan (NCPP) describes the compartment and on-deck station noise performance limits and the procedures the Contractor will implement to manage, procure, analyze, train, design, review, construct, inspect, and test to verify that the as-delivered ship complies with the noise performance limits stated in the contract specification(s).\na. This Data Item Description (DID) contains the format, content, and preparation instructions for the data generated in response to the applicable tasks in the contract statement of work.\nb. This DID supersedes DI-HFAC-81202.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-81202"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The NCPP shall be in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The NCPP shall contain the following sections:\na. a title page,\nb. a revisions page,\nc. a table of contents including a list of appendixes,\nd. a list of figures,\ne. a list of tables,\nf. the main body of the plan,\ng. references, and\nh. appendixes, as applicable.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Key personnel.",
+          "content": "The NCPP shall identify the following key personnel by name and title, and their role in implementing the NCPP:\na. senior management,\nb. procurement and contracts,\nc. administration,\nd. engineering,\ne. production and outfitting,\nf. receiving,\ng. quality assurance (QA),\nh. test and trials, and\ni. subcontractors.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Individual with lead responsibility for noise performance.",
+              "content": "The NCPP shall identify the individual who is assigned the lead responsibility for noise performance. The NCPP shall also identify how this key individual will have access to and interface with the personnel listed in 2.1 above, Government personnel, senior management at the shipyard, and shipyard designers to ensure the NCPP is successful.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Support key management will provide.",
+              "content": "The NCPP shall identify the support key management will provide to ensure delivery of a ship devoid of noise excesses.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "List of specific noise limits.",
+          "content": "The NCPP shall include a list of the specific noise limits assigned to each ship space and at each on-deck station, and the ship operating conditions that apply when measuring noise levels for comparison to performance limits.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Industry standards and comprehensive procedures.",
+          "content": "The NCPP shall identify the industry standard(s) and comprehensive procedures that will be used when analyzing airborne and structureborne noise contributions from:\na. contractor furnished equipment (CFE),\nb. government furnished equipment (GFE),\nc. propulsors, and\nd. distributed systems (e.g., heating, ventilation, and air conditioning (HVAC) systems).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Rationale for choice of specific procedures.",
+          "content": "For spaces and at on-deck stations that are assigned noise limits, the NCPP shall provide the rationale for the choice of the specific procedures, and the expected accuracy that will be achieved in performing noise predictions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Tentative schedule of noise predictions.",
+          "content": "The NCPP shall include a tentative schedule of when various noise predictions will be developed and included in noise analyses.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "Selection of optimum noise control measures.",
+          "content": "The NCPP shall describe the approach that will be used to select optimum noise control measures and materials and hardware such as insulations, resiliently mounted machinery systems, piping damping treatments, flexible hose assemblies, mufflers, silencers, and acoustic enclosures.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Notifying the Government of excluded noise control features.",
+          "content": "The NCPP shall describe the approach that will be followed in notifying the Government when the noise analysis indicates that noise control features identified in contract guidance documents do not need to be included in the ship design in order to achieve the specified noise performance limits.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Selection of resilient mounts and resilient pipe hangers.",
+          "content": "The NCPP shall describe the approach that will be used in the selection of low natural frequency and high natural frequency resilient mounts and resilient pipe hangers including rigid body analysis and loading analyses when designing mounting systems to provide noise reduction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "List of machinery items and piping systems mounted resiliently.",
+          "content": "The NCPP shall include a list of machinery items and piping systems that will be mounted resiliently and specifically analyzed for resonance avoidance, the type of mounting system (single stage or compound mounting), and if low natural frequency versus high natural frequency distributive isolation material (DIM) mounts will be used.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "List of machinery items fitted with flexible pipe connections.",
+          "content": "The NCPP shall include a list of machinery items that will be fitted with flexible pipe connections, if flexible hose assemblies or flexible bellows assemblies will be incorporated into the design, and the intended supplier of the flexible pipe connection hardware.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "Resonance avoidance analyses.",
+          "content": "The NCPP shall describe the approach that will be used when performing resonance avoidance analyses of machinery items that are mounted resiliently, piping systems that are mounted resiliently, and machinery foundations regardless of mounting type, including definition of forcing frequencies and the avoidance of coincidence with forcing frequencies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.12",
+          "title": "Computation of time-weighted average exposures.",
+          "content": "The NCPP shall describe the approach that will be used in the computation of time-weighted average (TWA) exposures for ship personnel.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.13",
+          "title": "List of machinery for pre-installation noise testing.",
+          "content": "The NCPP shall include a list of the specific machinery, equipment items, and air moving devices that will be pre-installation noise tested for airborne noise source level performance and for structureborne noise source level performance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.14",
+          "title": "Pre-installation noise performance limits.",
+          "content": "The NCPP shall include the specific pre-installation noise performance limits imposed on machinery, equipment items, and air moving devices (fans, fan-coil units, fan coil assemblies, and air handling units); and the procedures that will be implemented if pre-installation noise testing indicates failure to comply with the assigned performance limits.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.15",
+          "title": "Tracking location of machinery items and fans.",
+          "content": "The NCPP shall describe the approach for tracking, by serial number, the location onboard ship of machinery items and fans that have undergone pre-installation noise testing.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.16",
+          "title": "Internal review and approval.",
+          "content": "The NCPP shall include the individual, by title, and the procedures that will be used for internal review and approval for:\na. Procurement specifications for machinery subject to pre-installation noise test and performance,\nb. Procurement specifications for noise control materials and hardware,\nc. Noise analyses,\nd. QA inspection reports and follow-on action items,\ne. Engineering design drawings that incorporate noise control features, and\nf. Noise test reports and follow-on action items.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.17",
+          "title": "Training courses.",
+          "content": "The NCPP shall describe the training courses that will be conducted, by whom, and the schedule for conducting the training.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.18",
+          "title": "Inspection of installation of noise control measures.",
+          "content": "The NCPP shall describe the approach that will be used to inspect the installation of noise control measures to ensure that the noise control treatments identified as a result of noise studies and analyses are actually installed in the ship, are installed correctly, and that non-acoustic constructions do not adversely impact acoustic performance. The NCPP shall also provide the schedule for performing the inspections and the schedule for implementing corrective measures in the event inspections reveal installations are not in accordance with contract specifications or standards.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.19",
+          "title": "Balancing and operation of HVAC systems.",
+          "content": "The NCPP shall describe the approach that will be implemented to ensure that all normally operating HVAC systems are fully and accurately balanced and that all normally operating machinery and HVAC systems are fully operational prior to compartment and on-deck station noise levels being measured at Builder Trials and Acceptance Trials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.20",
+          "title": "Operation of fan coil unit fans during trials.",
+          "content": "The NCPP shall describe the approach that will be implemented to ensure that the fans within US Navy type fan coil units are operating in the rotational high speed mode when compartment noise levels are measured at Builder Trials and Acceptance Trials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.21",
+          "title": "Corrective measures for noise excesses.",
+          "content": "The NCPP shall describe the approach that will be implemented if the initial set of compartment and on-deck station noise levels measured at Builder Trials and Acceptance Trials reveal the as-built ship experiences noise excesses, including a schedule when the corrective measures could be implemented.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81202A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

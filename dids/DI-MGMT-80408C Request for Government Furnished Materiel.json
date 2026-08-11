@@ -1,0 +1,286 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-80408C",
+  "slug": "di-mgmt-80408c",
+  "title": "Request for Government Furnished Materiel",
+  "summary": "The Request for Government Furnished Materiel (GFM) contains the information required to identify and respond to a contractor's request for GFM, enabling the supply activity to furnish GFM without interrupting the contractor's productivity.",
+  "approval_date": "2019-09-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10089",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "MGMT-2019-023",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Request for Government Furnished Materiel (GFM) contains the information required to identify and respond to a contractor's request for GFM. This Data Item Description (DID) enables the supply activity to furnish GFM without interrupting the contractor's productivity.\na. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation and paragraph number 5.2.7.2 of MIL-STD-130.\nb. This DID is applicable to all contracts in which the Government is required to furnish Government materiel to a contractor.\nc. This DID supersedes DI-MGMT-80408B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-80408B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Request for Government Furnished Materiel format shall be an 80-column format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Request for Government Furnished Materiel shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Commercial and Government Entity CAGE Code",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A Two-dimensional Matrix Bar Code for serially tracked items per MIL-STD-130 (https://assist.dla.mil/).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Document Identifier Code (DIC) (CC 1-3).",
+          "content": "Code which identifies the purpose of this transaction and the system to which it pertains.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "\"AO_\" for requisition.",
+              "content": "Third position of the DIC will be specified in the contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "\"AT_\" follow-up which converts AO_ if no record of AO_.",
+              "content": "Third position of the DIC is the same as the AO_.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "\"AC1\" for cancellation request.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "\"AF1\" for follow-up to requisition.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "\"AM_\" for requisition modifier.",
+              "content": "Specified third position of demand document. This transaction may only be used to modify the project code, priority designator, advice code, and/or required delivery date.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Routing Identifier Code (RIC) (CC 4-6).",
+          "content": "Code which identifies the address to which this transaction is to be sent. The RIC shall be the Management Control Activity (MCA) as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Media and Status Code (CC 7).",
+          "content": "Code which identifies the type of supply status to be furnished. To be specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "National Stock Number (NSN) (CC 8-22).",
+          "content": "The appropriate 13-digit NSN of authorized GFM as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Unit of Issue (UI) (CC 23-24).",
+          "content": "The 2-position alphabetic abbreviation expressing a determinate quantity of an item that will be issued, by which accountable records are maintained. To be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Quantity to be Requisitioned (CC 25-29).",
+          "content": "Appropriate quantity right justify and zero filled. Example: 100 shall be written as 00100. Quantities not to exceed quantities cited in the contract unless authorized by the Procuring Contracting Officer (PCO).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Requisitioner Address (CC 30-35).",
+          "content": "Six-position Department of Defense Activity Address Code (DODAAC) which is assigned to the contractor after contract award. This DODAAC shall be obtained from the PCO and authorizes the contractor to receive or ship materiel and facilitates filling.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Requisition Date (CC 36-39).",
+          "content": "The Julian date in the document number assigned by the requisitioner (example: January 1, 1987, shall be written as 7001).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Serial Number Code (CC 40-43).",
+          "content": "Number used to identify a specific document number shall be contractor assigned, beginning with 0001 for each requisition date, unless specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Demand Code (CC 44).",
+          "content": "Constant \"N\" which indicates to the materiel manager that this is a nonrecurring requirement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Supplementary Address (CC 45-50).",
+          "content": "This field is to be filled only in those cases in which the contract provides for shipment of materiel to a subcontractor. In those cases, a six-position DODAAC is assigned to the subcontractor after contract award. This DODAAC shall be obtained from the PCO and authorizes shipment of materiel to a subcontractor; this field shall be left blank.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Signal Code (CC 51).",
+          "content": "Designates to the MCA the field(s) containing DODAAC(s) of the receiving and billing activity. To be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Fund Code (CC 52-53).",
+          "content": "Code identifying the appropriation fund, fiscal year, and whether transaction is reimbursable or non-reimbursable. To be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Distribution Code (CC 54).",
+          "content": "Identifies MCA to receive status. To be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Blank (CC 55-56).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Project Code (CC 57-59).",
+          "content": "Identifies transactions for specific projects or programs for funding and costing. To be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Priority (CC 60-61).",
+          "content": "Code assigned to incoming requisition to define priority of processing within the issue routine. To be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "Required Delivery Date (CC 62-64).",
+          "content": "Calendar day by which materiel is required. Julian day, example: 15 Jan shall be written as 015. Optional field which may be left blank.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Advice Code (CC 65-66).",
+          "content": "Alphanumeric code used by requisition originators to provide instructions to the MCA. To be specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "Blank (CC 67-69).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Contract Call Order Number (70-73).",
+          "content": "If applicable, enter the four-position call order number. If no call order exists, this field shall be left blank.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.24",
+          "title": "Contract Line Item Number (CLIN) (CC 74-77).",
+          "content": "Mandatory entry, must contain the four-position CLIN against which the GFM is requested.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.25",
+          "title": "Subordinate Contract Line Item Number (SUB-CLIN) (CC 78-79).",
+          "content": "Enter the two-position SUB-CLIN if applicable. If no SUB-CLIN exists, this field shall be left blank.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.26",
+          "title": "Blank (CC 80).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-80408C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

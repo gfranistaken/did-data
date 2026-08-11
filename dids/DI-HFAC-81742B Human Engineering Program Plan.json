@@ -1,0 +1,318 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81742B",
+  "slug": "di-hfac-81742b",
+  "title": "Human Engineering Program Plan",
+  "summary": "The Human Engineering Program Plan describes the contractor's Human Engineering program, identifies its elements, and describes how these elements will be managed and coordinated with other program elements.",
+  "approval_date": "2021-03-29",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10231",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "HFAC-2021-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Human Engineering Program Plan (HEPP) describes the contractor's Human Engineering program, identifies its elements, and describes how these elements will be managed and coordinated with other program elements.\nThis Data Item Description (DID) contains format and content instructions for preparing the HEPP in response to applicable tasks in the contract.\nWhere cited below, users refer, as applicable, to operators, maintainers, trainers, support personnel (including transporters), and manufacturers.\nHuman Engineering supports the Human Systems Integration initiative by designing systems that capitalize on and do not exceed the abilities of the intended user population.\nThis DID supersedes DI-HFAC-81742A",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-81742A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the Acquisition Streamlining and Standardization Information System (ASSIST) database at the time of the solicitation.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The HEPP format shall be contractor selected and contain all the content elements described below as tailored by paragraph 3. Unless effective presentation would be degraded the format used initially shall be used for subsequent submissions. Revisions shall be clearly indicated in a manner consistent with standard editorial practices. Tailoring. The HEPP DID shall be tailored to reflect the SOW, system specification, and phase of development. Any proposed tailoring shall be in accordance with MIL-STD-963 (i.e., downward only) and identify the DID paragraph, the proposed change(s), and a rationale. Tailoring specified by the procuring agency shall also be included. If no tailoring is proposed beyond that specified by the procuring agency, this shall be stated.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The HEPP shall contain the information described in the following paragraphs.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "Table of contents; lists of tables, figures, and appendices, as applicable; and a list of acronyms and abbreviations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Overview.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Provide the HEPP purpose and scope.",
+              "content": "Briefly describe the system, its concept of operations, mission, human role(s), operational environment, predecessor system(s) or subsystem(s), if any, and related human engineering lessons learned. Provide the system acquisition category and current phase of development. If applicable, state when the next submission of the HEPP is due.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "For any section below whose content is substantially covered",
+              "content": "For any section below whose content is substantially covered in another document (e.g., Human Systems Integration Program Plan), the contractor has the option to provide the required content in the HEPP, or to provide a summary of the content and reference(s) or link(s) to the document section(s) that contain the content.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Organization.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Human engineering organization.",
+              "content": "Identify, describe, and provide an organization chart for the contractor's primary human engineering organization element responsible for compliance with human engineering requirements. Define the functions and internal structure of each element. Provide summary job descriptions and the qualifications for each person filling a functional role in the organizational hierarchy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Human engineering organization relationships.",
+              "content": "Describe the relationships of the human engineering organization element to program management and to other organization elements responsible for areas affected by human engineering, such as systems engineering; hardware and software user-interface design teams; environment, safety, and occupational health teams; training; test and evaluation; and other related disciplines (e.g., reliability, maintainability, supportability).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Human engineering working group.",
+              "content": "Describe the composition of the human engineering working group, if any, (e.g., contractor, subcontractor, procuring agency human engineering, user group representatives). Describe the responsibility, authority, and accountability of the working group.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Human engineering in requirements development.",
+          "content": "Describe the role of human engineering in analyzing and developing human-related system requirements in the preparation of system design and performance specifications. Describe how human engineering will participate in: analyzing capability requirements; identifying human-related system requirements and allocating them to systems and subsystems; tracing them to lower-level design specifications; and identifying verification methods. Describe tailoring of MIL-STD-1472 and other requirements documents, as applicable. The proposed tailoring shall identify the requirement paragraph, the proposed change(s), and a rationale. Tailoring specified by the procuring agency shall also be included. If no tailoring is proposed beyond that specified by the procuring agency, this shall be stated.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Human engineering in subcontractor efforts.",
+          "content": "If subcontractors are responsible for work on hardware or software that has user interfaces, describe the subcontractor's organizational element responsible for human engineering and the subcontractor's human engineering activities. Describe how the prime contractor's human engineering organization will:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Participate in subcontractor selection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Contribute to the subcontractor's statement of work and specification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Monitor and assess subcontractor compliance with human engineering requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Human engineering in system analysis.",
+          "content": "Identify human engineering efforts in system analysis (e.g., as described in MIL-STD-46855) and the organizational element(s) responsible for conducting those efforts. Describe how human engineering will participate in analyzing system missions; determining system functional requirements and capabilities; allocating system functional requirements to humans, hardware, software, and facilities; and developing system functional flows. Describe how human engineering will ensure that all human functions are identified and analyzed. Identify any data, computer programs, databases, models, or equipment required from the procuring agency.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Human engineering in equipment detail design.",
+          "content": "Describe human engineering efforts in hardware- and software-user interface detail design to ensure compliance with applicable human engineering requirements and guidance documents specified in the contract. Describe how human engineering will:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Participate in trade studies and analyses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Perform task analysis and identify critical tasks.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Work with design teams to develop and mature hardware and software user interface designs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Develop software-user-interface design guides or design description documents.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Perform human modeling and anthropometric assessments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Create and use virtual and physical mock-up evaluations and dynamic simulations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Perform usability assessments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.8",
+              "title": "Perform detailed drawing reviews.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.9",
+              "title": "Support systems and program reviews.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "End-user involvement.",
+          "content": "Describe the planned involvement of end-user personnel (e.g., operators, maintainers, trainers and support personnel) in assessing the design, operation, maintenance, training, and support of the system. Describe the type(s), composition, frequency, responsibility and authority of end-user working groups (e.g., Aircrew System Advisory Panels, Maintainer Advisory Panels), as applicable.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Human engineering in procedure development.",
+          "content": "Describe how human engineering will support procedure development. This includes:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Organizing and sequencing tasks for efficiency, safety, and reliability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Contributing to and reviewing operator and maintainer technical publications and training materials.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Human engineering interaction with manpower, personnel and training (MPT).",
+          "content": "Describe how human engineering will identify MPT-related issues, perform analyses, and interact with MPT efforts, as applicable, to ensure that human performance capabilities and limits are reflected in MPT activities and products.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Human engineering interaction with environmental, safety, and occupational health (ESOH).",
+          "content": "Describe how human engineering will identify ESOH-related issues, perform analyses, and interact with ESOH efforts, as applicable, to ensure that human performance capabilities and limits are reflected in ESOH activities and products.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Human engineering interaction with personnel survivability and habitability.",
+          "content": "Describe how human engineering will identify issues, perform analyses, and interact with design efforts, as applicable, to ensure that human capabilities and limits are reflected in system designs related to personnel survivability and habitability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Human engineering in test and evaluation.",
+          "content": "Describe how human engineering will participate in test and evaluation (T&E), including the level of involvement in the contractor's integrated T&E program. Include specific information about how the contractor will follow human engineering test and evaluation guidance of MIL-STD46855. Identify program milestones by which human engineering testing will be performed to verify that human performance standards (e.g., task times, workload, error rates) can be met under expected conditions to satisfy system performance requirements. Identify the major T&E objectives, and describe the proposed test methods. Identify the number and role of human engineering personnel who will conduct and support T&E.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Human engineering risk management.",
+          "content": "Describe how human performance and human engineering design issues that involve potential technical, system performance, cost, or schedule risks will be identified, analyzed, and prioritized. Describe the process for eliminating or reducing the associated risks to acceptable levels.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Human engineering deliverable data products.",
+          "content": "Identify and briefly describe each human engineering deliverable data product specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Time-phase schedule and level of effort.",
+          "content": "Provide a milestone chart that identifies each separate human engineering effort to be accomplished during the contract period of performance. Provide information on the level of effort (in person work months) for each task, including analysis, design, test and evaluation, and the preparation of deliverable data products.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81742B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

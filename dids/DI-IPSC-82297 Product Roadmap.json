@@ -1,0 +1,277 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82297",
+  "slug": "di-ipsc-82297",
+  "title": "Product Roadmap",
+  "summary": "The Product Roadmap describes the strategy for prioritizing and completing Epics and Features across a program's lifecycle and shows how development aligns with key program milestones, technical reviews, and test events.",
+  "approval_date": "2019-10-23",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10100",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19",
+  "project_number": "IPSC-2019-011",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Product Roadmap contains the strategy for prioritizing and completing the Epics and Features across the lifecycle of a program. Additionally, the Product Roadmap shows how the development fits with the key program milestones, technical reviews, and test events in the Integrated Master Schedule (IMS). The Product Roadmap is a key product to manage development when using Agile methodologies.\nThe Product Roadmap can be used in conjunction with the Product Backlog (DI-IPSC-82298). The Product Backlog contains the complete set of prioritized Epics, Features, and User Stories with bi-directional traceability to the program requirements and highlights known work yet to be completed. When both the Product Backlog and the Product Roadmap are requested in the contract deliverable requirements list (CDRL), they present a coordinated representation of the needed development for the software or system.\nThis data item description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-IPSC-82298"
+  ],
+  "references": [
+    {
+      "label": "Copies of DoDI 5000.02 can be obtained at:",
+      "url": "https://www.esd.whs.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Product Roadmap shall be presented in graphical (e.g., Gantt chart) or tabular (e.g., table) format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Product Roadmap shall be based on Agile iterative cadence (e.g., number and length of time-boxed iterations, such as Sprints, for a delivery of a Build). A Build is defined as a testable, integrated subset of the overall capability, which, together with clearly defined decision criteria, ensures adequate progress is being made before fully committing to subsequent builds in accordance with Department of Defense Instruction (DoDI) 5000.02, Operation of the Defense Acquisition System, 5.c.(3)(c). (Copies of DoDI 5000.02 can be obtained at: https://www.esd.whs.mil/.) The Product Roadmap shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The planned and completed Builds over the timeframe of the program.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The software versions released to the user (planned and already released).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The following items assigned to each Build (planned and already completed):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Epics, which are defined as a set of features to provide a needed capability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Features, which are defined as a capability or service that fulfills a stakeholder need.",
+              "content": "Each feature shall include a benefit hypothesis and acceptance criteria.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "The planned time allotted to address the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Defects, which are defined as any conditions that deviate from defined expectations (e.g., requirements specifications, architectures, design documents, user manuals, plans, procedures, reports, standards, policy) or suitability (e.g., from a user's or other stakeholder's sound engineering judgment or experiences).",
+              "content": "Defects can be found during the review, test, analysis, integration, or use of products, or in any of the applicable documentation. Defect is synonymous with anomaly, discrepancy, error, fault, failure, incident, flaw, problem, gripe, glitch, or bug.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Technical Debt, which is defined as rework that needs to be done by the development team as an easier, short-term solution was pursued, yet further changes are needed for improved rigor and resiliency of subsequent developments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "The link between development activities and the key program milestones, technical meetings, and reviews shown in the IMS, to include the following information:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "When key program milestones occur in conjunction with the Builds, including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "The key test events, including: integration with outside systems, tests requiring Government Furnished Equipment (GFE), and government Developmental and Operational Test and Evaluation (DT&E and OT&E).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "External constraints or system limitations that affect when Epics and Features can be developed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "When efforts to maintain the development environment are accomplished to meet the needs of the developers and testers, including the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Planned and performed configuration updates of the development and test environments.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "Planned and performed significant system infrastructure (e.g., commercial-off-the-shelf (COTS) and open source software) updates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.3",
+              "title": "When test data, data stubs, emulators, simulators, and connections with external systems are developed to support development, integration, and testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "The composition of the software development team(s) performing the work for each of the Features, including the following information:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "The number of software development teams that perform the work.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Any other teams supporting the software development process, such as: systems engineering, combined development and operations (DevOps), and test teams.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "The metrics and analytics for the work planned and completed, including the following information:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Progress indicators showing as-is and to-be states based on the latest metrics from the development.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Expected burndown rates versus performed rates for completion of Features during the Builds.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Defect burndown strategy for assigning current Defects to Sprints, which shall be based on the prioritization in the Product Backlog.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "All items in the Product Roadmap shall contain the following configuration control information:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Record of all changes, including timestamp (date and time) when changes were made and identity of who made the changes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Record of approval, if required, for item changes, including timestamp (date and time) when approval occurred and identity of who approved.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Record of new items added, including timestamp (date and time) when addition occurred and identity of who added the item.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Record of removal of an item, including timestamp (date and time) when removal occurred, identity of who removed the item, and rationale for removal.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82297.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

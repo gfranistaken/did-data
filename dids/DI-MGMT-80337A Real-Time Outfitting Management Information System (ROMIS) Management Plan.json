@@ -1,0 +1,264 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-80337A",
+  "slug": "di-mgmt-80337a",
+  "title": "Real-Time Outfitting Management Information System (ROMIS) Management Plan",
+  "summary": "The ROMIS Management Plan documents the contractor's plan, procedures, and schedules for completing ROMIS requirements under MIL-STD-2186A and the ROMIS Requirements Statement, providing the government information for implementing and executing configuration management responsibilities.",
+  "approval_date": "1992-09-09",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N6785",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "SH/SEA 04MS2F",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "The ROMIS management plan identifies the contractor's plan, procedures, and schedules that will be used in completing ROMIS requirements prescribed by MIL-STD-2186A and the ROMIS Requirements Statement (RRS). The plan provides the government with necessary information for implementing and executing configuration management responsibilities.",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains format and content preparation instructions for the ROMIS Management Plan required by 5.4.6 of MIL-STD-2186A.\n7.2 This DID is applicable to ship acquisition, conversion and modernization programs which have ROMIS invoked in the contract.\n7.3 This DID is related to DI-ILSS-80335A, ROMIS Configuration Input Data and DI-ILSS-80336A, ROMIS Data Base (RDB) Total Ship Configuration to Date.\n7.4 This DID supersedes DI-ILSS-80337.",
+  "supersedes": [
+    "DI-ILSS-80337"
+  ],
+  "related_dids": [
+    "DI-ILSS-80335A",
+    "DI-ILSS-80336A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Reference document.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Content requirements.",
+      "content": "The ROMIS Management Plan shall document in detail the contractor's plan for accomplishing the ROMIS tasks specified in the contract, the contractual ROMIS Requirements Statement (RRS) and MIL-STD-2186A. The plan shall contain the following data:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "The plan and supporting rationale for accomplishing each ROMIS task.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Schedules for performance of ROMIS requirements compatible with the schedules established by the ROMIS Requirements Statement (RRS), as follows:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.2.1",
+              "title": "ROMIS Initiation and data input schedules for all GFE and CFE expressed in terms of ROMIS records.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.2.2",
+              "title": "CFE Provisioning Technical Documentation (PTD) Submission schedule, and Plan of Action and Milestones (POA&M) for its accomplishment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.2.3",
+              "title": "ROMIS Data Base (RDB) record completion schedule based on Incremental Stock Number Sequence List and COSAL production schedule specified by the RRS.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.2.4",
+              "title": "A schedule for validation based on the ship construction schedule and consistent with the contractor's internal quality control program.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.2.5",
+              "title": "A recommended schedule for Incremental Stock Number Sequence List (ISNSL) production.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.2.6",
+              "title": "A recommended schedule for ROMIS configuration input data and RDB Total Ship Configuration to Date magnetic tape production.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.2.3",
+          "title": "Description of procedures for generating required ROMIS input data and assuring data accuracy.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "A recommended minimum level of ROMIS data to be made continuously available for the Government's use in monitoring contractor performance.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Organization and responsibility for the coordinated performance of the technical processes of provisioning, allowance preparation, and fitting out with the phased generation and utilization of ROMIS data.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Monitoring that will be employed to ensure the quality of data contained in the RDB.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Data elements and their definitions contained in DOD-STD-2186A should not be repeated in the management plan unless specifically required for clarification.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Format requirements.",
+      "content": "This plan shall be prepared on bound 8 1/2 by 11 inch paper. Each page prior to section 1 shall be numbered in lower-case Roman numeral beginning with ii for the Table of Contents. Each page starting from section 1 to the end of the plan shall be consecutively numbered in Arabic numerals. The plan may be printed on both sides of each page. For single sided, all pages shall contain the plan control number in the top right-hand corner. For double-sided, the control number shall be placed in the top right-hand corner of each odd-numbered page and the top left-hand corner for each even-numbered page. This plan shall be as self-contained as possible and shall consist of the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "Cover Page.",
+          "content": "The cover shall contain the control number in the upper right-hand corner. The following shall be listed in the center of the page:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.1.1",
+              "title": "ROMIS MANAGEMENT PLAN FOR THE [PROJECT NAME]",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.2",
+              "title": "CONTRACT NUMBER",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.3",
+              "title": "CDRL SEQUENCE NUMBER",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.4",
+              "title": "Date of document - day, month, year",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.5",
+              "title": "Name and Address of the organization for which the plan was prepared",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.2",
+          "title": "Table of Contents.",
+          "content": "The plan shall contain a Table of Contents listing the title and page number of all paragraphs and subparagraphs. The Table of Contents shall then list the title and page number of all figures, tables, and appendices, in that order.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.3",
+          "title": "Scope.",
+          "content": "This section shall be numbered 1. and divided into the following paragraphs:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.3.1",
+              "title": "Purpose.",
+              "content": "This paragraph shall be numbered 1.1, describe the ROMIS functions and identify interfaces.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.2",
+              "title": "Introduction.",
+              "content": "This paragraph shall be numbered 1.2 and summarize the purpose and contents of the plan.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.4",
+          "title": "Referenced Documents.",
+          "content": "This section shall be numbered 2. and list by document and title all documents referenced in this plan. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.5",
+          "title": "Requirements.",
+          "content": "This section shall be numbered 3. and divided into sufficient paragraphs and sub-paragraphs to define the requirements of paragraph 10.2 of this DID.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.6",
+          "title": "Notes.",
+          "content": "This section shall be numbered 4. and contain any general information that aids in understanding the plan. This section shall also contain an alphabetical listing of acronyms, abbreviations, and their meanings as used in this plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.7",
+          "title": "Appendices.",
+          "content": "The appendices shall contain supplemental information published separately for convenience in plan maintenance. Appendices shall be numbered sequentially in Roman numeral. Each appendix shall be referenced in the main body of the plan where the data would normally be provided.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-80337A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

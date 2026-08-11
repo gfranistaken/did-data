@@ -1,0 +1,164 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MFFP-82428",
+  "slug": "di-mffp-82428",
+  "title": "Army Ground Systems Corrosion Prevention and Control Plan",
+  "summary": "The Corrosion Prevention and Control Plan (CPCP) applies to any system acquisition requiring a corrosion prevention and control program, covering the entire system and all major subsystems including COTS and Government furnished items.",
+  "approval_date": "2023-11-02",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10446",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AT",
+  "project_number": "MFFP-2023-008",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Corrosion Prevention and Control Plan (CPCP) is applicable to any system acquisition which includes a requirement for a corrosion prevention and control program and shall be used for the entire system and all major subsystems including but not limited to the chassis, engines, fuel cells, electrical/electronics, mechanical subsystems, and support equipment, including commercial off-the-shelf (COTS) and Government furnished items (GFI).\n\nThis DID contains the format and content preparation instructions for data resulting from the technical requirements described in Corrosion Prevention and Control Planning Guidebook for Military Systems and Equipment (Copies of this document are available online at https://www.dau.edu/tools/t/CPC-Guidebook) and paragraphs 4.1, 4.2, and 4.3 of MIL-STD-1568 apply (Copies of this document are available online at https://quicksearch.dla.mil.)\n\nThis DID shall be tailored to the specific system being acquired and the procuring activity's specific requirements.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.dau.edu/tools/t/CPC-Guidebook"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of the above document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of the above document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "available online at",
+      "url": "https://armypubs.army.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The CPCP shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CPCP shall incorporate design and technical considerations outlined in section 4.2, CPCP Guidebook for Military Systems and Equipment (see Use/relationship above). The CPCP shall include clearly identified subsections detailing the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope paragraph.",
+          "content": "The scope paragraph shall contain statements as to the degree of coverage encompassed by the document, for example, system, parts of the system, spare parts by system, standard parts, clean/green finished hardware, Government Furnished Equipment (GFE) integration, and vendor supplied parts.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Responsibilities",
+          "content": "Describe the responsibilities and authorities for the management, engineering, manufacturing, quality assurance, sustainment and other functions affecting Corrosion Prevention and Control (CPC) for the system.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Processes",
+          "content": "Describe processes and policies for which these roles are responsible to ensure compliance with CPC procedures during design and development, manufacturing, materials handling, shipping, and operation. Describe how CPC and finishing requirements are communicated and enforced with all sub-tier suppliers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Requirements paragraph",
+          "content": "Define corrosion mitigation requirements, describe how they are integrated into the Systems Engineering process, and the process to achieve compromises between conflicting requirements. Include verification approaches used to meet each basic corrosion requirement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "System design approach",
+          "content": "Describe the methods used to minimize the potential for corrosion to include selection of materials and applications, fabrication techniques, sealants, protective finishing systems, and design features. The design feature section shall include (at minimum) water drainage strategy, galvanic corrosion mitigation IAW MIL-STD-889, moving surfaces, channels/areas that are difficult to inspect, and methods to prevent chipping and abrasion of coating systems. (Copies of the above document are available online at https://quicksearch.dla.mil.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Materials selection",
+          "content": "Outline selection of materials organized by substrates, coating and plating systems, and other corrosion prevention compounds, sealants, or systems. Specific topics to be addressed shall include (at minimum) fasteners, rubber/elastomeric materials, and electrical connectors. Describe how selected coating systems IAW MIL-DTL-53072 and other plating and surface finishing processes provide the highest level of corrosion protection. Describe initial production validation testing planned for all coating stack-ups and protective schemes to establish compliance with system performance requirements prior to painting production parts. The test results shall be incorporated in the CPCP as they are completed. Outline on-going production quality control tests and frequencies which shall be performed to maintain compliance with system performance requirements. (Copies of the above document are available online at https://quicksearch.dla.mil.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Corrosion risk assessment",
+          "content": "Include results of a risk-based approach for CPC which identifies all critical components or aspects of the system which could cause a loss of capability, decrease safety, or increase maintenance burden when they are degraded by corrosion (example can be found in DA PAM 11-42 available online at https://armypubs.army.mil/). Identify potential mitigation measures, which measures to be implemented, and opportunities for additional improvements. Document the most advantageous course of action for lifecycle sustainment for all high risks identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Continuous improvement",
+          "content": "Describe methods used to determine timing and scope of periodic corrosion assessments. This section of the CPCP shall be updated with lessons learned during each contract phase. Outline methods to be used which address and correct any high-risk corrosion deficiencies found on critical components during Government corrosion surveys.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Sustainment strategy",
+          "content": "Describe recommendations for sustainment, logistics support, maintenance planning, inspection processes and frequencies, storage of components and assemblies, handling, transportation, and personnel training. Provide procedures for minimization of deterioration on painted and uncoated surfaces, moving metal surfaces, crevices, joints and seams, threaded fasteners and holes, elastomeric hoses and seals, gaskets, and dissimilar metals.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "References",
+          "content": "List all applicable specifications and standards (to include company and vendor specifications) not referenced herein.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Notes.",
+          "content": "The notes section shall contain a list of surfaces not to be treated or coated along with supporting rationale. This section shall also contain definitions.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MFFP-82428.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82090C",
+  "slug": "di-ipsc-82090c",
+  "title": "Software Product Package (SPP)",
+  "summary": "The Software Product Package provides the procedures and deliverable computer software needed to install software and databases and to build and compile software on target computational devices.",
+  "approval_date": "2020-05-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10175",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "IPSC-2020-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Product Package (SPP) contains the procedures to install the software and databases on devices that stores or processes information. The SPP contains the deliverable computer software along with the associated build and compilation procedures.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nThis DID supersedes DI-IPSC-82090B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-IPSC-82090B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The SPP shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The SPP shall contain the required to be delivered computer software to reproduce, recreate, and recompile as defined in DFARS 252.227-7014 and the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title page.",
+          "content": "The SPP shall contain a title page identifying the following information, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Document identification number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Volume number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Version or Revision indicator.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Security classification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Release date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Document title.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Name of the device, computational system, or computer to which this SPP applies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Name of the Software Items (SIs) to which this SPP applies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Contract number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "CDRL item number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Organization for which the document has been prepared.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Name and address of the preparing organization.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Distribution statement.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Record changes.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The SPP shall contain a list of all changes incorporated from the prior document submission.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Table of contents.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The SPP shall contain a table of contents providing the number, title, and page number for each titled paragraph, figure, table, and appendix.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Page numbering.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Each page shall contain a page number and include the document number, document version, volume, and date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Styles.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "The language style shall be consistent throughout the SPP.",
+              "content": "Diagrams, tables, and other presentation styles may be substituted for text.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Multiple paragraphs and subparagraphs.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Any section, paragraph, or subparagraph may be written as multiple paragraphs or subparagraphs to enhance readability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "System overview.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "This paragraph shall briefly state the purpose of the system and the software to which this document applies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Time and Personnel.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "This section shall identify the anticipated amount of time required to perform the SPP procedures per computational device, and the anticipated minimum personnel required to perform the procedures in the anticipated timeframe.",
+              "content": "This section shall describe any special personnel skill-sets and expertise required.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Deliverable Computer Software.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "This section shall describe the required to be delivered software to include:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.1.1",
+                  "title": "Security Classification.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.2",
+                  "title": "Description (name, version, vendor).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.3",
+                  "title": "Software Data Rights (restrictions on the government's use, release, or disclosure of the computer software).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Cold Start Procedures.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "The Cold Start Procedures shall include Installation Procedures, Software Build Procedures and Firmware Configuration Procedures for each delivered computational device that stores or processes data.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.1.1",
+                  "title": "Installation Procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.10.1.1.1",
+                      "title": "The Installation Procedures shall include:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.10.1.1.1.1",
+                          "title": "The prerequisite tasks or procedures that must be completed prior to executing the procedures.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.2",
+                          "title": "A list of the physical software media and quantity required to perform the procedures.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.3",
+                          "title": "The procedural steps to format the storage devices(s) prior to performing the procedural steps of loading the application software.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.4",
+                          "title": "The software activation data, such as serial numbers, key codes, and hardware dongles, fobs and keys.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.5",
+                          "title": "The procedural steps to configure the Unified Extensible Firmware Interface (UEFI), Basic Input/Output System (BIOS) and other user configurable firmware from the factory default settings.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.6",
+                          "title": "The procedural steps to restore the entirety of software, such as the operating system, hardware device drivers, computer software, and computer databases to the original delivered configuration without the use of a restoration solution (e.g. use of disk images or pre-built virtual machines) for any computational device that runs noncommercial software.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.7",
+                          "title": "The procedural steps to restore the entirety of software, such as the operating system, hardware device drivers, computer software, and computer databases to the original delivered configuration for any computational device that only runs commercial software.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.8",
+                          "title": "The detailed action to be performed; the expected result(s) following each action; and areas to document abnormalities, discrepancies, errors; and the pass or fail status for each step.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.9",
+                          "title": "Discrete steps to break down and accomplish complex tasks.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.10",
+                          "title": "The procedural steps to configure device computational software with the applicable cybersecurity controls.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.11",
+                          "title": "All of the usernames and passwords.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.12",
+                          "title": "The procedural steps to change all passwords.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.1.1.13",
+                          "title": "The procedural steps or reference procedural steps to calibrate the delivered computational device, as applicable.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.10.1.2",
+                  "title": "Software Build Procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.10.1.2.1",
+                      "title": "Software Build Procedures shall be included for each computational device that runs noncommercial software that was built from the required to delivered source code.",
+                      "content": "The Software Build Procedures shall include:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.10.1.2.1.1",
+                          "title": "The procedural steps to build the software (turns source code into executable(s) and library files).",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.2.1.2",
+                          "title": "The procedural steps for retrieving source code from a Version Control System (VCS) used for tracking source code changes on each applicable computational device, as applicable",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.10.1.3",
+                  "title": "Firmware Configuration Procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.10.1.3.1",
+                      "title": "Firmware Configuration Procedures shall be included for each device with read-only memories (ROMs), Programmable ROMs (PROMs), and Erasable PROMs (EPROMs).",
+                      "content": "As applicable, the Firmware Configuration Procedures shall include:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.10.1.3.1.1",
+                          "title": "The prerequisite tasks or procedures that must be completed prior to executing the procedure.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.2",
+                          "title": "The manufacturer and model number of the firmware device.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.3",
+                          "title": "The list of software and files used for programming and reprogramming the firmware device.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.4",
+                          "title": "The description of the equipment to be used for programming and reprogramming the firmware device.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.5",
+                          "title": "The procedural steps to erase load and verify the firmware with the device.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.6",
+                          "title": "The procedural steps or reference procedural steps to calibrate the delivered computational device.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.7",
+                          "title": "The procedural steps to reset the firmware device back to the factory default settings prior to the configuration steps.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.10.1.3.1.8",
+                          "title": "Backup and restoration of the firmware device configuration.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Warm Start Procedures.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "As applicable, this section shall include additional procedural steps after the Cold Start Procedures have been successfully performed by the Government or approved by the Government.",
+              "content": "The Warm Start Procedures shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.11.1.1",
+                  "title": "The procedural steps to install commercial computer software, noncommercial computer software, and computer databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.2",
+                  "title": "The detailed action to be performed; the expected result(s) following each action; and areas to document discovered abnormalities, discrepancies, errors; and the pass or fail status for each step.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.3",
+                  "title": "Discrete steps to break down and accomplish complex tasks.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Scanned Results.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "The scanned results shall contain the previously performed Cold Start Procedures and Warm Start Procedures (as applicable), to include:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.12.1.1",
+                  "title": "A digital copy of the previously performed procedure with the markings to indicate any abnormalities, discrepancies, errors; and a pass or fail status for each step performed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.12.1.2",
+                  "title": "A date and a signature of the person who performed the procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Restoration Solution Procedures.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "As applicable, this section shall include device specific procedural steps or reference device specific procedural steps to create and restore the entirety of software using a restoration solution (e.g. use of disk images or pre-built virtual machines)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "Qualification Provision.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.14.1",
+              "title": "This section shall include a data integrity verification checksum for each SI, and procedures to verify those SIs against their respective checksums to confirm the SIs have not been modified after the build procedures were executed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.15",
+          "title": "Transition of Software.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "This section shall provide information that verifies that all software was registered or transferred to the government with the appropriate activation data, such as serial numbers, key codes, hardware dongles, fobs, and keys.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Notes.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.16.1",
+              "title": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale).",
+              "content": "This section shall include an alphabetical listing of acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.17",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.17.1",
+              "title": "Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data).",
+              "content": "As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendices may be bound as separate documents for ease in handling. Appendices shall be lettered alphabetically (A, B, etc.).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82090C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82250A",
+  "slug": "di-ipsc-82250a",
+  "title": "Software Attack Surface Analysis Report (SASAR)",
+  "summary": "The Software Attack Surface Analysis Report documents the results of attack surface analysis activities, identifying the points where unauthorized users could enter or extract data from a software environment.",
+  "approval_date": "2021-02-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10218",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "IPSC-2021-002",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Attack Surface Analysis Report (SASAR) documents the results of the attack surface analysis activities. The attack surface of a software environment is the sum of the different points of attack vectors where unauthorized users enter data to, or extract data from, software an environment. Keeping the attack surface as small as possible is a key Software Assurance (SwA) objective. The SASAR involves the following:\na. Updating the Software Threat Assessment Report (STAR), DI-IPSC-82251A, with all attack surfaces enumerated and documented in the SASAR.\nb. Identifying directly or by reference in the Software Development Plan (SDP), Firmware Development Plan (FDP), Program Protection Implementation Plan (PPIP), or equivalent documents, that design or modification of the software attack surface areas defined by the SASAR, require formal cybersecurity and software assurance review, assessment, and documented within the system test plan.\nc. The SASAR is used as input to the risk assessments completed in the Software Vulnerability Assessment Report (SVAR), DI-IPSC-82252, and the Software Assurance Evaluation Report (SAER), DI-IPSC-82249.\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract. This DID can be used in conjunction with DI-IPSC-82251A; DI-IPSC-82252A; DI-IPSC-82249A; DI-ADMIN-81306; Program Protection Implementation Plan (PPIP); DI-IPSC-81427, Software Development Plan (SDP); and DI-SESS-82045, Firmware Development Plan (FDP). This DID supersedes DI-IPSC-82250.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-IPSC-82250"
+  ],
+  "related_dids": [
+    "DI-IPSC-82251A",
+    "DI-IPSC-82252",
+    "DI-IPSC-82249",
+    "DI-ADMIN-81306",
+    "DI-IPSC-82252A",
+    "DI-IPSC-82249A",
+    "DI-IPSC-81427",
+    "DI-SESS-82045",
+    "DI-IPSC-82251"
+  ],
+  "references": [
+    {
+      "label": "DoD Developer's Guidebook for Software Assurance",
+      "url": "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=539177"
+    },
+    {
+      "label": "Program Manager's Guidebook for Software Assurance",
+      "url": "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=538771"
+    },
+    {
+      "label": "Open Web Application Security Program (OWASP), Cheat Sheets, Attack Surface Analysis",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html"
+    },
+    {
+      "label": "A Threat-Driven Approach to Cyber Security",
+      "url": "https://www.lockheedmartin.com/content/dam/lockheedmartin/rms/documents/cyber/LM-White-Paper-Threat-Driven-Approach.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "\"DoD Developer's Guidebook for Software Assurance,\" Carnegie Mellon University, Software Engineering Institute (SEI), Federally Funded Research and Development Center (FFRDC).",
+          "content": "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=539177",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "\"Program Manager's Guidebook for Software Assurance,\" Carnegie Mellon University, Software Engineering Institute (SEI), Federally Funded Research and Development Center (FFRDC).",
+          "content": "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=538771",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.3",
+          "title": "\"Software Assurance Evaluation Report (SAER),\" DID Number DI-IPSC-82249,",
+          "content": "https://assist.dla.mil",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.4",
+          "title": "\"Software Vulnerability Assurance Report (SVAR),\" DID Number DI-IPSC-82252,",
+          "content": "https://assist.dla.mil",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.5",
+          "title": "\"Software Threat Assessment Report (STAR),\" DID Number DI-IPSC-82251,",
+          "content": "https://assist.dla.mil",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.6",
+          "title": "Open Web Application Security Program (OWASP), Cheat Sheets, Attack Surface Analysis",
+          "content": "https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.7",
+          "title": "\"A Threat-Driven Approach to Cyber Security,\" (C) 2019 Lockheed Martin Corporation,",
+          "content": "https://www.lockheedmartin.com/content/dam/lockheedmartin/rms/documents/cyber/LM-White-Paper-Threat-Driven-Approach.pdf",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The report shall be in contractor format unless tailored out in the Contract Data Requirements List (CDRL) (DD 1423).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "This section shall be divided into paragraphs, as needed, to establish the context for the content described in later sections. The term \"document\" in this DID shall mean a collection of data regardless of its medium. The terms \"section\" and \"paragraph\" in this DID shall mean their equivalents in a digital format that fulfill the section or paragraph's requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Reference Documents",
+          "content": "This section shall list the number, title, revision, and date of all documents referenced in this report. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Document Management and Configuration Control",
+          "content": "This section shall identify the version, release date, and other relevant management and configuration control information associated with the current version of the report. A change history, highlighting significant changes from version to version shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Table of Contents",
+          "content": "This section shall index all sections, major paragraphs, subparagraphs and appendices with page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Document Scope",
+          "content": "This section shall be divided into paragraphs covering system and software or Computer Software Configuration Item (CSCI) identification, system overview and document overview.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "System and Software or Computer Software Configuration Item (CSCI) Identification",
+              "content": "This section shall contain a full identification of the system and the software or CSCI to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "System Overview",
+              "content": "This section shall briefly state the purpose of the system to which this report applies. It shall describe the general nature of the system and software or CSCI; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Document Overview",
+              "content": "This section shall summarize the purpose and contents of this report and shall describe any security or privacy considerations associated with its use.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Attack Surface Definition",
+          "content": "This section shall define the attack surface of the software application, to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "The applicable system, software, or CSCI boundaries (e.g., trust boundaries, accreditation boundaries, technical or environmental boundaries).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "All paths for data and commands into and out of the application, (e.g., Application Programming Interfaces (API); Data-Flow Diagrams (DFD); Ports, Protocols, and Services (PP&S); data sources; trust levels formats; and integrity checks).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "The code that protects these paths, including (as applicable) resource connection and authentication, authorization, activity logging, data validation, encoding and integrity checking.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "All valuable data used in the application (e.g., secret keys; intellectual property; critical business data; Control Unclassified Information (CUI); classified data and data with special handling requirements, such as: NATO//RD//FRD//CNWDI//NOFORN, and Personally Identifiable Information (PII)).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "The code that protects this critical valuable data (e.g., encryption, checksums, access auditing, and data integrity and operational security controls).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Attack Surface Identification and Mapping",
+          "content": "This section shall identify each attack surface and map applicable threats from DI-IPSC-82251 against the attack surface. Include mapping out all the devices, paths and networks necessary to comprehensively visualize the enterprise system.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Measure and Assess the Attack Surface",
+          "content": "This section shall measure and assess the attack surface (e.g., identify the high-risk to low-risk areas). For each identified attack surface, document the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Assessed risk level (likelihood and impact).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Development cyber test cases that map to the attack surface and threat capability to test sufficiency of the code that protects these paths, as well as data protections used in the application.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Notes",
+          "content": "This section shall contain any general information that aids in understanding this report (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this report and a list of any terms and definitions needed to understand this report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Appendices",
+          "content": "Appendices shall provide information published separately for convenience in document maintenance (e.g., charts, classified data, etc.), as necessary. As applicable, each appendix shall be referenced in the report where the data would normally have been provided. Appendices shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Open Architecture Conflicts",
+              "content": "Document where open architecture requirements conflict in an appendix to this report, including proposed resolution thereof.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82250A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

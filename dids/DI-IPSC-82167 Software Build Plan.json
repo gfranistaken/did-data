@@ -1,0 +1,489 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-82167",
+  "slug": "di-ipsc-82167",
+  "title": "Software Build Plan",
+  "summary": "The Software Build Plan consists of details regarding how the software functionality or capabilities will be built up over time to reach full capability in consonance with the system integration activities.",
+  "approval_date": "2017-11-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9873",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "IPSC-2018-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Build Plan consists of details regarding how the software functionality or capabilities will be built up over time to reach full capability in consonance with the system integration activities.\n\nThis Data Item Description contains the format, content, and intended use information for the data product resulting from the work task described by the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Software Build Plan shall adhere to the format described under Content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The content shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope.",
+          "content": "This section shall be divided into the following paragraphs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Identification.",
+              "content": "This paragraph shall contain a full identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Document overview.",
+              "content": "This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Relationship to other plans.",
+              "content": "This paragraph shall describe the relationship, if any, to the Software Development Plan or to other project management plans.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Overview of required work.",
+          "content": "This section shall be divided into paragraphs as needed to establish the context for the planning described in later sections. It shall include, as applicable, an overview of:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Requirements and constraints of the system and software to be developed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Requirements and constraints of the project documentation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Position of the project in the lifecycle.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Requirements and constraints of the selected development strategy.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Requirements and constraints on project resources and schedules.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Other requirements and constraints, such as security, safety, methods, standards, interdependencies, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Build Strategy.",
+          "content": "This section informs the reader what the high level plan, or methodology, is for the software build(s) and, most importantly, why the build is structured the way it is. The build is dependent on many factors which will change during execution and will require this plan to be actively updated and managed.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Factors:",
+              "content": "Each of the following subsections shall describe the factors required for this build, or builds, of software.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Software team construct by personnel to facilitate discovery, analysis and correction of problems.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Detail incremental capability buildup through the use of use cases and sequence diagrams used to describe functional mission and support threads (from basic infrastructure to full mission capability).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Interface evaluation as described by use cases and activity data flow.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Interaction and dependencies of the System/Software Integration Plan (SIP).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Interaction and dependencies with the ground/flight test plan of capability releases that can only be tested on a target platform.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Maturity definition(s) and criteria for a capability.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Defect burn-down strategy, if applicable.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Detail the development facility to include: compliers, debuggers, simulations, stimulations, hardware hosts, data collection, analysis tools and any specialized test equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "Test strategy to include any regression testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Build Processes.",
+              "content": "This section defines the processes and process execution used during release(s) of software. The follow subsections shall be described:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Build Planning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.1.1",
+                      "title": "Linkage of the software builds in the Integrated Master Schedule (IMS) and other applicable program plans for all relevant activities (i.e. flight test, formal testing, etc.).",
+                      "content": "Include expected software delivery dates for the integrators and test teams.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.2",
+                      "title": "Build methodology.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.3",
+                      "title": "Computer Software Component (CSC) testing with special focus on the completeness (via coverage analysis of requirements-based testing) and the testing of the software cybersecurity requirements:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.2.1.3.1",
+                          "title": "Common Vulnerabilities and Exposure (CVE) List for the selection of security test tool(s).",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.3.2",
+                          "title": "Penetration testing.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.2.1.3.3",
+                          "title": "Modified condition and decision coverage testing.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.2.1.4",
+                      "title": "Identification of build artifacts.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.5",
+                      "title": "Identification of required activities and/or resources.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.6",
+                      "title": "Identification of project functions, components and subsystems to be built regardless of purchased or developed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.7",
+                      "title": "Identification of all external systems to be utilized or interfaced with.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.8",
+                      "title": "Association of Build Release Indicators (i.e. the ability of the software to satisfy the functionality of each scheduled incremental build) to builds and also by capability.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.9",
+                      "title": "Categorization of capabilities (i.e. functional, performance, problem correction, stress, failure recovery, baseline maturity, associated to system test and associated with flight test, as applicable).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.10",
+                      "title": "Setup and establishment of configuration of the development and test environment(s).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.11",
+                      "title": "Establishment of sequence and schedule for Build Release Indicators.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.12",
+                      "title": "Meetings and agendas to facilitate execution.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.13",
+                      "title": "Record keeping and reporting.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Build/Release Entrance and Exit Criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Build/Release Execution",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.3.1",
+                      "title": "Personnel management",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.2",
+                      "title": "Lab Utilization (Shift planning, prioritization and de-confliction)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Build/Release Metrics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.4.1",
+                      "title": "Development Progress Profile (Percent of Work Complete).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.2",
+                      "title": "Software Productivity.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.3",
+                      "title": "Software Requirements Volatility.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.4",
+                      "title": "Software Defects.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.5",
+                      "title": "Software Size.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.6",
+                      "title": "Build Release Indicators.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.7",
+                      "title": "Test Progress Indicators.",
+                      "content": "The progress made against initial plans for each formal build and tracked against test efforts leading toward the build for formal and/or qualification test.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "Problem Report Management.",
+                  "content": "Include Configuration Control Board (CCB) participants and participation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "Testing.",
+                  "content": "This section should include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.6.1",
+                      "title": "Scope determination.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.6.2",
+                      "title": "Testing strategy assure that no changes have affected previously successfully tested functionality.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.6.3",
+                      "title": "Unit, component and CSCI level test procedures to be used.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Notes.",
+          "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Appendices.",
+          "content": "Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendices may be bound as separate documents for ease in handling. Appendices shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-82167.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

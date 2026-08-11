@@ -1,0 +1,111 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81204A",
+  "slug": "di-hfac-81204a",
+  "title": "Airborne Noise Analysis Report",
+  "summary": "The Airborne Noise Analysis Report details the Contractor's analysis performed to satisfy the airborne noise requirements of the contract specification(s), enabling the Government to assess the adequacy of the design.",
+  "approval_date": "2015-04-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9537",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "HFAC-2014-017",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Airborne Noise Analysis Report details the Contractor's analysis performed to satisfy the airborne noise requirements of the contract specification(s). This analysis provides the Government with the information necessary to assess the adequacy of the contractor's design with respect to specified airborne noise requirements.\na. This Data Item Description (DID) contains the format, content, and preparation instructions for the Airborne Noise Analysis Report generated in response to the applicable tasks in the contract statement of work (SOW).\nb. This DID supersedes DI-HFAC-81204.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-81204"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The Airborne Noise Analysis Report shall be in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The Report shall contain a description of the method(s) used to predict noise levels and to analyze potential airborne noise level deficiencies in ship spaces.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The Report shall identify all assumptions and shall also contain detailed information that will allow for technical reviews of all calculations, analysis, and verification of results.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The Report shall contain a summary of the analysis for each ship space which has a specified noise criterion and shall include:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "The specified airborne noise category and acceptance criterion and the rationale for the assignment of that noise category.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "The predicted noise level and the rationale for the selection of the noise control treatments included in the ship design.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Listing of the noise source for each space including a description of the transmission path for acoustic energy for each of the sources.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "Identification and description of the noise control treatments applied to each space.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.5",
+              "title": "A listing of any airborne noise acceptance levels invoked in machinery purchase specifications and the corresponding vendor measured and predicted airborne noise levels.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81204A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

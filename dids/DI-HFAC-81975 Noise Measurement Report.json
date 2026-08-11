@@ -1,0 +1,296 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81975",
+  "slug": "di-hfac-81975",
+  "title": "Noise Measurement Report",
+  "summary": "The Noise Measurement Report (NMR) provides data from noise measurements conducted on materiel to evaluate steady-state noise, impulsive noise, and aural non-detectability in personnel-occupied areas.",
+  "approval_date": "2015-02-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9513",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AV/MI",
+  "project_number": "HFAC-2015-003",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Noise Measurement Report (NMR) provides data from noise measurements conducted on materiel to evaluate steady-state noise in personnel-occupied areas, impulsive noise in personnel-occupied areas, and aural non-detectability.\na. This report will be used to obtain essential information from the evaluation results of noise measurement levels. The data may support the conduct of a health hazard assessment.\nb. This Data Item Description (DID) contains format, content, and intended use information for the data delivered resulting from the work task(s) described in the contract Statement of Work (SOW) and MIL-STD-1474.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The NMR shall be in contractor's format. Unless effective presentation would be degraded, the format used initially shall be used for subsequent submissions. Revisions shall be indicated in a manner consistent with standard editorial practices.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The NMR shall contain the information described in the following paragraphs.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "General data.",
+          "content": "The following data, as applicable, shall be reported.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The sound pressure level limit (Limit A, Limit B, or Limit C) of the measured system, equipment, or facility.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The method used to compute the effective noise reduction of personal protective equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "The measured modified rhyme test score for each channel or transmission path.",
+              "content": "The predictor of speech intelligibility, if one is used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "A physical description of the test environment area",
+              "content": "A physical description of the test environment area, including potential reflecting surfaces, if appropriate, a sketch of contributing noise sources, normal personnel operating positions, microphone locations, incorporation of windscreens, orientation angles of the microphones with reference to the noise source, and the location of personnel present during the test(s). A diagram, drawn to scale, of the test environment shall be provided if it would aid in understanding the test area. Transducer locations and orientations for weapons shall be specified in polar coordinates with the origin being a point below the muzzle with the barrel or tube at 0 degrees elevation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Weather conditions during outdoor measurements (e.g., air temperature, relative humidity, wind direction and speed, barometric pressure, cloud cover, incorporation of windscreens, and other relevant atmospheric conditions).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Measurement instrumentation (e.g., system description of instrumentation used for the measurements, name, model, serial number, control settings, manufacturer, system gain, date of calibration, and period of calibration).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "A description of the operational conditions under which the test was conducted (e.g., speed, revolutions per minute, load, transducer locations and orientation, weapon height, and weapon elevation), including the identification of subsystems and auxiliary equipment operating concurrently.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "For ground equipment systems under test, the identification of the equipment whose noise is being measured, nomenclature, type, serial number, mileage (if appropriate), and any modifications to the equipment.",
+              "content": "For ground vehicles, include speed, gear, load configurations, duty cycle, and description of the test surface. If commercial test standards were used that do not include load, the report shall specifically stipulate the loading conditions used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "The date, time of day, location of the test(s), and ambient noise level using the same bandwidth employed for the measurements of the noise source(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "The name, address, telephone number, and e-mail address of personnel making the noise measurements, and of personnel such as official witnesses and equipment operator(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Raw data files plus any correction factors applied.",
+              "content": "Pressure histories in a digitized form. The digitizing rate and calibration data necessary to accurately reproduce the waveform shall also be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Measurement data (e.g., unweighted sound pressure level, A-weighted sound pressure level, C-weighted sound pressure level, peak sound pressure level, full octave sound pressure level, one-third octave sound pressure level) at each operator or crew position(s), representative passenger position(s), and occasionally occupied position(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Steady-state noise of personnel-occupied areas.",
+          "content": "In addition to the applicable general data in 3.1 above, the NMR shall contain the following with respect to steady-state noise.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The noise limit category selected for communications.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Documentation of compliance or non-compliance with the required noise limit.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Non-compliance documentation shall contain technically supported design considerations, technically supported design recommendations for noise reduction, and technically supported predictions of the resultant noise levels.",
+              "content": "Noise reduction feasibility documentation shall include the identification of all noise sources that contribute to the noise level at the locations of interest; identification of all noise paths between the noise sources and the locations of interest; rank ordering of the source/path combinations in terms of their contribution to the overall noise level at the locations of interest; development of noise control measures for each source/path combination in order of dominance until the required noise levels at the locations of interest are attained; and technically supported trade-off analyses of noise control benefit against other design, cost, schedule, and performance requirements, consistent with best engineering practice.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "The distances and directions from the noise source at which the noise level is equal to 85 dBA when the steady-state noise level at the source has been determined to exceed 85 dBA.",
+              "content": "A map, drawn to scale, showing the distances and directions shall be provided if it would aid understanding of the noise contours. A grid showing the measurements may also be provided.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Impulsive noise of personnel-occupied areas.",
+          "content": "In addition to the applicable general data in 3.1 above, the NMR shall contain the following with respect to impulsive noise.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The distances and directions from the noise source at which the noise level is equal to 140 dB when the impulsive noise level at the source has been determined to exceed 140 dBP.",
+              "content": "A map, drawn to scale, showing the distances and directions shall be provided if it would aid understanding of the noise contours. A grid showing the measurements may also be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Weapon positions and locations including elevations and azimuths, ammunition charges, and ammunition temperature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Identification of the metric used to evaluate the noise limits of the system under test (auditory risk units or LIAeq100ms).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "For the auditory risk unit metric.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "The hazard rating for occasional exposures of the system within any 24-hour sliding window as calculated by the Auditory Hazard Assessment Algorithm for Humans (AHAAH) model.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "The hazard rating for occupational exposures of the system within any 24-hour sliding window as calculated by the AHAAH model.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "The allowable number of impulses per day.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "For the LIAeq100ms metric.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "The hazard as established through use of the LIAeq100ms metric, including any adjustments for the duration of the recording.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "The inclusion of a dose correction when the A-duration has been measured.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Aural non-detectability.",
+          "content": "In addition to the applicable general data in 3.1 above, the NMR shall contain the following with respect to the aural non-detectability of the system.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "The aural non-detectability level (Level I or Level II).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "The minimum distance at which aural non-detectability shall be provided.",
+              "content": "A map, drawn to scale, showing the distances and directions shall be provided if it would aid understanding of the non-detectability distances. A grid showing the measurements may also be provided.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81975.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-81833A",
+  "slug": "di-hfac-81833a",
+  "title": "Human Systems Integration Report",
+  "summary": "The Human Systems Integration Report documents contractor progress on the Human Systems Integration program, including issues, risks, opportunities, requirements compliance, and impacts on system and total ownership costs.",
+  "approval_date": "2019-10-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10102",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "HFAC-2019-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Human Systems Integration Report (HSIR) documents progress with the contractor's Human Systems Integration (HSI) program, and describes HSI issues, risks, opportunities, requirements compliance, and positive impacts on the system and total ownership costs.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation, Department of Defense Instruction (DoDI) 5000.02, Operation of the Defense Acquisition System, Enclosure 7: Human Systems Integration (HSI), and Human System Integration Program Plan (HSIPP), DI-HFAC-81743.\nb. This DID supersedes DI-HFAC-81833.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-HFAC-81833"
+  ],
+  "related_dids": [
+    "DI-HFAC-81743"
+  ],
+  "references": [
+    {
+      "label": "Copies of DI-HFAC-81743 can be obtained at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of DoDI 5000.02 can be obtained at",
+      "url": "https://www.esd.whs.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The HSIR shall be in the contractor's format. The format used initially shall be used for subsequent submissions. Revisions shall be clearly indicated in a manner consistent with standard editorial practices.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The HSIR should be tailored to reflect the program needs, acquisition category, and phase of development. The proposed tailoring of the HSIR content shall identify the paragraph, the proposed changes, and a rationale. Tailoring specified by the procuring agency shall also be included. If no tailoring is proposed beyond that specified by the procuring activity, this shall be stated. The HSIR shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "Table of contents; list of tables, figures, and appendices, as applicable; a list of acronyms and abbreviations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Purpose and Scope.",
+          "content": "Describe the HSIR purpose and scope, especially as related to the next scheduled major technical review or milestone.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Overview.",
+          "content": "Briefly describe the system, mission, human role(s), Concept of Operations (CONOPS), and operational environment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "HSI Activities, Results, and System Impacts.",
+          "content": "Provide a top-level description and status of the significant HSI activities conducted since contract award or the last submittal of the HSIR, including system analyses, assessments, evaluations, and trade studies; the results of the significant HSI activities; and any successes or lessons learned that have had an impact on system design, risk, performance, and total ownership costs.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Status of HSI Requirement Compliance Verification.",
+          "content": "Describe the progress of compliance verification (e.g., percent requirements verified). Provide the status (\"compliant\", \"partially compliant\", or \"non-compliant\") for each HSI and HSI-related requirement in the system specification and any other contract requirement document(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Summary of HSI Issues and Risks.",
+          "content": "Identify and summarize any Integrated Product Team (IPT)-level and program-level HSI issues and risks and their operational impact. Note any issues, risks, and concerns that have emerged or increased in significance since the last HSIR submittal. Note which IPT-level HSI issues and risks have been integrated with the program-level risk management system. Discuss any issues or risks that directly address program Key Performance Parameters. Include a summary of risk mitigation plans for HSI program-level risks.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "HSI Progress and Status.",
+          "content": "Describe the status of the HSI program relative to the entry and exit criteria established for the next scheduled major program technical review or milestone.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "HSI Program Quality Control.",
+          "content": "Provide an assessment of the HSI program quality control using the approach described in the HSIPP, DI-HFAC-81743 (Copies of DI-HFAC-81743 can be obtained at https://quicksearch.dla.mil.).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "HSI Planned Activities.",
+          "content": "Provide or update the schedule for HSI activities planned for execution following the current submission of the HSIR.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Appendix A. Human Systems Integration Analysis & Compliance Status.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "When submitted in support of a major program technical review (e.g., System Functional Review (SFR), Critical Design Review (CDR)),",
+              "content": "the HSIR shall include the additional detail required in Appendix A, unless specifically waived by the procuring agency.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "When submitted in support of a major program acquisition milestone (e.g., Milestone C),",
+              "content": "the HSIR shall be tailored to address key program milestone issues applicable to HSI.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "The Appendix A. Human Systems Integration Analysis & Compliance Status shall contain the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.3.1",
+                  "title": "Table of Contents.",
+                  "content": "Include links to the individual sections of the Appendix A. Note: For the items in b. through h. below, provide the information described, or provide the title(s) and location(s) of, or link(s) to, the document(s) that include the information.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.2",
+                  "title": "System Description.",
+                  "content": "Provide a top-level CONOPS, with an architectural view of the system. Include an overview of major subsystems and their relationship to the system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.3",
+                  "title": "Requirement Compliance Verification.",
+                  "content": "If the system specification requirements have been decomposed to subsystem-level specifications, provide the status of compliance verification (\"compliant\", \"partially compliant\", or \"non-compliant\") for each HSI and HSI-related requirement at the subsystem level.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.10.3.3.1",
+                      "title": "Compliance resolution.",
+                      "content": "For each partially-compliant or non-compliant system or subsystem requirement, provide a plan to achieve compliance, or a recommendation to modify or delete the requirement with a rationale.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.10.3.3.2",
+                      "title": "Verification.",
+                      "content": "Identify the verification method (e.g., inspection, analysis, demonstration, or test) for each requirement, and who (which discipline or organization element) is responsible for the activity at the system or subsystem level. Describe the HSI test and evaluation activities that have been conducted, including the performance criteria, or provide the title(s) and location(s) of, or link(s) to, the document(s) that include the information.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.10.3.4",
+                  "title": "Issues and Risks.",
+                  "content": "Describe each unresolved HSI issue and risk, including criticality; impact on mission performance; impact on human performance; estimated customer ownership costs; status of associated corrective action plans and mitigation plans; and the estimated closure date.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.5",
+                  "title": "Assessments and Evaluations.",
+                  "content": "Describe and provide the results of any significant operator, maintainer, trainer, and support personnel HSI-related assessments and evaluations (e.g., workstation anthropometric compatibility, workload evaluation) conducted since contract award or the last HSIR submittal. Identify any impacts on system design and human performance, including a description of results and user feedback.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.6",
+                  "title": "Task Lists.",
+                  "content": "Describe the status of completing job and task lists for operators, maintainers, trainers, and support personnel. Identify any tasks that have been added, eliminated, or significantly modified since contract award or the last submission of the HSIR. Provide the title(s) and location(s) of, or link(s) to, the document(s) that include operator, maintainer, trainer, and support personnel task lists.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.7",
+                  "title": "Personnel Requirements.",
+                  "content": "Identify the Military Occupational Specialty (MOS), Naval Enlisted Code (NEC), Air Force Specialty Code (AFSC), or other designations for system operators, maintainers, trainers, and support personnel. Identify any new knowledge, skills, abilities, and experience required of the specified personnel for system operation, maintenance, training, and support, or provide the title(s) and location(s) of, or link(s) to, the document(s) that include the information. Note any civilian or contractor personnel required to maintain, train, or support the system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.8",
+                  "title": "Tools.",
+                  "content": "Provide a list of any non-standard tools (unique to the system under development) required for system maintenance and support, as well as maintenance plan and procedure documents, and a rationale for why a standard tool cannot be used, or provide the title(s) and location(s) of, or link(s) to, the document(s) that include the information.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Appendices B-H.",
+          "content": "As defined in DoDI 5000.02, Operation of the Defense Acquisition System, Enclosure 7: Human Systems Integration (HSI), provide results of each HSI domain assessment as a separate appendix as follows: Appendix B: Human Factors Engineering, Appendix C: Personnel, Appendix D: Habitability, Appendix E: Manpower, Appendix F: Training, Appendix G: Safety and Occupational Health, and Appendix H: Force Protection and Survivability. (Copies of DoDI 5000.02 can be obtained at https://www.esd.whs.mil/.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-81833A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

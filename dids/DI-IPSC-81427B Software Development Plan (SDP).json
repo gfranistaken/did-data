@@ -1,0 +1,1465 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-IPSC-81427B",
+  "slug": "di-ipsc-81427b",
+  "title": "Software Development Plan (SDP)",
+  "summary": "Defines the format, content, and delivery timeframes for a Software Development Plan covering processes, methods, Agile activities, schedules, organization, and resources, plus Cyber Security and Safety Assurance.",
+  "approval_date": "2017-03-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9775",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "EC",
+  "project_number": "IPSC-2017-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Development Plan (SDP) with Agile, Cyber Security and Safety Assurance contains the format, content, and delivery timeframes for the SDP. The SDP provides the acquirer insight into, and a tool for monitoring, the processes to be followed for software development, the methods to be used, the approach to be followed for each activity, and project schedules, organization, and resources. This DID is useful for new development, modification, reuse, reengineering, maintenance, and other activities resulting in software products.\n\nThis Data Item Description contains the format, content, and intended use information for the data product resulting from the work task described by the contract.\n\nThis DID supersedes DI-IPSC-81427A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-IPSC-81427A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents.",
+      "content": "This section shall list the number, title, revision, and date of all documents referenced in this plan. This section shall also identify the source for all documents not available through normal Government stocking activities. The complete address or website or other conditions for availability will be described.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The SDP shall adhere to the format described under Content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Identification.",
+          "content": "This paragraph shall contain a full identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "System overview.",
+          "content": "This paragraph shall briefly state the purpose of the system and the software to which this document applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Document overview.",
+          "content": "This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Relationship to other plans.",
+          "content": "This paragraph shall describe the relationship, if any, of the SDP to other project management plans.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Overview of required work.",
+          "content": "This section shall be divided into paragraphs as needed to establish the context for the planning described in later sections. It shall include, as applicable, an overview of:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Requirements and constraints on the system and software to be developed",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Requirements and constraints on project documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Position of the project in the system life cycle",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "The selected program/acquisition strategy or any requirements or constraints on it",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Requirements and constraints on project schedules and resources",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Other requirements and constraints, such as on project security, privacy, methods, standards, interdependencies in hardware and software development, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Plans for performing general software development activities.",
+          "content": "This section shall be divided into the following paragraphs. Provisions corresponding to non-required activities may be satisfied by the words \"Not applicable.\" If different builds or different software on the project require different planning, these differences shall be noted in the paragraphs. In addition to the content specified below, each paragraph shall identify applicable risks/uncertainties and plans for dealing with them.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Software development process.",
+              "content": "This paragraph shall describe the software development process to be used. The planning shall cover all contractual clauses concerning this topic, identifying planned builds, if applicable, their objectives, and the software development activities to be performed in each build. This paragraph shall include why the approach was chosen and provide a description of previous experience in developing software of the same nature as being acquired.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "If the software development process is an Agile process, the following must be addressed within this section or subsection(s):",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Cite the Agile technique(s) being employed (Scrum, pair programming, extreme programming, etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "For each Agile technique employed, describe your approach.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "Describe the approach for release planning.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.4",
+                  "title": "For Scrum, identify the sprint length and how it was determined.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.5",
+                  "title": "Describe how the backlog is initially established, and the process for modifying and re-prioritizing it.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.6",
+                  "title": "For Scrum, describe the typical sprint activities, and what happens during each iteration.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.7",
+                  "title": "Identify the Product Owner and his/her roles/responsibilities.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.8",
+                  "title": "Describe the acquirer's role in the sprints if the customer is not also the Product Owner.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.9",
+                  "title": "Describe the mechanism for getting acquirer (or end user) feedback for each sprint.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.10",
+                  "title": "Describe how the product (working, useful piece of software) will be demonstrated to the Product Owner after each sprint (e.g., live demo on real equipment, in the lab with sim/stim, PowerPoint slides, etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.11",
+                  "title": "Describe the handling of incomplete user stories, unsatisfactory user stories, and bugs, and how they are factored back into the backlog.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.12",
+                  "title": "Describe your Configuration Management process for keeping track of which user stories passed without any rework needed, which require rework, and which failed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.13",
+                  "title": "Describe your approach to artifact delivery; when documents such as the SRS, SDD, Software Test Plan and System Integration Plan will be available.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.14",
+                  "title": "Discuss your approach to refactoring.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.15",
+                  "title": "List and describe the software metrics to be used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.16",
+                  "title": "Discuss your approach to paying off technical debt.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.17",
+                  "title": "Describe how you will determine story points for the velocity metric.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.18",
+                  "title": "Describe your Integrated Requirements Toolset (IRT) that traces user stories to mission threads and KPPs, and whether this is a commercial tool or a tool developed by your organization.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.19",
+                  "title": "Describe how software development activities will be coordinated with the Integration and Test (I&T) team, and how it will be assured that the I&T team can keep up with testing all the software releases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.20",
+                  "title": "Describe how sprint-to-sprint dependencies (related to product and development resources) will be resolved and factored into the Sprint/Release Plan.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.21",
+                  "title": "Describe your strategy/mechanism for keep multiple sprint teams in sync.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.22",
+                  "title": "Describe how the integrity of the baseline is maintained for use in the development of the next sprint.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.23",
+                  "title": "Describe how regression testing will be conducted for each sprint release for all previous functions released.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.24",
+                  "title": "Describe how automated testing techniques will be used for sprint and/or regression testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.25",
+                  "title": "Describe how the software development effort will be synchronized and coordinated with systems engineering activities and reviews.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "General plans for software development.",
+          "content": "This paragraph shall be divided into the following subparagraphs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Software development methods.",
+              "content": "This paragraph shall describe or reference the software development methods to be used. Included shall be descriptions of the manual and automated tools and procedures to be used in support of these methods. The methods shall cover all contractual clauses concerning this topic. Reference may be made to other paragraphs in this plan if the methods are better described in context with the activities to which they will be applied.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Standards for software products.",
+              "content": "This paragraph shall describe or reference the standards to be followed for representing requirements, design, code, test cases, test procedures, and test results. The standards shall cover all contractual clauses concerning this topic. Reference may be made to other paragraphs in this plan if the standards are better described in context with the activities to which they will be applied. Standards for code shall be provided for each programming language to be used. They shall include at a minimum:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.2.1",
+                  "title": "Standards for format (such as indentation, spacing, capitalization, and order of information)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.2",
+                  "title": "Standards for header comments (requiring, for example, name/identifier of the code; version identification; modification history; purpose; requirements and design decisions implemented; notes on the processing (such as algorithms used, assumptions, constraints, limitations, and side effects); and notes on the data (inputs, outputs, variables, data structures, etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.3",
+                  "title": "Standards for other comments (such as required number and content expectations)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.4",
+                  "title": "Naming conventions for variables, parameters, packages, procedures, files, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.5",
+                  "title": "Restrictions, if any, on the use of programming language constructs or features",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.6",
+                  "title": "Restrictions, if any, on the complexity of code aggregates",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.3",
+              "title": "Reusable software products.",
+              "content": "This paragraph shall be divided into the following subparagraphs.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.3.1",
+                  "title": "Incorporating reusable software products.",
+                  "content": "This paragraph shall describe the approach to be followed for identifying, evaluating, and incorporating reusable software products, including the scope of the search for such products and the criteria to be used for their evaluation. It shall cover all contractual clauses concerning this topic. Candidate or selected reusable software products known at the time this plan is prepared or updated shall be identified and described, together with benefits, drawbacks, and restrictions, as applicable, associated with their use.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.2",
+                  "title": "Developing reusable software products.",
+                  "content": "This paragraph shall describe the approach to be followed for identifying, evaluating, and reporting opportunities for developing reusable software products. It shall cover all contractual clauses concerning this topic.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.4",
+              "title": "Handling of critical requirements.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for handling requirements designated critical. The planning in each subparagraph shall cover all contractual clauses concerning the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.4.1",
+                  "title": "Safety Assurance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.4.1.1",
+                      "title": "Software Requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.2",
+                      "title": "System Software Architecture and Software Preliminary Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.3",
+                      "title": "Software Detailed Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.4",
+                      "title": "Software Coding and Unit Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.5",
+                      "title": "Computer Software Component (CSC) Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.6",
+                      "title": "Computer Software Configuration Item (CSCI) Formal Qualification Test (FQT)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.7",
+                      "title": "Subsystem Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.8",
+                      "title": "System Qualification Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.7.4.2",
+                  "title": "Cyber-Security / Software Assurance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.4.2.1",
+                      "title": "Software Requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.2",
+                      "title": "System Software Architecture and Software Preliminary Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.3",
+                      "title": "Software Detailed Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.4",
+                      "title": "Software Coding and Unit Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.5",
+                      "title": "CSC Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.6",
+                      "title": "CSCI FQT",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.7",
+                      "title": "Subsystem Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.8",
+                      "title": "System Qualification Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.2.9",
+                      "title": "Describe the mechanism to address constant emerging cyber-security requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.7.4.3",
+                  "title": "Assurance of other critical requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.5",
+              "title": "Computer hardware resource utilization.",
+              "content": "This paragraph shall describe the approach to be followed for allocating computer hardware resources and monitoring their utilization. It shall cover all contractual clauses concerning this topic.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Recording rationale.",
+              "content": "This paragraph shall describe the approach to be followed for recording rationale that will be useful to the support agency for key decisions made on the project. It shall interpret the term \"key decisions\" for the project and state where the rationales are to be recorded. It shall cover all contractual clauses concerning this topic.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Access for acquirer review.",
+              "content": "This paragraph shall describe the approach to be followed for providing the acquirer or its authorized representative access to developer and subcontractor facilities for review of software products and activities. It shall cover all contractual clauses concerning this topic.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Plans for performing detailed software development activities.",
+          "content": "This section shall be divided into the following paragraphs. Provisions corresponding to non-required activities may be satisfied by the words \"Not applicable.\" If different builds or different software on the project require different planning, these differences shall be noted in the paragraphs. The discussion of each activity shall include the approach (methods/procedures/tools) to be applied to: 1) the analysis or other technical tasks involved; 2) the recording of results; and, 3) the preparation of associated deliverables, if applicable. The discussion shall also identify applicable risks/uncertainties and plans for dealing with them.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Project planning and oversight.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for project planning and oversight. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.1.1",
+                  "title": "Software development planning (covering updates to this plan)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.2",
+                  "title": "CSCI test planning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.3",
+                  "title": "System test planning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.4",
+                  "title": "Software installation planning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.5",
+                  "title": "Software transition planning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.6",
+                  "title": "Following and updating plans, including the intervals for management review",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.2",
+              "title": "Establishing a software development environment.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for establishing, controlling, and maintaining a software development environment. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.2.1",
+                  "title": "Software engineering environment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.2",
+                  "title": "Software test environment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.3",
+                  "title": "Software development library",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.4",
+                  "title": "Software development files",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.5",
+                  "title": "Non-deliverable software",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.6",
+                  "title": "Software assurance considerations, including on tool selection",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.3",
+              "title": "System requirements analysis.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for participating in system requirements analysis. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.3.1",
+                  "title": "Analysis of user input",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.2",
+                  "title": "Operational concept",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.3",
+                  "title": "System requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.4",
+              "title": "System design.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for participating in system design. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.4.1",
+                  "title": "System-wide design decisions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.2",
+                  "title": "System architectural design",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.5",
+              "title": "Software requirements analysis.",
+              "content": "This paragraph shall describe the approach to be followed for software requirements analysis. The approach shall cover all contractual clauses concerning this topic.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.6",
+              "title": "Software design.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for software design. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.6.1",
+                  "title": "CSCI-wide design decisions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.6.2",
+                  "title": "CSCI architectural design",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.6.3",
+                  "title": "CSCI detailed design",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.7",
+              "title": "Peer Review.",
+              "content": "This paragraph shall describe the peer review process covering: System requirements, system design, software requirements, software design, software implementation and software testing.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.8",
+              "title": "Coding Standards.",
+              "content": "This paragraph shall describe the uniform set of rules and guidelines of the project and organization used for software development. This shall include standards for the creation and sustainment of secure systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.9",
+              "title": "Software implementation and unit testing.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for software implementation and unit testing. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.9.1",
+                  "title": "Software implementation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.9.2",
+                  "title": "Preparing for unit testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.9.3",
+                  "title": "Performing unit testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.9.4",
+                  "title": "Revision and retesting",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.9.5",
+                  "title": "Analyzing and recording unit test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.10",
+              "title": "Unit integration and testing.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for unit integration and testing. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.10.1",
+                  "title": "Preparing for unit integration and testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.10.2",
+                  "title": "Performing unit integration and testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.10.3",
+                  "title": "Revision and retesting",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.10.4",
+                  "title": "Analyzing and recording unit integration and test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.11",
+              "title": "CSCI qualification testing.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for CSCI qualification testing. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.11.1",
+                  "title": "Independence in CSCI qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.11.2",
+                  "title": "Testing on the target computer system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.11.3",
+                  "title": "Preparing for CSCI qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.11.4",
+                  "title": "Dry run of CSCI qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.11.5",
+                  "title": "Performing CSCI qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.11.6",
+                  "title": "Revision and retesting",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.11.7",
+                  "title": "Analyzing and recording CSCI qualification test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.12",
+              "title": "CSCI/HWCI integration and testing.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for participating in CSCI/HWCI integration and testing. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.12.1",
+                  "title": "Preparing for CSCI/HWCI integration and testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.12.2",
+                  "title": "Performing CSCI/HWCI integration and testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.12.3",
+                  "title": "Revision and retesting",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.12.4",
+                  "title": "Analyzing and recording CSCI/HWCI integration and test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.13",
+              "title": "System qualification testing.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for participating in system qualification testing. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.13.1",
+                  "title": "Independence in system qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.2",
+                  "title": "Testing on the target computer system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.3",
+                  "title": "Preparing for system qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.4",
+                  "title": "Dry run of system qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.5",
+                  "title": "Performing system qualification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.6",
+                  "title": "Revision and retesting",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.7",
+                  "title": "Analyzing and recording system qualification test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.13.8",
+                  "title": "Describe the process to allow access by the government to the results of this code evaluation on a real-time basis and shall address the use of automated code analyzers and documented peer review process.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.14",
+              "title": "Preparing for software use.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for preparing for software use. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.14.1",
+                  "title": "Preparing the executable software",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.14.2",
+                  "title": "Preparing version descriptions for user sites",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.14.3",
+                  "title": "Preparing user manuals",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.14.4",
+                  "title": "Installation at user sites",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.15",
+              "title": "Preparing for software transition.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for preparing for software transition. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.15.1",
+                  "title": "Preparing the executable software",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.2",
+                  "title": "Preparing source files",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.3",
+                  "title": "Preparing version descriptions for the support site",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.4",
+                  "title": "Preparing the \"as built\" CSCI design and other software support information",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.5",
+                  "title": "Updating the system design description",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.6",
+                  "title": "Preparing support manuals",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.7",
+                  "title": "Transition to the designated support site",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.15.8",
+                  "title": "Details for proposed evaluation of code quality and removal of defects before the code leaves the hands of the software developers to the system integrators.",
+                  "content": "This includes conformance to coding standards, as well as problems such as dead code, memory leaks and unreachable code.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.16",
+              "title": "Software configuration management.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for software configuration management. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.16.1",
+                  "title": "Configuration identification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.16.2",
+                  "title": "Configuration control",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.16.3",
+                  "title": "Configuration status accounting",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.16.4",
+                  "title": "Configuration audits",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.16.5",
+                  "title": "Packaging, storage, handling, and delivery",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.17",
+              "title": "Software product evaluation.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for software product evaluation. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.17.1",
+                  "title": "In-process and final software product evaluations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.17.2",
+                  "title": "Software product evaluation records, including items to be recorded",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.17.3",
+                  "title": "Independence in software product evaluation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.18",
+              "title": "Software quality assurance.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for software quality assurance. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.18.1",
+                  "title": "Software quality assurance evaluations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.18.2",
+                  "title": "Software quality assurance records, including items to be recorded",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.18.3",
+                  "title": "Independence in software quality assurance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.19",
+              "title": "Corrective action.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for corrective action. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.19.1",
+                  "title": "Problem/change reports, including items to be recorded (candidate items include project name, originator, problem number, problem name, software element or document affected, origination date, category and priority, description, analyst assigned to the problem, date assigned, date completed, analysis time, recommended solution, impacts, problem status, approval of solution, follow-up actions, corrector, correction date, version where corrected, correction time, description of solution implemented)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.19.2",
+                  "title": "Corrective action system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.20",
+              "title": "Joint technical and management reviews.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for joint technical and management reviews. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.20.1",
+                  "title": "Joint technical reviews, including a proposed set of reviews",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.20.2",
+                  "title": "Joint management reviews, including a proposed set of reviews",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.21",
+              "title": "Other software development activities.",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for other software development activities. The planning in each subparagraph shall cover all contractual clauses regarding the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.21.1",
+                  "title": "Risk management, including known risks and corresponding strategies",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.2",
+                  "title": "Software management indicators, including indicators to be used",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.3",
+                  "title": "Security and privacy",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.4",
+                  "title": "Subcontractor management",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.5",
+                  "title": "Interface with software independent verification and validation (IV&V) agents",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.6",
+                  "title": "Coordination with associate developers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.7",
+                  "title": "Improvement of project processes",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.21.8",
+                  "title": "Other activities not covered elsewhere in the plan",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.22",
+              "title": "Schedules and activity network.",
+              "content": "This section shall present:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.22.1",
+                  "title": "Schedule(s) identifying the activities in each build and showing initiation of each activity, availability of draft and final deliverables and other milestones, and completion of each activity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.22.2",
+                  "title": "An activity network, depicting sequential relationships and dependencies among activities and identifying those activities that impose the greatest time restrictions on the project",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Project organization and resources.",
+          "content": "This section shall be divided into the following paragraphs to describe the project organization and resources to be applied in each build.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Project organization.",
+              "content": "This paragraph shall describe the organizational structure to be used on the project, including the organizations involved, their relationships to one another, and the authority and responsibility of each organization for carrying out required activities. This paragraph shall also include the definition of Systems Engineering, Software Engineering, Integrated Product and Process Development, and processes for the Division(s) responsible for the development and the principle sub-contractors responsible for software development, as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Project resources.",
+              "content": "This paragraph shall describe the resources to be applied to the project. This section shall include a description of the extent to which personnel who contributed to these previous efforts using these processes will be supporting this development effort. It shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.2.1",
+                  "title": "Personnel resources, including:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.2.1.1",
+                      "title": "The estimated staff-loading for the project (number of personnel over time)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.2.1.2",
+                      "title": "The breakdown of the staff-loading numbers by responsibility (for example, management, software engineering, software testing, software configuration management, software product evaluation, software quality assurance)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.2.1.3",
+                      "title": "A breakdown of the skill levels, geographic locations, and security clearances of personnel performing each responsibility",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.9.2.2",
+                  "title": "Overview of developer facilities to be used, including geographic locations in which the work will be performed, facilities to be used, and secure areas and other features of the facilities as applicable to the contracted effort.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.3",
+                  "title": "Acquirer-furnished equipment, software, services, documentation, data, and facilities required for the contracted effort.",
+                  "content": "A schedule detailing when these items will be needed shall also be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.4",
+                  "title": "Other required resources, including a plan for obtaining the resources, dates needed, and availability of each resource item.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Notes.",
+          "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Appendixes.",
+          "content": "Appendixes may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-IPSC-81427B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

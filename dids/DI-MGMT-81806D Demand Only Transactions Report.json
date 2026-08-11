@@ -1,0 +1,132 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81806D",
+  "slug": "di-mgmt-81806d",
+  "title": "Demand Only Transactions Report",
+  "summary": "The Demand Only Transactions Report is used to verify recording of Demand Only Transactions data usage.",
+  "approval_date": "2020-11-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10206",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "MGMT-2020-015",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Demand Only Transactions Report will be used to verify recording of Demand Only Transactions data usage.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nThis DID supersedes DI-MGMT-81806C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81806C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of documents cited herein, including approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract. Reference cited in DID can be obtained from Navy Department Naval Supply Systems Command, 5450 Carlisle Pike, P.O. Box 2050, Mechanicsburg, PA 17055-0791.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Demand Only Transactions Report shall be in accordance with NAVSUP-P-485 Volume I - Afloat Supply, paragraph 03057 interim change 16-002.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Report shall include a title page identifying the following: a. Title; b. Identification of the system; c. Component; d. Program; e. Project; f. Period covered by the report; g. Contract number; h. Preparing activity or contractor's title and telephone number.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The Demand Only Transactions (demand transaction document identification (DI DHA)) Report shall identify all stock numbered items purchased through local purchase, manufacture, or repair.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The Report shall contain Demand Only Transactions of purchase of non-NSN material (DI BHJ) and shall identify non-stock numbered items that were fulfilled through local purchase or manufacture actions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The report shall contain a summary of the data collected for DI DHA and DI BHJ Demand Only Transactions specified in NAVSUP-P-485, Volume I and shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Total number of MILSTRAP DI DHA transactions for the period of the report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Total number of MILSTRAP DI BHJ transactions for the period of the report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Summary of any MILSTRAP submission issues",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Microsoft (MS) Office Excel spreadsheet a listing of the data fields required per NAVSUP-P-485 03057 for each transaction (individual data fields will be the columns, each DI DHA/BHJ transaction will be a row) submitted during the reporting period shall be an attachment to the report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Graphs reflecting the total DI DHA and DI BHJ transactions for the reporting period and the previous two reporting periods",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Media Requirement.",
+          "content": "The Demand Only Transaction Report shall be presented in MS Office Suite, Word version 2003-2010.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81806D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

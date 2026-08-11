@@ -1,0 +1,1346 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-81826D",
+  "slug": "di-mgmt-81826d",
+  "title": "F/A-18 and EA-18 Aircraft / System Program Protection Implementation Plan",
+  "summary": "The DID defines requirements for the Contractor's F/A-18 and EA-18G Aircraft / System Program Protection Implementation Plan, covering program protection and OPSEC activities under the contract.",
+  "approval_date": "2018-06-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9951",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "Yes",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2018-038",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Contractors F/A-18 (All Series) and EA-18G Program Protection Implementation shall be defined within the F/A-18 (All Series) and EA-18 Aircraft / System Contractors Program Protection Implementation Plan (PPIP) which is a result of the program protection requirements set forth in the DD-254, Statement of Work (SOW), DoD Contract, the Government's F/A-18 and EA-18G Program Protection Plan (PPP) (including Annexes) most current issuance, the Security Guidance for F/A-18 Hornet (All Series) and the EA-18G Growler Aircraft / Systems and Security Classification Guides applicable for the F/A-18 (All Series) and EA-18G Aircraft and Systems.\n\nThis Data Item Description (DID) contains the format, content, and intended information for the data product resulting from the work task described in the contract SOW.\n\nThis DID DI-MGMT-81826D cancels and replaces DI-MGMT-81826C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-81826C"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "GIDEP Applicable",
+      "url": "http://www.gidep.org/data/submit.htm"
+    },
+    {
+      "label": "also reference",
+      "url": "http://www.gidep.org/data/submit.htm"
+    },
+    {
+      "label": "For CJCSI Documents see",
+      "url": "http://www.dtic.mil/cjcs_directives/cjcs/instructions.htm"
+    },
+    {
+      "label": "For OPNAV / SECNAV / Navy Documents see",
+      "url": "http://doni.daps.dla.mil/default.aspx"
+    },
+    {
+      "label": "For DoD Documents see",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "For Mil Documents see",
+      "url": "http://quicksearch.dla.mil/"
+    },
+    {
+      "label": "Chairman Joint Chiefs Publications",
+      "url": "http://www.dtic.mil/cjcs_directives/cjcs/instructions.htm"
+    },
+    {
+      "label": "CJCSM 6510.01B, Cyber Incident Handling Program",
+      "url": "http://www.jcs.mil/Library/CJCS-Manuals/udt_48785_param_orderby/Info/udt_48785_param_direction/ascending/"
+    },
+    {
+      "label": "DoD Publications / Manuals",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "DoD Directives",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "DoD Instructions",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "Department of the Navy (OPNAV/SECNAV) (available via",
+      "url": "http://doni.daps.dla.mil/SECNAV.aspx"
+    },
+    {
+      "label": "Military Standards (Available via ASSIST @,",
+      "url": "http://quicksearch.dla.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.\nNote: For PPIP Reference Documents see Paragraph 4 and its subparagraph's:",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The required document shall be in Contractor format:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The PPIP shall be used as a focal point for the Contractors Program Security.",
+          "content": "The PPIP is derived from the PPP and should not restate what is written in the PPP but simply state \"how\" the contractor will implement Program Protection.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The PPIP is used to identify and monitor how a Contractor develops and performs Program Protection / Operations Security (OPSEC) activities during performance of the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Contractor's PPIP shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Delivered document at a minimum shall include a cover page identifying the Subject, Contractors Name and Address, Contact number, DID identification, Distribution Statement, Export Control, and Destruction Notice.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Security Management organization.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The Contractor's Program Security / OPSEC Management structure, including relationships with the corporate hierarchy, program subcontractors and suppliers.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "A section detailing the Contractors approach to the PPIP.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "General methodologies that will be applied to protection requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Critical Program Information including the following; Critical Components (CC), Critical Program Information (CPI), Critical Systems (CS), and Critical Technologies, (CT); hereafter referred to as CPI.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The Contactor's process / procedures for identifying any existing / proposed CPI during developmental and RDT&E phases, and its protection / identification in the ECP process prior to ECP acceptance by the Government.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "A section describing an effective and efficient protection of CPI; whichever are applicable and shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "An overview of all Contractor's System Security Engineering (SSE) (NIST SP 800-160) approach to activities, operations, tests, and other associated activities to be undertaken in performance of the contract; identifying those in which classified information could manifest itself; identifying the topics of the classification guide that specify the information that is classified; determine how, where, and when the classified information is embodied in the hardware, software or operations; determine what type access (visual, physical) permits knowledge of the classified information.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Identification of the CPI and physical locations under the Contractor's or its subcontractors' control and how the CPI is to be managed / tracked / secured throughout the CPI's life-cycle.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "An SSA assessment of the vulnerability of the CPI to intelligence collection in the following areas: Human Intelligence (HUMINT), Open Source Intelligence (OSINT), Signals Intelligence (SIGINT), Imagery Intelligence (IMINT), and Computer Network Operations (CNO.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Identification of the planned countermeasures at each site where CPI is utilized / secured from the following security domains: Physical security; personnel security; telecom and network security, application, systems development, cryptography, and security architectures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "All special handling procedures required for CPI, and procedures for recovering CPI in the event of a mishap; address these procedures for all phases of the program, including: Program / System Technology Development, System Development & Demonstration, RDT&E, Production Deployment, Operations, Maintenance, Logistics, Transportation, Training, and Disposal under this contract for which the Contractor has control.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "A Description of the process that shall be used to assess new acquisitions (Incremental / Spiral upgrades, Engineering Change Proposal(s) (ECP's)) for CPI.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "A Description of how the Contractor shall comply with procedures for ensuring compliance with U.S. Government export statutes and regulations that affect CPI in the contracted program.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.8",
+              "title": "A Description of the Contractor's procedures for public release of program information.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.9",
+              "title": "A Description of the Contractor's Information Security Program (ISP) as a part of their PPIP.",
+              "content": "As an integral part of the ISP, describe the Contractor procedures for identifying, reporting and resolution of Facility Security Breaches; Classified Information Compromises / Spillages including notification of DSS, DCMA, and Government Program Security Manager (PSM) within the constraints specified in the DD 254 / CDRL / Contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.10",
+              "title": "Describe how the Contractor shall implement the Department of Defense (DoD) PKI policy.",
+              "content": "PKI encryption is the chosen compliant DoD standard for protecting Controlled Unclassified Information (CUI) during transmission. CUI encompasses For Official Use ONLY (FOUO) and Sensitive Information. Failure to encrypt CUI during electronic transmission is considered a security weakness and shall be reported to the PSM / Cyber Security Manager (CSM).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.11",
+              "title": "Describe the how Security classification guidance and original classification authority (OCA) for Defense Industrial Base (DIB) information shall be developed in order to mitigate risks to critical DoD unclassified information supporting present and future DoD warfighting capabilities and residing on, or transiting, the Contractors/ Sub-contractors private networks.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.12",
+              "title": "Describe All special handling procedures required for CC / CPI / CS / CT, and procedures for recovering CC / CPI / CS / CT in the event of a mishap; address these procedures for all phases of the program, including: Program / System Technology Development, System Development & Demonstration, RDT&E, Production Deployment, Operations, Maintenance, Logistics, Transportation, Training, and Disposal under this contract for which the Contractor has control.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.13",
+              "title": "Describe how the contractors DIB Cyber Security is addressed in the Contractors facility and addressed in subcontracts and how incidents are addressed and reported to DSS / DCMA.",
+              "content": "Framework Agreements and contracts that contain DIB cyber security requirements for safeguarding DoD classified and unclassified information. DIB participants shall handle classified and sensitive unclassified information, such as CUI; CPI (as described in applicable DoD documents, as required by law and regulation, Risk Management Framework Agreements, and contracts.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Supply Chain Risk Management (SCRM) / Counterfeit Prevention:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "The Supply Chain Risk Management (SCRM) / Counterfeit Prevention portion of the PPIP shall include the establishment / identification of a SCRM / Counterfeit Prevention program tailored to fit the contractor's acquisition program identifying how supply chain risks shall be addressed across the entire system lifecycle through a defense-in-breadth approach to managing the risks to the integrity of information and communications technology (ICT) within covered / applicable systems.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "PPP requires the contractor to establish policy and a defense-in-breadth strategy for managing supply chain risk for mission-critical functions which would degrade the system effectiveness in achieving the core mission for which it was designed.",
+              "content": "A mission-critical component is a component that is or contains information and communications technology (ICT), including hardware, software, and firmware, whether customer, commercial, or otherwise developed, and which delivers or protects mission critical functionality of a system or which, because of the system's design, may introduce vulnerability to the mission critical functions of an applicable system and shall be described in the Contractors PPIP.\nLevel I and or Level II components are identified by a criticality analysis of mission-critical functions consistent with NIST SP 800-53R4 and supplemental guidance, and identify the critical functions in which a failure of which would result in either (catastrophic) (Level I) or unacceptable compromise of mission capability or significant mission degradation (critical) (Level II).\nSuppliers shall utilize the following criticality levels:\nLevel I (Catastrophic) protection failure that results in total compromise of mission capability\nLevel II (Critical) protection failure that results in unacceptable compromise of mission capability or significant mission degradation\nLevel III (Marginal) protection failure that results in partial compromise of mission capability or partial mission degradation\nLevel IV (Negligible) protection failure that results in little or no compromise of mission capability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Describe how the contractor and its subcontractors shall prepare and submit the Naval Aviation Supply Chain Risk Management (SCRM) process report as described in the SOW.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "The PPIP shall include the following elements / requirements as described in the Contractors Product Specification (Parts, Materials and Processes Selection List (PMPSL) / \"As Designed\" and \"As Built\" Parts List.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.4.1",
+                  "title": "Incorporation of all-source intelligence analysis into assessments of the supply chain for covered systems.",
+                  "content": "(CPI Review using the Navy Standard CPI Identification WBS Tool (most current version).)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.2",
+                  "title": "Procurement practices and procedures to include procurement of all parts and materials from original qualified parts / materials equipment manufacturer (OEM) or it franchised / authorized distributor.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.3",
+                  "title": "Procurement practices and internal processes used for exceptions to buying from OEM or OEM franchised distributors in cases where items are no longer available including a process to qualify / certify non-OEM parts & materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.4",
+                  "title": "Monitoring procedures to include the delivery of test results from random sampling and supply chains surveillance that does not assume any source is safe to identify possible penetration of OEM supply chain.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.5",
+                  "title": "Processes to control the quality, configuration, and security of software, hardware, and systems throughout their lifecycles, including components or subcomponents from secondary sources.",
+                  "content": "Monitor processes at all subcontractor levels processes and verify compliance through on-site audits.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.6",
+                  "title": "Processes to detect the occurrence, reduce the likelihood of occurrence, and mitigate the consequences of products containing counterfeit components or malicious functions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.7",
+                  "title": "Processes to ensure that the fabrication of integrated circuits that are custom-designed and / or custom-manufactured (generally referred to as \"application-specific integrated circuits\") for a specific DoD end use within covered systems are, as appropriate to the risk, performed by suppliers of integrated circuit-related services accredited through an authority designated by the Under Secretary of Defense for Acquisition, Technology, and Logistics (USD(AT&L)), unless expressly waived by the Milestone Decision Authority (MDA).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.8",
+                  "title": "Describe how the contractor shall report suspected counterfeit / malicious / counterfeit parts via Government Industry Data Exchange Program GIDEP Counterfeit / malicious modified parts, also reference (http://www.gidep.org/data/submit.htm) / DI-QCIC-80125B for reporting as a guide.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "The OPSEC portion of the PPIP shall provide for program development, planning, training, assessment, surveys, and readiness training.",
+          "content": "Including the results of the five-step OPSEC analysis Identifying Critical Information (CI), Analyzing Threats, Analyzing Vulnerabilities, Assessing Risk; and Applying Countermeasures, including those aspects of the foreign intelligence threats that are applicable to the contract. The following shall be addressed:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "General:",
+              "content": "Details of the OPSEC management concept to include contract identification, assignment of responsibilities, definition of milestones with target dates, provisions for continuous analysis, and how periodic revision as the contract activities evolve and become more specific and detailed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Threat:",
+              "content": "The known threats to the contracting activity and include only that portion deemed applicable to the specific contract activities in addition to how threats will be mitigated.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Sensitive Aspects of the Contract:",
+              "content": "An overview of all activities, operations, tests, etc. to be undertaken in performance of the contract; identifying those in which classified information could manifest itself; identify the topics of the classification guide that specify the information that is classified; determine how, where, and when the classified information is embodied in the hardware, software or operations; determine what type access (visual, physical) permits knowledge of the classified information, what tools / equipment / capability are required, and the specific national defense advantage provided by that information if it is protected. Use of electromechanical equipment is an operation that shall be included, as are subcontracting, hardware-in-the-loop testing, calibration and check-out, fabrication, static tests, breadboard and brass board fabrication and testing, and laboratory experiments. A list of critical information, based on the above analysis, shall include all the information considered essential to the success of the effort, and all the information that must be protected to preserve the military advantage potentially provided by the effort. Additionally, the list shall include all the activities, operations, and tests that could reveal the \"critical\" information to foreign intelligence.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "Vulnerabilities:",
+              "content": "The vulnerabilities derived by comparing identified threats to sensitive activities to determine which activities can be observed by foreign intelligence. \"Observe\" is defined to include all physical and chemical properties that can be noted and recorded by any type sensor. One such property is unintentional electromagnetic emanations, which may convey classified information. On this basis, TEMPEST is a part of OPSEC, and TEMPEST vulnerabilities shall be identified and mitigated. National security information shall not be compromised by emanations from Classified Information Processing Systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.5",
+              "title": "Countermeasures:",
+              "content": "The unacceptable risks of the vulnerabilities identified above shall include; the protective measures deemed appropriate to negate or reduce the potential damage to the project / program.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.6",
+              "title": "Organizational OPSEC Communications and Interfaces:",
+              "content": "A description as to how the Plan will be communicated to personnel supporting the program.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.7",
+              "title": "OPSEC guidance shall identify all interfaces internal to the corporation such as Senior Corporate Leadership, OPSEC Working Group, OPSEC Coordinators, and program personnel.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.8",
+              "title": "OPSEC guidance shall identify all external points of contact; Contracting activity, Defense Contract Management Agency (DCMA), Defense Security Service (DSS), Federal Bureau of Investigation (FBI) and local Law Enforcement.",
+              "content": "The guidance shall identify the contacts primary role within the OPSEC program. Subcontractor and supplier OPSEC points of contact shall be similarly identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.9",
+              "title": "The categories of Potential Critical Information (CI) that shall be protected and planned for in the PPIP are:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.9.1",
+                  "title": "Current and Future Operations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.2",
+                  "title": "Travel Itineraries",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.3",
+                  "title": "Usernames and Passwords",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.4",
+                  "title": "Access / Identification Cards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.5",
+                  "title": "Operations Planning Information",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.6",
+                  "title": "Personal Identification Information",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.7",
+                  "title": "Entry / Exit (Security) Procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.8",
+                  "title": "Capabilities and Limitations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.9",
+                  "title": "Address and Phone Lists",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.10",
+                  "title": "OPSEC Budget Information",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.11",
+                  "title": "Building Plans",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.12",
+                  "title": "VIP / Distinguished Visitor Schedules",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.13",
+                  "title": "Release of corporate information describing current business.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.9.14",
+                  "title": "Describe how the contractors Counterintelligence Awareness and Reporting, and the contractors plan to comply with the training and reporting requirements of the above.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "When contractually required, describe how the contractor shall protect Anti Tamper (AT) Plans and associated information.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "References:",
+      "content": "For CJCSI Documents see: http://www.dtic.mil/cjcs_directives/cjcs/instructions.htm\nFor OPNAV / SECNAV / Navy Documents see: http://doni.daps.dla.mil/default.aspx\nFor DoD Documents see: http://www.dtic.mil/whs/directives/\nFor Mil Documents see: http://quicksearch.dla.mil/\nFor PMA / Classified Documents formally request from PCO / PMA265\nDocuments are also available via the internet",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Chairman Joint Chiefs Publications (http://www.dtic.mil/cjcs_directives/cjcs/instructions.htm):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "CJCSI 6211.02D, Defense Information System Network (DISN), Responsibilities (current as of 4 Aug 15)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "CJCSM 6510.01B, Cyber Incident Handling Program (10 July 12, Current as of 18 Dec 2014) http://www.jcs.mil/Library/CJCS-Manuals/udt_48785_param_orderby/Info/udt_48785_param_direction/ascending/",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "DoD Publications / Manuals (http://www.dtic.mil/whs/directives/):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "DoDM 5200.01, Volume 1, DoD Information Security Program: Overview, Classification, and Declassification (24 Feb 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "DoDM 5200.01, Volume 2, DoD Information Security Program: Marking of Classified Information (24 Feb 12, C-2 19/3/13)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "DoDM 5200.01, Volume 3, DoD Information Security Program: Protection of Classified Information (24 Feb 12, C-2 19/3/13)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.4",
+              "title": "DoDM 5200.01, Volume 4, DoD Information Security Program: Controlled Unclassified Information (CUI) (24 Feb 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.5",
+              "title": "DoD 5200.08-R, Physical Security Program (9 Apr 2007 C-1, 27 May 09) (also see DTM-09-012 (C 7, 17 Apr 17)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.6",
+              "title": "DoD 5205.02E, DoD OPSEC Program (20 Jun 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.7",
+              "title": "DoD M O-5205.13, Defense Industrial Base (DIB) Cyber Security and Information Assurance (CS / IA) Program Security Classification Manual (SCM) (26 Apr 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.8",
+              "title": "DoD 5220.22 M, National Industrial Security Program Operating Manual (NISPOM) (C-2, 18 May 16)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.9",
+              "title": "DoD 5240.1-R, Procedures Governing the Activities of DoD Intelligence Components That Affect United States Persons, (1 Dec 82) also see DTM 08-052, DoD Guidance for Reporting Questionable Intelligence Activities and Significant or Highly Sensitive Matters (17 Jun 09 Incorporating Change 3, 30 Jul 12) and DTM-08-011, Intelligence Oversight Policy Guidance (26 Mar 2008 Incorporating Change 3, 27 Jul 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "DoD Directives (http://www.dtic.mil/whs/directives/):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "DoDD 5000.01, The Defense Acquisition System (12 May 03; Certified Current as of 20 Nov 2007)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.2",
+              "title": "DoDD 5205.02E, DoD OPSEC Program (20 June 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.3",
+              "title": "DoDD 5230.09, Clearance of DoD Information for Public Release (22 Aug 08, Cert Current Thru 22 Aug 15)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.4",
+              "title": "DoDD 5230.11, Disclosure of Classified Military Information to Foreign Governments and International Organizations (16 Jun 92)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.5",
+              "title": "DoDD 5230.20, Visits and Assignments of Foreign Nationals (22 Jun 05)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.6",
+              "title": "DoDD 5230.25, Withholding of Unclassified Technical Data from Public Disclosure (6 Nov 84; Incorporating Change 1, 18 Aug 95)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.7",
+              "title": "DoDD 8100.02, Use of Commercial Wireless Devises, Services and Technologies in the DoD Global Information Grid (14 Apr 04, Cert. Current as of 23 Apr 07)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "DoD Instructions (http://www.dtic.mil/whs/directives/):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.4.1",
+              "title": "DoDI 2040.02, International Transfers of Technology, Articles, and Services (27 Mar 14)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.2",
+              "title": "DoDI 4140.01, DoD Supply Chain Materiel Management Policy (14 Dec 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.3",
+              "title": "DoDI 4140.67, DoD Counterfeit Prevention Policy (26 Apr 13)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.4",
+              "title": "DoDI 4240.01, DoD Supply Chain Materiel Management Policy (14 Dec 11) (counterfeit))",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.5",
+              "title": "DoDI 4160.28, DoD Demilitarization (DEMIL) Program (7 Apr 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.6",
+              "title": "DoDI 5000.02, Operation of the Defense Acquisition System (7 Jan 15)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.7",
+              "title": "DoDI 5200.01, DoD Information Security Program and Protection of Sensitive Compartmented Information (9 Oct 08, C-1 13 Jun 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.8",
+              "title": "DoDI 5200.08, Security of DoD Installations and Resources and the DoD Physical Security Review Board (PSRB) (10 Dec 2005, C-3, 20 Nov 15 (Also see DTM-09-012))",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.9",
+              "title": "DoDI 5200.39, Critical Program Information (CPI) Identification and Protection Within Research, Development, Test, and Evaluation (RDT&E) (28 May 15)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.10",
+              "title": "DoDI 5200.44, Protection of Mission Critical Functions to Achieve Trusted Systems and Networks (TSN) (5 Nov 12, C2 2 Jul 17)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.11",
+              "title": "DoDI 5230.24, Distribution Statements on Technical Documents (23 Aug 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.12",
+              "title": "DoDI S-5230.28, Low Observable (LO) and Counter Low Observable (CLO) Programs (U), CLASSIFIED DOCUMENT (26 May 05) Authorized users may contact the OPR / COR. (OPR: USD (AT&L), 703-697-0016)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.13",
+              "title": "DoDI O-5240.24, Counterintelligence (CI) Activities Supporting Research, Development, and Acquisition (RDA) (8 Jun 11, C-1 15 Oct 13)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.14",
+              "title": "DoDI 8420.01, Commercial Wireless Local-Area Network (WLAN) Devices, Systems, and Technologies (3 Nov 09)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.15",
+              "title": "DoDI 8500.01, Cybersecurity (14 Mar 14)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.16",
+              "title": "DoDI 8510.01, Risk Management Framework (RMF) for DoD Information Technology (IT) (IA) 12 Mar 14",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.17",
+              "title": "DoDI 8520.02, Public Key Infrastructure (PKI) and Public Key (PKI) Enabling (21 May 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.18",
+              "title": "DoDI 8340.04, Item Unique Identification (IUID) Standards for Tangible Personal Property (Sep 15) (counterfeit))",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.19",
+              "title": "DoDI 8580.1, Information Assurance (IA) in the Defense Acquisition System (9 Jul 04)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.20",
+              "title": "DoDI 8582.01, Security of Unclassified DoD Information on Non-DoD Information Systems (6 Jun 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.5",
+          "title": "Department of the Navy (OPNAV/SECNAV) (available via http://doni.daps.dla.mil/SECNAV.aspx):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.5.1",
+              "title": "OPNAVINST 3432.1A, OPSEC, (4 Aug 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.2",
+              "title": "OPNAVINST 3750.6S, Naval Aviation Safety Program (13 May 14)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.3",
+              "title": "OPNAVINST 3811.1E, Threat Support to the Defense Acquisition System, (04 Jan 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.4",
+              "title": "OPNAVINST 5239.3A, Navy Implementation of DoD Intelligence Information System (DODIIS) Public Key Infrastructure (PKI) (18 Jan 08)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.5",
+              "title": "OPNAVINST 5513.2C, Security Classification Guide (SCG) (21 Jul 08), (Encl (02-26) for the F/A-18 Hornet (All Series) and Electronic Attack EA-18G Aircraft, (29 Oct 14) most current version)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.6",
+              "title": "OPNAVINST 5530.14E, Navy Physical Security and Law Enforcement Program (28 Jan 09, C-2 23 Sep 14)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.7",
+              "title": "SECNAVINST 5000.2E, DoN Implementation and Operation of the Defense Acquisition System and the Joint Capabilities Integration and Development System (1 Sep 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.8",
+              "title": "SECNAVINST M-5000.2, DoN Acquisition and Capabilities Guidebook (May 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.9",
+              "title": "SECNAVINST 5200.39A, Participation in the Government Industry Data Exchange (GIDEP), (25 Dec 05)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.10",
+              "title": "SECNAVINST 5510.36A, DoN Information Security Program (ISP) Instruction (6 Oct 06)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.11",
+              "title": "SECNAV M- 5510.36, DoN Information Security Program, (Jun 06)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.6",
+          "title": "Other DoD / Navy Publications (Available via ASSIST / internet):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.6.1",
+              "title": "DAG Chapter 13, Program Protection (The Defense Acquisition Guidebook) (Most current Defense Acquisition University version) (Available via DAU on the internet)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.6.2",
+              "title": "Key Practices and Implementation Guide for the DoD Comprehensive National Cybersecurity Initiative 11 Supply Chain Risk Management Pilot Program (25 Feb 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.6.3",
+              "title": "DI-QCIC-80125B, Government Industry Data Exchange Program (GIDEP) Alert/Safe-Alert Report (05 May 03) (Available via internet)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.6.4",
+              "title": "DI-QCIC-80126B, Government Industry Data Exchange Program (GIDEP) (05 May 03) (Available via internet)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.7",
+          "title": "Presidential Executive Orders (Available via internet) / Public Laws (P.L.) (Available via internet):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.7.1",
+              "title": "E.O. 12968, Access to Classified Information, (2 Aug 95, as amended)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.2",
+              "title": "E.O. 13526, Classified National Security Information (29 Dec 09)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.3",
+              "title": "E.O. 13587, Structural Reforms to Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information, 7 Oct 11",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.4",
+              "title": "NSPD-54 / HSPD23, National Security Presidential Directive 54, in conjunction with Homeland Security Directive-23 (2 Mar 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.5",
+              "title": "NSDD 298, National Security Decision Directive, National Operations Security Program (22 Jan 88)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.6",
+              "title": "OMB A-130 Appendix III, Security of Federal Automated Information Resources (Circular No A-130) (IA)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.7",
+              "title": "OMB Policy Letter 91-3, Reporting Nonconforming Products, (9 Apr 1991)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.8",
+              "title": "Defense Authorization Act 254, National Defense Authorization Act, Senate Report 109-254 (9). P.L. 87-794, Trade Expansion Act of 1962 (76 Stat. 872, enacted October 11, 1962, 19 U.S.C. Section 1801)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.9",
+              "title": "P.L. 96-72, Export Administration Act of 1979 (Title 50, U.S.C., App. 2401 et seq) (1979)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.10",
+              "title": "P.L. 104-106, Information Technology Management Reform Act, Division E, (Clinger-Cohen Act) (10 Feb 1996)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.11",
+              "title": "P.L. 104-231, Freedom of Information Act, As Amended By 104-231, 110 Stat5 U.S.C. Section 552, 3048",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.12",
+              "title": "P.L. 112-81, Section 818 (f)(2) and (c)(2), Defense Auth. Act for Fiscal Year 2012",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.13",
+              "title": "P.L. 112-239, Section 833, Defense Auth. Act for Fiscal Year 2013",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.8",
+          "title": "Federal Acquisition Regulations (FARS) / Defense Acquisition Regulations (DFARS) (Available via internet / COR / PCO):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.8.1",
+              "title": "DFARS Disclosure of Information (Oct 2016)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.2",
+              "title": "DFARS 252-204-7012, Safeguarding of Unclassified Controlled Technical Information (18 Nov 13)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.3",
+              "title": "DFARS 246.407, Nonconforming Supplies/Services, Government Contract Quality Assurance (1 Aug 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.4",
+              "title": "DFARS 252.246-7003, Defense Federal Acquisition Regulations Supplement \"Notification of Potential Safety Issues\" (Revised March 3, 2008)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.5",
+              "title": "DFARS 2012-D055, Detection and Avoidance of Counterfeit Electronic Parts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.6",
+              "title": "DFARS 2013-27311, Requirements Relating to Supply Chain Risk",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.7",
+              "title": "FAR 45.101, Demilitarization",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.8",
+              "title": "FAR Subpart 46.4, Government Contract Quality Assurance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.9",
+              "title": "FARS 252.217.7026, Identification of Sources of Supply",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.9",
+          "title": "Other Applicable National Standards / Publications (Available via internet / COR / PCO):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.9.1",
+              "title": "CNSSI 1001, National Instruction on Classified Information Spillage (Feb 08) (Available via internet)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.2",
+              "title": "CNSSD 505, Supply Chain Risk Management (SCRM) (7 Mar 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.3",
+              "title": "FISMA, (2014) Title III, Public Law 107-347; Federal, Information Security Management Act of 2002 (H. R. 2458-48) (& Dec 2002) (IA) (Available via internet) (PL 113-283, 44 USC 3554)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.4",
+              "title": "Title 18 Section 1831, Economic Espionage, et seq of, (Jan 08) (Available via internet)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.5",
+              "title": "Title 22, Chapter 39, Arms Export Control Act, (U.S.C., Sec 2751, et seq.) (4 Jan 12) (Available via internet)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.10",
+          "title": "Military Standards (Available via ASSIST @, http://quicksearch.dla.mil/)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.10.1",
+              "title": "MIL-STD-464C, DoD Interface Standard: Electromagnetic Environmental Effects Requirements for Systems (01 Dec 2010)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.10.2",
+              "title": "Mil-STD 882E, Department of Defense safety Standard Practice System (SCRM) (11 May 2012)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.11",
+          "title": "Supply Chain Risk Management (SCRM) Program Management (Available via Internet / NIST / commercial sources)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.11.1",
+              "title": "NISTIR 8179 Criticality Analysis Process Model",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.2",
+              "title": "NISTIR 7622, Piloting Supply Chain Risk Management Practices for Federal Information Systems (Jun 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.3",
+              "title": "NIST SP 800-37 Rev 1, Guide for Applying the Risk Management Framework to Federal Information Systems: A Security Life Cycle Approach (Feb 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.4",
+              "title": "NIST SP 800-39, Managing Information Security Risk: Organization, Mission, and Information System View (Mar 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.5",
+              "title": "NIST SP 800-59, Guideline for Identifying an Information System as a National Security System (Aug 03) (Available via internet/NIST)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.6",
+              "title": "NIST SP 800-160, SYSTEMS SECURITY ENGINEERING (Jan 18)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.7",
+              "title": "NIST SP 800-171, Protecting Controlled Unclassified Information (CUI) in Nonfederal Information Systems and Organizations (June 2015)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.8",
+              "title": "DoD Key Practices and Implementation Guide for the DoD Comprehensive National Cybersecurity Initiative 11 Supply Chain Risk Management Pilot Program (25 Feb 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.11.9",
+              "title": "CNSS No. 505, Supply Chain Risk Management (7 Mar 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.12",
+          "title": "SCRM Industry Standards (pertain to electronic components, standard industry practice available via commercial sources):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.12.1",
+              "title": "ANSI / EIA-4899B, Standard for Preparing an Electronic Component Management Plan (2016)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.12.2",
+              "title": "IDEA-STD-1010B, Acceptability of Electronic Components Distributed in the Open Market (Apr 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.12.3",
+              "title": "AS 9120 Rev C, Quality Management Systems for Aerospace Product Distributors (Jun 12)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.12.4",
+              "title": "SAE-AS 5553B, Counterfeit Electronic Parts; Avoidance, Detection, Mitigation and Disposition (2016)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.13",
+          "title": "Program Office applicable Documents (Formally request via PCO/Contracting Officer)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.13.1",
+              "title": "F/A-18E/F and EA-18G Program Protection Plan ((9 Apr 14))",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.13.2",
+              "title": "Security Guidance F/A-18 Hornet (All Series) and EA-18 G Growler Aircraft and Systems (most current versions)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-81826D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

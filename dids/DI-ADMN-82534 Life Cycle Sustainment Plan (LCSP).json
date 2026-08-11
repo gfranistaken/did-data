@@ -1,0 +1,338 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ADMN-82534",
+  "slug": "di-admn-82534",
+  "title": "Life Cycle Sustainment Plan (LCSP)",
+  "summary": "The Life Cycle Sustainment Plan details the strategy and resources needed to support a system throughout its life, from development to disposal, ensuring effectiveness, affordability, and sustainment integration.",
+  "approval_date": "2026-04-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10655",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DC",
+  "project_number": "ADMN-2026-010",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The plan shall detail the strategy and resources needed to support a system throughout its entire life, from development to disposal, ensuring it remains effective, affordable, and meets warfighter needs by integrating sustainment into every phase.\nRequirements: DoD Instruction (DoDI) 5000.91 requires that an LCSP be developed for all covered systems. It is the principal document establishing the system's product support planning and sustainment, pursuant to Title 10 U.S.C. Section 4324. The LCSP should document the program's Product Support Strategy, rationale, and implementation details. In the spirit of tailoring, the items listed in DoDI 5000.91 are the minimum required elements that must be addressed. A tailored LCSP may be used for all systems that are not a covered system as defined in Title 10 U.S.C. Section 4324 (non-covered systems), as approved by the LCSP signature authority.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "DoDI 5000.91; DoW/DISA LCSP Template.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The plan shall be in Government format. LCSP will be delivered in the most recent Department of War (DoW) / Defense Information Systems Agency (DISA) template. Note: For Defense Business System Acquisition pathway, the format would follow the Capability Support Plan template in lieu of the LCSP template. Additionally, the Software Acquisition pathway would follow the Product Support Strategy template in lieu of the LCSP template.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The plan shall include the necessary information/elements per the DoW/DISA Template.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "(CUI) Introduction",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "(CUI) Product Support Strategy (PSS)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "(CUI) Product Support Performance",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "(CUI) Performance Requirements Impacting Sustainment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "(CUI) Performance Demonstrations and Tests that Impact Sustainment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "(CUI) Monitoring Sustainment Performance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "(CUI) Sustainment Strategy and the Product Support Package (PSP)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "(CUI) Supply Support",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "(CUI) Packaging, Handling, Storage & Transportation (PHS&T) Planning",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "(CUI) Maintenance Planning and Management",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "(CUI) Design Interface and Sustaining Engineering",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "(CUI) Technical Data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "(CUI) Information Technology (IT) Systems Continuous Support",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "(CUI) Manpower and Personnel",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "(CUI) Training and Training Support",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "(CUI) Support Equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "(CUI) Facilities and Infrastructure (Including Leveraging Enterprise Opportunities Across Programs and DoW Components)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.11",
+              "title": "(CUI) Sustainment Relationships",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.12",
+              "title": "(CUI) Product Support Risk, Issue or Opportunity Management",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "(CUI) Other Sustainment Considerations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "(CUI) Competition in Sustainment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "(CUI) Property Management",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "(CUI) Cross-Functional Sustainment Considerations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "(CUI) Influencing Design and Sustainment",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "(CUI) Program and Design Reviews",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "(CUI) Integrated Schedule",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "(CUI) Program Funding and Life Cycle Cost Estimate (LCCE)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "(CUI) Program Funding",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "(CUI) Development and Evolution of the System O&S Cost Estimate",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "(CUI) O&S and Disposal Cost Reduction Initiatives (Should Cost)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "(CUI) O&S Cost Affordability Constraints",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "(CUI) Management",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "(CUI) Program Organizational Structure",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "(CUI) Product Support Team",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "(CUI) Appendix A: Acronyms",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "(CUI) Appendix B: References",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "(CUI) LCSP Annexes",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "(CUI) Component Required Annexes",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ADMN-82534.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

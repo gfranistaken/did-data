@@ -1,0 +1,292 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MCCR-81349",
+  "slug": "di-mccr-81349",
+  "title": "Security Features User's Guide",
+  "summary": "Informs users on how to make effective use of security features, providing the information needed to understand and effectively use the security protection mechanism(s) that secure processed or stored information.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6939",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "The Security Features User's Guide informs users on how to make effective use of security features. It provides the necessary information to understand and effectively use the security protection mechanism(s) that secure processed or stored information.",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 2.2.4.1 and 3.2.2.1.1 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n7.2 This DID is applicable to any computer acquisition that requires user documentation for the security features as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria, Classes C1 (Discretionary Security Protection), and above, products or their equivalent systems.\n7.3 The information required by 10.3 and 10.4 is required for all class products and their equivalent systems applicable to the DID as a whole. In addition, the information required in 10.4.1 and 10.4.2 is necessary for various classes of products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document the Security Features User's Guide as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Cover Sheet",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Errata Sheet.",
+          "content": "Shall contain sheets delimiting cumulative page changes from previous version(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "List of illustrations, diagrams, charts and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Executive Summary, not to exceed two pages, that briefly summarizes the Security Features User's Guide.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Body of the Guide.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Bibliography.",
+          "content": "List references and all applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Subjective index.",
+          "content": "An exhaustive index of the key word or theme in each paragraph shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.13.1",
+              "title": "Abbreviations and acronyms shall be defined when first used in the text and shall be placed in the glossary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.2",
+              "title": "Pages shall be numbered separately and consecutively using Arabic numerals.",
+              "content": "Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.3",
+              "title": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals.",
+              "content": "Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.4",
+              "title": "Chapters shall begin on an odd-numbered (right-handed) page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.5",
+              "title": "Column headings shall be repeated on subsequent pages if tabular material exceeds one page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.6",
+              "title": "Fold out pages shall be kept to a minimum.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.7",
+              "title": "Paper shall be standard 8 1/2 x 11 inches, white, with black type.",
+              "content": "The type font shall be standard 10 inch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or jagged right (left justified only) shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.8",
+              "title": "At least one inch margins shall be provided all around to allow for drilling and binding.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.9",
+              "title": "Either single- or double-sided printing shall be used.",
+              "content": "If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.10",
+              "title": "The guide shall be provided in standard three ring notebook binders for ease of maintenance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "General",
+      "content": "The level of trust enforced by the Trusted Computing Base (TCB) shall determine the depth and size of the Security Features User's Guide (SFUG). This level determines the security functions needed. The SFUG shall describe the security functions used by operational users who are not specially trained as operators, security administrators, or system administrators.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.4",
+      "title": "Content.",
+      "content": "The SFUG shall be prepared as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.4.1",
+          "title": "A description of the prominent features of each security protection mechanism(s) (e.g., I&A, DAC, MAC, and Object Manipulation Facilities) which pertain to the operational users shall be provided.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.2",
+          "title": "A description of the interface between the security protection mechanism(s) and the operational user.",
+          "content": "It shall also describe the use of the security protection features by the operational users. The SFUG shall include cautions and precautions concerning the consistent and effective use of the described protection features.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.3",
+          "title": "The SFUG shall address the relationships between the operators, system administrators, or security administrators, and the operational user (e.g., the security administrator may control user password generation features).",
+          "content": "Interface(s) necessary for the user to understand his or her use of each security protection mechanism shall be completely described in the SFUG.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.4",
+          "title": "The SFUG shall include a description of expected reaction to security-related events (e.g., access violations, security-related failures).",
+          "content": "Every advisory or other response from each security protection mechanism(s) shall be documented, using the exact electronic text produced. Both affirmative and negative responses shall be illustrated by example dialogue (e.g., [User] Log-In Password Verified; [User] Access Denied; (User) Discretionary Permission Exceeded for File xxxx).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.5",
+          "title": "Cross-references to relevant documentation containing a more detailed description of the security protection mechanism(s) and their relationships shall be provided, where applicable, in the SFUG.",
+          "content": "All cross-references shall be to the subparagraph level in the referenced document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.6",
+          "title": "Charts, figures, and caricatures should be used in the SFUG whenever possible to illustrate complex concepts, relationships, or interfaces to operational users not specially trained in security.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.7",
+          "title": "Class B2 products and their equivalent systems.",
+          "content": "The procedures for the operational user to utilize the trusted communication path between the TCB and the user for initial login and authentication shall be explicitly defined in the SFUG. The SFUG shall describe how the communications via this path is initiated exclusively by the user.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.8",
+          "title": "Class B3 and above products and their equivalent systems.",
+          "content": "The procedures for the operational user to utilize the trusted communication path between the TCB and the user for use when a positive TCB-to-user connection is required (e.g., login, change subject security level) shall be explicitly defined in the SFUG. The SFUG shall describe how the communications via this trusted path is activated exclusively by the user or the TCB. The SFUG shall describe how the trusted path is logically isolated and unmistakably distinguishable by the user from other paths.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-AVCS-81349.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

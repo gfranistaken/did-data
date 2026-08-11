@@ -1,0 +1,357 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ALSS-81610",
+  "slug": "di-alss-81610",
+  "title": "Scanning/Digitizing Data",
+  "summary": "Provides minimum scanning recommendations for responsible conversion of text, photographs, and graphic materials to achieve an acceptable level of image quality.",
+  "approval_date": "2001-06-01",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G7440",
+  "limitation": "",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "G/DA12-TDM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "",
+  "description_purpose": "Provides minimum scanning recommendations for responsible conversion and to achieve an acceptable level of image quality. The document addresses these formats: text, photographs, and graphic materials. As a rule, the key to quality scanning is to scan at the resolution that matches the information content of the original, not necessarily at the highest resolution possible. The scanning shall be provided to ensure a consistent and high quality image and decrease the likelihood of re-scanning.",
+  "application_interrelationship": "This Data Item Description (DID) contains the format and preparation instructions for scanning documentation.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Use the original or first generation be used to achieve the best quality image.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "Types of Scanning:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "1.2.1",
+              "title": "Bitonal",
+              "content": "One pixel representing black and white. Bitonal scanning is best suited to high-contrast documents such as printed text.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.2.2",
+              "title": "Grayscale",
+              "content": "Multiple bits per pixel representing shades of gray. Grayscale is suited to continuous tone documents such as black and white photographs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.2.3",
+              "title": "Color",
+              "content": "Multiple bits per pixel representing color. Color scanning is suited to documents with color information.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "1.3",
+          "title": "These three modes of scanning require some subjective decisions. Documents, including black and white test with color makes manuscripts, older printer matter, might be scanned in color to bring out special meaning or information identified through the color notation and markings. Although bitonal scanning is often used for type scanning as continuous tone in grayscale or color to being out the shade and conditions of the paper and the marks inscribed on it.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Material formats.",
+      "content": "The following defines the minimum standards based on the following format types, text, photographs, maps, graphic material and three-dimensional material represented in two-dimensional format.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Tonal depth: Bitonal",
+          "content": "Format: TIFF\nCompression: Uncompressed\nSpatial Resolution: 600dpi",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "For handwritten or manuscripts that are difficult to read, consider providing a transcript of text using an Optical Character Reader (OCR).",
+          "content": "Consideration must be give to the cost of keying the transcription.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Portable Document Format (PDF) shall be used as the format for creating and displaying text-based files on the web.",
+          "content": "The Adobe Acrobat viewer can be downloaded at no charge to view the documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Since many digitization projects are undertaken to increase access, the digital image as a preservation copy is a natural by product.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Consider current and future user needs, as well as the unique requirements of specific types of materials and collections.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "Scan at the highest resolution appropriate to the content of the original.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Scan at a resolution level to avoid re-scanning in the future.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Create and store master image, allowing for production of derivative images for current and future use.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "Create appropriate backup files and store media in an appropriate environment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "Consider grayscale over bitonal, color over grayscale.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "Use objective measurements to determine scanner settings.",
+          "content": "Do NOT attempt to make the image look good on a particular monitor or use image processing to correct color.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.12",
+          "title": "Do not compress digital masters, unless a lossless compression is used.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Quality Control.",
+      "content": "A quality control program shall be conducted throughout all phases of the digital conversion process. Inspections of final digital image files should be incorporated into the project workflow. Typically, master image files are inspected via CD batch or online for a variety of defects. Depending on the project, the project can inspect 100% of the master images, or inspect a random selection of the files. A 10% sample is generally used. It is recommended that quality control procedures be implemented and documented and that specific defects found unacceptable in the image be defined. Images should be inspected while viewing at 1:1 pixel ratio or at 100% magnification or higher.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Quality is evaluated both subjectively by project staff through visual inspection and objectively in the imaging software.",
+          "content": "The viewing environment for visual inspection of images is also important. Evaluation criteria for the visual inspection may include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Image is not the correct size",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Image is not the correct resolution",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "File name is incorrect",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "File format is incorrect",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Image is in incorrect mode, i.e. color image has been scaled as grayscale",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Loss of detail in highlights or shadows",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Excessive noise especially in dark areas of shadows",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Overall too light or too dark",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Uneven tonal values or flare",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Lack of sharpness/Excessive sharpening",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Pixalated",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Presence of digital artifacts, such as very regular, straight lines across picture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Moire patterns (wavy lines or swirls, usually found in areas where there are repeated patterns)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Image not cropped",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "Image not rotated or backward",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "Image skewed or not centered",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.17",
+              "title": "Incorrect color balance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.18",
+              "title": "Image dull or not tonal variation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.19",
+              "title": "Negative curve in the Look-up table",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.20",
+              "title": "Clipping black and white values (in histogram)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.21",
+              "title": "CD recording and Verification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.22",
+              "title": "File naming",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ALSS-81610.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

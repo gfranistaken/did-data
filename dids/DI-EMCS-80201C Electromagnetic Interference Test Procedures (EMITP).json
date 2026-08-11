@@ -1,0 +1,344 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-80201C",
+  "slug": "di-emcs-80201c",
+  "title": "Electromagnetic Interference Test Procedures (EMITP)",
+  "summary": "The EMITP describes the measurement procedures used to demonstrate that an equipment or subsystem complies with its contractual electromagnetic interference (EMI) requirements based on MIL-STD-461.",
+  "approval_date": "2007-11-30",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9032",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "11 (ASC/ENA)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The EMITP describes the measurement procedures that will be used to demonstrate that an equipment or subsystem complies with its contractual electromagnetic interference (EMI) requirements based on MIL-STD-461, including how the general test procedures in the standard will be applied to the specific equipment or subsystem.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described for EMITP in paragraph 5.1 of MIL-STD-461.\nb. This DID is related to DI-EMCS-80199C, Electromagnetic Interference Control Procedures (EMICP), and DI-EMCS-80200C, Electromagnetic Interference Test Report (EMITR).\nc. DI-EMCS-80201C supersedes DI-EMCS-80201B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-80201B"
+  ],
+  "related_dids": [
+    "DI-EMCS-80199C",
+    "DI-EMCS-80200C"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The EMITP shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "The introduction of the EMITP shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "A table describing all the tests to be performed, the applicable section within the EMITP, and the corresponding test procedure from MIL-STD-461.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Description of the Equipment Under Test (EUT), including its function, characteristics, intended installation, and power usage.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Approved exceptions or deviations from contractual test requirements, if any.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Applicable documents.",
+          "content": "Applicable documents shall be listed as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Military (such as standards and specifications).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Company (such as in-house documents used for calibration or quality assurance).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Other Government or industry standards, specifications, and documents.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Test site.",
+          "content": "A description of the test site shall be provided covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Test facility and shielded enclosure or anechoic chamber, including size, characteristics, and placement of radio frequency (RF) absorbers.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Ground plane (size and type) and methods of grounding or bonding the EUT to the ground plane to simulate actual equipment installation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Implementation of test precautions required by 4.3.7 of MIL-STD-461.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Test instrumentation.",
+          "content": "Test instrumentation to be used shall be described as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Equipment nomenclature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Characteristics of coupling transformers and band-reject filters.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Antenna factors of specified antennas, transfer impedances of current probes, and impedance of Line Impedance Stabilization Networks (LISN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Description of the operations being directed by software for computer-controlled instrumentation, the verification techniques used to demonstrate proper performance of the software, and the specific versions of the software to be used. In addition, sweep times, correction factors and how are they used, how final data are determined and presented, and an audit trail that provides details on what part of the software controls each function shall be described.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Bandwidth (resolution and video) and scanning speeds of measurement receivers.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Modulation characteristics and scan rates of the susceptibility test signals.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "EUT setup.",
+          "content": "A description of the EUT test setup for each test shall cover the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Physical layout of the cables and EUT.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Cable types, characteristics, and construction details (see 4.3.8.6 of MIL-STD-461)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Position of the line impedance stabilization networks on the ground plane.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Use of bond straps and loads.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Test simulation and monitoring equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "EUT operation.",
+          "content": "A description of the EUT operation shall cover the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Modes of operation for each test, including operating frequencies (where applicable), and rationale for selection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Control settings on the EUT.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Control settings on any test stimulation and monitoring equipment and characteristics of input signals.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Operating frequencies (such as oscillator and clock frequencies) which may be expected to approach limits.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Performance checks initiated to designate the equipment as meeting minimal working standard requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Enumeration of circuits, outputs, or displays to be monitored during susceptibility testing, as well as the criteria for monitoring degradation of performance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Measurements.",
+          "content": "The following shall be described for each test.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Block diagram depicting test setup, including all pertinent dimensions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Step-by-step procedures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Test equipment used in performance of the test and the methods of grounding, bonding, or achieving electrical isolation of the measurement instrumentation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Selection of measurement frequencies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Information to be recorded during the test, including frequency and units of recorded information. Sample data sheets, test logs and graphs, including test limits, may be shown.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-80201C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

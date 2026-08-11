@@ -1,0 +1,262 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-80200C",
+  "slug": "di-emcs-80200c",
+  "title": "Electromagnetic Interference Test Report (EMITR)",
+  "summary": "The EMITR provides the data and information necessary to evaluate compliance of an equipment or subsystem with its electromagnetic interference (EMI) control requirements based on MIL-STD-461, including recommended corrective actions.",
+  "approval_date": "2007-11-30",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9031",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "11 (ASC/ENA)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The EMITR provides the data and information necessary to evaluate compliance of an equipment or subsystem with its electromagnetic interference (EMI) control requirements based on MIL-STD-461, including the discussion of recommended corrective actions, if needed.\n\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described for the EMITR in paragraph 5.1 of MIL-STD-461.\n\nb. This DID is related to DI-EMCS-80199C, Electromagnetic Interference Control Procedures (EMICP), and DI-EMCS-80201C, Electromagnetic Interference Test Procedures (EMITP).\n\nc. DI-EMCS-80200C supersedes DI-EMCS-80200B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-80200B"
+  ],
+  "related_dids": [
+    "DI-EMCS-80199C",
+    "DI-EMCS-80201C"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The EMITR shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The EMITR shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification of performance of the tests by a qualified representative of the procuring activity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Disposition of the Equipment Under Test (EUT).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Description of the EUT, including its function, characteristics, intended installation, actual cable types (characteristics and construction details - see 4.3.8.6 of MIL-STD-461), and electrical current usage on each power input line.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "List of tests performed with pass/fail indications.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Any approved deviations from contractual test procedures or limits previously authorized.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Identification of Non-Developmental Items (NDI) and Government Furnished Equipment (GFE) that may be part of the EUT.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Traceability of test equipment calibration.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "A reference to the approved EMI test procedure (EMITP).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed results.",
+          "content": "A separate appendix shall be prepared for each test. If deviations from an approved test procedure occurred during the test program, an additional appendix shall be provided with the \"as run\" procedures showing all red-lines and procuring activity concurrence. A separate appendix shall be provided for log sheets. Each test appendix shall contain the following factual data:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Test equipment nomenclature, serial numbers, version of software used (if any), and calibration due date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Photographs or diagrams of the actual test set up and EUT, with identification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Transfer impedance of current probes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Antenna factors.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Impedance values of Line Impedance Stabilization Networks (LISN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Identification of any suppression devices used to meet the contractual requirements, including schematics, performance data, and drawings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Sample calculations, such as conversions of measured levels for comparison against the applicable limit.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "The ambient radiated and conducted electromagnetic emission profile of the test facility, when necessary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Data, and data presentation, as specified in the \"data presentation\" sections of the individual test procedures of MIL-STD-461.",
+              "content": "Emissions data cannot be provided on one single sheet (plot). Provide a minimum frequency resolution of 1% or twice the measurement receiver bandwidth, whichever is less stringent, and a minimum amplitude resolution of 1 dB for each plot.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Scan speeds.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Measurement receiver bandwidths.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Antenna polarization.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "Power line voltages, frequencies, and power factor.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "Low-noise amplifiers (LNA) compression points.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "Test susceptibilities and deviations from normal performance are not acceptable.",
+              "content": "However, when susceptibility indications or deviations from normal performance are noted in the EUT operation, a threshold level shall be determined where the susceptible condition or deviation is no longer present. These thresholds need to be documented for further assessment.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Conclusions and recommendations.",
+          "content": "Conclusions and recommendations shall be provided, including results of the tests in brief narrative form, a discussion of any remedial actions already initiated, and proposed corrective measures required (if necessary) to assure compliance of the equipment or subsystem with the contractual EMI requirements.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-80200C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

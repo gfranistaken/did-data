@@ -1,0 +1,229 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-80199C",
+  "slug": "di-emcs-80199c",
+  "title": "Electromagnetic Interference Control Procedures (EMICP)",
+  "summary": "The EMICP provides data to evaluate the contractor's design procedures and techniques for subsystems and equipment used to meet electromagnetic interference (EMI) control requirements based on MIL-STD-461.",
+  "approval_date": "2007-11-30",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9030",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "11 (ASC/ENA)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The EMICP provides data to evaluate the contractor's design procedures and techniques for subsystems and equipment used to meet electromagnetic interference (EMI) control requirements based on MIL-STD-461.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described for EMICP in paragraph 5.1 of MIL-STD-461.\nb. This DID is related to DI-EMCS-80200C, Electromagnetic Interference Test Report (EMITR) and DI-EMCS-80201C, Electromagnetic Interference Test Procedures (EMITP).\nc. DI-EMCS-80199C supersedes DI-EMCS-80199B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-80199B"
+  ],
+  "related_dids": [
+    "DI-EMCS-80200C",
+    "DI-EMCS-80201C"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The EMICP shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Management.",
+          "content": "The EMICP shall address the following management areas:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Specific organizational responsibilities, lines of authority and control, and program planning, including milestones and schedules.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Detailed EMI requirements imposed on subcontractors.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Role in program of Government Furnished Equipment and subcontractor items.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Description of the equipment or subsystem, its function, characteristics, and intended installation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Plans and procedures for identifying and resolving potential EMI problems, implementing solutions, and verifying solutions through analysis and testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Point of contact for EMI technical issues.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Design techniques and procedures.",
+          "content": "The EMICP shall describe the specific design techniques and procedures used to meet each emission and susceptibility requirement, including the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Spectrum management techniques.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "EMI mechanical design, including the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Type of metals, casting, finishes, and hardware employed in the design.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Construction techniques, such as isolated compartments; filter mounting, isolation of other parts; treatment of openings (ventilation ports, access hatches, windows, metal faces and control shafts), and attenuation characteristics of Radio Frequency (RF) gaskets used on mating surfaces.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Shielding provisions and techniques used for determining shielding effectiveness.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Corrosion control procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Methods of bonding mating surfaces, such as surface preparation and gaskets.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Electrical wiring design, including cable types or characteristics, cable routing, cable separation, grounding philosophy, and cable shielding types and termination methods.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Electrical and electronic circuit design, including the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Filtering techniques, technical reasons for selecting types of filters, and associated filter characteristics, including attenuation and line-to-ground capacitance values of AC and DC power line filters.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Part location and separation for reducing EMI.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "Location, shielding, and isolation of critical circuits.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Analysis.",
+          "content": "The EMICP shall provide analysis results demonstrating how each applicable requirement is going to be met.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Developmental testing.",
+          "content": "The EMICP shall include a discussion of testing to be performed during development (such as evaluations of breadboards, prototypes, and engineering models).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-80199C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

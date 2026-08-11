@@ -1,0 +1,316 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81542B",
+  "slug": "di-emcs-81542b",
+  "title": "Electromagnetic Environmental Effects (E3) Verification Report (E3VR)",
+  "summary": "The E3VR describes the tests, analyses, and inspections used by the contractor and documents the results verifying compliance with the E3 interface and performance requirements of a system.",
+  "approval_date": "2010-07-25",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "9156",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The E3VR describes the tests, analyses, and inspections used by the contractor and documents the results verifying compliance with the E3 interface and performance requirements of a system. The E3VR provides the means for the government to evaluate E3 verification results.\na. This DID contains the format and content preparation instructions for data resulting from the work task described by 4.1 of MIL-STD-464 and is intended for airborne, sea, space, and ground systems, including associated ordnance. It is normally applied to the System Design and Development phase of a program, but it can be used in any phase.\nb. This DID is related to DI-EMCS-81540B and DI-EMCS-81541B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-EMCS-81540B",
+    "DI-EMCS-81541B"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, or revisions, shall be as cited in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The E3VR shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The E3VR shall describe the overall verification results (test, analysis, and inspection, as applicable) for each E3 requirement specified in the contract for the system being developed.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary information.",
+          "content": "The report shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Introduction, background.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "System description, including any pertinent information regarding verification issues.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Statement of any assumptions and limitations associated with verification efforts.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Body.",
+              "content": "A general description of the results shall be provided for the verification of each E3 interface and performance requirement area listed in section 3.2.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Synopsis of verification procedure and reference to detailed procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Successes and failures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "Impacts of failures on operational performance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Recommendations to resolve failures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "Lessons learned.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed information.",
+          "content": "The E3VR shall provide detailed technical information covering the results of the analyses, tests, and inspections used to verify compliance with each of the interface requirement areas listed below that are included in contractually imposed requirements. The E3VR shall include the types of information described in subsequent subsections below for each of the following areas.\na. Margins.\nb. Intra-system electromagnetic compatibility, including where applicable: ship hull intermodulation interference, shipboard internal electromagnetic environments, and multipaction.\nc. External radio frequency electromagnetic environments.\nd. High power microwave.\ne. Lightning.\nf. Electromagnetic pulse.\ng. Subsystem and equipment electromagnetic interference, including where applicable: nondevelopmental items and commercial items, and shipboard direct current magnetic field environments.\nh. Electrostatic charge control, including where applicable: vertical lift and in-flight refueling, precipitation static, and ordnance subsystems.\ni. Electromagnetic radiation hazards, including where applicable: hazards of electromagnetic radiation to personnel, hazards of electromagnetic radiation to fuel, and hazards of electromagnetic radiation to ordnance.\nj. Life cycle E3 hardness.\nk. Electrical bonding, including where applicable: power current return path, antenna installations bonding, mechanical interfaces, and shock, fault, and ignitable vapor protection.\nl. External grounds, including where applicable: aircraft grounding jacks and servicing and maintenance and equipment grounds.\nm. TEMPEST.\nn. Emission control.\no. Electromagnetic spectrum compatibility.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Scope.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Objective of verification for the particular area.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "References, including source of detailed verification procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Verification article.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Identification of the physical configuration, such as structural features, mechanical and electrical equipment installed, and software status.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Description of system functions (or subsystem or equipment functions) that were exercised.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Description of provisioned equipment (items that are part of the resultant system operation but are not necessarily developed under the contract), such as weapons, pods, and payloads that were used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Results.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "When verification was conducted.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Where verification was conducted.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Who conducted the verification.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "Documentation of setup, including the verification article, facility, test equipment, and calibration.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "Verification observations, such as plots, measurements, photos, drawings, logs, checklists, data sheets, ratings, and comments.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.6",
+                  "title": "Demonstration of margins.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.7",
+                  "title": "Description of any deviations from the verification procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.8",
+                  "title": "Status and disposition of verification article.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Conclusions.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Status of compliance with requirements (pass or fail).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Impact of the results on system operational performance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.5",
+              "title": "Recommendations.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.5.1",
+                  "title": "Any required corrective actions, modifications, or changes to operational procedures, manual, or processes.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.2",
+                  "title": "Any additional verification actions, investigations, resolutions, or studies.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Other information sources.",
+          "content": "When other information sources contain data required by this DID, these sources shall be referenced rather than being duplicated within this report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81542B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

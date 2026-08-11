@@ -1,0 +1,212 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-82017",
+  "slug": "di-emcs-82017",
+  "title": "HEMP Hardness Maintenance and Hardness Surveillance (HM/HS) Plan",
+  "summary": "The HM/HS Plan describes HM and inspection procedures, HS test procedures, re-verification test procedures, supply support and training requirements, and technical data requirements for implementing the HM/HS Program described in MIL-STD-4023, section 5.3.",
+  "approval_date": "2016-04-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9611",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "DTRA-DS",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The High-Altitude EMP (HEMP) Hardness Maintenance (HM) and Hardness Surveillance(HS) (HM/HS) Plan describes HM and inspection procedures, HS test procedures, re-verification test procedures, supply support and training requirements, and technical data requirements for implementing the HM/HS Program described in MIL-STD-4023, section 5.3. The purpose of the HM/HS plan is to ensure that the ship-hardening is preserved throughout its service life.\nA HEMP HM/HS Plan is required to mitigate unacceptable degradation of the ship's HEMP Protection Subsystem (HPS) that occurs over the life-cycle. The Plan provides the means to ensure that government prescribed methods and procedures are used by ship maintainers and that fielded ships subjected to normal wear and tear or undergoing planned modifications remain HEMP-survivable over their life-cycle.\n1. This DID contains the format and content preparation instructions for data resulting from the work tasks described in section 5.3 of MIL-STD-4023 and is intended for ship systems. It is normally applied immediately after ships are delivered to a user command.\n2. This DID is related to DI-EMCS-82013.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-EMCS-82013"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issuance of the documents cited herein, including their approval dates and any applicable amendments, notices, or revisions shall be as cited in ASSIST Online at the time of the solicitation; or for non-ASSIST-listed documents, as stated herein. The High-Altitude EMP Hardness Maintenance and Hardness Surveillance Plan classification shall be determined using DTRA Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities (U) available by mail request to ATTN: J9/NT-NTSA/Rooney M., Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201 Fort Belvoir, Virginia 22060-6201 and any relevant system specific classification guides.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Plan shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Plan shall describe the plans and procedures used in the HEMP Hardness Maintenance and Hardness Surveillance Program for each requirement specified in the contract for the ship being developed. The inspection and test methods are written to be applicable at varying levels of maintenance including shipyard and operational level maintenance.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary information.",
+          "content": "The HM/HS Plan shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Introduction.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Ship description, including any pertinent information regarding HEMP Protection Subsystem performance issues and sources for baseline test data derived from HEMP Protection Subsystem testing, HEMP System-Level Verification Test, and Production Hardness Assurance testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Statement of any assumptions and limitations associated with HEMP Protection Subsystem performance testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "General objectives of the HM/HS Program.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Scope.",
+              "content": "General description of overall HM/HS test requirements matrix being used to demonstrate compliance with requirements, including the relative role of analyses, tests and inspections. Description of logistics support analysis of the HPS performed during the ship acquisition phase. The logistics support analysis shall define the HPS HM/HS requirements, supply support requirements, training requirements, and technical data requirements. Results of the logistics support analysis shall be documented in the HM/HS plan.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Methods of verification.",
+              "content": "Abstracts of the procedures used for verifying each HPS performance requirement listed in 3.2 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors affecting the verification procedures, such as facilities, resources, safety, reports, and security.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed information.",
+          "content": "The HM/HS Plan shall contain the following information: a comprehensive, system-specific HM/HS Plan with test plans and detailed test procedures for maintaining and surveillance testing each element in the ship's HPS, and for determining the protection status of the ship. These may be combined in a single document, or separate documents may be used. The documents shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "HM and inspection procedures.",
+              "content": "Detailed procedures for preventive maintenance, inspection, and repair and replacement of HEMP hardness critical assemblies (HCAs) or hardness critical items (HCIs) shall be provided. Candidate maintenance test procedures are described in MIL-STD-4023 Appendix E. Where applicable, pass/fail criteria should be relatable to production hardness assurance pass/fail criteria derived from the hardness allocation procedure (MIL-STD-4023 and Appendix A).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "HS test procedures.",
+              "content": "Detailed HS test procedures for the HPS shall be developed and their application defined. The procedures shall be designed to identify electromagnetic barrier or other degradations that may occur, and provide assurance that any deficiencies are identified and rectified during programmed shipyard maintenance; thereby assuring HEMP-hardened ships are returned to service after programmed shipyard maintenance.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Re-verification test procedures.",
+              "content": "The re-verification test procedures shall be based on the baseline verification test data of the first ship tested in each ship class. Subsequent re-verification test sample sizes shall be dependent on mission category or ship type. The re-verification test procedures shall be the same as the ship-level verification test procedures (see MIL-STD-4023 Appendix D).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Supply support requirements.",
+              "content": "An itemized list of the installed HEMP HCAs, HCIs, and lists of recommended organizational HPS spare parts, repair parts, supplies, special tools, and special test equipment shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Training requirements.",
+              "content": "for personnel performing ship maintenance on HCIs and HCPs shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Technical data.",
+              "content": "A HPS technical manual shall be provided. As a minimum, the technical manual shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.6.1",
+                  "title": "HPS description and principles of operation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.2",
+                  "title": "Maintenance and inspection procedures, repair and replacement procedures, and HS test procedures for the EM Barrier, apertures, penetrations, Mission-Critical Systems, and other Hardness Protective Elements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.3",
+                  "title": "Supply support requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.4",
+                  "title": "Training requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Other information sources.",
+          "content": "When other information sources contain data required by this DID, these sources shall be referenced rather than being duplicated within this plan.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-82017.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

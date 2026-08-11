@@ -1,0 +1,229 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EDRS-82219",
+  "slug": "di-edrs-82219",
+  "title": "Algorithm Description Document (ADD)",
+  "summary": "The Algorithm Description Document (ADD) provides the detailed representation of algorithms and equations used in a system, documenting their life-cycle, trade study analyses, and validation results.",
+  "approval_date": "2018-05-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9941",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "EDRS-2018-001",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Algorithm Description Document (ADD) provides the detailed representation of the algorithms and equations utilized in the system and the system components. The ADD documents the life-cycle of the algorithms and includes trade study analyses with validation results to illustrate the algorithm design intent.\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The ADD shall be machine-readable by the Government and adhere to the format described in the Content section.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "This section shall be divided into paragraphs, as needed, to establish the context for the content described in later sections.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Reference documents.",
+          "content": "This section shall list the number, title, revision, and date of all documents referenced in this plan. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Document management and configuration control information.",
+          "content": "Identify the version, release date, and other relevant management and configuration control information associated with the current version of the document. Include a change history, highlighting significant changes from version to version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Table of contents.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Purpose and Scope of the ADD.",
+          "content": "Explain the ADD's overall purpose and scope. Provide a general description of system operational capability and functional capability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Algorithm Description and Definition.",
+          "content": "Each algorithm shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Name of the algorithm.",
+              "content": "Each algorithm shall have a unique title or name with version control.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Abstract.",
+              "content": "Provide a brief overview and scientific description of the algorithm.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Methodology.",
+              "content": "Provide the methodology or theory of the algorithm in detail. The relevant research results need to be included as well. The contents, which are necessary for understanding specifics of the algorithm, especially for translating it into software, shall be included. Described and explain, term by term, required equations and computations. Further subsections can be added, if needed, under this subsection. All equations, symbols, etc. shall follow the nomenclature standards used in popular peer-reviewed journals (e.g. AMS journals). The methodology or theory shall be easily understandable, logically clear.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.3.1",
+                  "title": "Data Dictionary.",
+                  "content": "The Data Dictionaries shall compile data elements in two ways. \"Appendix C - Data Elements List, Alphabetical Order\" shall list all the data elements in the Scientific Document in alphabetical order. \"Appendix D - Data Elements List,\" shall list the data elements for each subroutine or sub-algorithm in alphabetical order. Each listing shall include the following:\n\n1. Variables - all input, output, and processing (local) variables with a description of each variable's data type (e.g. floating point, integer, character string), precision, units (e.g. degrees, percentages), valid ranges (e.g. 0 - infinity; -1.0 - +1.0 inclusive), string length for character strings, default values if any, and a short description of the information the variable contains (e.g. \"Width of the radar beam in degrees ...\").\n\n2. File names - whether the file is used for input or output, a brief description of the data, and the format of the data (or a reference to an interface control document (ICD))\n\n3. Subroutines - a brief description of the subroutine, including mandatory and optional input and output data elements, usage, and function performed.\n\nAll data element names shall be self-descriptive (i.e. the name shall describe what the data element contains or, in the case of subroutines, the function that it performs) and, with the possible exception of loop counters, shall never be single characters. Widely recognized symbols from textbooks and professional literature (e.g., DBZE for Reflectivity Factor) are acceptable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.2",
+                  "title": "Diagrams.",
+                  "content": "This section will contain Data Flow Diagrams (DFDs) which capture the data flow within the algorithm using standard diagramming techniques such as Unified Modeling Language (UML). The contractor shall specify in the project plan (s) what technique will be used. The DFDs shall represent:\n\n- External devices sending and receiving data\n- Processes that change the data\n- Data storage locations\n\nThis section shall also contain Logic Diagrams and State Diagrams as appropriate. Logic Diagrams represent logical concepts and State Diagrams represent the behavior of a system. State diagrams describe all of the possible states of an object as events occur.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.4",
+              "title": "Limitations/Constraints.",
+              "content": "Describe the limitations and constraints caused by the input data, special types of data required, limitations inherent in the technique, which the algorithm is based on, situations where the algorithm cannot be applied, potential implementation difficulties, and any other problems known to be associated with the algorithm. This section also shall describe the implementation and operational impacts of these limitations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "System Dependencies.",
+              "content": "This section shall provide a description of system dependencies, constraints, and assumptions regarding the algorithm/model and its use. Include the following:\n\n- Assumptions based on other algorithms or models\n- End-user characteristics\n- Possible changes in functionality\n- Necessary conditions for the algorithm",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Interfaces.",
+              "content": "Describe how the algorithm interfaces with other algorithm products or users for input and output. Examples of such interfaces include library routines or data streams. Additionally, reference external documents that describe interface formats in detail and list the references to all related data, standards, and technical sources in the algorithm development.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Computations.",
+              "content": "List the mathematical formulas being carried out by the Computations. These formulas shall be grouped and labeled by the pseudocode where they are implemented. For each formula, provide a brief explanation of the subroutines in which they are implemented. Each formula shall be followed by a brief explanation of the symbology used and the method used to realize the implementation in the Procedure section.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Procedures/Pseudocode.",
+              "content": "Describe and provide the processing functions in a step-by-step fashion using pseudocode. The term \"pseudocode\" is used here to describe an English-like language that articulates the steps carried out in an algorithm by providing focus on the logic of the algorithm.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Outputs.",
+              "content": "Provide a description of all outputs produced or modified by the activities in the algorithm. Describe the format of the output data in sufficient detail for downstream algorithms to be easily interfaced, stating such factors as whether the data should be output in real time (and if so, how often), the format of the data, and the destination of the output (e.g. file, other process, graphical user interface, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.10",
+              "title": "Analysis Results.",
+              "content": "Describe the results of any quantitative or qualitative analyses that have been performed that provide evidence that the algorithm is fit for its purpose.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.11",
+              "title": "Summary of Changes in Current Version.",
+              "content": "For versions of the ADD after the original release, summarize the actions, decisions, decision drivers, analysis and trade study results that became decision drivers, requirements changes that became decision drivers, and how these decisions have caused the algorithm to evolve or change.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "References.",
+          "content": "Provide all the citations for each reference document in the standard format (author(s), year, title, title of journal, volume number, page number, etc.) Provide in alphabetical order based on the last name of the first author.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Glossary.",
+          "content": "Provide a list of definitions of special terms used in the ADD.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Acronym list.",
+          "content": "Provide a definition of the acronyms used in the ADD.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Appendix A: Data Elements List, Alphabetical Order.",
+          "content": "This appendix will contain an alphabetical listing of all data elements used within the document as well as their descriptions. Each item in this list shall refer to the unique Algorithm Title/Name.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Appendix B: Data Elements List, Subroutine Order.",
+          "content": "This appendix will contain a listing of all data elements used within the document as well as their descriptions, similar to and duplicating the listing in Appendix A - Data Element List, Alphabetical Order. This appendix will group and label data element entries by subroutine or sub-algorithm. Each item in this list shall refer to the unique Algorithm Title/Name.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EDRS-82219.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

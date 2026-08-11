@@ -1,0 +1,278 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ATTS-82427",
+  "slug": "di-atts-82427",
+  "title": "Test Program Set (TPS) Data Requirements",
+  "summary": "The Test Program Set (TPS) Data Requirements DID describes the Unit Under Test data and test data requirements for developing, sustaining, and modifying TPSs used for Depot and Intermediate level UUT maintenance by the government.",
+  "approval_date": "2023-10-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10445",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "71",
+  "project_number": "ATTS-2023-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Test Programs Set (TPS) Data Requirements describes the Unit Under Test (UUT) data and test data requirements for development, sustainment, and modification of TPSs that will be used for Depot and Intermediate level UUT maintenance by the government. Not all data elements listed in the Content section are required for each UUT, but only the data applicable for the government to unilaterally develop, sustain, and modify the associated TPSs.\nThe current revision of the Data Item Description (DID) DI-ATTS-80041, as tailored by the work task described in the solicitation, shall be referenced for data, format, and requirements for the Test Requirements Documents listed in the Content section.\nThis DID is applicable to acquisitions of military systems, equipment, and components. It is intended for acquiring the required technical data during the Engineering and Manufacturing Development Phase and during subsequent phases of the DoD materiel life cycle.\nThe data requested using this DID will only be used for TPS development, sustainment, and modification. There is no intention of releasing the data for the purpose of solicitation for replacement of any UUT.\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-ATTS-80041"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable for all data elements unless otherwise specified within the Content section.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The TPS Data Requirements shall include the following data elements for all versions and revisions of the UUT designated for sustainment:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "UUT component-level schematics, circuit diagrams, and interconnect diagrams.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "UUT functional specifications.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "UUT parts lists.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "UUT power requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "UUT cooling requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "UUT assembly drawings including parts layouts and dimensions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "UUT timing specifications.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "UUT input/output pin loading requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "UUT revision history.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "UUT Theory of Operation.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "UUT Interface Control Documents.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "UUT Test Requirements Documents (TRD) including documents associated with UUT testing referenced by the TRD.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Original Equipment Manufacturer (OEM) acceptance test requirements and procedures including factory test source code. Detailed acceptance test results.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Software Interface Control Document (ICD).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Source code for any executables required for UUT testing.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Static and dynamic libraries required for TPS development, sustainment, and modification.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Built-In-Test (BIT) access information and data that correlates BIT values to failed components.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Message protocols and formats including detailed specifications for all communication protocols.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Firmware listings and source code for memory components.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "Logic Diagrams for components that do not have readily available commercial datasheets for modeling.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Programmable Logic Device (PLD) unprogrammed device part number, Joint Electron Device Engineering Council (JEDEC) files, equations, checksums, and function tables.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "Embedded UUT software source files required for testing and the associated documentation (e.g., Built-In Test Software, Test Operational Flight Program (OFP) source code and all dependent libraries, Operating System Software, Central Processing Unit (CPU) assembly program, Bootloader, Bootloader source code, executables). List of software tools with versions required for creating and editing the embedded UUT software source files.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Data for Field Programmable Gate Arrays (FPGAs), application-specific integrated circuits (ASICs), and custom integrated circuits sufficient for TPS development, sustainment, and modification. (e.g., Very High-Speed Hardware Description Language (VHDL)/Verilog source code, Boundary Scan Description Language (BSDL) files, integrated circuit internal logic, pinouts, register-transfer level data).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.24",
+          "title": "Data for Flash Memory, Programmable Read-Only Memory (PROMs), Erasable PROMs (EPROMS), Electrically Erasable PROMs (EEPROMS), and Ultra-Violet Erasable PROMs (UVEPROMs) including equipment, procedures, and programs in file formats, that allow device reprogramming in the intended UUT sustainment environment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.25",
+          "title": "Data for Radio Frequency (RF) components and UUT subassemblies including performance specifications, source control documents, acceptance test procedures, loading requirements, operating frequency and power, phase noise characteristics, and gain as required for TPS development, sustainment, and modification.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.26",
+          "title": "Data for Single Board Computers and Embedded Systems including Board Support Packages, Device Drivers, Models and Simulations, Memory Address Maps, Bootloader, Loading Procedures, and Loading Platform Detailed Descriptions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.27",
+          "title": "Data, including performance specifications, source control documents, and acceptance test procedures, for other custom/proprietary components sufficient for TPS development, sustainment, and modification.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.28",
+          "title": "Special tooling or unique repair data that may be required during TPS development or UUT repair/maintenance.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.29",
+          "title": "Special fixtures and the related drawings required for UUT testing, and drawings for non-commercial aircraft mounting trays.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.30",
+          "title": "Information on hazardous substances or conditions that could occur during UUT testing.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ATTS-82427.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81849A",
+  "slug": "di-emcs-81849a",
+  "title": "Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report",
+  "summary": "Documents the test-execution, data-recording, analysis, inspection, and reporting methods used to assess and certify HEMP-protection immunity performance of a Mission Critical System during Production-Level Mission Critical Systems Immunity Test (PMIT).",
+  "approval_date": "2023-03-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10410",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "EMCS-2023-006",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report applies to MIL-STD-3023A, High-Altitude Electromagnetic Pulse (HEMP) Protection for Military Aircraft. DI-EMCS-81849, Production-Level MCS (Mission Critical System) Immunity Test (PMIT) Report, is hereby cancelled and superseded by DI-EMCS-81849A. This data item description (DID) contains the format, content, and intended-use information for the data deliverable resulting from the PMIT test tasks performed in accordance with MIL-STD-3023A.\nThe purpose of PMIT is to test every MCS installed inside or outside the HEMP-protection subsystem's (HPS') electromagnetic barrier to establish a known minimum strength level in terms of a 30-MHz damped sine wave. During a PMIT test of an internal MCS unit, three injections of a 10-A damped sine wave pulse with a 30-MHz center frequency are applied into the MCS while it is in a powered-on state. For MCS located external to the HPS, the same test applies except the 10-A level may be increased to account for the higher HEMP-induced currents on MCS and its cabling located external to an aircraft. This 30-MHz sine wave center frequency is assessed to be a reasonable representation of the peak stress an MCS may experience from all frequencies that span the HEMP spectrum. The PMIT test is deemed successful if it causes no unacceptable mission degrading damage to the MCS unit under test.\nThe Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report documents the methods of test-execution, data-recording, analysis, inspection, and reporting that were used by the contractor to assess and document the results of the MCS's performance. For each individual MCS that was PMIT tested, an individual test report shall be prepared. The report provides the means for the Government to evaluate and certify the HEMP-protection performance results of the MCS in that the report demonstrates that the MCS under test continues to function in its normal operating mode post testing.\nThe report includes discussion of recommended corrective actions, if needed.\nIf the MCS has previously been PMIT tested by a previous test program, then the documentation of those previous tests, including reports and test data, is attached as an appendix to the Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report.\nThis DID supersedes DI-EMCS-81849.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-81849"
+  ],
+  "related_dids": [
+    "DI-EMCS-81855A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions, shall be as specified in the contract. The Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report's classification shall be in accordance with any relevant aircraft- or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable for the report (comma-separated values (CSV) is the preferred data format).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report documents the test-execution, data-recording, analysis, inspection, reporting procedures, results, and conclusions by the contractor or agency performing the PMIT testing on MCS in accordance with MIL-STD-3023A.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, contract data requirements list (CDRL) number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification by a qualified representative of the procuring activity for the test report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary information.",
+          "content": "The Production-Level Mission Critical Systems (MCS) Immunity Test (PMIT) Report shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction, including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "General objectives of the PMIT test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "A general description of the MCS that was tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "A statement of any assumptions or limitations associated with the PMIT testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Specific statements relating whether or not the MCS under test experienced unacceptable mission-degrading damage during the PMIT testing, and whether it continued to function in its normal operating mode following the PMIT test's injections",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Scope.",
+              "content": "A general description of the overall test-requirements matrix that was used to verify the MCS's compliance with MIL-STD-3023A's performance requirements, and an associated listing of the test results. Also, a description of the relative roles of tests, inspections, and analyses shall be provided. The following topics shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Synopsis of the PMIT test procedures performed (as applicable), and references to detailed procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Pass or failure performance results with respect to all requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Anticipated impact of any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Recommendations to resolve any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Lessons learned for the MCS's hardness and testability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Methods of demonstration.",
+              "content": "A general description of the procedures that were used to demonstrate that the MCS continued to function in its normal operating mode following the PMIT test's injections.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors that affected the test procedures, such as: physical-accessibility constraints of the system's topology, resource limitations, safety and security protocols, and precedent reports.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed information.",
+          "content": "For each MCS being PMIT tested, a single test report shall be prepared. The test report shall contain the following information: a. An identification of the MCS that was tested, including photographs, figures, or diagrams; serial numbers, version of software used (if any), and calibration status; and due date (if applicable) b. An identification of the MCS's intended installation location within the aircraft c. The facility location of where the MCS was tested and the testing dates d. Identification of the test-team organizations and personnel and of the Government organizations and witnesses that were present e. A description, with diagrams, showing for the MCS the locations of all points of entry (POEs) and external cable interconnections f. A description of the MCS condition (e.g., power-on and other equipment connected to the MCS) and the test points used for the PMIT g. Description of the immunity allocation levels applied to the MCS (i.e., MIL-STD-461 CS116 or equivalent) h. Descriptions of the PMIT pulsed current injection (PCI) pulser and PCI coupler, and associated data acquisition equipment, to include the manufacturer, model, and serial numbers of each equipment item; detailed calibration procedures for the equipment; a plot of the calibration pulse (10-A) for the PMIT pulser into a 100-ohm load; and calibration-traceability documentation i. Descriptions of the test procedures, including system, subsystem, and circuit configuration requirements; test configuration diagrams; test point locations and descriptions; and step-by-step test procedures j. A description of models, techniques, and tools used for preliminary analyses and predictions, and their specific application to the specific MCS to be tested k. A description of the methods that were applied to quantify and evaluate any failure of the MCS to continue to function in its normal operating mode after the PMIT current injections l. Identification of the pass and fail criteria, and of any deviations from the test plan and requirements of MIL-STD-3023A Appendix C or MIL-STD-461 (or equivalent) that occurred, along with an explanation of why these deviations were necessary m. Descriptions of the data-management procedures that were used, including: data quality control procedures, data acceptability criteria, annotation and preservation of data records, and the methods to compare results to pass and fail criteria n. Identification of any safety risks encountered, including any electromagnetic radiation hazards and electrical shock hazards, and descriptions of procedures that were used to mitigate these risks o. A description of the test schedule as it was executed p. Detailed presentation of the PMIT test's current injection levels and waveforms q. Photographs and diagrams of the actual test set-up, with identification of subsystems and hardware r. A description of the MCS' operating conditions that were set during the PMIT testing s. Descriptions of how the raw and processed test data were recorded, and the electronic data format used to store the data (CSV is the preferred data format) t. Depictions of any associated onsets of MCS upset or damage u. Findings from investigations into causes of failures, if any; and corrective actions recommended or, if performed, their re-test results v. A discussion of the uncertainties involved with the test procedure and any issues regarding the reproducibility of test results w. Descriptions of lessons learned, to include any insights learned during testing that could be applied to developing HEMP-protection subsystem (HPS) approaches to protect the MCS from the risk of upset or damage, and improving testing methodologies x. If applicable, proposed updates to the Hardness Maintenance and Hardness Surveillance plans (data item description DI-EMCS-81855A) y. A table showing the results for the three 10-A pulses which constitute the PMIT for each test point. z. A statement describing that the MCS was not damaged by the PMIT (i.e., operated normally when powered on after the PMIT and the criteria for determining normal operation). (A full operational test of the MCS is not required.) aa. If damage occurred, a statement describing that the MCS was damaged by the PMIT (i.e. did not operate normally when powered on after the PMIT) and the criteria for determining abnormal operation. Note damage is a critical characteristic when applying the results of this PMIT test procedure to MIL-STD-1916. ab. References to applicable test plans and procedures.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Combined DID reports.",
+              "content": "At the contractor's discretion, DID reports for multiple serial numbers of an MCS may be combined. In this case, test data summaries must include tables indicating, for each MCS serial number, the results per 3.3 items y, z, and aa, and the name of the qualified representative of the procuring activity providing authentication and certification of performance of the PMIT for the specific MCS serial number.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81849A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

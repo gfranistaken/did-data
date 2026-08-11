@@ -1,0 +1,67 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-AVCS-80700A",
+  "slug": "di-avcs-80700a",
+  "title": "Computer Software Product End Items",
+  "summary": "The Computer Software Product End Item provides data formatted for review or maintenance to assure significant software development milestones are met.",
+  "approval_date": "2017-06-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9822",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "AVCS-2017-001",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "a. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. The DID requirements herein apply to all software product end items which are acquired for Department of Defense use.\nc. The Computer Software Product End Item provides data formatted for review or maintenance to assure significant milestones are met.\nd. Data produced using under this requirement will be used during the life cycle for development, operation, and maintenance.\ne. This DID supersedes DI-MCCR-80700.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MCCR-80700"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Content.",
+      "content": "The specific documentation/software required and the form in which they shall be furnished (documentation/source/object/executable) shall be as delineated on the Contract Data Requirements List ((CDRL) DD Form 1423).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Media.",
+      "content": "The specific media on which the documentation/software is furnished shall be as specified on the CDRL.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Format.",
+      "content": "The format and method used to store and retrieve the documentation/software using the above media and all specific computer compatibility requirements shall be as specified on the CDRL.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-AVCS-80700A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

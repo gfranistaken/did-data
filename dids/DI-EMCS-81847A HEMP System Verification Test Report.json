@@ -1,0 +1,888 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81847A",
+  "slug": "di-emcs-81847a",
+  "title": "HEMP System Verification Test Report",
+  "summary": "The HEMP System Verification Test Report documents HPS performance test results and the test-execution, data-recording, analysis, inspection, and reporting procedures used to certify an aircraft's HEMP hardness under MIL-STD-3023A.",
+  "approval_date": "2023-03-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10408",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "EMCS-2023-004",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The HEMP System Verification Test Report applies to MIL-STD-3023A, High-Altitude Electromagnetic Pulse (HEMP) Protection for Military Aircraft. DI-EMCS-81847, HEMP Test Report for System Verification Test, is hereby cancelled and superseded by DI-EMCS-81847A. This data item description (DID) contains the format, content, and intended-use information for the data deliverable resulting from the verification test tasks performed in accordance with sections 4.7.3 and 5.7.3 and Appendix D of MIL-STD-3023A.\nThe purpose of verification-testing the aircraft's HEMP-protection subsystem (HPS) is to demonstrate that the installed protection provides the required HEMP hardness. These tests are performed after the HPS has passed performance testing (in accordance with Appendix C of MIL-STD-3023A) and after the equipment is installed and functioning to determine if the operational system suffers mission-aborting damage or upset due to simulated HEMP excitations. Verification is normally a Government-conducted test and is not part of an aircraft construction contract.\nThe HEMP System Verification Test Report documents the HPS performance test results, and also describes the test-execution, data-recording and analysis, inspection, and reporting procedures used by the contractor to assess and document these results. This report includes a discussion of recommended corrective actions, if needed. The report provides the means for the Government to evaluate and certify the HPS' performance results, in that the report demonstrates the HPS' compliance with respect to MIL-STD-3023A's verification test pass and fail requirements. The Department of Defense's HEMP certification authority requires that a documented HEMP system verification test report be submitted as part of a HEMP certification request package for an aircraft.\nIf a portion of the HPS' components has already been tested by a previous test program, then the documentation of those previous tests, including reports and test data, shall be attached as an appendix to the HEMP System Verification Test Report. Final data from the report is applied to subsequent re-verification planning and testing efforts, and is applied to the High-Altitude EMP (HEMP) Hardness Maintenance and Hardness Surveillance (HM/HS) Plan (DID DI-EMCS-81855A).\nThis DID supersedes DI-EMCS-81847.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-81847"
+  ],
+  "related_dids": [
+    "DI-EMCS-81855A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions, shall be as specified in the contract. The HEMP System Verification Test Report's classification shall be in accordance with any relevant aircraft- or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable except for the electronic data file format, which is specified in 3.3 below.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The HEMP System Verification Test Report shall document the test execution, data recording, analysis, inspection, and reporting procedures used to comply with section 5.7.3 and Appendix D of MIL-STD-3023A, including: a. Active system testing (AST) b. Passive system testing (PST) c. Internal direct drive testing (DDT) d. External direct drive testing (DDT) In addition to the written test report, the data obtained from the testing shall be presented electronically in comma-separated values (CSV) format. The test report shall document instrumentation, calibration, and processing procedures associated to this data. The electronic data format and guidance for locating specific data within this format shall be described in the written test report. A short summary of key facts and assumptions in the main text, with large amounts of supporting data in appendices, is encouraged.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The HEMP System Verification Test Report shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, contract data requirements list (CDRL) number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification by a qualified representative of the procuring activity for the test report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary information.",
+          "content": "The HEMP System Verification Test Report shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction, including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "General objectives of the verification test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "A general description of the HPS' topology that was tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "A statement of any assumptions or limitations associated with the verification testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "A summary of the verification test's pass and fail requirements per MIL-STD-3023A",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "A specific statement of whether or not the HPS passes all requirements, and a summary listing of any requirements that were not passed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Scope.",
+              "content": "A general description of the overall test-requirements matrix that was used to verify the HPS' compliance with MIL-STD-3023A's performance requirements, and an associated listing of the test results. Also, a description of the relative roles of tests, inspections, and analyses shall be provided. The following topics shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Synopsis of the AST, PST, internal DDT, and external DDT procedures performed (as applicable), and references to detailed procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Pass or failure performance results with respect to all requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Anticipated impact of any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Recommendations to resolve any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Lessons learned for the HPS' hardness and testability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Methods of verification.",
+              "content": "A general description of the procedures that were used to verify the HPS' compliance with each verification test performance requirement as listed in 3.3 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors affecting the verification test procedures, such as: physical accessibility constraints of the aircraft system's topology, resource limitations, safety and security protocols, and precedent reports.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed information.",
+          "content": "The overall HEMP System Verification Test Report shall include the specific results of the AST, PST, internal DDT, and external DDT execution, as well as describe in detail the test procedures and the associated test equipment. The HEMP System Verification Test Report shall be prepared, as applicable, in four portions: one each for the AST, PST, internal DDT, and external DDT execution. These portions shall be detailed in four separate sections of the overall HEMP System Verification Test Report.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The overall test report.",
+              "content": "The HEMP System Verification Test Report shall include four separate subsections describing, respectively, the results of the AST, PST, internal DDT, and external DDT test execution. The main portion of the test report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "An identification of the aircraft that was tested, including tail number, photographs, figures, or diagrams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "A physical and functional description of the aircraft",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "The location of the aircraft during its testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Identification of the test team organizations and personnel, and of the Government organizations and witnesses that were present",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Identification of the test team personnel and of the Government witnesses that were present",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "A description of the HPS' topology, including a description of each HEMP protection measure and drawings showing the locations of the following items:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.6.1",
+                      "title": "all points of entry (POEs) and penetration protective devices (PPDs) of each electromagnetic (EM) barrier",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.6.2",
+                      "title": "equipment layouts inside each EM barrier",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.6.3",
+                      "title": "the installation of mission critical systems (MCS) outside of any EM barrier and their associated special protective measures (SPMs)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.6.4",
+                      "title": "cable interconnections external to each EM barrier",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Descriptions of the data acquisition equipment, including: the manufacturer, model, and serial numbers of each equipment item, detailed calibration procedures for the equipment, calibration-traceability documentation, and a layout showing the interconnectivity of the overall data acquisition instrumentation system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Descriptions of the test procedures, including system, subsystem, and circuit configuration requirements; equipment operating states, test configuration diagrams; test point locations and descriptions; and functional monitoring provisions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "Descriptions of methods for measuring noise (instrument inherent and local or ambient)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.10",
+                  "title": "Descriptions of the models, techniques, and tools used for preliminary analyses and predictions, and their specific application to the specific aircraft that was tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.11",
+                  "title": "Descriptions of the methods that were applied to quantify and evaluate any failures of the HPS' performance with respect to all pass and fail criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.12",
+                  "title": "Identification of the pass and fail criteria, and of any deviations from the MIL-STD-3023A requirements that occurred, along with an explanation of why these deviations were necessary",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.13",
+                  "title": "Descriptions of the data-management procedures that were used, including: data quality control procedures, data acceptability criteria, annotation and preservation of data records, and the methods used to compare results to pass and fail criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.14",
+                  "title": "Identification of any safety risks encountered, and descriptions of procedures that were used to mitigate these risks, including any EM radiation hazards and electrical shock hazards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.15",
+                  "title": "Descriptions of the data security and physical security procedures that were applied",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.16",
+                  "title": "A description of the test schedule as it was executed, including a listing of the prioritization of measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.17",
+                  "title": "A description of the methods that were used to simulate the operational performance of MCS during the test if actual operation of the MCS during the test was impractical",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.18",
+                  "title": "A written confirmation that the required MIL-STD-461 immunity testing of mission critical systems (MCS) was completed, with results available prior to the verification test, and a table summarizing this immunity data for each MCS.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.19",
+                  "title": "Descriptions of how the raw and processed test data were recorded, and the electronic data format used to store the data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.20",
+                  "title": "Summary tables of measured quantities, including tables of AST, PST, internal DDT, and external DDT results, with calculations and comparisons to pass and fail criteria, and depicting associated onsets of MCS upset or damage",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.21",
+                  "title": "Copies of measured test results, including all raw and processed test oscillographic waveform test data in engineering units, with a description of the electronic data format and guidance for users to locate specific data within this format",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.22",
+                  "title": "Findings from investigations into causes of any failures; and corrective actions recommended or, if retesting was performed, retesting results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.23",
+                  "title": "A discussion of the uncertainties involved with the test procedure and measured quantities, and of any issues regarding the reproducibility of test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.24",
+                  "title": "Descriptions of lessons learned, including insights learned during testing that could be applied to improve HPS performance and testing methodologies",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.25",
+                  "title": "If applicable, proposed improvements to the hardness maintenance and hardness surveillance plans (DID DI-EMCS-81855A)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.26",
+                  "title": "Test conclusions, including a definitive statement of the hardness of the HPS, based upon the results of the complete battery of verification tests and the supporting analyses",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.27",
+                  "title": "References to applicable test plans and procedures (and included as an Appendix A of the test report)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "The AST portion of the test report.",
+              "content": "This portion of the HEMP System Verification Test Report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Detailed test procedures in accordance with Appendix D, section D.5, of MIL-STD-3023A",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Descriptions of the AST antenna system, including key performance parameters",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Description of each antenna's field map characteristics, the methods used to monitor the incident field and its relationship to these field map characteristics, and discussion of the uncertainties involved in the HEMP incident field measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Identification, with diagrams, of the placement of the aircraft under test in the AST simulator's working volume and the placement of other system elements that were required for achieving functionality, with respect to the simulator working volume",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "Description of the chronology of the AST execution, including a sequence of events with aircraft orientation relative to the HEMP electric field and corresponding polarization of the HEMP electric field",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "Identification of the aircraft's functional configurations that were tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.7",
+                  "title": "Identification of the types of functional checks that were made before, during, and after pulsing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.8",
+                  "title": "Descriptions of the aircraft's functional responses during exposure to the simulated HEMP environment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.9",
+                  "title": "Tables summarizing any damage, upset, or interference observed during AST execution and the conditions under which they occurred",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.10",
+                  "title": "Identification of the following instrumentation locations, with an explanation for why these specific points were selected:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.10.1",
+                      "title": "Reference sensor",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.10.2",
+                      "title": "Other measurement points as required",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.11",
+                  "title": "Based on any observed AST damage, upset, or interference events, description of the potential impact on aircraft performance to aid the aircraft procuring or operational authority in determining if any event is a mission-critical failure.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "The PST portion of the test report.",
+              "content": "This portion of the HEMP System Verification Test Report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Detailed test procedures in accordance with Appendix D, section D.5, of MIL-STD-3023A",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Describe in detail how the PST test data was used to generate the DDT waveforms",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Descriptions of the PST HEMP threat-level simulator (including key performance parameters)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "Description of the antenna's field map characteristics, the methods used to monitor the incident field, and the incident field's relationship to these field map characteristics, and discussion of the uncertainties involved in the HEMP incident field measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "Identification, with diagrams, of the placement of the aircraft under test in the PST HEMP threat-level simulator's working volume, and of the placement of other system elements that were required for achieving functionality (such as ground-power sources), with respect to the simulator working volume",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.6",
+                  "title": "Description of the chronology of the PST execution, including a sequence of events with aircraft orientation relative to the horizontally or vertically polarized HEMP threat-level simulator",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.7",
+                  "title": "Diagrams of the interconnecting cable layouts",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.8",
+                  "title": "A table listing all test point locations and a description of how these test points relate to the MCS locations and to the hardness allocation process for the aircraft",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.9",
+                  "title": "Identification of the following instrumentation locations, with an explanation for why these specific points were selected:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.9.1",
+                      "title": "Electric and magnetic field sensors",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.9.2",
+                      "title": "Reference field sensor",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.9.3",
+                      "title": "Representative MCS cable measurement test points, both within and external to all EM barriers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.9.4",
+                      "title": "Other measurement points as required",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.10",
+                  "title": "Measured raw data for each test point in the form of data plots or tables, with sensor calibrations and instrumentation settings for converting the data to engineering units",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.11",
+                  "title": "Summary table of the norms of the measured internal responses from PST execution",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.12",
+                  "title": "Discussion of the uncertainties involved in the PST measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.13",
+                  "title": "The data obtained from the testing, presented electronically in CSV format; a description of the electronic data format; and guidance for locating specific data within this format",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.14",
+                  "title": "Identification of the measurement-range sensitivities of the field probes, current probes, and data acquisition system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "The internal DDT portion of the test report.",
+              "content": "This portion of the HEMP System Verification Test Report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Detailed test procedures in accordance with Appendix D, section D.5, of MIL-STD-3023A",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Identification, with diagrams, of the locations of each HPS component that was subjected to internal DDT injection and a description of how these test points relate to the MCS and to the hardness allocation process for the aircraft",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Description of how the internal DDT pulser and current probes were connected and their performance monitored",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "Description of the chronology of the internal DDT execution, including a sequence of events with the upper-bound injection current waveforms for each test point measured in the internal DDT",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.5",
+                  "title": "Identification of the transfer impedance of the current-measurement probes and measurement range of the end-to-end data acquisition system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.6",
+                  "title": "A summary table of the norms of the measured internal responses from the PST execution and a table showing, for each test point, the upper-bound norms that were used to construct the internal DDT injection waveforms",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.7",
+                  "title": "A table listing the internal DDT drive levels and associated residual-current measurements per test point, thereby identifying the internal DDT measurement's compliance (or failure) to meet the maximum allowable residual norm attribute response characteristics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.8",
+                  "title": "Measured raw data for each test point in the form of data plots and tables, along with sensor calibrations and instrumentation settings required to convert the data to engineering units",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.9",
+                  "title": "Discussion of the uncertainties involved in the internal DDT measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.10",
+                  "title": "Tables summarizing any damage, upset, or interference observed during internal DDT execution and the conditions under which these occurred",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.11",
+                  "title": "Based on any observed internal DDT damage, upset, or interference events, a description of the potential impact on aircraft performance to aid the aircraft program's procuring or operational authority in determining if any event is a mission-critical failure",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.12",
+                  "title": "The data obtained from the testing presented electronically in CSV format; a description of the electronic data format and guidance for locating specific data within this format",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.13",
+                  "title": "Descriptions of the methods that were used to determine the onset of any MCS upset or damage, and the locations for which observations were made",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.14",
+                  "title": "Identification of any special requirements of the test facility's operations that impeded HEMP testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "The external DDT portion of the test report.",
+              "content": "This portion of the HEMP System Verification Test Report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Detailed test procedures in accordance with Appendix D, section D.5, of MIL-STD-3023A",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "Identification, with diagrams, of the locations of each HPS component that was subjected to external DDT injection and a description of how these test points relate to the MCS and to the hardness allocation process for the aircraft",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.3",
+                  "title": "Description of how the external DDT pulser and current probes were connected and their performance monitored",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.4",
+                  "title": "Description of the chronology of the external DDT execution, including a sequence of events with the upper-bound injection current waveforms for each test point measured in the external DDT",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.5",
+                  "title": "Identification of the transfer impedance of the current-measurement probes and measurement range of the end-to-end data acquisition system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.6",
+                  "title": "A summary table of the norms of the measured internal responses from the PST execution and a table showing, for each test point, the upper-bound norms that were used to construct the external DDT injection waveforms",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.7",
+                  "title": "A table listing the external DDT drive levels and associated residual-current measurements per test point, thereby identifying the external DDT measurement's compliance (or failure) to meet the maximum allowable residual norm attribute response characteristics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.8",
+                  "title": "Measured raw data for each test point in the form of data plots and tables, along with sensor calibrations and instrumentation settings required to convert the data to engineering units",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.9",
+                  "title": "Discussion of the uncertainties involved in the external DDT measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.10",
+                  "title": "Tables summarizing any damage, upset, or interference observed during external DDT execution and the conditions under which these occurred",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.11",
+                  "title": "Based on any observed external DDT damage, upset, or interference events, a description of the potential impact on aircraft performance to aid the aircraft program's procuring or operational authority in determining if any event is a mission-critical failure",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.12",
+                  "title": "The data obtained from the testing presented electronically in CSV format; a description of the electronic data format and guidance for locating specific data within this format",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.13",
+                  "title": "Descriptions of the methods that were used to determine the onset of any MCS upset or damage, and the locations for which observations were made",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.14",
+                  "title": "Identification of any special requirements of the test facility's operations that impeded HEMP testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Other information sources.",
+          "content": "When other available information sources contain data required by the HEMP System Verification Test Report, these sources shall be referenced, rather than duplicated, within the test report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81847A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

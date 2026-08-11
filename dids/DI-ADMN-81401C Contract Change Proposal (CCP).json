@@ -1,0 +1,122 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ADMN-81401C",
+  "slug": "di-admn-81401c",
+  "title": "Contract Change Proposal (CCP)",
+  "summary": "The Contract Change Proposal (CCP) provides the data necessary to propose, control, and approve changes to contractual documents that are not part of a technical baseline.",
+  "approval_date": "2019-04-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10022",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSC)",
+  "project_number": "ADMN-2019-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Contract Change Proposal (CCP) provides the data necessary to propose, control, and approve changes to contractual documents that are not part of a technical baseline. CCPs are not used for making changes to specifications, drawings, or other technical baseline documentation. In the event changes to documents affect both a technical baseline document and a non-technical baseline document, all changes shall be included in an Engineering Change Proposal (ECP).\na. This Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the specific and discrete task requirement as delineated in the contract.\nb. This DID is used on any type contract where a vehicle for contract and processing of non-technical contract changes is needed.\nc. This DID supersedes DI-ADMN-81401B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ADMN-81401B"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "The FAR can be viewed online at",
+      "url": "https://www.acquisition.gov"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The CCP shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CCP shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Control number and date of preparation.",
+          "content": "A CCP control number shall be assigned. The date of CCP preparation shall also be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Title.",
+          "content": "A descriptive title shall be assigned.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Affected items.",
+          "content": "Part or parts of the contract that are affected by the proposed changes (e.g., contract data requirements list, statement of work, plan, or contract section) shall be identified. Each affected part(s) of the contract shall be provided in total, and all proposed changes shall be clearly identified and marked within the document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Statement of justification and alternatives.",
+          "content": "The reason for change shall be identified. Existing alternatives shall be presented. An impact statement to address the effect of the change shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Description of proposed change.",
+          "content": "A detailed description of the proposed change shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Schedule.",
+          "content": "A working schedule for implementation of the CCP, including target date for implementation via contract modification, shall be identified. If conditions exist that make implementation urgent, a brief explanation shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Estimated cost.",
+          "content": "The estimated cost (or estimated savings) expected as a result of implementing the change shall be provided. The estimated cost data shall be certified cost or pricing data in accordance with the requirements of Federal Acquisition Regulation (FAR) 15.403, Obtaining certified cost or pricing data, if applicable. (The FAR can be viewed online at https://www.acquisition.gov.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ADMN-81401C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

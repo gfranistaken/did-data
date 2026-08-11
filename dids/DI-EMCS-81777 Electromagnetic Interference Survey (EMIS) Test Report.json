@@ -1,0 +1,225 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81777",
+  "slug": "di-emcs-81777",
+  "title": "Electromagnetic Interference Survey (EMIS) Test Report",
+  "summary": "The EMIS Test Report documents the results of an executed Electromagnetic Interference Survey used to evaluate equipment or system compliance with shipboard electromagnetic compatibility requirements under MIL-STD-1605.",
+  "approval_date": "2009-09-15",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N9082",
+  "limitation": "",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "SH/05H3",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The EMIS provides the information necessary to evaluate compliance of an equipment/system with the shipboard electromagnetic compatibility requirements, including mitigation techniques and discussion of recommended corrective actions, if required.\nThis Data Item Description contains the format and content preparation instructions for the EMIS documenting the test results of the approved and executed EMIS for compliance of MIL-STD-1605 requirements.\nThis DID is related to DI-EMCS-81782.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-EMCS-81782"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents herein, including their approval dates and dates of any applicable amendments, notices, or revisions, shall be as cited in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The EMIS test report shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The EMIS shall contain signature certification by a qualified representative of the executing activity and shall also include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Ships name, hull number, location of the ship, and the date when each test phase was conducted.",
+          "content": "Ships construction status, i.e. modernization, overhaul, builders trials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Executive summary containing a brief description of the test results, amendments to the approved test report, rationale for amendments, and any pertinent issues.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Authentication and certification of performance of the tests by the test engineer of the executing activity.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Listing of all equipments tested per compartment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Photographs or diagrams of the actual test set up with identification of all items.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Data sheets/analyzer plots of measured data for all systems tested during Phase I and discussion of any interference and level of potential interference.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Data sheets for each equipment monitored during Phase II testing with mode of operation during testing.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Criteria used to evaluate susceptibility of equipment and calculations, such as conversions of measured levels for comparison against applicable limit.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Analytic discussion of each case of interference recorded and recommendations or mitigation measures used to eliminate the interference.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Details relative to the IMI test including the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "The frequency, power, modulation and model number of transmitters used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "The model number of receiver used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "The description and location of all antennas used for each IMI test",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "The frequency and level of the 3rd order intermodulation interference",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "The highest IMI order detected",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.6",
+              "title": "The corrective action taken to reduce IMI to or below the 19th order.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Conclusions that identify:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Status of compliance with requirements (met or not met).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Impact of the results on operational performance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Recommendations to:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Any required corrective actions, modifications, or changes to operational procedures, manual, or processes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Any additional verification actions, investigations, resolutions, or studies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81777.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

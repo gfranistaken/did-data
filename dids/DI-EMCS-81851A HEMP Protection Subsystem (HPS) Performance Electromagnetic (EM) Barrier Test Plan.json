@@ -1,0 +1,293 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81851A",
+  "slug": "di-emcs-81851a",
+  "title": "HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan",
+  "summary": "Describes the methods of test, analysis, and inspection used by the contractor to verify compliance with HEMP interface and performance requirements of an aircraft during engineering development.",
+  "approval_date": "2023-03-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10412",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "EMCS-2023-012",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan applies to MIL-STD-3023A, High-Altitude Electromagnetic Pulse (HEMP) Protection for Military Aircraft. DI-EMCS-81851, HEMP Protection System Performance Test Plan is hereby cancelled and superseded by DI-EMCS-81851A. This data item description (DID) contains the format, content, and intended-use information for the data deliverable resulting from the HPS test tasks described in Appendix C, sections C.4.7, C.5.1, and C.5.2, of MIL-STD-3023A, as applicable.\nThe HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan describes the methods of test, analysis, and inspection used by the contractor to verify compliance with the HEMP interface and performance requirements of an aircraft during the engineering development phase. The HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan provides the means for the Government to understand and duplicate verification methods used by the contractor to verify HEMP protection requirements.\nThis DID is related to DI-EMCS-81850A and DI-EMCS-81852A.\nThis DID supersedes DI-EMCS-81851.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-81851"
+  ],
+  "related_dids": [
+    "DI-EMCS-81850A",
+    "DI-EMCS-81852A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, or revisions, shall be as specified in the contract. The HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan classification shall be in accordance with any relevant aircraft-specific or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan shall describe the test plan for the Continuous Wave Immersion (CWI) and the Pulse Current Injection (PCI) tests for each requirement specified in the contract for the aircraft being developed.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary information.",
+          "content": "The HEMP Protection Subsystem (HPS) Performance Electromagnetic (EM) Barrier Test Plan shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Introduction.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "System description, including any pertinent information regarding HEMP protection performance testing issues.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Statement of any assumptions and limitations associated with HEMP protection performance testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "General objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Scope.",
+              "content": "General description of overall test requirements matrix being used to demonstrate compliance with requirements, including the relative role of analyses, tests and inspections.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Methods of verification.",
+              "content": "Abstracts of the procedures used for verifying each HEMP protection performance requirement listed in 3.2 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors affecting the verification procedures, such as facilities, resources, safety, reports, and security.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed information.",
+          "content": "For CWI and PCI testing a single test plan shall be prepared. The test plan shall contain the following information: a comprehensive, system-specific test plan and detailed test procedures for CWI and PCI HEMP protection performance testing. These may be combined in a single document, or separate documents may be used.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The document(s) shall contain the following information:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "A statement of test objectives and criteria to be met to achieve these objectives",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Aircraft system and subsystem identification and descriptions, including drawings of the subsystems showing the locations of all points of entry (POEs), equipment layout inside the electromagnetic barriers, external cable interconnections; and a description of the HEMP protection measures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Locations and orientations of the aircraft under test with respect to the transmitting antenna positions and polarizations; reference sensor locations; and expected measurement sensitivity of the illumination and instrumentation system (CWI Test only)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Data acquisition equipment descriptions (including manufacturer, model and serial numbers, characteristics, detailed calibration procedures and calibration traceability documentation)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Detailed test procedures including system, subsystem, and circuit configuration requirements; test configuration diagrams; test point descriptions; step-by-step procedures, and test point locations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Any deviations from the requirements of MIL-STD-3023A, Appendix C",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Data management (including data quality control procedures, data acceptability criteria, annotation and preservation of data records, and pass/fail criteria)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Safety, including electromagnetic radiation and electrical shock hazards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.9",
+                  "title": "Security procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.10",
+                  "title": "Schedule, including priority of measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Pre-test analysis section.",
+              "content": "This section shall include pre-test analyses of CWI and PCI test data including calculations of threat responses from CWI and PCI testing. Pretest analysis for CWI testing shall be performed to select representative mission critical systems' (MCS') cabling measurement test points, exposure orientations with respect to both vertically and horizontally polarized transmitting antennas, reference field sensor locations, and other measurement test points. Approximately 50 to 300 test points shall be chosen based on aircraft size and complexity (see DI-EMCS-81850A, MIL-STD-3023A Hardness Allocation Report (HAR)).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Post-test data analysis",
+              "content": "Post-test data analysis will include development of a corrective plan and, if applicable, the MIL-STD-3023A Hardness Allocation Report (HAR) (DI-EMCS-81850A) will be updated.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Elements of HEMP protection performance compliance testing comprise the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Models, techniques, and tools used for analysis and predictions and their specific application to this system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Step-by-step test procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "Determination of as-built design margins",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.4",
+                  "title": "Selection of critical circuits, functions, and subsystems",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.5",
+                  "title": "Pass or fail criteria and methods of quantifying and evaluating failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.6",
+                  "title": "Description of test articles, test facilities, test equipment (including instrumentation on and off the system), support equipment, and calibration techniques",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.7",
+                  "title": "Method of simulating operational performance when actual operation is impractical",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Other information sources.",
+          "content": "When other information sources contain data required by this DID, these sources shall be referenced rather than be duplicated within this report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81851A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

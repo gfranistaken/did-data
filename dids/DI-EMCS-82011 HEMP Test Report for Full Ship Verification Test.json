@@ -1,0 +1,265 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-82011",
+  "slug": "di-emcs-82011",
+  "title": "HEMP Test Report for Full Ship Verification Test",
+  "summary": "The HEMP Test Report for MIL-STD-4023 Full Ship Verification Test is used to obtain essential information from contractors after they perform the required Ship Level Verification Test.",
+  "approval_date": "2016-04-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9605",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "DTRA-DS",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The High-Altitude Electromagnetic Pulse (HEMP) Test Report for MIL-STD-4023 Full Ship Verification Test will be used to obtain essential information from contractors after they perform the MIL-STD-4023 required Ship Level Verification Test described in detail in Appendix D of MIL-STD-4023.\na. Information to be acquired through the Full Ship Verification Test will include the detailed test procedures and equipment, test results (data), analysis, and other related data.\nb. This DID contains the format, content, and intended use information for the data product resulting from the work task described by Appendix D of MIL-STD-4023, and is applicable to the acquisition of military ships.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DTIC Applicable",
+      "url": "http://www.dtic.mil/dtic/submit/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issuance of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the current issue of the DODISS at the time of the solicitation. Classification of the Test Report for MIL-STD-4023 System Verification Test shall be determined using DTRA Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities (U) available by mail request to ATTN: J9/NT-NTSA/Rooney M., Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201 Fort Belvoir, Virginia 22060-6201 and any relevant system specific classification guides.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Technical Report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The HEMP Test Report for MIL-STD-4023 Ship Level Verification Testing shall be presented in the format of the test report which is recommended in Appendix D and section 5.0 of MIL-STD-4023 and is specified in the contract. In addition to the written test report, the data obtained from the testing shall be presented in electronic contractor's format and contain all data described in Appendix D of MIL-STD-4023. The electronic data format will be described in the written report. Appropriate use of appendices for large amounts of information with a short summary of key facts in the main text is encouraged.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The HEMP Test Report for MIL-STD-4023 Full Ship Verification Testing shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification of performance of the tests by a qualified representative of the procuring activity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Technical data.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction Section.",
+              "content": "This section shall contain a brief overview of the system verification test.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Test Object Description Section.",
+              "content": "This section shall contain at a minimum:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "The ship identification (including hull number).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "A reference to the applicable test plan (and included as Appendix A of this Test Report).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "A physical and functional description of the ship.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "A table summarizing the Mission Critical Systems (MCS) and their MIL-STD-461 RS103, RS105 or CS116 (or equivalent), immunity tests.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "An identification of the test points (including their selection criteria) used in the Passive System Test (PST) and Direct Drive Test (DDT) [see MIL-STD-4023 Appendix D], their relationship to the MCS, and their location in the ship.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Verification Test Procedure Section.",
+              "content": "This section shall contain a detailed discussion of the test procedures and equipment used and shall include at a minimum the following information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "A discussion of any deviations from the test plan and requirements of MIL-STD-4023 Appendix D.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Identification of the test equipment, including the HEMP simulator with key performance parameters.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Active System Test (AST) [see MIL-STD-4023 Appendix D] chronology including a sequence of events with ship orientation relative to the HEMP electric field and corresponding polarization of the HEMP electric field.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "PST chronology including a sequence of events with ship orientation relative to the HEMP electric field and corresponding polarization of the HEMP electric field.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "DDT chronology including a sequence of events with the upper-bound injection current waveforms for each test point measured in the DDT.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Summary of the test Data.",
+              "content": "This section shall contain a summary of the information and data obtained from the three tests (AST, PST, and DDT) which constitute the Ship Level System Verification test. At a minimum this section shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Copies of the measured results, along with sensor calibrations and instrumentation settings required to convert the data to engineering units.",
+                  "content": "This is to be provided in contractor electronic form (soft copy). The electronic form shall also include the results converted into actual engineering units. The format of the data in electronic form shall be provided in this section and typical electronic media shall be used to provide the data as Appendix B.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Tables for AST and DDT summarizing any damage, upset, or interference observed during testing and the conditions under which they occurred.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "A summary table of the norms of the measured internal responses from PST and a table showing the upper-bound norms for each test point which were used to construct the DDT injection waveforms.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.4",
+                  "title": "A field map of the HEMP simulator.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.5",
+                  "title": "A discussion of the uncertainties involved in the HEMP incident field measurements, the PST measurements, and the DDT measurements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.5",
+              "title": "Analysis Section.",
+              "content": "Based on any observed AST and DDT damage, upset, or interference events, describe the potential impact on ship performance to aid the ship procuring or operational authority in determining if any event is a mission critical failure.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Conclusion Section.",
+              "content": "This section shall succinctly summarize any key results and provide any lessons learned.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Appendix A.",
+              "content": "A copy of the test plan.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Appendix B.",
+              "content": "CD(s) containing a softcopy of the Ship Level Verification test data.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-82011.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

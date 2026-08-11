@@ -1,0 +1,502 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MCCR-81344",
+  "slug": "di-mccr-81344",
+  "title": "Design Specification",
+  "summary": "The Design Specification demonstrates correct implementation and enforcement of the security policy across the trusted computing base, explaining protection mechanisms so change impacts on the TCB can be evaluated.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6934",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "3.1 The Design Specification demonstrates the correct implementation and enforcement of the security policy throughout the trusted computing base (TCB). It shall explain the protection mechanisms of the TCB to the extent that the effect a change may have on the TCB can be evaluated prior to a technical change performed.",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 2.1.3.1.1, 2.1.4.4, 2.2.3.1.1, 3.1.3.1.1, 3.1.4.4, 3.2.3.1.1, 3.2.3.1.4, 3.2.4.4, 3.3.3.1.1, 3.3.4.4, and 4.1.4.4 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n7.2. This DID is applicable to any computer acquisition that calls for a Design Specification as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria (TCSEC) for TCB Classes C1 (Discretionary Security Protection), and above, products or their equivalent systems. The Design Specification identifies and describes the TCB and its security features.\n7.3 The information required by 10.3 is required for all class products and their equivalent systems applicable to the DID as a whole. In addition, the information required in 10.3.1, 10.3.2, 10.3.3, 10.3.4, 10.3.5 and 10.3.6 are necessary for various classes of products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document the Design Specification as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.2",
+          "title": "Cover Sheet.",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version, number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Errata Sheet.",
+          "content": "Shall contain sheets delimiting cumulative page changes from previous versions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "List of illustrations, diagrams, charts, and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Executive Summary, not to exceed two pages, that briefly describes the TCB's security-related capabilities.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Body of the Specification.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Subject index.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Bibliography.",
+          "content": "List reference sources and applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.1",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.1.1",
+              "title": "Abbreviations and acronyms",
+              "content": "shall be defined when first used in the text and shall be placed in the glossary.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.2",
+              "title": "Pages",
+              "content": "shall be numbered separately and consecutively using Arabic numerals. Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.3",
+              "title": "Paragraphs",
+              "content": "shall have a short descriptive title and shall be numbered consecutively using Arabic numerals. Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.4",
+              "title": "Chapters",
+              "content": "shall begin on an odd-numbered (right hand) page.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.5",
+              "title": "Column headings",
+              "content": "shall be repeated on subsequent pages if tabular material exceeds one page.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.6",
+              "title": "Fold out pages",
+              "content": "shall be kept to a minimum.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.7",
+              "title": "Paper",
+              "content": "shall be standard 8 1/2 x 11 inches, white, with black type. The type font shall be standard 10 pitch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or ragged right (left justified only) shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.8",
+              "title": "At least one inch margins",
+              "content": "shall be provided all around to allow for drilling and binding.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.9",
+              "title": "Either single or double sided printing",
+              "content": "may be used. If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.1.10",
+              "title": "The specification shall be provided",
+              "content": "in standard three-ring notebook binders for ease of maintenance.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Content.",
+      "content": "The Design Specification shall contain the following items:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.7",
+          "title": "A statement of the security policy.",
+          "content": "This description shall be in enough detail to form the background for the design discussions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.8",
+          "title": "The Design Specification shall relate the security requirements to the architecture.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.9",
+          "title": "An explanation of how the security policy is translated into a technical solution through the TCB hardware, software, and firmware.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.1",
+          "title": "Classes C1, C2, and B1 products and their equivalent systems.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.1.1",
+              "title": "Description of how the TCB is modularized (if modular).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.2",
+              "title": "Description of all interfaces between the TCB modules (if modular).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.3",
+              "title": "Description of how the TCB protects itself from external interference or tampering.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.1.4",
+              "title": "Description of the resources which are controlled by the TCB.",
+              "content": "These resources may be a defined subset of the subjects and objects.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.2",
+          "title": "Classes C2 and B1 products and their equivalent systems.",
+          "content": "The Design Specification shall describe how the TCB isolates the resources to be protected so that they are subject to the access control and auditing requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.3",
+          "title": "Classes B1 products and their equivalent systems.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.3.1",
+              "title": "Identification and description of the TCB protection mechanisms.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.2",
+              "title": "An explanation to show that the TCB protection mechanisms satisfy the model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.3",
+              "title": "Description of how the TCB maintains process isolation through the provision of distinct address spaces under its control.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.4",
+          "title": "Classes B2 and above products and their equivalent systems.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.4.1",
+              "title": "Description of how the TCB is structured to facilitate testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.2",
+              "title": "Description of the different sets of privileges assigned to differing roles (e.g., users, administrators).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.3",
+              "title": "Description of the design techniques involved in restricting covert storage channels.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.4",
+              "title": "Description of the interfaces between the TCB modules.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.5",
+              "title": "Description of how the TCB complies with additional B2 architecture requirements.",
+              "content": "The following requirements shall be described:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.3.4.5.1",
+                  "title": "TCB maintenance of a domain for its own execution that protects it from external interference or tampering.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.4.5.2",
+                  "title": "TCB maintenance of process isolation through the provision of distinct address spaces under its control.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.4.5.3",
+                  "title": "Features in hardware, such as segmentation, used to support logically distinct storage objects with separate attributes (namely: readable, writable).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.4.5.4",
+                  "title": "TCB modules structured such that the principle of least privilege is enforced.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.4.5.5",
+                  "title": "TCB internally structured into well-defined largely independent modules.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.4.5.6",
+                  "title": "Effective use of available hardware by TCB to separate those elements that are protection-critical from those that are not.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "10.3.4.6",
+              "title": "Description of the trusted communication path between the TCB and user.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.5",
+          "title": "Classes B3 and above products and their equivalent systems.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.5.1",
+              "title": "Description of the design techniques involved in restricting covert timing channels.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.5.2",
+              "title": "Description of how the TCB complies with additional B3 architecture requirements.",
+              "content": "The following requirements shall be described:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.3.5.2.1",
+                  "title": "Complete, conceptually simple protection mechanism with precisely defined semantics.",
+                  "content": "The Design Specification shall describe how this mechanism plays a central role in enforcing the internal structuring of the TCB.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.5.2.2",
+                  "title": "Significant use of layering, abstraction, and data hiding by the TCB.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.5.2.3",
+                  "title": "Minimization of the complexity of the TCB, excluding the modules that are not protection-critical.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "10.3.5.3",
+              "title": "The Design Specification shall describe the following for trusted recovery:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.3.5.3.1",
+                  "title": "Anticipated classes of failures and discontinuities of operation handled by trusted recovery, automatically or using administrative procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.5.3.2",
+                  "title": "Trusted recovery philosophy (e.g., use of failure-atomicity in the design of TCB primitives, of non-atomic actions which allow recovery).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.5.3.3",
+                  "title": "Warnings concerning the 'unanticipated' (i.e., rare) failures that can't be handled in a routine manner.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "10.3.5.4",
+              "title": "Description of how the specific TCB protection mechanisms used ensuring trusted-recovery functions are available only to administrative users.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.6",
+          "title": "Class A1 products and their equivalent systems.",
+          "content": "The Design Specification shall describe the hardware, software, and firmware mechanisms not dealt with in the FTLS but strictly internal to the TCB (e.g., mapping registers, direct memory access I/O).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-AVCS-81344.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

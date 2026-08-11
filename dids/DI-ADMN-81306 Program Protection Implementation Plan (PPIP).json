@@ -1,0 +1,80 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ADMN-81306",
+  "slug": "di-admn-81306",
+  "title": "Program Protection Implementation Plan (PPIP)",
+  "summary": "The Program Protection Implementation Plan describes the contractor's methods for implementing the Government's Program Protection Plan and reporting protection inputs to the acquisition process.",
+  "approval_date": "1993-01-25",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "D6881",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "OASD/C3I/CI&SCM(ASFO)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "3.1 This plan outlines and defines the contractor's implementation of the Government developed Program Protection Plan (PPP). The PPIP is the principle communications means for validation and approval by the DoD or Component Program Manager of the specific methods used by the contractor to (1) identify the means chosen to implement the PPP at contractor, sub-contractor, vendor controlled locations and (2) provide protection inputs to the system acquisition process. The principle purpose is to provide a method to ensure effective and efficient protection of essential program information, technologies and systems regardless of their location.",
+  "application_interrelationship": "7.1 This DID contains the format and content preparation instructions for the Program Protection Implementation Plan (PPIP) resulting from the program protection requirements set forth in DoDI 5000.2, Part 5, Section F, \"Program Protection Planning and Technology Controls\". 7.2 This DID is applicable to all DoD acquisition programs regulated by DoDD 5000.1, DoDI 5000.2, and DoD 5000.2-M. 7.3 It is intended that all requirements contained herein shall apply to all applicable DoD acquisition programs through all program phases.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Content Requirements.",
+      "content": "The PPIP shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.1.1",
+          "title": "A section detailing the overall approach",
+          "content": "A section detailing the overall approach to the PPIP and the general methodologies which will be applied to the protection requirements indicated in the PPP.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.1.2",
+          "title": "A section(s) describing fully the activities and methodologies",
+          "content": "A section(s) describing fully the activities and methodologies planned to satisfy the PPP requirements and justification as to why these specific actions were chosen. Narratives, charts, diagrams, or matrixes shall be used to illustrate the methodology(s) chosen to establish effective and efficient countermeasures to program specific vulnerability(s). Explain these planned actions through all applicable milestones, at all contractor, sub-contractor or vendor controlled locations where the identified vulnerability(s) exist.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.1.3",
+          "title": "A list of documents which applies as directive or guidance",
+          "content": "A list of documents which applies as directive or guidance during execution of the PPIP. This list shall include pertinent legal, regulatory and other published or draft protection requirements applicable to the system under development. Program protection requirements and objectives shall be drawn from these documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.1.4",
+          "title": "Details of all costs and resource requirements",
+          "content": "Details of all costs and resource requirements necessary to effectively and efficiently implement the applicable PPP requirements shall be included in the PPIP.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ADMN-81306.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

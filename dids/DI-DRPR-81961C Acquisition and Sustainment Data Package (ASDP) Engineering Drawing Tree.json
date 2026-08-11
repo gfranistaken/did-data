@@ -1,0 +1,186 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-DRPR-81961C",
+  "slug": "di-drpr-81961c",
+  "title": "Acquisition and Sustainment Data Package (ASDP) Engineering Drawing Tree",
+  "summary": "The ASDP Engineering Drawing Tree identifies the interrelationships of engineering design data and associated lists that comprise the total engineering Technical Data Package (TDP) for each system, subsystem, and component configuration.",
+  "approval_date": "2022-06-29",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10328",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSC)",
+  "project_number": "DRPR-2022-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acquisition and Sustainment Data Package (ASDP) Engineering Drawing Tree identifies the interrelationships of engineering design data and associated lists that comprise the total engineering Technical Data Package (TDP) for each system, subsystem, and component configuration. The ASDP Engineering Drawing Tree also aids in the control and development of design data in the overall project.\na. This Data Item Description (DID) contains the format, content, and intended use information for an ASDP Engineering Drawing Tree resulting from the work task described by 5.14.5 of MIL-STD-31000, Technical Data Packages. (Copies of this document are available online at https://quicksearch.dla.mil.)\nb. This DID supersedes DI-DRPR-81961B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-DRPR-81961B"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.asme.org"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.acq.osd.mil/dpap/dars"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/DD"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/DD"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The ASDP Engineering Drawing Tree shall be structured in top-down breakdown order, down to the lowest component or piece part. Each artifact of design data included on the ASDP Engineering Drawing Tree shall be shown as an individual block or as an individual entry on the indentured list. Each authorized variation in configuration of the system, subsystem, and component shall be identified by a separate tree. The ASDP Engineering Drawing Tree shall be either in a block diagram format or an indentured parts list format.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Page one, or its equivalent, shall show the top level system block diagram, depicting the system's subsystems or major assemblies, and shall serve as an index for the detailed Engineering Drawing Tree that follows.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The ASDP Engineering Drawing Tree shall be in the native format.",
+          "content": "The Data Objects/Attributes and Associated Metadata (DOAM) listing shall be in a Microsoft Excel spreadsheet format in accordance with the template provided in the DOAM Specification attached to the contract. All data shall be in the English language. The final ASDP Engineering Drawing Tree shall have all outstanding changes incorporated into the data.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The ASDP Engineering Drawing Tree shall identify all system, subsystem, and component design data to be delivered as part of the TDP and the design data previously delivered that are applicable to the current program. The ASDP Engineering Drawing Tree shall clearly indicate Configuration Items (CIs) and Computer Software Configuration Items (CSCIs). The ASDP Engineering Drawing Tree shall also include design data as specified in 3.1.18 and 3.1.40 of MIL-STD-31000 to include: models, 3-Dimensional Intelligent (3Di) viewable, engineering drawings, associated lists, specifications, standards, quality assurance provisions, packaging details, commercial drawings, computer software documentation, and Vendor Item Control document (or specification control document). The ASDP Engineering Drawing Tree shall also identify test plans, test procedures, test reports, and material, to include indications of hazardous and safety critical items. The ASDP Engineering Drawing Tree shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Each block, or indenture item, shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Document or drawing (or equivalent) number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Title of the document or drawing (or equivalent).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Latest revision or revision date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Document or drawing (or equivalent) Commercial and Government Entity (CAGE) Code.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Work Breakdown Structure (WBS) reference in accordance with MIL-STD-881, Work Breakdown Structures for Defense Materiel Items. (Copies of this document are available online at https://quicksearch.dla.mil.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Reference designation, if required (see American Society of Mechanical Engineers (ASME) Y14.100, Engineering Drawing Practices, Engineering Product Definition and Related Documentation Practices, D-3.2 and D-11). (Copies of this document are available online at https://www.asme.org.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Reference Marking for Data Rights (i.e., U = Unlimited, L = Limited, GPR = Government Purpose Rights, etc.) in accordance with the Defense Federal Acquisition Regulation Supplement (DFARS), Part 252, Solicitation Provisions and Contract Clauses, 252.227-7013, Rights in Technical Data--Noncommercial Items; 252.227-7014, Rights in Noncommercial Computer Software and Noncommercial Computer Software Documentation; 252.227-7015, Technical Data--Commercial Items; and 252.227-7018, Rights In Noncommercial Technical Data And Computer Software--Small Business Innovation Research (SBIR). (Copies of this document are available online at https://www.acq.osd.mil/dpap/dars.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Distribution Statement (i.e., A, B, C, D, E, etc.) in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4. (Copies of this document are available online at https://www.esd.whs.mil/DD.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "The applicable classification marking, as necessary, in accordance with Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information. (Copies of this document are available online at https://www.esd.whs.mil/DD.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "DOAM.",
+          "content": "The completed ASDP Engineering Drawing Tree template, provided in the DOAM Specification attached to the contract, shall comply with the format requirements in 2. above so that it can be ingestible into a Product Lifecycle Management (PLM) solution to ensure proper tying, tracing, and linking. Any field not applicable shall be marked \"NA.\"",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-DRPR-81961C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

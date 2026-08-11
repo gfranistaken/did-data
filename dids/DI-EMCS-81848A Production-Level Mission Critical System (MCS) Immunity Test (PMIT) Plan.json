@@ -1,0 +1,230 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81848A",
+  "slug": "di-emcs-81848a",
+  "title": "Production-Level Mission Critical System (MCS) Immunity Test (PMIT) Plan",
+  "summary": "The PMIT Plan describes the test procedures, equipment, and data used to perform the Production-Level Mission Critical System Immunity Test required by MIL-STD-3023A for each aircraft mission critical system.",
+  "approval_date": "2023-03-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10409",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "EMCS-2023-005",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Production-Level Mission Critical System (MCS) Immunity Test (PMIT) Plan will be used to perform the PMIT described in detail in MIL-STD-3023A, High-Altitude Electromagnetic Pulse (HEMP) Protection for Military Aircraft. DI-EMCS-81848, Production-Level Mission Critical System (MCS) Immunity Test (PMIT) Plan, is hereby cancelled and superseded by DI-EMCS-81848A. Information to be acquired through the test plan for the PMIT will include the detailed test procedures, equipment, and other related data.\nThis DID must be prepared for each aircraft MCS.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described by Appendix C of MIL-STD-3023A, and is applicable to the acquisition of military systems, equipment, and facilities.\nThis DID supersedes DI-EMCS-81848.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-EMCS-81848"
+  ],
+  "related_dids": [
+    "DI-EMCS-81853"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract. Classification of the Production-Level Mission Critical System (MCS) Immunity Test (PMIT) Plan shall be determined using any relevant aircraft- or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable for the test plan (comma-separated values (CSV) is the preferred data format).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Production-Level Mission Critical System (MCS) Immunity Test (PMIT) Plan shall be IAW the test plan format recommended in Appendix C of MIL-STD-3023A and is specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The Production-Level Mission Critical System (MCS) Immunity Test (PMIT) Plan shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, contract data requirements list (CDRL) number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification of a qualified representative of the procuring activity for the test plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Test procedures and equipment",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction section.",
+              "content": "This section shall contain a brief overview of the PMIT.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Test equipment description section.",
+              "content": "This section shall contain, at a minimum, a table summarizing the test equipment providing manufacturers and part numbers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "PMIT test procedure section.",
+              "content": "This section shall contain a detailed discussion of the test procedures and, at a minimum, shall include the following information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "A description of the PMIT pulser and its calibration into a 100-ohm load to demonstrate a 10-A capability.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "If the pulser does not have a 10-A current limit capability, then a description of how the injected current will be monitored is required, along with a description of how not to exceed 10-A.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "The 10-A limit can be tailored to a higher level for externally mounted MCS, if warranted.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "A description of the MCS test points.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "These test points should be consistent with the MIL-STD-461 CS116 (or equivalent) immunity test points (see DI-EMCS-81853 for a description of that test)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Every port on the MCS and its associated cabling is to be tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.5",
+              "title": "Test chronology.",
+              "content": "This section includes the sequence of events.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "A description of the MCS condition.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.6.1",
+                  "title": "Power-on and other equipment or representative loads connected to the MCS",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.2",
+                  "title": "The test points used for the PMIT",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.7",
+              "title": "The method for determining that the PMIT did not damage the MCS.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.7.1",
+                  "title": "For example, if the MCS operated normally when powered on after the PMIT",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.2",
+                  "title": "Criteria for determining normal operation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.3",
+                  "title": "A full operational test of the MCS is not required",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.4",
+                  "title": "Note damage is a critical characteristic when applying the results of this PMIT test procedure to MIL-STD-1916",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81848A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

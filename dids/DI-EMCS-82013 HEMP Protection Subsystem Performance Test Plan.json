@@ -1,0 +1,218 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-82013",
+  "slug": "di-emcs-82013",
+  "title": "HEMP Protection Subsystem Performance Test Plan",
+  "summary": "Describes the methods of test analysis and inspection used by the contractor to verify compliance with HEMP interface and performance requirements of a ship during engineering development, enabling government understanding and duplication of verification methods.",
+  "approval_date": "2016-04-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9607",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "DTRA-DS",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The HEMP Protection Subsystem (HPS) Performance Testing Plan describes the methods of test analysis and inspection used by the contractor to verify compliance with the HEMP interface and performance requirements of a ship during the engineering development phase. The Plan provides the means for the government to understand and duplicate verification methods used by the contractor to verify HEMP protection requirements.\n1. This DID contains the format, content, and intended use information for the data product resulting from the work tasks described in Appendix B and Appendix C of MIL-STD-4023 and is intended for ship systems. It is normally applied to the System Design and Development phase of a program, but it can be used in any phase.\n2. This DID is related to DI-EMCS-82014 and DI-EMCS-82012.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-EMCS-82014",
+    "DI-EMCS-82012"
+  ],
+  "references": [
+    {
+      "label": "DTIC Applicable",
+      "url": "http://www.dtic.mil/dtic/submit/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issuance of the documents cited herein, including their approval dates and any applicable amendments, notices, or revisions shall be as cited in the ASSIST Online at the time of the solicitation, or for non-ASSIST listed documents, as stated herein. HEMP Protection Subsystem Performance Test Plan classification shall be determined using DTRA Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities (U) available by mail request to ATTN: J9/NT-NTSA/Rooney M., Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201 Fort Belvoir, Virginia 22060-6201 and any relevant system specific classification guides.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Plan shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Plan shall describe the test plan for Electromagnetic Barrier Point-of-Entry testing for each requirement specified in the contract for the ship being developed (see MIL-STD-4023 section 5 and Appendix C).",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary information.",
+          "content": "The Plan shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Introduction.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "System description, including any pertinent information regarding HEMP protection performance testing issues.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Statement of any assumptions and limitations associated with HEMP protection performance testing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "General objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Scope.",
+              "content": "General description of overall test requirements matrix being used to demonstrate compliance with requirements, including the relative role of analyses, tests and inspections.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Methods of verification.",
+              "content": "Abstracts of the procedures used for verifying each HEMP protection performance requirement listed in 3.2 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors affecting the verification procedures or test performance, such as facilities, resources, safety, reports, and security.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed information.",
+          "content": "For protective elements testing a single test plan shall be prepared. The test plan shall contain the following information: a comprehensive, system-specific test plan and detailed test procedures for protective elements performance testing. These may be combined in a single document, or separate documents may be used. The document(s) shall contain the following information: a. A statement of test objectives and criteria to be met to achieve these objectives. b. Ship system and subsystem identification and descriptions (including drawings of the subsystems showing the locations of all Points of Entry, equipment layout inside the electromagnetic barriers, external cable interconnections; and a description of the HEMP protection measures). c. Data acquisition equipment descriptions (including manufacturer, model and serial numbers, characteristics, detailed calibration procedures and calibration traceability documentation). d. Detailed Test Procedures including system, subsystem, and circuit configuration requirements; test configuration diagrams; test point descriptions; step-by-step procedures, and test point locations. e. Any deviations from the requirements of MIL-STD-4023, Appendix C. f. Data management (including data quality control procedures, data acceptability criteria, annotation and preservation of data records, and pass/fail criteria). g. Safety, including electromagnetic radiation and electrical shock hazards. h. Test participants. i. Schedule, including priority of measurements.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Pre-test analysis section.",
+              "content": "Pre-test analyses of Low Level Continuous Wave Immersion (LLCWI) and/or Pulse Current Injection (PCI) test data including calculations of threat responses from LLCWI and/or PCI testing is required for testing nonlinear PPDs, as required (see DI-EMCS-82012, Hardness Allocation Report).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Post-test data analysis",
+              "content": "Post-test data analysis will include development of a corrective plan and, if applicable, the Hardness Allocation Report (DI-EMCS-82012) will be updated.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Elements of HPS performance compliance testing.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Models, techniques, and tools used for analysis and predictions and their specific application to this system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Step-by-step test procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Determination of as-built hardness margins.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "Selection of critical circuits, functions, and subsystems.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "Pass/fail criteria and methods of quantifying and evaluating failures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.6",
+                  "title": "Description of test articles, test facilities, test equipment (including instrumentation on and off the system), support equipment, and calibration techniques.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.7",
+                  "title": "Method of simulating operational performance when actual operation is impractical.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Other information sources.",
+          "content": "When other information sources contain data required by this DID, these sources shall be referenced rather than be duplicated within this report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-82013.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

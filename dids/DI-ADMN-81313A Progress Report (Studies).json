@@ -1,0 +1,121 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ADMN-81313A",
+  "slug": "di-admn-81313a",
+  "title": "Progress Report (Studies)",
+  "summary": "The Progress Report (Studies) DID summarizes the status of studies conducted by a contractor during the reporting period, per work described in MIL-STD-847.",
+  "approval_date": "2006-11-08",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "7630",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "None",
+  "office_of_primary_responsibility": "NS/DA3",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "To summarize the status of studies conducted by the contractor during the reporting period.\n\nThis Data Item Description (DID) contains the format and content preparation instructions for the data resulting from the work task described by MIL-STD-847.\n\nThis DID can be used in conjunction with DI-FNCL-80331A, DI-MGMT-80507B.\n\nThis DID supersedes DI-ADMN-81313.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ADMN-81313"
+  ],
+  "related_dids": [
+    "DI-FNCL-80331A",
+    "DI-MGMT-80507B"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the current issue of the DODISS at the time of the solicitation; for non DODISS-listed documents, as stated herein.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The report shall be prepared as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "It shall be typewritten or otherwise duplicated in non-fading ink on 8 1/2 x 11\" paper.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The report shall include:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The work accomplished on the project during the reporting period, including theoretical studies conducted, results of these studies, and how they apply to the project.",
+          "content": "This discussion shall be broken down by functional component in the same manner as is done on program charts or other reports required.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A summary of the status of the project including statement(s) as to whether the work is on schedule and if not, efforts planned to meet the schedule.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Other information which may cause a significant change in the work schedule.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Graphs, drawings, photographs, and other graphic material showing results/status of the study for the period of time covered by the report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Recommendations and proposals.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Summary of future plans of the project.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ADMN-81313A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

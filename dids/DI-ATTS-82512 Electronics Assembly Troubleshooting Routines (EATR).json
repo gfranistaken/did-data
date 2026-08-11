@@ -1,0 +1,204 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ATTS-82512",
+  "slug": "di-atts-82512",
+  "title": "Electronics Assembly Troubleshooting Routines (EATR)",
+  "summary": "The technical data for prime systems and equipment (PS/E) circuit card assemblies (CCAs) and electronic modules (EMs) provides information to develop Electronics Assembly Troubleshooting Routines (EATR) for testing and identifying faulty CCA/EM components to the lowest replaceable unit.",
+  "approval_date": "2026-01-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10614",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "ATTS-2025-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The technical data for prime systems and equipment (PS/E) circuit card assemblies (CCAs) and electronic modules (EMs) provides the necessary information to develop Electronics Assembly Troubleshooting Routines (EATR) that serve as computerized representations of electronic circuitry and used with specialized Module Test and Repair (MTR) equipment or Advanced Diagnostic Test System (ADTS) to test and identify faulty CCA/EM components to the lowest replaceable unit (LRU). The process is followed with component replacement using the Miniature/Microminiature (2M) electronics repair. The Government will use this data to acquire CCA/EM technical data for the development of EATR and not intended for remanufacturing CCAs/EMs produced by the Original Equipment Manufacturer (OEM) or acquiring equipment manufacturer.\na. OPNAVINST 4700.7N, Maintenance Policy for Navy Ships, chapter 10, paragraph 1002.5 cites the 2M/MTR program as the process for expanding fleet electronics repair and diagnostics capability for CCAs/EMs at all maintenance levels; and paragraph 1003.4 directs Program Executive Offices (PEOs), Direct Program Reporting Managers (DPRMs), and Ship Program Managers (SPMs) to incorporate to the maximum extent possible the use of organizational-level and intermediate-level 2M/MTR in Integrated Logistics Support (ILS) planning, system and ship class maintenance, and training plans. OPNAVINST 4790.13B, Maintenance of Naval Electronic Equipment, paragraph 5.b. extends the application of 2M/MTR processes to all depot-level repairable (DLR) CCAs/EMs and selected consumable CCAs/EMs.\nb. The use of technical data for EATR applies in the following circumstances:\n- Delay in receipt of replacement CCA/EM impacts a critical/mission essential PS/E LRU.\n- Platform deployments require readily available CCAs/EMs using self-sustainment.\n- High demand CCAs/EMs are frequently cited in Casualty Reports (CASREPs).\n- CCAs/EMs are not coded DLR assets and are impacted by Diminishing Manufacturing Sources and Material Shortages (DMSMS).\n- CCAs/EMs without OEM or depot-level support results in deficient Ready for Issue (RFI) inventory, \"A\" condition assets.\n- CCAs/EMs of legacy PS/E having a low mean time between failure (MTBF).\n- CCAs/EMs with prolonged lead times in production or procurement.\n- CCAs or EMs with an excessive initial requisition or replacement cost.\nc. This DID may be used in conjunction with DID DI-SESS-80776B, Technical Data Package.\nd. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\ne. This DID is not applicable for PS/E or ancillary equipment under the cognizance of the Naval Nuclear Propulsion Program (NAVSEA 08) or Strategic Systems Programs (SSP). This DID is not applicable or intended to prompt the submission of classified technical data. The current 2M/MTR processes do not support EATR for classified PS/E or ancillary equipment.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-80776B"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The EATR shall be in contractor's format with following media elements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Information is easily viewable by the government",
+          "content": "Portable Document Format (PDF) is preferred.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Schematics and Assembly Drawings",
+          "content": "as monochrome graphics compatible for viewing with Bitmap (BMP), Portable Network Graphic (PNG), or Joint Photographic Experts Group (JPEG/JPG). Schematics components identified with a component designator.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Bill of Materials",
+          "content": "as Microsoft Excel spreadsheet, listing the LRU, components and designators, manufacturer's reference/part numbers, National Stock Number (NSN) when assigned, Commercial and Government Entity (CAGE) code, and hierarchical association to the PS/E's assembly/subassembly.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Component Reference Designators/Reference Symbol Numbers (RSNs)",
+          "content": "to enable positive identification of CCA/EM components and correlation of listings to illustrations/pictorials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Electrical Connections/Netlist",
+          "content": "as depiction or text document identifying connection points between CCA/EM components.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The EATR shall include the following:\na. Schematics and Assembly Drawings.\nb. Bill of Materials (BOM).\nc. Component Reference Designators/RSNs.\nd. Electrical Connections/Netlist.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3.1",
+      "title": "Computer-aided design (CAD) and CCA/EM source code/scripts.",
+      "content": "Information shall include data or text files generated during the design of CCAs/EMs and test program sets, including CAD, database, spreadsheet, and word processing files. The software used to generate data or text files shall be identified and include notification when software special license or usage rights apply.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3.2",
+      "title": "Unique CCAs/EMs.",
+      "content": "When CCAs/EMs are not fully described by government-furnished information (GFI), manufacturer's data, or other commercial-furnished information, description shall include the use, function, and modes of operation:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.2.1",
+          "title": "Components of unique CCA/EM that are derived",
+          "content": "from commonly available government or commercial acquisition sources shall include a description of the manufacturer's data prior to programming the component's features, including:\n- Read-only memory (ROM).\n- Programmable micro-circuits, including Field Programmable Gate Arrays (FPGAs), Programmable Array Logic (PAL), Programmable Logic Arrays (PLAs), and Programmable Logic Devices (PLDs).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2.2",
+          "title": "Components of unique CCA/EM that are not derived",
+          "content": "from commonly available acquisition sources shall include the component's minimum, maximum, nominal parameters and characteristics in sufficient detail to provide a complete understanding of the CCA's/EM's operation/performance, typical parameters include:\n- Ambient operational and storage temperature.\n- Supply voltage and current.\n- Power consumption.\n- Input voltage, current, capacitance, loading, and voltage breakdown.\n- Output voltage, current, capacitance, drive, and voltage breakdown.\n- Noise immunity (rejection and DC and AC margin).\n- Rise and fall times.\n- Propagation delay time.\n- Switching speed and transfer (input versus output characteristics).\n- Operational frequency range.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3.3",
+      "title": "Title page.",
+      "content": "PS/E and activity information shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.3.1",
+          "title": "PS/E's type designation",
+          "content": "per the Joint Electronics Type Designation System (JETDS) or commercial identifier if JETDS is not assigned, and noun name.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3.2",
+          "title": "Current PS/E modification number/designator.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3.3",
+          "title": "List of recommended EATR candidate(s), LRUs (CCAs/EMs).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3.4",
+          "title": "Presenting activity's title and address.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3.5",
+          "title": "Contact information of the activity's technical and logistics representatives",
+          "content": "including name, phone number, email address, and office code or position title.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3.4",
+      "title": "Revision summary.",
+      "content": "Titled \"EATR Revision Summary\" and shall be updated to list all CCA/EM revisions that occurred after modification of original of EATR data, including columns identifying:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.4.1",
+          "title": "Revision number, date of change",
+          "content": "and date when EATR data was originally provided by the presenting activity or manufacturer, noted as \"Original Issue\".",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4.2",
+          "title": "Reason and approving authority.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4.3",
+          "title": "Description of change(s)",
+          "content": "with a listing of affected pages, paragraphs, tables, and figures.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ATTS-82512.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

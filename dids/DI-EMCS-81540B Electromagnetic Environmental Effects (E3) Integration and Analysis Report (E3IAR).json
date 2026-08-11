@@ -1,0 +1,171 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-EMCS-81540B",
+  "slug": "di-emcs-81540b",
+  "title": "Electromagnetic Environmental Effects (E3) Integration and Analysis Report (E3IAR)",
+  "summary": "The E3IAR describes implementation of E3 interface and performance requirements into system hardware and software and provides the means for the government to evaluate E3 compliance with requirements throughout the life cycle of the system.",
+  "approval_date": "2010-07-25",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "9154",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The E3IAR describes implementation of E3 interface and performance requirements into system hardware and software and provides the means for the government to evaluate E3 compliance with requirements throughout the life cycle of the system.\na. This DID contains the format and content preparation instructions for data resulting from the work task described by 4.1 of MIL-STD-464 and is intended for airborne, sea, space, and ground systems, including associated ordnance. It is normally applied to the System Design and Development phase of a program, but it can be used in any phase.\nb. This DID is related to DI-EMCS-81541B and DI-EMCS-81542B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-EMCS-81541B",
+    "DI-EMCS-81542B"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, or revisions, shall be as cited in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The E3IAR shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The E3IAR shall describe the application of the E3 requirements and translation of these requirements into the system software and hardware to achieve a cost-effective system. The E3IAR shall address the overall integration of the various requirements into a single system design which complies with the interface and performance requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary information.",
+          "content": "The E3IAR shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Introduction, background.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "System description.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Statement of the electromagnetic environments for the system and their impact on the item being developed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Statement of any assumptions used in developing the design.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Body.",
+              "content": "Synopsis of each of the elements contained in section 3.2 below.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed information.",
+          "content": "E3 technical areas. The E3IAR shall provide specific technical descriptions for each of the following E3 technical areas that are included in contractually imposed requirements. For each requirement, the analysis report shall document the information in the subsequent subsection.\na. Margins.\nb. Intra-system electromagnetic compatibility, including where applicable: ship hull intermodulation interference, shipboard internal electromagnetic environments, and multipaction.\nc. External radio frequency electromagnetic environments.\nd. High power microwave.\ne. Lightning.\nf. Electromagnetic pulse.\ng. Subsystem and equipment electromagnetic interference, including where applicable: nondevelopmental items and commercial items, and shipboard direct current magnetic field environments.\nh. Electrostatic charge control, including where applicable: vertical lift and in-flight refueling, precipitation static, and ordnance subsystems.\ni. Electromagnetic radiation hazards, including where applicable: hazards of electromagnetic radiation to personnel, hazards of electromagnetic radiation to fuel, and hazards of electromagnetic radiation to ordnance.\nj. Life cycle E3 hardness.\nk. Electrical bonding, including where applicable: power current return path, antenna installations bonding, mechanical interfaces, and shock, fault, and ignitable vapor protection.\nl. External grounds, including where applicable: aircraft grounding jacks and servicing and maintenance and equipment grounds.\nm. TEMPEST.\nn. Emission control.\no. Electromagnetic spectrum compatibility.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Document.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "E3 Concept of Operation",
+                  "content": "how the system is operated when exposed to the environment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Specific environmental requirement points",
+                  "content": "how the general environments in MIL-STD-464 are interpreted and tailored to the specific system operational scenarios.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Flow down methodology of the environment to subsystems, including specific tailoring of MIL-STD-461 requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "General methodology for verifying the requirement, such as analyses, bench tests, component-piece part tests, subsystem tests, full system tests, and inspections.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Specific application of margins for that requirement.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Other information sources.",
+          "content": "When other information sources contain data required by this DID, these sources shall be referenced rather than being duplicated within this report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-EMCS-81540B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

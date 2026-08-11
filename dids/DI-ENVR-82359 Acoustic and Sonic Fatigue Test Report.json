@@ -1,0 +1,122 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-82359",
+  "slug": "di-envr-82359",
+  "title": "Acoustic and Sonic Fatigue Test Report",
+  "summary": "The Acoustic and Sonic Fatigue Test Report documents measurement surveys of acoustic source characteristics and system-level test results used to verify and update acoustic and sonic fatigue analyses and service life predictions.",
+  "approval_date": "2021-09-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10268",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "ENVR-2021-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acoustic and Sonic Fatigue Test Report contains the data results of measurement surveys defining the acoustic source characteristics and environment of the final air vehicle configuration. It also includes the system level test results that are used to update the acoustic and sonic fatigue analysis assumptions and service life predictions. The principal use of this test report is to verify and update the acoustic and sonic fatigue analyses.\na. This Data Item Description (DID) is applicable to any contract for which an air vehicle is under development, a modification is made, or an Environmental Criteria Document (ECD) is required.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in section 5 of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP). (Copies of this document are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/DD"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/DD"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Acoustic and Sonic Fatigue Test Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Acoustic and Sonic Fatigue Test Report shall include the test data that defines the complete acoustic source characteristics and environment of the system for all operating conditions. The report shall also include descriptions and locations of the instrumentation used in the acoustics tests, as well as a discussion of the test data reduction methods. The report shall provide descriptions of all acoustics tests and document the results for special problem areas, such as: cavity flows, pods, open doors, turbulent flow regions, unsteady aero impacts, compressibility effects, and areas such as fuselage sidewalls exposed to propeller noise.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The report shall be based on results from surveys and tests and shall contain the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Measurement results collected during ground and flight tests",
+              "content": "required to verify the predicted noise and vibration source characteristics and environment, including: overall noise levels in one or one-third octave band levels for all areas that are subjected to overall noise levels (ref. 0.0002 microbars) above 140 decibel (dB) for structure and 130 dB for equipment, crew, and personnel locations; continuous noise spectra presented for discrete frequency noise components for frequencies up to 10,000 hertz (Hz) or higher, if equipment has known sensitives to higher frequencies; pertinent information, such as: the air vehicle's altitude, airspeed, thrust or power settings, and atmospheric conditions for ground measurements; and contour plots of the overall sound pressure levels (OASPL) acting on the air vehicle and noise level spectra for internal and external zones.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Descriptions of the sonic fatigue tests used to validate service life assumptions",
+              "content": "including: descriptions of the test methods employed for both component and full scale tests, the test chambers and fixtures, the date and location of tests, the test conditions, the test durations, the types of noise sources employed and their characteristics, the test specimens and test specimen preparation, and test spectrums; techniques for arranging test specimens and descriptions of the dynamical properties of the representative components, methods of data interpretation, and the predicted and measured fatigue lives of the various specimens; and methods used to accelerate testing to a representative equivalent service life and their validation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Descriptions of the tests used to demonstrate the effectiveness of the noise control methods employed",
+              "content": "and of the testing used to determine the transmission loss and absorption coefficients of soundproofing.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Distribution Statement (i.e., A, B, C, D, E, etc.)",
+          "content": "in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4. (Copies of this document are available online at www.esd.whs.mil/DD.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The applicable classification marking, as necessary",
+          "content": "in accordance with Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information. (Copies of this document are available online at www.esd.whs.mil/DD.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-82359.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

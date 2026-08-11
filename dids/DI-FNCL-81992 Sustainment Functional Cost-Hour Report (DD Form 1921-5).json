@@ -1,0 +1,1051 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FNCL-81992",
+  "slug": "di-fncl-81992",
+  "title": "Sustainment Functional Cost-Hour Report (DD Form 1921-5)",
+  "summary": "The Sustainment Functional Cost-Hour Report (DD Form 1921-5) is used by contractors to submit actual and proposed direct and indirect recurring and nonrecurring cost and hours data for sustainment contracts to support Cost and Software Data Reporting.",
+  "approval_date": "2015-09-21",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9573",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "CAPE",
+  "project_number": "FNCL-2015-001",
+  "applicable_forms": "DD Form 1921-5 (16 hours)",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "For background and detailed requirements related to Contractor Cost Data Reporting (CCDR), refer to DoD 5000.04-M-1, \"Cost and Software Data Reporting (CSDR) Manual.\"\n\nThe Cost and Software Data Reporting (CSDR) is the DoD system for collecting actual costs and software data and related business data. The resulting database serves as the primary contract cost and software data (CSD) database for most DoD resource analysis efforts, including cost database development, applied cost estimating, cost research, program reviews, analysis of alternatives (AoA), and life cycle cost estimates.\n\nDD Form 1921-5, \"Sustainment Functional Cost-Hour Report,\" is used by contractors to submit: (1) direct and indirect actual cost data on both a recurring and nonrecurring basis on Government contracts and (2) proposed direct and indirect cost data in response to Government solicitations according to Defense Federal Acquisition Regulations Supplement (DFARS) sections 234.7100, 234.7101, 242.503-2, 252.234-7003, and 252.234-7004.\n\nThe DD Form 1921-5 applies to the total contract level of sustainment contracts. Sustainment includes, but is not limited to: Interim Contractor Support (ICS), Contractor Logistics Support (CLS), Performance Based Logistics (PBL), and traditional transaction-based support.  The DD Form 1921-5 is directed at selected WBS elements where more detailed cost data are needed, as defined by the DDCA-Approved CSDR contract or subcontract plan. It contains a functional breakout (e.g., engineering, program management, maintenance operations and materials) and a cost element breakout (e.g., direct labor and material) within functional categories. The form applies to the total contract level and specifically to WBS elements of high risk, high technical interest, or high value.\n\nThis Data Item Description (DID) summarizes the form and provides instructions to support the data and frequency requirements specified in the contract for CSDR reporting.  DD Form 1921-5 is related to other CSDR forms, including DD Form 1921, \"Cost Data Summary Report\" (DI-FNCL-81565).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-FNCL-81565"
+  ],
+  "references": [
+    {
+      "label": "available at",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "available at",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "available at",
+      "url": "http://cade.osd.mil"
+    },
+    {
+      "label": "available at",
+      "url": "http://cade.osd.mil"
+    },
+    {
+      "label": "available at",
+      "url": "http://cade.osd.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in ASSIST at the time of the solicitation; or, for non-ASSIST documents, as stated herein.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "References.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "DoD Instruction 5000.02",
+          "content": "\"Operation of the Defense Acquisition System,\" [current version], available at http://www.dtic.mil/whs/directives/. This instruction contains mandatory CCDR requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "DoD 5000.4-M",
+          "content": "\"Cost Analysis Guidance and Procedures,\" [current version], available at http://www.dtic.mil/whs/directives/.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "DoD 5000.04-M-1",
+          "content": "\"Cost and Software Data Reporting (CSDR) Manual,\" [current version], available at http://cade.osd.mil.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Operating and Support Cost-Estimating Guide",
+          "content": "[current version], available at http://cade.osd.mil.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "MIL-STD-881C",
+          "content": "\"Work Breakdown Structure for Defense Materiel Items,\" [current version], available at https://assist.dla.mil.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "DD Form 2794",
+          "content": "\"Cost and Software Data Reporting Plan,\" [current version], available at http://cade.osd.mil. Commonly referred to as the CSDR Plan, a completed DD Form 2794 must be approved by the Office of the Secretary of Defense (OSD) Deputy Director, Cost Assessment (DDCA).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format.",
+      "content": "Use DD Form 1921-5 and the detailed preparation instructions below. A separate DD Form 1921-5 report must be completed for each WBS Reporting Element for which an \"X\" is marked in Item 13e (Column \"DD 1921-5\") of the OSD DDCA-approved contract or subcontract CSDR Plan. Omit the other WBS Reporting Elements. All required DD Form 1921-5s must be submitted together in a single stand-alone Excel-compatible file with each DD Form 1921-5 page on a separate tab and as a DCARC approved Extensible Markup Language (XML) file to the DCARC's secure Web site using the CSDR Submit-Review System. The XML file can be generated automatically from the Excel-compatible file (or vice versa) with the DCARC's cPET software tool. Uploading reports requires the use of either a DoD Common Access Card (CAC) or a DoD-approved External Certification Authority (ECA) certificate.  See the CADE website for cPet and certification instructions.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Implementation.",
+      "content": "Contractors are responsible for implementing CCDR requirements on all subcontracts that meet the reporting thresholds (see DoD Instruction 5000.02, Table 4, \"Regulatory Contract Reporting Requirements\").",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "5",
+      "title": "General Instructions.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "5.1",
+          "title": "These instructions apply to this DID",
+          "content": "and to other related CCDR DIDs that share common items and related instructions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.2",
+          "title": "All reporting must be based on",
+          "content": "the OSD DDCA approved CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.3",
+          "title": "Report on work performed by the",
+          "content": "prime contractor/associate contractor at cost (i.e., before the summary elements such as Reporting Contractor General & Administrative (G&A), Undistributed Budget, Management Reserve, Facilities Capital Cost of Money, and Profit/Loss or Fee). Report on work performed by all subcontractors at price (i.e., including subcontractor Profit/Loss or Fee). Report all currency throughout this form in thousands of U.S. dollars, rounded to the nearest tenth. Report all hours in thousands, rounded to the nearest tenth. Enter \"0\" (zero) for items with null amounts; do not leave items blank.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.4",
+          "title": "Mark the security classification of each",
+          "content": "report as \"Unclassified\" in the space provided on the upper left and lower right of the form. However, if the report is classified, contact the DCARC for special processing instructions. Please note: \"Proprietary\" is not an official DoD security classification, and should not be marked as such in this space. If the use of a proprietary disclosure statement is required, it should be inserted in the document's footer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.5",
+          "title": "Three types of reports may be",
+          "content": "prepared under this DID: Initial Reports, Interim Reports, and Final Reports.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "5.5.1",
+              "title": "An Initial Report is a preliminary",
+              "content": "report used to verify the contractor's capability to prepare and submit the report in accordance with the DID and the OSD DDCA approved CSDR Plan. Initial reports are only required on an exception basis as determined by the Cost Working Group Integrated Product Team (CWIPT) and approved by the OSD DDCA. Typically, reports will only be required when the contractor has not previously demonstrated the capability to produce the required report(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.5.2",
+              "title": "An Interim Report is any report",
+              "content": "other than the Initial Report that is prepared before submission of the Final Report. The first Interim Report is required only after contract definitization. The as-of date for the first Interim Report is the last day of the 12th month following contract award, or the last day of the third month following contract definitization, whichever is later. The due date is 60 days following the as-of date. All other Interim Reports are determined by the CWIPT and approved by the OSD DDCA.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.5.3",
+              "title": "Final Reports are intended to capture",
+              "content": "all or substantially all actual contract costs. A Final Report is required as of the last day of the month when two conditions have been satisfied: (1) the final end item has been delivered and accepted by the government (e.g., as evidenced by a completed DD 250) or higher tier contractor in the case of a subcontractor and (2) 95% or more of total contract costs have been incurred. The final due date is 60 days following the as-of date. In some cases, no cost contract extensions may be required to allow preparation and submission of the Final Report. In the case of a support or sustainment contract which has no deliverable end item, or a contract which is expected to incur significant cost after delivery of the last end item, the contract period of performance may be used in determining the timing of the final CCD report.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "5.6",
+          "title": "Entries for common data elements (i.e.,",
+          "content": "metadata, quantities, dollars, and hours) used across the DD series of reports for a specific contract must agree as appropriate.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.7",
+          "title": "Contractors shall report costs based upon",
+          "content": "the direct, overhead, and G&A categories established in their Cost Accounting Standards Disclosure statements. These include the functional and cost element categories included in the DoD form and related DID requirement, as appropriate. If the categories in the Cost Accounting Standards Disclosure statements differ from the cost definitions in this and related CCDR DIDs, the contractor shall note it in the Remarks sections of reports. Contractors shall also note in the Remarks section any accounting changes that occurred in any of the reported categories since the last report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.8",
+          "title": "Contractors shall report all costs associated",
+          "content": "with the contract, including Advance Procurement, Long Lead Materials, Multiyear Procurement, Inter-Division or Inter-Company Work Orders (IWOs), Foreign Military Sales (FMS), Warranty, etc. Costs should not be omitted based contract CLIN structure or definition.  If IWO costs exceed $50M, separate CSDR reporting will be required.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Specific Instructions: Metadata.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "6.1",
+          "title": "Item 1. Major Program.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.1.1",
+              "title": "Subitem a. Name:",
+              "content": "Enter the name given to the Major Defense Acquisition Program (MDAP) or Major Automated Information Systems (MAIS) as shown in the DDCA approved CSDR plan.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.1.2",
+              "title": "Subitem b. Phase/Milestone:",
+              "content": "Check the box for the appropriate Phase/Milestone which is being reported: Pre-A (Material Solution Analysis Phase), A (Technology Development Phase), B (Engineering and Manufacturing Development Phase), CLRIP (Production and Deployment Phase - Low-Rate Initial Production), C-FRP (Production and Deployment Phase - Full-Rate Production), or O&S (Operations and Support Phase).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.2",
+          "title": "Item 2. Prime Mission Product:",
+          "content": "Enter the most current official military designation for the end item as specified by the appropriate classification standard (e.g., DoD 4120.15-L, \"Military Designation of Military Aerospace Vehicles,\" would specify \"F-35\" for the Joint Strike Fighter). For contract (or subcontract) CSDR Plans, the end item being reported may have a different designation than the total program (e.g., the preparer would enter \"AN/APG-81 Radar\" for the F-35 Radar contract CSDR Plan). If the end item does not have a military designation, enter the type of product being developed or procured, for example, radar.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.3",
+          "title": "Item 3. Reporting Organization Type.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.3.1",
+              "title": "For a prime or associate contractor, check",
+              "content": "\"Prime/Associate Contractor.\" (See the \"Definitions\" section of this DID.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.3.2",
+              "title": "For a direct-reporting subcontractor, check",
+              "content": "\"Direct-Reporting Subcontractor.\" (See the \"Definitions\" section of this DID.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.3.3",
+              "title": "For a Government Organization, check",
+              "content": "\"Government.\"",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.4",
+          "title": "Item 4. Name/Address.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.4.1",
+              "title": "Subitem a. Performing Organization:",
+              "content": "Enter the name and address (including ZIP code) of the reporting organization actually performing the work.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.4.2",
+              "title": "Subitem b. Division:",
+              "content": "Enter the reporting organization's division name and address (including ZIP code) if different than the performing organization.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.5",
+          "title": "Item 5. Approved Plan Number.",
+          "content": "Enter the Approved Plan Number from Item 10 of the current OSD DDCA-approved contract or subcontract CSDR Plan that authorized the collection of data for this report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.6",
+          "title": "Item 6. Customer (Direct-Reporting Subcontractor Use Only).",
+          "content": "Enter the name of the prime contractor for whom the work on the subcontract is being performed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.7",
+          "title": "Item 7. Type Action.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.7.1",
+              "title": "Subitem a. Contract No. and Subitem b. Latest Modification:",
+              "content": "Enter the assigned prime contract number the prime contractor has with the Government customer, as well as the number of the latest contract modification. This requirement is identical for both reporting contractors and reporting subcontractors.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.2",
+              "title": "Subitem c. Solicitation No.:",
+              "content": "If the data are in response to a solicitation in accordance with DFARS sections 234.7101, 252.234-7003, and 252.234-7004, enter the solicitation number.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.3",
+              "title": "Subitem d. Name:",
+              "content": "Enter the common reference name for the prime contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.4",
+              "title": "Subitem e. Task Order/Delivery Order/Lot No.:",
+              "content": "If the contract contains a task order(s), delivery order(s), and/or lot number(s) being reported on for which the CSDR Plan has reporting requirements, enter each as \"TO,\" \"DO,\" or \"Lot\" followed by a blank space and the applicable number.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.8",
+          "title": "Item 8. Period of Performance.",
+          "content": "Enter the start and end dates for the data being reported (contract, lot, delivery order, or task). Enter the appropriate numeric data for the year, month, and day. For example, December 31, 2004, would be shown as 20041231.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.9",
+          "title": "Item 9. Report Cycle.",
+          "content": "Check \"Initial,\" \"Interim,\" or \"Final\" report, as appropriate (see General Instruction 1e. above).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.10",
+          "title": "Item 10. Submission Number.",
+          "content": "Enter the submission number for the report provided in Item 14a of the current OSD DDCA-approved contract or subcontract CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.11",
+          "title": "Item 11. Resubmission Number.",
+          "content": "A resubmission occurs if prior submission(s) for the submission event were officially rejected with a memo signed by the DCARC Director. Enter \"0\" (zero) for original submission. If the report is a resubmission, enter the resubmission number, starting with \"1\" for the first resubmission, \"2\" for the second resubmission, and so on.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.12",
+          "title": "Item 12. Report As Of.",
+          "content": "Enter the appropriate numeric data for the year, month, and last day of the reporting period. For example, December 31, 2004, would be shown as 20041231. The report as of date must be consistent with Item 14d of the OSD DDCA approved contract or subcontract CSDR Plan. For CSDR Plans that include event-driven milestones for reporting purposes, any changes in the event date require appropriate adjustments to the \"As of date\" reported in Item 12 and to the OSD DDCA-approved CSDR Plan. In these situations, the Government Program Office, in coordination with the Contractor, must submit a request for change in the event-driven date for reporting through the CSDR Submit-Review system for DCARC approval before the date reflected in the OSD DDCA-approved CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.13",
+          "title": "Items 13-17. Point of Contact.",
+          "content": "Enter the following information for the person to contact for answers to any questions about entries on DD Form 1921-5: Last Name, First Name, and Middle Initial (Item 13); Department (Item 14); Telephone Number, including Area Code (Item 15); E-Mail Address (Item 16), and Date Prepared (Item 17). For Item 17, enter the date the report was prepared in the appropriate numeric format. For example, December 31, 2004, would be shown as 20041231.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Specific Instructions: Reported Data.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "7.1",
+          "title": "Item 18. WBS Element Code.",
+          "content": "A separate DD Form 1921-5 report must be completed for each WBS Reporting Element for which an \"X\" is marked in Item 13e (Column \"DD 1921-5\") of the OSD DDCA-approved contract or subcontract CSDR Plan. Enter the corresponding WBS Element Code identically as presented in Item 11b of the OSD DDCA-approved contract or subcontract CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.2",
+          "title": "Item 19. WBS Reporting Element.",
+          "content": "Enter the WBS Reporting Element name that corresponds to the entry in Item 18 identically as presented in Item 12 (column \"WBS Reporting Elements\") of the OSD DDCA-approved contract or subcontract CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.3",
+          "title": "Item 20. Number of Units.",
+          "content": "For the WBS Element Code reported in Item 18, enter the number of units to date and the number of units at completion as described below. Reported quantities must be consistent with the quantities reported in the DD Form 1921.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.3.1",
+              "title": "To Date.",
+              "content": "Report the estimated cumulative number of units to date. The following EVMS-based approach is the preferred standard method for calculating these units. Material costs should be treated in accordance with the company's EVMS system description. If the contractor must allocate recurring/nonrecurring costs for the reported Costs Incurred to Date and At Completion, follow the same allocation methodology for this unit calculation. Report the result as the cumulative number of units to date for each hardware item. This number should be expressed to the nearest tenth of a decimal (e.g., 4.3 units). The standard EVM based method is as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.3.1.1",
+                  "title": "Isolate all control accounts for work",
+                  "content": "packages that contain the recurring labor and material cost associated with manufacture of hardware items. Only the recurring costs should be isolated. Use the \"as of date\" for the CSDR report being prepared.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.3.1.2",
+                  "title": "Calculate number of units completed to",
+                  "content": "date based on the earned value:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "7.3.1.2.1",
+                      "title": "Sum the Budgeted Cost for Work",
+                      "content": "Performed (BCWP) for the isolated control accounts/work packages.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.2",
+                      "title": "Sum the Budget at Complete (BAC)",
+                      "content": "for the same control accounts.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.3",
+                      "title": "Calculate the fraction by dividing the",
+                      "content": "results from step (a) by the result from step (b).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.4",
+                      "title": "Multiply the fraction from step (c)",
+                      "content": "times the number of items to be manufactured.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.5",
+                      "title": "Report the number resulting from step",
+                      "content": "(d) to the nearest tenth of a decimal as the cumulative number of units to date for each hardware item.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "7.3.1.3",
+                  "title": "Reporting contractors may use an alternative",
+                  "content": "method provided it is analytically based, consistently applied over time, and can be shown to produce a reasonably accurate and reliable calculation for estimating purposes. If an alternative calculation method is used, the methodology must be explained in Item 22 (\"Remarks\").",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.3.2",
+              "title": "At Completion.",
+              "content": "Report the number of units at completion.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.3.2.1",
+                  "title": "For Production Contracts.",
+                  "content": "Enter the number of units to be procured or produced under this contract. The breakout of units between Government deliveries and internal contractor use is not required on production contract reporting unless the CWIPT, in coordination with the contractor, identifies and justifies the need for purposes of estimating costs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.3.2.2",
+                  "title": "For Sustainment Contracts.",
+                  "content": "Enter the number of units to be maintained and/or procured under this contract. The CWIPT will define the units to be reported, e.g., end items, major components. The breakout of units between Government deliveries and internal contractor use is not required on sustainment contract reporting unless the CWIPT, in coordination with the contractor, identifies and justifies the need for purposes of estimating costs.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "7.4",
+          "title": "Item 21. Appropriation.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.4.1",
+              "title": "Check the appropriate box to indicate",
+              "content": "the type of appropriation - Research, Development, Test and Evaluation (RDT&E), Procurement, or Operation and Maintenance (O&M) - used to fund the entire contract or the particular contract line item being reported on. The appropriation type must agree with the type specified in Item 9c of the CSDR contract plan, DD Form 2794.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "7.4.2",
+              "title": "If the data are in response",
+              "content": "to a solicitation in accordance with DFARS sections 234.7101, 252.234-7003, and 252.234-7004, leave Item 21 blank, unless otherwise specified in the solicitation.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "7.5",
+          "title": "Column A. Costs and Hours Incurred To Date - Nonrecurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of nonrecurring activities. For each WBS Element Code reported, enter actual nonrecurring costs and hours incurred to date for each of the Functional Data Elements. For each WBS Element Code, the cost data reported under \"Costs and Hours Incurred to Date-Nonrecurring\" (Column A) Line 23 must match the \"Costs Incurred to Date-Nonrecurring\" (Column D) for the WBS Reporting Element on the DD Form 1921 report. Cost data reported must follow WBS parent-child relationship rules (i.e., WBS parent elements must be equal to the sum of their children elements, even if some of those children elements were not selected for DD 1921-5 reporting).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.6",
+          "title": "Column B. Costs and Hours Incurred To Date - Recurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of recurring activities. For each WBS Element Code reported, enter actual recurring costs and hours incurred to date for each of the Functional Data Elements. For each WBS Element Code, the cost data reported under \"Costs and Hours Incurred to Date-Recurring\" (Column B) Line 23 must match the \"Costs Incurred to Date-Recurring\" (Column E) for the WBS Reporting Element on the DD Form 1921 report. Cost data reported must follow WBS parent-child relationship rules (i.e., WBS parent elements must be equal to the sum of their children elements, even if some of those children elements were not selected for DD 1921-5 reporting).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.7",
+          "title": "Column C. Costs and Hours Incurred To Date - Total.",
+          "content": "For each WBS Element Code reported, enter the sum of Columns A and B for each of the Functional Data Elements. For each WBS Element Code, the cost data reported under \"Costs and Hours Incurred to Date-Total\" (Column C) Line 23 must match the \"Costs Incurred to Date-Total\" (Column F) for the WBS Reporting Element on the DD Form 1921 report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.8",
+          "title": "Column D. Costs and Hours Incurred At Completion - Nonrecurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of nonrecurring activities. For each WBS Element Code reported, enter current estimated nonrecurring costs and hours at completion for each of the Functional Data Elements. For each WBS Element Code, the cost data reported under \"Costs and Hours Incurred at Completion-Nonrecurring\" (Column D) Line 23 must match the \"Costs Incurred at Completion-Nonrecurring\" reported in Column H for the WBS Reporting Element on the DD Form 1921 report. Cost data reported must follow WBS parent-child relationship rules (i.e., WBS parent elements must be equal to the sum of their children elements, even if some of those children elements were not selected for DD 1921-5 reporting).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.9",
+          "title": "Column E. Costs and Hours Incurred At Completion - Recurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of recurring activities. For each WBS Element Code reported, enter current estimated recurring costs and hours at completion for each of the Functional Data Elements. For each WBS Element Code, the cost data reported under \"Costs and Hours Incurred at Completion-Recurring\" (Column E) must match the \"Costs Incurred at Completion-Recurring\" reported (Column I) for the WBS Reporting Element on the DD Form 1921 report. Cost data reported must follow WBS parent-child relationship rules (i.e., WBS parent elements must be equal to sum of children elements, even if some of those children elements were not selected for DD 1921-5 reporting).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.10",
+          "title": "Column F. Costs and Hours Incurred At Completion - Total.",
+          "content": "For each WBS Element Code reported, enter the sum of Columns D and E for each of the Functional Data Elements. For each WBS Element Code, the cost data reported under \"Costs and Hours Incurred At Completion-Total\" (Column F) Line 23 must match the \"Costs Incurred At Completion-Total\" reported (Column J) for the WBS Reporting Element on the DD Form 1921 report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.11",
+          "title": "Sustainment Functional Data Elements. Lines 1 through 23.",
+          "content": "Enter actual incurred costs or hours to date and at completion, or a zero (rather than a blank) when costs or hours have not been incurred to date for the reporting period and/or when costs or hours have been estimated to be zero at completion. Amounts reported for a parent WBS element must include the cost of all related children and are not limited to just those children selected for DD Form 1921-5 reporting. Parent-child relationships on DD Form 1921-5 must be consistent with the data reported on DD Form 1921, \"Cost Data Summary Report.\" Note: If units are reported to be greater than zero in Item 20 (Number of Units at Completion), recurring hours and/or costs must be reported in at least one of the following lines: 1, 2, 9, 10, 16, 17, 18.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.11.1",
+              "title": "Engineering:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.11.1.1",
+                  "title": "Line 1. Direct Engineering Labor Hours.",
+                  "content": "Enter direct labor hours related to the Engineering function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.1.2",
+                  "title": "Line 2. Direct Engineering Labor Dollars.",
+                  "content": "Enter direct labor dollars related to the Engineering function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.1.3",
+                  "title": "Line 3. Engineering Overhead Dollars.",
+                  "content": "Enter overhead dollars related to the Engineering function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.1.4",
+                  "title": "Line 4. Total Engineering Dollars.",
+                  "content": "Enter the sum of Lines 2 and 3.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.11.2",
+              "title": "Program Management:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.11.2.1",
+                  "title": "Line 5. Direct Program Management Labor Hours.",
+                  "content": "Enter direct labor hours related to the Program Management function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.2.2",
+                  "title": "Line 6. Direct Program Management Labor Dollars.",
+                  "content": "Enter direct labor dollars related to the Program Management function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.2.3",
+                  "title": "Line 7. Program Management Overhead Dollars.",
+                  "content": "Enter overhead dollars related to the Program Management function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.2.4",
+                  "title": "Line 8. Total Program Management Dollars.",
+                  "content": "Enter the sum of Lines 5, 6, and 7.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.11.3",
+              "title": "Maintenance Operations:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.11.3.1",
+                  "title": "Line 9. Touch Maintenance Labor Hours.",
+                  "content": "Enter direct labor hours related to Touch Maintenance for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.3.2",
+                  "title": "Line 10. Touch Maintenance Labor Dollars.",
+                  "content": "Enter direct labor dollars related to the Touch Maintenance function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.3.3",
+                  "title": "Line 11. Touch Maintenance Overhead Dollars.",
+                  "content": "Enter overhead dollars related to the Touch Maintenance function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.3.4",
+                  "title": "Line 12. Support Maintenance Labor Hours.",
+                  "content": "Enter direct labor dollars related to the Support Maintenance function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.3.5",
+                  "title": "Line 13. Support Maintenance Labor Dollars.",
+                  "content": "Enter direct labor dollars related to the Support Maintenance function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.3.6",
+                  "title": "Line 14. Support Maintenance Overhead Dollars.",
+                  "content": "Enter overhead dollars related to the Support Maintenance function for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.3.7",
+                  "title": "Line 15. Total Maintenance Operations Dollars.",
+                  "content": "Enter the sum of Lines 9, 10, 11, 12, 13, and 14.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.11.4",
+              "title": "Materials:",
+              "content": "Materials include both the following categories and Inter-company Work Orders (IWO). IWO dollars are classified into one of the other Material categories based upon the nature or characteristics of the products or services provided.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.11.4.1",
+                  "title": "Line 16. Raw Materials Dollars.",
+                  "content": "Enter the price paid for raw materials for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.4.2",
+                  "title": "Line 17. Purchased Parts Dollars.",
+                  "content": "Enter the price paid for purchased parts for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.4.3",
+                  "title": "Line 18. Purchased Equipment Dollars.",
+                  "content": "Enter the price paid for purchased equipment for the CRS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.4.4",
+                  "title": "Line 19. Material Handling Overhead Dollars.",
+                  "content": "Enter the cost in terms of dollars related to ordering, receiving, inspecting, and controlling material until it is requisitioned for use.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.4.5",
+                  "title": "Line 20. Total Direct-Reporting Subcontractor Dollars.",
+                  "content": "Enter the total price of all the direct-reporting subcontracts. In Item 22 (\"Remarks\"), list each direct-reporting subcontractor company name, city, state, and the corresponding subcontract prices.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.11.4.6",
+                  "title": "Line 21. Total Material Dollars.",
+                  "content": "Enter the sum of Lines 16 through 20.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.11.5",
+              "title": "Other Costs:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.11.5.1",
+                  "title": "Line 22. Other Costs Not Shown Elsewhere (Specify in Remarks).",
+                  "content": "Enter all costs for the CRS Reporting Element not assigned to the functional categories (Engineering, program management, Maintenance Operations, and Materials). If the total of this category is greater than or equal to 10% of the total cost for this CRS Reporting Element, provide a descriptive list of costs which comprise this category in Item 23 (\"Remarks\").",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.11.6",
+              "title": "Summary:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.11.6.1",
+                  "title": "Line 23. Total Cost (Direct and Overhead).",
+                  "content": "Enter the sum of Lines 4, 8, 15, 21 and 22. The totals for Columns A, B, C, D, E, and F must match the amounts reported for each corresponding CRS element on DD Form 1921, \"Cost Data Summary Report,\" Columns D, E, F, H, I, and J, respectively.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "7.12",
+          "title": "Item 22: Remarks:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.12.1",
+              "title": "Note any relevant information that could",
+              "content": "be used in the interpretation of the data provided in this report.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "7.12.2",
+              "title": "Include the following (if applicable):",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.12.2.1",
+                  "title": "For contractors that have direct-reporting",
+                  "content": "subcontractors, identify each direct reporting subcontractor, including any government entity, by name, city, state, and subcontract price.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.2",
+                  "title": "The cost composition details of Line",
+                  "content": "20 (\"Other Costs Not Shown Elsewhere\") if the total amount of dollars shown in Line 20 is greater than or equal to 10% of the total cost of the WBS Reporting Element.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Definitions:",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "8.1",
+          "title": "Associate Contractor.",
+          "content": "Any prime contractor whose contract with the Government requires joint participation with other prime contractors to accomplish the Government's requirement. Joint participation involves the potential sharing of information, data, technical knowledge, expertise, and resources essential to the integration of the common requirement. Such participation is intended to ensure the greatest degree of cooperation to meet the terms of the contract in satisfying the common requirement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.2",
+          "title": "At Completion.",
+          "content": "The expected total cost when the defined scope of work has been completed. For contracts that are underway but not yet completed, this translates to the sum of costs incurred to date plus the estimate of costs (direct and indirect) for work remaining. For contracts that are complete, costs incurred to date are equal to the costs incurred at completion.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.3",
+          "title": "Costs Incurred.",
+          "content": "Costs identified through the use of the accrual method of accounting and reporting or otherwise actually paid. Such costs include the cost of direct labor, direct materials, and direct services identified with and necessary for the performance of a contract, as well as all properly allocated and allowable indirect costs shown in the contractor's records.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.4",
+          "title": "Direct Labor Dollars.",
+          "content": "Dollars that can be specifically and consistently identified or assigned to a particular cost objective (e.g., work order).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.5",
+          "title": "Direct Labor Hours.",
+          "content": "Direct labor hours are hours that can be specifically and consistently identified or assigned to a particular cost objective (e.g., work order).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.6",
+          "title": "Direct-Reporting Subcontractor.",
+          "content": "A subcontractor that is contractually required to submit CSDRs directly to the Government as required by the OSD DDCA-approved CSDR Plan. In some instances the subcontractor may be a government entity such as in public/private partnerships between government and industry for depot activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.7",
+          "title": "Engineering.",
+          "content": "A functional category that includes the effort and costs expended in the scientific exploration, study, analysis, design, development, evaluation, and redesign of a specific task or WBS element. Engineering also includes preparation of specifications, drawings, parts lists, and wiring diagrams; technical coordination between engineering, program management, and/or maintenance; coordination of suppliers; planning for and scheduling of tests; analysis of test results; reduction of data; and preparation of reports. It also includes the determination and specification of requirements for reliability, maintainability, and quality control.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.8",
+          "title": "Final Report.",
+          "content": "A DD Form 1921-5 submitted when the contractual effort is entirely or substantially complete.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.9",
+          "title": "Indirect Costs.",
+          "content": "Costs that cannot be identified specifically with or traced to a single cost objective in an economically feasible way.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.10",
+          "title": "Initial Report.",
+          "content": "A preliminary report used to verify the contractor's capability to prepare and submit the report in accordance with the DID and the OSD DDCA-approved CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.11",
+          "title": "Inter-company Work Order (IWO).",
+          "content": "A contractual arrangement between a parent company and a related entity or wholly owned subsidiary to provide supplies or services. For CSDR reporting purposes, IWOs are classified based on the characteristics of the supplies or services rendered. For example, if a company placed a purchase order/subcontract with a separate division within the parent company that manufactured avionics equipment, this effort would then be classified as \"Purchased Equipment.\" If instead a company placed a purchase order/subcontract with a separate division within the parent company that manufactured fasteners, then the effort would be classified as \"Purchased Parts.\" Alternatively, if a company manufactured an item of equipment and placed a purchase order/subcontract with a separate division within the parent company to provide training services on how to use and maintain that equipment, then the effort would be classified as \"Other Costs Not Shown Elsewhere.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.12",
+          "title": "Interim Report.",
+          "content": "Any report other than the Initial Report that is prepared before submission of a Final Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.13",
+          "title": "Materials.",
+          "content": "A functional cost category that includes the basic elements, constituents, or substances of which something is composed. These elements are incorporated into the finished product or end-item or are consumed in the course of producing the finished product or end-item. Materials includes direct costs for raw materials, purchased parts, purchased equipment, and direct-reporting subcontracts, as well as indirect costs for material handling/overhead.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.14",
+          "title": "Material Handling Overhead.",
+          "content": "A cost element of the Materials functional category. It comprises the portion of indirect costs attributable to procured or subcontracted products, including the cost of purchasing, expediting, and storing materials, parts, equipment, and assemblies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.15",
+          "title": "Other Costs Not Shown Elsewhere.",
+          "content": "Costs not assigned to the Engineering, Program Management, Maintenance Operations, or Materials functional cost categories are included in Other Costs Not Shown Elsewhere. This category includes other direct costs, security, royalty, license fees, transportation, preservation, packaging, and applicable Federal excise tax.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.16",
+          "title": "Overhead (All Functions).",
+          "content": "Overhead consists of all indirect costs, except general and administrative expenses, that are properly chargeable for the specified WBS Reporting Element. For example, Engineering Overhead includes the cost of directing and supporting all Engineering-organization-related activities that cannot be assigned to specific contracts. Engineering Overhead typically includes supervision, policy and procedures, training, administration, and so on.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.17",
+          "title": "Prime Contract.",
+          "content": "A contractual arrangement between a prime contractor and the Government that creates a direct legal relationship between the prime contractor and the Government.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.18",
+          "title": "Prime Contractor.",
+          "content": "For the purposes of CSDR reporting, a prime contractor is any contractor that has a direct contract with the Government. The name and address of the prime contractor is provided in Section A of the contract (Standard Form 26, Item 7). Any other contractor associated with the contract is considered to be an associate or a subcontractor.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.19",
+          "title": "Production Engineering.",
+          "content": "The application of design and analysis techniques to produce a specified product. Included are the functions of planning, specifying, and coordinating the application of required resources; performing analyses of producibility and production operations, processes, and systems; applying new manufacturing methods, tooling, and equipment; controlling the introduction of engineering changes; and employing cost-control techniques.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.20",
+          "title": "Program Management.",
+          "content": "A functional category that includes the performance of business and administrative activities (planning, organizing, directing, coordinating, controlling, and approval actions) designated to accomplish objectives associated with the specific WBS element.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.21",
+          "title": "Purchased Parts.",
+          "content": "A cost element of the Materials functional category that includes items that are discrete components used in an upper-level assembly. Purchased parts are distinguished from purchased equipment by their relatively lower cost and complexity. Examples include fasteners, clips, clamps, nuts, bolts, washers, nails, screws, valves, and plumbing and electrical fittings and fixtures.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.22",
+          "title": "Purchased Equipment.",
+          "content": "A cost element of the Materials functional category that includes assembled items and subassemblies designed to be incorporated with other components into a finished product. Purchased equipment is distinguished from purchased parts by its relatively higher cost and complexity. Examples include structural components such as wings, horizontal and vertical tails, and fuselage; avionics equipment such as radios, inertial navigation systems, radar systems, and electronic countermeasures; and hydraulic, pneumatic, and electrical subassemblies such as landing gear, canopy actuation systems, and wire harnesses.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.23",
+          "title": "Raw Materials.",
+          "content": "A cost element of the Materials functional category that includes items that are crude, semi-fabricated, or partially processed materials or components that have not yet been made into a definite functional item or configuration. Examples include consumable items for fabrication, castings, forgings, pressings, sheet metal, plate, tubing, bars, rebar, rods, wires, cables, fabrics, conduits, coolants, and deicing fluids.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.24",
+          "title": "Recurring and Nonrecurring Costs.",
+          "content": "The following guidelines for distinguishing between recurring and nonrecurring costs apply to all reporting contractors (i.e., prime contractors, associate contractors, subcontractors, and lower-tier subcontractors) when the definitions have not been included in the OSD DDCA Approved CSDR plan. If the OSD DDCA approved CSDR plan has defined recurring and nonrecurring costs, the contractor is required to use those definitions. While these guidelines are useful for establishing general boundaries, time reported on recurring and nonrecurring tasks should be reported as work is performed. For example, technical management tasks should be reported as recurring and nonrecurring to reflect the work actually being done rather than aggregated and reported as nonrecurring. Also, test activities that will routinely continue into production should be recorded as recurring costs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "8.24.1",
+              "title": "Recurring Costs.",
+              "content": "Repetitive elements of development, investment, and sustainment costs that may vary with the quantity being produced or maintained, irrespective of system life cycle phase and appropriation. Recurring cost categories include procurement, production and maintenance activities; acceptance testing; maintenance and support equipment, training, and data; test articles built to an operational configuration; and certain elements of Systems Engineering and Program Management (SE/PM). Examples of procurement and production activities include fabrication; assembly; procurement of raw materials, purchased parts and equipment, and major and minor subcontracts; integration; installation and checkout; and quality control/assurance (inspection efforts). Examples of recurring maintenance and support activities include product and tooling maintenance (to restore a product/tool to its original condition); production of support and training equipment, initial spares, reparable items and simulators; reproduction of maintenance/technical data; and courseware updates. Recurring test articles are only those units built to a completed operational configuration, including full-scale, fatigue-static, and avionics equipment test articles. SE/PM activities occur throughout the system life cycle and are supportive in nature; as such, these costs take on the characteristics of the underlying activities being performed. Examples of recurring SE/PM activities include sustaining engineering, logistics support, planning, organizing, monitoring, and reporting activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "8.24.2",
+              "title": "Nonrecurring Costs.",
+              "content": "Non-repetitive elements of development, investment, and sustainment costs that generally do not vary with the quantity being produced or maintained, irrespective of system life cycle phase and appropriation. Nonrecurring cost categories include Product Design and Development (PD&D) activities; System Test and Evaluation (ST&E); tooling; pre-production or pre-maintenance activities; design and development of support equipment, training, and data; and certain elements of Systems Engineering and Program Management (SE/PM). Examples of PD&D activities include preliminary, critical, prototype and test article design activities, and software design and maintenance, regardless of whether the purpose is to correct deficiencies or add capabilities. (Note, however, that the Cost Working-group Integrated Product Team can require the contractor to classify software maintenance costs as recurring if a determination is made that such costs are significant for cost-estimating purposes and can reasonably be accounted for by the contractor). Examples of ST&E activities include test articles built for testing purposes only (i.e., units that are not production-representative) such as test stands, wind tunnel models, and bench and coupon test articles; structural development, static, fatigue, software, and ballistics testing; stress analysis; flight, ground, or sea testing of system properties; redesign as a result of testing; and retesting efforts. Examples of nonrecurring tooling activities include special test equipment, special tooling, procurement of initial and rate tooling, tool replacement (with the exact same tool), and tool modification (to accommodate product configuration changes). Examples of pre-production activities include production planning and production line or maintenance line set-up. Examples of nonrecurring support equipment, training, and data activities include initial equipment design and test efforts, test program sets, initial courseware development, and simulator development. SE/PM activities occur throughout the system life cycle and are supportive in nature; as such, these costs take on the characteristics of the underlying activities being performed. Examples of nonrecurring SE/PM activities include system development and design, testing, planning, organizing, and monitoring activities.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "8.25",
+          "title": "Subcontract.",
+          "content": "A contractual arrangement between a prime contractor and one or more other contractors in which the Government has no direct legal relationship. In a subcontract, a direct legal relationship exists only between the prime contractor and one or more other contractors. A subcontract includes any agreement, purchase order, or contractual instrument other than a prime contract calling for supplies or services required for the performance of one or more prime contracts. It usually covers procurement of major components or subsystems that require the subcontractor(s) to do extensive design, development, engineering, and testing to meet a prime contractor's procurement specifications.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.26",
+          "title": "Support Maintenance.",
+          "content": "A cost element of the Maintenance functional category that includes the effort and costs expended in the administrative support, oversight and/or supervision of touch maintenance activities.  Examples include administrative support for maintainers and supervisors who are responsible for overseeing touch maintenance operations but do not physically perform maintenance operations themselves.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.27",
+          "title": "Touch Maintenance.",
+          "content": "A cost element of the Maintenance functional category.  Touch maintenance includes the effort and costs expended in hands-on maintenance actions associated with the specific WBS element.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FNCL-81992.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

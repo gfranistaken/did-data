@@ -1,0 +1,1076 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-80966A",
+  "slug": "di-facr-80966a",
+  "title": "Training Facilities Report (TFR)",
+  "summary": "The Training Facilities Report (TFR) defines and identifies criteria and requirements necessary to design and construct or modify a facility in which the trainer and associated equipment will be installed, operated, and maintained.",
+  "approval_date": "2022-01-26",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10298",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "FACR-2022-001",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training Facilities Report (TFR) defines and identifies criteria and requirements necessary to design and construct or modify a facility in which the trainer and associated equipment will be installed, operated, and maintained. The report identifies contractor and Government responsibilities and the period in which the responsibilities will be completed. It also includes the trainer installation instructions.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. It is not intended that all the requirements contained herein be applied to every program. Any data requirement contained in this DID is subject to deletion via Government tailoring.\nc. This DID supersedes DI-FACR-80966.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-FACR-80966"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "copies available online at",
+      "url": "https://www.niso.org/publications/z39.18-2005-r2010"
+    },
+    {
+      "label": "DoDM 5200.01V2 is available online at",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "DoDI 5200.48 is available online at",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "the DoD CUI Registry is available at",
+      "url": "https://www.dodcui.mil/Home/DoD-CUI-Registry/"
+    },
+    {
+      "label": "DoDI 5230.24 is available at",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "copies of these documents are available at",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "DoDD 5230.25 is available online at",
+      "url": "https://www.esd.whs.mil/DD/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Document.",
+      "content": "The applicable issue of the documents cited herein, including the approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The format of the TFR shall be as specified in ANSI Z39.18-2005 (R2010), chapter 2, Reference Publications, sections 2.1 and 2.2, page 3 and chapter 5, Components of Reports - Details, pages 10-29 (copies available online at https://www.niso.org/publications/z39.18-2005-r2010).",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Title page.",
+          "content": "The title page shall be as specified in ANSI Z39.18-2005 and shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Device title",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Device number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Device location, if applicable",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Name and address of contractor",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.5",
+              "title": "Date of report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.6",
+              "title": "Contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.7",
+              "title": "Contract Data Requirements List (CDRL) name and number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.8",
+              "title": "The name and address of the acquisition agency the report is being prepared for",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.9",
+              "title": "Change number, when applicable",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.10",
+              "title": "Security classification or CUI marking, in accordance with Department of Defense Manual (DoDM) 5200.01V2, DoD Information Security Program: Marking of Information",
+              "content": "(DoDM 5200.01V2 is available online at: https://www.esd.whs.mil/DD/). CUI markings shall be included (when applicable) in accordance with DoD Instruction (DoDI) 5200.48, Controlled Unclassified Information (CUI) and the DoD CUI Registry. (DoDI 5200.48 is available online at: https://www.esd.whs.mil/DD/ and the DoD CUI Registry is available at: https://www.dodcui.mil/Home/DoD-CUI-Registry/).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.11",
+              "title": "Distribution statement, in accordance with DoDI 5230.24, Distribution Statements on Technical Documents",
+              "content": "(DoDI 5230.24 is available at: https://www.esd.whs.mil/DD/).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.12",
+              "title": "Revision number/letter",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.13",
+              "title": "Destruction notice, in accordance with DoDI 5230.24 for unclassified documents, and DoDM 5200.01V3, Information Security Program: Protection of Classified Information, for classified documents",
+              "content": "(copies of these documents are available at https://www.esd.whs.mil/DD/).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.14",
+              "title": "Disclosure statement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.15",
+              "title": "Export control warning, in accordance with DoD Directive (DoDD) 5230.25, Withholding of Unclassified Technical Data from Public Disclosure,",
+              "content": "(DoDD 5230.25 is available online at: https://www.esd.whs.mil/DD/).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.16",
+              "title": "CUI designation indicator block",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.17",
+              "title": "Authority source",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Revisions List.",
+          "content": "A complete record of revisions shall be listed in calendar order. The revision record shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Change level.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Date of change.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Reason for change and affected pages.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "Change bar in the margins of each affected page to show revisions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of the TFR shall describe the requirements and basic restraints/constraints imposed upon the development of an architectural and engineering (A&E) design for a facility in support of a training device/system. The TFR shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "The Introduction shall provide the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "References.",
+              "content": "A listing of all publications, standards, and specifications utilized in the TFR report.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Device Description.",
+              "content": "A brief description of the training device and its intended use.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Location.",
+              "content": "A general description of the location of the facility where the training device will be housed including the building number and room number, name of the military installation, city, and state.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Purpose.",
+              "content": "A brief description of the purpose of the report.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Specific Requirements.",
+          "content": "This portion of the report shall delineate the following specific facility requirements. In developing these requirements, the report shall address whether the device is going to be installed into an existing building or whether the device will require a new building. Requirements shall be tailored to the facility constraints (i.e., facility plans and specifications), wherever possible. Where not possible, the report shall clearly describe facility modifications and additions as required. In each of the following sections of the report identify the responsible part (device contractor or government) for performing each of the facility requirements.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Civil and Site Plan.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Include a site plan to scale (provide a scale bar in each drawing page or model), that shows:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.1.1",
+                      "title": "Access requirements, special width requirements, and exterior access requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.2",
+                      "title": "Required relationships between outside items (i.e., cooling tower, air conditioning chiller, parking curb, loading docks, etc.).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.3",
+                      "title": "Clearances around equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.4",
+                      "title": "Parking, unloading, staging area and paving.",
+                      "content": "Indicate area size required.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Include the following civil requirements:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.2.1",
+                      "title": "Access roads.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.2.1.2.1.1",
+                          "title": "Axle or wheel loads on roads",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.2.1.2",
+                          "title": "Special lane widths of roads",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.2.1.3",
+                          "title": "Turn and weight provisions for special vehicles",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.2.1.4",
+                          "title": "Jack loads, transfer requirements",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.2.1.5",
+                          "title": "Grades on roads",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.2.1.2.2",
+                      "title": "Fencing and security",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.2.3",
+                      "title": "Power line obstruction",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Architectural.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Include a detailed floor plan, to scale (provide scale bar in each drawing page or model) of the facility and equipment layout to show:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.1.1",
+                      "title": "Dimensional requirements Width x Length x Height (W x L x H) of floor space required for the trainer, space requirements for storage of spare parts and work area for off-line maintenance support.",
+                      "content": "All dimensions shall be indicated both in imperial (feet/inches) and in metric (meters) values.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.1.2",
+                      "title": "Doors, widths and heights of entrances.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.1.3",
+                      "title": "Clear-space requirements (no column intrusion allowed).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.1.4",
+                      "title": "Location of electrical and mechanical equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.1.5",
+                      "title": "Minimum equipment clearance requirements (back, front, sides, top).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Provide a table listing each item of equipment keyed to the facility layout.",
+                  "content": "Include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.2.1",
+                      "title": "Equipment name",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.2.2",
+                      "title": "Quantity required",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.2.3",
+                      "title": "Length, width, height of each item of equipment",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.2.4",
+                      "title": "Weight of each item of equipment; a total of equipment weight by individual space",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.2.5",
+                      "title": "Facility provided equipment (i.e., power conditioner, raised flooring, chilled water lines, etc.)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Include the following architectural aspects:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.3.1",
+                      "title": "Provide a table listing the associated height, width and length of the following areas:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.2.2.3.1.1",
+                          "title": "Device area(s)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.2.3.1.2",
+                          "title": "Spare parts storage",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.2.3.1.3",
+                          "title": "Maintenance support",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.2.2.3.2",
+                      "title": "Raised flooring",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.2.2.3.2.1",
+                          "title": "Height",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.2.3.2.2",
+                          "title": "Required cut-outs (if cut-outs are the Government's responsibility, cut-outs shall be dimensioned from existing facility items (i.e., walls, columns, etc.) are to be the responsibility of the device contractor).",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.2.2.3.3",
+                      "title": "Types and sizes of special doors required",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.4",
+                      "title": "Floor level requirements, floor drainage, required sloping and floor finishing",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.5",
+                      "title": "Window requirements, if any",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.6",
+                      "title": "Controlling dimension constraints (i.e., motion envelope)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.7",
+                      "title": "Cable and hydraulic trench requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.8",
+                      "title": "Acoustical noise suppression requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.9",
+                      "title": "Device contractor shall provide recommended raised floor loading design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Structural.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Provide a plan view, to scale (provide scale bar on drawing or model), showing the location and dimensions of special foundations, pads, trenches, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Include the following structural aspects:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.3.2.1",
+                      "title": "Floor loading (static loads, dynamic loads, and moments)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.2.3.2.1.1",
+                          "title": "Foundation and footing specifications to include recommended size Width x Length x Depth (W x L x D) and concrete strength requirements.",
+                          "content": "All dimensions shall be indicated both in imperial (feet/inches) and in metric (meters) values.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.3.2.1.2",
+                          "title": "Trench details (W x L x D) and cover plate",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.3.2.1.3",
+                          "title": "Vibration and isolation requirements",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.3.2.1.4",
+                          "title": "Dimensions of trainer concrete pad with distance from all surrounding walls",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.3.2.1.5",
+                          "title": "Seismic requirements based on location code and regulation(s)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.2.3.2.2",
+                      "title": "Elevators, access ramps, personnel ladders, catwalk structures",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.2.3",
+                      "title": "Crane and hoist location and loads, if any",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Mechanical.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Include the following mechanical aspects in tabular form indicating requirements for each piece of equipment and space:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.4.1.1",
+                      "title": "Heating, Ventilation, and Air Conditioning (HVAC) environmental limits including operating, non-operating and storage temperature, relative humidity and ventilation for: equipment, maintenance area, and spare parts storage.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.4.1.2",
+                      "title": "Equipment cooling requirements, including: heat dissipation (British Thermal Unit/Hour (BTU/Hr)); specialized cooling; air flow; in-out temperatures; and relative humidity of supply air.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.4.1.3",
+                      "title": "Personnel heat loads to be dissipated",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Plumbing and drainage requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "Piping",
+                  "content": "All piping and associated valves and connectors (chilled water, compressed air, propane, etc.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.4",
+                  "title": "Fire protection (detection and suppression)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.5",
+                  "title": "Disposal of environmentally hazardous material",
+                  "content": "A list shall be provided of the type, quantity, and frequency of disposal of any waste product associated with the operation of the trainer (i.e., hydraulic fluid).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.5",
+              "title": "Electrical.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.5.1",
+                  "title": "Electrical power requirements shall be provided in tabular format indicating separate requirements for each component with the totals for the complete system indicated at the bottom of the table.",
+                  "content": "The table shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.5.1.1",
+                      "title": "Line voltages and tolerances.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.1.2",
+                      "title": "Currents on each phase, maximum demand, and continuous load.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.1.3",
+                      "title": "Frequencies and tolerances.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.1.4",
+                      "title": "Phase.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.1.5",
+                      "title": "Kilovolt-amperes (KVA), connected load, maximum demand, and continuous load.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.1.6",
+                      "title": "Power factor.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.1.7",
+                      "title": "Line regulation and filtering.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.5.2",
+                  "title": "Include the following electrical aspects:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.5.2.1",
+                      "title": "Provide single line power diagrams and an electrical panel power plan",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.5.2.2",
+                      "title": "Illumination",
+                      "content": "Specify illumination and lighting requirements for all areas of the trainer and maintenance areas, specify type and location of dimmer controls.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.5.3",
+                  "title": "Lightning Protection",
+                  "content": "Specify lightning protection devices for trainer and personnel",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.4",
+                  "title": "Communication requirements, if any",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.5",
+                  "title": "Grounding and grounding systems:",
+                  "content": "Provide, if required, grounding bus bar dimensions (W x L x H) and location within the trainer room and or electrical panel. Ground bus shall indicate ohms range of specific ground resistance to be provided",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.6",
+                  "title": "Provide cable routing layout; specify details of cable routing between equipment and indicate cable trough dimensions.",
+                  "content": "Provide exact location of cable trough within the room and connectivity to adjacent rooms, if required.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.7",
+                  "title": "Electrical requirements for maintenance support area",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.8",
+                  "title": "Emergency shut-off switch(es) and locations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.9",
+                  "title": "Details on connection to Government provided disconnects",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.10",
+                  "title": "Provide location of contractor and facility provided power panel within the room and location within the facility",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.11",
+                  "title": "Provide any other external electrical requirement(s) necessary for the trainer and or subcomponents",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.12",
+                  "title": "Provide location, interior or exterior if required, of antenna(s) that are required for the operation of the trainer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "General Criteria.",
+          "content": "This section shall contain the following topics:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Safety.",
+              "content": "Identify personnel hazards and the safety precautions to be implemented for the protection of personnel. Specify safety precautions to be observed during installation of the trainer.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Special Handling Equipment.",
+              "content": "Specify the type and capacities of any special handling equipment required from the device site to install trainer device components.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Security.",
+              "content": "Specify the level of classification of the equipment and the amount (square footage) of all classified space requirements including storage. Refer to Federal Acquisition Regulation (FAR) 7.105, subpart 4.4.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Special Requirements",
+              "content": "(i.e., Radio Frequency (RF) shielding or any criteria not covered, but considered critical.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Device Contractor Responsibilities.",
+          "content": "The report shall briefly list all the responsibilities of the device contractor in support of the design and construction of the facility and installation of the trainer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Government Responsibilities.",
+          "content": "This section shall describe in detail all Government responsibilities not covered in the body of the TFR report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Equipment Delivery Schedule.",
+          "content": "This section shall include the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "The delivery dates of the equipment to the installation site.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "The start-of-work date for device contractor facility modifications, additions, etc., as required.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Trainer installation.",
+          "content": "This section shall provide overall training device requirements required at the device site, installation instructions, installation test procedures, and post-installation test procedures. The procedures and associated data tables contained in this section shall enable maintenance personnel to configure, test, and relocate the training device.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Facilities.",
+              "content": "Detailed information such as power requirements, inputs and outputs, humidity, electrostatic discharge, space requirements, minimum opening required for entry of the entire training device or its unassembled units shall be provided. Weights and dimensions of units, and special requirements such as ventilation, illumination, air conditioning, levelness of the floor, and weight distribution of the training device at its final location shall also be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Unpacking and repacking for reshipment.",
+              "content": "Complete and simple instructions shall be provided for personnel to unpack and repack the training device, including specific instructions for the salvage of special material required for repacking. Instructions shall be illustrated if necessary for clarification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Installation information.",
+              "content": "Instructions shall be provided for planning the installation of the training device and shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.3.1",
+                  "title": "A floor plan diagram showing location of desirable positions for each assembly.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.2",
+                  "title": "Precautions in the positioning of assemblies to prevent interaction.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.3",
+                  "title": "Installation considerations, such as short ground leads, effective bonding, and shielding requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.4",
+                  "title": "Information for attaching plugs to receptacles, wires to terminal boards, and for making connections to other related equipment, such as interphones.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.5",
+                  "title": "Data on any critical cord lengths, cable, assemblies, and linkages.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.6",
+                  "title": "A trainer interconnecting cable list, in tabular form, listing all the external cables installed between the equipment in the training device.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.4",
+              "title": "Installation test procedures.",
+              "content": "Instructions shall be provided for making performance tests after installation of the training device to ensure that it is properly set up, calibrated, adjusted, and in proper operating condition before it is turned over to the operating personnel. These instructions shall specify in detail all tests and parameters required to ensure that the operational performance of the training device is equal to that which qualified it for acceptance by the government. Reference shall be made to applicable portions of the Acceptance Test Procedures Report, or equivalent, when provided as a separate item of the contract. Reference shall be made to the use of special tools and test equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Post installation tests.",
+              "content": "Precautionary measures and post installation tests shall be described where such omission might lead to faulty operation, equipment damage, or injury to personnel.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-80966A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

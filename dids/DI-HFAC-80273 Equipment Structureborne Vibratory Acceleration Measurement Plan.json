@@ -1,0 +1,353 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-HFAC-80273",
+  "slug": "di-hfac-80273",
+  "title": "Equipment Structureborne Vibratory Acceleration Measurement Plan",
+  "summary": "This plan provides a description of the structureborne sound test procedure, facility and measurement system in advance of test to demonstrate planned compliance with requirements of MIL-STD-740-2.",
+  "approval_date": "1986-12-30",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N4013",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "SH",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "JUN 86",
+  "use_relationship": "",
+  "description_purpose": "This plan provides a description of the structureborne sound test procedure, facility and measurement system in advance of test to demonstrate planned compliance with requirements of MIL-STD-740-2.",
+  "application_interrelationship": "This Data Item Description (DID) contains the format and content preparation instructions for that data generated under the work task described by 4.2 of MIL-STD-740-2.\nThis DID may be applied for each type, class, rating, and grade of equipment to be measured on each contract or order when MIL-STD-740-2 is invoked.\nThe data generated under the requirements of this DID may be combined with the data generated under DI-HFAC-80270 associated with MIL-STD-740-1.\nThis DID supersedes UDI-T-23756.",
+  "supersedes": [
+    "UDI-T-23756"
+  ],
+  "related_dids": [
+    "DI-HFAC-80270"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "General test plan requirements.",
+      "content": "The plan shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.1.1",
+          "title": "Test and equipment information.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.1.1.1",
+              "title": "Equipment to be evaluated, including contract number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.2",
+              "title": "Ship names and hull number, if known, for which the unit is being acquired.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.3",
+              "title": "Evaluation measurements to be performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.4",
+              "title": "Evaluating activity and test site.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.5",
+              "title": "Test date if established.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.6",
+              "title": "Equipment specification acceptance criteria.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.7",
+              "title": "Driven and driver unit manufacturers.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.8",
+              "title": "Driver unit horsepower (HP).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.9",
+              "title": "Rated electrical characteristics, including volts, amperes, phase.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.10",
+              "title": "Rated fluid media parameters (flow rates, temperatures, pressures, etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.11",
+              "title": "Equipment rated operational speeds (driver and driven unit revolutions per minute (r/min), etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.12",
+              "title": "Expected equipment noise and vibration sources and their frequencies of excitation (rotationals, gear tooth contact, blade rate, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.13",
+              "title": "Resilient mount manufacturer and model number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.14",
+              "title": "Dates of manufacture of resilient mounts to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.15",
+              "title": "Number of resilient mounts to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.16",
+              "title": "If the use of non-Navy standard resilient mounts has been approved, provide the characteristics including load rating in pounds and resonant frequency data, of the mounts used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.17",
+              "title": "Planned equipment load during test (full, half, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.18",
+              "title": "Planned operating speeds during test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.19",
+              "title": "Planned throttling conditions, if any.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.20",
+              "title": "Planned operating suction and discharge fluid media parameters during test (flow rates, pressures and temperatures, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.21",
+              "title": "Planned electrical inputs, outputs or both during test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.22",
+              "title": "Block diagrams and identification of make and model of measurement and analysis instrumentation to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.23",
+              "title": "Block diagrams and identification of make and model of system calibration instrumentation to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.1.24",
+              "title": "Place and date of latest laboratory calibration of measurement instruments, system calibration instruments (including field calibrators), and analysis instruments which will be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.1.2",
+          "title": "Drawings and sketches to show assembly information, equipment details and the test set up.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.1.2.1",
+              "title": "Overall unit dimensions and orientation (vertical, horizontal, etc.) to be used during test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.2",
+              "title": "Identification of major components.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.3",
+              "title": "Interface information.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.4",
+              "title": "Mounting locations and dimensions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.5",
+              "title": "Weights and center of gravity for major components.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.6",
+              "title": "Resilient mount orientation (vertical, horizontal, angle), approximate load on each mount, attachment locations, overall unit weight and center of gravity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.7",
+              "title": "Pedestal or subbase dimensions, materials and weight, when applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.8",
+              "title": "Dimensions, materials, and weight of the mounting fixture if a mounting fixture other than the standard fixture is to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.9",
+              "title": "Planned arrangement and description of flexible pipes and ducts, if to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.10",
+              "title": "Planned arrangement of test piping and fittings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.11",
+              "title": "Planned arrangement of electrical power leads.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.12",
+              "title": "Planned location and description of test instrumentation used to measure r/min, flow rates, total discharge head, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.13",
+              "title": "Planned locations of resilient mounts and pedestals or fixtures that support the equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.1.2.14",
+              "title": "Approximate location and orientation of each accelerometer relative to equipment features or mounts and method of attachment of accelerometers.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.1.3",
+          "title": "Test data formats.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.1.3.1",
+              "title": "Tabular and graphic data format to be used in tabulating and recording structureborne vibratory acceleration data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-HFAC-80273.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

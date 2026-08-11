@@ -1,0 +1,1903 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FNCL-81831",
+  "slug": "di-fncl-81831",
+  "title": "Contractor Sustainment Report (DD Form 1921-4)",
+  "summary": "DD Form 1921-4, the Contractor Sustainment Report, is used by contractors to submit direct and indirect actual and proposed cost data on recurring and nonrecurring bases for Government contracts.",
+  "approval_date": "2012-05-10",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "D9180",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "CAPE",
+  "project_number": "",
+  "applicable_forms": "DD Form 1921-4",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "For background and detailed requirements related to Contractor Cost Data Reporting (CCDR), refer to DoD 5000.04-M-1, \"Cost and Software Data Reporting (CSDR) Manual.\"\n\nDD Form 1921-4, \"Contractor Sustainment Report,\" is used by contractors to submit: (1) direct and indirect actual cost data on both a recurring and nonrecurring basis on Government contracts and (2) proposed direct and indirect cost data in response to Government solicitations according to Defense Federal Acquisition Regulations Supplement (DFARS) sections 234.7100, 234.7101, 242.503-2, 252.234-7003, and 252.234-7004.\n\nThis Data Item Description (DID) summarizes the format for DD Form 1921-4 and provides preparation instructions to support the specific data and frequency requirements specified in the contract. DD Form 1921-4 is related to other CCDR forms, including DD Form 1921, \"Cost Data Summary Report\" (DI-FNCL-81565), DD Form 1921-1, \"Functional Cost-Hour Report\" (DI-FNCL-81566), DD Form 1921-2, \"Progress Curve Report\" (DI-FNCL-81567), and DD Form 1921-3, \"Contractor Business Data Report\" (DI-FNCL-81765). This DID is also related to the Contract Work Breakdown Structure (CWBS) DID (DI-MGMT-81334). All forms are available for inclusion on any contract that meets the criteria specified in DoD Instruction 5000.02 or under other conditions specified for a particular contractual effort.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-FNCL-81565",
+    "DI-FNCL-81566",
+    "DI-FNCL-81567",
+    "DI-FNCL-81765",
+    "DI-MGMT-81334"
+  ],
+  "references": [
+    {
+      "label": "available at",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "available at",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "available at",
+      "url": "http://www.dtic.mil/whs/directives/"
+    },
+    {
+      "label": "available at",
+      "url": "https://assist.daps.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in ASSIST at the time of the solicitation; or, for non-ASSIST documents, as stated herein.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "References.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "DoD Instruction 5000.02, \"Operation of the Defense Acquisition System,\" [current version], available at http://www.dtic.mil/whs/directives/.",
+          "content": "This instruction contains mandatory CCDR requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "DoD 5000.04-M-1, \"Cost and Software Data Reporting (CSDR) Manual,\" [current version], available at http://www.dtic.mil/whs/directives/",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "DD Form 2794, \"Cost and Software Data Reporting Plan,\" [current version], available at http://www.dtic.mil/whs/directives/.",
+          "content": "Commonly referred to as the CSDR Plan, a completed DD Form 2794 must be approved by the Office of the Secretary of Defense (OSD) Deputy Director, Cost Assessment (DDCA).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "MIL-STD-881C, Work Breakdown Structure for Defense Materiel Items, available at https://assist.daps.dla.mil.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format.",
+      "content": "Use DD Form 1921-4 and the detailed preparation instructions below. Generally only one summary report at the total contract level (WBS Level 1) is required. Any additional detailed reporting must be separately requested and approved by the OSD DDCA in the CSDR contract plan. If detailed reporting is required, a separate DD Form 1921-4 report must be completed for each WBS Reporting Element for which an \"X\" is marked in Item 13e (Column \"DD 1921-4\") of the OSD DDCA-approved contract or subcontract CSDR Plan. All required DD Form 1921-4 reports must be submitted together in a single stand-alone Excel-compatible file with each DD Form 1921-4 page on a separate tab and as a Defense Cost and Resource Center (DCARC) approved Extensible Markup Language (XML) file to the DCARC's secure Web site using the CSDR Submit-Review System. The XML file can be generated automatically from the Excel-compatible file (or vice versa) with the DCARC's CSDR Planning and Execution Tool (cPET) software. Uploading requires the use of either a DoD Common Access Card (CAC) or a DoD-approved External Certification Authority (ECA) certificate. See the DCARC Web site for cPET and certificate instructions.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Implementation.",
+      "content": "The DD Form 1921-4 requirement applies to both prime contractors and subcontractors that have other CCDR requirements. Contractors are responsible for implementing CCDR requirements on all subcontracts that meet the reporting thresholds (see DoD Instruction 5000.02, Table 4, \"Regulatory Contract Reporting Requirements\").",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "5",
+      "title": "General Instructions.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "5.1",
+          "title": "These instructions apply to this DID and to other related CCDR DIDs that share common items and related instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.2",
+          "title": "All reporting must be based on the OSD DDCA approved CSDR Plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.3",
+          "title": "Report on work performed by the prime contractor/associate contractor at cost (i.e., before the summary elements such as Reporting Contractor General & Administrative (G&A), Undistributed Budget, Management Reserve, Facilities Capital Cost of Money, and Profit/Loss or Fee).",
+          "content": "Report on work performed by all subcontractors at price (i.e., including subcontractor Profit/Loss or Fee). Report all currency on this form in thousands of U.S. dollars, rounded to the nearest tenth. Enter \"0\" (zero) for items with null amounts; do not leave items blank.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.4",
+          "title": "Mark the security classification of the report as \"Unclassified\" in the space provided on the upper left and lower right of the form.",
+          "content": "However, if the report is classified, contact the DCARC for special processing instructions. Please note: \"Proprietary\" is not an official DoD security classification, and should not be marked as such in this space. If the use of a proprietary disclosure statement is required, it should be inserted in the document's footer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.5",
+          "title": "The Contractor Sustainment Report may be prepared at three stages, as required: Initial Report, Interim Report, and Final Report.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "5.5.1",
+              "title": "An Initial Report is a preliminary report used to verify a contractor's capability to prepare and submit the report in accordance with the DID and the OSD DDCA-approved CSDR Plan.",
+              "content": "Initial reports are only required on an exception basis as determined by the Cost Working-Group Integrated Product Team (CWIPT) and approved by the OSD DDCA. Typically, reports will only be required when the contractor has not previously demonstrated the capability to produce the required report(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.5.2",
+              "title": "An Interim Report is any report other than the Initial Report that is prepared before submission of the Final Report.",
+              "content": "Interim reports for the DD 1921-4 are required annually with the as-of date being the end of the government fiscal year and the due date is 60 days following the as-of date. For example, if the contract award was July 15, 2010, the Interim Report would have an \"As of Date\" of September 30, 2010 and a due date of November 29, 2010. Additional Interim Reports are determined by the CWIPT and approved by the OSD DDCA.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.5.3",
+              "title": "A Final Report is intended to capture all or substantially all actual contract costs.",
+              "content": "A Final Report is due 60 days following the last day of the Government fiscal year during which incurred contract costs reach at least 95% of total contract costs. In some cases, no-cost contract extensions may be required to allow preparation and submission of the Final Report.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "5.6",
+          "title": "Entries for common data elements (i.e., metadata, quantities, dollars, and hours) used across the DD 1921 series of reports for a specific contract must agree as appropriate.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.7",
+          "title": "Contractors shall report costs based upon the direct, overhead, and G&A categories established in their Cost Accounting Standards Disclosure Statements.",
+          "content": "These categories include the functional and cost element categories included in the DoD form and related DID requirement, as appropriate. If the categories in the Cost Accounting Standards Disclosure statements differ from the cost definitions in this and related CCDR DIDs, the contractor shall note it in the Remarks sections of reports. Contractors shall also note in the Remarks section any accounting changes that occurred in any of the reported categories since the last report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.8",
+          "title": "Contractors shall report all costs associated with the contract, including Advance Procurement, Long Lead Materials, Multiyear Procurement, Inter-Division or Inter-Company Work Orders (IWOs), Foreign Military Sales (FMS), Warranty, etc.",
+          "content": "Costs should not be omitted based on contract line item number (CLIN) structure or definition.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Specific Instructions: Metadata.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "6.1",
+          "title": "Item 1. Major Program.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.1.1",
+              "title": "Subitem a. Name",
+              "content": "Enter the name given to the Major Defense Acquisition Program (MDAP) or Major Automated Information System (MAIS) as shown in the DDCA approved CSDR plan.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.1.2",
+              "title": "Subitem b. Phase/Milestone",
+              "content": "Check the box for the appropriate Phase/Milestone which is being reported: Pre-A (Material Solution Analysis Phase), A (Technology Development Phase), B (Engineering and Manufacturing Development Phase), C-LRIP (Production and Deployment Phase - Low-Rate Initial Production), C-FRP (Production and Deployment Phase - Full-Rate Production), or O&S (Operations and Support Phase).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.2",
+          "title": "Item 2. Prime Mission Product.",
+          "content": "Enter the most current official military designation for the end item as specified by the appropriate classification standard (e.g., DoD 4120.15-L, \"Military Designation of Military Aerospace Vehicles,\" would specify \"F-35\" for the Joint Strike Fighter). For contract (or subcontract) CSDR Plans, the end item being reported may have a different designation than the total program (e.g., the preparer would enter \"AN/APG-81 Radar\" for the F-35 Radar contract CSDR Plan). If the end item does not have a military designation, enter the type of product being developed or procured, for example, radar.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.3",
+          "title": "Item 3. Reporting Organization Type.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.3.1",
+              "title": "For a prime or associate contractor, check \"Prime/Associate Contractor.\"",
+              "content": "(See the \"Definitions\" section of this DID.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.3.2",
+              "title": "For a direct-reporting subcontractor, check \"Direct-Reporting Subcontractor.\"",
+              "content": "(See the \"Definitions\" section of this DID.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.3.3",
+              "title": "For a Government Organization, check \"Government.\"",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.4",
+          "title": "Item 4. Name/Address.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.4.1",
+              "title": "Subitem a. Performing Organization",
+              "content": "Enter the name and address (including ZIP code) of the reporting organization actually performing the work.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.4.2",
+              "title": "Subitem b. Division",
+              "content": "Enter the reporting organization's division name and address (including ZIP code) if different than the performing organization.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.5",
+          "title": "Item 5. Approved Plan Number.",
+          "content": "Enter the Approved Plan Number from Item 10 of the current OSD DDCA-approved contract or subcontract CSDR Plan that authorized the collection of data for this report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.6",
+          "title": "Item 6. Customer (Direct-Reporting Subcontractor Use Only).",
+          "content": "Enter the name of the prime contractor for whom the work on the subcontract is being performed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.7",
+          "title": "Item 7. Type Action.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.7.1",
+              "title": "Subitem a. Contract No. and Subitem b. Latest Modification",
+              "content": "Enter the assigned prime contract number the prime contractor has with the Government customer, as well as the number of the latest contract modification. This requirement is identical for both reporting contractors and reporting subcontractors.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.2",
+              "title": "Subitem c. Solicitation No.",
+              "content": "If the data are in response to a solicitation in accordance with DFARS sections 234.7101, 252.234-7003, and 252.234-7004, enter the solicitation number.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.3",
+              "title": "Subitem d. Name",
+              "content": "Enter the common reference name for the prime contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.4",
+              "title": "Subitem e. Task Order/Delivery Order/Lot No.",
+              "content": "If the contract contains a task order(s), delivery order(s), and/or lot number(s) being reported on for which the CSDR Plan has reporting requirements, enter each as \"TO,\" \"DO,\" or \"Lot\" followed by a blank space and the applicable number.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.8",
+          "title": "Item 8. Period of Performance.",
+          "content": "Enter the start and end dates related to the contractual period of performance. Enter the appropriate numeric data for the year, month, and day. For example, December 31, 2004, would be shown as 20041231.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.9",
+          "title": "Item 9. Report Cycle.",
+          "content": "Check \"Initial,\" \"Interim,\" or \"Final\" report, as appropriate (see General Instruction 1e. above).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.10",
+          "title": "Item 10. Submission Number.",
+          "content": "Enter the submission number for the report provided in Item 14a of the current OSD DDCA-approved contract or subcontract CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.11",
+          "title": "Item 11. Resubmission Number.",
+          "content": "A resubmission occurs if prior submission(s) for the submission event were officially rejected with a memo signed by the DCARC Director. Enter \"0\" (zero) for original submission. If the report is a resubmission, enter the resubmission number, starting with \"1\" for the first resubmission, \"2\" for the second resubmission, and so on.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.12",
+          "title": "Item 12. Report As Of.",
+          "content": "Enter the appropriate numeric data for the year, month, and last day of the reporting period. For example, December 31, 2004, would be shown as 20041231. The report as of date must be consistent with Item 14d of the OSD DDCA-approved contract or subcontract CSDR Plan. For CSDR Plans that include event-driven milestones for reporting purposes, any changes in the event date require appropriate adjustments to the \"As of date\" reported in Item 12 and to the OSD DDCA-approved CSDR Plan. In these situations, the Government Program Office, in coordination with the Contractor, must submit a request for change in the event-driven date for reporting through the CSDR Submit-Review system for DCARC approval before the date reflected in the OSD DDCA-approved CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6.13",
+          "title": "Items 13 through 17. Point of Contact.",
+          "content": "Enter the following information for the person to contact for answers to any questions about entries on DD Form 1921-4: Last Name, First Name, and Middle Initial (Item 13); Department (Item 14); Telephone Number, including Area Code (Item 15); E-Mail Address (Item 16), and Date Prepared (Item 17). For Item 17, enter the date the report was prepared in the appropriate numeric format. For example, December 31, 2004, would be shown as 20041231.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Specific Instructions: Reported Data.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "7.1",
+          "title": "Item 18. WBS Element Code.",
+          "content": "A separate DD Form 1921-4 report must be completed for each WBS Reporting Element for which an \"X\" is marked in Item 13e (Column \"DD 1921-4\") of the OSD DDCA-approved contract or subcontract CSDR Plan. Generally only one summary report at the total contract level (WBS Level 1) is required. Any additional detailed reporting must be separately requested and approved by the OSD DDCA in the CSDR contract plan. Enter the corresponding WBS Element Code identically as presented in Item 11b of the OSD DDCA-approved contract or subcontract CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.2",
+          "title": "Item 19. WBS Reporting Element.",
+          "content": "Enter the WBS Reporting Element name that corresponds to the entry in Item 18 identically as presented in Item 12 (column \"WBS Reporting Elements\") of the OSD DDCA-approved contract or subcontract CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.3",
+          "title": "Item 20. Quantity or Technical Metric.",
+          "content": "For the WBS Element Code reported in Item 18, enter either the system or subsystem number of units or the technical metric specified by the OSD DDCA-approved contract or subcontract CSDR Plan. Check the appropriate box to indicate whether a quantity or a technical metric is being reported. If a quantity, enter the number of units to date and the number of units at completion, as described below. If a technical metric, define the metric and data source in Item 22 (\"Remarks\") and enter the value for the technical metric to date and value for the technical metric at completion, as described below. Reported quantities or technical metrics must be consistent with the information reported in the DD Form 1921.\n\nTechnical metrics may be those defined as performance metrics in performance based contracts, such as system or subsystem availability, mean time between maintenance, and mean time to repair, or other metrics defined by the CWIPT. Data sources for metrics must be specified in Item 22 (\"Remarks\"), especially for those metrics which contractors do not control, or those for which the contractor may not maintain data or have access to metrics data.\n\nSome sustainment contracts may have elements of development, production and maintenance for which quantities are relevant. For example, a sustainment contract that is primarily for maintenance of systems and subsystems may also include production of replenishment spares (i.e., reparables) for which production quantities are desired and development of modifications for which development quantities are desired. Reporting of these various quantity metrics is discussed below. Note: A breakout of units between Government deliveries and internal contractor use is not required on DD Form 1921-4 unless the CWIPT, in coordination with the contractor, identifies and justifies that such information is needed for cost-estimating purposes.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.3.1",
+              "title": "To Date",
+              "content": "Report the estimated cumulative number of units to date. The following approach, based on Earned Value Management (EVM), is the preferred standard method for calculating these units. Material costs should be treated in accordance with the company's EVM system description. If, for the reported Costs Incurred to Date and At Completion, the contractor must allocate the costs as recurring or nonrecurring, follow the same allocation methodology for this unit calculation. Report the result as the cumulative number of units to date for each hardware item. This number should be expressed to the nearest tenth of a unit (e.g., 4.3 units). The standard EVM-based method is as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.3.1.1",
+                  "title": "Isolate all control accounts for work packages that contain the recurring labor and material cost associated with manufacture of hardware items.",
+                  "content": "Only the recurring costs should be isolated. Use the \"as of date\" for the CSDR report being prepared.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.3.1.2",
+                  "title": "Calculate the number of units completed to date based on the earned value, using the following steps:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "7.3.1.2.1",
+                      "title": "Sum the Budgeted Cost for Work Performed (BCWP) for the isolated control accounts/work packages.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.2",
+                      "title": "Sum the Budget at Completion (BAC) for the same control accounts.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.3",
+                      "title": "Calculate the fraction by dividing the results from step (a) by the result from step (b).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.4",
+                      "title": "Multiply the fraction from step (c) times the number of items to be delivered.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.3.1.2.5",
+                      "title": "Report the number resulting from step (d) to the nearest tenth of a unit as the cumulative number of units to date for each hardware item.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "7.3.1.3",
+                  "title": "Reporting contractors may use an alternative method provided it is analytically based, consistently applied over time, and can be shown to produce a reasonably accurate and reliable calculation for estimating purposes.",
+                  "content": "If an alternative calculation method is used, the methodology must be explained in Item 22 (\"Remarks\").",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "7.3.2",
+              "title": "At Completion",
+              "content": "Report the number of units to be maintained and/or procured under this contract at its completion. The CWIPT will define the units to be reported, e.g., end items, major components.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "7.4",
+          "title": "Item 21. Appropriation.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.4.1",
+              "title": "Check the appropriate box(es) to indicate the type of appropriation - Research, Development, Test and Evaluation (RDT&E), Procurement, or Operation and Maintenance (O&M) - used to fund the entire contract or the particular contract line item being reported on.",
+              "content": "The appropriation type must agree with the type specified in Item 9c of the CSDR contract plan, DD Form 2794.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "7.4.2",
+              "title": "If the data are in response to a solicitation in accordance with DFARS sections 234.7101, 252.234-7003, and 252.234-7004, leave Item 21 blank, unless otherwise specified in the solicitation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "7.5",
+          "title": "Column A. Costs Incurred To Date - Nonrecurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of nonrecurring activities. Enter actual nonrecurring costs incurred to date for each of the Sustainment Cost Elements. For each WBS Element Code, the cost data reported under \"Costs Incurred to Date - Nonrecurring\" (Column A) Line 78 (\"Total Cost\") must match the \"Costs Incurred to Date - Nonrecurring\" (Column D) for the WBS Reporting Element on the DD Form 1921 report.\n\nNote: For Prime Mission Product WBS Elements, Line 78 must equal the sum of Line 12, Maintenance and Line 69, Continuing System Improvement. Cost data reported must follow WBS parent-child relationship rules (i.e., WBS parent elements must be equal to the sum of their children elements, even if some of those children elements were not selected for DD 1921-4 reporting).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.6",
+          "title": "Column B. Costs Incurred To Date - Recurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of recurring activities. Enter actual recurring costs incurred to date for each of the Sustainment Cost Elements.\n\nFor each WBS Element Code, the cost data reported under \"Costs Incurred to Date - Recurring\" (Column B) Line 78 must match the \"Costs Incurred to Date - Recurring\" (Column E) for the WBS Reporting Element on the DD Form 1921 report.\n\nNote: For Prime Mission Product WBS Elements, Line 78 must equal the sum of Line 12, Maintenance and Line 69, Continuing System Improvement. Cost data reported must follow WBS parent-child relationship rules (i.e., WBS parent elements must be equal to the sum of their children elements even if some of those children elements were not selected for DD 1921-4 reporting).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.7",
+          "title": "Column C. Costs Incurred To Date - Total.",
+          "content": "Enter the sum of Columns A and B for each of the Sustainment Cost Elements. For each WBS Element Code, the cost data reported under \"Costs Incurred to Date - Total\" (Column C) Line 78 must match the \"Costs Incurred to Date - Total\" (Column F) for the WBS Reporting Element on the DD Form 1921 report.\n\nNote: For Prime Mission Product WBS Elements, Line 78 must equal the sum of Line 12, Maintenance and Line 69, Continuing System Improvement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.8",
+          "title": "Column D. Costs Incurred At Completion - Nonrecurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of nonrecurring activities. Enter current estimated nonrecurring costs at completion for each of the Sustainment Cost Elements. For each WBS Element Code, the cost data reported under \"Costs Incurred at Completion - Nonrecurring\" (Column D) Line 78 must match the \"Costs Incurred at Completion - Nonrecurring\" reported in Column H for the WBS Reporting Element on the DD Form 1921 report.\n\nNote: For Prime Mission Product WBS Elements, Line 78 must equal the sum of Line 12, Maintenance and Line 69, Continuing System Improvement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.9",
+          "title": "Column E. Costs Incurred At Completion - Recurring.",
+          "content": "See the \"Definitions\" section of this DID for a description of recurring activities. Enter current estimated nonrecurring costs at completion for each of the Sustainment Cost Elements. For each WBS Element Code, the cost data reported under \"Costs Incurred at Completion - Recurring\" (Column E) Line 78 must match the \"Costs Incurred at Completion - Recurring\" reported (Column I) for the WBS Reporting Element on the DD Form 1921 report.\n\nNote: For Prime Mission Product WBS Elements, Line 78 must equal the sum of Line 12, Maintenance and Line 69, Continuing System Improvement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.10",
+          "title": "Column F. Costs Incurred At Completion - Total.",
+          "content": "Enter the sum of Columns D and E for each of the Sustainment Cost Elements. For each WBS Element Code, the cost data reported under \"Costs Incurred At Completion - Total\" (Column F) Line 78 must match the \"Costs Incurred At Completion - Total\" (Column J) for the WBS Reporting Element on the DD Form 1921 report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.11",
+          "title": "Column G. Element Quantity or Technical Metric.",
+          "content": "For each of the Sustainment Cost Elements, enter the number of units (at completion) to be maintained and/or procured under the contract, or the technical metric specified by the DD 2794 CSDR Plan in Column C, \"Quantity or Technical Metric to Date.\" The breakout of units between Government deliveries and internal contractor use is not required on CLS contract reporting unless the CWIPT, in coordination with the contractor, identifies and justifies the need for purposes of estimating costs. If a technical metric, define the metric and data source in Item 22 (\"Remarks\").",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.12",
+          "title": "Sustainment Cost Elements. Lines 1 through 78.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.12.1",
+              "title": "There will be instances where it is necessary to submit additional lower level detail to supplement the standard Sustainment Cost Elements included on DD Form 1921-4.",
+              "content": "Such additional information will be required only as specified in the OSD DDCA-approved contract or subcontract CSDR Plan.\n\nThe accepted procedure for providing lower level detail is to insert rows from the appropriate MIL-STD 881C Appendix as child elements of a Sustainment Cost Element. For example, if an aircraft program requires additional visibility into Depot Level Reparables for Flight Control Subsystem and Landing Gear, 881C Appendix A elements 1.1.3.1 through 1.1.3.13 would be inserted under Sustainment Cost Element 3.2 Depot Level Reparables / Repair of Reparables (Line 22). These inserted rows would then be renumbered 3.2.1, 3.2.2, etc., which would result in Flight Control Subsystem costs being reported at 3.2.2 and Landing Gear costs being reported at 3.2.9. Other unused elements would be labeled N/A. The sum of these children must equal the parent at 3.2.\n\nAlso, the instructions below for Line 62, 4.5.3 [Information Systems] Maintenance, include special instructions to add child elements for MAIS programs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "7.12.2",
+              "title": "The following instructions apply for filling Columns A through F for each Line and for each additional inserted row.",
+              "content": "Lines 1 through 11, 29 through 68, and 76 (Cost elements 1.X, 2.X, 4.X, and 6.X) apply only to system level cost elements.\n\nSee the \"Definitions: Cost Element Structure\" section of this DID for descriptions of the Sustainment Cost Elements. Enter actual incurred costs to date and at completion, or a zero (rather than a blank) when costs have not been incurred to date for the reporting period and/or when costs have been estimated to be zero at completion. Amounts reported for a parent WBS element must include the cost of all related children and are not limited to just those children selected for DD Form 1921-4 reporting. Parent-child relationships on DD Form 1921-4 must be consistent with the data reported on DD Form 1921, \"Cost Data Summary Report.\" Note: If units are reported to be greater than zero in Item 20 (Quantity or Technical Metric), recurring costs must be reported in either Line 12 or Line 69.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "7.12.2.1",
+                  "title": "1.0 Unit-Level Manpower (Systems Level Cost Only).",
+                  "content": "Enter the sum of Lines 2, 3 and 4. This element does not apply for subsystem WBS elements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.2",
+                  "title": "1.1 Operations Manpower.",
+                  "content": "Enter total direct and indirect cost (excluding undistributed, G&A, and Fee) related to the Operations Manpower.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.3",
+                  "title": "1.2 Unit-Level Maintenance Manpower.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to the Unit-Level Maintenance Manpower.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.4",
+                  "title": "1.3 Other Unit-Level Manpower (Specify in Item 22, \"Remarks\").",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Other Unit-Level Manpower.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.5",
+                  "title": "2.0 Unit Operations (System Level Cost Only).",
+                  "content": "Enter the sum of Lines 6, 10, and 11. This element does not apply for subsystem WBS elements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.6",
+                  "title": "2.1 Operating Material.",
+                  "content": "Enter the sum of Lines 7, 8 and 9. This element does not apply for subsystem WBS elements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.7",
+                  "title": "2.1.1 Energy (Fuel; Petroleum, Oil, and Lubricants (POL); Electricity).",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Energy (Fuel; Petroleum, Oil, and Lubricants (POL); Electricity).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.8",
+                  "title": "2.1.2 Training Munitions/Expendable Stores.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Training Munitions/Expendable Stores.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.9",
+                  "title": "2.1.3 Other Operating Material (Specify in Item 22, \"Remarks\").",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Other Operating Material.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.10",
+                  "title": "2.2 Support Services (Including Non-Maintenance Field Support Representatives (FSRs)).",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Support Services.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.11",
+                  "title": "2.3 Temporary Duty.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Temporary Duty.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.12",
+                  "title": "3.0 Maintenance.",
+                  "content": "Enter the sum of Lines 13, 22, 23, 24, and 28.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.13",
+                  "title": "3.1 Overhaul of End Items.",
+                  "content": "Enter the sum of Lines 14, and 18.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.14",
+                  "title": "3.1.1 Scheduled Overhaul.",
+                  "content": "Enter the sum of Lines 15, 16, and 17.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.15",
+                  "title": "3.1.1.1 Vehicle/Platform Overhaul.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Scheduled Overhaul of the vehicle/platform.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.16",
+                  "title": "3.1.1.2 Propulsion Overhaul.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Scheduled Overhaul of the propulsion system, engines, prime movers, turbines etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.17",
+                  "title": "3.1.1.3 Other Overhaul.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Scheduled Overhaul not captured in Lines 15 and 16 above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.18",
+                  "title": "3.1.2 Unscheduled Overhaul.",
+                  "content": "Enter the sum of Lines 19, 20, and 21.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.19",
+                  "title": "3.1.2.1 Vehicle/Platform Overhaul.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Unscheduled Overhaul of the vehicle/platform.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.20",
+                  "title": "3.1.2.2 Propulsion Overhaul.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Unscheduled Overhaul of the propulsion system, engines, prime movers, turbines etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.21",
+                  "title": "3.1.2.3 Other Overhaul.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Unscheduled Overhaul not captured in Lines 19 and 20 above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.22",
+                  "title": "3.2 Depot Level Reparables (DLR) / Repair of Reparables (ROR).",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Depot Level Reparables (DLR)/Repair of Reparables (ROR).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.23",
+                  "title": "3.3 Consumables and Repair Parts.",
+                  "content": "Enter the total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Consumables and Repair Parts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.24",
+                  "title": "3.4 Other Maintenance Services (Including FSRs) (Specify in Item 22, \"Remarks\").",
+                  "content": "Enter the sum of Lines 25, 26, and 27.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.25",
+                  "title": "3.4.1 O-Level Maintenance Services.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to O-Level Maintenance Services.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.26",
+                  "title": "3.4.2 I-Level Maintenance Services.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to I-Level Maintenance Services.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.27",
+                  "title": "3.4.3 Depot Level Maintenance Services.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Depot Level Maintenance Services.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.28",
+                  "title": "3.5 Packing, Handling, Shipping, and Transportation (PHS&T).",
+                  "content": "Enter costs related to packing, handling, shipping and transportation of parts and materials.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.29",
+                  "title": "4.0 Sustaining Support (System Level Cost Only).",
+                  "content": "Enter the sum of Lines 30, 34, 35, 50, 59, 63, 64, and 68.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.30",
+                  "title": "4.1 System Specific Training.",
+                  "content": "Enter the sum of Lines 31, 32, and 33.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.31",
+                  "title": "4.1.1 Operator Training.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to System Specific Training.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.32",
+                  "title": "4.1.2 Maintenance Training.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Maintenance Training.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.33",
+                  "title": "4.1.3 Other Training (Specify in Item 22, \"Remarks\").",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Other Training.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.34",
+                  "title": "4.2 Support Equipment Replacement.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Support Equipment Replacement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.35",
+                  "title": "4.3 Sustaining/Systems Engineering.",
+                  "content": "Enter the sum of Lines 36 through 49.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.36",
+                  "title": "4.3.1 Reliability and Maintainability Engineering.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Reliability and Maintainability (R&M) Engineering.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.37",
+                  "title": "4.3.2 Logistics Engineering (including Logistics Support Analysis (LSA) updates and logistics analysis).",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Logistics Engineering.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.38",
+                  "title": "4.3.3 Supply Analysis Efforts.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Supply Analysis Efforts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.39",
+                  "title": "4.3.4 Safety/Human Systems Integration Engineering.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Safety/HSI.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.40",
+                  "title": "4.3.5 Affordability Engineering.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Affordability Engineering.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.41",
+                  "title": "4.3.6 Obsolescence Engineering.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Obsolescence Engineering.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.42",
+                  "title": "4.3.7 Availability Management.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Availability Management.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.43",
+                  "title": "4.3.8 Product Engineering Support.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Product Engineering Support.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.44",
+                  "title": "4.3.9 Information Assurance.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Information Assurance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.45",
+                  "title": "4.3.10 Configuration Management.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Configuration Management.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.46",
+                  "title": "4.3.11 System Performance Analysis.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to System Performance Analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.47",
+                  "title": "4.3.12 Supply.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Supply.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.48",
+                  "title": "4.3.13 Data Analysis.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Data Analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.49",
+                  "title": "4.3.14 Physical Security.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Physical Security.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.50",
+                  "title": "4.4 Program Management.",
+                  "content": "Enter the sum of Lines 51 through 58.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.51",
+                  "title": "4.4.1 Contractor Logistics Support (CLS) Management.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Contractor Logistics Support (CLS).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.52",
+                  "title": "4.4.2 CLS Supply Management.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to CLS Supply Management.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.53",
+                  "title": "4.4.3 Financial/Schedule Planning and Reporting.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Financial/Schedule Planning and Reporting.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.54",
+                  "title": "4.4.4 Transition to Lead Service.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Transition to Lead Service.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.55",
+                  "title": "4.4.5 Quality Assurance (Program Level).",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Quality Assurance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.56",
+                  "title": "4.4.6 Administrative Security.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Administrative Security.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.57",
+                  "title": "4.4.7 Transition to Performance Based Logistics (PBL).",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Transition to PBL.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.58",
+                  "title": "4.4.8 Risk Mitigation.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Risk Mitigation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.59",
+                  "title": "4.5 Information Systems.",
+                  "content": "Enter the sum of Lines 60, 61, and 62.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.60",
+                  "title": "4.5.1 Tech Refresh.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Information Systems Tech Refresh.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.61",
+                  "title": "4.5.2 License Fees.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Information Systems License Fees.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.62",
+                  "title": "4.5.3 Maintenance.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Information Systems Maintenance. Special instructions for MAIS programs: Five additional MAIS-unique cost elements should be added under 4.5.3 Maintenance. For MAIS programs, Line 62 must equal the sum of those additional cost elements.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "7.12.2.62.1",
+                      "title": "4.5.3.1 Help Desk",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.12.2.62.2",
+                      "title": "4.5.3.2 System Database/Administration",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.12.2.62.3",
+                      "title": "4.5.3.3 Follow On User Training",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.12.2.62.4",
+                      "title": "4.5.3.4 Accreditation",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7.12.2.62.5",
+                      "title": "4.5.3.5 Independent Validation and Verification",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "7.12.2.63",
+                  "title": "4.6 Data and Technical Publications.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) for Data and Technical Publications.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.64",
+                  "title": "4.7 Simulator Operations.",
+                  "content": "Enter the sum of Lines 65, 66, and 67.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.65",
+                  "title": "4.7.1 Simulator Operations Hardware Support.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Simulator Operations Hardware Support.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.66",
+                  "title": "4.7.2 Simulator Operations Manpower.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Simulator Operations Manpower.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.67",
+                  "title": "4.7.3 Simulator Tech Refresh.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Simulator Tech Refresh.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.68",
+                  "title": "4.8 Other Sustaining Support. (Specify in Item 22, \"Remarks\").",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Other Sustaining Support.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.69",
+                  "title": "5.0 Continuing System Improvements.",
+                  "content": "Enter the sum of Lines 70 and 75.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.70",
+                  "title": "5.1 Hardware Modifications or Modernization.",
+                  "content": "Enter the sum of Lines 71 through 74.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.71",
+                  "title": "5.1.1 Mod Kit Development.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Mod Kit Development.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.72",
+                  "title": "5.1.2 Mod Kit Procurement.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Mod Kit Procurement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.73",
+                  "title": "5.1.3 Mod Kit Initial Spares.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Mod Kit Initial Spares.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.74",
+                  "title": "5.1.4 Mod Kit Installation.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Mod Kit Installation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.75",
+                  "title": "5.2 Software Maintenance or Modification.",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Software Maintenance or Modification.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.76",
+                  "title": "6.0 Installation and Personnel Support (System Level Cost Only).",
+                  "content": "Enter total direct and indirect costs (excluding undistributed, G&A, and Fee) related to Installation and Personnel Support.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.77",
+                  "title": "Summary:",
+                  "content": "No Entry.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "7.12.2.78",
+                  "title": "Total Cost (Direct and Overhead).",
+                  "content": "Enter the sum of Lines 1, 5, 12, 29, 69, and 76. The totals for Columns A, B, C, D, E, and F must match the amounts reported for each corresponding WBS element on DD Form 1921, \"Cost Data Summary Report,\" Columns D, E, F, H, I, and J, respectively.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "7.13",
+          "title": "Item 22. Remarks.",
+          "content": "Note any relevant information that could be useful in the interpretation of the data provided in this report, including a list of direct-reporting subcontractors and their locations (city and state), and corresponding subcontract prices.\n\nInclude the following (if applicable):",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "7.13.1",
+              "title": "For contractors that have direct-reporting subcontractors, it is required that you identify each direct-reporting or government entity subcontractor by name, city, state, and subcontract price.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "7.13.2",
+              "title": "If a technical metric is reported in Item 20, define the metric and specify the data source.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Definitions: General.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "8.1",
+          "title": "Associate Contractor",
+          "content": "Any prime contractor whose contract with the Government requires joint participation with other prime contractors to accomplish the Government's requirement. Joint participation involves the potential sharing of information, data, technical knowledge, expertise, and resources essential to the integration of the common requirement. Such participation is intended to ensure the greatest degree of cooperation to meet the terms of the contract in satisfying the common requirement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.2",
+          "title": "At Completion",
+          "content": "The expected total cost when the defined scope of work has been completed. For contracts that are underway but not yet completed, this translates to the sum of costs incurred to date plus the estimate of costs (direct and indirect) for work remaining. For contracts that are complete, costs incurred to date are equal to the costs incurred at completion.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.3",
+          "title": "Costs Incurred",
+          "content": "Costs identified through the use of the accrual method of accounting and reporting or otherwise actually paid. Such costs include the cost of direct labor, direct materials, and direct services identified with and necessary for the performance of a contract, as well as all properly allocated and allowable indirect costs shown in the contractor's records.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.4",
+          "title": "Direct-Reporting Subcontractor",
+          "content": "A subcontractor that is contractually required to submit CSDRs directly to the Government as required by the OSD DDCA-approved CSDR Plan. In some instances the subcontractor may be a government entity such as in public/private partnerships between government and industry for depot activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.5",
+          "title": "Final Report",
+          "content": "A DD Form 1921-4 submitted when the contractual effort is entirely or substantially complete.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.6",
+          "title": "Indirect Costs",
+          "content": "Costs that cannot be identified specifically with or traced to a single cost objective in an economically feasible way.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.7",
+          "title": "Initial Report",
+          "content": "A preliminary report used to verify the contractor's capability to prepare and submit the report in accordance with the DID and the OSD DDCA-approved CSDR Plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.8",
+          "title": "Inter-company Work Order (IWO)",
+          "content": "A contractual arrangement between a parent company and a related entity or wholly owned subsidiary to provide supplies or services.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.9",
+          "title": "Interim Report",
+          "content": "Any report other than the Initial Report that is prepared before submission of a Final Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.10",
+          "title": "Overhead",
+          "content": "Overhead consists of all indirect costs, except general and administrative expenses, that are properly chargeable for the specified WBS Reporting Element. It may include supervision, policies and procedures, training, administration, time standards setting, manufacturing research, and so on.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.11",
+          "title": "Prime Contract",
+          "content": "A contractual arrangement between a prime contractor and the Government that creates a direct legal relationship between the prime contractor and the Government.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.12",
+          "title": "Prime Contractor",
+          "content": "For the purposes of CSDR reporting, a prime contractor is any contractor that has a direct contract with the Government. The name and address of the prime contractor is provided in Section A of the contract, (Standard Form 26, Item 7). Any other contractor associated with the contract is considered to be an associate or a subcontractor.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.13",
+          "title": "Recurring and Nonrecurring Costs",
+          "content": "The following guidelines for distinguishing between recurring and nonrecurring costs apply to all reporting contractors (i.e., prime contractors, associate contractors, subcontractors, and lower-tier subcontractors) when the definitions have not been included in the OSD DDCA Approved CSDR Plan. If the OSD DDCA-approved CSDR plan has defined recurring and nonrecurring costs, the contractor is required to use those definitions. While these guidelines are useful for establishing general boundaries, time reported on recurring and nonrecurring tasks should be reported as work is performed. For example, technical management tasks should be reported as recurring and nonrecurring to reflect the work actually being done rather than aggregated and reported as nonrecurring. Also, test activities that will routinely continue into production should be recorded as recurring costs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "8.13.1",
+              "title": "Recurring Costs",
+              "content": "Repetitive elements of sustainment costs that may vary with the quantity being produced or maintained, irrespective of system life cycle phase and appropriation. Recurring cost categories include procurement, production and maintenance activities; acceptance testing; maintenance and support equipment, training, and data; test articles built to an operational configuration; and certain elements of Systems Engineering and Program Management (SE/PM). Examples of procurement and production activities include fabrication; assembly; procurement of raw materials, purchased parts and equipment, and major and minor subcontracts; integration; installation and checkout; and quality control/assurance (inspection efforts). Examples of recurring maintenance and support activities include product and tooling maintenance (to restore a product/tool to its original condition); production of support and training equipment, initial spares, reparable items and simulators; reproduction of maintenance/technical data; and courseware updates. Recurring test articles are only those units built to a completed operational configuration, including full-scale, fatigue/static, and avionics equipment test articles. SE/PM activities occur throughout the system life cycle and are supportive in nature; as such, these costs take on the characteristics of the underlying activities being performed. Examples of recurring SE/PM activities include sustaining engineering, logistics support, planning, organizing, monitoring, and reporting activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "8.13.2",
+              "title": "Nonrecurring Costs",
+              "content": "Non-repetitive elements of sustainment costs that generally do not vary with the quantity being produced or maintained, irrespective of system life cycle phase and appropriation. Nonrecurring cost categories include Product Design and Development (PD&D) activities for modifications; System Test and Evaluation (ST&E) for modifications; tooling; pre-production or pre-maintenance activities; design and development of support equipment, training, and data; and certain elements of Systems Engineering and Program Management (SE/PM). Examples of PD&D activities include preliminary, critical, prototype and test article design activities, and software design and maintenance, regardless of whether the purpose is to correct deficiencies or add capabilities. (Note, however, that the Cost Working-group Integrated Product Team can require the contractor to classify software maintenance costs as recurring if a determination is made that such costs are significant for cost-estimating purposes and can reasonably be accounted for by the contractor). Examples of ST&E activities include test articles built for testing purposes only (i.e., units that are not production-representative) such as test stands, wind tunnel models, and bench and coupon test articles; structural development, static, fatigue, software, and ballistics testing; stress analysis; flight, ground, or sea testing of system properties; redesign as a result of testing; and retesting efforts. Examples of nonrecurring tooling activities include special test equipment, special tooling, procurement of initial and rate tooling, tool replacement (with the exact same tool), and tool modification (to accommodate product configuration changes). Examples of pre-production activities include production planning and production line or maintenance line set-up. Examples of nonrecurring support equipment, training, and data activities include initial equipment design and test efforts, test program sets, initial courseware development, and simulator development. SE/PM activities occur throughout the system life cycle and are supportive in nature; as such, these costs take on the characteristics of the underlying activities being performed. Examples of nonrecurring SE/PM activities include system development and design, testing, planning, organizing, and monitoring activities.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "8.14",
+          "title": "Subcontract",
+          "content": "A contractual arrangement between a prime contractor and one or more other contractors in which the Government has no direct legal relationship. In a subcontract, a direct legal relationship exists only between the prime contractor and one or more other contractors. A subcontract includes any agreement, purchase order, or contractual instrument other than a prime contract calling for supplies or services required for the performance of one or more prime contracts. It usually covers procurement of major components or subsystems that require the subcontractor(s) to do extensive design, development, engineering, and testing to meet a prime contractor's procurement specifications.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "Definitions: Cost Element Structure.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "9.1",
+          "title": "1.0 Unit-Level Manpower",
+          "content": "Unit-Level Manpower includes the costs of all contractor operators, contractor maintenance personnel, such as Field Service Representatives (FSRs), and other contractor-provided support manpower working in operating units (or in maintenance and support units that are organizationally related and adjacent to the operating units).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.1.1",
+              "title": "1.1 Operations Manpower",
+              "content": "The costs of all contractor manpower required to operate a system. For example:\n- Aircraft and Helicopters - Aircrews including pilots, navigators, mission specialists, load masters, etc.\n- Ships - Command staff, combat information center personnel, fire control (if operations, maintenance and other support categories are separate)\n- Electronic Systems - Console operators\n- Armored Vehicles - Crew chief, tank commander, gunner, driver, loader\nFor cases where contractors operate more than one system, manpower costs should be allocated on a relative workload basis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.1.2",
+              "title": "1.2 Unit-Level Maintenance Manpower",
+              "content": "This element includes the costs of all contractor manpower performing unit-level maintenance on a primary system, associated support equipment, and unit-level training devices. This element includes the costs of organizational maintenance manpower (usually resident in the system operating unit) and unit-level intermediate maintenance personnel. The costs of intermediate-level maintenance personnel resident in a support organization that is not unit-level relative to the operating unit, such as a Navy shore-based Intermediate Maintenance Activity, are included in Element 3.4.2 (I-Level Maintenance Services). For cases where contractors maintain more than one system, manpower costs should be allocated on a relative workload basis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.1.3",
+              "title": "1.3 Other Unit-Level Manpower",
+              "content": "This element includes the cost of contractor manpower performing administrative, security, logistics, safety, engineering, field support, and other mission support functions at the unit level. These costs include only the costs of manpower positions that exist to wholly or predominately support the system under consideration. For systems that deploy, these costs include the costs of manpower positions that routinely deploy to support the system. Some examples are:\n- Unit Administrative Staff. Manpower required for unit command, administration, supervision, operations control, planning, scheduling, safety, quality control of crew training and operational proficiency, etc.\n- Security. Manpower required for system security. Duties may include system level entry control, close and distant boundary support, and security alert operations. (Does not include base level access control unless the entire facility exists solely to support the weapon system.)\n- Logistics. Manpower required for logistics support. Functions may include supply, transportation, inventory control, fuel handling, etc.\n- Ordnance Support. Includes manpower providing munitions handling, weapons assembly, etc. Excludes any ordnance support manpower included in Element 1.2 (Unit-Level Maintenance).\n- Other Support. Manpower required to provide system specific fixed and mobile communications, information, intelligence, photo interpretation, and other special mission support or to operate unit simulators and training devices.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.2",
+          "title": "2.0 Unit Operations",
+          "content": "Unit Operations includes the unit-level consumption of operating materials that contractors provide. Examples include fuel, electricity, expendable stores, training munitions and other operating materials. Also included are any support activities; training devices or simulator operations that uniquely support an operational unit; and other services. Unit-funded service contracts for administrative equipment as well as unit-funded equipment and software leases are included in this element.\n\nSimulator costs that provide support to multiple units should be included in 4.1 Sustaining Support/System Specific Training.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.2.1",
+              "title": "2.1 Operating Material",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.2.1.1",
+                  "title": "2.1.1 Energy (Fuel; Petroleum, Oil and Lubricants [POL]; Electricity)",
+                  "content": "These costs include cost of contractor-provided POL, propulsion fuel, and fuel additives used by systems in performing their normal peacetime missions. These costs also include the cost of contractor-provided field-generated electricity and commercial electricity necessary to support the operation of a system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.2.1.2",
+                  "title": "2.1.2 Training Munitions/Expendable Stores",
+                  "content": "These are the costs of contractor-provided training munitions, rockets, missiles, and expendable stores consumed in the course of normal peacetime training missions. This element includes the cost of live and inert ammunition, bombs, rockets, training missiles, sonobuoys, and pyrotechnics expended in training and non-combat firings such as firepower demonstrations. This category also includes other expendable stores such as chaff, flares, fuel tanks, travel pods or other items that lose their identity in use.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.2.1.3",
+                  "title": "2.1.3 Other Operating Material",
+                  "content": "This element includes costs for contractor-provided operating materials other than energy, training munitions, or expendable stores. The costs identified must be related to the system whose O&S requirements are being assessed. Illustrative examples include computer supplies, paper, diskettes, ribbons, charts, maps, and administrative supplies used for housekeeping, health and safety.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.2.2",
+              "title": "2.2 Support Services (including non-maintenance FSRs)",
+              "content": "This includes contractor-provided support services. These services may include, but are not limited to:\n- Cost of FSRs for non-maintenance activities such as training, data collection, software support, and IT support.\n- Cost of un-reimbursed food services, rations, postal services (postage/box rental), and laundry services.\n- Cost of lease or rental of administrative, computational, or support equipment or software.\n- Lease costs of special facilities or land (e.g., for storage of warheads and missiles)\n- Contractor-provided service contracts for administrative, computational, or support equipment.\n- Communications services (e.g., data/voice links, dedicated lines, microwave channels), port services, and other unit-funded utilities not part of base operating support costs.\n- Transportation costs for moving equipment (e.g., communications equipment, combat vehicles, missiles) to and from test ranges or training areas\n- Transportation of personnel and material to remote operating sites for operations, maintenance, or support.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.2.3",
+              "title": "2.3 Temporary Duty",
+              "content": "This element includes costs for additional duty or temporary duty for training, administrative, or regularly scheduled training away from a unit's permanent operating location. Contractor costs will be included here when those costs are considered to be significant. Costs include transportation, car rental, mileage allowance, and subsistence expense.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.3",
+          "title": "3.0 Maintenance",
+          "content": "This element includes the costs of contractor manpower above the unit level and materials at all levels in support of the primary system, simulators, training devices, and associated support equipment. There may be instances in which government personnel are acting in a sub-contract role with the primary contractor, e.g., a public-private partnership. In these instances, this element includes the costs of government personnel and other government costs. Where costs cannot be separately identified to distinct levels of maintenance, the category that represents the predominant costs should be used.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.3.1",
+              "title": "3.1 Overhaul of End Items",
+              "content": "Overhauls are periodic, frequently scheduled, major maintenance events whereby a system undergoes general maintenance and alterations at a depot-level repair activity. The system generally undergoes the installation of alterations and modifications to update its capabilities and large-scale maintenance that cannot be undertaken at other times. The overhaul constitutes extensive renovation including disassembly, inspection, maintenance, repair, reassembly, and test; and upgrade to the latest desired configuration. Multiple subsystems may be repaired and/or upgraded. End items other than prime mission product, such as support equipment and test equipment, are also subject to overhaul.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.3.1.1",
+                  "title": "3.1.1 Scheduled Overhaul",
+                  "content": "This element captures the cost of scheduled overhaul at the depot level.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "9.3.1.1.1",
+                      "title": "3.1.1.1 Vehicle/Platform Overhaul",
+                      "content": "This element captures the cost of scheduled overhaul of the vehicle or platform at the depot level.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.3.1.1.2",
+                      "title": "3.1.1.2 Propulsion Overhaul",
+                      "content": "This element captures the cost of scheduled overhaul of the propulsion system, engines, prime movers, turbines, etc. at the depot level.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.3.1.1.3",
+                      "title": "3.1.1.3 Other Overhaul",
+                      "content": "This element captures the cost of scheduled overhaul of other items not captured in 3.1.1.1 or 3.1.1.2 above.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "9.3.1.2",
+                  "title": "3.1.2 Unscheduled Overhaul",
+                  "content": "This element captures the cost of unscheduled overhaul at the depot level.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "9.3.1.2.1",
+                      "title": "3.1.2.1 Vehicle/Platform Overhaul",
+                      "content": "This element captures the cost of unscheduled overhaul of the vehicle or platform at the depot level.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.3.1.2.2",
+                      "title": "3.1.2.2 Propulsion Overhaul",
+                      "content": "This element captures the cost of unscheduled overhaul of the propulsion system, engines, prime movers, turbines, etc. at the depot level.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.3.1.2.3",
+                      "title": "3.1.2.3 Other Overhaul",
+                      "content": "This element captures the cost of unscheduled overhaul of other items not captured in 3.1.1.1 or 3.1.1.2 above.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "9.3.2",
+              "title": "3.2 Depot Level Reparables (DLR) / Repair of Reparables (ROR)",
+              "content": "This element captures the cost of repairing reparable items. To the extent possible, reparable costs for the primary system, support equipment, training devices, and simulators should be separately identified. The cost includes labor, material, purchased parts, other direct charges, and subcontract costs, but excludes any supply chain management costs such as inventory control and packaging, as well as transportation cost. These latter costs are captured in another cost element - see Element 4.4.2 CLS Supply Management below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.3.3",
+              "title": "3.3 Consumables and Repair Parts",
+              "content": "Consumable maintenance material is material used for the maintenance and support of a primary system and its associated support and training equipment, at any organizational level. Illustrative types of maintenance consumables are coolants and deicing fluids. Repair parts are materials that are used to repair primary systems and associated support and training equipment. Items may include circuit cards, transistors, capacitors, gaskets, fuses, filters, batteries, tires, and other materials that are not repaired. The consumable material and repair parts cost of the primary system, support equipment, training devices, and simulators should be separately identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.3.4",
+              "title": "3.4 Other Maintenance Services",
+              "content": "This element includes costs incurred in providing maintenance not otherwise accounted for. Items may include the cost of environmental protection or cleanup, transportation of repair parts, calibration, and technical assistance that are unique to the system.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.3.4.1",
+                  "title": "3.4.1 O-Level Maintenance Services",
+                  "content": "This element captures other maintenance services (not otherwise accounted for) at the organizational level.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.3.4.2",
+                  "title": "3.4.2 I-Level Maintenance Services",
+                  "content": "This element captures other maintenance services (not otherwise accounted for) at the intermediate level.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.3.4.3",
+                  "title": "3.4.3 Depot Level Maintenance Services",
+                  "content": "This element captures other maintenance services (not otherwise accounted for) at the depot level.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.3.5",
+              "title": "3.5 Packing, Handling, Shipping, Transportation (PHS&T)",
+              "content": "- Packaging provides for product security, transportability, and storability, with the added utility of serving as a medium of communication from the producer/provider to the user. The nature of an item determines the type and extent of protection needed to prevent its deterioration during transport. Shipping mode and any special handling requirements, as well as the length and type of storage considerations, dictate materials selected for preservation in addition to packaging.\n- Handling involves the moving of items from one place to another within a limited range and is normally confined to a single area, such as between warehouses, storage areas, or operational areas, or movement from storage to the mode of transportation.\n- Storage involves the short or long term stockpiling of items. Storage can be accomplished in either temporary or permanent facilities. It may be a function of the transportation timeline or it may be required for material in reserve.\n- Transportation is the movement of equipment and supplies using standard modes of transportation for shipment by land, air and sea. Modes of transportation include cargo, vehicle, rail, ship and aircraft.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.4",
+          "title": "4.0 Sustaining Support",
+          "content": "This category includes support services provided by centrally managed support activities external to the units that own the operating systems. It is intended that costs included in this category represent costs that can be identified to a specific system and exclude costs that must be arbitrarily allocated.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.4.1",
+              "title": "4.1 System Specific Training",
+              "content": "This element includes the contractor's costs provide system-specific specialty training for individuals that need to be replaced due to attrition and normal rotation. Training costs should include the costs of instructors, instructor travel, training support personnel, training devices, course support costs, and course materials.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.4.1.1",
+                  "title": "4.1.1 Operator Training",
+                  "content": "This element captures the contractor's cost to provide training at primary training sites for personnel to become proficient in specific system knowledge. It includes units such as Air Force wings assigned a primary mission of weapon-specific aircrew training, Navy air readiness training units, Navy Afloat Training Groups, and the Army Armor Center. Alternately, these costs may be included as unit costs and included in elements 1.0, 2.0, and 3.0, or they may be tracked separately under sustaining support. If included in other cost elements, costs should be clearly shown. (These costs do not include costs associated with providing skill training unrelated to a specific system, e.g., undergraduate aviation training.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.1.2",
+                  "title": "4.1.2 Maintenance Training",
+                  "content": "These are costs associated with the contractor providing advanced system-specific training associated with maintenance in units designated as primary training facilities.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.1.3",
+                  "title": "4.1.3 Other Training",
+                  "content": "These are the costs of system-specific training associated with support functions other than maintenance, in units designated as primary training facilities.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.4.2",
+              "title": "4.2 Support Equipment Replacement",
+              "content": "These are the contractor's costs incurred to maintain and/or replace equipment that is needed to operate or support a primary system, subsystems, training systems, and other support equipment. The support equipment being replaced (e.g., tools and test sets) may be unique to the system or it may be common to a number of systems, in which case the costs must be allocated among the respective systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.4.3",
+              "title": "4.3 Sustaining/Systems Engineering",
+              "content": "Costs reported in this element may include, but are not limited to contract engineering services, studies, and technical advice. Examples might include aircraft structural integrity monitoring or corrosion monitoring; planning and control of technical program efforts; continuing system requirements definition; and continuing specialty engineering, such as R&M Engineering. Specific modifications to hardware or software are included in Element 5.0, Continuing System Improvements. Sustaining support costs provided through a system support contract should be separately identified within the appropriate cost element, if possible.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.4.3.1",
+                  "title": "4.3.1 Reliability and Maintainability Engineering",
+                  "content": "Reliability and Maintainability Engineering focuses on increasing system or component availability over its life cycle. Reliability Engineering addresses the ability of a system or component to function within a given environment for a specified period of time. It may include engineering and analytical activities such as life data analysis, life testing, reliability modeling, reliability growth analysis, and design of experiments. These costs should not include reliability design or analysis efforts during development or production, but may include continuing reliability engineering efforts during the sustainment phase.\n\nMaintainability engineering activities focus on maintenance activities related to down time - the time it takes to return a failed system or component to operational status. These costs should not include maintainability design efforts during development or production, but may include continuing maintainability efforts during the sustainment phase. These costs may include, for example, maintainability validation activities in a maintainability assessment process, utilizing both analyses and testing. Continuing maintainability modeling and maintainability design improvement efforts may be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.2",
+                  "title": "4.3.2 Logistics Engineering",
+                  "content": "This element includes costs for engineering activities to plan, resource and implement supportability strategy, logistics support analysis, maintenance manpower analysis, and design for supportability. It may also include costs to conduct system redesign of aircraft components or support equipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.3",
+                  "title": "4.3.3 Supply Analysis Efforts",
+                  "content": "This element includes costs to identify and source repair parts, spares and supplies. This element comprises the end-to-end flow of secondary items that are provided to a customer or user. It includes requirements determination, purchasing and supplier management, materiel or inventory management (including returns processing), repair, storage, transportation, and disposal. It excludes material used by a contractor in performance of maintenance or other services. It also includes:\n- Inventory Control - Labor, material, equipment and software used in warehouse operations, and elsewhere, to monitor the quantity, location and status of inventory as well as related shipping, receiving, picking and put-away processes.\n- Packaging, Handling, Shipping - The cost, other than transportation, of collecting, preparing and moving inventory from a warehouse or other storage facility to an end user.\n- Transportation - The cost of transporting inventory from a warehouse or other storage facility to an end user.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.4",
+                  "title": "4.3.4 Safety/Human Systems Integration Engineering",
+                  "content": "This element includes costs to develop system safety requirements, identify hazards, determine the probability of a hazard and the magnitude of its consequence, and develop hazard management and mitigation procedures. Mitigation may include design improvements, process improvements, training improvements, and incorporation of safety equipment and warning systems for personnel. Safety engineering also includes the costs to identify safety critical components and functions, test for safe design, locate potential instances of human error, conduct failure mode, effects, and criticality analysis (FMECA) and fault tree analyses, and develop a Safety Management Plan.\n\nHuman systems integration (HSI) engineering examines the interactions between the operator and the system, including machinery, computer systems, and the natural environment in which the system functions. HSI costs include assessing the cognitive, physical, and sensory skills required for training and using a system, assessing the mental and physical capabilities and limitations of the operator, analyzing the space and ergonomic requirements of the system, and determining that the system operating requirements do not stress or fatigue the operator excessively. It may also include costs to analyze the decision making capabilities of the user, to identify potential areas for automation to reduce operator workload, and to test operator performance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.5",
+                  "title": "4.3.5 Affordability Engineering",
+                  "content": "This element includes costs to analyze designs to identify ways to reduce costs of manufacturing or sustainment. These tasks may include cost trades, cost-benefit analysis, return on investment (ROI) analysis, measures of effectiveness (MOE) and/or measures of merit (MOM) analysis, technology insertion analysis, and total ownership cost assessments.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.6",
+                  "title": "4.3.6 Obsolescence Engineering",
+                  "content": "This element includes costs to analyze designs and products to identify parts and components for which vendors are no longer available, or which can no longer be repaired, and to identify new vendors or interchangeable or replacement parts. It can also include costs associated with reverse engineering to identify part functionality, form-fit-function studies, materials analysis, and life cycle maturity assessments.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.7",
+                  "title": "4.3.7 Availability Management",
+                  "content": "This element includes costs to develop availability metrics and measures, determine the planned system availability, measure the actual system availability, and implement changes for improvement. It includes parts and components analysis, operational concept and procedure analysis, and user behavior analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.8",
+                  "title": "4.3.8 Product Engineering Support",
+                  "content": "This element includes costs to design, build and test prototypes of a system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.9",
+                  "title": "4.3.9 Information Assurance",
+                  "content": "This element includes costs to ensure proper use, processing, storage, and transmission of information or data and the systems and processes used for those purposes. It also includes information risk assessment and mitigation. It includes tactics to protect confidentiality, possession or control, integrity, authenticity, availability and utility of information and information systems.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.10",
+                  "title": "4.3.10 Configuration Management",
+                  "content": "This element includes costs associated with establishing and maintaining the design, technical, physical and performance characteristics of a system throughout its life cycle. These activities may include document and drawing control, engineering change proposal management, product scope control, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.11",
+                  "title": "4.3.11 System Performance Analysis",
+                  "content": "This element includes costs associated with predicting, measuring and managing the technical performance of the system. This analysis may include benchmarking, comparison to Key Performance Parameters (KPPs), and modeling and simulation of the system performance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.12",
+                  "title": "4.3.12 Supply",
+                  "content": "This element includes costs to maintain, identify, order and transport supplies needed at the squadron, group or mission operating facility.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.13",
+                  "title": "4.3.13 Data Analysis",
+                  "content": "This element includes the costs of data collection and analysis to assess the effectiveness of site operations. It also includes the costs of collecting site-level data inputs to Headquarters-level data deliverables listed on the contract data requirements list, DD Form 1423.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.3.14",
+                  "title": "4.3.14 Physical Security",
+                  "content": "This element includes costs to provide facility security, such as structurally sound buildings, perimeter gates and fences, guard stations, closed circuit and electronic monitoring, badging and access control. It includes protection from and remediation for damage from natural and manmade disasters, accidents, electrical power losses and spikes, fire, theft, etc.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.4.4",
+              "title": "4.4 Program Management",
+              "content": "This element includes costs for management activities continuing from development or production, or started during the sustainment phase. Program management activities are similar to those performed during development or production. This element also includes management efforts related to maintenance and supply chain, possibly started in production and continuing into sustainment.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.4.4.1",
+                  "title": "4.4.1 Contractor Logistics Support (CLS) Management",
+                  "content": "This element includes the cost to manage the CLS program, including integration of military and contractor repair workforces, repair planning, facility selection, contractor vs. government functional trade-offs, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.2",
+                  "title": "4.4.2 CLS Supply Management",
+                  "content": "This element includes the costs to perform CLS supply chain management for sustainment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.3",
+                  "title": "4.4.3 Financial/Schedule Planning and Reporting",
+                  "content": "This element includes the costs to provide financial management, including cost vs. budget analyses, full funding assessments, appropriations and obligations management, etc. This element also includes the costs associated with developing the Integrated Master Plan (IMP) and Integrated Master Schedule (IMS), the allocation of funding to tasks and work packages, and assessing impacts of schedule changes on Estimate at Completion (EAC), etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.4",
+                  "title": "4.4.4 Transition to Lead Service",
+                  "content": "This element includes the case where a system is developed by another agency (Missile Defense Agency, for example) and then \"turned over\" to a DoD service to operate and maintain. It includes the costs of establishing end user requirements, refining the concept of operations (CONOPS) for how the receiving service will use the system, liaison with the receiving service, and estimating operations costs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.5",
+                  "title": "4.4.5 Quality Assurance (Program Level)",
+                  "content": "This element includes the costs of verifying that products or systems meet user requirements, and implementing improvements as needed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.6",
+                  "title": "4.4.6 Administrative Security",
+                  "content": "This element includes the costs of classified document control. It also includes the costs of managing a facility security program; such as maintaining clearance documentation, managing visit authorizations, controlling classified access, developing and implementing security procedures, conducting security audits and incident investigations, monitoring for suspicious or unusual activity, coordinating with management and security inspectors, and keeping security records.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.7",
+                  "title": "4.4.7 Transition to Performance Based Logistics (PBL)",
+                  "content": "This element includes the costs to manage the PBL program to achieve the metric goals, such as required availability, reduced downtime, reduced repair costs etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.4.8",
+                  "title": "4.4.8 Risk Mitigation",
+                  "content": "This element includes the costs associated with identifying, mitigating and managing impacts of events which have the potential to negatively impact design, performance, cost or schedule of the program. It includes assessing the probability of an occurrence and the magnitude of its consequence, in order to prioritize and reduce system risks.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.4.5",
+              "title": "4.5 Information Systems",
+              "content": "This element includes the costs associated with the following items.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.4.5.1",
+                  "title": "4.5.1 Tech Refresh",
+                  "content": "This element includes the costs of periodic replacement of computers and peripherals.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.5.2",
+                  "title": "4.5.2 License Fees",
+                  "content": "This element includes the costs of software licenses, either enterprise-wide or seat-based.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.5.3",
+                  "title": "4.5.3 Maintenance",
+                  "content": "This element includes the costs of maintenance of information systems.\n\nSpecial instructions for MAIS programs:\n\nThe definitions for the five additional MAIS-unique cost elements are:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "9.4.5.3.1",
+                      "title": "4.5.3.1 Help Desk",
+                      "content": "This element captures the costs of providing help desk support for end users. It includes Levels I through III. This support will include user account management. The Help Desk/Operations Support Team (OST) will provide Tier I level support for problems related to systems administration and monitoring, event management, and database administration including restart, recovery, backups, and restorations. The help desk support staff is the initial focal point for answering questions and providing status information for the hosted site. The typical support hours are 24 X 7 X 365.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.4.5.3.2",
+                      "title": "4.5.3.2 System Database/Administration",
+                      "content": "This element captures the costs of providing system/database administration for the AIS solution computer resources once Operational Site Activation is complete and the system has reached full operational capability (FOC). These could be costs incurred as a result of continuing contractor support or by the government.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.4.5.3.3",
+                      "title": "4.5.3.3 Follow On User Training",
+                      "content": "This element contains all costs associated with training services, devices, accessories, aids, equipment, facilities, and parts used to facilitate instruction through which personnel will acquire sufficient concepts, skill, and aptitudes to operate and maintain the AIS system. This element includes the effort associated with the maintenance of training equipment, as well as the execution of training services to the users. It includes the basic, burdened wage of the trainers, but not the wage of the trainees. It also includes TDY of Government personnel for training, and the cost of any contracts to train personnel.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.4.5.3.4",
+                      "title": "4.5.3.4 Accreditation",
+                      "content": "This element contains all costs associated with planning, documenting, obtaining and maintaining system accreditation. Accreditation is the certification that an information system meets defined configuration, security, and risk standards, and that it is authorized to operate at a given security level (unclassified, classified, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9.4.5.3.5",
+                      "title": "4.5.3.5 Independent Verification and Validation (IV&V)",
+                      "content": "This element contains all costs associated with Information System and software IV&V. IV&V is a third-party review that ensures that the system is well engineered (verification) and that the system meets the users' needs (validation).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "9.4.6",
+              "title": "4.6 Data and Technical Publications",
+              "content": "This element includes the costs of maintaining and updating data and technical publications.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.4.7",
+              "title": "4.7 Simulator Operations",
+              "content": "This element includes the costs to operate and maintain simulator training devices for a system. It may include labor, material and overhead costs for simulator operations.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.4.7.1",
+                  "title": "4.7.1 Simulator Operations Hardware Support",
+                  "content": "This element includes the costs to operate and maintain the hardware associated with a simulator system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.7.2",
+                  "title": "4.7.2 Simulator Operations Manpower",
+                  "content": "This element includes the labor costs associated with operation and maintenance of a simulator system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.4.7.3",
+                  "title": "4.7.3 Simulator Tech Refresh",
+                  "content": "This element includes the costs of periodic replacement of simulator hardware and software.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.4.8",
+              "title": "4.8 Other Sustaining Support",
+              "content": "This element includes any significant sustaining support costs not otherwise accounted for. This cost element may be used to identify expenses such as those listed below, if they apply to the system under consideration:\n- Test and evaluation in support of deployed systems, such as range costs, test support, data reduction, and test reporting.\n- Air, sea, and land support not funded by the unit and provided by other activities to verify the proper operation of an electronic, communication, sensor, or other similar system.\n- Centrally provided technical assistance, such as Help Desks, that provide DoD-wide or Service-wide support.\n- Communication services (e.g., data/voice links, dedicated lines, microwave channels), hardware, and software leases purchased on a DoD-wide or Service-wide basis for direct system specific support of a system.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.5",
+          "title": "5.0 Continuing System Improvements",
+          "content": "This element includes the costs of hardware and software updates that occur after deployment of a system. These updates improve a system's safety, reliability, maintainability, or performance characteristics and enable the system to meet its basic operational requirements throughout its life. These costs include contractor labor, materials, and overhead costs.\n\n(This element does not include all changes to a system developed subsequent to the initial delivered configuration. System improvements identified as part of an incremental evolutionary acquisition strategy or pre-planned product improvement program that are included in the acquisition phase are not included in this element. Any improvement with a dollar value sufficient to qualify it as a distinct Major Defense Acquisition Program (MDAP) in its own right would normally not be included in this element, but would be reported separately under its own reporting plan.)",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.5.1",
+              "title": "5.1 Hardware Modifications or Modernization",
+              "content": "These are costs associated with modifying the system, support equipment, and training devices. All costs associated with developing, producing, and installing the modifications (mods) are included. When hardware modifications require changes in system or support software or technical documentation, these costs should be included with hardware modifications costs.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "9.5.1.1",
+                  "title": "5.1.1 Mod Kit Development",
+                  "content": "These costs are associated with the design and development of subsystem, component, and parts changes to improve system performance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.5.1.2",
+                  "title": "5.1.2 Mod Kit Procurement",
+                  "content": "These costs are associated with the procurement of subsystem, component, and parts changes to improve system performance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.5.1.3",
+                  "title": "5.1.3 Mod Kit Initial Spares",
+                  "content": "These costs are associated with the purchase of initial spares associated with the subsystem, component, and parts changes to improve system performance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "9.5.1.4",
+                  "title": "5.1.4 Mod Kit Installation",
+                  "content": "These costs are associated with the installation of subsystem, component, and parts changes to improve system performance.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "9.5.2",
+              "title": "5.2 Software Maintenance or Modification",
+              "content": "This element includes contractor labor, material, and overhead costs incurred after deployment in supporting the update, maintenance, modification, integration, and configuration management of software. Depot-level maintenance activities or laboratories may incur these costs. The element includes any licensing costs for software not owned by the operating units (see Element 2.2 Support Services). It also includes operational, maintenance, support and diagnostic software programs for a primary system, support equipment, and training equipment. The cost of operating and maintaining the associated computer and peripheral equipment in the software support activity and the cost to conduct testing of software are also included.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.6",
+          "title": "6.0 Installation and Personnel Support (System Level Cost Only)",
+          "content": "Installation and personnel support includes costs such as base operating support, medical, general training, and other items that cannot be directly related to the units and personnel that operate and support a system. Contractor costs would not typically be included, unless they are a direct contract-chargeable service or item.\n\nInstallation Support includes base operations support; facilities sustainment, restoration, and modernization; base communications; and other similar costs. Base operating support may include communications, supply operations, personnel services, security, transportation, etc.\n\nPersonnel Support includes costs for the acquisition, initial training, and quality of life programs necessary to maintain a force. Personnel support costs are frequently allocated to a system based on the number and type of system-specific individuals identified in the Unit-Level Manpower portion of the Sustainment Cost Elements.\n\nGeneral Training and Education includes general training and education not associated with a specific weapon or other system provided through central activities. This includes the costs of recruitment and initial skills training, professional military education, and academic education programs.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FNCL-81831.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FNCL-81765C",
+  "slug": "di-fncl-81765c",
+  "title": "Contractor Business Data Report (CBDR)",
+  "summary": "The Contractor Business Data Report (CBDR) is used by contractors to submit direct and indirect actual and proposed cost data on Government contracts and solicitations per DFARS requirements.",
+  "approval_date": "2021-03-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10225",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "CAPE",
+  "project_number": "FNCL-2020-001",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "For background and detailed requirements related to Contractor Business Data Report (1921-3), refer to DoD 5000.04-M-1, \"Cost and Software Data Reporting (CSDR) Manual.\"\n\nThe \"Contractor Business Data Report,\" is used by contractors to submit: (1) direct and indirect actual cost data on Government contracts and (2) proposed direct and indirect cost data in response to Government solicitations according to Defense Federal Acquisition Regulations Supplement (DFARS) sections 234.7100, 234.7101, 242.503-2, 252.234-7003, and 252.234-7004.\n\nThis Data Item Description (DID) summarizes the format for the 1921-3 data model and provides preparation instructions.\n\nThis DID supersedes DI-FNCL-81765B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-FNCL-81765B"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "All references below will be made available at",
+      "url": "https://cade.osd.mil/policy"
+    },
+    {
+      "label": "See the CADE Web site",
+      "url": "https://cade.osd.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "References.",
+      "content": "All references below will be made available at https://cade.osd.mil/policy.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "DoD 5000.73, \"Cost Analysis Guidance and Procedures,\" (current version).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "DoD 5000.04-M-1, \"Cost and Software Data Reporting (CSDR) Manual,\" (current version).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.3",
+          "title": "CSDR DD Form 2794 Template and Process (current version).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.4",
+          "title": "Contractor Business Data Report (CBDR) 1921-3 Data Model (current version).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "All data in sections A through H shall be submitted electronically in accordance with the CAPE-approved 1921-3 data model, unless an alternative format has been specified in the contract requirements. The data submitted should be consistent with the forward pricing rates.\n\nThe 1921-3 must be submitted as a stand-alone Excel-compatible file to the CADE's secure Web site using the 1921-3 and FPR Submit-Review System. Uploading requires the use of either a DoD Common Access Card (CAC) or a DoD-approved External Certificate Authority (ECA) Certificate. See the CADE Web site (https://cade.osd.mil) for certificate and other submission instructions.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Implementation.",
+      "content": "The CBDR requirement applies to both prime contractors and subcontractors that have other CSDR requirements. Contractors are responsible for implementing CSDR requirements on all subcontracts that meet the reporting thresholds (see DoD Instruction 5000.73, Table 1, \"Cost Data Reporting Requirements\").",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "General Instructions.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "All currency shall be reported with at least the precision of whole U.S. dollars.",
+          "content": "All hours shall be reported with at least the precision of whole hours. (In other words, fractions of dollars and/or hours are allowed. Do not report in thousands of dollars and/or hours.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "1921-3 reporting is not required for companies foreign to the United States.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "The 1921-3 is to be prepared by the business entity (e.g., plant, site, or business unit) who has received the requirement on any CSDR contract plan.",
+          "content": "This business entity may or may not be responsible for submitting a Forward Pricing Rate Proposal (FPRP), representing the basis for negotiating the Forward Pricing Rate Agreement (FPRA) with the U.S. Government. If the business entity does submit an FPR within the same fiscal year for the contractor, then the 1921-3 must align with the rate categories provided in the FPR. If different sites for a business entity have different rates, data must be reported discretely by site.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.4",
+          "title": "The 1921-3 report is to be submitted annually, as of the end of the business entity's fiscal year.",
+          "content": "The report is due 60 days subsequent to the end of the contractor's fiscal year. The previous year's actuals do not need to be certified, but should be updated to certified actuals in the following year's report. If there are issues with providing non-certified actuals, contact the Defense Cost and Resources Center (DCARC).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "If the submission is classified, contact the Defense Cost and Resources Center (DCARC) for special processing instructions.",
+          "content": "If the use of a proprietary disclosure statement is required, it should be inserted in the Metadata tab.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "The data reported in Sections E (Overhead Expense Details) and F (Overhead Base Details) should roll-up into the data reported in Section D (Overhead Rate Summary).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.7",
+          "title": "All dollars should be reported in then-year.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Metadata.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "5.1",
+          "title": "Item 1. Contractor Name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.2",
+          "title": "Item 2. Contractor Address (including ZIP code).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.3",
+          "title": "Item 3. Business Entity.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.4",
+          "title": "Item 4. Point of Contact (Last Name, First Name, Middle Initial).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.5",
+          "title": "Item 5. Point of Contact (Department).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.6",
+          "title": "Item 6. Point of Contact (Telephone Number, including Area Code).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.7",
+          "title": "Item 7. Point of Contact (Email Address).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.8",
+          "title": "Item 8. Date Prepared (YYYYMMDD).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.9",
+          "title": "Item 9. Rate Projections Source(s) (Forward Pricing Rate Number) and Date (YYYYMMDD).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5.10",
+          "title": "Item 10. Reporting Calendar.",
+          "content": "Provide at a minimum the last two years of actuals and projections for the years reflected in the business unit's current FPRA/FPRP. The business entity is encouraged to provide actuals as far back as possible. If the business entity does not submit an FPR, then provide data which includes the number of years in the business entity's forecast.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "5.10.1",
+              "title": "Year.",
+              "content": "Designate the year in four digits, for example, \"2018.\"",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.10.2",
+              "title": "Year Start.",
+              "content": "The first day within the designated year. Use the appropriate numeric format. For example, January 1, 2018, would be shown as \"20180101.\"",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.10.3",
+              "title": "Year End.",
+              "content": "The last day within the designated year. Use the appropriate numeric format. For example, December 31, 2018, would be shown as \"20181231.\"",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5.10.4",
+              "title": "Latest Complete Fiscal Year.",
+              "content": "Mark \"X\" if the Year is the \"Latest Complete Fiscal Year,\" referring to the company's most recently completed year for financial reporting. Only one year will be marked. Years including and before the \"Latest Complete Fiscal Year\" contain actual values while years after the \"Latest Complete Fiscal Year\" are forecasted values.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Reported Data.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "6.1",
+          "title": "Section A. Business Entity Cost Summary.",
+          "content": "Report the total costs actually incurred or forecasted to be incurred by the business entity according to the following categories. Do not omit any business entity costs from this section. Do not include the same cost in two different categories.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.1.1",
+              "title": "Cost Type.",
+              "content": "Enter one of the following. Specify where fringe costs are reported in the Data Dictionary.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "6.1.1.1",
+                  "title": "Direct Labor.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.2",
+                  "title": "Direct Materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.3",
+                  "title": "Other Direct Costs (ODC).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.4",
+                  "title": "Overhead.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.5",
+                  "title": "G&A.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.6",
+                  "title": "Unallowable.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.7",
+                  "title": "Other (specify).",
+                  "content": "If necessary, enter the name of other categories of business unit costs not captured in Items 1-6 above. If there are multiple other categories, please insert additional items as needed and specify their names. Descriptions regarding the cost contents in each cost type must be provided in the Data Dictionary.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.1.1.8",
+                  "title": "Total Business Entity Costs.",
+                  "content": "Items 1-7 will sum to Item 8, Total Business Entity Costs.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "6.1.2",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.1.3",
+              "title": "Values.",
+              "content": "Enter total dollars experienced for each cost type.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.2",
+          "title": "Section B. Revenue Summary.",
+          "content": "The total actual and forecasted business unit revenues.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.2.1",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.2.2",
+              "title": "Values.",
+              "content": "Enter the total revenue in dollars.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.3",
+          "title": "Section C. Direct Labor Rate Summary.",
+          "content": "Provide straight-time dollars per hour for each direct labor category. Report straight-time direct labor rates, excluding fringe rates and overtime. If rates vary by location, direct labor rates should be grouped/identifiable by location.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.3.1",
+              "title": "Direct Labor Rate Category.",
+              "content": "Enter the direct labor categories managed by business entity. If the business entity provides an FPRP or FPRA document, then the direct labor categories reported here must be consistent with the categories in the FPR process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.3.2",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.3.3",
+              "title": "Values.",
+              "content": "Provide Dollars per Hour.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.4",
+          "title": "Section D. Overhead Rate Summary.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.4.1",
+              "title": "Business Unit Overheads.",
+              "content": "For each overhead (including fringe and G&A overheads) managed by the business entity, provide the base, expense (pool), and rate values. If the business entity provides an FPRP or FPRA document, then the overhead categories and rates reported here must be consistent with the overhead categories provided in the FPR process. Specify where fringe costs are reported in the data dictionary. Exclude unallowable costs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.4.2",
+              "title": "Base, Expense, and Rate.",
+              "content": "Provide the base, expense (pool), and rate values for each overhead.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.4.3",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.4.4",
+              "title": "Value.",
+              "content": "For each overhead, provide the base, expense, and rate using the appropriate measure of hours, dollars, or percentage rate.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.5",
+          "title": "Section E. Overhead Expense Details.",
+          "content": "Identify the expense dollars for each overhead identified in Section D, further identified by component categories tracked by the business entity. Where applicable, Internal Research and Development costs must be identified separately for each overhead. For fringe overheads, retirement and medical costs should be identified separately. For overheads other than fringe and G&A overheads, also provide indirect labor Hours as well as indirect Dollars.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.5.1",
+              "title": "Business Unit Overheads.",
+              "content": "See definition for 3.d.i.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.5.2",
+              "title": "Overhead Expense Details/Components.",
+              "content": "Provide breakdown of overhead categories by components tracked by the business entity.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.5.3",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.5.4",
+              "title": "Values.",
+              "content": "For each overhead expense component, provide the expense dollars. Also provide indirect hours for all overheads except fringe and G&A overheads.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.6",
+          "title": "Section F. Overhead Base Details.",
+          "content": "Identify the base dollars and hours for each overhead (excluding fringe and G&A Overheads) identified in Section D, further identified by buyer and program name. The contractor must further identify costs by other DoD programs, by other government programs, and by commercial programs. Exclude unallowable costs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.6.1",
+              "title": "Business Unit Overheads.",
+              "content": "See definition for 3.d.i.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.6.2",
+              "title": "Buyer.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "6.6.2.1",
+                  "title": "DoD Program Buyer.",
+                  "content": "For all business entity work identified by a specific DoD program in the \"Program Name\" data item, enter the buying agency from the list below:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "6.6.2.1.1",
+                      "title": "Army.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6.6.2.1.2",
+                      "title": "Navy.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6.6.2.1.3",
+                      "title": "Marines.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6.6.2.1.4",
+                      "title": "Air Force.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6.6.2.1.5",
+                      "title": "Missile Defense Agency.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6.6.2.1.6",
+                      "title": "DoD.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6.6.2.1.7",
+                      "title": "Other (Specify).",
+                      "content": "If none of the above, specify the DoD buying agency. Do not enter \"Other.\"",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "6.6.2.2",
+                  "title": "Other DoD.",
+                  "content": "All remaining DoD effort and projected new DoD business that is not associated with the DoD programs/projects associated with one of the DoD Programs which are listed as a \"Specified DoD Program.\" The contractor must include the names of the programs and the total costs incurred by each cost category in Section I for the fiscal year of the 1921-3 report.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.6.2.3",
+                  "title": "Other Government.",
+                  "content": "Work for government agencies other than the DoD that is being performed in the same business entity. If costs for \"Other Government\" are greater than five percent of the total direct labor dollars, the contractor must include the names of the programs and the total costs incurred by each cost category in Section I for the fiscal year of the 1921-3 report.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.6.2.4",
+                  "title": "Commercial.",
+                  "content": "Commercial work that affects the calculation of DoD overhead rates in the business entity. If costs for \"Commercial\" are greater than five percent of the total direct labor dollars, the contractor must include the names of the programs and the total costs incurred by each cost category in Section I for the fiscal year of the 1921-3 report.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "6.6.3",
+              "title": "Program Name.",
+              "content": "Enter the DoD programs (regardless of Acquisition Category (ACAT) level) identified in Section F Base Details above. If the contractor has fewer than ten DoD programs, then it should report all of its DoD programs. It is encouraged that more than ten programs be identified. Include all contracts and projects associated with the DoD program. For example, if a contractor has eighteen contracts for a single DoD program-including efforts for spares, sustainment, production, and development-the costs for these contracts must be aggregated and reported as one program. Report all contracts associated with each program in Section H, Contract Numbers.\n\nEnter the Government name given to the acquisition program, regardless of ACAT designation. If only a product associated with the program is being produced, enter the type of the product being developed or procured (e.g., radar), and include the official military designation for the end item (e.g., \"AN/APG-81 Radar\").\n\nThe \"Program Name\" data item may be nulled (\"N/A\") for all \"Buyer\" data item entries associated with \"Other DoD,\" \"Other Government,\" and \"Commercial\".",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.6.4",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.6.5",
+              "title": "Values.",
+              "content": "For each buyer/program, provide dollars and hours.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.7",
+          "title": "Section G. Delivery Schedule Details.",
+          "content": "If business base projections are made on the basis of annual program quantity orders or deliveries, report them for all programs identified in Section F. If a program does not have a delivery schedule, input \"N/A\" in the data points. The business entity is encouraged to provide additional details and data items where readily available.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.7.1",
+              "title": "DoD Program Name.",
+              "content": "See definition for Section F, Item iii.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.2",
+              "title": "End Item.",
+              "content": "Describe the end items being delivered for each program according to the associated CSDR Plans. Each program may have multiple line items if they are delivering different types of products that are qualitatively different and significant in scope.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.3",
+              "title": "Year.",
+              "content": "See definition for Metadata Item 2.j.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.7.4",
+              "title": "Quantity.",
+              "content": "The number of program prime mission product end item quantities procured or delivered or forecasted to be procured or delivered.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.8",
+          "title": "Section H. Contract Numbers.",
+          "content": "Provide all contract numbers active in the Prior Year and relate to the DoD Program Name for at least the programs identified in Section F Base Details.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.8.1",
+              "title": "Contract Number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.8.2",
+              "title": "DoD Program Name.",
+              "content": "See definition for Section F, Item iii.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "6.9",
+          "title": "Section I. Data Dictionary.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "6.9.1",
+              "title": "Remarks.",
+              "content": "Note any relevant information that could be useful in the interpretation of the data provided in this report, including any explanations specified in the items above.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.9.2",
+              "title": "Accounting Changes.",
+              "content": "Use this area to report significant accounting changes to the business entity that have occurred and are projected to occur, for each year of the reporting period.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.9.3",
+              "title": "Organizational Changes.",
+              "content": "Use this area to report significant organizational changes to the business entity that have occurred and are projected to occur, for each year of the reporting period.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "6.9.4",
+              "title": "Configuration of Rate Structure.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "6.9.4.1",
+                  "title": "Placement of Fringe.",
+                  "content": "For the overheads identified in Section D, E, and F, are fringe costs included in the base, expense, or both?",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6.9.4.2",
+                  "title": "G&A Base.",
+                  "content": "Identify the base for each G&A Overhead and specify if it includes any material dollars.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FNCL-81765C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

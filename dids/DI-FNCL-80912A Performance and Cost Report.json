@@ -1,0 +1,89 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FNCL-80912A",
+  "slug": "di-fncl-80912a",
+  "title": "Performance and Cost Report",
+  "summary": "The Performance and Cost Report provides current status and projected requirements of funds, man-hours, and work completion for evaluating contractor progress.",
+  "approval_date": "2019-08-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10075",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "FNCL-2019-003",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Performance and Cost Report provides current status and projected requirements of funds, man-hours, and work completion. The report is used for evaluation of contractor progress.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID supersedes DI-FNCL-80912.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-FNCL-80912"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Performance and Cost Report format shall be in contractor format and machine readable by the Government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Performance and Cost Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Man-hours.",
+          "content": "Total man-hours expended by technical categories or program tasks, cumulative total man-hours to date, and percentages of total man-hours spent to date. State whether or not remaining hours are sufficient to complete the task.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Funds.",
+          "content": "Total funds expended, by task, for the month; cumulative total funds spent to date; and percentage of total contract funds spent to date. State whether or not remaining funds are sufficient to complete the task. The report shall include cost variance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Work completion.",
+          "content": "Percentage of work completed, by tasks during the month and cumulative percentage of total contract work completed to date.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FNCL-80912A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

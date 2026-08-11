@@ -1,0 +1,161 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-82306",
+  "slug": "di-facr-82306",
+  "title": "MILCON Interface Control Document (ICD)",
+  "summary": "The MILCON Interface Control Document (ICD) describes the design interfaces with the contractor's design and the MILCON design and is retained for reference by operations and maintenance personnel.",
+  "approval_date": "2019-11-14",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10124",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "FACR-2019-004",
+  "applicable_forms": "No",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The MILCON Interface Control Document (ICD) describes the design interfaces with the contractor's design and the MILCON design. This document shall be retained for reference by the operations and maintenance personnel.\nThis DID contains the format, content, and intended use information for the MILCON ICD. It is intended that all requirements contained herein shall apply to all applicable DoD acquisition programs through all program phases.\nThe applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "Contractor format is acceptable. Format shall be machine-readable by the government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Cover Page and Document Tracking Information.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Cover Page.",
+              "content": "Title, Date of Issue, Revision Date, Contract Number, Contractor's name and address, Distribution Statement, Export Control Warning Label, and Security classification",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Record of Change Page.",
+              "content": "Enter a record of all changes made to the Interface Control Document package",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Table of Contents.",
+          "content": "A listing of the major sections identified as below.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Applicability.",
+          "content": "Describe the purpose of the document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Content.",
+          "content": "The document shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.4.1",
+              "title": "Interface Design.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.4.1.1",
+                  "title": "Drawings.",
+                  "content": "Provide drawing(s) and descriptions that:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "2.4.1.1.1",
+                      "title": "Outline the interfaces and compatibility between",
+                      "content": "Outline the interfaces and compatibility between the Government MILCON Facilities Requirements Document (FRD) and the contractor Delta Facilities Requirements Document (Delta FRD).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2.4.1.1.2",
+                      "title": "Describe and detail the interfaces for",
+                      "content": "Describe and detail the interfaces for power, utilities, communications, security, plumbing, fire/protection, and mechanical.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "2.4.1.2",
+                  "title": "Interface Identification and Diagrams.",
+                  "content": "Provide the unique identifier assigned to the interface and identify the interfacing entities by name, number, version, and documentations reference, as applicable. Ensure that the drawings contain the interface identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.1.3",
+                  "title": "Characteristics.",
+                  "content": "Provide the characteristics and thresholds of each interface. Note any de-rating factors implemented in the interface.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.1.4",
+                  "title": "Standard.",
+                  "content": "Provide the standard(s) on each interface for which it applies.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.4.2",
+              "title": "Requirements Traceability.",
+              "content": "Provide the requirements traceability for each interface.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-82306.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

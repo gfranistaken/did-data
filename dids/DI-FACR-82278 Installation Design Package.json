@@ -1,0 +1,150 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-82278",
+  "slug": "di-facr-82278",
+  "title": "Installation Design Package",
+  "summary": "The Installation Design Package provides the design, data, and results for installation of facilities, retained by operations and maintenance personnel for reference.",
+  "approval_date": "2019-07-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10049",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "FACR-2019-002",
+  "applicable_forms": "No",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Installation Design Package provides the design, data, and results for installation(s) of facility (ies). The operations and maintenance personnel will retain the Installation Design Package for reference.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the Installation Design Package resulting from the work task described in the contract. It is intended that all requirements contained herein shall apply to all applicable Department of Defense acquisition programs through all program phases.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DoD Instruction (DoDI) 5230.24",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/523024p.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Installation Design Package shall be in contractor format. The format shall be machine-readable by the Government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Installation Design Package shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page and Document Tracking Information.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Cover Page.",
+              "content": "Title, Date of Issue, Revision Date, Contract Number, Contractor's name and address, Distribution Statement (ref: DoD Instruction (DoDI) 5230.24 (https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/523024p.pdf)), Export Control Warning Label, and Security Classification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Document Tracking - Record of Change Page.",
+              "content": "A record of all changes made to the Installation Design Package.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents.",
+          "content": "A list of the major sections specified below in 3.3-3.7.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Overview.",
+          "content": "A description of the purpose of the Installation Design Package.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Design Drawings.",
+          "content": "Site plans and layouts (i.e., building pads, profiles, typical sections, elevations, grades, site setup, storm and sanitary), building plans and layouts (i.e., engineer and communication schematics, wall sections, structural and architecture drawings), and detail drawings.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Construction specifications for the project, including:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Reports from Independent Verification and Validation (IV&V) Commissioning",
+              "content": "(i.e., concrete compaction testing, soil compaction testing, pressure testing.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Required waivers or exemptions, if any",
+              "content": "Justification: Clarity and consistency.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Design Analyses.",
+          "content": "The installation design analysis and calculations necessary to substantiate the design and design assumptions. Provide narrative and analysis, including code analysis, by all disciplines (civil, architectural, structural mechanical, plumbing, power and lighting, communications, fire and protection, life safety, etc.).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Site plans.",
+          "content": "The site plan, as well as applicable drawings.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-82278.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

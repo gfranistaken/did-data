@@ -1,0 +1,153 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-82283",
+  "slug": "di-facr-82283",
+  "title": "Installation Deficiency Test Report",
+  "summary": "The Installation Deficiency Test Report documents test data and results from installation testing to identify which specifications were or were not attained, for later use by operations and maintenance personnel.",
+  "approval_date": "2019-08-09",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10065",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "FACR-2019-007",
+  "applicable_forms": "No",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Installation Deficiency Test Report provides documented data and results of the testing conducted in accordance with the Commissioning (Cx) Plan and Installation Test Procedures work task described in the contract. The Installation Deficiency Test Report provides an analysis of the data and results to identify which specifications were or were not attained. After facility acceptance, the data shall be used for reference by the operations and maintenance personnel.\nThis Data Item Description (DID) contains the format, content, and intended use information for the Installation Deficiency Test Report resulting from the work task described in the contract. It is intended that all requirements contained herein shall apply to all applicable Department of Defense acquisition programs through all program phases.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "ref: DoD Instruction (DoDI) 5230.24",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/523024p.pdf"
+    },
+    {
+      "label": "ref. MDS-QS-003-PMAP-Rev B",
+      "url": "https://mko.mda.mil/sites/qs/QSResources/MDAQS%20Directives%20Policies%20%20Memorandums/MDA_QS_003_PMAP_Rev%20B%203_2_2012b.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documentation.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract. List the applicable reference documentation.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format:",
+      "content": "The Installation Deficiency Test Report shall be in contractor format. Format shall be machine-readable by the Government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content:",
+      "content": "The Installation Deficiency Test Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page and Document Tracking Information:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Cover Page:",
+              "content": "Title, Date of Issue, Revision Date, Contract Number, Contractor's name and address, Distribution Statement (ref: DoD Instruction (DoDI) 5230.24 (https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/523024p.pdf)), Export Control Warning Label, and Security classification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Record of Change Page:",
+              "content": "A record of all changes made to the Installation Deficiency Test Report.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents:",
+          "content": "A listing of the major sections identified below in 3.3-3.9.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Overview:",
+          "content": "A description of the purpose of the Installation Deficiency Test Report and the system(s) to which it applies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Test Description:",
+          "content": "Provide a description of the test.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Data Sheets:",
+          "content": "The data sheets shall contain the actual measurements (in English and metric or as specified by the contract or in writing by the procuring contract officer) made on each facility and equipment during the pre-shakedown, shakedown, and operational tests, and the acceptance limits or criteria for each measurement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Test Equipment:",
+          "content": "A list of all test equipment used for the tests, including manufacturer and model number, the test date, and the name of the activity performing the calibration of each test equipment item.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Item or Parts:",
+          "content": "A list of items or parts used during the installation testing. Denote if the item is a Configuration Item, mission-critical item, or safety-critical item (ref. MDS-QS-003-PMAP-Rev B (https://mko.mda.mil/sites/qs/QSResources/MDAQS%20Directives%20Policies%20%20Memorandums/MDA_QS_003_PMAP_Rev%20B%203_2_2012b.pdf)).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Major Equipment and Facilities:",
+          "content": "Provide a list of major (as defined in the contract or in writing by the Procuring Contract Officer) equipment/facilities installed and tested at each location.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Analysis:",
+          "content": "An analysis of the test conducted and a description of the results documenting deficiencies and issues. Include a description of how deficiencies and issues were identified, evaluated, and analyzed. Provide a risk analysis based on the deficiencies and issues discovered during the test. Include a description of correction and re-testing requirements and activities to provide deficiency and issue resolution.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-82283.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

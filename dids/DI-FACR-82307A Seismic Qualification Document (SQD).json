@@ -1,0 +1,250 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-82307A",
+  "slug": "di-facr-82307a",
+  "title": "Seismic Qualification Document (SQD)",
+  "summary": "The Seismic Qualification Document (SQD) documents the engineering design and analysis of seismic force resisting systems and provides objective evidence that installed equipment and non-structural components can survive and operate after the design seismic event.",
+  "approval_date": "2022-05-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10315",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "FACR-2021-001",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Seismic Qualification Document (SQD) provides documentation of engineering design and analysis of the seismic force resisting systems and objective evidence demonstrating installed equipment and non-structural components are capable of surviving and operating immediately after the design seismic event. After acceptance, the data will be retained for reference by operations and maintenance personnel.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract Statement of Work (SOW). This DID supersedes DI-FACR-82307.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-FACR-82307"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "These documents are available online at:",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "The SEWS can be obtained at",
+      "url": "https://ehss.energy.gov/au/seismic/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable. Format shall be machine-readable by the government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The SQD shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page and Document Tracking Information.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Cover Page:",
+              "content": "Title, Date of Issue, Revision Date, Contract Number, Contractor's name and address, Distribution Statement in accordance with Department of Defense (DoD) Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents; Export Control Warning Statement in accordance with DoD Directive (DoDD), Withholding of Unclassified Technical Data from Public Disclosure; and Security classification markings, when applicable, in accordance with DoD Manual (DoDM) 5200.01 Volume 2, DoD Information Security Program: Marking of Information. (These documents are available online at: https://www.esd.whs.mil/.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Record of Change Page:",
+              "content": "Shall indicate how to record all changes made to the Document.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents.",
+          "content": "A listing of the Document's major sections. The table of contents shall include the sections identified below:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Overview.",
+              "content": "Shall describe the purpose of the SQD and the system(s) to which it applies.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Reference Documentation.",
+              "content": "Shall list the applicable reference documentation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Site Considerations.",
+              "content": "Shall identify the site location and Site-specific seismic criteria used in the analysis, including the development of ground motion time-histories and response spectra used for structural analysis and nonstructural component seismic qualification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Seismic Design Performance Objectives.",
+              "content": "Shall outline the seismic design performance objectives derived from the building's nature of occupancy and resulting risk category.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Acceptance criteria",
+              "content": "used to demonstrate the adequacy of structural elements and systems to withstand the calculated force and deformation demands, together with any laboratory or other data used to substantiate the criteria.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Nonstructural component designation",
+              "content": "as Mission-Critical Level 1 (MC-1), Mission-Critical Level 2 (MC-2), or Non-mission-critical (NMC), to include the following. Note: MC-1 components are those architectural, mechanical, and electrical components that are critical to the mission of the facility and must be operational immediately following the Maximum Considered Earthquake (MCER) ground shaking. MC-1 components are part of the Designated Seismic System and as such must be certified as operable immediately following the MCER ground shaking; MC-2 components are those architectural, mechanical, and electrical components that may incur minor damage that would be reparable with parts stocked at or near the facility within a 3-day period, by on-site personnel, following the MCER ground shaking; NMC components are those architectural, mechanical, and electrical components that may incur damage in the MCER ground shaking. If the failure of an MC-2 component can cause the failure of an MC-1 component, then the MC-2 component must be considered as an MC-1 component. If the failure of an NMC component can cause the failure of an MC-1 or MC-2 component, then the NMC component must be classified the same as the corresponding MC-1 or MC-2 component. NMC components must be designed so they will not cause falling hazards or impede facility egress.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.6.1",
+                  "title": "Evaluation of the basis",
+                  "content": "for determination of equipment designations to ensure owner or user intent has been considered and satisfied.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.2",
+                  "title": "Concurrence with the list and designations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.6.3",
+                  "title": "Indication of review of Screening Evaluation Work Sheets (SEWS)",
+                  "content": "for each MC-1 component. The SEWS can be obtained at https://ehss.energy.gov/au/seismic/.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.7",
+              "title": "Preliminary design",
+              "content": "including the selection of the structural system; the configuration of structural elements; and supports for all architectural, mechanical, and electrical components.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Final design",
+              "content": "of the entire structural system and supports or anchorages for all architectural, mechanical, and electrical components, and all supporting analyses.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "All documentation",
+              "content": "that is developed for seismic qualification of equipment and radar components that must remain operable following the design earthquake and objective evidence verifying post-earthquake operability by shake table testing, experience data, or analysis, including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.9.1",
+                  "title": "Procurement documents",
+                  "content": "such as SOWs, specifications, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.9.2",
+                  "title": "Design Analyses and Calculations:",
+                  "content": "Evaluation of design calculations and complete description of the equipment or component with cut sheets or photographs containing all germane data, including fastening requirements, welds, post-installed anchors, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.9.3",
+                  "title": "Testing:",
+                  "content": "Description of the type of testing, test procedures, test location, and results of testing. List the test standards and calibration methods for each test. Outline and provide the applicability of the testing to the design and design analysis. Indicate pass or failure for each test in relation to the design performance objectives and facility requirements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.9.4",
+                  "title": "Drawings.",
+                  "content": "Drawings indicating the equipment or component and location in the facility sufficient to be used for the installation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.9.5",
+                  "title": "Structural Response.",
+                  "content": "Description of the development of the in-structure demand response and the capacity response (fragility curve) for vertical and horizontal shaking. Provide the rationale and analysis that supports each response.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.10",
+              "title": "Documentation of an independent design review",
+              "content": "of 3.2.1-3.2.9 above, to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.10.1",
+                  "title": "Written evaluation of the proposed seismic force-resisting system",
+                  "content": "with associated structural analysis (calculations) and seismic qualification of radar components, installed equipment, and nonstructural components.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.10.2",
+                  "title": "Signature and wet stamp of the structural reviewer.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-82307A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

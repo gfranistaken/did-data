@@ -1,0 +1,273 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-82457",
+  "slug": "di-envr-82457",
+  "title": "Shock Qualification by Analysis Acceptance Form",
+  "summary": "The Shock Qualification by Analysis Acceptance Form provides identification of the results of equipment shock qualification by analysis, status of qualification, method of qualification, and a record of the qualification.",
+  "approval_date": "2024-10-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10512",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "ENVR-2024-018",
+  "applicable_forms": "NAVSEA 9072/XX",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Shock Qualification by Analysis Acceptance Form provides identification of the results of equipment shock qualification by analysis, status of qualification, method of qualification, and a record of the qualification. The form is used to record items shock qualified in accordance with the requirements of T9070-AJ-DPC-120/3010 and PPD 802-6337447.\na. This data item description (DID) contains the format and content preparation instructions for the Shock Qualification by Analysis Acceptance Form resulting from the work task described by section 7.3 of T9070-AJ-DPC-120/3010.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online via Model Based Product Support (MBPS) at",
+      "url": "https://mbps.navseaplm.navy.mil/Windchill/app/"
+    },
+    {
+      "label": "obtain an account with National Help Desk Service Management (NHDSM) at",
+      "url": "https://nhdsm.navair.navy.mil"
+    },
+    {
+      "label": "This document is available for ordering (hard copy) via the Naval Logistics Library (NLL) at",
+      "url": "https://nll.navsup.navy.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "MIL-DTL-901, Shock Tests, H.I. (High-Impact) Shipboard Machinery, Equipment, and Systems, Requirements for",
+          "content": "(Copies of this document are available online at https://quicksearch.dla.mil.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "T9070-AJ-DPC-120/3010, Shock Design Criteria for Surface Ships, 28 September 2017",
+          "content": "(Copies of this document are available online via Model Based Product Support (MBPS) at https://mbps.navseaplm.navy.mil/Windchill/app/. To gain access to MBPS, obtain an account with National Help Desk Service Management (NHDSM) at https://nhdsm.navair.navy.mil (a valid CAC is required to access this website) and submit a SAAR-N Request. Refer questions, inquiries, or problems to (888) 292-5919. This document is available for ordering (hard copy) via the Naval Logistics Library (NLL) at https://nll.navsup.navy.mil. For questions regarding the NLL, contact the NLL Customer Service at nllhelpdesk@navy.mil, (866) 817-3130, or (215) 697-2626/DSN 442-2626.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.3",
+          "title": "PPD 802-6337447, Dynamic Design Analysis Method (DDAM) Procedure",
+          "content": "(Copies of this document are available upon request to the applicable submarine program office.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Shock Qualification by Analysis Acceptance Form shall be in the format specified in NAVSEA 9072/XX.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The following information shall be included in the Shock Qualification by Analysis Acceptance Form (line items below refer to Shock Qualification by Analysis Acceptance Form line items):",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Qualification Method (line item 1).",
+          "content": "The method used to analyze the item for qualification (i.e., qualification by DDAM, static g calculation, different transient approaches, or extension). Analysis extension requirements (if permitted) are provided in ship specifications.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Item (Description) (line item 2).",
+          "content": "This section specifically describes the item analyzed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Part Number (line item 3).",
+          "content": "This section specifies the Manufacturer or Integrator and Manufacturer Part Number (MPN) of the item analyzed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Manufacturer (line item 4).",
+          "content": "This section specifies the Manufacturer or Integrator of the item analyzed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Ship Class (line item 5).",
+          "content": "This section identifies the ship, ships, or ship classes for which this equipment was shock qualified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Model Number (line item 6).",
+          "content": "This section describes the specific model of the item analyzed, including all applicable information regarding model numbers, serial number, type, etc.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Contract Number (line item 7).",
+          "content": "This section identifies the U.S. Government contract number under which this equipment was procured and shock qualified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Size/Capacity (line item 8).",
+          "content": "This section identifies the size, weight, and other physical description of the component.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Controlling Drawing Number (line item 9).",
+          "content": "This section identifies the manufacturer's drawing number for the item analyzed. If the item is covered by more than one drawing number, either the top-level drawing number, a set of drawing numbers, or both shall be referenced. The actual revision letter and date of the drawing revision to which the equipment was assembled shall be referenced.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Controlling Military Specification (line item 10).",
+          "content": "This section identifies the military specification (if any) that the item was manufactured too. The actual revision letter and date of the military specification shall be referenced.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Service (line item 11).",
+          "content": "This section identifies the intended service of the item to be qualified (e.g., Air [HP/LP], Communications, Electrical, Electronics, Hydraulic, Machinery, Other Fluid Systems, Outfitting, Ventilation, Water [Fresh, Potable, Chilled], Water [Sea]).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Agency/Contractor Completing Shock Analysis (line item 12).",
+          "content": "This section identifies the agency or contractor who performed the shock qualification analysis.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Reference to Analysis Plan/Approval for Qualification by Analysis (line item 12a).",
+          "content": "This section identifies the reference for approval of shock qualification by analysis from the program or technical authority.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Analysis Report Number, Revision, and Date (line item 13).",
+          "content": "This section identifies references (and dates) relevant to the qualification by analysis. For equipment shock qualified by analysis, references to the mathematical model report and dynamic analysis report shall be included. In addition, reference to any supplemental reports shall also be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Previous Shock Analysis or Test Approval Reference (If this form conveys shock extension approval) (line item 14).",
+          "content": "This section identifies the reference to the basis for approval by shock extension. Revisions and dates of reference shall be documented.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Shock Grade (line item 16).",
+          "content": "The shock grade of the equipment, as defined by MIL-DTL-901, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Equipment Type (line item 17).",
+          "content": "The type of the equipment, as defined by MIL-DTL-901, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Equipment Class (line item 18).",
+          "content": "The class of the equipment, as defined by MIL-DTL-901, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Mounting Location, including Ship Type (line item 20).",
+          "content": "The mounting location, as defined by T9070-AJ-DPC-120/3010 for shock qualified equipment, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "Mounting Plane Aboard Ship (line item 21).",
+          "content": "The shipboard mounting plane of the item represented during shock analysis, as defined by MIL-DTL-901 for shock qualified equipment, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Mounting Orientation of Item (line item 22).",
+          "content": "The shipboard mounting orientation of the item, as defined by MIL-DTL-901 for shock qualified equipment, shall be identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "Remarks/Approval Limitations (line item 23).",
+          "content": "This section includes any pertinent remarks or limitations of the shock qualification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Approvals (line item 24).",
+          "content": "This section consists of handwritten or electronic signature(s) indicating Technical Authority approval that ship equipment meets shock qualification technical requirements and the user's functional or operational requirements are satisfied.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Documentation Requirements.",
+      "content": "Documentation requirements shall be as specified in the contract or order.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-82457.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

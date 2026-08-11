@@ -1,0 +1,698 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-80709A",
+  "slug": "di-envr-80709a",
+  "title": "High-Impact Shock Test Procedures",
+  "summary": "High-impact shock test procedures outline the steps the contractor proposes to demonstrate the resistance of the system being tested to high-impact mechanical shock under MIL-DTL-901.",
+  "approval_date": "2019-07-23",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10055",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "ENVR-2019-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "High-impact shock test procedures outline the steps that the contractor proposes to demonstrate the resistance of the system being tested to high-impact mechanical shock.\na. This data item description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in 3.1.1.3, 3.1.8, 3.1.9, and 3.1.10.1 of MIL-DTL-901.\nThis request applies whenever equipment or systems are to be shock qualified by high-impact shock testing in accordance with the requirements of MIL-DTL-901.\nb. This DID supersedes DI-ENVR-80709.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ENVR-80709"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The test procedures shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The test procedures shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Equipment Identification.",
+          "content": "The test procedures shall include the following identification information.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Item.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Name",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Type",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Nomenclature",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Rating",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Service",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.6",
+                  "title": "Military specification and technical manual numbers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Manufacturer (name and address).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Model number, part number, and serial number (as applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Size or capacity (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Plan numbers (sectional assembly and outline; revision and date).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Approximate overall size of the equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.6.1",
+                  "title": "Length",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.2",
+                  "title": "Height",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.3",
+                  "title": "Width",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.4",
+                  "title": "Diameter",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.7",
+              "title": "Weight (wet, dry, and total weight including test fixture, wet and dry).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Height of center-of-gravity above base of equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Contract or purchase order number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Requirements of MIL-DTL-901 (see classifications in 1.2 of MIL-DTL-901).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.10.1",
+                  "title": "Test category",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.2",
+                  "title": "Shock grade",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.3",
+                  "title": "Equipment type",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.4",
+                  "title": "Equipment class",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.5",
+                  "title": "Shock test type",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.6",
+                  "title": "Mounting location and ship type",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.7",
+                  "title": "Mounting plane aboard ship represented during shock test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.8",
+                  "title": "Mounting orientation aboard ship represented during shock test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.11",
+              "title": "Hold-down bolts (and any other hold-down or locating devices) used for attachment of items to their foundation or test fixture during shock tests.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.11.1",
+                  "title": "Grade",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.11.2",
+                  "title": "Size",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.11.3",
+                  "title": "Material",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.11.4",
+                  "title": "Specifications",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.12",
+              "title": "Hold-down bolt torque.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Description of external and internal resilient mounts, if used.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.13.1",
+                  "title": "Size",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.2",
+                  "title": "Type",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.3",
+                  "title": "Location",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.4",
+                  "title": "Specification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.5",
+                  "title": "Mount manufacturer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.14",
+              "title": "Major components and attached items in test (name, identification, manufacturer).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "Test laboratory and address.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "Test instrumentation and monitoring equipment, if any.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Test Procedures.",
+          "content": "The test procedures shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Purpose and objectives of tests to be conducted.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Activity whose representative(s) will witness both the shock test and the post-shock test inspection and functional testing (see 6.7.2 of MIL-DTL-901).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Alternative representative(s) (Defense Contract Management Agency [DCMA], Supervisor of Shipbuilding [SUPSHIP], System Command [SYSCOM] project engineer, etc.) who will witness tests in 3.2.b above in the event the specified witness cannot schedule attendance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Step-by-step test procedures for each operating condition.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Method of mounting items for test (designate test fixtures to be used, machine-specific requirements, such as medium weight shock machine mounting requirements in accordance with 3.1.6.3 of MIL-DTL-901, etc.).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Test sequence.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Simulation of shipboard connections, such as cabling, piping, etc., during shock test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Test item operational requirements (functional requirements).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Fixture drawings or references for standard or non-standard test fixtures required for conducting lightweight, medium weight, heavyweight, and medium weight deck simulating shock tests with justification that the fixture meets the requirements of MIL-DTL-901.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Requirements, if any, for on-site evaluation of test instrumentation results.",
+              "content": "All test instrumentation data evaluations needed to show compliance with acceptance criteria (including criteria, if any, regarding momentary malfunctions) shall be identified for on-site performance to ensure recognition of discrepant conditions before proceeding with additional shock blows, shots, or drops.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed Post-Shock Test Functional Testing Procedures.",
+          "content": "Include the following in separate sections for the equipment under test:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Functional tests, including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Input-output of component or equipment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Operating procedures (bearing and coil winding)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Cyclic operations to determine compliance with design specifications",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Hydrostatic tests, including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Hydraulic, pneumatic, and fluid system equipment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Demonstration of strength",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Leakage",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Electrical tests, including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Insulation breakdown (shorts)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Electrical continuity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Comparison with Operational Requirements.",
+          "content": "Define the procedures for reporting the results of the comparison of the specified test item operational requirements contained in 3.2.h above with the results of the post-shock functional testing.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Detailed Post-Shock Inspection Procedures and Criteria.",
+          "content": "Include the inspection procedures in separate sections for the equipment under test to determine:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Breakage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Deformation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Yielding",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Misalignment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Unbalance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Cracks (dye penetrant, radiographic, or magnetic particle)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Separation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Critical tolerance clearances",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Bolting torques",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Pre-Shock Test versus Post-Shock Test Configuration Comparison.",
+          "content": "Define the procedures for reporting the results of the comparison between the pre-shock test and post-shock test configurations of the equipment under test.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Shock Test Acceptance Criteria.",
+          "content": "Include grade A shock test acceptance criteria if these are not specified by applicable acquisition documents. Include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Minimum acceptable performance parameters.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.1.1",
+                  "title": "Alignment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.2",
+                  "title": "Dielectric strength",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.3",
+                  "title": "Pressure-tight integrity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.4",
+                  "title": "Deformation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.5",
+                  "title": "Clearances",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.2",
+              "title": "Extent of momentary malfunction, if permitted.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Degree of permanent functional impairment allowed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-80709A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

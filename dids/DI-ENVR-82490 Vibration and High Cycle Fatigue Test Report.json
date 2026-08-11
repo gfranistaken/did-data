@@ -1,0 +1,107 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-82490",
+  "slug": "di-envr-82490",
+  "title": "Vibration and High Cycle Fatigue Test Report",
+  "summary": "The Vibration and High Cycle Fatigue Test Report contains vibration source characteristic and environment measurement survey results and system level test results used to verify and update vibration and fatigue analyses and service life predictions.",
+  "approval_date": "2025-07-09",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10576",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "ENVR-2025-010",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Vibration and High Cycle Fatigue Test Report contains the data results of measurement surveys, defining the vibration source characteristics and existing environment of the final air vehicle configuration. It will also include the system level test results that are used to update the vibration and fatigue analysis assumptions and service life predictions. The principal use of this test report is to verify and update the vibration and fatigue analyses.\na. This Data Item Description (DID) is applicable to any contract for which an air vehicle is under development, a modification is made, or an Environmental Criteria Document (ECD) is required.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in section 5 of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP) (copies of this document are available online at https://quicksearch.dla.mil).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Vibration and High Cycle Fatigue Test Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Vibration and High Cycle Fatigue Test Report shall include the test data defining the complete vibration source characteristics and environmental of the system for all operating conditions; it shall include descriptions and locations of the instrumentation used in the tests, as well as a discussion of the test data reduction methods; and it shall provide descriptions of all tests and documents the results of coupon and component level high cycle fatigue tests for joints and special problem areas.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The report is to be based on results of surveys and tests and shall contain the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Measurement results collected during ground and flight tests required to verify the estimated vibration source characteristics and environment.",
+              "content": "Vibration test results and resonant peak frequencies up to 2000 Hz for crew and personnel locations, equipment areas, specifically at the mounting structural attach points, and representative major and minor structural members. Kurtosis or other measurements of nonlinearity of the vibration response. Pertinent test condition information such as the altitude of the air vehicle, airspeed, thrust or power settings, atmospheric conditions for ground measurements, and internal and external vibration levels acting on the structure.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Descriptions of the high cycle fatigue tests used to validate service life assumptions including descriptions of the test methods employed for both coupon, component, and full-scale tests, the test fixtures, the date and location of tests, the test conditions, the test durations, the types of vibration sources employed and their characteristics, the test specimens and test specimen preparation, and test spectrums.",
+              "content": "Techniques for arranging test specimens and descriptions of the dynamical properties of the representative test article, methods of data interpretation, and the predicted and measured fatigue lives of the various specimens. Methods used to accelerate testing to a representative equivalent service life and their validation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Descriptions of the tests used to demonstrate the effectiveness of the vibrational control methods employed.",
+              "content": "Defined transmissibility levels and effectiveness of vibration isolation systems for propulsion devices and isolation mounts for sensitive equipment, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Copy of the test matrices as planned and copy of the test logs as executed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-82490.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-81549",
+  "slug": "di-envr-81549",
+  "title": "Tests and Analyses Reports, Vibration, Reciprocating Machinery, Propulsion System and Shafting",
+  "summary": "Specifies the format and content preparation instructions for vibration test and mathematical analysis reports on reciprocating machinery, propulsion systems, and shafting to verify compliance with acceptance criteria.",
+  "approval_date": "1997-04-22",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N7263",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "NAVSEA 03T2/NAVSEA 03X11",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "3.1 These data are to be used to determine if excessive vibratory responses exist within the system under consideration. A mathematical analysis is performed to establish probable compliance with the prescribed acceptance criteria. The system is tested to confirm that the vibratory responses are within the acceptable criteria.",
+  "application_interrelationship": "7.1 This Data Item Description contains the format and content preparation instructions for vibration testing and analysis of reciprocating machinery, propulsion system and shafting to be conducted in accordance with MIL-STD-167-2A.\n7.2 This DID supersedes UDI-E-23116A.",
+  "supersedes": [
+    "UDI-E-23116A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "The report shall be in accordance with the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.3",
+      "title": "Content Requirements.",
+      "content": "The reports shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "The vibration analysis shall consist of items stated in paragraphs 30.1.1.1, 30.2.1.1 and 30.3.1 of MIL-STD-167-2A, Appendix A.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.2",
+          "title": "The results of vibration testing shall be included and shall consist of items specified in paragraphs 30.1 and 30.2 of MIL-STD-167-2A, Appendix B.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.3",
+          "title": "Vibratory stress, torque, load and deflection plots shall be included and shall contain the appropriate MIL-STD-167-2A limits, or the manufacturer's limits, as applicable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-81549.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

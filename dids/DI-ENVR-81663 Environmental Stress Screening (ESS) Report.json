@@ -1,0 +1,407 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-81663",
+  "slug": "di-envr-81663",
+  "title": "Environmental Stress Screening (ESS) Report",
+  "summary": "The Environmental Stress Screening (ESS) Report is a formal record of the contractor's environmental stress screening results used by the procuring activity to evaluate ESS program effectiveness.",
+  "approval_date": "2006-05-11",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N7565",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "N/PEO IWS 1.0",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Environmental Stress Screening (ESS) Report is a formal record of the contractor's environmental stress screening results. This report is used by the procuring activity to evaluate the effectiveness of the contractor's ESS program and monitor ESS results.\n\nThis Data Item Description (DID) contains the format, content, and preparation instructions for the data product resulting from the work task specified in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The ESS report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The ESS report shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Random Vibration.",
+          "content": "This section shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Report period.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Equipment nomenclature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Equipment part number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Subassembly part number (if ESS is performed at the subassembly level).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.5",
+              "title": "Date of the vibration screen.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.6",
+              "title": "Serial number of the unit(s) subjected to vibration screen.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.7",
+              "title": "Axis of vibration.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.8",
+              "title": "Time at the start of vibration.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.9",
+              "title": "Time when vibration stopped.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.10",
+              "title": "Duration of the vibration screen.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.11",
+              "title": "Elapsed time from the start of the vibration screen to each failure (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.12",
+              "title": "Failed component (circuit card, module or assembly).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.13",
+              "title": "Part number or name of failed part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.14",
+              "title": "Reference designation of failed part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.15",
+              "title": "Failure mode of failed part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.16",
+              "title": "Cause of failure of part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.17",
+              "title": "Corrective action required, taken or planned.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.18",
+              "title": "Analysis of results to determine screening effectiveness.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.19",
+              "title": "Any recommended changes to the ESS procedures or program.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Temperature Cycling.",
+          "content": "This section shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Report period.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Equipment nomenclature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Equipment part number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "Subassembly part number (if ESS is performed at the subassembly level).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.5",
+              "title": "Date and time of temperature cycling (at the start of each cycle).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.6",
+              "title": "Serial number of the unit(s) subjected to temperature cycling.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.7",
+              "title": "Elapsed time from start of temperature cycling to each failure (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.8",
+              "title": "Number of the cycle during which each failure occurred.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.9",
+              "title": "Indication of point in cycle when failure occurred (hot or cold).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.10",
+              "title": "Failed component (circuit card, module or assembly).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.11",
+              "title": "Part number or name of failed part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.12",
+              "title": "Reference designation of failed part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.13",
+              "title": "Failure mode of failed part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.14",
+              "title": "Cause of failure of part.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.15",
+              "title": "Corrective action required, taken or planned.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.16",
+              "title": "Analysis of results to determine screening effectiveness.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.17",
+              "title": "Any recommended changes to the ESS procedures or program.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Laboratory Equipment Data.",
+          "content": "This section shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "Random Vibration Equipment",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.3.1.1",
+                  "title": "Identification by model number and manufacturer of equipment in the vibration system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.1.2",
+                  "title": "Photographs of mounting fixture and mounting arrangement for each item to be vibrated.",
+                  "content": "The photographs must include enough detail to show mounting arrangements and accelerometer locations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.1.3",
+                  "title": "A plot of the actual random vibration spectrum recorded during vibration and used for control purposes, identifying frequencies, power and spectral density, and degrees of freedom (or actual filter bandwidths used in the analyses of the spectrum).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.1.4",
+                  "title": "Description of procedure used to perform the vibration.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.3.2",
+              "title": "Temperature Cycling Equipment",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.3.2.1",
+                  "title": "Identification by model number and manufacturer of the temperature chamber.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.2.2",
+                  "title": "Maximum and minimum temperatures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.2.3",
+                  "title": "Maximum and minimum rate of change of temperature.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.2.4",
+                  "title": "Description of procedure used to perform the temperature cycling.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-81663.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

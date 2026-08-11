@@ -1,0 +1,300 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-82242",
+  "slug": "di-facr-82242",
+  "title": "Hardware Design Description (HDD)",
+  "summary": "The Hardware Design Description (HDD) describes the CI-wide design decisions and detailed hardware design of a Configuration Item, supporting implementation and design visibility.",
+  "approval_date": "2018-09-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9980",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "FACR-2018-003",
+  "applicable_forms": "No",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Hardware Design Description (HDD) describes the design of a hardware Configuration Item (CI). It describes the CI-wide design decisions and the detailed design of the hardware. The HDD may be supplemented by Interface Design Descriptions (IDDs) (DI-IPSC-81436) and System/Subsystem Design Descriptions (SSDDs) (DI-IPSC-81432), as described below.\nThe HDD, with its associated IDDs and SSDDs, is used as the basis for implementing the hardware design. It provides the acquirer visibility into the design and provides information needed for design support.\nThis DID is used when the designer is tasked to define and record the design of a hardware CI. Design pertaining to interfaces may be presented in the HDD or in IDDs.\nDesign pertaining to systems may be presented in the HDD or SSDDs.\nThis DID contains the format, content, and intended use information for the HDD. It is intended that all requirements contained herein shall apply to all applicable DoD acquisition programs through all program phases.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-IPSC-81436",
+    "DI-IPSC-81432"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General instructions.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Automated techniques.",
+          "content": "Use of automated techniques is encouraged. The term \"document\" in this DID means a collection of data, regardless of its medium.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Alternate presentation styles.",
+          "content": "Diagrams, table, matrices, and other presentation styles are acceptable substitutes for text when data required by this DID can be made more readable by using these styles.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format.",
+      "content": "The contractor's format is acceptable. Format shall be machine-readable by the government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content.",
+      "content": "The HDD shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Title page or identifier.",
+          "content": "The document shall include a title page that contains the following information, as applicable: document number, volume number, version/revision number, security markings or other restrictions to document handling, date, title, hardware item name, abbreviation, and any other identifier for the system, subsystem, or item to which the document applies, contract number, CDRL item number, organization for which the document has been prepared, name and address of the preparing organization, distribution statement. For data in a database or other alternative form, this information shall be included on external and internal labels or by equivalent identification methods.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Table of contents.",
+          "content": "The document shall contain a table of contents with the number, title, and page number of each, titled paragraph, figure, table, and appendix. For data in the database or other alternative form, this information shall consist of an internal or external table of contents containing pointers to, or instructions for accessing, each paragraph, figure, table, and appendix or their equivalents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "Page numbering/labeling.",
+          "content": "Each page shall contain a unique page number and display the document number, including version, volume, and date, as applicable. For data in a database or other alternative form, files, screens, or other entities shall be assigned names or numbers in such a way that desired data can be indexed and accessed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.4",
+          "title": "Response to tailoring instructions.",
+          "content": "If a paragraph is tailored out of this DID, the resulting document shall contain the corresponding paragraph number and title, followed by \"This paragraph has been tailored out.\" For data in a database or other alternative form, the representation need occur only in the table of contents or equivalent.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "Multiple paragraphs and subparagraphs.",
+          "content": "Any section, paragraph, or subparagraph in this DID may be written as multiple paragraphs or subparagraphs to enhance readability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "Standard data descriptions.",
+          "content": "If the contract has a data description that will be published in a standard, data-element dictionary, then tailor down this requirement in the CDRL to address receiving the information through the dictionary's entry instead of providing the description through this DID.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.7",
+          "title": "Substitution of existing documents.",
+          "content": "Commercial or other existing documents may be substituted for all or part of this DID's content requirements if they contain the required data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.8",
+          "title": "The HDD shall contain the following document sections:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.8.1",
+              "title": "Scope.",
+              "content": "This section shall contain the following paragraphs.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.8.1.1",
+                  "title": "Identification.",
+                  "content": "This paragraph shall contain a full identification of the system and the hardware to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.8.1.2",
+                  "title": "System overview.",
+                  "content": "This paragraph shall briefly state the purpose of the system and the hardware to which this document applies, it shall describe the general nature of the system and hardware; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, designer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.8.1.3",
+                  "title": "Document overview.",
+                  "content": "This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.8.2",
+              "title": "Referenced documents.",
+              "content": "This section shall list the number, title, revision, and date of all documents referenced in this document. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.3",
+              "title": "CI-wide design decisions.",
+              "content": "This section shall be divided into paragraphs that are needed to present CI-wide design decisions, that is, decisions about the CI's behavioral design (how it will behave, from a user's point of view, in meeting its requirements, ignoring internal implementation) and other decisions affecting the selection and design of the hardware units that make up the CI. This section shall state when decisions are explicit in the CI requirements or are deferred to the design of the CI's hardware units. Design decisions that respond to requirements designated critical, such as those for safety, security, or privacy, shall be placed in separate paragraphs. If a design decision depends upon system states or modes, this dependency shall be indicated. Design conventions needed to understand the design shall be presented or referenced. Examples of CI-wide design decisions are the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.8.3.1",
+                  "title": "Design decisions regarding inputs the CI will accept and outputs it will produce, including interfaces with other systems.",
+                  "content": "If part or all of this information is given in Interface Design Descriptions (IDDs), they may be referenced.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.8.3.2",
+                  "title": "Design decisions on CI behavior in response to each input or condition",
+                  "content": "including actions the CI will perform, response times and other performance characteristics, description of physical systems modeled, selected equations, and handling of inputs or conditions exceeding design thresholds.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.8.3.3",
+                  "title": "Selected approach to meeting safety, security, and privacy requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.8.3.4",
+                  "title": "Other CI-wide design decisions made in response to requirements",
+                  "content": "such as selected approach to providing required flexibility, availability, and maintainability.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.8.4",
+              "title": "CI detailed design.",
+              "content": "This section shall be divided into the following paragraphs to describe each hardware unit of the CI. If part or all of the design depends on system states or modes, this dependency shall be indicated. If design information falls into more than one paragraph, it may be presented once and referenced from other paragraphs. Design conventions needed to understand the design shall be presented or referenced. Interface characteristics of hardware units may be described here, in Section 3, or in Interface Design Descriptions (IDDs).",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.8.4.1",
+                  "title": "(Project-unique identifier of a hardware unit, or designator of a group of hardware units).",
+                  "content": "This paragraph shall identify a hardware unit by project-unique identifier and shall describe the unit. The description shall include the following information, as applicable:\nAlternatively, this paragraph may designate a group of hardware units and identify and describe the hardware units in subparagraphs. Hardware units that contain other hardware units may reference the descriptions of those units rather than repeat information.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.8.4.1.1",
+                      "title": "Unit design decisions, if any, if not previously indicated.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.8.4.1.2",
+                      "title": "Any constraints, limitations, or unusual features in the design of the hardware unit.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.8.4.1.3",
+                      "title": "The software packages used to model and generate detailed engineering drawings of the hardware unit.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "4.8.5",
+              "title": "Requirements traceability.",
+              "content": "This section shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.8.5.1",
+                  "title": "Traceability from each hardware unit identified in this HDD to the CI requirements allocated to it.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.8.5.2",
+                  "title": "Traceability from each CI requirement to the hardware units to which it is allocated.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.8.6",
+              "title": "Notes.",
+              "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.7",
+              "title": "Appendices.",
+              "content": "Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes shall be lettered alphabetically (A, B, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.8",
+              "title": "The applicable issue of the documents cited herein",
+              "content": "including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-82242.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

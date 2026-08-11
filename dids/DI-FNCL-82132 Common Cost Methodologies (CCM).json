@@ -1,0 +1,245 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FNCL-82132",
+  "slug": "di-fncl-82132",
+  "title": "Common Cost Methodologies (CCM)",
+  "summary": "The Common Cost Methodologies (CCM) DID documents the methods used to generate cost estimates between the MDA program cost team and the prime contractor and major subcontractors supporting the program.",
+  "approval_date": "2017-06-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9818",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "FNCL-2017-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Common Cost Methodologies (CCM) obtains documentation of the methods used to generate cost estimates between the MDA program cost team and the prime contractor and major subcontractors supporting the program.\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nThis Data Item Description (DID) summarizes the format for Common Cost Methodologies and provides preparation instructions to support the specific data and frequency requirements specified in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as stated in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Products delivered to the MDA must be in a un-password protected, unencrypted electronic format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "Common Cost Methodology shall be required of any scope expected to incur cost of which cost-estimating methodology is of interest to the government.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "General Instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Common Cost Methodologies (CCM)",
+              "content": "shall provide documentation of the methods used to generate the cost estimates between the MDA program cost team and the prime contractor and major subcontractors supporting the program.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Common Cost Methodologies documentation",
+              "content": "shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Estimate Results",
+                  "content": "including the Base Year and Then Year estimate and confidence level.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Estimate Description",
+                  "content": "including the name, content, scope, and WBS number (as indicated on the Cost and Software Data Reporting (CSDR) Plan, if applicable) of the corresponding WBS element.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "Ground Rules and Assumptions",
+                  "content": "section detailing key assumptions including quantities, schedule, production rates, state of technology, program base year, inflation rates, hardware configuration, software configuration, baselines used, and information used in support of Cost Analysis Requirements Document (CARD) development.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Methodology",
+                  "content": "section providing an explanation of the methods used to generate the cost estimate for each WBS Element. This section of the report must explain any applied learning and/or rate curve including first unit cost, slopes, and type of curve (unit or cumulative average). The methodology section must also document any analogies, the basis for using the analogy, factors applied to analogies, the basis for such factors, and the rationale for manpower levels used in manpower build-ups.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "Source",
+                  "content": "section must include backup information used to determine all methodology parameters shall be provided in this section of the report to include historical actual data, historical analogous data, Bill of Materials (BOMs) and Cost Bill of Materials (CBOMs).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.6",
+                  "title": "Estimate Calculation",
+                  "content": "section of the report must include the formula used to derive the estimate, identifying key parameters for simple and more complex calculations (learning curve %, T1, fee %, etc.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.7",
+                  "title": "Time phasing methodology",
+                  "content": "used to determine the allocation of costs across fiscal years.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.8",
+                  "title": "Risk",
+                  "content": "section must include the mean and standard deviation of the estimate with an explanation of methodology and/or tools applied and the source of the risk parameters.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.9",
+                  "title": "Software parameters",
+                  "content": "including sizing information (estimates or actuals) in source lines of code (SLOC), software requirements counts, software defects and associated rework, software productivity (estimated and historical) in SLOC/hour, software staffing in FTE, software development methodology (supported by the contractor's Software Development Plan), and the contractor's definition and formula for determining Equivalent SLOC (ESLOC). If a parametric tool is used by the contractor for software cost estimation (e.g. SEER for Software, COCOMO II, etc.), the tool-specific parameters, inputs, and assumptions will be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.10",
+                  "title": "Cost Track",
+                  "content": "including the explanations of changes from previous reports identifying what has changed the delta from the prior estimate, and the reason for the change.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Common Cost Methodologies",
+              "content": "shall be consistent with BMDS cost report data. The Government will review the accuracy/validity of cost estimating methodologies. The contractor shall research and explain discrepancies between CCM and reported cost data and update CCM and/or cost data reports appropriately.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Mark the security classification of the report",
+              "content": "appropriately in the space provided on the top of the report. Please note: \"Proprietary\" is not an official DoD security classification. If the use of a proprietary disclosure statement is required, insert in the Common Cost Methodologies report footer.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Base Year (BY)",
+              "content": "Base Year is used as a constant dollar reference point to track program cost growth. Expressing an estimate in Base Year dollars removes the effects of economic inflation and allows for comparing separate estimates.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Then Year (TY)",
+              "content": "Then Year dollars are valued in the count of dollars that actually make the transaction. Typically these are dollars spent (outlays) in the given year, but Then Year dollars may also represent Budget Authority (BA) or Total Obligation Authority (TOA).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Learning Curve",
+              "content": "Cost improvement or learning is generally associated with repetitive actions or processes, such as those directly tied to producing an item repeatedly. There is a constant rate of reduction in touch labor costs for each doubling in quantity.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Unit Learning Curve",
+                  "content": "The Unit Learning Curve Theory determines learning effects by calculating the individual costs of each production unit, and then summing them together for a total production cost.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Cumulative Average Learning Curve",
+                  "content": "Cumulative Average (CUMAV) Theory predicts learning effects in an aggregate manner by computing the cumulative average unit costs across a number of units.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Theoretical First Unit (T1)",
+                  "content": "The theoretical first unit cost (T1) is a value determined by analysis in order to best fit the available historical data to a learning curve equation.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Analogy",
+              "content": "Estimating method based on the concept that the item whose cost is to be estimated is similar (or analogous) to another item whose costs are known.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Factor",
+              "content": "Uses the cost of an element to predict cost of another element via a simple multiplicative relationship.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Implementation.",
+      "content": "Contractors shall implement Common Cost Methodology reporting requirements on all contracts and subcontracts that meet the reporting thresholds determined by the Government Program Office.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FNCL-82132.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

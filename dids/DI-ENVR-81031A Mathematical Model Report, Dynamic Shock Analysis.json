@@ -1,0 +1,246 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-ENVR-81031A",
+  "slug": "di-envr-81031a",
+  "title": "Mathematical Model Report, Dynamic Shock Analysis",
+  "summary": "The Mathematical Model Report, Dynamic Shock Analysis describes the structural and functional characteristics and the mathematical model of a shipboard equipment or structure, with its foundation, for dynamic shock analysis.",
+  "approval_date": "2024-09-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10510",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "ENVR-2024-019",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Mathematical Model Report, Dynamic Shock Analysis describes the structural and functional characteristics and the mathematical model of a shipboard equipment or structure, with its foundation, for purposes of dynamic shock analysis.\nThe Mathematical Model Report, Dynamic Shock will be used by the Government to provide assurance that equipment or structure will be properly modeled prior to submittal of the dynamic shock analysis report. If the mathematical model and dynamic shock analysis will be submitted as a single report, the information defined in this report shall be included with the information described in DI-ENVR-81030A as part of the single report.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nThis DID supersedes DI-ENVR-81031.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ENVR-81031"
+  ],
+  "related_dids": [
+    "DI-ENVR-81030A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The mathematical model report shall have a document number, revision, and date that can be referenced, and contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "An introductory description of the equipment or structure being analyzed and its normal function or operation.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The planned location and orientation of the equipment or structure with respect to the ship's axes.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "The shock grade (A or B) to which the equipment is to be qualified.",
+          "content": "If grade A, a discussion of operational failure modes (other than mechanical coming adrift) should be addressed. If grade B, a discussion of how other shock hazards (other than mechanical coming adrift) will be addressed in the shock qualification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Mounting location (hull, deck, or shell) of the equipment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Type of shock design value (elastic or elastic-plastic) to be used in the analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "Procurement specifications under which the equipment is procured.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Description of proposed method of analysis.",
+          "content": "The description shall include a discussion of whether the dynamic design analysis method (DDAM) is requesting a type A (principal unit) or type B (subsidiary component) shock qualification. If type B, a list of components that are being shock qualified by the DDAM and a list of those that will be shock qualified by testing shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "A list of specific areas of concern of the equipment or structure that might be subject to high stresses or deflections under shock loading.",
+          "content": "Particular attention should be given to the proposed failure criteria for each area. Yield stress, effective yield stress, ductility, and fracture toughness (at normal equipment operating temperatures) shall be described for all materials being used. The consequences of failure in each critical area shall be considered. The effects of a postulated failure on equipment operability or on potential personnel hazards shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "Assumptions that have been made in the preparation of the model and justifications for such assumptions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "An estimate of the weight and location of the center of gravity of the equipment or structure.",
+          "content": "A listing of weights of components that are used to arrive at the equipment or structural weight shall also be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "Description of the proposed breakdown of the equipment or structure for analysis.",
+          "content": "The description shall indicate how the proposed mass breakdown permits determination of stresses and deflections in the previously defined areas of concern. The magnitude of major masses and their locations with respect to a specified coordinate system shall be indicated.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.12",
+          "title": "Description of the extent and structural characteristics of the foundation.",
+          "content": "Sketches or drawings shall be included in the report to indicate the arrangement of the equipment and its foundation.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.13",
+          "title": "Properly labeled figures and text to describe the model for each direction of shock.",
+          "content": "The text shall discuss the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.13.1",
+              "title": "Formulation of the model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.2",
+              "title": "List of representative element properties (including ranges of element aspect ratios).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.3",
+              "title": "Description of element meshing process (including element aspect ratio, warping, and internal angles limits used).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.4",
+              "title": "Method of combining shock stresses with continuing operating stresses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.5",
+              "title": "A description of the applied portion of the computer program and the characteristics of the elements to be used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.6",
+              "title": "Boundary conditions used in the model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.7",
+              "title": "Description of any unique contact or bonding techniques used in the model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.8",
+              "title": "A complete listing and description of the input data used.",
+              "content": "Input data stemming from classified sources shall be classified in accordance with relevant classification guides.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.13.9",
+              "title": "Electronic file of input data of the mathematical model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.14",
+          "title": "Fixed-base natural frequency of suspected low frequency system components (e.g., shafts, cantilevered equipment, yardarms).",
+          "content": "And a comparison of these frequency values to the cut-off frequency of the system and the components modeled accordingly.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.15",
+          "title": "References to the source of analysis method, formulas, constants, curves, and all other sources used.",
+          "content": "Shock tested items that are a part of the equipment or structure to be analyzed shall be included in the model but need not be modeled in detail. The specific shock test report and Navy letter of approval of the tested item shall be cited.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.16",
+          "title": "Equipment outline and assembly drawings, support, sub-base, and foundation plans.",
+          "content": "The report shall include preliminary drawings when final drawings are not available. If no drawings are available, sketches shall be provided. These drawings or sketches shall disclose a level of design detail commensurate with the analysis. Detailed working drawings are not required.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.17",
+          "title": "Modal results (frequency, modal mass, participation factor, and total modal mass sum) from the exercise of the mathematical model in an eigenvalue analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-ENVR-81031A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

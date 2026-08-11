@@ -1,0 +1,217 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-80810B",
+  "slug": "di-facr-80810b",
+  "title": "Test Facility Requirements Document (TFRD)",
+  "summary": "The Test Facility Requirements Document identifies contractor needs for government test facilities and contractor/government responsibilities, used for advanced planning of test facility requirements and workload.",
+  "approval_date": "2018-02-27",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9891",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WWM)",
+  "project_number": "FACR-2015-009",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Test Facility Requirements Document (TFRD) identifies contractor needs for the use of government test facilities and contractor and government responsibilities. Its principal use is for the advanced planning of test facility requirements and workload.\na. The Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nb. This DID is applicable to engineering (developmental), preliminary qualification, qualification, and conformance testing.\nc. This DID interrelates with DI-QCIC-81536, Test Information Sheet (TIS).\nd. This DID supersedes DI-FACR-80810A.\n(Copies of these documents are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-FACR-80810A"
+  ],
+  "related_dids": [
+    "DI-QCIC-81536"
+  ],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "Each TFRD shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Section A.",
+          "content": "Information needed by the Government to verify the need for the facility and to determine its availability and suitability for the particular test. This section shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Why facility is needed, extent it is needed, and impact on the test program if facility cannot be provided.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Estimated dates for facility pre-test preparation, initiation of tests, completion of tests, and post-test disassembly.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Description of any unusual test item features that would require facility modification or unusual support.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "The test item's operation and physical characteristics compared to the capabilities, limitations, and operations of the proposed test facility.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Work area, storage (secure and non-secure), communications, shop support, and other administrative, or housekeeping requirements necessary to conduct the tests.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Special equipment and instrumentation (both existing and to be fabricated) required from the Government.",
+              "content": "For equipment that must be specially fabricated, describe the use, function, and type of construction in detail sufficient for the Government or other contractor(s) to fabricate, if necessary.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Section B.",
+          "content": "A description of contractor and government responsibilities for the following areas:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Test facility operation/maintenance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Test item and item maintenance/repair.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Test apparatus, instrumentation, and recording equipment and operation/maintenance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Check-out equipment and equipment calibration.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Housekeeping facilities and associated services.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "On-site transportation including certifications for personnel operating facility and transportation equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Hazardous material(s) operations and waste disposal.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Safety analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Security requirements to include special access requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Environmental impact analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Data collection, reduction, and analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Test item recovery.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-80810B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

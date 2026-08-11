@@ -1,0 +1,432 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-FACR-82415A",
+  "slug": "di-facr-82415a",
+  "title": "Weapon Safety Fire Hazard Analysis",
+  "summary": "The Weapon Safety Fire Hazard Analysis documents a technical evaluation of the risk to weapons from fire and related perils, including a comparison to Nuclear Safety Design Certification requirements.",
+  "approval_date": "2025-02-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10535",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "37 (AFSEC/SEWN)",
+  "project_number": "FACR-2025-001",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "A Weapon Safety Fire Hazard Analysis (FHA) is a technical evaluation assessing the risk to weapons from exposure to the thermal conditions of a fire or related perils including blast resulting from normal or credible abnormal operations. The FHA shall provide an executive summary of the key components of the fire suppression and detection systems, the model/method used, analytical results and conclusions, and a comparison to the Nuclear Safety Design Certification requirements in the respective Certification Requirements Plan (CRP).\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation and contract for the development of the FHA. This DID is related to DI-NUOR-81409, Certification Requirements Plan (CRP), DAFMAN 91-118, DAFMAN 91-119, and Department of the Air Force Instruction (DAFI) 91-101. (Copies of DAFIs, DAFMANs, and AFMANs are available online at http://www.e-publishing.af.mil/.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [
+    {
+      "label": "Copies of DAFIs, DAFMANs, and AFMANs are available online at",
+      "url": "http://www.e-publishing.af.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract and reflect the respective CRP.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Weapon Safety FHA shall be presented in the format specified in Section 4 (General Outline) of this document.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Weapons Safety FHA assists the Air Force in ascertaining if nuclear safety design criteria are met. The FHA is a comprehensive assessment of the risk from fire and other related hazards to the weapons based on fire model analysis. Fire models will be based on fire scenarios determined by government stakeholders and directed by the contract, considering all relevant facility features and Concept of Operations (CONOPS). The FHA should be phased and integrated into the design/construction schedule.\nBelow are the generic contents of an FHA.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The assumptions applied to the analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The probability of fires within each fire area within a facility that could potentially impact the weapons.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The magnitude of unmitigated fires and related perils including blast described in the fire scenarios.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Passive and non-passive design features serving to mitigate the effects of possible fires and related perils.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The thermal parameters of fire events well into the decay phase for each fire area that may contain a weapon.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "A comparison of the thermal parameters (see 3.5) to the weapon screening values provided.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "The impact of the design features (see 3.4) on the propagation of the fire as well as the impact on related hazards (i.e., nuclear criticality) for each area.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Appraisal of as-built construction is consistent with design specifications and drawings.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Description of any discrepancy between post construction and design documents that could potentially, directly or indirectly, impact the applied assumptions, model, or thermal parameters.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "An assessment of impact for any identified discrepancy (see 3.9) impacting Nuclear Safety Design Certification and revised risk.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Evaluation of support equipment and operational programs to ensure no new fire hazards were introduced to areas where nuclear weapons may be.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Recommendations for improvement of design features to further reduce risk to weapons.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "General Outline",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Executive Summary",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Purpose and brief description of the FHA",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "Brief description of the design features",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.3",
+              "title": "Conclusions of the risk evaluation/assessment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Introduction",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "Purpose",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "Requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "Hazards",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "Approach and Inputs",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "Assumptions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.2",
+              "title": "Model Description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.3",
+              "title": "Limitations Imposed on the Assumptions and Model",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.4",
+              "title": "Design Features",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.3.4.1",
+                  "title": "Passive and Non-Passive Fire Protection System (including detection, suppression, and alarm)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.4.2",
+                  "title": "Design Features Incorporated to Address Related Perils",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "Overview of facility use, function, and systems as relevant to the agreed scenarios",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "Scenario selection and analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.5.1",
+              "title": "Scenario selection rationale",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.2",
+              "title": "Description of scenario",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.5.3",
+              "title": "Analysis of scenario",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.6",
+          "title": "Detailed fire risk analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.6.1",
+              "title": "Identification and protection of critical process equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.6.2",
+              "title": "Maximum credible fire loss",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.6.3",
+              "title": "Maximum possible fire loss",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.7",
+          "title": "Validity of Design",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.7.1",
+              "title": "Consistency of construction with design specifications and drawings",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.2",
+              "title": "Description of any discrepancy noted along with impact",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.3",
+              "title": "Results of any remodeling performed",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.7.4",
+              "title": "Risk modification based on identified discrepancy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.8",
+          "title": "Evaluation of operational programs",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.9",
+          "title": "Evaluation of any support equipment expected to be used",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.10",
+          "title": "Findings and recommendations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.10.1",
+              "title": "Closed findings",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.10.2",
+              "title": "Open findings",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.10.3",
+              "title": "Risk estimation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.10.4",
+              "title": "Recommendations to further reduce risk",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.11",
+          "title": "Conclusions and comparison to CRP",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-FACR-82415A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

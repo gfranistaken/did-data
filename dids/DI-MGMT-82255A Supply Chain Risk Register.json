@@ -1,0 +1,335 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82255A",
+  "slug": "di-mgmt-82255a",
+  "title": "Supply Chain Risk Register",
+  "summary": "The Supply Chain Risk Register records risk identification information and current status on risks affecting products and services from the prime contractor, its suppliers, and subcontractors, enabling Government oversight of risk handling plans.",
+  "approval_date": "2023-02-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10375",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "Yes",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/LZS)",
+  "project_number": "MGMT-2022-029",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Supply Chain Risk Register will be used to contain the risk identification information and current status on risks relative to the products and services to be provided by the prime contractor, its suppliers, and subcontractors. The Supply Chain Risk Register will provide the Government with information to oversee and proactively develop or execute risk handling plans.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID supersedes DI-MGMT-82255.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82255"
+  ],
+  "related_dids": [
+    "DI-MGMT-82256A"
+  ],
+  "references": [
+    {
+      "label": "Copies of the DoD Directives can be found at",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "the DoD RIO Management Guide is available at",
+      "url": "https://acqnotes.com/wp-content/uploads/2017/07/DoD-Risk-Issue-and-Opportunity-Management-Guide-Jan-2017.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "DI-MGMT-82256A, DoDI 5000.90, DoDM 4140.01, DoD Risk Issue and Opportunity Management Guide Jan 2017. Copies of the DoD Directives can be found at https://www.esd.whs.mil/DD/ while the DoD RIO Management Guide is available at https://acqnotes.com/wp-content/uploads/2017/07/DoD-Risk-Issue-and-Opportunity-Management-Guide-Jan-2017.pdf.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Government directed electronic format shall be used to the fullest extent possible; however, if none identified, the contractor's electronic format, Microsoft Excel version .xlsx, is acceptable. A Supply Chain Risk Register template can be provided upon request from AFLCMCLG-LZ.SCRM.Network@us.af.mil.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Supply Chain Risk Register shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Contract Information.",
+          "content": "The contract information section shall identify the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contractor's name.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Contract number and date of award (including the latest modification).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Procurement Instrument Identification Number (PIIN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Supplemental Procurement Instrument Identification Number (SPIIN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Delivery order number/Task order number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Contract Line Item Number (CLIN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Date of reporting period.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Security classification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "USD(R&E) Critical Technology List (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Distribution statement.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Destruction notice.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Cybersecurity Maturity Model Certification (CMMC) certification level (Note: DoDI 5000.90 3.4.a).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Risk Information.",
+          "content": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Unique Risk Identifier (e.g., 7.2.1).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Risk category (i.e., Foreign Ownership, Control or Influence (FOCI), Political and Regulatory, Economic, Environmental, Product Quality and Design, Manufacturing and Supply, Transportation and Distribution, Financial, Compliance, Technology and Cybersecurity, Human Capital, or Infrastructure).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Risk owner.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Weapon system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "National Item Identification Number (NIIN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Vendor Part Number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Brief description of each supply chain risk.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Location or risk event.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Triggering event or root cause(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Initial risk assessment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Risk tolerance level (risk appetite) determined by Program Manager.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Residual risk levels (acceptable level of risk).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "Likelihood of occurrence.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "Potential impact and consequence. Refer to Section 3.3 Risk Reporting Matrix.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "Risk handling response (e.g., Mitigate: Order safety stock, Avoid: Search for substitute materials).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.16",
+              "title": "Estimated start and completion dates for risk handling plan.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.17",
+              "title": "NOTE: Reference DI-MGMT-82256A SCRM Plan for definitions of supply chain risk categories.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Risk Reporting Matrix.",
+          "content": "Assess supply chain risks in accordance with Chapter 3 of the Department of Defense (DoD) Risk, Issue, and Opportunity Management Guide for Defense Acquisition Programs (hereafter referred to as the Risk Management Guide). Copies of this document are available online at DoD Risk Issue and Opportunity Management Guide Jan 2017.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The risk likelihood rating levels and probability of occurrence shall be as follows:",
+              "content": "1 - Not likely (>1% to <=20%); 2 - Low likelihood (>20% to <=40%); 3 - Likely (>40% to <=60%); 4 - High likelihood (>60% to <=80%); and 5 - Near certainty (>80% to <=99%).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "The risk consequence levels shall be as follows:",
+              "content": "1 - Minimal impact; 2 - Minor impact; 3 - Moderate impact; 4 - Significant impact; and 5 - Critical impact.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Status Reporting.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Provide the current status on each risk in the Supply Chain Risk Register.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82255A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

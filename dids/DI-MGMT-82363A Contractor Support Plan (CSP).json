@@ -1,0 +1,197 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82363A",
+  "slug": "di-mgmt-82363a",
+  "title": "Contractor Support Plan (CSP)",
+  "summary": "The Contractor Support Plan describes the contractor's technical approach to life cycle sustainment planning to integrate sustainment considerations throughout a system's acquisition, development, production, fielding, support, and disposal.",
+  "approval_date": "2023-06-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10406",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "MGMT-2023-007",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Contractor Support Plan (CSP) describes the contractor's technical approach to life cycle sustainment planning to ensure sustainment considerations are integrated into all planning, implementation, management, and oversight activities associated with the acquisition, development, production, fielding, support, and disposal of a system across its life cycle. The goal of life cycle sustainment planning is to maximize readiness by delivering the best possible product support at the lowest Operations and Sustainment cost.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-PSSS-82218",
+    "DI-MGMT-81948"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including your approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The CSP, all Sections, and Annexes shall be in a digital format and if printed fits standard letter size paper (8 1/2\" x 11\").",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Sections, Annexes, and Attachments (if Attachments are used) shall be identified and referenced in the text.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CSP shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Section 1: System description.",
+          "content": "Provide an overview of the system(s), subsystem(s), or configuration item(s) (CI) for which contractor logistics support is planned. The description shall summarize performance and operational characteristics that provides an understanding of its functional and operational capabilities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Section 2: Product Support Analysis Summary.",
+          "content": "Provide an overview of completed product support analysis activities identified in the approved Product Support Analysis Plan (DI-PSSS-82218). Describe the outcomes of each activity and how those outcomes have informed the contractor's sustainment approach.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Section 3: Planning by Integrated Product Support (IPS) Elements.",
+          "content": "Describe the approach to address sustainment support of the system(s), subsystem(s), or CI(s) for which contract logistics support is planned. The described approach shall detail the planned sustainment program for the system(s), subsystem(s), or CI(s) by addressing each of the following IPS elements:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Maintenance planning and management.",
+              "content": "Maintenance considerations such as levels of repair, repair times, testability requirements, Built-In-Test/Built-In-Test Equipment, support equipment needs, manpower skills, and maintenance facilities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Manpower and personnel.",
+              "content": "Identification of personnel (military and civilian) with the skills and grades required to operate, maintain, and support the system(s), subsystem(s), or CI(s) over their lifetime.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Supply support.",
+              "content": "Identification of spares, repair parts, and supplies and how they are managed from acquisition, cataloging, receipt, storage, transfer, issue and disposition. Describe the utilized property management systems and frequency of inventory reviews. Also discuss the methods in which Diminishing Manufacturing Sources and Material Shortages (DMSMS) issues are addressed IAW DI-MGMT-81948 as well as the methods in which Counterfeit Material Management concerns are addressed IAW SAE-AS6174.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Support equipment.",
+              "content": "All equipment (mobile or fixed) required to support the operation and maintenance of system(s), subsystem(s), or CI(s). This includes ground handling and maintenance equipment, tools, calibration equipment, and manual and Automatic Test Equipment (ATE).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Technical data.",
+              "content": "The technical manuals that provide the instructions for operation and maintenance of a system(s), subsystem(s), or CI(s) as well as other technical information required for sustainment activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Training and training support.",
+              "content": "The training required to operate and maintain the system(s), subsystem(s), or CI(s) such as individual and crew training, new equipment training, initial, formal, and on-the-job training.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Information technology (IT) systems continuous support.",
+              "content": "The identified facilities, hardware, software, firmware, documentation, manpower, and personnel needed to operate and support mission critical information technology systems hardware/software systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "Facilities and infrastructure.",
+              "content": "The permanent and semi-permanent real property assets required to support the system(s), subsystem(s), or CI(s), including studies to define types of facilities or facility improvements, location, space needs, environmental requirements, and equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "Packaging, handling, storage, and transportation.",
+              "content": "Resources, processes, procedures, design considerations, and methods to ensure that all system(s), subsystem(s), or CI(s), equipment, and support items are preserved, packaged, handled, and transported properly, including environmental considerations, equipment preservation for short-term and long-term storage, and transportability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.10",
+              "title": "Design interface.",
+              "content": "Describes how the following design parameters are addressed to achieve the system(s), subsystem(s), or CI(s) readiness and support requirements: Reliability and Maintainability (R&M), Configuration Management, Human Systems Integration, System Safety, Survivability and Vulnerability, Environmental and Hazardous material management, Standardization and interoperability, Energy management, Corrosion control and prevention, Nondestructive inspection, and Transportability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.11",
+              "title": "Sustaining engineering.",
+              "content": "Details the established program to identify, review, assess, and resolve system(s), subsystem(s), or CI(s) deficiencies.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.12",
+              "title": "Product support management.",
+              "content": "The plan to manage system(s), subsystem(s), or CI(s) cost while meeting or exceeding performance objectives from design through disposal.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Section 4: Acronym List.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82363A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

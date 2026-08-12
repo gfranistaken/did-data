@@ -1,0 +1,538 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats - DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them - set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82440A",
+  "slug": "di-mgmt-82440a",
+  "title": "Chief Financial Officer (CFO) Report",
+  "summary": "The CFO Report documents inventories of Government-furnished or contractor-acquired material, special tooling, test equipment, and accessories to track, monitor, and disposition GFM/GFP/GFE property, including audits and cycle counts.",
+  "approval_date": "2026-06-25",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10679",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2026-012",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This report details and documents inventories of Government-furnished/contractor-acquired material and nonexpendable special tooling; special test equipment; and all accessories and attachments; on both a quantitative and monetary basis, segregated by categories of property in order to properly track, monitor, and disposition all GFM/GFP/GFE property, to include audits and cycle counts.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract Statement of Work (SOW).\nThis DID supersedes DI-SESS-82440",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82440"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format:",
+      "content": "The CFO Report shall be submitted in Microsoft Excel.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content:",
+      "content": "The Chief Financial Officer (CFO) Report shall consist of the following three tabulated sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary Tab.",
+          "content": "The Summary Tab shall include the following information, which shall be broken up by service (i.e. USN, USAF, etc.) and filterable by FMS or Domestic:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Name of Program and DoDAAC.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "SPARE PARTS.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Ending Balance Prior Quarter.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.3.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.4",
+              "title": "Ending Balance Prior Quarter.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.4.1",
+                  "title": "Quantity.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.5",
+              "title": "Beginning Balance Current Quarter.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.5.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.6",
+              "title": "New Acquisitions (Delivered) - D4S.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.6.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.7",
+              "title": "Customer Returns and Uninstalls.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.7.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.8",
+              "title": "Shipments and Issues (Installs).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.8.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.9",
+              "title": "In-Transits.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.9.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.10",
+              "title": "Disposals - D7J.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.10.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.11",
+              "title": "Condition Code Changes - D8C/D9C.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.11.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.12",
+              "title": "Price Change DBx/DCx.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.12.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.13",
+              "title": "Physical Inventory Adjustments - Gains - D9x.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.13.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.14",
+              "title": "Physical Inventory Adjustments - Losses - D9x.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.14.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.15",
+              "title": "Ending Balance.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.15.1",
+                  "title": "Quantity.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.16",
+              "title": "Ending Balance (Total of 3.1.5., 3.1.6., 3.1.7., 3.1.8., 3.1.9., 3.1.10., 3.1.12., 3.1.13., 3.1.14.).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.16.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.17",
+              "title": "Serviceable Condition Codes (A, B, C, D).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.17.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.18",
+              "title": "Assets in Condition Codes E, J, K, L, Q.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.18.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.19",
+              "title": "Unserviceable Condition Codes (F, G, M, R).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.19.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.20",
+              "title": "Assets in All Other Condition Codes.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.20.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.21",
+              "title": "Total Dollar Value (Total of 3.1.12., 3.1.13, 3.1.14, and 3.1.15.).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.21.1",
+                  "title": "$ Value.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Transaction Detail.",
+          "content": "The Transaction Detail Tab shall include the following information, which shall be sortable by service (i.e. USN, USAF, etc.) and by FMS or Domestic:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Transaction Code.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Code Description.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Program.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "National Stock Number (NSN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Part Number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Serial Number (SN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Nomenclature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Event Date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Quantity (Qty).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Condition Code.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Unit Cost.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Extended Cost.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Ending Balance.",
+          "content": "The Ending Balance Tab shall include which shall be sortable by service (i.e. USN, USAF, etc.) and by FMS or Domestic:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "NSN.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Part Number (PN).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Nomenclature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Unit of Issue.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Current Quantity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Condition Code.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Unit Cost.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "Line Item Cost.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "Expendability, Recoverability, Repairability Category (ERRC).",
+              "content": "Select the applicable ERRC code below.\nXB3 - Consumable Item (OM&S)\nXF3 - Expendable Recoverable Item (OM&S)\nXD2 - Depot Level Repairable (OM&S)\nNF - Nonexpendable Repairable at the Field (PP&E)\nND - Nonexpendable Repairable at the Depot (PP&E).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82440A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

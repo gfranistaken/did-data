@@ -1,0 +1,1064 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82510",
+  "slug": "di-mgmt-82510",
+  "title": "Cybersecurity System Administrator Guide (CSAG)",
+  "summary": "The CSAG provides system administrators and cybersecurity personnel with system-specific administrative, operational, and technical procedures to securely operate and maintain a delivered system.",
+  "approval_date": "2026-01-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10612",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2026-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Cybersecurity System Administrator Guide (CSAG) provides system and subsystem specific administrative, operational, and technical procedures necessary to ensure the secure, reliable, and compliant operation of the delivered system in accordance with the terms and conditions of the contract. It serves as a critical resource for system administrators, cybersecurity personnel, and support staff responsible for maintaining system integrity, availability, and confidentiality throughout the lifecycle of the system.\nThe CSAG identifies key areas and outlines detailed procedures for system configuration, account management, patch management, system hardening, auditing, logging, incident response support, backup and recovery. This guide provides experienced individuals in cybersecurity roles with authoritative information and procedures to securely operate and maintain the system within its intended environment, reducing risk and ensuring mission continuity.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents.",
+      "content": "Not applicable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The CSAG shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The CSAG shall contain the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title page.",
+              "content": "The CSAG shall have a title page providing the following information, as applicable:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Document identification numbering",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Volume number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Version or revision indicator",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Security classification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Release date",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.6",
+                  "title": "Document title",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.7",
+                  "title": "Name of the system to which this CSAG applies",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.8",
+                  "title": "Contract number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.9",
+                  "title": "Contract Data Requirements List (CDRL) item Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.10",
+                  "title": "Organization for which the document has been prepared",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.11",
+                  "title": "Distribution statement",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.12",
+                  "title": "Controlled Unclassified Information (CUI)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.13",
+                  "title": "Export-Control warning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.14",
+                  "title": "Destruction notice",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Record of changes",
+              "content": "The CSAG shall have a record of change from the previous document submission. Each submission shall append the changes to the record of changes section. The submissions shall have track changes turned on to record edits made in the document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Table of contents",
+              "content": "The CSAG shall have a table of contents providing the number, title, and page number for each titled paragraph, figure, table, and appendix.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Page numbering",
+              "content": "Each page shall have a unique page number and include the document number, document version, volume, and date, as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Styles",
+              "content": "Diagrams, tables, and other presentation styles are acceptable substitutes for text when the data required by this DID can be made more readable using these styles.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Multiple paragraphs and subparagraphs",
+              "content": "Any section, paragraph, or subparagraph may be written as multiple paragraphs or subparagraphs to enhance readability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Duplicated content",
+              "content": "Any section, paragraph, or subparagraph shall include dissimilar information to avoid the duplication of information.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Substitution of existing documents",
+              "content": "Existing documents may be substituted for portions of the CSAG if they contain the required information as defined by this DID and do not impose additional distribution restrictions. Such substitutions shall be included in the CSAG either as an appendix or as a separate document.\nAdditionally, if specified actions or relevant content are already present in previously delivered or to be delivered documents (e.g., Software Product Package (SPP), Training Device Inventory Checklist / Record (TD ICL/R)) those documents may be referenced to satisfy the content requirements of this DID, provided they meet the specified criteria. Each reference must clearly identify the document title, section number, and section title where the applicable procedures are located.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Specified actions",
+              "content": "Required specified actions shall be broken down into discrete, manageable actions to effectively address complex tasks. Each specified action shall clearly outline the specific action to be performed, the expected result following that action. To enhance clarity and readability, visual aids such as images, screenshots, or other presentation formats maybe incorporated either alongside the text or in place of it.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Traceability",
+              "content": "When applicable, delivered content shall include an associated Cybersecurity Control Requirements Identifier (e.g., RMF Control ID or CCI) adjacent to the content element to ensure traceability, accountability, and alignment with applicable cybersecurity compliance frameworks.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Document topics and numbering",
+              "content": "The following paragraph titles and content shall be included in the CSAG.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Scope",
+          "content": "This section shall be divided into the following paragraphs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Identification",
+              "content": "This paragraph shall fully identify the system to which this CSAG applies, including as applicable, identifying number(s), title(s), abbreviation(s), acronym(s), version number(s), release number(s), and other identifying information.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "System overview",
+              "content": "This paragraph shall summarize the purpose of the system to which this CSAG applies. It shall describe the general nature of the system; summarize the system development history; identify the project sponsor, acquirer, user(s), developer(s), and support agencies; identify current and planned operating sites; and list relevant documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Document overview",
+              "content": "This paragraph shall summarize the purpose of this CSAG and describe the security or privacy considerations associated with its use.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Referenced Material",
+              "content": "This section shall list the title, number, revision, and date of the documents referenced within the CSAG. This section shall identify the source(s) for the documents not available through normal Government procuring activities.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "CSAG System(s) Content Requirements",
+          "content": "This section shall include the following content, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Introduction",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "System Description",
+                  "content": "Define the authorization boundary, network architecture, networks and sub-networks, and the internal and external interfaces.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "System Components",
+                  "content": "List and describe the hardware, software, and firmware per subsystem.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Network Diagram",
+                  "content": "Include detailed diagrams in accordance with the DISA Connection Process Guide (CPG) with Internet Protocol (IP) addresses and network topology.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Network Devices Equipment",
+                  "content": "Identify the networking equipment (e.g., firewalls, routers, switches, IDS, and KVM) and explain their configuration settings and functionalities.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.4.1",
+                      "title": "Include specified actions to recover and restore the networking equipment, along with specified actions to reconfigure the port lockdown settings.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.2",
+                      "title": "Include a table detailing the function of each equipment port (e.g., VLAN access, Trunk, etc.).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Ports, Protocols, and Services Management (PPSM)",
+                  "content": "Identify the purpose of the PPS and the functionality.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.5.1",
+                      "title": "Identify open ports on each subsystem.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "System Configuration and Inventory",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "IP Address Inventory",
+                  "content": "Include a table that lists the internal and external Ips with subsystem names.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Asset Function Summary",
+                  "content": "Describe the function of each Cybersecurity Management System (CMS) asset.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Software Licenses",
+                  "content": "Identify the software license agreements, expiration dates, and support contact.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Backup and Restore Capabilities",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.4.1",
+                      "title": "Identify subsystems included in backups.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.2",
+                      "title": "Include specified actions to perform backup and restoration.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.3",
+                      "title": "Include specified actions to update passwords on backup jobs.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Access Control and Account Management",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Identify and describe the access control method(s)",
+                  "content": "(e.g., Role-Based Access Control (RBAC), Attribute-Based Access Control (ABAC), etc.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "List and describe the administrators, users, groups, and permissions implemented.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Authentication, Authorization, Accounting (AAA) Server Administration",
+                  "content": "(e.g., RADIUS/TACAS+/ISE).",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.3.1",
+                      "title": "Identify the AAA components and detail administrative actions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "Remote Access Administration",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.4.1",
+                      "title": "Identify any remote access to the system and administrative actions to maintain secure functionality.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "Account Creation and Management",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.5.1",
+                      "title": "Identify the local, domain and service accounts with detailed information on the purpose of the accounts.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.2",
+                      "title": "Include specified actions to create, unlock, and change passwords for the account types.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.3",
+                      "title": "Identify privileged user setup: Operating System (OS), applications, databases, and network devices.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.4",
+                      "title": "Identify Application accounts: requirements and management.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.5.5",
+                      "title": "Identify SSH key setup, permissions, and group membership.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.6",
+                  "title": "Troubleshooting and Maintenance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.6.1",
+                      "title": "Identify group permissions per subsystem.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.6.2",
+                      "title": "Identify account maintenance process for OS, applications, databases, and network devices.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Directory Services (Domain Controller / Active Directory)",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Describe the overview of the domain setup, including domain name, forest trust, organizational units (OUs), and relationships.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Include specified actions for rejoining devices post Recovery and Restoration (R&R).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Include specified actions for implementing baseline GPOs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "Identify GPOs impacting authentication and access, including Original Equipment Manufacturer (OEM) created GPOs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Audit Log Management",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Centralized Auditing Implementation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.5.1.1",
+                      "title": "Identify the logging configuration across systems (e.g., PCs, servers, network devices).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.5.1.2",
+                      "title": "Identify Security Information and Event Management (SIEM) system details (e.g., location, access).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.5.1.3",
+                      "title": "Include specified actions required for log collection, aggregation, viewing, and reporting.",
+                      "content": "Include specified actions to view and generate reports for subsystems without central auditing capabilities.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.6",
+              "title": "Continuous Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "Include specified actions for the monitoring activities for the system, including the frequency (e.g., continuous, weekly, monthly, quarterly, semiannual, or annual) as provided by the government and applicable to the local site cybersecurity policies.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.7",
+              "title": "System Updates and Vulnerability Management",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.7.1",
+                  "title": "System Updates and Package Management",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.7.1.1",
+                      "title": "Identify the configuration of the package manager to include external IPs to the centralized servers.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.7.1.2",
+                      "title": "Identify the Secure boot compatibility per subsystem.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.7.1.3",
+                      "title": "Include specified actions to implement system updates per subsystem.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.7.2",
+                  "title": "Updating Outside Networked Source",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.7.2.1",
+                      "title": "Include specified actions for updating subsystems outside of the networked update source.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.7.3",
+                  "title": "Rebuilding Drivers Post Update",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.7.3.1",
+                      "title": "Include specified action for rebuilding drivers in cases where the system or subsystem becomes nonfunctional during the update process.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.7.4",
+                  "title": "Vulnerability Scanning",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.7.4.1",
+                      "title": "Identify the Scanner portal Uniform Resource Locator (URL), plugin and feed set, system coverage.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.7.4.2",
+                      "title": "Identify IPs and configuration for the scan servers.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.7.4.3",
+                      "title": "Describe the specifying credentials, targets and other configurations required for scans.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.7.5",
+                  "title": "IAVM Compliance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.7.5.1",
+                      "title": "Describe the patch management system and implementation of the patch management system for the vulnerabilities of a system.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.8",
+              "title": "Encryption and Credential Binding",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.8.1",
+                  "title": "Identify the key locations for the disk encryption solutions (e.g., BitLocker and Linux Unified Key Setup (LUKS)).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.8.2",
+                  "title": "Include specified action for configuring the encryption solution to include decryption.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.8.3",
+                  "title": "Include specified action for the credential binding and password change.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.8.4",
+                  "title": "Include specified actions to recover the encrypted subsystem.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.9",
+              "title": "Endpoint Security Solution (ESS) and Endpoint Protection",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.9.1",
+                  "title": "ESS/Centralized Security Management Agent Components",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.9.1.1",
+                      "title": "Identify and describe each module implemented.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.9.1.1.1",
+                          "title": "Include specified action for Workstations and Servers.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.9.1.2",
+                      "title": "Anti-phishing and Anti-Malware software and ESS Policy Management",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.9.1.2.1",
+                          "title": "Include specified action for temporarily disabling the software during maintenance.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.9.1.3",
+                      "title": "Antivirus Software Management",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.9.1.3.1",
+                          "title": "Include specified actions to update the definitions and scanning per operating system.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.9.1.3.2",
+                          "title": "Provide procedures for configuring the security policy server, to include agent deployment, virus definition updates, and other necessary configuration settings.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.10",
+              "title": "Firewall Configuration",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.10.1",
+                  "title": "Describe the configurations for host-based firewalls, network firewalls and web application firewalls.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.11",
+              "title": "Incident Response",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.11.1",
+                  "title": "Describe system tools that support incident response recognition, reporting, evidence preservation, and corrective actions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.12",
+              "title": "Public Key Infrastructure (PKI) and Certificate Management",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.12.1",
+                  "title": "Describe the PKI implementation and management of certificates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.12.2",
+                  "title": "Include specified actions to maintain PKI and certificates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.13",
+              "title": "Domain Name System (DNS) Administration",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.13.1",
+                  "title": "Identify maintenance and review actions to maintain the DNS server role.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.13.2",
+                  "title": "Identify troubleshooting techniques for the replication of issues or general issues.",
+                  "content": "If no issues have been discovered or identified, indicate \"N/A.\"",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.14",
+              "title": "Dynamic Host Configuration Protocol (DHCP) Administration",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.14.1",
+                  "title": "Identify maintenance and review actions to maintain the DHCP server role.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.14.2",
+                  "title": "Identify troubleshooting techniques for general issues.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.15",
+              "title": "Hypervisor Administration",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.15.1",
+                  "title": "Include specified actions for hypervisor administration to include virtual machine importing, exporting, networking and configuration as relevant.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.16",
+              "title": "Network Attached Storage (NAS) Administration",
+              "content": "Include specified actions for NAS administration (e.g., managing storage volumes, performance monitoring, updates, maintaining applications, file access controls, troubleshooting).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.17",
+              "title": "Storage Area Network (SAN) Administration",
+              "content": "Include specified actions for SAN administration (e.g., managing storage volumes, performance monitoring, updates, maintaining applications, file access controls, troubleshooting).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.18",
+              "title": "Security Technical Implementation Guides (STIGs)",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.18.1",
+                  "title": "Identify the applicable STIGs for the subsystems.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.18.2",
+                  "title": "Include actions for viewing all STIGs and steps required for manually completing those not automatically evaluated by available tools.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.19",
+              "title": "Additional Security Controls",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.19.1",
+                  "title": "Include specified actions for hardware swap-out if blocked by a control.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.19.2",
+                  "title": "Include specified actions for resetting and reauthorizing USB device control software (e.g., USBGuard).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.19.3",
+                  "title": "Include specified actions for whitelisting to bypass applications for updates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.19.4",
+                  "title": "Include specified actions for temporary security exceptions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.19.5",
+                  "title": "Include specified actions for the utilization of devices required to perform security functions (e.g., USB hard drive, connected shares, etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.20",
+              "title": "Maintenance and Cybersecurity Sustainment",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.20.1",
+                  "title": "Identify compliance scanning and reporting.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.20.2",
+                  "title": "Include troubleshooting procedures for cybersecurity related subsystems, addressing commonly known issues and resolutions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Notes",
+          "content": "This section shall provide an alphabetic listing of acronyms, abbreviations, and their meaning as used in this CSAG list of terms and definitions needed to understand the CSAG or the Appendices.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Appendixes",
+          "content": "Appendixes may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82510.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

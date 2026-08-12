@@ -1,0 +1,113 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82398",
+  "slug": "di-mgmt-82398",
+  "title": "Army Make or Buy Policy: End-Item Components Identified for Arsenal Production",
+  "summary": "This DID establishes the reporting requirement for a contractor to document an onsite meeting with an Army Arsenal to identify end-item components suitable for Arsenal manufacturing.",
+  "approval_date": "2022-09-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10359",
+  "limitation": "No",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "ALTS",
+  "project_number": "MGMT-2022-027",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Acting on behalf of the Secretary of the Army, the Assistant Secretary of the Army (ASA) for Acquisition, Logistics, and Technology (ALT) retains the authority to determine which supplies the Army can and should make. Under the Army Make or Buy Policy (Army Regulation (AR) 700-90 Chapter 3-7), the ASA(ALT) requires Program Executive Officers (PEOs) and Program Managers (PMs) to perform Make or Buy analyses giving thorough consideration to Army Arsenals (Rock Island Arsenal Joint Manufacturing and Technology Center, Watervliet Arsenal, and Pine Bluff Arsenal) and their manufacturing capabilities to meet program requirements for both end items and component parts.\nAll Requests for Proposals must include a tailored Contract Data Requirements Listing (CDRL) declaring that if a vendor is awarded a contract then the vendor will be required to meet directly with an Arsenal to assess the capabilities and identify candidate components of an end item that the Arsenal is well-positioned to produce (AR 700-90 b(2)). Army end-item program of record contracts (Buys) will include a contractor deliverable in the Performance Work Statement (PWS) for arsenals components production. The PWS will detail that proposed contract modifications may adjust the scope of work to the Arsenal and outline the process for any required price adjustments for the Government (AR 700-90 b(4)).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "ASA(ALT) Make or Buy library SharePoint site (at",
+      "url": "https://spcs3.kc.army.mil/asaalt/portal/make%20or%20buy%20library"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "References.",
+      "content": "AR 700-90 Chapter 3-7, Army Acquisition Executive (AAE) Make or Buy Policy memorandum (11 April 2018), ASA(ALT) Make or Buy library SharePoint site (at https://spcs3.kc.army.mil/asaalt/portal/make%20or%20buy%20library).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor provides a written report to the PM.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The contractor is required to conduct an onsite in-person meeting with Arsenal representatives",
+          "content": "The contractor is required to conduct an onsite in-person meeting with Arsenal representatives in accordance with government travel policies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The PM determines the Arsenal that will be visited",
+          "content": "The PM determines the Arsenal that will be visited and will provide support, guidance, and attend the onsite in-person meeting with the contractor and the Arsenal representatives.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "At the conclusion of the onsite in-person meeting, the contractor will provide a report to the PM",
+          "content": "At the conclusion of the onsite in-person meeting, the contractor will provide a report to the PM of the end-item components that were identified for Arsenal manufacturing with the report suspense date as determined by the PM.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "The contractor's report must include any proposed contract modifications",
+          "content": "The contractor's report must include any proposed contract modifications that may adjust the scope of work to the Arsenal and any price adjustments for the Government to consider.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The following is an example of CDRL language that PMs may use",
+          "content": "The following is an example of CDRL language that PMs may use to detail the contractor's obligation under the Army Make or Buy Policy (AR 700-90 Chapter 3-7) for full consideration of Arsenals for end-item component manufacturing:\n\"Within (# OF DAYS DETERMINED BY THE PROGRAM MANAGER) days of contract award, (INSERT NAME OF CONTRACTOR), will coordinate with Army Program Management Office representative(s) (INSERT FULL CONTACT INFORMATION - NAME(S), EMAIL(S), PHONE NUMBER(S) - OF PROGRAM MANGEMENT OFFICE REPRESENTATIVE(S)) the meeting with (INSERT ARMY ARSENAL IDENTIFIED BY PROGRAM MANAGEMENT OFFICE) to survey and evaluate their Critical Manufacturing Capabilities and identify major end-item component parts that the (INSERT ARMY ARSENAL IDENTIFIED BY PROGRAM MANAGEMENT OFFICE) is able to manufacture. Within (# DAYS DETERMINED BY THE PROGRAM MANAGER) days after the end-item component manufacturing assessment at the Arsenal, the (INSERT NAME OF CONTRACTOR) will furnish a written feasibility and capability assessment of the identified end-item components the (INSERT ARMY ARSENAL VISITED) is able to produce to the (INSERT NAME(S) OF PROGRAM MANGEMENT OFFICE REPRESENTATIVE(S)). The report from the (INSERT NAME OF CONTRACTOR) must also include any proposed contract modifications that may adjust the scope of the work to the Arsenal and any price adjustments for the Government to consider.\"",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Media Requirements.",
+      "content": "The contractor report shall be provided as an electronically readable PDF file.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82398.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82485",
+  "slug": "di-mgmt-82485",
+  "title": "Semi-Annual Equipment Inventory List",
+  "summary": "The Semi-Annual Equipment Inventory List captures equipment inventory, condition, and status data supporting Air Force Medical Service peacetime and wartime Aeromedical Evacuation communications operations.",
+  "approval_date": "2025-05-27",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10563",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFICC/763 SCONS/PKA)",
+  "project_number": "MGMT-2025-016",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Semi-Annual Equipment Inventory List provides equipment inventory and condition of equipment, as well as data entry of system, status, and other related issues through in-house or commercial off-the-shelf (COTS) software. This inventory provides support of Air Force Medical Service peacetime and wartime operations for Aeromedical Evacuation (AE) communications.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Semi-Annual Equipment Inventory List shall be in the contractor's Microsoft Office Excel spreadsheet format, with separate tabs for each Patient Movement Item (PMI) location.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Semi-Annual Equipment Inventory List shall incorporate a comparative analysis of information from the system-generated Custodian Receipt Locator inventory report from the Defense Medical Logistics Standard Support (DMLSS) and the PMI - Asset Tracking System (PMI-ATS) report for each PMI location. The Semi-Annual Equipment Inventory List shall identify data differences between the Custodian Receipt Locator inventory and the PMI-ATS reports for each PMI location.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The Semi-Annual Equipment Inventory List shall contain the following for each equipment item:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Equipment maintenance data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Mismatched serial numbers",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Missing or inaccurate equipment data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Outdated equipment data (data is considered outdated if not from the last 6 months)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Updated equipment certification dates and a yes/no indication that these dates are updated in the PMI-ATS",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82485.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

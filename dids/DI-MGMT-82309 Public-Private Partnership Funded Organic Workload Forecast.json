@@ -1,0 +1,108 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82309",
+  "slug": "di-mgmt-82309",
+  "title": "Public-Private Partnership Funded Organic Workload Forecast",
+  "summary": "The Public-Private Partnership Funded Organic Workload Forecast provides future funded organic workload requirements so sustaining DoD entities can plan for anticipated workload, capabilities, and manpower sizing.",
+  "approval_date": "2019-12-06",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10127",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "16 (HQ AFMC/A4F)",
+  "project_number": "MGMT-2020-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Public Private Partnership Funded Organic Workload Forecast is used to obtain future funded organic workload requirements, so that sustaining Department of Defense entities can accurately plan for the anticipated workload, to include appropriate capabilities and manpower sizing.\na. Funded organic workload requirements shall include a three year forecast, broken out by month, to allow collaboration with the owning Program Management Office (PMO) regarding variances between forecasted workloads and actual workloads received.\nb. This Data Item Description (DID) is applicable when monitoring of program progress is required.\nc. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of AFMCMAN 20-102 are available at",
+      "url": "https://www.e-publishing.af.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Public Private Partnership Funded Organic Workload Forecast shall be in the contractor's format.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The Forecast shall include the data elements listed below by Repair Group Category (RGC), and, where applicable, by the government-provided Program Unit Code (PUC) and its corresponding Unit of Measure (Hours or Units).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Public Private Partnership Funded Organic Workload Forecast shall include a three year funded organic workload requirements forecast, broken out by month, for each government-provided Pseudo Code and RGC code for the respective Program or Subprogram. The RGCs and the PUCs and corresponding Units of Measure shall be in accordance with Attachments 3 and 13, respectively, of Air Force Materiel Command Manual (AFMCMAN) 20-102, Maintenance Planning and Execution System (MP&E) (D363). (Copies of AFMCMAN 20-102 are available at https://www.e-publishing.af.mil/.)",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "For Aircraft (RGC A and B) and Missiles (RGC C and D) - The Quantity, Hourly Rate, and End Item Direct Product Standard Hours (EIDPSH) data shall be included.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "For all remaining RGCs (E, F, G, H, J, K, L, M, N, P, R, S, and 1), the PUC shall dictate which data elements are required.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "For PUCs having a Unit of Measure of Units - The Quantity, Unit Sales Price (USP), and EIDPSH data shall be included.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "For PUCs having a Unit of Measure of Hours - The Hourly Rate and the Total Hours data shall be included.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82309.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

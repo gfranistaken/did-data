@@ -1,0 +1,891 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-80564B",
+  "slug": "di-misc-80564b",
+  "title": "Survivability Analysis Report",
+  "summary": "The Survivability Analysis Report presents the results of analyses performed to identify system (or subsystem/equipment) response to specified threat parameters and provides quantified measures of survivability.",
+  "approval_date": "2016-02-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9639",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZJA)",
+  "project_number": "MISC-2016-008",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Survivability Analysis Report presents the results of analyses performed to identify system (or subsystem/equipment) response to specified threat parameters and provides quantified measures of survivability.\na. Analysis results are used for: evaluating the survivability (vulnerability and susceptibility) posture of a system; design analyses and trade studies to evaluate effectiveness of design changes or techniques to harden or enhance the capability of the system; support higher-level (i.e., engagement or mission) analyses; and may be used as a basis for determining compliance with specification requirements.\nb. The report may be used to assist in formulation of deployment and operational tactics, support functions, and to support the Live Fire Test and Evaluation (LFT&E) assessment of the system.\nc. This Data Item Description (DID) may be applied to any contract and any program phase to acquire a survivability analysis. Although acquired primarily during system/major equipment full scale development programs, this analysis report is also applicable to development efforts during conceptual and demonstration/validation phases.\nd. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\ne. This DID supersedes DI-MISC-80564A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-80564A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "http://www.dtic.mil/whs/directives/index.html"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable and electronic delivery of the report is required. Computer model inputs and outputs shall be in the native electronic format of the respective models.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Survivability Analysis Report shall include the data described below, as applicable to the threat types specified for analysis.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introductory information.",
+          "content": "An overview of the survivability analysis shall be provided including discussion of the intended usage of the results, such as for development of hardening criteria for a new design, improvements to an existing system, quantifying the survivability of a system design, determining the effectiveness of various vulnerability reduction designs, and aircraft survivability enhancements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Overview of analysis methodology.",
+          "content": "An overview of the analysis process, models and methodologies used, study metrics and intended output, and summary of assumptions and limitations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Air vehicle system design description.",
+          "content": "Descriptions of all subsystems shall be provided covering their current design, function, redundancies, hardening and survivability enhancement features. Design changes, hardening, or survivability enhancement features proposed but not yet incorporated shall be described and identified as either being excluded from the analysis or included for comparative analysis purposes. The physical description shall be supported by scaled three-view profile images accurately depicting the location of flight and mission-critical elements and items providing significant masking or shielding, as well as Aircraft Survivability Equipment (ASE). Nomenclature and coding used on the images shall be consistent with those used in applicable damage modes and effects analyses and computerized target descriptions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Analysis conditions.",
+          "content": "Specific conditions used in the analysis shall be described, to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "A summary of pertinent threat characteristics",
+              "content": "(types, sizes, performance, etc.) for each threat/threat effect analyzed. Source data for threat characteristics shall be referenced (document number, title, page number, as appropriate)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "A listing and definition of each kill level or damage category specified for the analysis.",
+              "content": "Any unique categories shall also be defined.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "A description of the air vehicle configuration(s), mission phases, and flight conditions applicable to the analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Analysis inputs and procedures.",
+          "content": "All analysis inputs, procedures, and assumptions with justifications shall be described to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "For nonnuclear vulnerability analyses",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "A description of the approach, models, and methodology used to perform the nonnuclear vulnerability analysis.",
+                  "content": "The nonnuclear ballistic vulnerability analysis shall be performed using the Computation of Vulnerable Area Tool (COVART) or Advanced Joint Effectiveness Model (AJEM), or software demonstrated to be equivalent.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "A description of the Geometric Target Description (GTD), including a discussion of the format and methodology used, and source data of the GTD (e.g., NASA Structural Analysis System (NASTRAN), Computer Aided Three-dimensional Interactive Application (CATIA), structural drawings, etc.).",
+                  "content": "Scaled and appropriately color-coded isometric figures for each major target description group or system shall be included, with the outer mold line (OML) show in outline or semi-transparent as necessary for internal components and systems. A description of the verification and validation methods used to ensure accuracy of the GTD shall be included. The GTD, included as an appendix to this report, shall be in Fast Shotline Generator (FASTGEN) or Ballistics Research Lab-Computer Aided Design (BRL-CAD) format.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "A Geometric Target Description (GTD) data dictionary shall be included as an appendix to this report.",
+                  "content": "The data dictionary shall include a coded list of all components modeled in the target description, including:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.3.1",
+                      "title": "Component number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.2",
+                      "title": "Component descriptive name.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.3",
+                      "title": "The specific analysis grouping, system, or subsystem of which that component is a part, (e.g., COVART NAM name).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.4",
+                      "title": "Component ballistic density factor.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.5",
+                      "title": "Component material (including alloy, where applicable).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.6",
+                      "title": "Any other coding or identification data required by the modeling technique used.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.7",
+                      "title": "For laser analyses: material coatings, reflectivity and absorption properties, and transmissivity of any transparencies, for the threat wavelengths assessed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "A summary of the development and results of the Failure Modes and Effects Criticality Analysis (FMECA).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "The Damage Modes and Effects Analysis (DMEA) data, included as an appendix to this report.",
+                  "content": "DMEA data shall consist of a set of tables presented in matrix form which identifies each component and interrelates the threat level, component failure/damage mode(s), redundancy/back-up capability, kill category (attrition or mission abort), component probability of dysfunction given a hit (Pcd|h) function, and component or system probability of kill given dysfunction (Pk|d). Supporting documentation included with the DMEA shall consist of:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.5.1",
+                      "title": "The relationship between the DMEA and the results and development of the FMECA.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.5.2",
+                      "title": "Disablement diagrams; (systematic portrayal of damage modes and resulting kill levels).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.5.3",
+                      "title": "Fault trees structured to be compatible with the methods and computer models used to quantify vulnerabilities.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.6",
+                  "title": "An overview and description of the component Pcd|h and Pk|d functions and discussion of their source data and method of development.",
+                  "content": "If contractor developed, verification data for their derivation shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.7",
+                  "title": "Pcd|h and Pk|d worksheets, included as an appendix to this report.",
+                  "content": "The Pcd|h and Pk|d worksheets shall include both tabular and graphical representations of the Pcd|h or Pk|d function, detailed discussion of methodology used to derive the function, and source of data for derivation and verification.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.8",
+                  "title": "A discussion of the confidence in the DMEA, component Pcd|h functions, other model inputs, and component safety margins, as well as sensitivity of the overall aircraft results to changes in those inputs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "For nuclear analyses, identification and discussion of component safety margins.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "For susceptibility analyses:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.3.1",
+                  "title": "Endgame Geometric Target Description (GTD).",
+                  "content": "The Endgame GTD, included as an appendix to this report, shall include a representation of the skin/outer mold line (OML) suitable for endgame analysis. The Endgame GTD shall be in a format compatible with Endgame Manager (EM), Shazam, or software demonstrated to be equivalent.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.2",
+                  "title": "A description of the Endgame Geometric Target Description (GTD), including a discussion of the source data of the geometry and tabular comparison of presented area of the skin/OML, to that of the nonnuclear vulnerability analysis computerized target description for each of the six (6) cardinal views.",
+                  "content": "A scaled isometric view figure of the skin/OML Endgame GTD shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.3",
+                  "title": "A description of the models and methods used to develop radio frequency (RF) target signature.",
+                  "content": "Polar plot figures of the RF signature for 360 degrees in azimuth shall be included for at least the 90 degree elevation (waterline) for each threat frequency and polarization of interest.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.4",
+                  "title": "Tabular data of the RF signature, included as an appendix to this report.",
+                  "content": "The RF signature for each threat frequency and polarization of interest in 1 degree azimuth and 5 degree elevation increments shall be included. Time-based quadrature (I&Q) data shall also be included, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.5",
+                  "title": "A detailed description of the models and methods used to develop the infrared (IR) target signature data.",
+                  "content": "Figures shall be included for the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.3.5.1",
+                      "title": "Illustrations of the parts or area source representation of the IR signature of the target.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.5.2",
+                      "title": "Source radiant intensity across the range of azimuth and elevations for all threat spectral bands assessed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.5.3",
+                      "title": "Polar plots showing the apparent radiant intensity, for 360 degrees in azimuth and at least three elevation angles, for threat spectral bands assessed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.3.6",
+                  "title": "Tabular data of the IR signature, included as an appendix to this report.",
+                  "content": "The spectral radiant intensity data at the target source as a function of angle about the aircraft for at least every 5 degrees in azimuth and 0 to 180 degrees in zenith, such that each section has nearly equal surface area.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.7",
+                  "title": "Description of any installed Aircraft Survivability Equipment (ASE) including system installation and performance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.3.7.1",
+                      "title": "Missile Warning System (MWS) description.",
+                      "content": "This shall include a description of the system and performance as well as figures illustrating the installation locations, field of view (FOV) and coverage maps. Tabular data of MWS coverage and sensitivity shall be included as an appendix to this report.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.7.2",
+                      "title": "Radar Warning Receiver (RWR) description.",
+                      "content": "This shall include a description of the RWR sensors and system performance, as well as figures illustrating the installation locations. Polar plot figures of the composite RWR antenna patterns for 360 degrees in azimuth shall be included for at least the 90 degree elevation (waterline) for each threat frequency and polarization of interest. Complete tabular data of RWR antenna patterns, gains and sensitivities shall be included as an appendix to this report.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.7.3",
+                      "title": "Hostile Fire Indication (HFI) description.",
+                      "content": "This shall include a description of the HFI sensors and system performance, as well as figures illustrating the installation locations. Tabular data of HFI sensor coverage and sensitivity shall be included as an appendix to this report.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.7.4",
+                      "title": "Laser Detection System description.",
+                      "content": "This shall include a description of the laser detection sensors and system performance, as well as figures illustrating the installation locations. Tabular data of laser detector coverage and sensitivity shall be included as an appendix to this report.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.7.5",
+                      "title": "Countermeasure description.",
+                      "content": "A description of the countermeasure techniques, operation, performance, and installation shall be included.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.3.7.6",
+                      "title": "Electronic attack description.",
+                      "content": "A description of the techniques, specification, and implementation of any electronic attack capability shall be provided.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.3.8",
+                  "title": "For Radio Frequency (RF) guided missiles.",
+                  "content": "Description of the approach, models and methodology used to perform the gridded RF susceptibility analysis to determine weapon engagement zone and demonstrate threat effectiveness with and without susceptibility reduction features, maneuvers, and/or countermeasures and electronic attack, as applicable. The analysis shall be performed using the Enhanced Surface to Air Missile Simulation (ESAMS) or software demonstrated to be equivalent.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.9",
+                  "title": "For Electro-Optical/Infrared (EO/IR) guided missiles.",
+                  "content": "Description of the approach, models and methodology used to perform the gridded EO/IR susceptibility analysis to show threat engagement zone and demonstrate threat engagement effectiveness with and without IR susceptibility reduction features, maneuvers, and/or countermeasures, as applicable. The analysis shall be performed using Modeling System for Advanced Investigation of Countermeasures (MOSAIC), or software demonstrated to be equivalent.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.10",
+                  "title": "For Electro-Optical/Infrared (EO/IR) and Radio Frequency (RF) guided Air Defense Artillery (ADA) systems.",
+                  "content": "Description of the approach, models and methodology used to perform the gridded susceptibility analysis to show complete threat engagement zone and demonstrate threat engagement effectiveness with and without susceptibility reduction features, maneuvers, and/or countermeasures and electronic attack, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.11",
+                  "title": "For optically guided and unguided weapon systems (e.g., small arms, rocket propelled grenades).",
+                  "content": "Description of the approach, models and methodology used to perform the gridded susceptibility analysis to show threat engagement zone and demonstrate threat engagement effectiveness with and without susceptibility reduction features and/or countermeasures and hostile fire indication, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.4",
+              "title": "For chemical and biological threat analyses.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.4.1",
+                  "title": "Chemical and biological threat hardening analysis.",
+                  "content": "A description of the process and data sources used to develop the listing of target materials and coatings determined to be accessible (i.e., will the material be exposed to the threat) and critical (i.e., is it critical to flight or the assessed missions). A description of the process and source data, including applicable test reports and databases, for determining if the materials and coatings that are accessible and critical are susceptible to the agent (i.e., will they degrade when exposed to the threat).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.2",
+                  "title": "Chemical and biological protection compatibility analysis.",
+                  "content": "A description of the process, models, and source data for a compatibility assessment to determine the ability of aircrew and maintenance personnel to operate and maintain the aircraft while wearing required Mission Oriented Protective Posture (MOPP) equipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.3",
+                  "title": "Chemical and biological threat decontamination compatibility analysis.",
+                  "content": "A description of the process, models, and source data for a decontamination compatibility assessment to determine the compatibility of the aircraft with any required decontamination procedures.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Analysis results.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Nonnuclear vulnerability analysis:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "For non-explosive projectiles, explosive projectiles, and contact-fuzed missiles and rockets.",
+                  "content": "A description of the model output, summary of results and conclusions. In addition, the following figures and tables will be included:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.1.1.1",
+                      "title": "Pk Plots.",
+                      "content": "Images of the aircraft showing the color-coded shotline Pk for each shotline in the gridded analysis (i.e., shot plots or cell-by-cell) for three (3) of the cardinal views (front, bottom, and left) for at least one velocity for each threat assessed for at least the attrition kill category. Pk Plots for each of the six (6) cardinal views for each combination of threat, kill category and relevant subset of striking velocities shall be included as an appendix to this report.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.1.2",
+                      "title": "Aircraft presented area (Ap) for each attack aspect in tabular format.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.1.3",
+                      "title": "Vulnerable area (Av) and target probability of kill given a hit (Pk|h) of non-redundant (i.e., singly vulnerable) components for each combination of threat, kill category, attack aspect, and striking velocity in tabular format.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.1.4",
+                      "title": "Vulnerable area (Av) of each major redundant (multiply vulnerable) component/system for each combination of threat, kill category, attack aspect, and striking velocity in tabular format.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.1.5",
+                      "title": "Rank order of the top components or systems with the largest contributions to the vulnerable area, and their percent contribution, that make up at least 80 percent of the total aircraft vulnerability averaged across all attack aspects and striking velocities.",
+                      "content": "This shall be done for each combination of threat and kill category.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "For externally detonating projectiles and missiles.",
+                  "content": "A description of the model output, summary of results and conclusions. Analysis results shall be provided for component single fragment Pk and external blast kill radii. In addition, for single fragment analyses the following figures and tables will be included.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.1.2.1",
+                      "title": "Pk Plots.",
+                      "content": "Images of the aircraft showing the color-coded shotline Pk for each shotline in the gridded analysis (i.e., shot plots or cell-by-cell) for four (4) cardinal views (front, top, bottom, and left) for at least one velocity for each threat assessed. Pk Plots for each of the six (6) cardinal views for each combination of kill category, attack aspect, and relevant subset of threat mass and striking velocity shall be included as an appendix to this report.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.2.2",
+                      "title": "Aircraft presented area (Ap) for each attack aspect in tabular format.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.2.3",
+                      "title": "Vulnerable area (Av) and target probability of kill given a hit (Pk|h) of non-redundant (i.e., singly vulnerable) components for each combination of threat, kill category, attack aspect, and striking velocity in tabular format.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.2.4",
+                      "title": "Vulnerable area (Av) of each major redundant (multiply vulnerable) component/system for each combination of threat, kill category, attack aspect, and striking velocity in tabular format.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.2.5",
+                      "title": "Rank order of the top components or systems with the largest contributions to the vulnerable area, and their percent contribution, that make up at least 80 percent of the total aircraft vulnerability averaged across all attack aspects and striking velocities.",
+                      "content": "This shall be done for each combination of threat and kill category.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.2.6",
+                      "title": "External blast vulnerability shall be provided in terms of equivalent bare charge weight of TNT vs. distance from each critical area of the air vehicle for selected warhead charge weights and kill categories.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "For low-energy laser threats, the results of calculations of Maximum Permissible Exposure (MPE) levels for specified damage effects, as a function of range, for all flight and mission critical sensors (including personnel eyes) for each threat assessed.",
+                  "content": "The analysis shall include assessment of the effects of component and system redundancies as well as any hardening or vulnerability reduction features included in the design.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.1.3.1",
+                      "title": "The range at which the MPE is exceeded shall be provided in tabular format each combination of threat (wavelength, power and type), damage category, and flight profile as an appendix to this report.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "For high-energy laser threats, the results of calculations for thermal and other damaging effects, the effects of material/coating properties and absorptivity, and vulnerable areas shall be provided.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.1.4.1",
+                      "title": "Time to effect shall be provided in tabular format each combination of threat, kill category, attack aspect, and spot size as an appendix to this report.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Nonnuclear susceptibility analysis:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "For RF guided missiles.",
+                  "content": "A description of the model output, summary of results and conclusion for the gridded RF susceptibility analysis. Results shall be provided for each 'wet' (susceptibility reduction features, maneuvers, and/or countermeasures and electronic attack) case and 'dry' (without countermeasures, electronic attack, etc.). For each threat and flight condition provide tabular data of Probability of Hit (Ph) and defended area, for both dry and wet conditions. For wet conditions, also include Reduction in Lethality (RIL) and/or countermeasure effectiveness. Figures shall be included showing either Ph or Pk for each location in cross range and downrange for each threat for both dry and wet conditions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "For EO/IR guided missiles.",
+                  "content": "A description of the model output, summary of results and conclusion for the gridded EO/IR susceptibility analysis. Results shall be provided for each 'wet' (susceptibility reduction features, maneuvers, and/or countermeasures) case and 'dry' (without countermeasures, etc.). For each threat and flight condition provide tabular data of Probability of Hit (Ph) and defended area, for both dry and wet conditions. For wet conditions, also include countermeasure effectiveness. Figures shall be included showing either Ph or Pk for each location in cross range and downrange for each threat for both dry and wet conditions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "EO/IR and RF Air Defense Artillery (ADA) systems.",
+                  "content": "A description of the model output, summary of results and conclusion for the gridded EO/IR and RF ADA analysis. Results shall be provided for each 'wet' (susceptibility reduction features, maneuvers, and/or countermeasures) case and 'dry' (without countermeasures, etc.). For each threat and flight condition provide tabular data of Probability of Hit (Ph) and defended area, for both dry and wet conditions. For wet conditions, also include Reduction in Lethality (RIL) and/or countermeasure effectiveness. Figures shall be included showing either Ph or Pk for each location in cross range and downrange for each threat for both dry and wet conditions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.4",
+                  "title": "For optically guided and unguided weapon systems (e.g., small arms, rocket propelled grenades).",
+                  "content": "A description of the model output, summary of results and conclusion for the gridded optically guided and unguided weapon systems susceptibility analysis results. Results shall be provided for each 'wet' (susceptibility reduction features, maneuvers, hostile fire indication, and/or countermeasures) case and 'dry' (without countermeasures, etc.). For each threat and flight condition provide tabular data of Probability of Hit (Ph) and defended area, for both dry and wet conditions, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Nuclear analysis:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Vulnerability envelopes and levels shall be provided for each burst orientation (top, side, rear, and front views or the number of orientations specified by the procuring activity), kill level (sure safe, mission abort, sure kill) and nuclear weapon effect.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "For conceptual phase analysis, isotropic (invariant with respect to direction) hardnesses can be presented.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "For analyses conducted during full scale development, anisotropic (differ with respect to direction).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.4",
+                  "title": "Analysis results shall include the actual and allowable loads for and response of each subsystem and element thereof for each weapon effect analyzed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Chemical and Biological Hardness and Decontamination Analysis:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.4.1",
+                  "title": "Results of material hardness assessment identifying materials and coatings, if any, whose critical properties degrade within 30 days after exposure to the required chemical and biological threats.",
+                  "content": "The material hardness assessment shall include results for any susceptible, accessible and critical materials to indicate if the degradation exceeds any design limits.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.2",
+                  "title": "Results of compatibility assessment of the ability of aircrew and maintenance personnel to operate and maintain the aircraft while wearing required Mission Oriented Protective Posture (MOPP) equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.3",
+                  "title": "Results of decontamination compatibility assessment verifying the compatibility of the aircraft with required decontamination procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Summary and conclusions.",
+          "content": "An overall summary and conclusions shall be provided identifying:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Summary of results for each analysis conducted.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Areas of high uncertainty including any application of confidence level assessment methods.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Limitations on use of the data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Recommendations for additional trade studies, survivability enhancements, or testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Other applicable comments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Appendices.",
+          "content": "The following types of data, as applicable, should be included as appendices to the report. For computer model inputs and outputs, the data shall be in the native electronic format of the respective models and does not need to be included in the report document.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Geometric Target Description (GTD).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Geometric Target Description (GTD) data dictionary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Flight and Mission Essential Functions Analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Damage Modes and Effects Analysis (DMEA).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "Pcd|h and Pk|d worksheets.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.6",
+              "title": "Endgame Geometric Target Description (GTD).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.7",
+              "title": "Target Radio Frequency (RF) signature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.8",
+              "title": "Target Infrared (IR) signature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.9",
+              "title": "Missile Warning System (MWS) coverage and sensitivities.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.10",
+              "title": "Radar Warning Receiver (RWR) antenna patterns, gains and sensitivities.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.11",
+              "title": "Hostile Fire Indicator (HFI) sensor coverage and sensitivity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.12",
+              "title": "Laser detector coverage and sensitivity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.13",
+              "title": "Nonnuclear vulnerability analysis Pk plots.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.14",
+              "title": "Low Energy Laser results.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.15",
+              "title": "High Energy Laser results.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.16",
+              "title": "Description of computer models used in the analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.17",
+              "title": "Chemical and biological hardness material down-selection report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.18",
+              "title": "Chemical and biological material level hardness analysis results.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.19",
+              "title": "All input files used by the software in the vulnerability and susceptibility analyses in appropriate electronic format.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.20",
+              "title": "All output files from software in the vulnerability and susceptibility analyses in appropriate electronic format.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Marking.",
+          "content": "The Survivability Analysis Report shall be marked appropriately, based upon content and any applicable program Security Classification Guide (SCG), and contain the appropriate Distribution Statements in accordance with DoDI 5230.24, Distribution Statements on Technical Documents.\n\n(Copies of this document are available online at http://www.dtic.mil/whs/directives/index.html.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-80564B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

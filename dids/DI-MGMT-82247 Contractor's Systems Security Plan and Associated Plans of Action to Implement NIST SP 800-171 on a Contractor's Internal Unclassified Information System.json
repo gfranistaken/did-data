@@ -1,0 +1,257 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82247",
+  "slug": "di-mgmt-82247",
+  "title": "Contractor's Systems Security Plan and Associated Plans of Action to Implement NIST SP 800-171 on a Contractor's Internal Unclassified Information System",
+  "summary": "This DID defines the content, format, and intended use of a Contractor's system security plan and any associated plans of action addressing the Contractor's internal unclassified information system under NIST SP 800-171.",
+  "approval_date": "2018-10-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9992",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "OSD-SO",
+  "project_number": "MGMT-2018-049",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) contains the data content, format, and intended use of the Contractor's system security plan (or extracts thereof), to include any associated plans of action, addressing the Contractor's internal unclassified information system(s). When Defense Federal Acquisition Regulation Supplement (DFARS) Clause 252.204-7012 is included in a contract for which covered defense information - as defined in DFARS Clause 252.204-7012 - will be processed, stored, or transmitted on an unclassified information system that is owned, or operated by or for, the Contractor, the Contractor shall develop, document, and periodically update a system security plan(s), to include any associated plans of action, for the Contractor's internal unclassified information system in accordance with the National Institute of Standards and Technology (NIST) Special Publication (SP) 800-171, Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations. Security Requirement 3.12.4 of the NIST SP 800-171 requires that system security plans describe system boundaries, system environments of operation, how security requirements are implemented, and the relationships with or connections to other systems. Security Requirement 3.12.2 of the NIST SP 800-171 requires that plans of action describe how the Contractor will correct deficiencies and reduce or eliminate vulnerabilities in the Contractor's unclassified information system. The system security plan (or extracts thereof) and any associated plans of action may be used by the government as input to an overall risk management decision to process, store, or transmit covered defense information on an unclassified information system that is owned, or operated by or for, the Contractor (i.e., Contractor's internal unclassified information system).\nThis DID contains the information that shall be conveyed within the system security plan and any associated plans of actions for the Contractor's internal unclassified information system. There is no prescribed format or specified level of detail for how that information is conveyed. There is no requirement for the government to approve the system security plan or any associated plans of action for the Contractor's internal unclassified information system, but the government may request that the Contractor submit the system security plan (or extracts thereof), and any associated plans of action, such that the government may review the Contractor's implementation of security requirements.\nWhen requested by the government, the submitted system security plan (or extracts thereof) and any associated plans of action for the Contractor's internal unclassified internal information system may:\n- Demonstrate to the government the Contractor's implementation or planned implementation of the security requirements for their internal unclassified information system, or\n- Be used by the government as critical inputs to an overall risk management decision to process, store, or transmit covered defense information on an unclassified information system that is owned, or operated by or for, the Contractor (i.e., Contractor's internal unclassified information system).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including development dates and dates of any applicable amendments, notices and revisions, shall be specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor's format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The system security plan (or extracts thereof) shall include a description of system boundaries, system environments of operation, how security requirements are implemented or how organizations plan to meet the requirements, and the relationships with or connections to other systems. Any associated plans of action shall include a description how the Contractor will correct deficiencies and reduce or eliminate vulnerabilities in the Contractor's information system.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page.",
+          "content": "The cover page of the system security plan (or extracts thereof) and any associated plans of action shall identify the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title of the document",
+              "content": "(i.e., Systems Security Plan and Associated Plans of Action for [Name of Contractor's Internal Unclassified Information System])",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Company name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Data Universal Numbering Systems (DUNS) Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Contract number(s) or other type of agreement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Facility Commercial and Government Entity (CAGE) code(s)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "System that this System Security Plan and any associated Plans of Action addresses",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Date of latest revision",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "All appropriate distribution and classification statements/markings",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "System Identification.",
+          "content": "The purpose of the system security plan shall be communicated in this section, to include a description of the function/purpose of the Contractor's internal unclassified information system(s)/network(s) that is(are) addressed in the plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "System Environment.",
+          "content": "A detailed topology narrative and graphic shall be included that clearly depicts the Contractor's internal unclassified information system boundaries, system interconnections, and key components. This does not require depicting every device, but would include an instance of operating systems in use, virtual and physical servers (e.g., file, print, web, database, application), as well as any networked workstations, firewalls, routers, switches, copiers, printers, lab equipment, etc. If components of other systems that interconnect/interface with this system need to be shown on the diagram, denote the system boundaries by referencing the security plans or names and owners of the other system(s) in the diagram. Include or reference (e.g., to an inventory database or spreadsheet) a complete hardware and software inventory, including make/model/version and maintenance responsibility.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Security Requirements.",
+          "content": "Describe how the Contractor addresses/will address security requirements in each of the following NIST SP 800-171 security requirement families (including basic and derived requirements) for protecting covered defense information in the Contractor's systems and organizations:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Access Control (3.1.1 - 3.1.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Awareness and Training (3.2.1 - 3.2.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Audit and Accountability (3.3.1 - 3.3.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Configuration Management (3.4.1 - 3.4.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Identification and Authentication (3.5.1 - 3.5.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Incident Response (3.6.1 - 3.6.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "Maintenance (3.7.1 - 3.7.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "Media Protection (3.8.1 - 3.8.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "Personnel Security (3.9.1 - 3.9.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "Physical Protection (3.10.1 - 3.10.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.11",
+              "title": "Risk Assessment (3.11.1 - 3.11.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.12",
+              "title": "Security Assessment (3.12.1 - 3.12.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.13",
+              "title": "System and Communications Protection (3.13.1 - 3.13.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.14",
+              "title": "System and Information Integrity (3.14.1 - 3.14.x)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Plans of Action.",
+          "content": "In accordance with Security Requirement 3.12.2, provide any plans of action developed to address how and when the Contractor will implement any security requirements not yet implemented, identify known deficiencies and vulnerabilities in the contractor's internal unclassified information system, how and when the Contractor will correct identified deficiencies and reduce or eliminate vulnerabilities in the Contractor's system.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82247.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

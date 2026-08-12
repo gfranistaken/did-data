@@ -1,0 +1,123 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82478",
+  "slug": "di-mgmt-82478",
+  "title": "Over/Short Shipment Report",
+  "summary": "The Over/Short Shipment Report documents contractor progress toward contract objectives by identifying cargo manifested as overages or shortages at an Aerial Port of Debarkation.",
+  "approval_date": "2025-02-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10542",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFIMSC/763d ESS)",
+  "project_number": "MGMT-2025-009",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Over/Short Shipment Report documents the status of the contractors' effort towards achieving contract objectives. It identifies any cargo manifested that was processed as an overage or a shortage at an Aerial Port of Debarkation (APOD). The Report will be used to identify inefficiencies in transportation of cargo or mail.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Over/Short Shipment Report shall be in Microsoft Excel format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Over/Short Shipment Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "For each Combatant Command (COCOM):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The number of over shipments occurring during the current month.",
+              "content": "Un-manifested air shipments of cargo or mail arriving at an air terminal shall be considered overshipped.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The number of short shipments occurring during the current month.",
+              "content": "Manifested air shipments of cargo or mail not located upon air cargo in-checking shall be considered short shipped cargo.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Transportation Control Number (TCN) for each over/short shipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Number of Transportation Discrepancies Reports (TDR) filed during the current month.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Number of over/short shipments reconciled by the Contractor during the current month.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Number of over/short shipments reconciled by the APOD during the current month.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Cumulative totals of activities for all COCOMs (i.e., numbers of over and short shipments, TDR, etc.), identified above in 3.1.1 through 3.1.2 and 3.1.4 through 3.1.6, throughout the current fiscal year.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82478.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

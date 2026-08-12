@@ -1,0 +1,228 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82395",
+  "slug": "di-mgmt-82395",
+  "title": "Risk Management Framework (RMF) Package for Air Force Intelligence Community (AF IC) Systems",
+  "summary": "Defines the RMF package body of evidence data required to satisfy Air Force Intelligence Community assessment and authorization procedures for obtaining an authorization to operate.",
+  "approval_date": "2022-08-25",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10354",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19",
+  "project_number": "MGMT-2022-020",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The risk management framework (RMF) package data shall be used to satisfy the requirements of the Air Force (AF) Intelligence Community (IC) assessment and authorization procedures to obtain an authorization to operate (ATO).\nThis data item description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The RMF package body of evidence (BoE) shall be delivered in a format approved by the Government's Authorizing Official (AO), Designated Authorizing Official (DAO), or Information Systems Security Manager (ISSM).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of the RMF package shall contain the necessary BoE required by the AF IC AO, DAO, or ISSM to successfully achieve an interim authorization to test (IATT), or ATO. The RMF package shall include the following items or sections.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "This section shall contain a narrative of the RMF package deliverable content.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Boundary diagrams.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Provide updated authorization boundary diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Identify external data flows and outline authorization boundary within diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Diagrams must match hardware inventory.",
+              "content": "Use host names from hardware inventory to identify devices within the diagrams",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Identify where workstations, printers, scanners, and voice over internet protocols (VoIPs) are located",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Network diagram.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Data flow diagram.",
+          "content": "The data flow diagram should be specific to the authorization boundary and include directional data flow information.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Ports, Protocols, and Services Matrix (PPSM)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Detailed hardware inventory",
+          "content": "including host name, unique identifier, serial numbers, IP address, vendor, make, model, and network role (e.g., server).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Detailed software inventory",
+          "content": "including software title, vendor, version, type (e.g., vulnerability scanner, network monitor, and open source application container), and Certificate to Field (CtF) approval.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "ISSM appointment letter.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "SSO or SSR appointment letter.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Sensitive compartmented information facility (SCIF) accreditation letter.",
+          "content": "Submit the SCIF accreditation letter for location of the project.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Privileged user standard operating procedures (SOP).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Construction security plan.",
+          "content": "This section is only applicable to SCIFs built after 2010 for location of the project.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "TEMPEST accreditation letter.",
+          "content": "Include the issue and expiration date for location of the project.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Security controls traceability matrix (SCTM).",
+          "content": "The Government will provide the SCTM template for the contractor to answer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "18 RMF control family documents.",
+          "content": "Answer how the SCTM was implemented.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Continuous monitoring (ConMon) plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Plan of Actions and Milestones (POAMs)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Vulnerability scans",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Interconnect Security Agreement (ISA)",
+          "content": "including system name, ports, protocols, external IP address, internal IP address, direction (inbound/outbound/both), and description of connection.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82395.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

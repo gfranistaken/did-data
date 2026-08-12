@@ -1,0 +1,444 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-80840B",
+  "slug": "di-misc-80840b",
+  "title": "Preliminary System Security Concept (PSSC)",
+  "summary": "This DID outlines the format and content of the Preliminary System Security Concept, a contractor-prepared document citing security concepts and requirements for a particular system.",
+  "approval_date": "2021-03-29",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10226",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MISC-2021-011",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) outlines the format and content of the Preliminary System Security Concept (PSSC). The PSSC is a document that cites security concepts and requirements relative to a particular system. It is prepared by the contractor to provide the Government with preliminary descriptions of security requirements and resources.\nThis Data Item Description contains the format and content preparation instructions for data resulting from the work task described by 5.3.1.3 of MIL-HDBK-1785 Department of Defense Handbook: System Security Engineering Program Management Requirements. (Copies of these documents are available online at http://quicksearch.dla.mil.)\nThis DID supersedes DI-MISC-80840A",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-80840A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The PSSC shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Preliminary System Security Concept (PSSC) shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Program data.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title.",
+              "content": "Include the complete PSSC title.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Submitting agency.",
+              "content": "List the name and address of the contract agency submitting the report and the name and telephone number of a project officer or point of contact.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Contract citation.",
+              "content": "Identify the contract number and date as listed by the Government.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Security tasks.",
+              "content": "Briefly describe major security tasks cited in the statement of work and related contract documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Distribution.",
+              "content": "List the name and address of Government and contract agencies receiving copies of the concept. If necessary list them in an appendix and make reference to it.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "System concept.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Description.",
+              "content": "Briefly describe the system and its major components. Cite separate configurations for initial operational capability (IOC) and full operational capability (FOC), if different.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Performance requirements.",
+              "content": "Cite the major performance and deployment criteria listed in the applicable statements of work and other related contract documents which affect security.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Reliability and maintainability.",
+              "content": "Identify security issues affecting system reliability, logistics reliability, availability, and maintainability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "System survivability.",
+              "content": "Show self-protection capabilities or subsystem designs which may enhance security (examples include devices against tampering and spoofing, chemical or biological radiation hardness, nuclear hardness, nuclear and non-nuclear electromagnetic pulse hardness, and use of passive detection technology).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Preplanned Product Improvements (P3I).",
+              "content": "Indicate provisions or security implications for subsystem growth or improvements such as modifications and upgrades.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Security Subsystem Employment Data.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "General employment description.",
+              "content": "Indicate how, where, when and what security subsystems will be used and how they will be integrated with the system(s) they support.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Command and control structure.",
+              "content": "Indicate the command and control data that must be exchanged. Explain how security subsystems will be integrated into the command and control structure projected to exist when it is deployed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Information systems.",
+              "content": "Identify other information that must be exchanged between this subsystem and other systems, subsystems or components. Cite the expected length of each communications link, anticipate flow rate across each link, required availability of each link, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Security subsystem standardization, interoperability, and commonality.",
+              "content": "Indicate requirements for joint service interface, North American Treaty Organization (NATO) cross-servicing and interoperability with existing systems or subsystems. Identify procedural and technical interface standards incorporated in subsystem design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Operational environment.",
+              "content": "Indicate climatic and atmospheric environmental effects and considerations. If applicable, define the chemical and biological environment in which equipment must function.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Security subsystem support.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Maintenance planning.",
+              "content": "Outline the actions, support and documentation necessary to establish maintenance concepts and requirements. Include maintenance tasks to be accomplished for on- and off-equipment maintenance; interservice, organic and contractor mix, workloads, and time phasing for depot maintenance. Specify the management strategies for selecting and integrating contractor and Government Furnished Equipment (GFE).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Manpower and personnel.",
+              "content": "Outline the projected manpower requirements envisioned to support this subsystem(s). Include type of specialty codes and skill levels required, time phased reporting, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Supply support.",
+              "content": "Show the proposed approach for provisioning initial support and acquiring, distributing, and replenishing spares and repair parts.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Support equipment.",
+              "content": "Identify equipment required to support this subsystem(s). Include ground handling and maintenance equipment, tools, metrology and calibration equipment and related computer hardware and software.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Training and training devices.",
+              "content": "Indicate the training support concept from security subsystem design through deployment. Identify the major command responsible for developing and conducting each phase of training. Show inventory items and training devices by projected type, number, use and locations required. Outline initial and recurring training requirements by location, type, specialty, and fiscal year.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Computer resources support.",
+              "content": "Define special computer program documentation, related software, source data, facilities, hardware, etc. required for subsystem support.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "Facilities.",
+              "content": "Specify facility, shelter and housing external to system-designed survivability features.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "Packaging, handling, storage and transportation.",
+              "content": "Indicate the requirements, resources, processes, procedures, design considerations, and methods to ensure security subsystems are properly preserved, packaged, handled, and transported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "Related support factors.",
+              "content": "Indicate those pertinent support factors, considerations or requirements not covered elsewhere, but deemed important to the effectiveness of the security subsystem.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "General provisions for system security.",
+          "content": "Address the following security issues relative to overall system deployment and operation.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Threat assessment.",
+              "content": "Address security threats to the system for design, development, production, at IOC and throughout its projected life. Include foreign government capabilities, peace and wartime ground threats, and system-unique vulnerabilities. The threat assessment shall be based on authoritative, government Intelligence Community threat information. Make reference to Government threat documents. In addition, cite requirements for threat analysis and security vulnerability assessments.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Procedural requirements.",
+              "content": "Cite security force and procedural requirements which apply to pre-, trans-, and post-attack operations in support of the Air Force Physical Security Program.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Security resources.",
+              "content": "Cite security manpower, facility and equipment requirements in the quantities, type, and configuration necessary to support the system when deployed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Security response planning.",
+              "content": "Address emergency security response planning, which reflects the general design of the security force posture calculated to mitigate the greatest vulnerability to terrorism, sabotage, overt and covert attack. It shall be supported by the threat and vulnerability assessments cited in 3.5.1. In addition, indicate how a security reporting and alerting system will be implemented.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Security priorities for all applicable systems and components.",
+              "content": "Include security priorities for all operational phases, including maintenance. For example, aircraft system priorities would include nuclear alert, nonnuclear alert, mission capable, and nonalert. In addition, explain how waivers, exceptions and variances to security criteria will be identified, submitted, approved, and corrected.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Security requirements from related security disciplines.",
+              "content": "Include applicable information security, physical security, computer security, personnel security, product security, industrial security, operations security, communications security, electronic security, survivability, antiterrorism and counter-intelligence aspects.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Facility and equipment requirements.",
+              "content": "Indicate facility and equipment requirements which are incorporated into the system to support system security requirements. These requirements shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.7.1",
+                  "title": "The Central Security Control Facility, Master Surveillance and Control Facility, Security Force Response Facility, entry control facilities, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.2",
+                  "title": "Barrier systems and warning signs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.3",
+                  "title": "Alarm communication and display equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.4",
+                  "title": "Security force armament and duty equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.5",
+                  "title": "Security force communications.",
+                  "content": "Include fixed, portable and landline requirements by type and number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.6",
+                  "title": "Interior and exterior intrusion detection systems.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.8",
+              "title": "Manpower standard.",
+              "content": "Identify security force post and patrol requirements for normal operations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Security force logistics.",
+              "content": "Cite security force logistics and material requirements including vehicles and associated equipment, special purpose equipment, training aids, tool kits, new armament, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.10",
+              "title": "Entry access controls.",
+              "content": "Include system entry control requirements for all restricted areas including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.10.1",
+                  "title": "General criteria and unique requirements for entry control.",
+                  "content": "Include the rate at which individuals must be processed during normal operations, alert operations, and periods of advanced readiness.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.2",
+                  "title": "Qualification requirements for the various categories of people who must enter the facility.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.3",
+                  "title": "Personnel clearance and investigative requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.4",
+                  "title": "Special training or briefing and debriefing requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.5",
+                  "title": "Authentication and duress code techniques and procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.6",
+                  "title": "Dispatch control procedures for unattended or minimally staffed sites.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.7",
+                  "title": "Description of the badge system, emergency procedures, and personnel escort requirements.",
+                  "content": "Include the number of individual names maintained in entry data files.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-80840B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

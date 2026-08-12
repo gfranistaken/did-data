@@ -1,0 +1,58 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82276",
+  "slug": "di-mgmt-82276",
+  "title": "Diminishing Manufacturing Sources and Material Shortages (DMSMS) Operations Transfer Plan",
+  "summary": "This DID defines the format and content for a contractor plan to transfer DMSMS operations, management, and related data to the Government for program risk assessment.",
+  "approval_date": "2019-07-02",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10042",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "OSD-SO",
+  "project_number": "MGMT-2019-017",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Data delivered using this Data Item Description (DID) will be used to assess program risk when transitioning DMSMS operations and management to the Government.\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The DMSMS Operations Transfer plan shall be in the contractor's format and provided electronically in Adobe Acrobat or Microsoft Word.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The DMSMS Operations Transfer plan shall detail the transfer of all DMSMS data to the government including: the inventory of parts and software related to DMSMS solutions, DMSMS case data, and DMSMS related logistics and technical data. The plan shall identify all DMSMS management tools used by the contractor. The plan shall identify any risks to implementation of the plan and any additional costs to the government that may result from the plan. The plan shall include a revision number and date.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82276.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

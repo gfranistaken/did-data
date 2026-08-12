@@ -1,0 +1,298 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82406",
+  "slug": "di-mgmt-82406",
+  "title": "Maintenance Status and Forecast Report",
+  "summary": "The Maintenance Status and Forecast Report provides a snapshot of contractor-maintained aircraft, engine, and equipment maintenance status to facilitate efficient scheduling of maintenance events.",
+  "approval_date": "2023-04-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10386",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WAME)",
+  "project_number": "MGMT-2023-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Maintenance Status and Forecast Report (MSFR) provides a snapshot of the current condition of contractor-maintained aircraft, engines, and auxiliary mission equipment; including the expiration dates of any overfly waivers, calendar-based inspection due dates, flight-hours-based inspection due times, due dates/times of time-change items, and Time-Compliance Technical Order (TCTO) compliance status. The data will be used to facilitate efficient scheduling of maintenance events including effective utilization of maintenance resources (manpower and facilities).\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of these Technical Orders are available online at",
+      "url": "https://www.tinker.af.mil/Resources/Technical-Orders/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The MSFR shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The MSFR shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Aircraft and engine information",
+          "content": "to include manufacturer and applicable part number and serial number.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Aircraft and engine flight time and engine cycles.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Open maintenance discrepancies.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Technical Order prescribed flight-hour-based inspection due times within the next 100 flight-hours.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Technical Order prescribed calendar-based inspection due dates within the next 12 months.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Time-change items due dates/times.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Cartridge Actuated Devices/Propellant Actuated Devices (CAD/PAD) by aircraft",
+              "content": "and must include, but not limited to:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Part number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "National stock number (NSN).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Serial number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Lot number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.5",
+                  "title": "Replace cycle Date of Install (DOI).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.6",
+                  "title": "Replace cycle Date of Manufacture (DOM).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.7",
+                  "title": "Date of install.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.8",
+                  "title": "Date of manufacture.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.9",
+                  "title": "Expiration date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.10",
+                  "title": "Location on aircraft (forward seat, aft seat).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.11",
+                  "title": "Geographic location of CAD/PAD.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.12",
+                  "title": "Ordering forecast of asset quantities to support the annual data call.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "TCTO status, due dates, and any applicable waivers/extensions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Copies of any contractor-initiated -107T waivers to overfly due dates or times",
+          "content": "as defined in TO 00-25-107 or fly with a Red X condition as defined in TO 00-20-1. (Copies of these Technical Orders are available online at https://www.tinker.af.mil/Resources/Technical-Orders/.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Summary of CAD/PAD temporary extensions requested and/or approved, with extension expiration dates.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Listing of Alternate Mission Equipment (AME) (pylons, adapters, fuel tanks, etc.) and status.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Parts on order for unscheduled maintenance",
+          "content": "to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Requisition number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Nomenclature.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Part Number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.4",
+              "title": "NSN.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.5",
+              "title": "Quantity on order.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.6",
+              "title": "Estimated ship date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.7",
+              "title": "Mark For/Aircraft ordered against.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.8",
+              "title": "Geographic location of shipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82406.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

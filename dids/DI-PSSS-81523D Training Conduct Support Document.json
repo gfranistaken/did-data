@@ -1,0 +1,1576 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81523D",
+  "slug": "di-psss-81523d",
+  "title": "Training Conduct Support Document",
+  "summary": "The Training Conduct Support Document provides specific definition and direction to the instructor and trainees on learning objectives, equipment, and instructional media for use during the conduct of training.",
+  "approval_date": "2020-01-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10134",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "PSSS-2020-004",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training Conduct Support Document provides specific definition and direction to the instructor and trainees on learning objectives, equipment, and instructional media for use during the conduct of training. It also provides updates to course materials for life cycle maintenance of the training course.\n\nThis Data Item Description (DID) contains the preparation instructions for the content and format of the Training Conduct Support Document.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the performance requirements described by 3.2.7 of MIL-PRF-29612B, and is applicable to the acquisition of training data products. Data product performance evaluation criteria are specified in 4.3.7 and 4.3.9 of MIL-PRF-29612B.\n\nIt is not intended that all the requirements contained herein be applied to every program or program phase. Any individual data requirement contained in this DID is subject to deletion tailoring.\n\nThis DID supersedes DI-SESS-81523C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81523C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor format is acceptable. Standard digital data, when specified, must be in compliance with the content and format requirements specified in the DoD Data Architecture (DDA) and the Defense Data Dictionary System (DDDS). The deliverable of the product required by this DID meets the intent and requirements of DoDINST 5000.2.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Training Conduct Support Document shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "shall consist of the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Cover.",
+              "content": "The cover shall provide information relevant to the identification of the training document as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Course title.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Course number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Document number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Date of preparation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Training document type name (e.g., lesson plan, trainee guide).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.6",
+                  "title": "The \"prepared for\" block shall identify the using activity and career field.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.7",
+                  "title": "The \"prepared by\" block shall identify the company/agency that developed the training document.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.8",
+                  "title": "The contract number shall identify the contract under which the training document was procured.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.9",
+                  "title": "Distribution statement and destruction notice.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.10",
+                  "title": "The publication by direction statement shall identify the contracting activity.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.11",
+                  "title": "Logos shall be as Service or command specified.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.12",
+                  "title": "Supersession statement.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.13",
+                  "title": "Foreign disclosure statement.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.14",
+                  "title": "Security classification.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "List of effective pages.",
+              "content": "This data shall be provided in Volume I and shall include the listing of pages provided in all volumes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Letter of promulgation.",
+              "content": "The letter of promulgation will be furnished by the Government.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Change record.",
+              "content": "This data shall be included in each separate volume. Volume I shall include the listing of pages provided in all volumes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Hazard awareness notice.",
+              "content": "This data shall provide safety and environmental precautions for the protection of personnel, equipment and instructions for the reporting of hazards and safety violations. Hazard awareness statements shall cover relevant documentation references, general and specific precautions, hazard reporting criteria, and shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.5.1",
+                  "title": "The documentation statement shall identify relevant documentation containing specific safety precautions and preventive measures that are applicable to particular equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.2",
+                  "title": "The general information statement shall identify hazards to personnel or equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.3",
+                  "title": "The specific precautions statement shall identify specific direction to personnel concerning safety.",
+                  "content": "Statements shall inform personnel that death, personal injury, and equipment damage can result from carelessness, failure to comply with approved procedures, or violations of WARNINGS, CAUTIONS, and safety regulations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.4",
+                  "title": "The hazard reporting statement shall identify the requirement of personnel to report all hazards, safety violations, environmental considerations, and the activity to which such reports should be sent.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.6",
+              "title": "Foreword/preface.",
+              "content": "This data shall contain the scope, purpose and applicability of the publication and any other information the reader requires as an introduction to the document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Definitions.",
+              "content": "This data shall include definitions of those words that are unique to the training document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Table of contents.",
+              "content": "This data shall list all contents of the training document and shall include the paragraph number, paragraph title, and corresponding page number. It shall also include a list of figures and tables and shall include the figure and table number, title, and corresponding page number. Each volume in a set of documents shall contain its own list of figures and tables. In addition, Volume I shall contain a list of figures and tables for all volumes in the set.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "How to use the training document.",
+              "content": "This data shall include descriptions of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.9.1",
+                  "title": "Composition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.2",
+                  "title": "Function.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.3",
+                  "title": "Use.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.4",
+                  "title": "Assignments.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.5",
+                  "title": "Equipment requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.6",
+                  "title": "Instruction sheets.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.7",
+                  "title": "Test requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.8",
+                  "title": "Division of materials into functional parts.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.10",
+              "title": "Executive Summary.",
+              "content": "This data shall be developed using clear, concise narrative statements describing the methodology for data accumulation and analysis, the target population, the results of the analysis, and recommendations as required.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Part 1: Lesson plan data requirements.",
+          "content": "The lesson plan contains data requirements that provide specific definition and direction to the instructor on learning objectives, equipment, instructional media requirements, and the conduct of training. Lesson plan data requirements shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Front matter.",
+              "content": "shall be as defined in 3.1.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Administrative data.",
+              "content": "This data shall provide information required to prepare for, and conduct the lesson. Administrative information shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Course title.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Document number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Course number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Curriculum name.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Unit title.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.6",
+                  "title": "Unit number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.7",
+                  "title": "Lesson title.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.8",
+                  "title": "Lesson number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.9",
+                  "title": "Responsible authoring activity.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.10",
+                  "title": "Date of preparation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.11",
+                  "title": "Effective date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.12",
+                  "title": "Approval date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.13",
+                  "title": "A list of topics and tasks to include task number, title, conditions, and standards.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.14",
+                  "title": "Security classification.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.15",
+                  "title": "Time breakdown (e.g., overall, classroom, laboratory).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.16",
+                  "title": "Student allotted lesson time.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.17",
+                  "title": "A list of references.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.18",
+                  "title": "A description of commonality.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.19",
+                  "title": "A description of instructional format.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.20",
+                  "title": "A list of learning objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.21",
+                  "title": "A list of teaching points.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.22",
+                  "title": "A list of equipment required for the instruction.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.23",
+                  "title": "A list of instructional aids.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.24",
+                  "title": "A description of testing requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.25",
+                  "title": "A list of supporting papers.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.26",
+                  "title": "Revision dates.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.27",
+                  "title": "A list of trainee instructional materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.28",
+                  "title": "A description of multiple instructor requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.29",
+                  "title": "A description of instructional guidance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.30",
+                  "title": "A description of classroom, laboratory, training area, and range requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.31",
+                  "title": "A description of ammunition requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.32",
+                  "title": "A description of prerequisites.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.33",
+                  "title": "A list of source documentation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.34",
+                  "title": "A list of environmental considerations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.35",
+                  "title": "A description of additional support personnel requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.36",
+                  "title": "A description of training portal infrastructure operations to include:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.36.1",
+                      "title": "Learning Management Systems (LMS).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.36.2",
+                      "title": "Course Management System (CMS).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.36.3",
+                      "title": "Courseware development/authoring tools.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.36.4",
+                      "title": "Communication tools.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.36.5",
+                      "title": "Resource references.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.37",
+                  "title": "For Advanced Distributed Learning (ADL), a description of hardware and software requirements for administrators, instructors, and students.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Instructional data.",
+              "content": "This data shall provide information to be presented during a course of instruction and shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Overview.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Lesson strategy.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Statement for student motivation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "Statement for gaining student attention.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "Statement of the learning objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.6",
+                  "title": "Safety precautions and hazard awareness notices related to the lesson topic.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.7",
+                  "title": "Review of materials previously presented and related to the new lesson topic.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.8",
+                  "title": "Discussion points.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.9",
+                  "title": "Instructional activities (e.g., lecture, discussion, demonstration, illustration, practice exercises, assignments, etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.10",
+                  "title": "Teaching points.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.11",
+                  "title": "Application.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.12",
+                  "title": "Procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.13",
+                  "title": "Evaluation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.14",
+                  "title": "Intermediate summaries as required.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.15",
+                  "title": "Related instructor activities.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.3.15.1",
+                      "title": "Media cues.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.15.2",
+                      "title": "Helps.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.15.3",
+                      "title": "Questions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.15.4",
+                      "title": "Answers to questions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.15.5",
+                      "title": "Supporting papers.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.3.16",
+                  "title": "Learning objectives data shall consist of the following:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.3.16.1",
+                      "title": "Learning objective number and type.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.16.2",
+                      "title": "The learning objective statement.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.16.3",
+                      "title": "The instructional method(s).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.16.4",
+                      "title": "The time required to present the material.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.16.5",
+                      "title": "Instructor to student ratio.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.3.17",
+                  "title": "Review and summary.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.18",
+                  "title": "Remotivation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.19",
+                  "title": "Closure.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.20",
+                  "title": "Assignments for the trainee.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.21",
+                  "title": "Transition information necessary to proceed to the next topic.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.22",
+                  "title": "Test/evaluation of learning objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.23",
+                  "title": "Critique of the course as applicable.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Trainee guide answer keys.",
+              "content": "The answer keys shall provide answers to questions in the associated trainee guide (see 3.3 below).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Part 2: Trainee guide data requirements.",
+          "content": "The trainee guide contains data which enhances the trainee's mastery of knowledge, skills, and attitudes needed for a given subject and shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Front matter.",
+              "content": "shall be as defined in 3.1.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Information sheet.",
+              "content": "This data shall provide the trainee with additional, amplifying, or background information essential for the trainee but not contained in the technical manuals or other official documentation. Information sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Title and identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Introduction consisting of a narrative statement describing the purpose/intent of the document.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "List of references used to develop the information sheet.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Materials designed to aid the trainee in comprehending the instructional topic and not contained in the technical manuals identified for use in the curricula.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "A list of supplemental reading materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Diagram sheet.",
+              "content": "This data shall provide illustrative material which depicts a chalkboard sketch, instructional media material or any diagram or schematic, deemed important to the trainee. Diagram sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Title and identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Illustrative materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Source.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Job sheet.",
+              "content": "This data shall direct the trainee to use technical documentation, if available, in the step-by-step performance of tasks or functions encountered in the operational environment. Job sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Title and identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Introduction consisting of a narrative statement describing the purpose/intent of the document.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "List, by nomenclature, all equipment required for accomplishing the job.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "List of all reference documentation required to perform the task or function.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.5",
+                  "title": "Job steps listing the procedures for performing a task or function without duplicating data in the technical manual.",
+                  "content": "Critical job steps shall be identified and require the instructor's initials and date of completion.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.6",
+                  "title": "Self-test questions providing an exercise in decision making similar to that required in the operational environment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Assignment sheet.",
+              "content": "This data shall identify the required reading material and pose questions on the assignments for each individual topic. Assignment sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Title and identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "List of learning objectives, copied directly from the lesson plan.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.3",
+                  "title": "List of study assignment(s).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.4",
+                  "title": "Study questions written on the same learning level as the related learning objective.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.6",
+              "title": "Problem sheet.",
+              "content": "This data shall provide the trainee with practical problems requiring analysis and decision making similar to those problems which could occur in the operational environment. Problem sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "Title and identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.2",
+                  "title": "Introduction consisting of a narrative statement describing the purpose/intent of the document.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.3",
+                  "title": "List of all reference documentation required to perform the task or function.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.4",
+                  "title": "Problem statements with all the data necessary to solve the problem(s).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.7",
+              "title": "Outline sheet.",
+              "content": "This data shall provide the trainee with an outline of the topic's major teaching points. Outline sheets shall allow trainees to follow the progress of a topic, to take notes as desired, and to retain topic information for future reference. Outline sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.7.1",
+                  "title": "Title and identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.2",
+                  "title": "Introduction consisting of a narrative statement describing the purpose/intent of the outline sheet.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.3",
+                  "title": "An outline of the topic content.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Part 3: On-the-Job Training (OJT) handbook data.",
+          "content": "The OJT handbook data is a self-paced instructional system which leads the trainee to a specific skill development. OJT handbook data is a substitute for, a reinforcement of, or an extension of other forms of instruction. Hands-on exercises, training assignments, and troubleshooting problems are used when available for analyzing the documentation as well as for learning and testing. The OJT handbook data covers a specific area of learning (e.g., equipment, systems, or subsystems) pertaining to specific task or function(s) and is designed to allow the trainee to work independently at their own pace. The OJT handbook data can be used in either the formal or informal training environment and shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Front matter.",
+              "content": "shall be as defined in 3.1.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Background.",
+              "content": "This data shall provide the trainee with background data and training guidelines for using the OJT handbook. Background shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.2.1",
+                  "title": "Introduction of the system, subsystem, or equipment which the OJT handbook data supports.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.2",
+                  "title": "OJT handbook data organization description.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.3",
+                  "title": "Guidelines and instructions for using the OJT handbook data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.4",
+                  "title": "Outline of all tasks or duties to be performed.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.5",
+                  "title": "Instruction relating to the assignment of tasks.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.6",
+                  "title": "Prerequisites required to complete the OJT handbook data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.3",
+              "title": "Work sheet.",
+              "content": "Work sheets shall provide procedures for performing a task or function. Work sheets shall direct the trainee to use the technical documentation, if available, in the step-by-step performance of tasks or functions. Work sheets shall include self-test questions. Work sheets shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.3.1",
+                  "title": "Specific learning objectives that are satisfied by the successful performance or completion of the task.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.2",
+                  "title": "Specific task to be performed and how the task relates to the overall program.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.3",
+                  "title": "A list of required tools and test equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.4",
+                  "title": "Safety precautions which the trainee must observe.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.5",
+                  "title": "General or discrete step-by-step procedures for performing operation, maintenance, troubleshooting, repair, and tasks/function.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.6",
+                  "title": "Self-test questions are developed to exercise the decision-making requirements that a trainee might face at a work site.",
+                  "content": "They shall be included, as applicable, following each performance step. (These questions constitute an open-book test, with the trainee permitted to use the technical manuals and other training program materials in seeking answers.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.7",
+                  "title": "Each work sheet shall include the maximum allowable time, and blank spaces for the administrator's initials and actual time the trainee used, to satisfactorily complete the task.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.4",
+              "title": "Tests and answer sheets.",
+              "content": "Tests and answer sheets shall provide written, and when required, performance tests for the end of each lesson or assignment along with the trainee answer sheets. The tests shall contain instructions to direct the trainee through the test and to the next OJT handbook element upon completion of the test. Each test item shall directly correspond to a test item in the lesson pretest. There shall be one test per lesson; however, for particularly long or difficult lessons there can be more. The test shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.4.1",
+                  "title": "Title and lesson number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.4.2",
+                  "title": "Directions for taking the test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.4.3",
+                  "title": "Test items.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.4.4",
+                  "title": "Answer sheets.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.5",
+              "title": "Instructions for OJT program administrators.",
+              "content": "These instructions shall provide detailed information for the OJT program administrator on how to conduct training. This information shall be prepared so that it can be reproduced separate from other parts of the OJT handbook data. These instructions shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.5.1",
+                  "title": "Guidelines and instructions for conducting the training program.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.2",
+                  "title": "Introduction to the system, subsystem, or equipment which the OJT handbook data supports.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.3",
+                  "title": "Question answer key.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.4",
+                  "title": "A list of step(s) the administrator will take when assigning a task.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.5",
+                  "title": "Explanation on how to evaluate the trainee's answers.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.6",
+                  "title": "Explanation on how to evaluate the practical assignment(s).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.7",
+                  "title": "Information for preparing and administering the lessons.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.8",
+                  "title": "A list of fault(s), with insertion parameters, for the system, subsystem, or equipment.",
+                  "content": "All safety considerations shall be addressed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.9",
+                  "title": "Instructions and precautions for administrator inserted malfunctions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.6",
+              "title": "Item-to-work assignment chart.",
+              "content": "This chart shall provide information on training task identification, work assignments and Personnel Qualification Standards (PQS). This chart shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.6.1",
+                  "title": "Training task identification shall consist of two sub-columns:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.6.1.1",
+                      "title": "Training task number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.6.1.2",
+                      "title": "Item/sub-item or element/sub-element.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.4.6.2",
+                  "title": "Work assignment shall consist of three sub-columns:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.6.2.1",
+                      "title": "Work assignment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.6.2.2",
+                      "title": "Learning objective.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.6.2.3",
+                      "title": "Test item.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.4.6.3",
+                  "title": "PQS shall consist of two sub-columns:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.6.3.1",
+                      "title": "Identification number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.6.3.2",
+                      "title": "Qualification task number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Part 4: Instructional visual aids.",
+          "content": "Visual aids to be used by the instructor in the conduct of classes shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Computer Aided Instruction (CAI).",
+              "content": "The CAI shall be provided in the service specified format(s) to include, but not limited to, slides, transparencies, wall charts, and PowerPoint presentations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Job Aids (JA).",
+              "content": "JAs shall provide step-by-step instructions related to the performance of a task in either the job or training environment. These procedural instructions shall be expressed as written or visual information or a combination of both. Each JA shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Title.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "Task.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "Applicable learning objective(s).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.4",
+                  "title": "Administrative instructions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.5",
+                  "title": "Body (written or visual procedural guidance).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Part 5: Training material change data.",
+          "content": "Training material change data provides information which is necessary for keeping the training materials current and compatible with the systems and equipment as engineering, technical, or operational changes are made. Training material change data shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Training materials change.",
+              "content": "Change to training materials for example; management documentation, curriculum materials, and instructional media materials may be developed after these materials are promulgated for use. A change to any training material is issued to add, amend, correct, substitute, delete, or otherwise modify existing data and usually affects less than 30 percent (this is variable according to media type) of the material being changed, and does not impact on course learning objectives or resources.) A change shall consist of three parts: change pages, change materials, and change notices as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "The change pages shall consist of all pages within the training materials that have been modified, corrected, or amended and those pages added or substituted.",
+                  "content": "The change pages shall be in the format of the existing training materials. Changes in training materials shall be made by reissuing new pages on which the changes are to be shown. Complete two-sided pages (both sides) shall be replaced so that the old page can be removed and the new page inserted. (During development, it is essential that each change to a material page be checked for impact on other pages among the training materials.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "The change materials shall include the instructional visual aids that have been modified, corrected, or amended, added, or substituted.",
+                  "content": "Changes to some media materials are not possible due to the nature of the material. When approved changes are made, the change materials shall be in the format of the existing training materials. (During development, it is essential that the change materials be checked for impact on the instructor guide and trainee guide, as well as other support materials.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Change notices are used to transmit changed training materials.",
+                  "content": "Change notices are not used to make or transmit complete revisions. The change notice shall be a letter containing the promulgation heading, justification, and directions for inserting the change and shall include the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.1.3.1",
+                      "title": "The promulgation heading shall contain the name and address of the contracting activity, audience (all holders of the document or materials), change and document number, date of the change, number of pages or material items in the change notice, number of changes enclosed, and the signature of approval with the name and title typed beneath the signature.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.3.2",
+                      "title": "If the required information is available, this section shall state that the changes incorporate responses to change initiation documents.",
+                      "content": "This phrase shall be followed by a list of the documents providing review and approval information for the change process. Impact of incorporation shall be specifically addressed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.1.3.3",
+                      "title": "Directions for inserting the change shall provide directions for accomplishing the change, including additional paragraphs which shall provide instructions to enter the change into the document and to retain the change notice.",
+                      "content": "For inserting a change that is supported by a list of effective pages, two columns are required: 1) remove page(s) and 2) insert page(s). Inserting a change that is not supported by a list of effective pages requires the following: 1) new page/material, 2) change status, and 3) superseded page/material.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Training materials revision.",
+              "content": "This data shall provide a revision of training materials to add, amend, correct, substitute, delete, or otherwise modify existing data. (A revision affects learning objectives, requires additional resources, or the revision is of a magnitude to require a course pilot of the material. A revision usually affects more than 50 percent (variable percentage according to media type) of the document or material being modified. A revision results in the replacement of existing curriculum materials with newly developed materials.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Standard digital data.",
+      "content": "shall be delivered for the Standard Data Elements (SDEs).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81523D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

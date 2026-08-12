@@ -1,0 +1,449 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81635B",
+  "slug": "di-psss-81635b",
+  "title": "Mission/Task Analysis Report (MTAR)",
+  "summary": "The Mission/Task Analysis Report (MTAR) documents the results of the mission analysis, detailed task analysis, and human performance evaluations used to establish the Job Performance Requirements (JPRs) for a Training System (TS).",
+  "approval_date": "2020-05-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10173",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WNSE)",
+  "project_number": "PSSS-2018-015",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Mission/Task Analysis Report (MTAR) documents the results of the mission analysis, detailed task analysis, and human performance evaluations used to establish the Job Performance Requirements (JPRs) for a Training System (TS). The MTAR is used to establish JPRs from aircraft mission requirements and to derive task information that fulfills mission objectives.\na. This Data Item Description (DID) is applicable to all Training System acquisition programs. The MTAR is used in conjunction with three other Training Systems Requirements Analysis (TSRA) DIDs: DI-PSSS-82101, Training Requirements Analysis Report (TRAR); DI-PSSS-80569, Objectives and Media Analysis Report (OMAR); and DI-PSSS-82102, Training System Basis Analysis Report (TSBAR). (Copies of these documents are available online at https://quicksearch.dla.mil/.)\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nc. This DID supersedes DI-SESS-81635A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81635A"
+  ],
+  "related_dids": [
+    "DI-PSSS-82101",
+    "DI-PSSS-80569",
+    "DI-PSSS-82102"
+  ],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "https://quicksearch.dla.mil/"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The MTAR process includes the JPR analysis for each type of aircrew, maintenance, and ground personnel to be trained by the TS. The JPRs are established upon accomplishment of the mission analysis, task analysis, and human performance evaluations associated with each aircraft type. JPRs shall contain a hierarchy of levels of detail, including: identifying information, training factors, and task activity description and support information. The MTAR shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Mission Analysis.",
+          "content": "This section shall contain analysis results information about each mission aircraft. Results shall document the inductive methodology used to examine the operational requirements and missions. The analysis results shall show the kinds and extent of human involvement required to fulfill mission objectives. Results from each mission analyzed shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Mission Objective.",
+              "content": "This section shall contain the specific results or outcomes associated with successful accomplishment of the mission.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Mission Scenario.",
+              "content": "This section shall describe the full range of conditions under which a mission profile is or could be performed in a realistic operational environment. A mission scenario shall include threat conditions expected to be encountered or engaged during the mission. Threat conditions shall be based upon current authoritative threat products. A mission scenario shall also contain the information required to determine the operational conditions of performance and workload requirements of crew members for each mission.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Mission Segments.",
+              "content": "This section shall describe the time-based segments for each of the missions identified above in 3.1. Each segment shall consist of a collection of related functions and tasks with a common outcome, timing, and contribution to total mission performance. Listing of mission segments shall correspond to the basic aircraft's mission and shall include the following breakout:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.3.1",
+                  "title": "Mission planning.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.2",
+                  "title": "Preflight system checkouts.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.3",
+                  "title": "Load operations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.4",
+                  "title": "Takeoff and launch.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.5",
+                  "title": "Departure and climb to altitude and heading.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.6",
+                  "title": "Enroute navigation during cruise.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.7",
+                  "title": "Aerial refueling.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.8",
+                  "title": "Rendezvous with support aircraft and penetration to target area, drop point, or forward base.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.9",
+                  "title": "Airdrop and weapons employment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.10",
+                  "title": "Enroute, defensive maneuver, and electronic warfare tactics.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.11",
+                  "title": "Load or unload operations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.12",
+                  "title": "Egress from target area.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.13",
+                  "title": "Recovery, approach, and landing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.14",
+                  "title": "Post-flight procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.15",
+                  "title": "Mission debrief.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.4",
+              "title": "Mission Profile.",
+              "content": "This section shall describe each mission profile and shall include the following information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.4.1",
+                  "title": "Mission Map Descriptions.",
+                  "content": "Map(s) showing terrain and other discrete events that are encountered at fixed points along the mission. Each map or chart shall include the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.4.1.1",
+                      "title": "Location of takeoff airfield(s), navigation, penetration target points, corridors, and areas of operation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.1.2",
+                      "title": "Rendezvous point for air refueling, Airborne Warning and Control System (AWACS), or supporting or penetrating aircraft.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.1.3",
+                      "title": "Check points to be used.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.1.4",
+                      "title": "Expected flight paths and divert routes, including turn points and way points.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.1.5",
+                      "title": "Maximum range and location of acquisition and engagement threats, and terminal target defenses.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.1.6",
+                      "title": "Linear distance scale superimposed on the flight path.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.4.2",
+                  "title": "Graph and Scale Descriptions.",
+                  "content": "Graphs and scales depicting factors that changed or could have changed during the course of the mission. Units shall be included along with the graphs and scales, as appropriate, such as for the expected altitude, airspeeds, accelerations, etc. A scale for elapsed time shall be shown beneath the chart or map. In a similar fashion to the elapsed time scale, include the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.4.2.1",
+                      "title": "A graph indicating expected altitude.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.2.2",
+                      "title": "A graph indicating the probability of encountering enemy defenses overlaying acquisition radars, attack systems, and air-to-air threats.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.2.3",
+                      "title": "A graph indicating anticipated airspeeds.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.2.4",
+                      "title": "A graph indicating transverse and angular acceleration.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.2.5",
+                      "title": "A scale indicating frequency of communication with ground and friendly aircraft.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.4.2.6",
+                      "title": "A scale depicting relative crew workload.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.4.3",
+                  "title": "System and Operator Requirements.",
+                  "content": "Results of time line analysis, link-type analysis, and crew coordination and workload studies. This section shall identify those aircraft systems and subsystems each operator interacts with, types of skills required to operate these systems, and human factors considerations.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Detailed Task Analysis.",
+          "content": "This section shall contain task analysis results information about each aircrew, maintenance, and ground personnel to be trained in the TS. All critical tasks shall be identified and shall be derived from mission-related functions. Critical tasks include all tasks that break down into further subtasks, operating procedures, or describe a discrete set of responses.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Task Analysis Record.",
+              "content": "This section shall document the task record(s) of each task for each personnel type identified above in 3.2. Each record shall contain the following types of information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Task Identifier Information.",
+                  "content": "Includes numerical code and task identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Task Description.",
+                  "content": "Includes the purpose, result or outcome, desired characteristics, task decomposition or response requirements, and controllable, skilled response demands or variables.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Information Requirements.",
+                  "content": "Includes input information, decision or judgmental requirements, information processing information, control adequacy of feedback response, and acceptable feedback result.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Diagram Requirements.",
+                  "content": "Includes task diagrams to clarify task descriptions, where applicable. Acceptable diagram types include tabular, functional flow, hierarchical input and output processes, and operational sequence.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Conditions of Performance.",
+                  "content": "Includes environmental, situational, or temporal context, resources, tools, and data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Human Performance Evaluations.",
+                  "content": "Includes variables or factors affecting skilled performance, common errors, contingencies or common problems, and human limitations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Learning Considerations.",
+                  "content": "Includes psycho motor or cognitive difficulty levels, practice levels, and areas requiring educational emphasis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Safety Requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.9",
+                  "title": "Criticality of Performance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.10",
+                  "title": "Frequency of Performance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "MTAR Updates.",
+          "content": "This section shall contain a summary listing of pages changed and the date each change occurred with each revision to the MTAR.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Appendix.",
+          "content": "The appendix shall contain supporting data and detail necessary to complement the detailed task analysis. It shall contain detailed information on the master task listing, which describes the training tasks required to qualify each type of aircrew, maintenance, and ground personnel in the TS or aircraft. The appendix shall include proficiency codes (including definitions for those proficiency codes) for each task and identify which tasks require crew coordination.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Classification Markings,",
+          "content": "as necessary, in accordance with Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information. (Copies of this document are available online at https://www.esd.whs.mil/.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Distribution Statement,",
+          "content": "as appropriate, in accordance with DoD Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents. (Copies of this document are available online at https://www.esd.whs.mil/.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81635B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

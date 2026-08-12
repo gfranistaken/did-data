@@ -1,0 +1,1023 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PACK-81059C",
+  "slug": "di-pack-81059c",
+  "title": "Performance Oriented Packaging (POP) Test Report",
+  "summary": "This DID provides the format, content, and intended use information for the Performance Oriented Packaging (POP) Test Report documenting POP testing of non-bulk packaging systems used to transport hazardous materials.",
+  "approval_date": "2023-01-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10367",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AR",
+  "project_number": "PACK-2022-011",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract.\n\nThis DID shall be applied when Performance Oriented Packaging (POP) testing is required on a non-bulk (49CFR) packaging system used to transport hazardous materials.  This data is necessary to support compliance with the POP requirements of hazardous materials as defined in Title 49, Code of Federal Regulations (CFR), the International Maritime Organization's International Maritime Dangerous Goods (IMDG) Code, and the International Civil Aviation Organization (ICAO) Technical Instructions for the Safe Transport of Hazardous Goods, and Air Force Manual 24-604/ TM 38-250/ NAVSUP PUB 505/ MCO 4030.19J/ DLAI 4145.3, Preparing Hazardous Materials for Military Air Shipments.\n\nPer CFR 178.601(b), the packaging manufacturer is responsible for assuring that the packaging design is capable of passing the prescribed tests.  This DID serves to facilitate communicating the packaging test and certification data to fulfill the contract requirements.\n\nClass 1 Hazardous Material (explosives and ammunition) requires packaging designed specifically for the intended contents.  Additional information about the Hazard Class 1 item or items packaged in POP tested packaging shall be included in the POP test report.  This DID provides a POP test report template in Appendix A for Class 1 Hazardous Material.\n\nThe \"Code of Federal Regulations\" Title 49 is available from the following:\nSuperintendent of Documents\nU.S. Government Printing Office\nWashington, DC 20402\nhttps://www.ecfr.gov/cgi-bin/ECFR?page=brouse\n\nCopies of the IMDG publication may be obtained from the following:\nhttps://www.imo.org/Publications/IMDGCode/Pages/Default.aspx\n\nCopies of the ICAO publication may be obtained from the following:\nhttps://www.icao.int/safety/DangerousGoods/Pages/technical-instructions.aspx\n\nCopies of the Safe Transport of Hazardous Goods, and Air Force Manual 24-604 publication may be obtained from the following:\nhttps://www.statis.e-publishing.af.mil\n\nThis DID supersedes DI-PACK-81059B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-PACK-81059B"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "The Code of Federal Regulations Title 49 is available from the following",
+      "url": "https://www.ecfr.gov/cgi-bin/ECFR?page=brouse"
+    },
+    {
+      "label": "Copies of the IMDG publication may be obtained from the following",
+      "url": "https://www.imo.org/Publications/IMDGCode/Pages/Default.aspx"
+    },
+    {
+      "label": "Copies of the ICAO publication may be obtained from the following",
+      "url": "https://www.icao.int/safety/DangerousGoods/Pages/technical-instructions.aspx"
+    },
+    {
+      "label": "Copies of the Safe Transport of Hazardous Goods, and Air Force Manual 24-604 publication may be obtained from the following",
+      "url": "https://www.statis.e-publishing.af.mil"
+    },
+    {
+      "label": "Copies of DoDI 5230.24 can be obtained at",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "Copies of DoDI 5230.24 can be obtained at",
+      "url": "https://www.esd.whs.mil/DD/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "For non-Class 1 Hazardous Materials",
+          "content": "the format of the POP Test Report describing the packaging system performance testing shall be in accordance with Section 3 of DI-PACK-81059 or at the discretion of the testing facility or packaging manufacturer and shall include all information as specified in 49 CFR 178.601(l).  For the material audit trail and system description, drawings, photographs, scans, pictorial renderings, etc. may be substituted for data listings.  The data depicting the hazardous item(s) to be packaged, when required by the contract, shall be in an addendum or annex to the test report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "For Class 1 Hazardous Materials",
+          "content": "the format for the POP Test Report shall be in accordance with Section 4 of DI-PACK-81059 and Appendix A - POP Report Template.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content Requirements for non-Class 1 Hazardous Material.",
+      "content": "The POP Test Report for non-Class 1 Hazardous Material content shall, at a minimum, be as follows:\na. All the information that thoroughly describes the conditions, procedures, and results of the testing completed.  Included shall be a description of the test load that shall closely resemble all of the physical characteristics of the actual hazardous item(s) (i.e., shape, weight, dimensions, quantity, etc.)\nb. A complete audit trail of the tested packaging system design shall be included in the test report.  The audit trail shall include a complete description of the materials, dimensions, processes, weights, quantities, specifications, sources/manufacturers, etc. of the outer packaging, inner packaging(s)/article(s), intermediate packaging(s) when applicable, as well as closures, reinforcement, cushioning, and absorbent system designs, such that the tested packaging system can be exactly replicated.\nc. Included in the test report must be a copy of the closing and assembly instructions as required by 49 CFR 178.2 and as were used for the closing and assembly of the tested packaging system(s).\nd. The data required to generate the packaging certification marking per 49 CFR 178.503 shall be clearly identified in the appropriate section of the test report and need not be duplicated.  All weight and dimensions used to determine test parameters, all calculations used for determining test parameters, as well as test procedures must be measured/calculated/carried out in metric units without conversion.  Rounding up is not authorized.\ne. The tested package weight shall be as specified in the contract or test requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Report Title Page.",
+          "content": "The POP Test Report title page shall contain the following data:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contractor/Test laboratory internal report number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Report type (Interim or Final)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Title.",
+              "content": "The title shall include the type of packaging material and the hazardous material being packed. (e.g., \"Performance Oriented Packaging Testing of the Wood Box for the M18/M83/AN-M8 Smoke Hand Grenade\").",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Date the POP Test Report was prepared.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Contract number applicable to the POP Test Report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Contractor's (business) name, address, and telephone number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Testing activity's (business) name, address, and telephone number (if other than the contractor).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Applicable design production period (mm/dd/yyyy to mm/dd/yyyy).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Name, position title, address, and (business) telephone number of the author.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Sponsoring organization (business) name, address, and telephone number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Distribution Statement in accordance with DoDI 5203.24, Distribution Statement on Technical Documents, if applicable.",
+              "content": "(Copies of DoDI 5230.24 can be obtained at: https://www.esd.whs.mil/DD/.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Introduction.",
+          "content": "A brief description of why specific tests were performed and the rationale for the test product selected (if applicable).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Performance Oriented Packaging Tests Data shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Applicable packing group test requirements.",
+              "content": "A description of the applicable POP tests required and performed for the commodity of hazard class, as well as the packing group selection rationale, shall be included, along with the pass and fail criteria.  Applicable 49 CFR reference paragraphs shall be included.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Discussion of test results.",
+              "content": "A narrative discussion and description of the test results, including rationale for any variations shall be included.  Photographic documentation of the test procedures and results (e.g., damage to packaging) shall be included.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "References.",
+          "content": "Identification of all references used in the development, testing, and documenting of the packaging system components shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Remarks.",
+          "content": "Identify the appropriate POP Markings based on the packaging design and item(s) packed, as tested.  State the time interval of packaging system production for which the POP symbol (packaging certification) is valid.  Additional information on the HAZMAT item (e.g., Permitted Modes of Transportation) may be added in this section, if applicable.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Certification.",
+          "content": "Include documentation to certify that testing was performed in accordance with Title CFR49, Part 178.  Include a signature page of the personnel who performed the test and approved the POP Test Report, and the name and title of the signatory (responsible company official).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Packaging instructions and drawings that shall be included in the test report, including the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Packing & Marking Drawings or SPIs.",
+              "content": "Include all packaging, packing, and marking drawing(s), or the SPIs required to produce the tested package as tested.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Outer packaging.",
+              "content": "Include packaging outer drawing(s) with all closing and reinforcing material and methods.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Intermediate packaging (if applicable).",
+              "content": "Include intermediate packaging drawing(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Inner packaging (if applicable).",
+              "content": "Include inner packaging drawing(s).  In instances where the inner packaging is an article, include the drawings for the article depicting the dimensions and material composition (e.g. steel, aluminum, plastic, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Cushioning material or dunnage.",
+              "content": "Include cushioning material drawing(s), dunnage drawing(s), or both cushioning material and drawing(s).  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of the cushioning material or dunnage.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Partitions (if applicable).",
+              "content": "Include partition drawing(s).  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of the partitions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Barrier bag (if applicable).",
+              "content": "Include barrier bag drawing(s).  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of the barrier bag.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.8",
+              "title": "Other packaging components (if applicable).",
+              "content": "Include any packaging materials not listed above.  Identify the dimensions, position, and location (e.g. outer packaging, intermediate, packaging, inner packaging) of all other packaging components.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Content Requirements for Class 1 Hazardous Material (ammunition and explosives).",
+      "content": "The POP Test Report for Class 1 Hazardous Material content shall be as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Report Title Page.",
+          "content": "The POP Test Report title page shall contain the following data:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Contractor/Test laboratory internal report number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "Report type (Interim or Final)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.3",
+              "title": "Title.",
+              "content": "The title shall include the type of packaging material and the hazardous material being packed. (e.g., \"Performance Oriented Packaging Testing of the Wood Box for the M18/M83/AN-M8 Smoke Hand Grenade\").",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.4",
+              "title": "Date the POP Test Report was prepared.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.5",
+              "title": "Contract number applicable to the POP Test Report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.6",
+              "title": "Contractor's (business) name, address, and telephone number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.7",
+              "title": "Testing activity's (business) name, address, and telephone number (if other than the contractor).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.8",
+              "title": "Testing period (applicable dates).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.9",
+              "title": "Name, position title, address, and (business) telephone number of the author.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.10",
+              "title": "Sponsoring organization (business) name, address, and telephone number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.11",
+              "title": "Distribution Statement in accordance with DoDI 5203.24, Distribution Statement on Technical Documents, if applicable.",
+              "content": "(Copies of DoDI 5230.24 can be obtained at: https://www.esd.whs.mil/DD/.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Introduction.",
+          "content": "A brief description of why specific tests were performed and the rationale for the test product selected (if applicable).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "Package Description.",
+          "content": "A brief description of the exact package, including the hazardous material, packaging design, and materials used to pack the hazardous material.  Photographic documentation of the packaging design shall be provided.  Include all Special Packaging Instructions (SPIs) and drawings in Appendix A.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "Information about Hazardous Item which is packaged, to include the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.3.1.1",
+                  "title": "Department of Defense Identification Code (DODIC) or Navy Ammunition Logistic Code (NALC), if applicable.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.2",
+                  "title": "National Stock Number.",
+                  "content": "Identify the National Stock Number(s) (NSN) for the packaged item, if applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.3",
+                  "title": "Item nomenclature.",
+                  "content": "Nomenclature for the hazardous material packed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.4",
+                  "title": "United Nations (UN) Identification Number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.5",
+                  "title": "Proper Shipping Name.",
+                  "content": "Identify the proper shipping name for the hazardous material packed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.6",
+                  "title": "Hazard Class and Division.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.7",
+                  "title": "Packing Group.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.8",
+                  "title": "Explosive Number (EX), if applicable.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.9",
+                  "title": "Title 49 CFR Packing Instructions.",
+                  "content": "Designate the packing instructions per Title 49 CFR for the hazardous material packed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.10",
+                  "title": "Quantity per exterior container.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.11",
+                  "title": "Net Explosive Weight (NEW).",
+                  "content": "Weight of net explosive, in metric and English units, per exterior container (if applicable).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.12",
+                  "title": "Physical state.",
+                  "content": "Identify the physical state of each hazardous item as either solid, liquid, or gas.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.13",
+                  "title": "Hazardous material weight.",
+                  "content": "Designate the hazard material weight, in metric and English units, of the packaged hazardous item(s) per exterior container.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.14",
+                  "title": "Density and Specific Gravity of Liquid, if applicable.",
+                  "content": "Designate the density and specific gravity of liquid for which the packaging design type has been tested.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.1.15",
+                  "title": "Vapor Pressure, if applicable.",
+                  "content": "Identify the vapor pressure of the liquid to be transported, in metric and English units, at 50 degrees C and 55 degrees C.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.3.2",
+              "title": "Information about the packaging system used to transport hazardous materials, to include the following:",
+              "content": "a. Tare packaging weight.  Identify the overall tare packaging weight, in metric and English units, including packing container(s) and other packing material for the package.\nb. Gross package weight.  Identify the gross package weight, in metric and English units, typically the sum of the hazardous material weight and the tare packaging weight.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.3.2.1",
+                  "title": "Exterior Shipping Container Information, including the following:",
+                  "content": "Note - If the applicable specifications are other than federal or military specifications, a reference copy shall be included.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.3.2.1.1",
+                      "title": "Type of container.",
+                      "content": "Identify UN code, in accordance with 49 CFR.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.2",
+                      "title": "Material.",
+                      "content": "Identify UN code, in accordance with 49 CFR.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.3",
+                      "title": "Specification.",
+                      "content": "Identify the specification (e.g. federal, military, industry, commercial, company) for the exterior shipping container type and material.  If the applicable specifications are other than federal or military specifications, a reference copy shall be included with the POP test report.  Applicable container drawing number(s) shall be listed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.4",
+                      "title": "UN code for exterior container.",
+                      "content": "Identify the UN code for exterior container, in accordance with 49 CFR.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.5",
+                      "title": "Dimensions.",
+                      "content": "Identify the overall outer and inner dimensions, in metric and English units.  Drawing(s) of any containers equipped with handles, skids, or lifting or tie-down mounts shall be included.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.6",
+                      "title": "Tare packaging weight.",
+                      "content": "Identify the tare weight of the exterior container.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.7",
+                      "title": "Number of intermediate and inner packagings, if applicable.",
+                      "content": "Identify the number of intermediate and inner packagings inside the exterior container.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.8",
+                      "title": "Cushioning material and dunnage.",
+                      "content": "Identify the thickness, in metric and English units, and nomenclature for type of cushioning material (e.g., chipboard, corrugated fiberboard, vermiculite, etc.).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the cushioning material.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.9",
+                      "title": "Closure method and specifications.",
+                      "content": "Identify nomenclature for method and type of closure (e.g. heat seal, glue, tape, staple).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the closure method.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.10",
+                      "title": "Banding and specification.",
+                      "content": "Identify nomenclature for method/type of banding (e.g., steel/plastic bands, fiber-filament tape).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the closure method.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.1.11",
+                      "title": "Additional description.",
+                      "content": "Include a complete description of any characteristics (not specifically identified above) needed to describe the shipping container (e.g., wood species, deviation from specification, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.3.2.2",
+                  "title": "Intermediate Packaging of Combination Packaging Information (if applicable), including the following:",
+                  "content": "Note - If the applicable specifications are other than federal or military specifications, a reference copy shall be included.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.3.2.2.1",
+                      "title": "Type of packaging.",
+                      "content": "Identify nomenclature of intermediate packaging (e.g., can, carton, bag, bottle).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.2",
+                      "title": "Material.",
+                      "content": "Identify nomenclature of intermediate packaging composition (e.g., metal, paperboard, plastic, glass).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.3",
+                      "title": "Specification.",
+                      "content": "Identify the specification (e.g. federal, military, industry, commercial, company) for the intermediate packaging container type and material.  Applicable container drawing number(s) shall be listed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.4",
+                      "title": "Dimensions.",
+                      "content": "Identify overall outer and inner dimensions, in metric and English units.  Drawing(s) of any containers equipped with handles, skids, or lifting or tie-down mounts shall be included.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.5",
+                      "title": "Tare packaging weight.",
+                      "content": "Identify the tare weight of the intermediate container.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.6",
+                      "title": "Number of inner packagings, if applicable.",
+                      "content": "Identify the number of inner packagings inside the intermediate packaging.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.7",
+                      "title": "Cushioning material/dunnage.",
+                      "content": "Identify nomenclature for type of cushioning material or dunnage (e.g., chipboard, corrugated fiberboard, vermiculite, etc.).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the cushioning material.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.8",
+                      "title": "Closure method and specifications.",
+                      "content": "Identify nomenclature for method/type of closure (e.g., heat seal, glue, tape, staple).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the closure method.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.2.9",
+                      "title": "Additional description.",
+                      "content": "Include a complete description of any characteristics (not specifically identified above) needed to describe the shipping container (e.g., wood species, deviation from specification, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.3.2.3",
+                  "title": "Inner Packaging of Combination Packaging Information (if applicable), including the following:",
+                  "content": "Note - If the applicable specifications are other than federal, military, or common commercial (e.g. American Society for Testing Materials - ASTM) specifications, a reference copy shall be included.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.3.2.3.1",
+                      "title": "Type of packaging.",
+                      "content": "Identify nomenclature of inner packaging (e.g., can, carton, bag, bottle, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.2",
+                      "title": "Material.",
+                      "content": "Identify nomenclature of inner packaging composition (e.g., metal, paperboard, plastic, glass, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.3",
+                      "title": "Specification.",
+                      "content": "Identify the specification (e.g., federal, military, industry, commercial, company) for the inner container type and material.  Applicable container drawing number(s) shall be listed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.4",
+                      "title": "Dimensions.",
+                      "content": "Identify overall outer and inner dimensions.  Drawing(s) of any containers equipped with handles, skids, or lifting or tie-down mounts shall be included.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.5",
+                      "title": "Tare packaging weight.",
+                      "content": "Identify the tare weight of the inner container.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.6",
+                      "title": "Cushioning material/dunnage.",
+                      "content": "Identify nomenclature for type of cushioning material or dunnage (e.g., chipboard, corrugated fiberboard, vermiculite, etc.).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the cushioning material.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.7",
+                      "title": "Closure method and specifications.",
+                      "content": "Identify nomenclature for method/type of closure (e.g., heat seal, glue, tape, staple, etc.).  Identify the specifications (e.g., federal, military, industry, commercial, company) for the closure method.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.2.3.8",
+                      "title": "Additional description.",
+                      "content": "Include a complete description of any characteristics (not specifically identified above) needed to describe the shipping container (e.g., wood species, deviation from specification, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "4.3.3",
+              "title": "Tested Package Information, including the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.3.3.1",
+                  "title": "Tested Package Weight.",
+                  "content": "Identify the gross tested weight, in metric and English units.  The tested package weight shall be as specified in the contract, but no less than 1.10 times gross package weight (4.3.2.b).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.3.3.2",
+                  "title": "Type of Package.",
+                  "content": "Identify if the packaging design is a Single, Composite, or Combination Package.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.3.4",
+              "title": "Test Material Information.",
+              "content": "Include either of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.3.4.1",
+                  "title": "Actual Product Test Data, including the following:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.3.4.1.1",
+                      "title": "Description:",
+                      "content": "Identify the actual product used for testing, including (as applicable) quantity, size, and gross weight.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.1.2",
+                      "title": "Physical State:",
+                      "content": "Identify the physical state as solid, liquid, or gas.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.1.3",
+                      "title": "Density/specific gravity of actual product (for liquids only).",
+                      "content": "Identify the density and specific weight of the test product, in metric and English units.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.1.4",
+                      "title": "Vapor Pressure (for liquids only).",
+                      "content": "Identify the vapor pressure, in metric and English units, for the following temperatures.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "4.3.4.1.4.1",
+                          "title": "50 degrees Celsius.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.3.4.1.4.2",
+                          "title": "55 degrees Celsius.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "4.3.4.1.5",
+                      "title": "Flash point.",
+                      "content": "Flash point temperature shall be given in Celsius and Fahrenheit units and the type of test used shall be identified.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.1.6",
+                      "title": "Air pressure.",
+                      "content": "When an actual product is used for testing and is a liquid, air pressure shall be given in metric and English measurement units.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "4.3.4.2",
+                  "title": "Test Product Test Data.",
+                  "content": "If a test product is used in lieu of the actual product, identify the characteristics of the test product, including the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "4.3.4.2.1",
+                      "title": "Description:",
+                      "content": "Identify the test product used for testing, including (as applicable) quantity, size, and gross weight (e.g., water, 50% ethyl glycol water solution, lead shot).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.2.2",
+                      "title": "Physical State:",
+                      "content": "Identify the test product used for testing physical state as solid, liquid, or gas.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.2.3",
+                      "title": "Density and specific gravity of test product (for liquids only).",
+                      "content": "Identify the density and specific weight of the test product, in metric and English units.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.2.4",
+                      "title": "Vapor pressure (for liquids only).",
+                      "content": "Identify the vapor pressure, in metric and English units, for the following temperatures.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "4.3.4.2.4.1",
+                          "title": "50 degrees Celsius.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4.3.4.2.4.2",
+                          "title": "55 degrees Celsius.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "4.3.4.2.5",
+                      "title": "Flash point.",
+                      "content": "Flash point temperature shall be given in Celsius and Fahrenheit units and the type of test used shall be identified.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4.3.4.2.6",
+                      "title": "Air pressure.",
+                      "content": "When a test product is used for testing and is a liquid, air pressure shall be given in metric and English units.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "Performance Oriented Packaging Tests Data shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.4.1",
+              "title": "Applicable packing group test requirements.",
+              "content": "A description of the applicable POP tests required and performed for the commodity of hazard class, including the packing group selection rationale, number of test samples, and pass and fail criteria, shall be included.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.2",
+              "title": "Discussion of test results.",
+              "content": "A narrative discussion and description of the test results, including rationale for any variations shall be included.  Photographic documentation of the test procedures and results (e.g., damage to packaging) shall be included.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.5",
+          "title": "References.",
+          "content": "Identification of all references used in the development, testing, and documenting of the packaging system components shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "Remarks.",
+          "content": "Identify the appropriate POP Markings based on the packaging design and item(s) packed, as tested.  State the time interval for which the POP symbol (packaging certification) is valid.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.7",
+          "title": "Certification.",
+          "content": "Include documentation to certify that testing was performed in accordance with Title CFR49, Part 178.  Include a signature page of the personnel who performed the test and approved the POP Test Report, and the name and title of the signatory (responsible company official).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.8",
+          "title": "Packaging instructions and drawings that shall be included in the test report, including the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.8.1",
+              "title": "Packing & Marking Drawings or SPIs.",
+              "content": "Include all packaging, packing, and marking drawing(s), or the SPIs required to produce the tested package as tested.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.2",
+              "title": "Outer packaging container.",
+              "content": "Include packaging outer drawing(s) with all closing and reinforcing material and methods.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.3",
+              "title": "Intermediate packaging (if applicable).",
+              "content": "Include intermediate packaging drawing(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.4",
+              "title": "Inner packaging (if applicable).",
+              "content": "Include inner packaging drawing(s).  In instances where the inner packaging is an article, include the drawings for the article depicting the dimensions and material composition (e.g., steel, aluminum, plastic, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.5",
+              "title": "Cushioning material or dunnage.",
+              "content": "Include cushioning material drawing(s), dunnage drawing(s), or both cushioning material and drawing(s).  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of the cushioning material or dunnage.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.6",
+              "title": "Partitions (if applicable).",
+              "content": "Include partition drawing(s).  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of the partitions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.7",
+              "title": "Barrier bag (if applicable).",
+              "content": "Include barrier bag drawing(s).  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of the barrier bag.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.8.8",
+              "title": "Other packaging components (if applicable).",
+              "content": "Include any packaging materials not listed above.  Identify the dimensions, position, and location (e.g., outer packaging, intermediate, packaging, inner packaging) of all other packaging components.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PACK-81059C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

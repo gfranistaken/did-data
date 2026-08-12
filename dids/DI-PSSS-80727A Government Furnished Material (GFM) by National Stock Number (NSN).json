@@ -1,0 +1,160 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-80727A",
+  "slug": "di-psss-80727a",
+  "title": "Government Furnished Material (GFM) by National Stock Number (NSN)",
+  "summary": "The DID provides visibility of Government Furnished Material (GFM) inventories by National Stock Number (NSN) and Part Number.",
+  "approval_date": "2019-09-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10090",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AV",
+  "project_number": "PSSS-2019-015",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "To provide visibility of Government Furnished Material (GFM) inventories by National Stock Number (NSN) and Part Number.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID supersedes DI-ILSS-80727.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ILSS-80727"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The items shall be ordered first by contract number; within each contract number ordered by contract line item number (CLIN) or exhibit line item number (ELIN); within each CLIN or ELIN ordered by GFM line item. The GFM by NSN shall be in one of the following formats:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Electronic media specified by the Acquirer, or",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Contractor format.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The GFM by NSN shall cover all GFM items in the inventory. The following information shall be provided for each GFM item:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Contract number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "CLIN or ELIN to which each NSN and Part Number of GFM is applicable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "NSN of GFM.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Part Number of GFM.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Inventory requirements (e.g., usage rates) that the contractor establishes to achieve the performance required by the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Quantity on hand.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Unit price of GFM.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Existing Government inventory that the contractor manages against the inventory requirements that the contractor establishes to achieve the performance required by the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Existing Government inventory that the contractor holds in excess against the inventory requirements that the contractor establishes to achieve the performance required by the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Narrative supporting rationale for any GFM line item, which the contractor recommends to remain in an excess position.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Proposed actions for the reuse or disposal of Government inventory identified by the contractor as excess to meeting contract requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-80727A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

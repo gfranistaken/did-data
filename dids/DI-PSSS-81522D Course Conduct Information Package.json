@@ -1,0 +1,1697 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81522D",
+  "slug": "di-psss-81522d",
+  "title": "Course Conduct Information Package",
+  "summary": "The Course Conduct Information Package gives the Government data to evaluate outsourced training, covering trainee prerequisites, syllabus, organization, scheduling, performance evaluation, and course completion certification.",
+  "approval_date": "2020-01-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10133",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "PSSS-2020-003",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Course Conduct Information Package provides data required by the Government to support outsourcing the conduct of training. This data will provide sufficient information to permit an accurate evaluation of a trainee's capabilities to meet all learning objectives of a course. This data will also identify prerequisite skills and knowledge of trainees entering the course. The course conduct information package also provides information for trainees regarding the training syllabus, training organization, operating, scheduling, etc. It also provides information on an evaluation of the trainee's performance, the trainee evaluation of training, and a certificate of completion of training for the trainee.\n\nThis Data Item Description (DID) contains the preparation instructions for the content and format of the Course Conduct Information Package.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the performance requirements described by 3.2.6 of MIL-PRF-29612B, and is applicable to the acquisition of training data products. Data product performance evaluation criteria are specified in 4.3.6 of MIL-PRF-29612B.\n\nIt is not intended that all the requirements contained herein be applied to every program or program phase. Any individual data requirement contained in this DID is subject to deletion tailoring.\n\nThis DID supersedes DI-SESS-81522C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81522C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor format is acceptable. Standard digital data, when specified must be in compliance with the content and format requirements specified in the DoD Data Architecture (DDA) and the Defense Data Dictionary System (DDDS). The deliverable of the product required by this DID meets the intent and requirements of DoDINST 5000.02.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Course Conduct Information Package shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "The content of front matter shall be in accordance with Appendix A of MIL-PRF-29612B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Part 1: Trainee orientation guidance data.",
+          "content": "The trainee orientation guidance data provides the information necessary to describe a new training system. It introduces the trainee to all aspects of the training system (e.g., syllabus, organization, training location, and surrounding area data). The trainee orientation guidance data shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Resident training.",
+              "content": "The following requirements are applicable for resident training courses:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Introduction.",
+                  "content": "This data shall provide a brief overview of the purpose and expected application of the trainee orientation guidance data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Training organization.",
+                  "content": "This data shall contain information related to:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.2.1",
+                      "title": "Organization personnel to include relationships, roles, and communication channels.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.2.2",
+                      "title": "Organization policies.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.2.3",
+                      "title": "Support elements to include role and relationships to the training organization.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Training program.",
+                  "content": "This data shall contain the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.3.1",
+                      "title": "An overview of the instructional features.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.3.2",
+                      "title": "The syllabus organization and training sequence.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.3.3",
+                      "title": "An introduction to media formats.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.3.4",
+                      "title": "A description of security issues.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.3.5",
+                      "title": "A description of safety issues.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.3.6",
+                      "title": "A description of environmental issues.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Training system operation and scheduling.",
+                  "content": "This data shall contain the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.4.1",
+                      "title": "An overview of trainee roles and responsibilities.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.4.2",
+                      "title": "Trainee learning center operating procedures.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.4.3",
+                      "title": "Trainee scheduling.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Instructor roles in the learning center.",
+                  "content": "This data shall describe the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.5.1",
+                      "title": "The evaluation of tests.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.5.2",
+                      "title": "The trainee remediation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.5.3",
+                      "title": "The response to trainee questions and problems.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.5.4",
+                      "title": "The method used to record test scores.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.5.5",
+                      "title": "The procedures to check materials in and out.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.5.6",
+                      "title": "The security procedures.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Operation of equipment.",
+                  "content": "The data shall contain operating instructions for:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.6.1",
+                      "title": "Audiovisual equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.6.2",
+                      "title": "Training aids.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.6.3",
+                      "title": "Training equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.6.4",
+                      "title": "Troubleshooting.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Other supporting materials.",
+                  "content": "This data shall contain a description of other supporting materials (digital or printed) to include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.7.1",
+                      "title": "Worksheets.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.7.2",
+                      "title": "Trainer guides.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.7.3",
+                      "title": "Operational exercise guides.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.7.4",
+                      "title": "Other supporting material (e.g., lesson sequence guide, facilities layout).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Training equipment exercises.",
+                  "content": "This data shall contain a description of:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.8.1",
+                      "title": "Session formats.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.8.2",
+                      "title": "Briefing and debriefing procedures.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.8.3",
+                      "title": "Instructional techniques.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.8.4",
+                      "title": "Remediation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.9",
+                  "title": "Record keeping.",
+                  "content": "This data shall contain a description of:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.9.1",
+                      "title": "Trainee responsibilities.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.9.2",
+                      "title": "Instructor responsibilities.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.10",
+                  "title": "Quality control.",
+                  "content": "This data shall contain:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.10.1",
+                      "title": "A description of the trainee's role in quality control.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.10.2",
+                      "title": "Questionnaires and other data collection instruments.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Advanced Distributed Learning (ADL).",
+              "content": "The following requirements are applicable for ADL courses:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Introduction.",
+                  "content": "This data shall provide a brief overview of the purpose and expected application of the ADL trainee orientation guidance data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Training organization.",
+                  "content": "This data shall contain information related to:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.2.1",
+                      "title": "Organization personnel to include relationships, roles, and communication channels.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.2.2",
+                      "title": "Organization policies.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.2.3",
+                      "title": "Support elements to include role and relationships to the training organization.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Training program.",
+                  "content": "This data shall contain the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.3.1",
+                      "title": "An overview of the instructional features.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.2",
+                      "title": "The syllabus organization and training sequence.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.3",
+                      "title": "An introduction to media formats.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.3.4",
+                      "title": "A description of security issues.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Training system operation and scheduling.",
+                  "content": "This data shall contain the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.4.1",
+                      "title": "An overview of trainee roles and responsibilities.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.4.2",
+                      "title": "Trainee scheduling.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Instructor roles in an ADL environment.",
+                  "content": "This data shall describe the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.5.1",
+                      "title": "Administration of on-line tests.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.2",
+                      "title": "Student remediation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.3",
+                      "title": "Student orientation (e.g., Frequently Asked Questions (FAQ), access procedures, passwords, navigation tools for delivery platform).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.4",
+                      "title": "Teaching in synchronous and asynchronous modes.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.5",
+                      "title": "Troubleshooting student technical problems.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.6",
+                  "title": "Trainee roles in an ADL environment.",
+                  "content": "The data shall contain information for:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.6.1",
+                      "title": "Registration.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.2",
+                      "title": "Hardware and software requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.3",
+                      "title": "Browser requirements and procedures for using.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.4",
+                      "title": "Collaboration tools and procedures.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.5",
+                      "title": "E-mail account set-up.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.6",
+                      "title": "Download restrictions (e.g., modem speed, file format, file size).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.7",
+                      "title": "Digital resources availability.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.8",
+                      "title": "Computer laboratory availability, location, and procedures for access.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.9",
+                      "title": "Test taking.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.6.10",
+                      "title": "Requirements for successful student participation in an ADL environment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.7",
+                  "title": "Other supporting materials.",
+                  "content": "This data shall contain a description of other supporting materials (digital or printed) to include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.7.1",
+                      "title": "Workbooks.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.2",
+                      "title": "Study guides.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.3",
+                      "title": "Job aids.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.4",
+                      "title": "Training manuals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.5",
+                      "title": "Programmed instruction booklets.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.6",
+                      "title": "Technical orders.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.7",
+                      "title": "Textbooks.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.8",
+                  "title": "Quality control.",
+                  "content": "This data shall contain:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.8.1",
+                      "title": "Questionnaires and other data collection instruments.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Part 2: Training course standards data.",
+          "content": "A training course standard shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Body.",
+              "content": "This data shall contain the following topics:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "The purpose of the standard as it relates to the particular course.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Purpose of the course.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "A brief description of the general course learning objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Course prerequisites",
+                  "content": "shall include a list of all skills, in behavioral terms, required of trainees entering the course. Identify the Learning Objective(s) (LO) requiring the prerequisite skill and identify them parenthetically.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "LOs",
+                  "content": "shall include a list of complete behavioral objectives which identify the tasks to be performed by the trainee upon completion of the course. Identify each LO by labeling it with \"L.O.\" followed by a number. The hierarchy of LOs shall be identified by labels assigned to every learning objective (i.e., objectives \"L.O. 1.1\" and \"L.O. 1.2\" are directly subordinate to \"L.O. 1.\"). Learning objective construction and sequencing is not a linear process. The numbering typically occurs in parallel as the course material is defined.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Skill hierarchy",
+                  "content": "Include the skill hierarchy, or pyramid of skills which depicts the learning order of all skills to be obtained from the course. The relationship of prerequisite skills to course skills shall also be shown. (This skill hierarchy shall serve as the source document for establishing all course learning objectives.)",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Appendices.",
+              "content": "Appendices shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Equipment list.",
+                  "content": "This data shall identify the full name, manufacturer, and part number or other identifier of the equipment the trainee will be able to operate or repair upon successful completion of the course.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Test equipment list.",
+                  "content": "This data shall identify the full name, manufacturer, and part number or other identifier of all test equipment and special fixtures required during the course.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Publication list.",
+                  "content": "This data shall identify the full name, publisher, publication or part number, and date of publication for all publications required to conduct the course. The list shall include the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.3.1",
+                      "title": "Operator's manuals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.2",
+                      "title": "Maintenance manuals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.3",
+                      "title": "Programmer's manuals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.4",
+                      "title": "Software manuals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.5",
+                      "title": "Diagnostic manuals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.6",
+                      "title": "Textbooks.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.7",
+                      "title": "Reference cards.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Part 3: Training materials data.",
+          "content": "The training materials data shall consist of any recorded information suitable for use in establishing and supporting training and shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Operational system overview.",
+              "content": "This data shall describe the configurations and functions of each segment of the operating system, discuss how these segments will interface to operate as an entity to fulfill the mission requirements, and outline the differences between the existing and replacement systems/component.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Training material.",
+              "content": "This data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.2.1",
+                  "title": "Qualitative and quantitative personnel requirements information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.2",
+                  "title": "System requirements analysis data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.3",
+                  "title": "Manufacturer's handbooks.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.4",
+                  "title": "Contractor's in-house training materials, pamphlets, and other training literature.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.5",
+                  "title": "Contractor utility manuals.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.6",
+                  "title": "Contractor operational manuals.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.7",
+                  "title": "Contractor software manuals.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.8",
+                  "title": "Contractor maintenance manuals.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.9",
+                  "title": "Logic diagrams.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.10",
+                  "title": "Functional schematic drawings.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.11",
+                  "title": "Functional flow block diagrams.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.12",
+                  "title": "Preliminary operating and maintenance instructions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.13",
+                  "title": "Equipment description and functional data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.14",
+                  "title": "Testing procedures.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.15",
+                  "title": "Other data and contractor in-house documents suitable for use in planning and conducting training programs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Part 4: Trainee and training course completion data.",
+          "content": "The trainee and training course completion data provides an evaluation of trainee performance, the course of instruction, and related materials as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Evaluation of trainee.",
+              "content": "This data is common to both resident and ADL courses, shall consist of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Course information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.1.1",
+                      "title": "Course title.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.1.2",
+                      "title": "Course objective.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.1.3",
+                      "title": "System/equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.1.4",
+                      "title": "Course hours.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Trainee information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.2.1",
+                      "title": "Name.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.2.2",
+                      "title": "Social security number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.2.3",
+                      "title": "Parent activity.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.2.4",
+                      "title": "Rank and grade.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.2.5",
+                      "title": "Branch of Service/agency.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.2.6",
+                      "title": "Personnel specialty.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "Attendance information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.3.1",
+                      "title": "Date reported for course.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.2",
+                      "title": "Date completed course.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.3",
+                      "title": "Hours attended.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.3.4",
+                      "title": "Hours needed to complete each segment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "The trainee's average of test scores",
+                  "content": "given throughout the course in a percentage grade.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "The trainee's final average grade",
+                  "content": "(the results from the average of the application, practical, and exam grades).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.6",
+                  "title": "Trainee's class standing.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Instructor evaluation and comments.",
+              "content": "This data shall contain additional information concerning the trainee's performance and attitude throughout the course. (The trainee's completion of homework assignments and seeking extra help or materials to assist in obtaining the learning objectives should also be considered.) The instructor's evaluation and comments shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "A description of the trainee's willingness to learn",
+                  "content": "to participate in class and practical application sessions, and to apply extra effort to the learning situation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "The trainee's application of facts, principles",
+                  "content": "techniques, theories, concepts, procedures, and experiences previously learned to the new learning situation in a percentage grade.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "The trainee's accomplishment of the learning objectives",
+                  "content": "during the practical application portion of the course in a percentage grade using the following factors:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.2.3.1",
+                      "title": "Use of test equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.3.2",
+                      "title": "Use of documentation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.3.3",
+                      "title": "Application of safety precautions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.3.4",
+                      "title": "Amount of guidance or supervision needed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.3.5",
+                      "title": "Skill level demonstrated.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.3.6",
+                      "title": "Demonstration of team skills.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.5.3",
+              "title": "Name of contractor.",
+              "content": "This data shall be the complete name of the primary contractor conducting the course.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Instructor in charge.",
+              "content": "The signature of the instructor in charge shall be included on the forms.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Trainee's evaluation of training form.",
+              "content": "This form shall consist of the following sections for recording:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.5.1",
+                  "title": "Resident training form.",
+                  "content": "The trainee's evaluation of resident training form shall contain the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.5.1.1",
+                      "title": "Administrative information.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.1.1",
+                          "title": "Period of training.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.1.2",
+                          "title": "Number and title of course.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.1.3",
+                          "title": "Place where training was conducted.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.1.2",
+                      "title": "Course materials.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.2.1",
+                          "title": "Information received in course.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.2.2",
+                          "title": "Technical value.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.2.3",
+                          "title": "Relevance to the course.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.1.3",
+                      "title": "Course presentation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.3.1",
+                          "title": "Quality of lessons.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.3.2",
+                          "title": "Quality of training units.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.3.3",
+                          "title": "Quality of instructor's presentation.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.3.4",
+                          "title": "Comprehensiveness of instructor's knowledge.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.3.5",
+                          "title": "Adequacy of theory of operations.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.3.6",
+                          "title": "Adequacy of practice sessions.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.3.7",
+                          "title": "Adequacy of time devoted for each session.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.1.4",
+                      "title": "Value of training aids.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.4.1",
+                          "title": "Use.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.4.2",
+                          "title": "Quantity.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.4.3",
+                          "title": "Quality.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.1.5",
+                      "title": "Tools and equipment.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.5.1",
+                          "title": "Quantity.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.5.2",
+                          "title": "Currency.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.5.3",
+                          "title": "Condition.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.1.6",
+                      "title": "Training facilities and accommodations.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.6.1",
+                          "title": "Shops and classrooms.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.6.2",
+                          "title": "Housing accommodations.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.6.3",
+                          "title": "Transportation.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.1.7",
+                      "title": "Recommendations for course improvement.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.1.7.1",
+                          "title": "Changes in course materials.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.7.2",
+                          "title": "Changes in methods of instruction.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.1.7.3",
+                          "title": "Changes in subject matter presented.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.5.2",
+                  "title": "Advanced Distributed Learning form.",
+                  "content": "The trainee's evaluation of ADL form shall contain the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.5.2.1",
+                      "title": "Administrative information.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.2.1.1",
+                          "title": "Period of training.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.1.2",
+                          "title": "Number and title of course.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.2.2",
+                      "title": "Course materials.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.2.2.1",
+                          "title": "Information received in course.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.2.2",
+                          "title": "Technical value.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.2.3",
+                          "title": "Relevance to the course.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.2.3",
+                      "title": "Course presentation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.2.3.1",
+                          "title": "Quality of lessons.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.3.2",
+                          "title": "Quality of trainee-ADL interface.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.3.3",
+                          "title": "Quality of synchronous events.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.3.4",
+                          "title": "Quality of asynchronous events.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.3.5",
+                          "title": "Adequacy of technical support.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.3.6",
+                          "title": "Adequacy of practice sessions.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.3.7",
+                          "title": "Adequacy of time devoted for each session.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.5.5.2.4",
+                      "title": "Recommendations for course improvement.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.5.5.2.4.1",
+                          "title": "Changes in course materials.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.4.2",
+                          "title": "Changes in methods of instruction.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.4.3",
+                          "title": "Changes in subject matter presented.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.5.5.2.4.4",
+                          "title": "Changes in communication tools.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.5.6",
+              "title": "Instructor evaluation of training.",
+              "content": "This data shall include a description of all problems encountered during the conduct of the course, such as deficient subject coverage, equipment failures, inadequate infrastructure to support ADL, technical problems that could not be easily overcome by the Information Technology (IT) personnel, and documentation deficiencies. Recommendations for any supplemental training which may be required shall also be included.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Certificate of training.",
+              "content": "The certificate of training shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.7.1",
+                  "title": "Service logo.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.2",
+                  "title": "Statement of course completion.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.3",
+                  "title": "Student name.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.4",
+                  "title": "Course name.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.5",
+                  "title": "Course identifier.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.6",
+                  "title": "Course code.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.7",
+                  "title": "Course completion date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.8",
+                  "title": "Total hours of training received.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.9",
+                  "title": "Authenticating signature.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Standard digital data.",
+      "content": "Standard digital data shall be delivered for the Standard Data Elements (SDEs).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81522D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

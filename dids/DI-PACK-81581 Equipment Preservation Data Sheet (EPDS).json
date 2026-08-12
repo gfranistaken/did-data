@@ -1,0 +1,75 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PACK-81581",
+  "slug": "di-pack-81581",
+  "title": "Equipment Preservation Data Sheet (EPDS)",
+  "summary": "This DID specifies the content and format for processing Shipment and Storage Instructions for Tactical Wheeled Vehicles.",
+  "approval_date": "2000-03-14",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "A7383",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "ARMY-AT",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "STA Form 4895 and 4895-1",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) specifies the content and format for processing Shipment and Storage Instructions for Tactical Wheeled Vehicles.\na. This DID identifies the format and content preparation instructions for preparing shipment and storage instructions in accordance with the standard practices in MIL-STD-3003 Appendix A.\nb. This data, prepared on STA Forms 4895 and STA Form 4895-1, applies to a specific model of tactical vehicles prepared for shipment and storage in accordance with the standard practices identified in MIL-STD-3003.\nc. When Equipment Preservation Data Sheets are required, DI-PACK 80120B, Preservation and Packaging Data, also applies and is critical to loading the Army data files with the Logistics Management Information necessary to provide life cycle support.\nd. When the EPDS applies to transporting of hazardous materials (except those materials excluded by United Nations Recommendations on the Transport of Dangerous Goods as implemented by the International Civil Aviation Organization and the International Maritime Organization Regulations), the applicable requirements in the ICAO Technical Instructions, or the International Maritime Dangerous Goods Code, and the Code of Federal Regulations (CFR) Title 29, Title 40, and Title 49 will additionally apply based on the mode of transport.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-PACK-80120B"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content and format requirements.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Equipment Preservation Data sheet instructions format.",
+          "content": "EPDS content and format is contained in Appendix A of MIL-STD-3003.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Equipment Preservation Data sheet.",
+          "content": "STA Form 4895 and STA Form 4895-1 are found in Appendix A of MIL-STD-3003.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PACK-81581.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

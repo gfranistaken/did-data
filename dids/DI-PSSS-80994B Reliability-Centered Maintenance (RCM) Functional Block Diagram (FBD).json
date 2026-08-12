@@ -1,0 +1,154 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-80994B",
+  "slug": "di-psss-80994b",
+  "title": "Reliability-Centered Maintenance (RCM) Functional Block Diagram (FBD)",
+  "summary": "The Reliability-Centered Maintenance (RCM) Functional Block Diagram (FBD) displays all components of a subsystem, their functional relationships to one another, and in and out interfaces with other subsystems.",
+  "approval_date": "2016-08-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9700",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "PSSS-2016-032",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Reliability-Centered Maintenance (RCM) Functional Block Diagram (FBD) displays all components of a subsystem, their functional relationships to one another, and in and out interfaces with other subsystems.\n\nThis Data Item Description (DID) contains the format, content, preparation instructions, and intended use information for the data deliverable resulting from the work task described in 5.1.1 of MIL-STD-3034A.\n\nThis DID is related to DI-PSSS-80979B, RCM Master Systems and Subsystems Index (MSSI); DI-PSSS-80981B, RCM Functional Failure Analysis (FFA) Report; DI-PSSS-80983B, RCM Additional Functionally Significant Item (AFSI) Selection Report; DI-PSSS-80982B, RCM Functionally Significant Items (FSI) Index; DI-PSSS-80980B, RCM Failure Modes and Effects Analysis (FMEA) Report; DI-PSSS-80984B, RCM Decision Logic Tree Analysis (LTA) with Supporting Rationale and Justification Report; DI-PSSS-80985B, RCM Servicing and Lubrication Analysis (SLA) Report; DI-PSSS-80989B, RCM Inactive Equipment Maintenance (IEM) Requirement Analysis Report; DI-PSSS-81829A, RCM Corrective Maintenance (CM) Development Report; DI-PSSS-80986B, RCM Maintenance Requirements Index (MRI); DI-PSSS-80988B, RCM Task Definition Report; DI-PSSS-80987B, RCM Procedure Validation Report; DI-PSSS-80990A, RCM Documentation Control Sheet.\n\nThis DID supersedes DI-SESS-80994A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-80994A"
+  ],
+  "related_dids": [
+    "DI-PSSS-80979B",
+    "DI-PSSS-80981B",
+    "DI-PSSS-80983B",
+    "DI-PSSS-80982B",
+    "DI-PSSS-80980B",
+    "DI-PSSS-80984B",
+    "DI-PSSS-80985B",
+    "DI-PSSS-80989B",
+    "DI-PSSS-81829A",
+    "DI-PSSS-80986B",
+    "DI-PSSS-80988B",
+    "DI-PSSS-80987B",
+    "DI-PSSS-80990A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The RCM Functional Block Diagram shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The RCM Functional Block Diagram shall contain all of the information as specified in MIL-STD-3034A, paragraph 5.1.1.3.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Schematics and line drawings",
+          "content": "The FBD shall contain schematics and line drawings for each system and subsystem.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Components.",
+          "content": "The FBD shall display all components of the subsystem, their functional relationships to one another, and the in and out interfaces between other associated subsystems.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Labels.",
+          "content": "The FBD shall contain labels for each component and assembly in the subsystem by their common name, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Generic name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "MK, MOD, AN nomenclature",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Any other identifier",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Linkage.",
+          "content": "The FBD shall include linkages showing heavy lines. Each connection shall be identified and shall include the system parameter value and range of values, as applicable.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Interface connections",
+              "content": "The FBD shall also identify interface connections labeled with the Expanded Ship Work Breakdown Structure (ESWBS) number of the system, subsystem and equipment from which the connection originates and receives the out interfaces.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Flow directional arrows",
+              "content": "The FBD shall include flow directional arrows on connection lines.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Sensors and gages",
+              "content": "The FBD shall include and identify sensors and gages that monitor functional parameters of the systems and subsystems, along with the parameter that is being monitored.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-80994B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

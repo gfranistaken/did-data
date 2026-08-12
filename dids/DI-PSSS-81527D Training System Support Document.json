@@ -1,0 +1,841 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81527D",
+  "slug": "di-psss-81527d",
+  "title": "Training System Support Document",
+  "summary": "The Training System Support Document provides complete procedures for using software utility programs, support software file generation, and system performance verification, plus operating information for training system users.",
+  "approval_date": "2019-12-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10131",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "PSSS-2020-001",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training System Support Document provides complete procedures for utilization of all software utility programs, support software file generation, and system performance characteristics verification for life cycle maintenance. This document also contains information for user personnel in operating and achieving full utilization of a training system during the presentation of course(s) of instruction, training exercise(s), or missions.\nThis Data Item Description (DID) contains the preparation instructions for the content and format of the Training System Support Document.\nThis DID contains the format, content, and intended use information for the data product resulting from the performance requirements described by 3.2.11 of MIL-PRF-29612B, and is applicable to the acquisition of training data products. Data product performance evaluation criteria is specified in 4.3.11 of MIL-PRF-29612B.\nIt is not intended that all the requirements contained herein be applied to every program or program phase. Any individual data requirement contained in this DID is subject to deletion tailoring.\nThis DID supersedes DI-SESS-81527C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81527C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor format is acceptable. Standard digital data, when specified must be in compliance with the content and format requirements specified in the DoD Data Architecture (DDA) and the Defense Data Dictionary System (DDDS). The deliverable of the product required by this DID meets the intent and requirements of DoDINST 5000.02.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Training System Support Document shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter.",
+          "content": "The content of front matter shall be in accordance with Appendix A of MIL-PRF-29612B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Part 1: Trainer software application data.",
+          "content": "This data will provide the user with complete procedures for utilization of all software utility programs, support software file generation, and system performance characteristics verification. This data shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Software utilities.",
+              "content": "This data shall provide complete procedures for performing all utility programs and shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Section number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Software utilities (the actual software).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "The title of the procedure.",
+                  "content": "(The procedures are those required for the operation of the simulation equipment and all utility programs provided with or used during the development and testing of the simulation equipment.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Step-by-step directions required to accomplish the procedure.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Detailed explanations and examples of the use of all functions, commands, options, and format of the computer utility programs and operating system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Support software file generation.",
+              "content": "This data shall provide procedures and information on file generators. Emphasis shall be placed on the inclusion of abbreviations, mnemonics, and terms that are used which are not of common usage or standard terminology of the system being simulated. The software file generation data shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Section identifier.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Support software file generation section title.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "The number and title of procedures required to load, operate the file generators, and verify the contents of the files produced by each of the file generators used for the simulation equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Step-by-step directions required to accomplish the procedure.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Detailed descriptions and explanations of the software file generation process.",
+                  "content": "The content shall be as follows:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.5.1",
+                      "title": "Detailed descriptions of all operating modes of each file generator and all available options in the selection of modes and the designation of input and output peripheral equipment for use in generation of the file.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.2",
+                      "title": "Detailed descriptions and examples of the manipulation and file management of files generated, such as copying from one media to another, duplicating a file or file set, renaming a file, and file back-up procedure.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.3",
+                      "title": "Detailed descriptions of procedures used when combining files to produce a composite file or creating files that contain files previously created by one or more of the other file generators.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.4",
+                      "title": "Detailed explanation of any input term along with examples for the scaling or normalization of terms or derivation of special variables unique to the simulator manufacturer's design.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.5",
+                      "title": "Examples of all file generator work sheets, specification sheets, or applicable criteria.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Performance characteristics verification data.",
+              "content": "This data shall provide descriptions of software flow, performance characteristics, and verification processes, and shall consist of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Section identifier.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Performance characteristics.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "A software description and flow diagram of the simulation software flow of both programs data and execution control.",
+                  "content": "Functional relationships of the modules, as well as the interfaces between modules shall be described.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "A description of how specific performance characteristics are affected by variable parameters, both direct and indirect relationships.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "The step-by-step verification process to be used by personnel in evaluating files generated by the support software.",
+                  "content": "Emphasis shall be placed on isolation and correction of unexpected results caused by the direct or indirect relationship of input variables or generator parameters.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Appendices.",
+              "content": "Appendices provide supplementary information essential to the use of the trainer software application data. The appendices shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Appendix A: A list of applicable documents, to include the title, identification or serial number, exact date of issue, and publisher of all cited documents.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Appendix B: A list of abbreviations, mnemonics, and other terms used in this document.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Part 2: Training system operating data.",
+          "content": "The training system operating data is designed for user personnel to aid them in operating and achieving full utilization of a training system during the presentation of course(s) of instruction, training exercise(s), or missions. The content shall be as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Description of the training system.",
+              "content": "This data shall consist of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "A description of the training system purpose.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "A description of the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "A list and description of all systems, subsystems, etc., which comprise the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "A description of the training system capabilities that will assist the instructor during the presentation of a course of instruction.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "A description of the training system limitations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "A list of malfunctions that can be presented.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "A description of the operating parameters (e.g., environment, facilities, safety).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Training system operating procedures.",
+              "content": "This data shall provide:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "An explanation of how to utilize the data to operate the training system for maximum effectiveness.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "A list of the configuration and performance characteristics of the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "A functional description of the training system instructor controls and displays used for training and a description of the student station(s) and their controls and displays shall be provided.",
+                  "content": "Each control and display shall be keyed to a picture of the actual equipment to provide easy identification of the items. Controls and displays shall be covered as related groups or major panels/sections. The functional description of each simulation equipment control and display shall depict the status or malfunction of a particular system or equipment, and a detailed description provided beside each indicator as to what is and what is not being depicted, affected, displayed, or is exclusive of other indicators and controls.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "A list of complete step-by-step operational instructions to include:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.4.1",
+                      "title": "A description of training system equipment preparation considerations and assumptions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.2",
+                      "title": "Procedures for placing the training system in a power-on/turn-on condition.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.3",
+                      "title": "Procedures for checking the training system to ensure proper operation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.4",
+                      "title": "Procedures for \"loading\" the computer programs and files into the training system, including the use of all software, computers, and peripherals.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.5",
+                      "title": "Procedures for inserting malfunctions and generating training problems.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.6",
+                      "title": "Procedures for operating the training system during exercises.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.7",
+                      "title": "Procedures for training system and trainee monitoring.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.8",
+                      "title": "A description of how the training system will respond when mistakes are made by the operator.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.9",
+                      "title": "Procedures for placing the training system in a power-off/shutdown condition.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.10",
+                      "title": "Procedures for recovering from a power failure or casualty condition.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.11",
+                      "title": "Procedures for integrating (coupling) the training system with its individual components or other components or training systems external to the current training system.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.12",
+                      "title": "Procedures for identifying student and trainer performance parameters and student response evaluation criteria.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.13",
+                      "title": "Procedures for recording and play-back of exercises.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.14",
+                      "title": "Procedures for initiating and evaluating team and opposing force exercises.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "When appropriate, a tabular list of controls which are not to be disturbed by other than authorized maintenance personnel.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "List and describe daily readiness checks required for the training system.",
+                  "content": "Delineate those checks that the instructor is authorized to perform to ensure the proper functioning of the training system in its complete operational modes and environment. Describe in detail how to set-up and run the daily readiness checks and diagnose the results.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Learning objectives.",
+              "content": "This data shall provide a list of learning objectives satisfied by each training system component.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Emergency procedures.",
+              "content": "This data shall provide:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "A list of those procedural steps required to safely remove personnel from the training system in the event of a mishap.",
+                  "content": "The procedures shall address the use of all emergency release mechanisms/devices built into the training system, the conditions under which they shall be used, and the personnel authorized to use them.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Diagrams or pictures of the emergency release mechanisms, devices, and their operation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Job aids as appropriate.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "A list of unique steps to be taken in handling of personnel during removal from the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.5",
+                  "title": "A list of equipment required but not supplied.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Reference and text materials.",
+              "content": "This data shall provide a complete bibliography of materials, handbooks, and other documentation that can be used as reference material to assist in the understanding and application of the training system. Text material shall include, as applicable, the maintenance handbook, commercial computer documentation, and other publications that contain information that will be helpful to the instructor and the trainee. Text material shall contain all of the information needed by trainees to perform each training exercise.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Training syllabus.",
+              "content": "This data shall provide an outline of the training exercises and simulated malfunction capabilities of the training system. It shall identify significant considerations associated with specific training exercises and a means of training exercise selection from selective training situations. Each training exercise outline shall contain the following information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "Title and identification number for each training exercise.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.2",
+                  "title": "Title and course identification numbers for which the training exercise is applicable.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.3",
+                  "title": "The learning objective, by course, which the training exercise satisfies.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.4",
+                  "title": "A synopsis of the conditions under which the training exercise shall be performed and a list of the tactical situation, environmental consideration, or equipment condition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.5",
+                  "title": "A list of the major status, situational setup requirements, or mode of operation for the system/subsystem.",
+                  "content": "If it is not an equipment related task, indicate task/function configuration.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.6",
+                  "title": "Average length of time, in minutes, to complete each training exercise.",
+                  "content": "If training exercise length is variable due to the flexibility of the training exercise, the entry shall be a time span (e.g., \"20-40\") or the word variable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.7",
+                  "title": "The training level of each training exercise specified by the task, or function.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.8",
+                  "title": "The degree of difficulty (e.g., basic, intermediate, advanced) in relation to the appropriate task or function.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.7",
+              "title": "Training exercises.",
+              "content": "This data shall provide a listing of all training exercises the training system is capable of supporting and shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.7.1",
+                  "title": "A description of student training exercises that have been designed to assist the trainee in achieving the course(s) learning objectives.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.2",
+                  "title": "A description of instructor training exercises designed to assist the instructor in achieving maximum efficiency in utilization of the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.8",
+              "title": "Formulation of new training exercises.",
+              "content": "This data shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.8.1",
+                  "title": "Detailed description and instructions on how to modify existing training exercises and develop new training exercises.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.8.2",
+                  "title": "A description of how to enter, modify, and specify new parameters and characteristics of each new item in the training exercises.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.8.3",
+                  "title": "Examples of training exercise modification and creation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.9",
+              "title": "Training system administrator's guide.",
+              "content": "This data shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.9.1",
+                  "title": "A listing of information the trainee can print from the program for outside studies.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.2",
+                  "title": "A listing and description of the training system's components, including software versions and hardware configuration, capable of managing instruction (e.g., computers, authoring system capabilities, courseware).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.3",
+                  "title": "A list of instructions detailing how to utilize the training system to manage instruction (e.g., record keeping, entry points).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.4",
+                  "title": "A list of qualifications necessary for authorized maintenance personnel.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.5",
+                  "title": "Detailed procedures for creation of back-up materials.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.6",
+                  "title": "A pictorial representation of training system program menus and a detailed explanation of the system's response to individual menu selections.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.7",
+                  "title": "A listing of all reports and records capable of being generated by the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.8",
+                  "title": "An explanation of, and detailed procedures for, modifying record(s).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.10",
+              "title": "Training system user's guide.",
+              "content": "This guide shall contain general instructions which include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.10.1",
+                  "title": "A listing of materials required by the user.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.10.2",
+                  "title": "Narrative description(s) which shall enable the user to:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.10.2.1",
+                      "title": "Operate the training system's delivery media.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.2",
+                      "title": "Input data into the training system.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.3",
+                      "title": "Understand screen displays of the training system.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.4",
+                      "title": "Identify interactivity conventions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.5",
+                      "title": "Correct input errors.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.6",
+                      "title": "Access help.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.7",
+                      "title": "Return to training system menus.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.8",
+                      "title": "Insert bookmarks.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.9",
+                      "title": "Input user notes.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.10",
+                      "title": "Sign on and off the training system.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.11",
+                      "title": "List student reports (on screen and to print).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.10.2.12",
+                      "title": "Utilize other features not listed above.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.10.3",
+                  "title": "A glossary of key terms contained in the user's guide.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Standard digital data.",
+      "content": "Standard digital data shall be delivered for the Standard Data Elements (SDEs).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81527D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

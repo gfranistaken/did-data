@@ -1,0 +1,327 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-80379A",
+  "slug": "di-psss-80379a",
+  "title": "Aircraft Inventory Record (AIR)",
+  "summary": "This DID establishes the format and content for the Aircraft Inventory Record used to document and maintain a continuous chain of inventory and accountability for equipment installed on naval aircraft.",
+  "approval_date": "2025-05-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10557",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2025-022",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) describes the preparation of the AIR for use in accomplishing inventories of equipment used on naval aircraft. It shall be used to establish a continuous chain of inventory and accountability for equipment installed on or designated for use on naval aircraft. This DID applies to the acquisition of all naval aircraft and equipment, except for those procured for research and development.\n\nThis Data Item Description contains the format, content, and intended use information for the data product resulting for the work task described by the contract SOW.\n\nThis DID supersedes DI-ILSS-80379",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ILSS-80379"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Preparation for offset (multilith) reproduction if subject to approval of the contracting officer and shall adhere to the format of the printed forms on 8 1/2 by 11\" paper.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "General content requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "An AIR shall be completed for each new aircraft",
+          "content": "An AIR shall be completed for each new aircraft except for those procured for research and development and shall include Mission Essential Subsystem Matrices (MESM) related equipment. The AIR consists of the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "OPNAV Form 4790/109 Aircraft Inventory Record Hard Cover",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "OPNAV Form 4790/110 Aircraft Inventory Record",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "OPNAV Form 4790/111 Aircraft Inventory Record Equipment List",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "OPNAV Form 4790/112 Aircraft Inventory Record Shortages",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "OPNAV Form 4790/104 Aircraft Inventory Record Certification and Record of Transfers",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Specific content requirements:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Aircraft Inventory Record Hard Cover (OPNAV 4790/109).",
+              "content": "The complete loose-leaf AIR forwarded with the aircraft shall be bound and hard-covered in 3-ring binders provided by the government. The binders shall be plainly marked with the Type/Model/Series (T/M/S) and serial number of the aircraft.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Aircraft Inventory Record (OPNAV 4790/110).",
+              "content": "The sectional breakdown diagram of OPNAV 4790/110 illustrating the sectional breakdown applicable to each particular type aircraft shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Aircraft type.",
+                  "content": "The complete Government aircraft designation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Serial number.",
+                  "content": "The Government serial number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Contract number.",
+                  "content": "The Government contact number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Prime contractor.",
+                  "content": "The full name of the contractor.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Acceptance date.",
+                  "content": "The date the aircraft is accepted by the Government.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.6",
+                  "title": "Explanation.",
+                  "content": "The section letter, designation and name of each section shown on the sectional breakdown diagram. For example: \"Section A, Nose section.\"",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.7",
+                  "title": "Sectional breakdown diagram.",
+                  "content": "The sectional breakdown diagram shall consist of a side elevation of each particular aircraft drawn to an appropriate scale at least 5 inches in length. Additional views, such as the plan view of a wing maybe shown as approved by the Naval Air Systems Command (NAVAIRSYSCOM).",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.7.1",
+                      "title": "Division of diagram.",
+                      "content": "Division of the sectional breakdown diagram shall correspond to the natural divisions of the aircraft. To facilitate checking, the sections shown in the diagram maybe further subdivided laterally.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.7.2",
+                      "title": "Identification.",
+                      "content": "The identification of sections contained in the sectional breakdown diagram shall be alphabetical beginning with \"A\" assigned to the foremost section, \"B\" to the next, and so on to the tail of the aircraft. The letter \"R\" shall denote items mounted on the exterior of the fuselage. Any subdivisions of the sections shall be identified by the letter assigned to the section as outlined above followed by a lower-case letter, such as \"Aa\", \"Ab\" etc.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Aircraft Inventory Record Equipment List (OPNAV 4790/111).",
+              "content": "The equipment list shall include both Government Furnished Property (GFP) and Contractor Furnished Equipment (CFE). Equipment shown shall be on board the aircraft or shall be listed as a shortage.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Technical instructions and forms.",
+                  "content": "All technical publications and forms required for the safe and proper operation of the aircraft shall be included in the equipment list.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Equipment list breakdown.",
+                  "content": "The equipment list shall be subdivided by the sections of the aircraft as indicated on the sectional breakdown diagram. Within each section, equipment shall be listed and numbered in the sequence of their physical location from nose to tail. Each group of items shall be titled, e.g., \"Section B - Pilot's compartment - Station 106-301.\" Each equipment list section of OPNAV 4790/111 shall begin with page 1. Additional equipment items shall be included on extra pages which shall be numbered and inserted in the proper sequence. All equipment lists shall be double spaced between items and shall include the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.3.2.1",
+                      "title": "Section.",
+                      "content": "The appropriate section designation.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.2.2",
+                      "title": "Government bureau serial number.",
+                      "content": "The applicable bureau serial number.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.2.3",
+                      "title": "Aircraft T/M/S.",
+                      "content": "The complete Government aircraft designation.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.3.2.4",
+                      "title": "Page number.",
+                      "content": "The applicable page number. Each section of OPNAV 4790/111 shall be numbered consecutively beginning with No. 1. The spaces provided for \"Page _ of_ Pages\" shall be filled in.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Column A, item number.",
+                  "content": "Item numbers shown in column A of OPNAV 4790/111 shall contain a letter prefix to indicate the section or compartment of the aircraft where the item is located. The listing of items shall begin with No. 1 for each section or compartment. To allow for addition of items in a section or compartment, each section heading shall begin a new page. Items shall be numbered in numerical sequence corresponding to their physical location.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "Column B, nomenclature, type and model.",
+                  "content": "Enter the nomenclature, type and model for each item. GFE shall carry the nomenclature, type and model as designed in the Government Furnished List. CFE shall carry the nomenclature, type and model corresponding to those shown in the aircraft model specification of other authorized CFE lists. Items in a box or assembly, if listed shall be idented to show their relationship to the major item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "Column C, required here.",
+                  "content": "Enter the quantity of an item installed at a particular section of an aircraft.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.6",
+                  "title": "Column D, equipment checks.",
+                  "content": "This column is provided for inventory personnel to record equipment items. The equipment check columns 1 through 24 correspond with the appropriate check-by-block spaces shall include the inventory completion date and signature of the inventory checker. For example, check 1, 24 June 85, by J. Nimas. If all required items are present or if shortages exist, enter the number of items present. If no items are present, enter a \"0\".",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.7",
+                  "title": "Column E, location or remarks.",
+                  "content": "This column may be used to denote a brief description of the exact location of items which are difficult to locate. Station numbers may serve as additional information. It is not necessary to list the location of those items which are easily recognized whose location is readily apparent. If desired, the visual and actual location of an item may be provided.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "Aircraft Inventory Record Shortages (OPNAV 4790/112).",
+              "content": "OPNAV 4790/112 shall reflect inventory equipment shortages when a aircraft is transferred. Equipment shortages not subject to inventory shall be listed inventory shall be listed and included with the aircraft inventory record of the applicable aircraft.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Column A, item number.",
+                  "content": "Column A of OPNAV 4790/112 shall reflect the item number corresponding to the item listed in OPNAV 4790/111, prefixed with the section designator.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Column B, nomenclature, type and model.",
+                  "content": "This information shall be the same as that required in Column B of OPNAV 4790/111.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "Column C, quantity short.",
+                  "content": "List the quantity of equipment required to complete the AIR.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.4",
+                  "title": "Column D, authority or reason for shortage.",
+                  "content": "Enter the Government authority for shortage.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.5",
+              "title": "Aircraft Inventory Record Certification and Record of Transfers (OPNAV 4790/104).",
+              "content": "The certification section is applicable to the contractor and shall be completed at the time of transfer or receipt of the aircraft.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-80379A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

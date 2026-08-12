@@ -1,0 +1,175 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81538C",
+  "slug": "di-misc-81538c",
+  "title": "Special Tooling (ST)/Special Test Equipment (STE) Report for Defense Property Accounting System (DPAS)",
+  "summary": "The Special Tooling (ST)/Special Test Equipment (STE) Report is used to track Government Furnished Property (GFP), tooling, and test equipment within the Defense Property Accounting System (DPAS) property management system.",
+  "approval_date": "2021-02-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10215",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SA",
+  "project_number": "MISC-2021-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Special Tooling (ST)/Special Test Equipment (STE) Report will be used to track Government Furnished Property (GFP), tooling, and test equipment within the Defense Property Accounting System (DPAS) property management system.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nThis DID supersedes DI-MISC-81538B and DI-MISC-81539B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-81538B",
+    "DI-MISC-81539B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The ST/STE Report shall be in electronic, Microsoft Office 2016-compatible format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "Characters in fields shall be of variable length, blank fill at the end of field to maximize size. Fields not required by Contract Data Requirements List (CDRL) shall be blank filled. The ST/STE report shall include the following information, as required:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "ST/STE Required Information File",
+          "content": "The following information shall be included in the report for all new ST/STE:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Platform or Application on which ST/STE is used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Part Number on which ST/STE is used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Item Description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Type of Item (i.e., ST, STE, or Part)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Acquisition Cost for ST/STE",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Demilitarization (DEMIL) Code (see DoD 4100.39-M Vol. 10)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Duplicate Number (which copy of the basic tool is this)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Secondary Serial Number or Barcode Number for ST/STE",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Manufactured Date of the ST/STE",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Contract Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Point of Contact (POC) Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "POC Phone Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "POC Email Address",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Commercial and Government Entity (CAGE) Code",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81538C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

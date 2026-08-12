@@ -1,0 +1,247 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-82487",
+  "slug": "di-misc-82487",
+  "title": "Ground Vibration Test (GVT) Report",
+  "summary": "The Ground Vibration Test Report provides data for detailed evaluation of air vehicle modal vibration characteristics, comparison with analytical results, and validation or updating of analytical models.",
+  "approval_date": "2025-07-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10573",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "MISC-2025-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Ground Vibration Test Report will be used to obtain data for the detailed evaluation of the air vehicle modal vibration characteristics and to compare with analytical results. It will contain the pertinent information for both component and full-scale analyses and test efforts. The test report will be used to validate or update analytical models.\na. This Data Item Description (DID) is applicable to any contract for which an air vehicle or component GVT is required.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described by section 5 of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP) (Copies of this document are available online at https://quicksearch.dla.mil).\nc. This DID supersedes DI-MISC-81387, Airframe Rigidity Test Report (copies of this document are available online at https://quicksearch.dla.mil).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-81387"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The GVT Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The GVT report shall describe the contractor's analyses and testing activities associated with characterizing the forced response of the air vehicle components or structure. It shall contain the results and findings used to validate and update the flutter model. Candidate GVT components shall include control surfaces, panels, pylons, flaps, horizontal stabilizers, vertical stabilizers, canards, racks for supporting stores, weapons bay doors, stores, external fuel tanks, weapon systems, landing gear doors, landing gear, engines, transmission, intermediate gearbox, refueling probes, cargo ramp doors, main rotor blades, and tail rotor blades.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The GVT report shall be based on the interpretation and evaluation of tests and analyses and include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Descriptions and photographs of the suspension system, the instrumentation, and the configurations including fuel states, store loadings, weights, centers-of-gravity, internal payloads, and simulated sling loads. The GVT component or air vehicle shall be representative of the mass and structural configuration of the flight test vehicle, which should be production representative, with any differences noted.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Descriptions of test procedures, test method, data acquisition system, and methods of data reduction analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Copy of the test matrix as planned to be executed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Shaker types and locations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Shaker forces decomposed to the global coordinate system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Shaker mounting and fixturing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Method for selecting measurement locations, including predicted mode shapes and frequencies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Method for orienting sensors to airframes coordinate system: mounting blocks vs coordinate transformation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Methods for securing test instrumentation and wiring.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Method used to lock out control systems.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Plots of the transfer functions versus frequency for vibration sensors.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Force-response coherence plots due to mass effects, driving point hardware and alignment, and multi-driving point reciprocity.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Plots indicating force level effects on modal properties.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Frequency sweep results to define system and component natural frequencies, including sweep rate.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "The natural frequency, mode shapes, structural damping, and node line locations for all structural modes of vibration that may be important with respect to flutter and other dynamic analyses, including blade passage frequency effects for powerplants, propellers, rotors, and fans as applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "Gross weight effects on the acceleration response at pilot and copilot seats, control interfaces, and various occupied locations throughout the air vehicle.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.17",
+              "title": "A supplement presenting all component level modal test results.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.18",
+              "title": "Copy of the test log as executed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.19",
+              "title": "A comparison of the measured air vehicle modal data (frequencies, mode shapes, node lines, and damping) with those predicted by the analytical model including the resolution of all discrepancies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "The GVT report for rotorcraft shall include the following additional information:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Air vehicle and landing gear modal data while on the ground at various input force levels, percent airborne, oleo strut pre-charge pressures, and tire pressures with brakes on/off for fore-and-aft motion, lateral motion, torsional motion and any other degree of freedom critical for dynamic load investigations or helicopter mechanical stability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Plots of N/rev sensitivity to gross weight at pilot and copilot locations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Plots indicating effects of stabilizer N/rev response due to added weights.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-82487.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

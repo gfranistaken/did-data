@@ -1,0 +1,330 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81347",
+  "slug": "di-misc-81347",
+  "title": "Formal Top Level Specification",
+  "summary": "The FTLS is a mathematically precise abstract representation of the trusted computing base that describes the TCB interface in terms of exceptions, error messages, and effects.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6937",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "",
+  "description_purpose": "The Formal Top Level Specification (FTLS) is a mathematically precise abstract representation of the trusted computing base (TCB). The FTLS provides an accurate description of the TCB interface in terms of exceptions, error messages and effects. The FTLS includes hardware and firmware elements if their properties are visible at the TCB interface.",
+  "application_interrelationship": "This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 4.1 and 4.1.3.2.2 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n\nThis DID is applicable to any computer acquisition that calls for an FTLS as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria (TCSEC) for TCB Class A1 (Verified Design) products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document the FTLS as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Cover sheet.",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Errata Sheet.",
+          "content": "Shall contain sheets delimiting cumulative page changes from previous versions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "List of illustrations, diagrams, charts, and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definition.",
+          "content": "List reference sources and applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Executive Summary.",
+          "content": "Not to exceed two pages.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Body of the Report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Bibliography.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Subjective index.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.13.1",
+              "title": "Abbreviations and acronyms shall be defined when first used in the text and shall be placed in the glossary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.2",
+              "title": "Pages shall be numbered separately and consecutively using Arabic numerals.",
+              "content": "Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.3",
+              "title": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals.",
+              "content": "Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.4",
+              "title": "Chapters shall begin on an odd-numbered (right hand) page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.5",
+              "title": "Either single- or double-sided printing shall be used.",
+              "content": "If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "General.",
+      "content": "The FTLS document shall contain the formal top level specification, its associated proofs and assurance arguments, and supporting explanations and documentation for the specification, proofs, and assurance arguments.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.4",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.4.1",
+          "title": "Supporting documentation.",
+          "content": "The FTLS shall provide background information supporting the specification effort. All of this background information is informal in nature and may be presented in English text, and graphic representation where appropriate. The following items shall be included as part of this information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.1.1",
+              "title": "An overview of the FTLS that explains the approach taken, the structure of the specification, what has been included and excluded in the specification, and how the specification relates to the Formal Security Policy Model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.1.2",
+              "title": "Identification of the portions of the FTLS that are implemented in hardware, software, and in firmware if their properties are visible at the TCB interface.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.1.3",
+              "title": "A description of the specification/verification methodology chosen, and why it was selected.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.1.4",
+              "title": "An introduction to the specification itself, to include identification of the users, subjects, objects, access modes, security labels, security properties, initial state, and operations that are part of the specification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.1.5",
+              "title": "Identification of the assumptions required by the specification, an explanation as to why they are required, and the consequences of violating the assumptions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.1.6",
+              "title": "A combination of formal and informal techniques (e.g., proofs and assurance arguments) that show that the FTLS is consistent with the Formal Security Policy Model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.1.7",
+              "title": "Identification of the axioms used in the proofs, why these axioms are needed, and how they are justified.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.4.2",
+          "title": "The formal top level specification.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.2.1",
+              "title": "As part of the FTLS document, the specification itself shall be presented in the formal mathematical notation of the specification technique chosen.",
+              "content": "The specification shall include abstract definitions of the functions the TCB performs and the unified protection mechanism required to satisfy the security policy (TCSEC Section 4.1), to include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.4.2.1.1",
+                  "title": "Representation of subjects, objects, modes of access, and security labels as they are implemented in the TCB.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.2.1.2",
+                  "title": "Representation of hardware and firmware components of the TCB if their properties are visible at the TCB interface.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.2.1.3",
+                  "title": "The set of security properties enforced by the TCB.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.2.1.4",
+                  "title": "Representation of the initial state of the TCB.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.2.1.5",
+                  "title": "Representations of the operations performed by the TCB, including the effects, exceptions, and error messages for interface operations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.2.1.6",
+                  "title": "A (possibly empty) set of axioms used in the proofs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "10.4.2.2",
+              "title": "The FTLS shall include the abstract definitions of the hardware and firmware mechanisms that are used to support separate execution domains.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.4.3",
+          "title": "Proofs and arguments.",
+          "content": "This section shall contain a combination of formal techniques (e.g., where verification tools exist) and informal techniques (e.g., convincing assurance arguments) to demonstrate that the FTLS is consistent with the Formal Security Policy Model.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81347.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81277",
+  "slug": "di-misc-81277",
+  "title": "Parts, Materials, and Processes Selection List (PMPSL)",
+  "summary": "This DID describes the content and format requirements for a list of all Parts, Materials, and Processes (PMP) approved for design in a specific contract.",
+  "approval_date": "1992-07-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F6777",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "AF-19",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "This Data Item Description (DID) describes the content and format requirements for a list of all Parts, Materials, and Processes (PMP) approved for design in a specific contract.",
+  "application_interrelationship": "This Data Item Description contains the format and content preparation instructions for data resulting from the work task described by paragraph 5.3 and Appendix D of MIL-STD-1546B",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Content and format.",
+      "content": "The PMPSL shall be in accordance with MIL-STD-1546B paragraph 5.3 and Appendix D. The PMPSL shall be divided into four sections that describe electronic parts, mechanical parts, materials, and processes. Appendix D of MIL-STD-1546B contains the detailed information that shall be provided for each of these sections and the electromagnetic medium submittal requirements.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81277.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

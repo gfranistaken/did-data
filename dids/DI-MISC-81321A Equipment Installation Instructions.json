@@ -1,0 +1,111 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81321A",
+  "slug": "di-misc-81321a",
+  "title": "Equipment Installation Instructions",
+  "summary": "This DID provides equipment installation, operation, and maintenance instructions, including formatting and content preparation instructions for the resulting data product.",
+  "approval_date": "2013-04-19",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "N9364",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "AS/PMA-207",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Document provides equipment installation, operation, and maintenance instructions.\nThis Data Item Description (DID) contains the format, content, and intended use information, and content preparation instructions for the data product resulting from the work task described in the contract Statement of Work or Performance Work Statement.\nThis DID supersedes DI-MISC-81321.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-81321"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The data shall be in Contractor format or if a commercial commodity as designated per FAA regulations.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The Equipment Installation Instructions shall have a title page containing the title, date, application, and document number.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Installation Instructions.",
+          "content": "The equipment installation instructions include step-by-step assembly, mounting and connection procedures, and grounding and bonding procedures and procedures to demonstrate that the equipment is operating correctly. The instructions shall include the information necessary for personnel to properly engineer the installation of the system. The instruction shall include dimensions of the equipment, mounting brackets, consoles/panels, wiring and pictures to assist in the location of wiring runs. The instructions are in sufficient detail to enable a technician with little or no formal training on the equipment to perform installation functions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Operations Instructions.",
+          "content": "The operations instructions contain the complete, step-by-step description of all operating procedures. The instructions are in sufficient detail to enable a technician with little or no formal training on the equipment to perform operational functions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Maintenance Instructions.",
+          "content": "The maintenance instructions contain the complete, step-by-step description of the following for each subsystem and assembly:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "All maintenance procedures and adjustments performed during installation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.2",
+              "title": "All maintenance procedures and actions required to diagnose and locate any fault of any part of the system during and after installation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.3",
+              "title": "All test equipment required to inspect, test, calibrate, service, repair, overhaul and end items shall be identified.",
+              "content": "This information shall include the identification of test cables, connectors, extender kits, and adapters required.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "The instructions are in sufficient detail to enable a technician with little or no formal training on the equipment to perform maintenance functions.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81321A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

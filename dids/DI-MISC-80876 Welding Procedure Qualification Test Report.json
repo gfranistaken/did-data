@@ -1,0 +1,69 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-80876",
+  "slug": "di-misc-80876",
+  "title": "Welding Procedure Qualification Test Report",
+  "summary": "The Welding Procedure Qualification Test Report provides the data required to establish whether the contractor can produce acceptable welds meeting destructive and non-destructive test requirements for base metals, filler materials, and welding processes.",
+  "approval_date": "1989-06-30",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N4783",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "SH/05M2",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "JUN 86",
+  "use_relationship": "",
+  "description_purpose": "3.1 The Welding Procedure Qualification Test Report provides the data required to establish whether or not the contractor can produce acceptable welds which meet the destructive and non-destructive test requirements for the base metals, filler materials and welding processes involved.",
+  "application_interrelationship": "7.1 This DID contains the format and content preparation instructions for Welding Procedure Qualification Test Report resulting from the work task described by 4.6 of MIL-STD-248D.\n\n7.2 This DID is applicable to fabrication of components where welding is part of the fabrication process. The Test Report completely identifies the welding process and results of tests performed to prove the effectiveness of the weld.\n\n7.3 This DID should always be used with DI-MISC-80875 when procedure approval is being requested.\n\n7.4 This DID supersedes UDI-H-23384.",
+  "supersedes": [
+    "UDI-H-23384"
+  ],
+  "related_dids": [
+    "DI-MISC-80875"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Referenced documents",
+      "content": "The applicable issue of the documents cited herein, including their approval date and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format",
+      "content": "The report shall be prepared on standard 8-1/2 X 11 inch bond paper in contractor format. First page of the report shall include company letterhead.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.3",
+      "title": "Content",
+      "content": "The report shall contain the signature of a responsible company officer, report number, and date. The Weld Procedure Qualification Test Report shall contain the pertinent data as listed in figure 11 of MIL-STD-248D for each weld procedure being qualified.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-80876.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81350",
+  "slug": "di-misc-81350",
+  "title": "Trusted Computing Base Verification Report",
+  "summary": "The Trusted Computing Base (TCB) Verification Report documents the results of verifying the correlation between the Descriptive Top Level Specification (DTLS) or Formal Top Level Specification (FTLS) of a TCB and its implementing programming language source statements.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6940",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "The Trusted Computing Base (TCB) Verification Report documents the results of verifying the correlation between the Descriptive Top Level Specification (DTLS) or the Formal Top Level Specification (FTLS) of a TCB and its implementing programming language source statements.",
+  "application_interrelationship": "This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 3.3.4.4 and 4.1.3.2.2 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n\nThis DID is applicable to any computer acquisition that calls for the verification of the correspondence/mapping between an implemented TCB and a TLS as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria (TCSEC) for TCB Classes B3 (Security Domains) and A1 (Verified Design) products and their equivalent systems.\n\nThe information required by 10.3 is required for all class products and their equivalent systems applicable to the DID as a whole. In addition, the information required in 10.3.1 and 10.3.2 is necessary for various classes of products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document the outcome of a verification of the implementing source language statements to the TLS as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Cover Sheet:",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Errata Sheet.",
+          "content": "Shall contain sheet delimiting cumulative page changes from previous version(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "List of illustrations, diagrams, charts and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Executive Summary.",
+          "content": "Not to exceed two pages, that briefly summarizes the TCB Verification Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Body of the Report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Bibliography.",
+          "content": "List references and all applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Subjective index.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.13.1",
+              "title": "Abbreviations acronyms shall be defined when first used in the text and shall be placed in the glossary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.2",
+              "title": "Pages shall be numbered separately and consecutively using Arabic numerals.",
+              "content": "Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.3",
+              "title": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals.",
+              "content": "Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.4",
+              "title": "Chapters shall begin on an odd-numbered (right-handed) page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.5",
+              "title": "Either single- or double-sided printing shall be used.",
+              "content": "If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Content.",
+      "content": "At TCB Class B3 level, the TCB Verification Report provides the correspondence between the Descriptive Top Level Specification (DTLS) and the TCB implementing source code to demonstrate that the DTLS has been correctly and accurately implemented. At TCB Class A1 level, the Formal Top Level Specification (FTLS) is mapped to the source code to demonstrate that the FTLS has been accurately implemented in the selected programming language (and hardware). The TCB Verification Report shall include.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "The TCB Verification Report shall briefly describe the TCB whose implementation will be verified in the report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.2",
+          "title": "The TCB Verification Report shall describe and illustrate the techniques and rules used.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.3",
+          "title": "Class B3 products and their equivalent systems.",
+          "content": "The DTLS is a top level specification informally written. From the design in the DTLS, the implementing program is written using source language statements. The correspondence called for here shall show that these source language statements correctly and accurately reflect the DTLS.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.3.1",
+              "title": "The TCB Verification Report shall informally show that the TCB implementation (i.e., in hardware, firmware, and software) is consistent with the DTLS.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.2",
+              "title": "The TCB Verification Report shall show, using informal techniques, that the elements of the DTLS correspond to the elements of the TCB.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.3",
+              "title": "For every portion of the TCB software which does not correspond to the DTLS, a convincing rationale shall be provided that this \"residual\" code is consistent with the DTLS, does not violate the design of the DTLS, and has a valid function within the TCB (i.e., the TCB does not contain any \"Trojan Horse\" code).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.4",
+          "title": "Class A1 products and their equivalent systems.",
+          "content": "The FTLS is a top level specification written and verified in a formal language. The following shall be included:\n\nFrom the FTLS, the implementing program is written using source language statements from the selected programming language. The mapping called for here provides evidence of the accurate implementation of the FTLS to the TCB source code.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.4.1",
+              "title": "A description of how the specification language constructs relate to the selected programming language constructs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.2",
+              "title": "A detailed mapping of the TCB implementation in software, firmware, or hardware to the FTLS.",
+              "content": "This mapping shall demonstrate that the TCB implementation is consistent with the FTLS.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.3",
+              "title": "The TCB Verification Report shall show, using informal techniques, that the elements of the FTLS correspond to the elements of the TCB.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.4.4",
+              "title": "For every portion of the TCB software, which does not correspond to the FTLS, a convincing rationale shall be provided that this \"residual\" code is consistent with the FTLS, does not violate the properties of the FTLS, and has a valid function within the TCB (i.e., the TCB does not contain any \"Trojan Horse\" code).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81350.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

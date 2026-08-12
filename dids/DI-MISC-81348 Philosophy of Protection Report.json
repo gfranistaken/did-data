@@ -1,0 +1,257 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81348",
+  "slug": "di-misc-81348",
+  "title": "Philosophy of Protection Report",
+  "summary": "The Philosophy of Protection Report provides an informal description of a security policy and the overall high-level design of a Trusted Computing Base, detailing each protection mechanism used to enforce that policy.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6938",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "This report details an informal description of a security policy and the overall high level design of a Trusted Computing Base (TCB) delineating each of the protection mechanisms (both TCB and non-TCB) employed to enforce the policy.",
+  "application_interrelationship": "This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 2.1.4.4 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n\nThis DID is applicable to any computer acquisition that calls for a Philosophy of Protection Report as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria for a TCB Class C1 (Discretionary Security Protection), or above, products or their equivalent systems. The Philosophy of Protection Report is based on the security policy enforced by the TCB derived from U.S. Government laws, regulations, standards, and practices.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document the Philosophy of Protection Report as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Cover Sheet.",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version, number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Errata Sheet.",
+          "content": "Shall contain sheets delimiting cumulative page changes from previous versions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "List of illustrations, diagrams, charts, and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Executive Summary.",
+          "content": "Not to exceed two pages, that briefly describes the TCB's security-related capabilities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Body of the Report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Bibliography.",
+          "content": "List reference sources and applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Subjective index.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.13.1",
+              "title": "Abbreviations and acronyms shall be defined",
+              "content": "Abbreviations and acronyms shall be defined when first used in the text and shall be placed in the glossary.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.2",
+              "title": "Pages shall be numbered separately and consecutively",
+              "content": "Pages shall be numbered separately and consecutively using Arabic numerals. Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.3",
+              "title": "Paragraphs shall have a short descriptive title",
+              "content": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals. Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.4",
+              "title": "Chapters shall begin on an odd-numbered (right hand) page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.5",
+              "title": "Column headings shall be repeated on subsequent pages if tabular material exceeds one page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.6",
+              "title": "Fold out pages shall be kept to a minimum.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.7",
+              "title": "Paper shall be standard 8 1/2 x 11 inches, white, with black type.",
+              "content": "The type font shall be standard 10 pitch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or ragged right (left justified only) shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.8",
+              "title": "At least one inch margins shall be provided",
+              "content": "At least one inch margins shall be provided all around to allow for drilling and binding.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.9",
+              "title": "Either single- or double-sided printing shall be used.",
+              "content": "If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.10",
+              "title": "The report shall be provided in standard three-ring notebook binders",
+              "content": "The report shall be provided in standard three-ring notebook binders for ease of maintenance.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Content.",
+      "content": "The following shall be included in the Philosophy of Protection Report:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "The Philosophy of Protection Report shall provide a description of the explicit and well-defined security policy",
+          "content": "The Philosophy of Protection Report shall provide a description of the explicit and well-defined security policy enforced by the TCB and the environment, as appropriate. The discussion shall include the applicable laws, rules, and regulations. This description shall be in enough detail to form the background for the philosophy of protection discussions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.2",
+          "title": "The Philosophy of Protection Report shall describe the high-level TCB protection mechanisms derived from the policy.",
+          "content": "It shall describe the philosophy of protection for the TCB. This encompasses the enumeration of any assumptions and constraints, with the rationale and justification for using each. These assumptions and constraints may be applicable for justifying distribution of the security requirements through the TCB.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.3",
+          "title": "The Philosophy of Protection Report shall describe the environmental mechanisms supporting the policy.",
+          "content": "It shall provide an explanation of how the security policy is translated into environmental constraints, connectivity constraints, and the specific TCB protection mechanism(s). This discussion shall include any entity that enforces the security policy, either external or internal to the computer itself (e.g., physical access control, TCB access control).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.4",
+          "title": "The Philosophy of Protection Report shall describe the TCB mechanisms supporting the policy.",
+          "content": "It shall show how the philosophy of protection is translated into the TCB hardware, software, and firmware; as appropriate. The Philosophy of Protection Report shall relate the security requirements to the architecture.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81348.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

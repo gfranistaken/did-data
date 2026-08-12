@@ -1,0 +1,266 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81457A",
+  "slug": "di-misc-81457a",
+  "title": "Lesson Strategy Report",
+  "summary": "The Lesson Strategy Report describes the instructional strategies, subject matter content, instructional materials formats, and other guidance for authoring and producing lesson training materials, and is used to guide lesson design.",
+  "approval_date": "2007-09-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9009",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Lesson Strategy Report describes the instructional strategies, subject matter content, instructional materials formats, and other guidance for authoring and producing the training materials for each lesson. It is used to guide the design of lessons and to prepare the Instructor Planning Document and the Student Guide.\na. This Data Item Description (DID) is applicable to all contracts requiring courseware development. It is used in conjunction with DI-MISC-81458, Instructor Planning Document; DI-MISC-81456, Student Guide; DI-MISC-81459, Syllabus; and DI-ILSS-80569, Objectives and Media Analysis Report.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nc. DI-MISC-81457A supersedes DI-MISC-81457.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-81457"
+  ],
+  "related_dids": [
+    "DI-MISC-81458",
+    "DI-MISC-81456",
+    "DI-MISC-81459",
+    "DI-ILSS-80569"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Lesson Strategy Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Lesson Strategy Report shall include the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction section.",
+          "content": "This section shall provide a brief description of the purpose and expected application of the Lesson Strategy Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Description of the lesson strategies.",
+          "content": "This section describes the lesson strategies for all instruction included in the course syllabus. Lesson strategies should ensure traceability to the training requirements. Air Force Manual (AFMAN) 36-2234 should be used for guidance. Each lesson strategy shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Cover sheet.",
+              "content": "This page shall include the title, classification, signatures of the author and approving authority, and date.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Lesson strategy organization and format.",
+              "content": "This section shall describe the organization and format of the lesson and segment strategies. It shall list the headers or section designators that are used, explain what each one means, and describe the type of information that is found under each. A key shall be used to explain the symbology. This explanation shall be supported with one or more illustrative examples. The lesson strategy shall exhibit traceability to the courseware development process and shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Lesson reference number.",
+                  "content": "The lesson strategy shall consist of a reference number, a unit, and lesson number referenced item from the syllabus.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Lesson title.",
+                  "content": "The lesson strategy shall have a short title description of the subject to be covered that is taken from the syllabus lesson title.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Lesson media.",
+                  "content": "The medium or media shall be identified for each lesson. For lessons with multiple media, objectives for each medium shall be indicated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Lesson overview.",
+                  "content": "A brief overview of the content of the lesson shall be provided for lesson authors, subject matter experts (SMEs), and students. Included should be an explanation of why the lesson is required, how it is related to previous lessons, and how it fits into the total program.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Learning objectives.",
+              "content": "This section shall describe the type of learning required for each lesson objective and learning event. A strategy for each lesson, learning event, activity, and testing procedure shall be provided. Each objective should have two numbers assigned: (1) a sequence number to indicate its order of presentation and (2) an identification number to indicate its rank in the objectives hierarchy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Unit and lesson maps.",
+              "content": "The unit map shall contain a short flow diagram showing the sequences and relationships among lessons in the instructional unit. The lesson map shall include a short flow diagram showing the hierarchical relationships among lesson objectives.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Lesson design strategy.",
+              "content": "This section shall describe decision making processes and strategies to be used in designing and implementing the presentation of material and testing student mastery of subject matter. Specific strategies shall include methods of interaction, testing, and remediation. Segments to be tested shall be identified and the method of testing defined. Specific emphasis shall be placed on the design strategy for developing and implementing the interactive courseware (ICW) into the training program and equipment. Training, learning and branching strategies shall also be included, when required. A section parts used shall be appropriately labeled and sequenced under the section part title, e.g., percentage of drill and practice, demonstration, and simulation. The lesson design strategy shall identify the conventional techniques, practices, principles, or procedures to be used throughout the design and development of the ICW module and lesson. The following information shall also be provided:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.5.1",
+                  "title": "Type of behavior.",
+                  "content": "A statement of what the student must do in order to show mastery of the objective, e.g., remember, use aided, or use unaided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.2",
+                  "title": "Generalities.",
+                  "content": "This section shall include the facts to be memorized, the critical attributes of a concept, the steps to follow in applying a rule or procedure, or the cause and effect relationship of a principle. Aids shall be included in the instructional content to help the student remember and use the generality. This section shall list the most commonly made student errors when learning the generality or test items.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.5.3",
+                  "title": "Instance production.",
+                  "content": "A description of each type of scenario that is to be included in the examples, practice, and test items shall be provided. A table shall be provided listing the total number of examples, practice, and test items that the lesson author must product for each type of instance.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.6",
+              "title": "Test items.",
+              "content": "This section shall include the type of test and the approach for feedback and remediation based on the lesson design strategy. A list of the test items to be used in measuring the student's knowledge of the generality shall be provided and include a statement of the minimum acceptable passing criteria for the lesson or segment. A list of examples and practice exercises to be used in support of the instruction of the generality shall also be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Lesson format guide.",
+              "content": "This section shall contain explanations of how each section of the lesson and segment specifications shall be used during lesson authoring. Special instructions or additional information shall be provided to ensure accurate communication of the content for authors and artists. It shall contain a description on the following items:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.7.1",
+                  "title": "Text and graphic layout conventions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.2",
+                  "title": "Interpretation of lesson strategy sections.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.3",
+                  "title": "Data sources for expansion of lesson strategy sections.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.4",
+                  "title": "Learning strategy guidelines.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.5",
+                  "title": "Use of symbology.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.6",
+                  "title": "Titling information",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.7",
+                  "title": "Figure numbering.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.8",
+                  "title": "Referencing conventions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.7.9",
+                  "title": "Page numbering.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.8",
+              "title": "Prototype lesson.",
+              "content": "This section shall consist of a prototype lesson to demonstrate how the format guide is to be used in conjunction with a lesson strategy to produce authored lessons. A complete lesson strategy and resulting prototype lesson shall conform to the lesson format guide.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Resource requirements.",
+              "content": "The section shall contain a summary of resource requirements. Included in this discussion shall be a description of the types of personnel and their respective roles and responsibilities for lesson strategy development.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81457A.pdf",
+    "extraction_date": "2026-08-11",
+    "extraction_method": "claude_cowork"
+  }
+}

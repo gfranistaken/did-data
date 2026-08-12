@@ -1,0 +1,298 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MSSM-81966B",
+  "slug": "di-mssm-81966b",
+  "title": "Gas Turbine Engine Steady State and Transient Performance Presentation for Computer Programs",
+  "summary": "This DID defines the format, content, and intended use of gas turbine engine steady-state and transient performance computer program Models delivered for evaluating Propulsion System performance, operability, and stability characteristics.",
+  "approval_date": "2026-05-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10666",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFP)",
+  "project_number": "MSSM-2026-001",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) is related to DI-TMSS-81515, User's Manual for Gas Turbine Engine Steady-State and Transient Performance for Digital Computer Programs.\na. Engine steady state and transient computer programs (herein referred to as Models) provide a detailed description of the aerothermodynamic cycle performance, operability, and stability characteristics of the Propulsion System. These Models will be provided to the Using Service for evaluation of Propulsion System performance, operability, and stability characteristics during source selections, evaluations/studies during the development program, and post-qualification modification evaluations throughout the life of the program.\nb. This DID contains the format, content, and intended use information for data deliverables resulting from the work task described in paragraphs 3.2.1 and 4.2.1 of JSSG-2007, Engines Joint Service Specification Guide and 5.2.1.3.1, 5.2.4.10, and 5.3.1.5.1 of MIL-STD-3024, Propulsion System Integrity Program (PSIP) (Copies of this document are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-TMSS-81515"
+  ],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of these documents are available from",
+      "url": "https://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Models shall be formatted as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Except as modified herein, the Models",
+          "content": "shall conform to the Society of Automotive Engineers (SAE) Aerospace Standards AS681, \"Gas Turbine Engine Performance Presentation for Computer Programs\" and AS755, \"Aircraft Propulsion System Performance Station Designation and Nomenclature\". (Copies of these documents are available from https://www.sae.org.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The Models shall be written and provided",
+          "content": "in Numerical Propulsion System Simulation (NPSS) source language and shall be capable of being compiled and executed on the computer system and platform identified by the Using Service. That means the Models shall not utilize any libraries unless the source code (text files) necessary to generate those libraries and all related libraries are distributed to the Using Service with the model package. Models written in languages, or formats, other than NPSS will require the explicit approval of the procuring acquisition authority.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "All source codes shall be provided, consistent",
+          "content": "with the contractual data rights agreement. That means raw NPSS text files and the source (text files) of any dynamic link libraries (DLLs) utilized by the code. It shall be possible for the Using Service to compile the complete model package, from source, including all necessary libraries.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "The Models shall carry suitable identification including",
+          "content": "the manufacturer's name, engine type, engine model, engine series, engine specification number, and revision date. Models shall be thermodynamic cycle simulations which reliably implement and obey the first two laws of thermodynamics, at a minimum. Models shall adhere to the known laws of physics, with the originator documenting any exceptions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "The Models shall be capable of operating",
+          "content": "throughout the engine operating envelope as agreed by the Using Service. This means no model shall exhibit divergent behavior at any operating condition inside the pre-established engine operating envelope. Input test cases with output shall be provided to verify the capabilities and operation of the Models adequately prior to acceptance by the Using Service.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "Model customer interface nomenclature shall be",
+          "content": "in accordance with SAE Aerospace Standard AS5571 \"Gas Turbine Engine Performance Presentation and Nomenclature for Object-Oriented Computer Programs,\" for NPSS models.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Using Service shall have unrestricted access",
+          "content": "to models including the ability to edit, compile, and run them indefinitely. There shall not be any limitations, restrictions, or expiration dates imposed on the use of the model, ensuring Using Service has complete and ongoing control over the editing, compilation, and execution in perpetuity. Further, Using Service shall have unrestricted access to all model cycle parameters for viewing and output.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Models shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Model deliveries shall consist of the full source",
+          "content": "for main and subroutines. All source codes shall be provided in text format and include all program subroutines, including dynamic and static libraries (DLLs or shared libraries). Source code shall include internal documentation (i.e., detailed comment statements) within the program code to identify subroutines and their logic. The level of documentation within the program shall, at a minimum, be consistent with current best practices.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A \"maintenance manual\", consisting of detailed model documentation",
+          "content": "shall be provided per DI-TMSS-81515.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The model root directory shall include a",
+          "content": "human readable text file (MARKINGS.txt) that contains the contract number, model distribution statement and data rights assertions associated with the model and model data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "The contractor shall not portion mark interpretive",
+          "content": "files with proprietary restrictions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Inputs/outputs.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "The Model shall be so organized that",
+              "content": "the input data can be separated from the output data. Output shall include engine and model designations and shall explicitly re-print all input data. Provisions shall be made in the output to allow the inclusion of declassification and authority information.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "The Model shall contain auditable inputs for",
+              "content": "adders and scalars for the major parameters for each of the engine components (e.g., component efficiencies, pressure losses, nozzle coefficients, secondary flows and turbine flow parameters). The Model shall be capable of providing inputs for aircraft customer bleed flow rate, aircraft power extraction, aircraft inlet ram pressure recovery, heat exchanger heat flow, and fuel lower heating value, as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Control and aerothermodynamic cycle parameters used in",
+              "content": "component performance evaluation and calculations shall be available as output (or expanded output) without reprogramming.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "The units used on the input and",
+              "content": "output parameter values shall be based on the U.S. Customary System as described in SAE AS5571, or as specifically negotiated with the Using Service.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "The Model output shall contain the necessary",
+              "content": "parameters for total force accounting and stability assessment, including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.5.1",
+                  "title": "Inlet recovery as a function of mass",
+                  "content": "flow ratio, Mach number, and aircraft attitude.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.2",
+                  "title": "Horsepower extraction at operating conditions identified",
+                  "content": "by the Using Service.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.3",
+                  "title": "Compressor bleed requirements (including amount of",
+                  "content": "flow and state to be bled) at operating conditions identified by the Using Service.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.4",
+                  "title": "Secondary flow rates such as engine bay",
+                  "content": "ventilation, Environmental Control System (ECS), etc. for various Mach numbers covering the entire flight envelope.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.5",
+                  "title": "Thrust, fuel-flow, specific fuel-consumption and other engine",
+                  "content": "performance parameters, as agreed to or specified by the Using Service, throughout the Mach / Altitude flight envelope.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.6",
+                  "title": "Clean stability margin, stability margin remaining",
+                  "content": "and other engine operability parameters throughout the Mach / Altitude flight envelope.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.7",
+                  "title": "Nozzle exit velocity and discharge coefficients",
+                  "content": "as a function of nozzle pressure ratio.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Additional Data Requirements",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "The Using Service shall have the ability",
+              "content": "to run the Model in various control modes (e.g. primary/reversionary control mode, speeds, thrust and fuel flow).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "The Using Service shall have the ability",
+              "content": "to input/identify engine deterioration level in the Model.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "The Using Service shall have the ability",
+              "content": "to adjust or remove control limits and have the Model output if it's running on or exceeding a limit.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "The Using Service shall have the ability",
+              "content": "to input/identify common control interfaces in the Model (e.g. Variable Stator Vane (VSV) schedules or other power management).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "If applicable, the Using Service shall have",
+              "content": "the ability to input/identify transient inputs (e.g. time constants and control schedules).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "If applicable, the model shall have the",
+              "content": "capability to read and process test data for the purpose of post-test data reduction and analysis.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MSSM-81966B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

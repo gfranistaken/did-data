@@ -1,0 +1,358 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81391A",
+  "slug": "di-misc-81391a",
+  "title": "Analytical Condition Inspection (ACI) Report",
+  "summary": "The ACI Report is used to reveal damage that may not otherwise be detected through normal TO and PDM inspections and to provide data for engineering and technical evaluations of aircraft condition.",
+  "approval_date": "2018-03-26",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9914",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "MISC-2018-008",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Analytical Condition Inspection (ACI) Report will be used to reveal damage (flaw, defect, crack, corrosion, disbond, delamination, discontinuity, or other type that degrades or has the potential to degrade the performance of the affected component) that may not otherwise be detected through normal technical order (TO) and programmed depot maintenance (PDM) inspections and to provide data for engineering and technical evaluations of the relative condition of the mission, design and series (MDS) aircraft. Data generated through ACI Reports is used to refine mandatory aircraft inspection programs (field and depot).\nThis DID contains the format, content and intended use information for the data deliverable resulting from the technical requirements described in Task V of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP), and Subtask 3 of MIL-STD-1798, Mechanical Equipment and Subsystems Integrity Program.\n(Copies of these documents are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The ACI Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The ACI Report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "ACI Work Instructions",
+          "content": "for each inspection/inspection location:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Identification number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Part name/description of article to be inspected.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Part number(s).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Part criticality - safety or fracture critical, durability or maintenance (Mx) critical, normal controls, etc.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Area/location of inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Reason for inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Frequency of inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Type of inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Instructions for accessing article to be inspected.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Inspection procedures and potential/anticipated damage.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "ACI Inspection Results:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Pertinent aircraft identifying information:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Aircraft mission design series (MDS).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Aircraft serial number (SN).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Base assignment history.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Planned ACI start and end date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Actual ACI start and end date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Actual flight hours.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Equivalent flight hours.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Last programmed depot Mx date.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Information for each inspection location:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "ACI work instruction identification number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Date of inspection.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Description of inspected article condition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "If damage found, damage classification (minor, major, or critical):",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.4.1",
+                      "title": "Detailed description, sketches, drawings, and photographs documenting damage, for damage types, sizes, locations, and orientations.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.4.2",
+                      "title": "Part number and criticality classification.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.4.3",
+                      "title": "Work Unit Code for item with defect.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.4.4",
+                      "title": "How malfunction codes/root cause determination.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.4.5",
+                      "title": "Engineering and nondestructive inspection records.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.4.6",
+                      "title": "Action taken code/damage disposition (no action required, repair, replace, etc.) with documentation.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Record of inspection:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.5.1",
+                      "title": "Date and time of inspection.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.2",
+                      "title": "Name and organization of inspector.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.3",
+                      "title": "Location of inspection (e.g., RAFB (Robins Air Force Base), HAFB (Hill Air Force Base), TAFB (Tinker Air Force Base), location of contractor facility, etc.).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Summary of results and recommendations.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Summary of inspection findings.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Prioritized list of critical and major findings.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Recommendations for revisions to maintenance requirements at the depot and/or field levels.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81391A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81346",
+  "slug": "di-misc-81346",
+  "title": "Formal Security Policy Model",
+  "summary": "A Formal Security Policy Model is a mathematically precise abstract representation of a security policy and the abstract protection mechanisms that enforce it.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6936",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "A Formal Security Policy Model is a mathematically precise abstract representation of a security policy and the abstract protection mechanisms that enforce the policy. To be acceptable as a basis for a trusted computing base (TCB), the model must be supported by formal proof. This Data Item Description (DID) describes both the requirements for the model itself and the document in which the model will be delivered.",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 3.1.4.4, 3.1.3.2.2, 3.2, 3.2.3.2.2, 3.2.4.4, 3.3.3.2.2 and 3.3.4.4 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n7.2 This DID is applicable to any computer acquisition that calls for a formal security policy model as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria (TCSEC) for TCB Classes B1 (Labeled Security Protection), B2 (Structured Protection), B3 (Security Domains), or A1 (Verified Design) products or their equivalent systems. The Formal Security Policy Model is an optional requirement at TCSEC Class B1. If an Informal Security Policy Model is required and available at TCSEC CLASS B1, then the Formal Security Policy Model is redundant and not necessary. The Formal Security Policy Model is based on the Philosophy of Protection Report.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document a Formal Computer Security Policy Model as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Cover Sheet.",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version number, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Errata Sheet.",
+          "content": "Errata sheets shall contain delimiting cumulative page changes from previous versions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "List of illustrations, diagrams, charts, and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Executive Summary, not to exceed two pages, that briefly describes the security model, including its assumptions and limitations.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Body of the Report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Bibliography.",
+          "content": "List reference sources and applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Subjective index.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.13.1",
+              "title": "Abbreviations and acronyms shall be defined when first used in the text and shall be placed in the glossary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.2",
+              "title": "Pages shall be numbered separately and consecutively using Arabic numerals.",
+              "content": "Black pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.3",
+              "title": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals.",
+              "content": "Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.4",
+              "title": "Column headings shall be repeated on subsequent pages if tabular material exceeds one page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.5",
+              "title": "Fold out pages shall be kept to a minimum.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.6",
+              "title": "Paper shall be standard 8 1/2 x 11 inches, white, with black type.",
+              "content": "The type font shall be standard 10 pitch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or ragged right (left justified only) shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.7",
+              "title": "At least one inch margins shall be provided all around each page to allow for drilling and binding.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.8",
+              "title": "The report shall be provided in standard three-ring notebook binders for ease of maintenance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.9",
+              "title": "The report shall be provided in standard three-ring notebook binders for ease of maintenance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "General.",
+      "content": "The formal Security Policy Model document shall contain the formal security policy model, its associated proofs, and the supporting explanations and documentation for both the model and proofs. The model contained in the Formal Security Policy Model document consists of two segments: 1) the mathematical representation of the policy which is to be enforced by the TCB, and 2) a mathematical representation of the abstract protection mechanism(s) within the TCB which enforce the described policy. The model shall include the representation of subjects, objects, modes of access, and security labels; the set of security properties enforced by the TCB; the representation of the initial state of TCB; and the representations of the operations performed.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.4",
+      "title": "Content.",
+      "content": "The Formal Security Policy Model document shall provide background information supporting the modeling effort. All of this background information is informal in nature and may be presented in English text, and graphic representations where appropriate. The following items shall be included as part of this information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.4.1",
+          "title": "Summarization of the security policy to be modeled, how this policy relates to the overall security policy (if the policy modeled is some subset of the overall policy), and the source of the policy.",
+          "content": "This discussion shall be in enough detail to form the background for the model.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.2",
+          "title": "Discussion in detail of the type of model chosen, and explanation of why this type was selected over other types.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.3",
+          "title": "Identification of the modeling technique/methodology chosen, and why it was chosen.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.4",
+          "title": "Expansion of the security policy into security policy statements.",
+          "content": "These security policy statements may be brief, but they must explicitly and thoroughly describe the security policy. Each policy statement shall be mapped to the Philosophy of Protection Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.4.5",
+          "title": "Policy segment.",
+          "content": "The Formal Security Policy Model document shall provide a formal mathematical description of the policy enforced by the TCB. Also, an English language description of the formal security policy model and each of its segments shall be provided. Supporting material should be provided in the following sequence:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.5.1",
+              "title": "All assumptions used in the model, provided as both mathematical statements (if any) and an English language description.",
+              "content": "Sufficient supporting rationale to prove the validity of the assumptions shall be provided. An explanation of why the assumptions are necessary to the model and the consequences of violating the assumptions shall also be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.5.2",
+              "title": "All axioms used in the model, using both mathematical statements and an English language description.",
+              "content": "This discussion shall include the rationale as to why these axioms are needed and how the axioms are justified. Supporting rationale for each axiom shall be provided by describing its relationship to the model's segments and specific security-enforcement abstract mechanisms in the model.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.5.3",
+              "title": "The actual model of the policy.",
+              "content": "Graphic representations of the model's segments may be included (e.g., diagrams and tables). These graphics shall be annotated with English language descriptions. Supporting material shall be provided to describe each of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.4.5.3.1",
+                  "title": "The classes of subjects and objects controlled by the TCB.",
+                  "content": "Examples of subjects are people, processes, or devices; and objects are records, blocks, pages, components, files, directories, directory trees, and programs, as well as bits, bytes, words, fields, processors, video displays, keyboards, clocks, printers, network nodes, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.5.3.2",
+                  "title": "How subjects are related to users.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.5.3.3",
+                  "title": "How subjects are assigned privileged conditions (trusted subjects).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.5.3.4",
+                  "title": "How users identify themselves to the TCB.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.5.3.5",
+                  "title": "How the TCB records events.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "10.4.6",
+          "title": "Abstract mechanism segment.",
+          "content": "The actual model of the abstract TCB protection mechanism(s). Graphic representations of the model's segments may be included (e.g., diagrams and tables). These graphics may be annotated with English language descriptions. Supporting material shall be provided to describe each of the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.6.1",
+              "title": "All the rules that permit, as well as constrain, how a subject is allowed access to an object.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.6.2",
+              "title": "All privileged conditions under which certain kinds of subjects are allowed to bypass the identified mandatory and discretionary access control rules.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.6.3",
+              "title": "All controls on assigning privileged conditions to subjects.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.6.4",
+              "title": "All the controls on identifying users to the TCB.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.6.5",
+              "title": "All the rules that generate an audit event.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.6.6",
+              "title": "All TCB responses to failures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.4.7",
+          "title": "Class B1 products and their equivalent systems.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.7.1",
+              "title": "General.",
+              "content": "There is no change to the general requirements of the Formal Security Policy Model document for TCB Class B1 products and their equivalent systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.7.2",
+              "title": "Policy segment.",
+              "content": "There is no change to the policy requirements of the Formal Security Policy Model document for TCB Class B1 products and their equivalent systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.7.3",
+              "title": "Abstract mechanism segment.",
+              "content": "The Formal Security Policy Model document shall identify the abstract TCB protection mechanism(s) and explain how these mechanisms satisfy the security policy model. Each abstract mechanism shall be discussed separately. Cross-reference these mechanisms to the policy portion of the Philosophy of Protection Report. The explanation shall include a description of how each element within a mechanism supports other elements of the mechanism, if any.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.7.4",
+              "title": "Segment integration.",
+              "content": "The integration of the policy and abstract mechanism segments of the model shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.4.7.4.1",
+                  "title": "An explanation to show that the formal security policy model is consistent with its axioms.",
+                  "content": "The explanation shall provide rationale sufficient to demonstrate consistency.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.7.4.2",
+                  "title": "A description of the relationship of each axiom to the model's segments and specific security-enforcement mechanism(s) in the model.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.7.4.3",
+                  "title": "An explanation that shows that the TCB is sufficient to enforce the security policy.",
+                  "content": "The explanation shall provide rationale sufficient to demonstrate consistency.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "10.4.8",
+          "title": "Classes B2 and above products and their equivalent systems.",
+          "content": "The following shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.8.1",
+              "title": "General.",
+              "content": "The TCB is based on a clearly defined and documented formal security policy model that requires the discretionary and mandatory access control enforcement found in Class B1 TCBs to be extended to all subjects and objects.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.8.2",
+              "title": "Policy segment.",
+              "content": "The Formal Security Policy Model document shall provide all theorems used in the model for each security policy segment, using both mathematical statements and an English language description. Supporting rationale for including the theorems shall be provided. The Formal Security Policy Model shall discuss how these theorems represent enforcement of the security policy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.8.3",
+              "title": "Mechanisms segment.",
+              "content": "The Formal Security Policy Model shall provide all theorems used in the model for the TCB protection mechanism(s), using both mathematical statements and an English language description. Supporting rationale for including the theorems shall be provided. The Formal Security Policy Model shall discuss how these theorems represent the TCB protection mechanism(s) and their enforcement of the security policy.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.4.9",
+          "title": "Segment integration.",
+          "content": "The Formal Security Policy Model document shall include an introduction to the kinds of proofs that are provided, along with a rationale that explains why these proofs are sufficient to demonstrate that the TCB is secure with respect to the security properties modeled. The integration of the policy and abstract mechanism segments of the model shall include the following proofs:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.4.9.1",
+              "title": "Proof that the model is consistent with its axioms, providing both the mathematical proofs and an English language description of the proofs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.4.9.2",
+              "title": "Proof that shows that the TCB represented in the model is sufficient to enforce the security policy.",
+              "content": "The Formal Security Policy Model document shall trace each of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.4.9.2.1",
+                  "title": "The security policy statements in the Philosophy of Protection Report to a formal mathematical statement.",
+                  "content": "A cross reference matrix chart with detailed explanatory text may be used.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.4.9.2.2",
+                  "title": "The formal mathematical statements back to its security policy statements in the Philosophy of Protection Report.",
+                  "content": "A cross reference matrix chart with detailed explanatory text may be used.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "10.4.9.3",
+              "title": "Proof for each of the theorems used in the model, both the mathematical proof and an English language description of the proof.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81346.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

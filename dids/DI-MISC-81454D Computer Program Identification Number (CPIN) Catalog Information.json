@@ -1,0 +1,396 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81454D",
+  "slug": "di-misc-81454d",
+  "title": "Computer Program Identification Number (CPIN) Catalog Information",
+  "summary": "The CPIN Catalog Information is used for the assignment of a CPIN for embedded computer system software, supporting Government configuration management of software and facilitation of software distribution via ETIMS.",
+  "approval_date": "2019-11-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10121",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "16 (AFMC/A4FI)",
+  "project_number": "MISC-2019-014",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Computer Program Identification Number (CPIN) Catalog Information is used for the assignment of a CPIN for embedded computer system software. The CPIN is used by the Government for configuration management of software and to facilitate software distribution. The Enhanced Technical Information Management System (ETIMS) is the standard Air Force system used for the assignment and management of CPINs.\na. This Data Item Description (DID) is applicable to software development for all weapon systems.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nc. This DID supersedes DI-MISC-81454C and changes the title from Automated Computer Program Identification Number (ACPIN) Data and Control Record.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-81454C"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available through ETIMS at",
+      "url": "https://www.my.af.mil/etims/ETIMS/index.jsp"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The CPIN Catalog Information shall be formatted in accordance with the CPIN Assignment/Change Request Worksheet per Appendix B of Technical Order (TO) 00-5-16, Methods and Procedures, Computer Program Identification Number (CPIN) Management. (Copies of this document are available through ETIMS at https://www.my.af.mil/etims/ETIMS/index.jsp.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CPIN Catalog Information shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "DATE PREPARED.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "TYPE OF REQUEST: New CPIN, Modify CPIN, Add or Modify Revision, or Create Version.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "PART I: REQUESTOR INFORMATION.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Organization",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Address",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Email Address",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Telephone Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Role or Function (e.g., Configuration Manager (CM), Equipment Specialist (ES), Other)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "PART II: CREATE CPIN, if applicable (for new CPINs only).",
+          "content": "(See TO 00-5-16 for examples and additional descriptions.)",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Category",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Major Function",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Identifier",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Software Type",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "CPIN Type (A&D, A or D)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Proponent",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "Managing Center (ETIMS generated based on Proponent)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "Software Classification (Unclassified, Confidential, or Secret)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "Documentation Classification (Unclassified, Confidential, or Secret)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "ES Code and Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.11",
+              "title": "CPIN Title",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.12",
+              "title": "CPIN Description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "PART III: CPIN DETAIL.",
+          "content": "(See TO 00-5-16 for examples and additional descriptions.)",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Sponsor Approval Required (Yes or No)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Status (Active, Foreign Military Sales (FMS) Only, or Rescind)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Maximum Issue Quantity (MIQ) (0-9999)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Weapon Systems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "PART IV: MODIFY REVISION DETAIL (required for revision).",
+          "content": "(See TO 00-5-16 for examples and additional descriptions.)",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Sponsor Approval Required (Yes or No)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "CPIN Title (if updated)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "CPIN Description (if updated)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Software Classification (Unclassified, Confidential, or Secret) (if updated)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Documentation Classification (Unclassified, Confidential, or Secret) (if updated)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Declassify Date (if Confidential or Secret)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Distribution Statement (per Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents.)",
+              "content": "(Copies of this document are available online at https://www.esd.whs.mil.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Distribution Reason",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Specific Authority (if Distribution Statement F)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.10",
+              "title": "Software Special Notes (if A or A&D)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Software Media Sets (if A or A&D)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.12",
+              "title": "Documentation Special Notes (if D or A&D)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.13",
+              "title": "Documentation Media Sets (if D or A&D)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.14",
+              "title": "Time Compliance Technical Order (TCTO)",
+              "content": "(TCTO Number, Maintenance Instruction Message, Programming Impact Message, or Release Letter)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.15",
+              "title": "Technical Orders",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.16",
+              "title": "Applicable Combination CPINs (if Combination CPIN)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.17",
+              "title": "Equipment (Unit Under Test (UUT), Test Stations, Automated Test Equipment (ATE), and General Equipment)",
+              "content": "Nomenclature\nPart or Model Number\nCommercial and Government Entity (CAGE) Code\nFederal Supply Class (FSC) Code\nNational Item Identification Number (NIIN)\nKind of Equipment\nTest Type (Interface Type Adapter (ITA), ATE, UUT)\nType Current (N/A, alternating current (AC), direct current (DC), AC/DC)\nMaterial Management Aggregation Code (MMAC)\nContractor Furnished (Aeronautical) Equipment (CF(A)E)\nContract Number",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81454D.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

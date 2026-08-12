@@ -1,0 +1,238 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-82124",
+  "slug": "di-misc-82124",
+  "title": "Joint Precision Approach and Landing System (JPALS) Certification Plan",
+  "summary": "The JPALS Certification Plan describes the Contractor's plan for delivery of Guidance, Navigation, and Control models, algorithms, and certification data artifacts in support of Government JPALS Certification activities.",
+  "approval_date": "2017-06-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9806",
+  "limitation": "None",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MISC-2017-008",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Joint Precision Approach and Landing System (JPALS) Certification Plan describes the Contractor's plan for delivery of Guidance, Navigation, and Control (GN&C) models, algorithms, and certification data artifacts in support of Government JPALS Certification activities.\nThis Data Item Description (DID) contains the format, content, and intended use information for the JPALS Certification Plan.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor's format is acceptable. If the models have been developed in a commonly available design and analysis tool (such as Matlab and Simulink) then delivery of the models in such format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The JPALS Certification Plan shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Airborne GN&C Models.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "GN&C system models and algorithms, including the inner loop and outer loop control laws.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Gains, limits, and filter values needed for the GN&C models.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Flight Test Activities",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Description of how flight test activities will support the Government's JPALS Certification efforts.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Real-Time Certification Data",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Inner loop control law inputs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Vertical displacement of the touchdown point, including the un-stabilized touchdown point and the touchdown point with Deck Motion Compensation (DMC) commands.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Lateral displacement of the touchdown point, including the un-stabilized touchdown point and the touchdown point with DMC commands (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Description of how the real-time certification data is provided and the path from the sensor/system generating the data to the production aircraft data bus, in-flight data recorder, and telemetry system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Certification Data for Post Processing",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Inner loop control law inputs and outputs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Outer loop control law inputs and outputs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Guidance algorithm inputs and outputs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Navigation algorithm inputs and outputs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Sensor outputs from systems that feed guidance and control (e.g. Embedded Global Positioning System (GPS) Inertial Navigation System (INS) (EGI), Air Data System).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Independent navigation reference source outputs.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "Engine Throttle and revolutions per minute (RPM).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "Control surface positions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "Stabilized and un-stabilized relative position vector.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "Vertical displacement of the touchdown point, including the un-stabilized touchdown point and the touchdown point with DMC commands.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.11",
+              "title": "Lateral displacement of the touchdown point, including the un-stabilized touchdown point and the touchdown point with DMC commands (if applicable).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.12",
+              "title": "Description of how the data for post processing is provided and the path from the sensor/system generating the data to the inflight data recorder.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Appendices:",
+          "content": "As appropriate or required.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-82124.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

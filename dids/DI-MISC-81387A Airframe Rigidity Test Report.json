@@ -1,0 +1,197 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81387A",
+  "slug": "di-misc-81387a",
+  "title": "Airframe Rigidity Test Report",
+  "summary": "This DID specifies the Airframe Rigidity Test Report, providing data to evaluate air vehicle modal vibration characteristics and rigidity properties against calculated analytical results.",
+  "approval_date": "2007-09-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9003",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "11 (ASC/ENFS)",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This report on Airframe Rigidity Testing will provide data for the detailed evaluation of the air vehicle modal vibration characteristics and rigidity properties and comparison with calculated results. The principal use is to validate or update analytical models.\na. This Data Item Description (DID) is applicable to any contract for which a ground vibration test or other airframe rigidity test is required.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\nc. DI-MISC-81387A supersedes DI-MISC-81387.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MISC-81387"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Airframe Rigidity Test Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Airframe Rigidity Test Report shall contain:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The Air vehicle Vibration Test.",
+          "content": "When applicable, this section shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Descriptions and photographs of the air vehicle suspension system, the instrumentation, and the air vehicle configurations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Description of test procedures, data acquisition, and methods of data reduction analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Shaker locations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Mode shape measurement locations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Plots of the transfer function versus frequency for strategically located vibration pickups.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "The natural frequency, mode shapes, structural damping, and node line locations for all obtained structural modes of vibration that may be important with respect to flutter and other dynamic analyses.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "A comparison of the measured air vehicle modal data (frequencies, mode shapes, and node lines) with those as predicted by the analytical model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Aeroservoelastic ground test.",
+          "content": "When applicable, this section shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Test description.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Comparison of the test results with corresponding analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Component test.",
+          "content": "When applicable, this section shall contain results of the following tests:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Component ground vibration tests on control surfaces, pylons, flaps, horizontal stabilizers, canards, control surface actuators, control surface dampers, racks for supporting stores, weapons bay doors, landing gear doors, and landing gear.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Component stiffness tests.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Control surface, tab, and actuator rigidity, free play, and wear tests.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Balance weight attachment verification tests.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Mass property measurements of control surfaces, tabs, and external stores.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Flutter damper qualification and wear tests.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81387A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

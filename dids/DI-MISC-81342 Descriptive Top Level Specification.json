@@ -1,0 +1,88 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MISC-81342",
+  "slug": "di-misc-81342",
+  "title": "Descriptive Top Level Specification",
+  "summary": "The Descriptive Top Level Specification (DTLS) is a top level specification using English language descriptions that completely and accurately describes the trusted computing base (TCB) in terms of exceptions, error messages, and effects.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6932",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "The Descriptive Top Level Specification (DTLS) is a top level specification using English language descriptions. It completely and accurately describes the trusted computing base (TCB) in terms of exceptions, error messages, and effects. The DTLS is an accurate description of the TCB interface.",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 3.2.3.1.1, 3.2.3.2.2, 3.2.4.4, 3.3.3.2.3, and 4.1.3.2.2 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n7.2 This DID is applicable to any computer acquisition that calls for a DTLS as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria (TCSEC) for TCB Classes B2 (Structured Protection), B3 (Security Domains), or A1 (Verified Design) products and their equivalent systems.\n7.3 The information required by 10.3 is required for all class products and their equivalent systems applicable to the DID as a whole. In addition, the information required in 10.3.1, 10.3.2, and 10.3.3 are necessary for various classes of products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document the DTLS as follows: a. Cover Sheet. Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version, number, security classification, and any other appropriate descriptive data. b. Errata Sheet. Shall contain sheets delimiting cumulative page changes from previous versions. c. Table of Contents. Include paragraph numbers, paragraph names, and page numbers. d. List of illustrations, diagrams, charts, and figures. e. Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions. f. Executive Summary, not to exceed two pages, that briefly describes the TCB's security-related capabilities. g. Introduction. h. Body of the specification. i. Attachments. j. Appendices. k. Bibliography. List reference sources and applicable documents. l. Subjective index.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Specific format instructions.",
+          "content": "a. Abbreviations and acronyms shall be defined when first used in the text and shall be placed in the glossary. b. Pages shall be numbered separately and consecutively using Arabic numerals. Blank pages shall be numbered. c. Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals. Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted. d. Chapters shall begin on an odd-numbered (right hand) page. e. Column headings shall be repeated on subsequent pages if tabular material exceeds one page. f. Fold out pages shall be kept to a minimum. g. Paper shall be standard 8 1/2 x 11 inches, white, with black type. The type font shall be standard 10 pitch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or ragged right (left justified only) shall be used. h. At least one inch margins shall be provided all around to allow for drilling and binding. i. Either single- or double-sided printing shall be used. If double-sided, the document shall be printed or typed head-to-head, front-to-back. j. The specification shall be provided in standard three-ring notebook binders for ease of maintenance.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Content.",
+      "content": "The DTLS shall describe the security capabilities in functional terms and concepts, and therefore takes the broad form of a \"security features functional description.\" It is traceable to the Formal Security Policy Model. The DTLS shall contain the following items: a. A summary of the security policy. This discussion shall be in enough detail to form the background for the following discussions. b. An overview of the TCB design which describes how the reference monitor concept is implemented, gives an explanation of why the TCB is tamper-resistant, cannot be bypassed, and is correctly implemented. c. Description of all TCB functions and features that enforce the security policy. The description shall completely and accurately describe the TCB in terms of exceptions, error messages, and effects, and include: (1) Mandatory access controls. (2) Discretionary access controls. (3) Security labels associated with subjects and objects. (4) Markings applied to external media. (5) TCB internal data bases. (6) Mapping between physical entities (e.g., users, files) and their logical representations (e.g., subjects, objects). (7) Policy rules used by the TCB to grant or deny access by subjects to objects (e.g., a subject's clearance must dominate an object's classification in order to be granted access). d. An accurate description of the TCB interface. e. A complete description of the user interface.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "Classes B3 and A1 products and their equivalent systems.",
+          "content": "The following shall be included in this section: a. A convincing argument shall be presented in the document to show that the DTLS is consistent with the Formal Security Policy Model. b. A description of the specific TCB protection mechanisms used to ensure trusted recovery functions. It shall also describe the TCB modules implementing interfaces of trusted recovery.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.2",
+          "title": "Class A1 products and their equivalent systems.",
+          "content": "The DTLS shall include those components of the TCB that are implemented as hardware and/or firmware, if their properties are visible at the TCB interface.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MISC-81342.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

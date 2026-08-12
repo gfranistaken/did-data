@@ -1,0 +1,911 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MSSM-82158A",
+  "slug": "di-mssm-82158a",
+  "title": "Synthetic Environment Database Design Document (SEDDD)",
+  "summary": "The SEDDD provides a detailed description of the design and content of the visual, sensor, and Semi-Automated Forces (SAF) databases used on a simulator, for verifying database content, designing training curriculums, and future improvements.",
+  "approval_date": "2022-10-27",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10364",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MSSM-2022-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Synthetic Environment Database Design Document (SEDDD) provides a detailed description of the design and content of the visual, sensor, and Semi-Automated Forces (SAF) databases used on a simulator. The SEDDD is used to verify database content, design training curriculums, and as a reference for future database improvements.\n\nThis data item description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract Statement of Work.\n\nThis DID supersedes DI-MSSM-82158.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MSSM-82158"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of documents are available online at",
+      "url": "http://sourceforge.net/projects/cigi/files/"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "http://www.dtic.mil/docs/citations/ADA570726"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Common Image Generator Interface (Version 3.3)",
+          "content": "(Copies of documents are available online at http://sourceforge.net/projects/cigi/files/ ).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "NPSI-1019-002.2 - NAVAIR PORTABLE SOURCE INITIATIVE (NPSI) DATA PREPARATION STANDARD (DPS)",
+          "content": "(Version 2.2, dated 22 May 2012), (Copies of this document are available online at http://www.dtic.mil/docs/citations/ADA570726 or from Naval Air Warfare Center, Training Systems Division, Code 4625, 12350 Research Parkway, Orlando, FL 32826-3275.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable while the document outline shall follow Section 3.5.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The SEDDD shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The SEDDD shall have a title page providing the following information, as applicable:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Document number;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Version/revision indicator;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Security markings or other restrictions on the handling of the document;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Date;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Document title;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Name, abbreviation, and any other identifier for the systems, subsystems, or items to which the document applies;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Contract number;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Contract data requirements list (CDRL) item number;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Organization for which the document has been prepared;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Name and address of the preparing organization;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Distribution statement;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Signature blocks for the developer representative authorized to release the document, the acquirer representative authorized to approve the document, and the dates of release/approval.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Revision history page.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Table of Contents and List of Figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Acronym list.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Document detail:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Introduction (to an introduction explaining the overall approach to the database development and top level description of content and fidelity).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Database projection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Task regions/Operating areas.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.3.1",
+                  "title": "A complete list and description of new, modified, and unmodified task region/operating areas that are in the database and used on the trainer.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.2",
+                  "title": "Geographic region definition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.4",
+              "title": "Airfields.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.4.1",
+                  "title": "A complete list and description of new, modified, and unmodified airfields that are in the databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.2",
+                  "title": "Definition of airfield types (primary, secondary, divert, generic, etc.) and the features included in each type of airfield model.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.3",
+                  "title": "List all runway and taxiway features (landing thresholds, elevation, length, width, heading, FLIP chart, landing aids, lighting, signage, arresting gear, wind socks, helipads, carrier boxes, beacon, building locations, etc.) at each airfield.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.5",
+              "title": "Low-level /TERF/Course rules routes.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.5.1",
+                  "title": "A complete list and description of new, modified, and unmodified low-level routes that are in the databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.2",
+                  "title": "Geographic region definition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.3",
+                  "title": "Identify way point features along routes, including screenshots.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.4",
+                  "title": "Definition of the features included in the route areas.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.6",
+              "title": "Landing areas/CAL sites.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.6.1",
+                  "title": "A complete list and description of new, modified, and unmodified landing areas that are in the databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.6.2",
+                  "title": "Definition of the features included in the landing areas.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.6.3",
+                  "title": "Definition of the type of landing zone/CAL site (wooded, ridgeline, open, parking lot, baseball/football field, helipad, oilrig, etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.7",
+              "title": "Urban areas.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.7.1",
+                  "title": "A complete list and description of new, modified, and unmodified urban areas that are in the databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.2",
+                  "title": "Geographic region definition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.7.3",
+                  "title": "Definition of the features included in the urban areas.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.8",
+              "title": "Target/Range areas.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.8.1",
+                  "title": "A complete list and description of new, modified, and unmodified target areas that are in the databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.8.2",
+                  "title": "Geographic region definition.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.8.3",
+                  "title": "Definition of the features included in the range areas.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.9",
+              "title": "Cultural models.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.9.1",
+                  "title": "A complete list and description of the generic and geo-typical feature library used to populate the synthetic environment databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.9.2",
+                  "title": "A complete list and description of the geo-specific/Landmark feature library used to populate the synthetic environment databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.10",
+              "title": "Moving models.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.10.1",
+                  "title": "A complete list, description, and screenshot of new, modified, and unmodified moving models that are used on the trainer, to include models built into the terrain (ex. drawbridges).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.2",
+                  "title": "Intended use of each moving model (e.g., OTW, FLIR, EO, NVG, and Radar).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.3",
+                  "title": "Model mapping definition/ID and correlation across all synthetic environment databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.4",
+                  "title": "Detailed design and control for model damaged and destroyed states.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.5",
+                  "title": "A complete list and description of articulated parts, controls, ship hull numbers, country, etc. associated with each model.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.6",
+                  "title": "Definition of how the model articulations are identified and controlled in the model to include control method, naming convention, units, valid range, and other specific details.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.10.7",
+                  "title": "Definition of model levels of detail (LOD) to include number of levels, polygon/lights per LOD, switching ranges, identification of light naming convention and control.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.11",
+              "title": "Sensor simulation.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.11.1",
+                  "title": "Sensor terrain database design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.11.2",
+                  "title": "Sensor material encoding data for the database and models.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.11.3",
+                  "title": "Sensor 3D model design, development, and control criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.11.4",
+                  "title": "Correlation details.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.12",
+              "title": "Radar simulation.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.12.1",
+                  "title": "Radar terrain database design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.12.2",
+                  "title": "Radar target model design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.12.3",
+                  "title": "Synthetic Aperture Radar (SAR) design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.12.4",
+                  "title": "Inverse SAR (ISAR) design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.12.5",
+                  "title": "Radar material encoding data for the database and models.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.12.6",
+                  "title": "Correlation details.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.13",
+              "title": "Semi-Automated Forces (SAF) database.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.13.1",
+                  "title": "Terrain database design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.13.2",
+                  "title": "Shape files, vector data, and point feature design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.13.3",
+                  "title": "Material encoding data for the database and models.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.13.4",
+                  "title": "Entity model definition and design information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.13.5",
+                  "title": "Correlation details.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.14",
+              "title": "Test and alignment patterns.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.14.1",
+                  "title": "A complete list and thumbnail of all provided patterns.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.2",
+                  "title": "Design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.15",
+              "title": "Animations and special effects.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.15.1",
+                  "title": "A complete list, thumbnail, and description of all image generator provided animations and special effects.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.15.2",
+                  "title": "Design and development criteria and information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.16",
+              "title": "Simulation maps.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.16.1",
+                  "title": "A complete list and description all provided or generated maps and their source.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.16.2",
+                  "title": "Provide all map geographic region definition and features.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.16.3",
+                  "title": "Provide all design and development criteria and information used to create the maps.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.16.4",
+                  "title": "Correlation details.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.17",
+              "title": "Synthetic environment database build process (visual and sensors).",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.17.1",
+                  "title": "Process used to create run-time versions of the synthetic environment databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.17.2",
+                  "title": "Terrain and model runtime naming conventions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.18",
+              "title": "Software, scripts, supplemental files, configuration files, and tools used in the creation of the synthetic environment databases.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.19",
+              "title": "Data license and right information.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.19.1",
+                  "title": "Data License/Rights for all source data, NAVAIR Portable Source Initiative (NPSI) data, and runtime databases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.20",
+              "title": "A complete list and description of the synthetic environment deliverables.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.21",
+              "title": "Synthetic environment database integrated product team (IPT) meeting minutes.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.22",
+              "title": "NPSI description to include import, export (new or modified areas), and any issues/concerns.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "The following content shall be included within the above sections:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Source data.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Maps of the entire geographic regions depicting the various resolutions of imagery and coverage and material encoding/classification.",
+                  "content": "The map shall utilize color coded outlines and color coded points to indicate coverage throughout the geographic region.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Resolution, source, and acquisition date of new, reused, and modified imagery.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Resolution, source, and acquisition date of new, reused, and modified terrain elevation information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Resolution, source, and acquisition date of new, reused, and modified shape files, vector data, and point feature information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.5",
+                  "title": "Resolution, source, and acquisition date of new, reused, and modified 3D model information.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.6",
+                  "title": "Resolution, source, and acquisition date of new, reused, and modified material encoding data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.7",
+                  "title": "Notes detailing suitability analysis of Government Furnished Information (GFI) data (NPSI, SECORE, NGA, etc.).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.8",
+                  "title": "Notes detailing any changes and adjustments to the GFI data.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.9",
+                  "title": "List and description of all GFI data used.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Design data on all airfields, target regions and low-level routes shall be included along with photos, graphics and charts.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Features.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Thumbnail pictures of moving models, geo-specific/landmark/navigation features, animations, and special effects.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "For each moving model, a list of the articulated parts, lights and their associated controls to include Instructor Operator Station (IOS) and host controls.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "A complete list and description of all airfield lights and light groups and their associated controls to include Instructor Operator Station (IOS) and host controls at each airfield.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.4",
+                  "title": "A complete list and description of all light groups and their associated controls to include Instructor Operator Station (IOS) and host controls.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.5",
+                  "title": "Describe and list all flight deck director controls to include Instructor Operator Station (IOS) and host controls.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.6",
+                  "title": "Latitude and longitude coordinates for geo-specific/landmark/navigation features.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.7",
+                  "title": "Photos, graphics and charts used to create cultural features and models.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.8",
+                  "title": "Describe and list light maps, water masks, and coastline data used for the development of the database.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.9",
+                  "title": "Scene content management and level of detail information for terrain, features and models.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MSSM-82158A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

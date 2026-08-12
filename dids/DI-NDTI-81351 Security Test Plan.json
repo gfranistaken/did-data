@@ -1,0 +1,533 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NDTI-81351",
+  "slug": "di-ndti-81351",
+  "title": "Security Test Plan",
+  "summary": "The Security Test Plan outlines the test plans and security objectives for a set of specific security tests, providing the concept, objectives, support needs, and analysis techniques used to test the security mechanisms of the trusted computing base.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6941",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "The Security Test Plan outlines the test plans and security objectives for a set of specific security tests to be performed. It provides the test concept, reasons, objectives and requirements to be satisfied, support needed, responsible activities associated with the testing, and analysis techniques to be used. It shall provide the strategy to test the security mechanisms of the trusted computing base (TCB).",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 2.2.3.2.1, 3.1.3.2.1, 3.2.3.2.1, 3.3.3.2.1 and 4.1.3.2.1 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n7.2 This DID is applicable to any computer acquisition that requires test documentation for the security features as specified by DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria (TCSEC), Classes C1 (Discretionary Security Protection), and above, products or their equivalent systems.\n7.3 The Security Test Plan is generally produced to support certification and accreditation.\n7.4 The information required by 10.3 is required for all class products and their equivalent systems applicable to the DID as a whole. In addition, the information required in 10.3.1, 10.3.2, 10.3.3, 10.3.4, 10.3.5, 10.3.6 and 10.3.7 is necessary for various classes of products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "Document a Security Test Plan as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Cover Sheet.",
+          "content": "Shall contain Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Errata Sheet.",
+          "content": "Shall contain sheets delimiting cumulative page changes from previous version(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Table of Contents.",
+          "content": "Shall contain paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "List of illustrations, diagrams, charts and figures.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.5",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.6",
+          "title": "Executive Summary, not to exceed two pages, that briefly summarizes the Security Test Plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.7",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.8",
+          "title": "Body of the Plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.9",
+          "title": "Attachments.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.10",
+          "title": "Appendices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.11",
+          "title": "Bibliography.",
+          "content": "List references and all applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.12",
+          "title": "Subjective index.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.13",
+          "title": "Specific format instructions.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.2.13.1",
+              "title": "Abbreviations and acronyms shall be defined when first used in the text and shall be placed in the glossary.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.2",
+              "title": "Pages shall be numbered separately and consecutively using Arabic numerals.",
+              "content": "Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.3",
+              "title": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic Numerals.",
+              "content": "Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.4",
+              "title": "Chapters shall begin on an odd-numbered (right-handed) page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.5",
+              "title": "Column headings shall be repeated on subsequent pages if tabular material exceeds one page.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.6",
+              "title": "Fold out pages shall be kept to a minimum.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.7",
+              "title": "Paper shall be standard 8 1/2 x 11 inches, white, with black type.",
+              "content": "Use standard 10 inch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or jagged right (left justified only) shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.8",
+              "title": "At least one inch margins shall be provided all around each page to allow for drilling and binding.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.9",
+              "title": "Either single- or double-sided printing shall be used.",
+              "content": "If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.2.13.10",
+              "title": "The plan shall be provided in standard three ring notebook binders for ease of maintenance.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Content.",
+      "content": "The Security Test Plan shall include the method by which testing will be performed to determine whether the TCB works as claimed in the documentation. It shall describe how testing will be done to assure that there are no obvious ways for an unauthorized user to bypass or otherwise defeat the security protection mechanisms of the TCB. The Security Test Plan shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "An overview of the TCB that will be tested.",
+          "content": "It shall briefly describe the security protection mechanism(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.2",
+          "title": "A description of the objectives of the test plan, including the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.2.1",
+              "title": "A functional description of the security test program.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.2.2",
+              "title": "Government and contractor participation roles and responsibilities.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.2.3",
+              "title": "Facilities where the testing will be performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.2.4",
+              "title": "Support requirements for the tests (e.g., communications, equipment, test data, etc).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.2.5",
+              "title": "Schedule of when testing will be performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.3",
+          "title": "A list of all tests to be accomplished in the order they are to be performed.",
+          "content": "The list shall include a test for each security protection function (e.g., unauthorized access to audit data). Each listing shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.3.1",
+              "title": "Name and brief description of test to be performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.2",
+              "title": "Reason for performing test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.3",
+              "title": "Functional requirements which will be tested.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.4",
+              "title": "Objective to be satisfied by each test, including the pass/fail criteria, baseline, duration, and number of times each test should be performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.5",
+              "title": "Specific test support requirements for each test performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.3.6",
+              "title": "Start and expected completion dates of each test to be performed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.4",
+          "title": "Description of the data reduction and analysis techniques that will be used to interpret the data.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.5",
+          "title": "An overview of the procedures that will be used to validate the test results.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.6",
+          "title": "Class C2 products and their equivalent systems.",
+          "content": "The Security Test Plan shall include a plan for the search for obvious flaws that would:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.6.1",
+              "title": "Allow violation of resource isolation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.6.2",
+              "title": "Permit unauthorized access to the audit or authentication data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.7",
+          "title": "Class B1 products and their equivalent systems.",
+          "content": "The Security Test Plan shall describe the test program's approach to identify and report flaws so that the flaws may be removed or neutralized. It shall include the approach to retest identified flaws to demonstrate that they have been eliminated. This approach shall include regression testing to ascertain whether new flaws have been introduced when removing the originally discovered flaw.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.8",
+          "title": "Class B1 and above products and their equivalent systems.",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.8.1",
+              "title": "A description of how the design documentation, source code, and object code will be thoroughly analyzed and tested.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.8.2",
+              "title": "The plan for tests to:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.3.8.2.1",
+                  "title": "Uncover all design and implementation flaws that would permit a subject external to the TCB to read, change, or delete data normally denied under the mandatory or discretionary security policy enforced by the TCB.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.8.2.2",
+                  "title": "Assure that no subject (without authorization to do so) is able to cause the TCB to enter a state such that it is unable to respond to communications initiated by other users.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "10.3.9",
+          "title": "Class B2 products and their equivalent systems.",
+          "content": "The following shall be included: regression testing to ascertain whether new flaws have been introduced when removing the originally discovered flaw.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.9.1",
+              "title": "A description of the technique to demonstrate that the TCB is relatively resistant to penetration.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.9.2",
+              "title": "A description of the test program's approach to retest identified flaws to demonstrate that they have been corrected.",
+              "content": "This approach shall include the originally discovered flaw.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.10",
+          "title": "Class B2 and B3 products and their equivalent systems.",
+          "content": "The Security Test Plan shall describe the technique to demonstrate that the TCB implementation is consistent with the Descriptive Top Level Specification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.11",
+          "title": "Class B3 and above products and their equivalent systems.",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.11.1",
+              "title": "A description of the technique that will be used to determine that the TCB is resistant to penetration.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.11.2",
+              "title": "A description of the approach that will be used to prevent design flaws and limit implementation flaws from being found during the final security testing.",
+              "content": "This approach shall provide a reasonable confidence that few flaws remain for security testing.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.11.3",
+              "title": "The Security Test Plan shall include the following test planning for trusted recovery:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "10.3.11.3.1",
+                  "title": "Test conditions; i.e., a list of discontinuities of operation that can be generated through administrative interfaces and their effects.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "10.3.11.3.2",
+                  "title": "Test data, consisting of the following:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "10.3.11.3.2.1",
+                      "title": "Environment setup; e.g., the TCB and user-level data structures and objects needed to generate the planned discontinuity.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "10.3.11.3.2.2",
+                      "title": "Parameters and commands used by the administrators to generate the discontinuity.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "10.3.11.3.2.3",
+                      "title": "Expected outcome; e.g., the type of procedures that are started automatically or manually for handling the generated discontinuity and the effect of those procedures on the TCB state.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "10.3.11.3.3",
+                  "title": "Coverage analysis; e.g., this includes a list of failures, or classes of failures, whose effect is covered by the generated discontinuities, and a list of spontaneous failures, or classes of failures, whose effect isn't covered by the test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "10.3.12",
+          "title": "Class A1 products and their equivalent systems.",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "10.3.12.1",
+              "title": "A description of the technique to demonstrate that the TCB implementation is consistent with the Formal Top Level Specification (FTLS).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "10.3.12.2",
+              "title": "A description of how the mapping of the FTLS to the source code may form a basis for penetration testing.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NDTI-81351.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

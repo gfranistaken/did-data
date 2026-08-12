@@ -1,0 +1,548 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NDTI-82326",
+  "slug": "di-ndti-82326",
+  "title": "First Article Test/Inspection Procedures and Report (FAT/IPR)",
+  "summary": "The FAT/IPR is used to report on test and inspection results, equipment and tooling requirements, inspection criteria, and documentation methods used by the contractor for first article testing and inspection.",
+  "approval_date": "2020-08-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10193",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "184 (AFLCMC/WLE)",
+  "project_number": "NDTI-2020-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The First Article Test/Inspection Procedures and Report (FAT/IPR) is used to report on the test and inspection results, test and inspection equipment and tooling requirements and setup, inspection criteria, and method of documentation that shall be used by the contractor for first article testing and inspection.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract\nThis DID can be used in conjunction with DI-NDTI-82327, First Article Test/Inspection Procedures and Plan (FAT/IPP), or DI-NDTI-80809, Test/Inspection Report. (Copies of these documents are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NDTI-82327",
+    "DI-NDTI-80809"
+  ],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "Copies of these forms are available online at",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "Copies of this form are available online at",
+      "url": "https://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The FAT/IPR shall be in the contractor's format with the following exceptions:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Text of body paragraphs shall be in Helvetica typeface and 11 point font.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "A Table of Contents shall be on its own dedicated page(s) located just after the Cover Page.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "A table of FAT/IPR revisions shall be on a separate page(s) located just after the Table of Contents.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The FAT/IPR shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page.",
+          "content": "The Cover Page shall include the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contractor's company name and logo.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Contractor's company address and phone number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Contractor's Commercial and Government Entity (CAGE) code.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "The item name under contract.",
+              "content": "The item name shall be the same as the name listed in the title block on the engineering drawing for the First Article (FA) item.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "The Cover Page shall identify that the document is a First Article Test/Inspection Procedures and Report.",
+              "content": "The document title shall be as follows: \"First Article Test and Inspection Procedures and Report,\" or, if an actual test was not required by the Technical Data Package (TDP), \"First Article Inspection Procedures and Report\".",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "A \"Submitted For\" section, which shall contain the following information:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.6.1",
+                  "title": "The National Stock Number (NSN) for the FA.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.2",
+                  "title": "The contract number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.3",
+                  "title": "The FA part number as shown in the contract, along with the revision letter of the engineering drawing that the FA is being manufactured to.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.4",
+                  "title": "The software version and license information of any software that is tested.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.5",
+                  "title": "The Serial Number (SN).",
+                  "content": "The SN shall be listed on the Cover Page in the exact configuration it is delivered to the contractor from the procuring Program Manager as required by the contract and Item Unique Identification (IUID) Contract Data Requirements List (CDRL).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.6",
+                  "title": "The CDRL Item Number (e.g., A001).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.7",
+              "title": "The date the FAT/IPR was submitted to the Government, the contractor document number, and the document revision letter.",
+              "content": "See 3.3.a below for revision letter requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "A \"Submitted To\" section listing the Procurement Contracting Officer (PCO), and the Government office and address listed on the contract.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "List the name and title of the document preparer, contractor Quality Assurance (QA) representative, and Defense Contract Management Agency (DCMA) representative with places for each person's signature and the date of the test and inspection.",
+              "content": "The DCMA signature block shall include an indication showing approval or disapproval of the FA inspection.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "A Distribution Statement and Export Control Notice in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, shall be located in the footer in accordance with contract requirements.",
+              "content": "(Copies of this document are available online at https://www.esd.whs.mil/.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "A Destruction Notice shall be located in the footer in accordance with contract requirements:",
+              "content": "\"DESTRUCTION NOTICE: For classified documents, follow procedures in DoD 5220.22-M, National Industrial Security Program Operating Manual, Chapter 5, Section 7, or DoDM 5200.01, Vol 2, DoD Information Security Program Marking of Information. For unclassified, limited documents, destroy by any method that will prevent disclosure of contents or reconstruction of the document.\" (Copies of these documents are available online at https://www.esd.whs.mil/.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents, which shall identify the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The title and starting page of each major section, paragraph, and appendix of the report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "The page, identifying number, and title of each illustration (for example: figure, table, photograph, chart, and drawing).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Table of FAT/IPR revisions, which shall include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The base FAT/IPR designation.",
+              "content": "The initial designation shall be \"-\". The subsequent revision designations shall begin with the letter \"A\". Letters I, O, Q, S, X, and Z shall not be used as, or in, the revision designation of the FAT/IPR (e.g., I and AI shall not be used).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "The specific revision(s) made to the document stating specifically what was changed from the previous revision.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "The date the revision(s) was (were) made.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Purpose of the test and inspection",
+          "content": "to include the method(s) by which the contractor satisfied the requirements of the item's TDP and any applicable requirements set forth in the related standards, processes, and documents referenced therein.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "List of applicable documents",
+          "content": "to include: Government, commercially available, and noncommercially available documents listed in the engineering drawings or models that are actually used in the manufacture of the FA. The Government, commercially available, and noncommercially available documents shall be listed in their own separate subsections.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Complete identification of tools and equipment actually used by QA for the inspection and for the testing of the FA",
+          "content": "including the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Drawings, schematics, or photographs of the tool or equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Nomenclature",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Model Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Serial Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Tools and equipment range data in imperial units",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Accuracy data in imperial units",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "A brief description of the tools and equipment that were used for the test and inspection of the FA",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Tool calibration documentation shall be included in a separate appendix (see 3.12.b)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Description of FA.",
+          "content": "The description shall include drawings, schematics, diagrams, software version, models, and photos.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "FA Test and Inspection Instructions used, which shall contain the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "The address of the physical location where the test and inspection were accomplished.",
+              "content": "The test and inspection instructions shall state if the address is the same as the company address on the Cover Page.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Detailed, step-by-step procedures that the individual conducting the test followed outlining how the FA test was accomplished.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Test tool and equipment set up.",
+              "content": "Photographs showing the actual test setup used during testing shall be included.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Photos of all test fixtures used during testing of the FA shall be included.",
+              "content": "The photos shall include photos of the test fixtures from four positions and photos of the test fixture set up used for the test.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "One set of FA drawings or model(s) with all required inspection points circled and numbered.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.6",
+              "title": "Any deviation from the approved FAT/IPP shall be recorded, including government approval of deviation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "FAT/IPR Results, to include the following:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "The method used for recording the test and inspection results, which shall contain the following:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.1.1",
+                  "title": "The forms found in SAE International AS9102, Aerospace First Article Inspection Requirement, or equivalent.",
+                  "content": "(Copies of these forms are available online at https://www.sae.org.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.2",
+                  "title": "Any Pass or Fail test result forms, other test result forms, and the criteria by which the tests were assessed shall be included in the FAT/IPR.",
+                  "content": "Test result forms included in Acceptance Test Procedures (ATP), that are part of the TDP provided to the contractor, shall be included.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.9.2",
+              "title": "Matrices comparing the actual results achieved versus the test and inspection objectives or requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "A discussion of the significance of the aforementioned matrices.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "All calculations used.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.5",
+              "title": "A discussion of the calculations used, which explains why and how the calculations were used and what the results of the calculations mean.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "The FAT/IPR shall include photo documentation of the FA as a whole (four photos from different angles or views) and all exposed permanent markings (e.g., identification (ID) plates, stenciling, cable banding, etc.) confirming conformance to contract marking requirements, including IUID and any additional markings required by the TDP.",
+          "content": "All text and numerical designations shall be legible in photos (more than one photo shall be provided in instances when necessary to document adjacent text).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Documentation of any failures and the root cause corrective actions taken to prevent future failures.",
+          "content": "The SAE International AS9131, Aerospace Series - Quality Management Systems - Nonconformity Data Definition and Documentation, Appendix B - Nonconformity Form, or equivalent form, shall be used to document the failures and corrective actions. (Copies of this form are available online at https://www.sae.org.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "The FAT/IPR shall contain the following appendices:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Documentation showing that the contractor met the quality standards as required by the contract at the time of the FAT.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "FAT/IPR tool and equipment calibration documentation for the actual tools and equipment used for the FA test and inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "The FAT/IPR results on the forms discussed in 3.9.a.(1) above.",
+              "content": "The results shall reference each numbered inspection point listed in the set of FA drawings or model(s) discussed in 3.8.e above.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.4",
+              "title": "The FAT/IPR shall include traceability of all materials from the mill to the contractor, thus ensuring compliance with material specifications.",
+              "content": "This traceability shall include material certifications and purchase agreements between the mill and the manufacturer showing material conformance to the requirements of the TDP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.5",
+              "title": "The FAT/IPR shall contain an appendix providing a Requirements Traceability Matrix or diagram to track all tested requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.6",
+              "title": "Documentation containing the names of those conducting and witnessing the test, including government representatives.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NDTI-82326.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

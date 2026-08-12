@@ -1,0 +1,215 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-82446",
+  "slug": "di-nuor-82446",
+  "title": "Cruise Missile (CM) Mechanical Interface Control Drawing (MICD)",
+  "summary": "The CM MICD is a signature-controlled drawing set that dimensionally defines the mechanical, physical, and environmental interfaces between the cruise missile and the nuclear warhead.",
+  "approval_date": "2024-05-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10479",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27",
+  "project_number": "NUOR-2023-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The CM MICD is a signature-controlled drawing set detailing the mechanical interface between the CM and the nuclear warhead. The CM MICD shall dimensionally define the physical and environmental interfaces between the CM and the nuclear warhead. The CM MICD includes the mechanical layout drawings, information and data, 3D computer models, and/or 3D models derived from measurement (e.g., laser scan). The CM MICD provides a means to document and control changes to the nuclear system throughout the life of the CM and nuclear warhead weapon system.\na. This Data Item Description (DID) contains the format and content preparation instructions for the tasks described by MIL-STD-1822, Nuclear Compatibility Certification of Nuclear Weapon Systems, Subsystems and Support Equipment.\nb. This DID is related to DI-NUOR-81409, Certification Requirements Plan (CRP).\n(Copies of the DID are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [
+    {
+      "label": "Copies of the DID are available online at",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable. 3-D STEP file format for 3D models is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The CM MICD drawings are required to list CM version/configuration and contain all applicable notes and references, a signature block for responsible agency representatives, and 3-D views of the missile. The notes are to include the ejector orifice combinations (pitch valve settings) and the required cable routing to include the aircraft to CM and J1 cable interfaces. The CM MICD shall provide engineering data and descriptions that define the following for the WR configuration:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Worst-case load envelopes imparted on the weapon center of gravity during captive carriage and release or loads imparted on the weapon center of gravity during captive carriage and release for the entire performance envelope (Mach/altitude); if loads differ significantly due to location, define the loads based upon pylon/bay location.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Location and dimensions of the warhead inspection window.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Location of the access cover for the nuclear warhead.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Method of securing the nuclear warhead to the CM showing mounting hardware, including torquing pattern and torque specifications.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "CM to nuclear warhead mounting interface details and clearances.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Payload bay structure and component clearance to the nuclear warhead. Define any exclusion zones and component clearance to any exclusion zones.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Cable routing to include CM-to-nuclear warhead cable interfaces, including slack provisions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Receptacle shell of the J1 connector interfaces.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Clearance distances and angles of all parts of the CM from all other missile structures, missile pyrotechnics and hazards, electrical cables, and other installed equipment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Three views (top, side, and front) of the missile showing the stowed and deployed missile configurations.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "The CM MICD shall provide engineering data and descriptions that define the following for the JTA configuration:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Installation of the CM test instrumentation kit.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Cable routing to include CM-to-warhead connector, including slack provisions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Receptacle shell of the CM-to-warhead connector interfaces.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.4",
+              "title": "Location of the instrumentation access panel.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.5",
+              "title": "Installation/removal of the instrumentation access panel.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.6",
+              "title": "Clearance distances and angles of all parts of the warhead from all other missile structure, electrical cables, and other installed equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "The MICD shall provide:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Provisions for recording the coordination and approval by cognizant government agencies and their contractors.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "References to applicable National Nuclear Security Administration (Sandia National Laboratories) mechanical compatibility control drawings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-82446.pdf",
+    "extraction_date": "2026-08-11",
+    "extraction_method": "claude_cowork"
+  }
+}

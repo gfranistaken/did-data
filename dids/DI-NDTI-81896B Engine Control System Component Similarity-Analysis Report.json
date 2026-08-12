@@ -1,0 +1,463 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NDTI-81896B",
+  "slug": "di-ndti-81896b",
+  "title": "Engine Control System Component Similarity/Analysis Report",
+  "summary": "The Engine Control System Component Similarity/Analysis Report describes the format and content of the data product used for engine control system component similarity arguments resulting from applicable tasks delineated in the solicitation.",
+  "approval_date": "2026-06-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10672",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AV",
+  "project_number": "NDTI-2026-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Engine Control System Component Similarity/Analysis Report describes the format and content of the data product used for engine control system component similarity arguments resulting from applicable tasks delineated in the solicitation\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in 5.10.4.2 and 5.10.4.3 of MIL-STD-3087.\nb. This DID supersedes DI-NDTI-81896A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-NDTI-81896A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, if any, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Cover.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Title, number, and date.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Contractor's name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Contract number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Title Page.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title, number and date.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Contractor's name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Name(s) of the author(s).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Contract number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Abstract.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Objective of the similarity/analysis report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Brief statement of the contents of the report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Table of Contents.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "6",
+      "title": "List of Tables.",
+      "content": "When used in a separate series, tables shall be given Roman numerals.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "7",
+      "title": "List of Illustrations.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "7.1",
+          "title": "Figure numbers and captions of all illustrations.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.2",
+          "title": "Photographs, charts, and graphs shall be treated as illustrations and given figure numbers.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Applicable Documents.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "9",
+      "title": "The part number of the component for which qualification by similarity or analysis is being requested.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10",
+      "title": "The part number(s) of the 'similar' component which forms the base for the argument.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "11",
+      "title": "A brief physical and functional description of the component including, as applicable:",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "11.1",
+          "title": "Photos or 2-D and isometric drawings.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.2",
+          "title": "Functional diagrams.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.3",
+          "title": "Schematics.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.4",
+          "title": "Cross sections.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "Description of the functional/physical differences between the base component and the new component.",
+      "content": "All differences shall be illustrated with the following, as applicable, presented side-by-side, top and bottom, or one following the other. Differences shall be clearly identified.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "12.1",
+          "title": "Photos or 2-D and isometric drawings.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.2",
+          "title": "Functional diagrams.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.3",
+          "title": "Schematics.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.4",
+          "title": "Cross sections.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Description of the required tests to be performed, referencing any applicable paragraphs in the model specification or other requirements documents.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "14",
+      "title": "Status of the base component.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "14.1",
+          "title": "State if the component is qualified/certified, and if so, the granting agency.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "14.2",
+          "title": "Describe if the component has been previously tested, and if so, what type of testing it has undergone.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "14.3",
+          "title": "If the component is in service use:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "14.3.1",
+              "title": "Describe and compare the service environments, and the ability of the required testing to discriminate between the environments.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "14.3.2",
+              "title": "Approximate number of accumulated component flight hours.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "14.3.3",
+              "title": "Number and type of failures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "14.3.4",
+              "title": "Predicted vs. actual Mean Time Between Failure (MTBF).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Basis for requesting waiver for each of the Airworthiness Qualification Plan (AQP)/Airworthiness Qualification Specification (AQS) specified tests.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "15.1",
+          "title": "Identical component (same part number (P/N)) as a qualified/certified and in-service component.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "15.2",
+          "title": "Modified component similar to a qualified/certified and in-service component.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "15.3",
+          "title": "Identical component (same P/N) as a qualified/certified and tested component.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "15.4",
+          "title": "Modified component similar to a qualified/certified and tested component.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "title": "Supporting documentation requirements.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "16.1",
+          "title": "If the basis of waiver is 15a, no further information is required beyond items 2 through 15a.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "16.2",
+          "title": "If the basis of waiver is 15b, then in addition to items 2 through 15b, an argument or analysis must be provided as to why each of the functional/physical differences does not require performing the specified test.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "16.3",
+          "title": "If the basis of waiver is 15c or 15d, then in addition to items 2 through 15c or 15d, a complete description of the actual testing performed on the base component is required as follows:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "16.3.1",
+              "title": "Date and location of test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "16.3.2",
+              "title": "Description of the test and the procedure utilized and any deviations from the procedure or the applied test spectrum.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "16.3.3",
+              "title": "Unit operational status during the test (non-operating or operating).",
+              "content": "If operating, identify the component functional parameters which were being monitored and any differences between the pass/fail criteria and those for the proposed current application.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "16.3.4",
+              "title": "Provide any significant findings, if any, and the subsequent disposition of same.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "16.3.5",
+              "title": "The final results of all Acceptance Test Procedures (ATPs) conducted during the test sequence.",
+              "content": "If any non-conformance or failures were noted, provide the subsequent disposition of same.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "16.3.6",
+              "title": "Discussion of the required test versus the actual test performed with respect to test adequacy/equivalency.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "16.3.7",
+              "title": "Test reports.",
+              "content": "These shall be provided as appendices with clear, easy to follow references to specific portions of those test reports in the main body to assist the reviewer in determining the outcome of the original testing as summarized in items (1) through (6) above.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "16.4",
+          "title": "If the basis of waiver is 15d, in addition to the information provided under 16c, then an argument or analysis must be provided as to why each of the functional/physical differences does not require performing the specified test.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "title": "Concluding remarks requesting waiver of the specified test and upon which basis (15) the request is being made.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NDTI-81896B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

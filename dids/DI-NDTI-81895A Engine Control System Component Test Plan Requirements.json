@@ -1,0 +1,436 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NDTI-81895A",
+  "slug": "di-ndti-81895a",
+  "title": "Engine Control System Component Test Plan Requirements",
+  "summary": "The Engine Control System Component Test Plan Requirements describe the format and content of engine control system component environmental qualification test plans.",
+  "approval_date": "2026-06-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10671",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AV",
+  "project_number": "NDTI-2026-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Engine Control System Component Test Plan Requirements describe the format and content of engine control system component environmental qualification test plans. It provides clear and complete instructions for the preparation of environmental test plan data products to be submitted for approval by the airworthiness authority, resulting from applicable tasks delineated in the solicitation.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in 5.10.3 of MIL-STD-3087.\nb. This DID supersedes DI-NDTI-81895.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-NDTI-81895"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of any documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Cover.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Title, number, and date.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Contractor's Name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Contract number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Title Page.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title, number, and date.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Contractor's Name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Name(s) of the author(s).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Contract number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Abstract.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Objective of the plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Brief statement of the contents of the plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Table of Contents.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "6",
+      "title": "List of Tables.",
+      "content": "When used in a separate series, tables shall be given Roman numerals.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "7",
+      "title": "List of Illustrations.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "7.1",
+          "title": "Figure numbers and captions of all illustrations.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.2",
+          "title": "Photographs, charts, and graphs shall be treated as illustrations and given figure numbers.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Applicable Documents.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "9",
+      "title": "Component Description.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "9.1",
+          "title": "Functional description.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.1.1",
+              "title": "Component operational block diagram or schematic.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.1.2",
+              "title": "Relationship of the component to the overall control system, including interface with other subsystems (airframe or engine).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.2",
+          "title": "Physical description.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.2.1",
+              "title": "2-D and isometric drawings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.2.2",
+              "title": "Photos (if available).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "9.3",
+          "title": "Identification of any material discrepancies.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.3.1",
+              "title": "List any Material Review Board items.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.3.2",
+              "title": "Describe in detail any material discrepancies, corrective actions, and rationale for using any part that does not conform to engineering drawings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Component Performance Requirements.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.1",
+          "title": "Required performance (pass/fail criteria) must be traceable to higher level specification(s).",
+          "content": "Include a table that traces the performance requirements to the next highest level specification, or higher if necessary, to justify the pass/fail values. Each parameter and its limits shall reference a specific paragraph number.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2",
+          "title": "If the parameter and its pass/fail limits cannot be easily translated from one specification to the next (e.g., engineering units to electrical units), then there must be an explanation of how the conversion was made.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "Testing to be Performed.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "11.1",
+          "title": "List of tests with a simplified description of each, the model specification or other requirement paragraph, and any standard procedure reference.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.2",
+          "title": "Order of testing and explanation if it deviates from the order specified.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.3",
+          "title": "Any planned Acceptance Test Procedure(s) (ATP)/calibrations, inspections, or other disassemblies planned between the tests.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.4",
+          "title": "For each test requirement, specify whether it will be satisfied via test, similarity or analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11.5",
+          "title": "Specify how many units will be tested and for which tests.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "Test Summaries.",
+      "content": "Test summaries shall contain the following information.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "12.1",
+          "title": "Test Purpose.",
+          "content": "Provide a clear, concise, easily understood description.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.2",
+          "title": "Test Performance.",
+          "content": "Explain if the test will be performed exactly as described in the referenced standard or procedure or if it will be some modified version. If a similarity or analysis report will be prepared in lieu of testing, then a summary of the rationale shall be included here, with the remaining items c through g marked as N/A or left out completely.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.3",
+          "title": "Any planned ATPs/calibrations, inspections, or other disassemblies planned during the test sequence.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.4",
+          "title": "Data monitoring and recording.",
+          "content": "Explain what will be recorded and monitored and how it will be captured (i.e., continuous vs. sampling).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.5",
+          "title": "Unit testing conditions.",
+          "content": "The environmental cycle/conditions, the unit functional cycle/conditions, and the unit operating cycle/conditions must all be defined.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.6",
+          "title": "Pass/fail criteria.",
+          "content": "Specify/reference the performance table at the front of the document. If different, then justify. List any other criteria such as passage of post-test ATPs or detailed inspections.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12.7",
+          "title": "Test data presentation.",
+          "content": "Explain exactly what information will be provided as documentary evidence of test passage and in what form it will be presented.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Detailed Test Procedure",
+      "content": "Separate tabbed sections or appendices shall be provided, one for each test procedure. The test procedure shall not duplicate information already provided in Part 1 of the test plan. These procedures may be submitted individually at the discretion of the contractor. However, Part 1 of the test plan shall have already been approved prior to the contractor submitting any detailed procedures for approval. In addition to providing detailed step-by-step instructions for test execution, the procedure shall also contain the following information.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1",
+          "title": "Component mounting details and test orientation with orthogonal axis definition.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2",
+          "title": "Monitoring sensor placement locations.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3",
+          "title": "Drawing/sketches of the test setup showing all pertinent equipment by name and part number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4",
+          "title": "Planned test location.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5",
+          "title": "Serial number of the component undergoing test.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6",
+          "title": "List of test equipment (including ranges and accuracies) and any special hardware or test equipment requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Validation/Verification of Testing from the Government.",
+      "content": "The plan shall include written validation/verification from the Government that it includes all testing required by the applicable specification.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NDTI-81895A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

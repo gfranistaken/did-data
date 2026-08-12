@@ -1,0 +1,224 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUSU-82343",
+  "slug": "di-nusu-82343",
+  "title": "Hardness Maintenance (HM) and Hardness Surveillance (HS) Plan",
+  "summary": "The HM/HS Plan documents the maintenance and surveillance procedures, inspections, tests, and supporting data required to preserve a HEMP-protected facility or system's hardness throughout its service life.",
+  "approval_date": "2021-03-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10238",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "NUSU-2021-005",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Hardness Maintenance (HM) and Hardness Surveillance (HS) Plan applies to both parts of military standard MIL-STD-188-125, High-Altitude Electromagnetic Pulse (HEMP) Protection for Ground-Based Facilities Performing Critical, Time-Urgent Missions. This DID applies to fixed facilities in accordance with Part I (MIL-STD-188-125-1A) and to transportable systems in accordance with Part II (MIL-STD-188-125-2). This DID contains the format, content, and intended-use information for the data deliverable resulting from the HM/HS tasks described in section 4.5 of each part of MIL-STD-188-125, as applicable.\n\nThe purpose of the HM/HS program is to ensure that the HEMP-protection subsystem's (HPS') hardness levels are preserved throughout the service life of the facility or system. HM/HS procedures comprise the preventive maintenance, inspection, test, and repair activities accomplished on a HEMP protected operational facility or system.\n\nThe HM/HS Plan describes HM and inspection procedures, HS test procedures, supply support and training requirements, and technical data requirements for implementing the HM/HS program. The plan provides the data and information for the Government to evaluate the continued compliance of the facility or system with its HEMP-survivability requirements throughout its service life; to ensure that Government-prescribed procedures are used by facility maintainers; and to manage any planned modifications to the facility or system. The Department of Defense's HEMP-certification authority requires that a documented HM/HS Plan be submitted as part of a HEMP-certification request package for a facility or system.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions, shall be as specified in the contract. The HM/HS Plan's classification shall be in accordance with any relevant facility- or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Dr. William Linzey, PhD, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "This DID describes the overall HM/HS plan which describes the HM and inspection procedures, HS test procedures, supply support and training requirements, and technical data requirements for implementing the HM/HS program. The test methods are written to be applicable at varying levels of maintenance including basic, intermediate, and operational levels.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The HM/HS Plan shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, CDRL number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification by a qualified representative of the procuring activity for the HM/HS plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary information.",
+          "content": "The HM/HS plan shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction, to include:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "General objectives of the HM/HS program and its procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "A general description of the HPS' topological hardness to be maintained and to undergo surveillance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Statements of any assumptions or limitations associated with facility HM/HS inspection and test procedures, including for subsystems",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "A listing of sources for baseline test data derived from the facility's or system's HEMP acceptance tests and HEMP verification tests",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Descriptions of any issues regarding the HPS",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "A description of all shield monitoring capabilities, including test procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "References to all facility and MCS operational and maintenance manuals",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Scope.",
+              "content": "A general description of the overall HM/HS requirements matrix that is used to maintain and demonstrate the HPS' sustained lifecycle compliance with MIL-STD-188-125's performance requirements. This description will include the relative roles of routine maintenance procedures (i.e., HM), and of analyses, tests and inspections (i.e., HS).\n\nA logistics support analysis shall be described to define the HM/HS requirements, supply support requirements, training requirements, and technical data requirements, and identify all hardness critical items (HCI). A means for maintaining configuration management as the HPS, including associated MCS special protective measures, is modified will also be described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Methods of HM/HS.",
+              "content": "A general description of the procedures that are used to confirm the facility or system operator's compliance with each HM/HS requirement as listed in section 3.3 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors affecting the HM/HS procedures, such as: physical-accessibility constraints of the facility's or system's HPS topology, resource limitations, safety and security protocols, and precedent reports.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed information.",
+          "content": "The HM/HS Plan shall describe in detail at least the following information: a. One-line wiring diagrams for power sources b. Comprehensive, facility or system-specific HM procedures for maintaining the hardening status of the HPS with emphasis on HCIs c. Comprehensive, facility- or system-specific HS test plans for surveillance testing of the HPS for determining hardening status d. Supply support requirements for both HM and HS\n\nThese components may be combined in a single document, or they may be separated into multiple, cross-referenced documents.\n\nThe documents shall also contain the following detailed information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "HM and inspection procedures.",
+              "content": "Detailed procedures for preventive maintenance, inspection, repair and replacement for the facility or system and associated MCS shall be described, and all HCIs shall be identified (refer to military handbook MIL-HDBK-423 for guidance). These procedures shall include the maintenance of a data log. A schedule shall be identified for how often the outlined procedures are to be performed. The descriptions of HM procedures should be linked to the descriptions of the facility's or system's HPS topology.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "HS test procedures.",
+              "content": "Detailed HS test procedures for the system or facility and its mission-critical subsystems shall be developed. These procedures shall include the maintenance of a data log. A schedule shall be identified for how often the outlined procedures are to be performed.\n\nThe HS procedures shall be designed to identify HPS degradations that may have occurred during operation, and to provide assurance that any flaws are rectified during programmed or emergency maintenance to thereby assure continuous HEMP-hardening. These procedures shall be applied to the HPS' EM shields, POE protection devices (PPDs) and special protective measures (SPMs).\n\nThe HS data should be relatable to the pass and fail criteria used in the HEMP acceptance and verification tests. The acceptance and verification test data will be used as a baseline for HS data comparison.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Supply support requirements.",
+              "content": "A parts list of the installed HCIs and lists of recommended facility or system and subsystem spare parts, repair parts, supplies, special tools, and special test equipment shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Training requirements.",
+              "content": "Training requirements for personnel performing facility surveillance testing, maintenance, upgrades and repairs shall be identified. Identification of the type of training manuals to be prepared should be identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Technical data.",
+              "content": "Facility data logs for HM and HS will be maintained in chronological order. A configuration management log will also be maintained in chronological order showing all changes to the facility's HPS topology, e.g., low-risk electromagnetic (EM) barriers, HCIs, and MCS.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Other information sources.",
+          "content": "When other available information sources contain data required by the HM/HS Plan, these sources shall be referenced, rather than duplicated, within the test plan.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUSU-82343.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

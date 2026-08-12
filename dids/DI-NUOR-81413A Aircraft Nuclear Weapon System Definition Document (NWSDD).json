@@ -1,0 +1,140 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-81413A",
+  "slug": "di-nuor-81413a",
+  "title": "Aircraft Nuclear Weapon System Definition Document (NWSDD)",
+  "summary": "The NWSDD defines the nuclear configuration of the aircraft's avionics and nuclear weapon delivery systems, including test and support equipment.",
+  "approval_date": "2013-02-01",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "F9329",
+  "limitation": "",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27 (AFNWC)",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The NWSDD defines the nuclear configuration of the aircraft's avionics and nuclear weapon delivery systems, including test and support equipment. The nuclear configuration is defined by the hardware and software/firmware components of the aircraft's avionics system and nuclear weapon delivery system.\na. This Data Item Description (DID) contains the format and content preparation instructions data resulting from the work task described by MIL-STD-1822.\n(Copies of MIL-STD-1822 are available online at https://assist.dla.mil/quicksearch/ or from the Standardization Document Order Desk, 700 Robbins Ave., Bldg 4D, Philadelphia PA 19111-5094.)\nb. The document is used by the government to maintain the nuclear configuration of the aircraft's nuclear weapon system.\nc. This DID is related to DI-NUOR-81409, Certification Requirement Plan (CRP).\n(Copies of the DID are available online at https://assist.dla.mil/quicksearch/ or from the Standardization Document Order Desk, 700 Robbins Ave., Bldg 4D, Philadelphia PA 19111-5094.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content and format of this document shall be divided into three sections as defined below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The first section of the document defines the nuclear hardware configuration of the aircraft's avionics system and the aircraft's nuclear weapon delivery system.",
+          "content": "This section shall define the nuclear hardware components in a table format. The table shall cover the avionics system and the nuclear weapon delivery system components. The contents of the table shall be:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The official configuration item nomenclature for each nuclear hardware component.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The descriptive title each hardware component or line replaceable unit is known by.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "A description of the function each hardware component serves within its system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "The second section of the document defines the nuclear software/firmware configuration of the aircraft's avionics system and the aircraft's nuclear weapon delivery system.",
+          "content": "The nuclear configuration shall be defined in this section by the nuclear avionics software/firmware. This section shall define the nuclear software/firmware components in a table format. The contents of the table shall be:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The contractor computer program identification number for each nuclear software/firmware component.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "The descriptive title of each software/firmware component",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "A description of the function each software/firmware component serves within its system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "The hardware components each software/firmware component is associated with.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "The third section is used to clarify and expand the nuclear configuration item table entries.",
+          "content": "This section shall be used to include test and support equipment and information that do not readily fit into a table format.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-81413A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

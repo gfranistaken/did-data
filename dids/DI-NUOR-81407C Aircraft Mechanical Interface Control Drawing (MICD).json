@@ -1,0 +1,255 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-81407C",
+  "slug": "di-nuor-81407c",
+  "title": "Aircraft Mechanical Interface Control Drawing (MICD)",
+  "summary": "The MICD is a signature controlled mechanical definition detailing the physical interface between the nuclear weapon(s), the suspension and release system, adjacent stores/ordnance, and the aircraft.",
+  "approval_date": "2015-07-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9569",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27",
+  "project_number": "NUOR-2015-004",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The MICD is a signature controlled mechanical definition detailing the physical interface between the nuclear weapon(s), the suspension and release system, adjacent stores/ordnance, and the aircraft during static and dynamic conditions (take-off, flight and landing). The MICD shall dimensionally define the physical interfaces between nuclear weapon(s) and the aircraft. The MICD includes information and data, 3D computer models, or 3D models derived from measurement (e.g. laser scan).\na. This Data Item Description (DID) contains the format and content preparation instructions for the tasks described by MIL-STD-1822, Nuclear Compatibility Certification of Nuclear Weapon Systems, Subsystems and Support Equipment.\nb. This DID is related to DI-NUOR-81409, Certification Requirements Plan (CRP).\n(Copies of these documents are available online at https://quicksearch.dla.mil.)\nc. This DID supersedes DI-NUOR-81407B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-NUOR-81407B"
+  ],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable. 3-D STEP file format for 3D models is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The MICD drawing definition is required to list aircraft version, configuration and equipment, contain notes/references, a signature block for responsible agency representatives, and three views of the aircraft. Also included in the definition are the high level model(s) or views of the external pylon configuration with nuclear stores installed and/or the weapons bay launchers with nuclear stores installed. The notes are to include the parachute and spin rocket deployment time, fin unlock time selected for this application, the cartridge, orifice, pneumatic, gravity deployment callouts, and the required pullout cable for each nuclear store as applicable. The MICD shall provide engineering data and descriptions that define:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The general aircraft monitor and control system information or dimensions and weapon(s) location(s).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The aircraft flight limitation data (or reference) for the worst case configuration including aircraft angle of attack and sideslip, aircraft load factor, peak angle rates, and peak angular accelerations for the minimum conditions given in MIL-STD-8591, Airborne Stores, Suspension Equipment and Aircraft-Store interface (Carriage Phase), Table B-II.",
+          "content": "(Copies of this document are available online at http://quicksearch.dla.mil.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The installation of the ejector rack for each weapon station.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "The access to the ejector rack inspection points.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The sway brace mechanism.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The sway brace locations, pad dimensions, and the angles for each weapon.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "The ejector mechanism.",
+          "content": "(NOTE: If there are several different types of ejectors used on the aircraft, the MICD shall show each.) The ejector or ejectors location(s) on the weapon(s) and the stroke difference.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "The method of securing weapons and the hook-lug interface details.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "The details of ejector rack(s), orifice, cartridge access, and installation.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "The minimum clearance distances of each nuclear weapon sub-assembly (e.g.: nose, center, preflight, tail) from other ordnance, aircraft structures, and other installed equipment completely defined in three dimensional space.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "The details of the ejector rack if it is of the pneumatic type.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "The access to weapon pullout connectors, release electrical connectors, and inspection and monitor points.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "The drop clearance angles from the nearest aircraft equipment or structures and other ordnance.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "The drop clearance angles, if applicable, of the other adjacent ordnance items with respect to weapons in the event that the other ordnance is dropped prior to releasing the weapons.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "The weapon connector lanyard bail retaining provisions, including slack provisions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "The angles of pullout withdrawal with respect to pullout device centerline.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Three views (top, side, and front) of the aircraft showing locations of bomb bays and/or pylons.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "The rack actuation mechanism for the Reversible In-Flight Lock.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "The pullout cable routing.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "The lanyard retention devices.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "The ejector rack cartridge, orifice, pneumatic, or gravity deployment combinations and settings, as applicable, that will be used for each type of nuclear weapon.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "The MICD shall provide:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.22.1",
+              "title": "Provisions for recording the coordination and approval by cognizant government agencies and their contractors.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.22.2",
+              "title": "References to applicable National Nuclear Security Administration (Sandia National Laboratory) mechanical compatibility control drawings.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.22.3",
+              "title": "References to drawings to include the aircraft, the ejector rack, the appropriate weapons, and other items such as electronic countermeasures (ECM) pods, fuel tanks, and missiles.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-81407C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

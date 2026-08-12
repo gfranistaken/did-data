@@ -1,0 +1,196 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats - DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them - set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUSU-82348",
+  "slug": "di-nusu-82348",
+  "title": "Topology Report",
+  "summary": "The Topology Report documents a facility's or system's overall HEMP-hardening topology, including its EM barrier, points of entry, protection devices, and mission critical systems, to support HEMP protection evaluation.",
+  "approval_date": "2021-03-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10243",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "NUSU-2021-010",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Topology Report applies to both parts of military standard MIL-STD-188-125, High-Altitude Electromagnetic Pulse (HEMP) Protection for Ground-Based Facilities Performing Critical, Time-Urgent Missions. This DID applies to fixed facilities in accordance with Part I (MIL-STD-188-125-1A) and to transportable systems in accordance with Part II (MIL-STD-188-125-2). This DID contains the format, content, and intended-use information for the data deliverable resulting from the work task described in section 4.3 of each part of MIL-STD-188-125, as applicable.\nThe purpose of documenting the HEMP-protection subsystem's (HPS') topology is to ensure that the entirety of the facility's or system's required architectural measures for HEMP protection have been sufficiently addressed. Acceptance-test and verification-test teams require the identification of the complete set of these measures in order to effectively and efficiently plan and execute their tests. Site hardness maintenance and hardness surveillance (HM/HS) planners and performers also require the identification of the complete set of these measures in order to assure the lifecycle hardness of the entirety of the HPS.\nThe Topology Report shall describe the overall HEMP-hardening topology of the facility or system, including the HPS' low-risk electromagnetic (EM) barrier's shield; all points of entry (POEs) that penetrate that shield; all POE protection devices (PPDs); any long-line protection modules (LLPMs); and any mission critical systems (MCS) installed outside the low-risk EM barrier and their associated special protective measures (SPMs). The report shall include a description of all conduits, cables, pipes, power transformers and power lines that penetrate the low-risk EM barrier. The report shall also include any other elements and links connecting the low-risk EM barrier with other low-risk EM barriers (associated with other nearby facilities or systems), and with MCS outside the low-risk EM barrier. The report shall detail the hardness critical items (HCIs) and their configuration management, testability, and corrosion control, as applicable.\nThe topology report provides the means for the Government to evaluate the overall facility's or system's HEMP protection, including any outlying MCS and other subsystems and their links to the low-risk EM barrier.\nIf the facility or system already has a topology report, then documentation of the report should be attached as an appendix.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions, shall be as specified in the contract. The Topology Report's classification shall be in accordance with any relevant facility- or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Dr. William Linzey, PhD, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Topology Report documents the overall HEMP-hardening topology of the facility or system, including the HPS' low-risk EM barrier's shield, all POEs that penetrate that shield, all PPDs, any LLPMs, and any MCS installed outside the low-risk EM barriers and their associated SPMs.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The topology report shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, CDRL number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification by a qualified representative of the procuring activity for the topology report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary information.",
+          "content": "The Topology Report shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "A description of the HPS' hardening topology, including any pertinent design or test issues",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Statements of any assumptions and limitations associated with HEMP hardening design topology and testability",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed information.",
+          "content": "The Topology Report shall include, with diagrams as applicable, the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "A complete listing of the low-risk EM barriers, their locations and interrelations, and their performance requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "A complete listing of all POEs and their locations; electrical, mechanical penetrations; and controlled apertures with their performance requirements; and, if applicable, special protective volumes (SPVs) and their performance requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Tables of all POE protection devices (e.g., filters and waveguides beyond cutoff (WBCs), and any other HCIs, together with their locations, names of manufacturers, and associated model numbers",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "A diagram/drawing showing the EM shielding topology locations with all cables, conduits, protection devices and MCS outside the shield identified and cross-referenced to the table(s) above indicated",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "A one-line electrical drawing for the power, RF, sensor, and control lines",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Living Document.",
+          "content": "The topology report shall remain as a living document that is maintained as the facility's or system's engineering design program, production, and lifecycle maintenance proceed. There are at least four suggested major submittals as follows:\nThe Topology Report should be revised when/if any modification of the HPS' features occur.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Initial submittal prior to the facility's or system's preliminary design review for government approval",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Second submittal after initial immunity testing of MCS installed outside of the low-risk EM barrier is complete",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Third submittal after the HEMP acceptance testing of the HPS is complete",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Fourth submittal after the first HEMP verification test for the HPS is complete, which constitutes the final topology report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Other information sources.",
+          "content": "When other available information sources contain data required by the Topology Report, these sources shall be referenced, rather than duplicated, within the report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUSU-82348.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

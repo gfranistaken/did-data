@@ -1,0 +1,480 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUSU-82340",
+  "slug": "di-nusu-82340",
+  "title": "Acceptance Test Report",
+  "summary": "The Acceptance Test Report documents the results of HEMP-protection subsystem acceptance testing performed under MIL-STD-188-125, including test procedures, data, and analysis demonstrating compliance with pass and fail requirements.",
+  "approval_date": "2021-03-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10235",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "NUSU-2021-002",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acceptance Test Report applies to both parts of military standard MIL-STD-188-125, High-Altitude Electromagnetic Pulse (HEMP) Protection for Ground-Based Facilities Performing Critical, Time-Urgent Missions. This DID applies to fixed facilities in accordance with Part I (MIL-STD-188-125-1A) and to transportable systems in accordance with Part II (MIL-STD-188-125-2). This DID contains the format, content, and intended-use information for the data deliverable resulting from the acceptance-test tasks performed in accordance with section 4.4.2 and Appendices A and B of each part of MIL-STD-188-125, as applicable.\n\nThe purpose of acceptance testing the HEMP-protection subsystem (HPS) is to ensure that specified HEMP performance characteristics have been met. HEMP acceptance tests, conducted near the conclusion of a hardening construction or installation contract, are tests for the purpose of demonstrating that at least minimum performance requirements of the HEMP protection subsystem have been achieved before the HPS is accepted by the Government from the contractor.\n\nThe Acceptance Test Report documents the results of the HPS performance testing, and also describes the test-execution, data recording, analysis, inspection, and reporting procedures that were used by the contractor to assess and document these results. This report includes a discussion of recommended corrective actions, if needed. The report provides the means for the Government to evaluate and certify the HPS' performance results, in that the report demonstrates the HPS compliance with respect to MIL-STD-188-125's acceptance-test pass and fail requirements. The Department of Defense's HEMP-certification authority requires that a documented acceptance test report be submitted as part of a HEMP-certification request package for a facility or system.\n\nIf a portion of the HPS' components has already been acceptance tested by a previous test program, then documentation of those previous tests, including plans, reports, and test data, is attached as an appendix.\n\nData from the report will be applied to subsequent verification test-planning and testing efforts.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions, shall be as specified in the contract. The Acceptance Test Report's classification shall be in accordance with any relevant facility- or system-specific classification guides and also with the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Dr. William Linzey, PhD, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable except for the electronic data file format that is specified in sections 3.3.2 and 3.3.3 below.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Acceptance Test Report shall document the test-execution, data-recording, analysis, inspection, and reporting procedures used to comply with MIL-STD-188-125's section 4.4.2 and Appendices A and B, including:\na. Shielding effectiveness (SE) test procedures per Appendix A\nb. Pulsed current injection (PCI) test procedures per Appendix B\n\nIn addition to the written test report, the data obtained from the testing shall be presented electronically in a comma separated values (CSV) format. The test report shall document instrumentation, calibration, and processing procedures associated to this data. The electronic data format and guidance for users to locate specific data within this format shall be described in the written test report. A short summary of key facts and assumptions in the main text, with large amounts of supporting data in appendices, is encouraged.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The Acceptance Test Report shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, CDRL number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification by a qualified representative of the procuring activity for the test report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary information.",
+          "content": "The Acceptance Test Report shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction, to include:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "General objectives of the acceptance test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "A general description of the HPS' topology to be tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "A statement of any assumptions or limitations associated with the planned acceptance testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "A summary of the acceptance test's pass and fail requirements per MIL-STD-188-125",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "A specific statement of whether or not the HPS passes all requirements, and a summary listing of any requirements that were not passed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Scope.",
+              "content": "A general description of the overall test-requirements matrix that was used to demonstrate the HPS' compliance with MIL-STD-188-125's performance requirements, and an associated listing of the test results. Also, a description of the relative roles of tests, inspections, and analyses shall be provided.\n\nThe following topics shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Synopsis of SE and PCI test procedures performed, and references to detailed procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Pass or failure performance results with respect to all requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Anticipated impact of any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Recommendations to resolve any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Lessons learned for the HPS' hardness and testability.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Methods of demonstration.",
+              "content": "A general description of the procedures that were used to demonstrate the HPS' compliance with each acceptance test performance requirement as listed in section 3.3 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors affecting the acceptance-test procedures, such as: physical-accessibility constraints of the facility's or system's topology, resource limitations, safety and security protocols, and precedent reports.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed information.",
+          "content": "The overall Acceptance Test Report shall include the specific results of the SE and PCI testing, as well as describe in detail the test procedures and the associated test equipment. The Acceptance Test Report shall consist of two portions, one each for the SE and PCI testing (as detailed in Appendices A and B of both Part I and Part II of MIL-STD-188-125). These portions shall be detailed in two separate sections of the overall Acceptance Test Report.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The overall Acceptance Test Report.",
+              "content": "The main portion of the test report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "An identification of the facility or system that was tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "The facility's location, or the location of the system during its testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Identification of the test-team personnel and of the Government witnesses that were present",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "A description of the HPS' topology, to include: drawings showing the locations of all points of entry (POEs) and POE protective devices (PPDs) of each low-risk electromagnetic low-risk (EM) barrier, equipment layouts inside each low-risk EM barrier, cable interconnections external to each low-risk EM barrier, and a description of each HEMP-protection measure",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Descriptions of the data acquisition equipment used for the test, to include: the manufacturer, model, and serial numbers of each equipment item; detailed calibration procedures for the equipment; calibration-traceability documentation; and a layout showing the interconnectivity of the overall data acquisition instrumentation system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Descriptions of the test procedures, including: system, subsystem, and circuit configuration requirements; test configuration diagrams; test point locations and descriptions; and step-by-step test procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Descriptions of methods for measuring noise (instrument inherent and local or ambient)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Descriptions of the models, techniques, and tools that were used for preliminary analyses and predictions, and their application to the specific facility or system to be tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "Descriptions of the methods that were applied to quantify and evaluate any failures of the HPS' performance with respect to all pass and fail criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.10",
+                  "title": "Identification of any deviations from the requirements of MIL-STD-188-125 that occurred, along with an explanation of why these deviations were necessary",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.11",
+                  "title": "Descriptions of the data-management procedures that were used, to include: data quality control procedures, data acceptability criteria, annotation and preservation of data records, and the methods used to compare results to pass and fail criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.12",
+                  "title": "Identification of any safety risks encountered, and descriptions of procedures that were used to mitigate these risks, including any electromagnetic radiation hazards and electrical shock hazards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.13",
+                  "title": "Descriptions of the data-security and physical-security procedures that were applied",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.14",
+                  "title": "A description of the test schedule as it was executed, including a listing of the prioritization of measurements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.15",
+                  "title": "Summary tables of measured quantities, including tables of SE measurements and PCI residuals with calculations and comparisons to pass and fail criteria",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.16",
+                  "title": "Copies of measured test results, including all raw and processed test oscillographic waveform test data in engineering units, with a description of the electronic data format and guidance for users to locate specific data within this format",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.17",
+                  "title": "Findings from investigations into causes of failures, if any; and corrective actions recommended or, if performed, re-test results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.18",
+                  "title": "Descriptions of lessons learned, to include any insights learned during testing that could be applied to improving HPS performance and improving testing methodologies",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.19",
+                  "title": "If applicable, proposed improvements to the Hardness Maintenance and Hardness Surveillance plans (data item description DI-NUSU-####)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.20",
+                  "title": "Test conclusions, including a definitive statement of the hardness of the low-risk EM barrier, based upon the results of the acceptance tests and supporting analyses",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.21",
+                  "title": "References to applicable test plans and procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "The SE portion of the test report.",
+              "content": "This portion of the Acceptance Test Report shall contain the following detailed information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Detailed test procedures in accordance with MIL-STD-188-125 Appendix A's section A.4.7",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Identification, with diagrams, of the locations and orientations of the facility or system under test with respect to each transmit antenna's and receive antenna's position and polarization",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Identification of the measurement-range sensitivities of the receive antennas and data acquisition system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Identification of the equations used to verify the HPS' SE performance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "A table identifying, for each test point location, the SE measurement's compliance (or failure) to meet the SE performance requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "Test calibration and measurement data for each test point in the form of data plots and tables; data shall include the SE performance requirement, dynamic range data, measurement range data (from actual measurements), and the measurement data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.7",
+                  "title": "All data obtained from the testing shall be presented electronically in CSV format; the electronic data format and guidance for users to locate specific data within this formatted file structure shall be described in the written test report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "The PCI portion of the Acceptance Test Report.",
+              "content": "This portion of the test report shall contain the following detailed information.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Detailed test procedures in accordance with MIL-STD-188-125 Appendix B's section B.4.7 and Tables B-II and B-III",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Identification, with diagrams, of the locations of each HPS component that was subjected to PCI injection and an explanation for why these specific points were selected",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Identification of the transfer impedance of the current-measurement probes and measurement range of the end-to-end data acquisition system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "A table listing the PCI drive levels and associated residual-current measurements per test point, thereby identifying the PCI measurement's compliance (or failure) to meet the maximum allowable residual response characteristics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "Measured raw data for each test point in the form of data plots and tables, along with sensor calibrations and instrumentation settings required to convert the data to engineering units",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.6",
+                  "title": "The data obtained from the testing shall be presented electronically in CSV format; the electronic data format and guidance for users to locate specific data within this formatted file structure shall be described in the written Acceptance Test Report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.7",
+                  "title": "All PCI testing performed in the laboratory as opposed to being tested at the facility or system (e.g., the acceptance testing of power filters in the laboratory) shall be noted",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Other information sources.",
+          "content": "When other available information sources contain data required by the Acceptance Test Report, these sources shall be referenced, rather than duplicated, within the test report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUSU-82340.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

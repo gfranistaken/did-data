@@ -1,0 +1,258 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-81405B",
+  "slug": "di-nuor-81405b",
+  "title": "Aircraft Nuclear Safety Analysis Report (NSAR)",
+  "summary": "The Aircraft NSAR is a comprehensive assessment of a nuclear weapon component, assembly, or system's safety design features and operational procedures, integrating associate contractor analyses into one aircraft weapon system nuclear safety certification document.",
+  "approval_date": "2015-02-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9514",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27",
+  "project_number": "NUOR-2015-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Aircraft NSAR is a comprehensive assessment of the safety design features and operational procedures of a nuclear weapon component, assembly, or system. The analyses performed and presented in the Aircraft NSAR detail the weapon system compliance with the Department of Defense (DoD) nuclear weapon system safety standards and Air Force Criteria published in Air Force 91 series Instructions and Manuals. The Aircraft NSAR is the integrating document that ties together all of the other NSAR's performed by associate contractors or subcontractors for their particular/unique sections of a complex aircraft weapons system. The Aircraft NSAR combines in one document an integrated comprehensive nuclear safety analysis for the complete aircraft weapon system. The system Program Office/Single Manager is responsible for the NSAR development but it is typically provided by the lead or prime contractor. The Aircraft NSAR is a primary source of input to the nuclear safety design certification process of weapon systems which ensures maximum safety consistent with operational requirements.\na. This Data Item Description (DID) contains the format and content preparation instructions for data resulting from the documentation and reporting requirements defined in Air Force Instruction (AFI) 63-125, Nuclear Certification Program, and other Air Force documents referenced in this DID.\n(Copies of the AF Instructions are available online at http://www.e-publishing.af.mil/.)\nb. This DID is related to DI-NUOR-81409, Certification Requirements Plan (CRP).\nc. Copies of the Stockpile-to-Target Sequence (STS) can be obtained from: AFNWC/NC, 8500 Gibson Blvd SE, Bldg 20202, Kirtland AFB, NM 87117-5624.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [
+    {
+      "label": "Copies of the AF Instructions are available online at",
+      "url": "http://www.e-publishing.af.mil/"
+    },
+    {
+      "label": "Copies of AF Manuals and Instructions are available online at",
+      "url": "http://www.e-publishing.af.mil/"
+    },
+    {
+      "label": "Copies of DoD documents are available online at",
+      "url": "http://www.dtic.mil/whs/directives/index.html"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Aircraft NSAR shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Aircraft Nuclear Safety Analysis Report (NSAR).",
+      "content": "The NSAR is a comprehensive assessment of the surety design features and operational procedures of a nuclear weapon component, assembly or system. The analyses performed and presented in the NSAR detail the weapon system compliance with the DoD Nuclear Weapon System Surety Standards, nuclear safety design and evaluation requirements as specified in Air Force Manual (AFMAN) 91-118, Safety Design and Evaluation Criteria for Nuclear Weapon Systems, AFMAN 91-119, Safety, AFI 91-107, Design, Evaluation, Troubleshooting, and Maintenance Criteria for Nuclear Weapon Systems and nuclear security requirements as specified in DoDD 5210.41, Security Policy for Protecting Nuclear Weapons, DoD 5210.41-M, Nuclear Weapon Security Manual (U), and AFI 31-101, Integrated Defense (FOUO). The NSAR is a primary source of input to the nuclear certification process of weapon systems which ensures surety consistent with operational requirements, as specified in AFI 91-101, Air Force Nuclear Weapons Surety Program, AFI 91-102, Nuclear Weapon System Safety Studies, Operational Safety Reviews, and Safety Rules, and AFI 91-103, Air Force Nuclear Safety Design Certification Program.\n(Copies of AF Manuals and Instructions are available online at http://www.e-publishing.af.mil/. Copies of DoD documents are available online at http://www.dtic.mil/whs/directives/index.html.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content.",
+      "content": "The content of the Aircraft NSAR shall be as defined below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Aircraft nuclear weapon system overview.",
+          "content": "This section shall include a description of the overall nuclear system, its component parts, and the functional operation of each.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "The aircraft system's avionics nuclear configuration.",
+          "content": "This section shall be divided into multiple subsections:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "Weapons control and monitor functions.",
+              "content": "This subsection describes the initialization for the avionics system at power-up and the initialization procedures for the Stores Management System (SMS) and the Weapon Interface Unit(s) (WIU). The critical functions (authorization, prearming, release or launching, and arming.) shall be described in this subsection as they are implemented from the operator's input to the arrival of the signal (information or power) at the weapon interface. The final description in this subsection is the power down sequence operation from the operator's input to verification that the weapons are in a safe state.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "Avionics description and function.",
+              "content": "This subsection gives a detailed definition of the avionics processors involved in: the control and display of information to the aircrew, the acceptance of operator inputs related to nuclear weapons, and the control and monitor of critical functions. The description shall include both the processor hardware and the avionics processor software in the nuclear weapons deliver subsystems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "Electrical power control and distribution.",
+              "content": "This subsection describes the aircraft's power and control subsystem, how it is routed through individual devices, the command sequences used to turn power on and off to the weapon assemblies (like common strategic rotary launcher or weapons mounted on multiple ejector racks) and individual weapons (both for internal and external aircraft carriage), and the type of power control used in the event of weapon or stores management malfunctions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.4",
+              "title": "On-board aircraft monitor and test systems.",
+              "content": "This subsection describes the operations and level of control over the aircraft's avionics systems, for all on-board test equipment that monitors or directly interfaces to on-board avionics for the purpose of logging equipment failures for maintenance actions or displaying equipment failures or faults to the aircrew.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.5",
+              "title": "Avionics software.",
+              "content": "This subsection describes the detailed functional operation of all processor software configuration items that directly control weapons interface components or process information to or from the aircrew (i.e., controls and displays, power control, and weapon delivery or stores management).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.6",
+              "title": "Fault detection and reporting.",
+              "content": "This subsection specifically relates the compliance of the aircraft's weapon delivery subsystem to the fault conditions which include: uncommanded unlock, uncommanded prearm, uncommanded release, and safe status of a nuclear weapon that cannot be positively determined. This subsection describes the detection of the faults, the conditions for displaying the faults as a nuclear caution and the conditions or methods of displaying them to the aircrew.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.7",
+              "title": "Operational mode control.",
+              "content": "This subsection describes the operational modes that the avionics software has for the delivery of nuclear weapons (i.e., operational modes, simulation of operational modes, operational test launch, and joint test assembly modes).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.8",
+              "title": "Targeting.",
+              "content": "This subsection describes the method of getting target information to the nuclear weapon and the sequence involved in the information transfer for each nuclear weapon type certified for carriage on the aircraft system. Describe how guided weapons (i.e., bombs or cruise missiles) incorporate a successful transfer alignment to assure that the weapon is in alignment at launch, and providing a good guidance signal prior to release.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "Nuclear munitions/suspension and release equipment.",
+          "content": "This section shall describe and analyze the suspension and release equipment employed for nuclear munitions on the aircraft system. Analysis and/or test data shall confirm that the suspension and release equipment is capable of safely controlling the nuclear munitions that will be carried and released from the aircraft system.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.4",
+          "title": "Avionics maintenance.",
+          "content": "This section shall describe the aircraft system's on and off aircraft maintenance concepts including the use of automatic test equipment. Test equipment shall be described in detail sufficient to understand their impact on safe nuclear munitions maintenance as part of the overall nuclear certification of the aircraft. Operational certification procedures shall be described confirming they are sufficient to verify system critical function operability and safety.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "Mechanical and electrical support equipment.",
+          "content": "This section shall describe the mechanical and electrical support equipment that will be used to maintain, repair, load, transport and deliver weapons, and test the aircraft's nuclear weapon system. Each piece of support equipment will be analyzed, in this section, for its particular role in the nuclear weapon delivery system. Applicable nuclear safety certification support documentation shall be referenced for government furnished or standard support equipment utilized with the weapon delivery system.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "Technical orders.",
+          "content": "This section shall describe how aircraft and aircraft peculiar support equipment, technical orders relating to the control, monitoring, delivery, maintenance, handling, movement, loading, and testing of nuclear weapons for the aircraft's weapon delivery system were prepared, validated, verified and certified. The technical orders that have received nuclear safety reviews shall be listed in a table in this section.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.7",
+          "title": "Avionics software analysis.",
+          "content": "This section shall analyze the aircraft system's avionics software (this software is defined in the avionics software subsection of the aircraft system's avionics nuclear configuration defined under 4.2 above of this DID) to insure that the software used to control critical functions (i.e, authorization, prearm, release or launch and arming) of nuclear weapons incorporates the necessary safety requirements. This section shall reference the design requirements documentation that relates to the aircraft's weapon delivery system to define the avionics software that will undergo certification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.8",
+          "title": "Integrated functional analysis.",
+          "content": "This section shall provide an analysis of the design and operation of the aircraft's nuclear weapon delivery system compared to the nuclear safety criteria. The results of the analysis shall determine the effectiveness of nuclear safety provisions and insure that a nuclear weapon is either in a known safe state or returns to a known safe state, in the advent of system failures. The analysis shall include an end-to-end functional analysis that uses worst case problems to verify the weapon system can return the nuclear weapon to a safe state unless an abnormal environment occurs. The analysis shall also cover the critical functions in the weapon delivery system; and the ability of the suspension and release equipment, the ground support equipment, and the on aircraft and off aircraft test equipment to ensure nuclear weapons safety.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.9",
+          "title": "Nuclear safety summary.",
+          "content": "This section shall cover the following areas:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.9.1",
+              "title": "Compliance of the aircraft and its weapon delivery system with the DoD nuclear weapon system safety standards and the specific Air Force nuclear safety design criteria.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.2",
+              "title": "The contribution of system safety features in controlling nuclear critical events during the Stockpile-to-Target Sequence (STS) to comply with the DoD nuclear weapon system safety standards.",
+              "content": "The STS defines the logistic and employment concepts and related detailed physical environments involved in the delivery of a nuclear weapon from the stockpile to the target.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.3",
+              "title": "A summary of implementation techniques used to provide nuclear safety design features.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.4",
+              "title": "A summary of aircraft avionics testing relevant to nuclear safety.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.5",
+              "title": "Concerns, conclusion, and recommendation sections.",
+              "content": "This section shall describe any deviations from published nuclear weapon system safety criteria, mitigation and plans for resolving non-compliance.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.6",
+              "title": "A summary of the aircraft weapon system's safety features.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.9.7",
+              "title": "A critical function matrix which shows the system design features that inhibit the unauthorized or inadvertent initiation of critical functions; a simple X-Y matrix with the STS events on one axis and the nuclear safety events on the other.",
+              "content": "The matrix will define whether the function is implemented in hardware or software or both hardware and software.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-81405B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

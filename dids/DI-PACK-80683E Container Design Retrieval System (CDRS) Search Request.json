@@ -1,0 +1,186 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PACK-80683E",
+  "slug": "di-pack-80683e",
+  "title": "Container Design Retrieval System (CDRS) Search Request",
+  "summary": "The Container Design Retrieval System (CDRS) Search Request is used to identify existing container designs in the Government System that can be adapted for a new use, avoiding costly new designs.",
+  "approval_date": "2022-07-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10329",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "69 (AFLCMC/EZPAA)",
+  "project_number": "PACK-2022-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Container Design Retrieval System (CDRS) Search Request is used to identify container designs already in the Government System which can be adapted for a new use. The CDRS is accessible at URL: https://lts.cce.af.mil/CDRS. Its use precludes the design of new specialized containers when suitable containers exist and has a proven history of substantial cost avoidance.\nThe CDRS is maintained by the Air Force Packaging Technology and Engineering Facility (AFPTEF) at Wright-Patterson AFB, https://www.aflcmc.af.mil/afptef.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID supersedes DI-PACK-80683D.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-PACK-80683D"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "The CDRS is accessible at URL:",
+      "url": "https://lts.cce.af.mil/CDRS"
+    },
+    {
+      "label": "The CDRS is maintained by the Air Force Packaging Technology and Engineering Facility (AFPTEF) at Wright-Patterson AFB,",
+      "url": "https://www.aflcmc.af.mil/afptef"
+    },
+    {
+      "label": "or through the CDRS page at",
+      "url": "https://lts.cce.af.mil/CDRS"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The CDRS Search Request shall be in the contractor's format or a CDRS Search Request Fill-In Format which is available on the AFPTEF website, above, or through the CDRS page at https://lts.cce.af.mil/CDRS. Completed requests shall be submitted by email to: CDRS@us.af.mil. Requestors with government Common Access Cards (CACs) can also submit requests through CDRS.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CDRS Search Request shall include the information below. The information furnished to CDRS shall be as complete as practical. Supplementary sketches or drawings of the item to be packaged shall be included if available.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Requester's name, address, telephone number, and e-mail address.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Date request submitted.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Government agency supported (contractor only).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Government contract number and government contract officer's name, address, telephone number and e-mail address (contractor only).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The nomenclature, part number, and national stock number (NSN) of the item or items to be packaged.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Dimensions of item (length, width, height, or diameter).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Item weight.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Item fragility.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Department of Transportation hazard class or United Nations (UN) number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Container special handling requirements/constraints (handles, lift rings, forklift, pallet jack).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Desired container composition (material).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Desired shock mitigation system (foam, wire rope isolators, etc.).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Desired opening style.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Items per container.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Number of containers required.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PACK-80683E.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-81408B",
+  "slug": "di-nuor-81408b",
+  "title": "Aircraft Monitor and Control (AMAC) Preliminary Design Report (PDR) and Final Design Approval Report (FDAR)",
+  "summary": "The PDR and FDAR document the AMAC design, providing format and content preparation instructions for tasks described by MIL-STD-1822 related to aircraft avionics nuclear weapon interfaces.",
+  "approval_date": "2015-02-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9516",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27",
+  "project_number": "NUOR-2015-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The PDR and FDAR document the AMAC design.\na. This data item description (DID) contains the format and content preparation instructions for the tasks described by MIL-STD-1822.\nb. This DID is related to and contains aspects of the following documents: Specification Standard No. SYS 1001, System 1 Basic Interface Specifications, Specification Standard No. SYS 2001, System 2 Basic Interface Specifications, and DI-NUOR-81409 (Certification Requirements Plan (CRP), which defines the preparation task and submittal schedule for the PDR and FDAR. SYS 1001 and SYS 2001 are published by the AFNWC.\n(Copies of the DID and MIL-STD-1822 are available online at http://assist.dla.mil/quicksearch/ or from the Standardization Document Order Desk, 700 Robbins Ave., Bldg 4D, Philadelphia PA 19111-5094 and copies of the AMAC POG System Specifications are available from the AFNWC, 8601 Frost Ave SE, Building 20203, Kirtland AFB, NM 87117-5624.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The PDR and FDAR will have different but similar content; the PDR will be a preliminary version of the FDAR. The PDR must contain a report of hardware and software/firmware information, which must describe and define the design concept to the extent that the components, as well as the operational capability of the system, are clearly understood. The PDR shall be completed prior to finalization of all design details and shall be completed by a time sufficiently in advance of final design submittal as to allow for design changes. The FDAR must contain a complete description and analysis for the AMAC system as installed on the operational aircraft. The detailed analysis shall include hardware and software/firmware designs. The analysis shall demonstrate compliance with the appropriate AMAC system interface specification, the Weapon Specific Addendum, and the Platform Store Interface Control document criteria. All FDAR content is kept up-to-date as changes are made to the AMAC hardware, software, and firmware, throughout the life of the aircraft system, as long as it is in the inventory. Definitions and analysis of changes to the AMAC hardware, firmware, and software will be provided as an addendum to the existing FDAR. Updates to software/firmware will be identified and detailed sufficiently as to present a clear understanding of the impacts due to the update. This addendum will be submitted to the AFNWC and Sandia National Laboratory for review and approval. The PDR and FDAR shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "The introductory section shall describe the requirement(s) that the PDR and FDAR will satisfy and the purpose and scope for the PDR and FDAR (i.e., any limitations on the description or analysis of the AMAC system). The introduction should briefly describe the contents of each section, addendum and appendix.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Applicable documents.",
+          "content": "This section shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Applicability.",
+              "content": "This subsection defines the relevancy of the documents listed in the applicable documents section and the hierarchy of the applicable documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Government documents.",
+              "content": "This subsection defines the applicable government reference documents that are pertinent to the descriptions and analyses in the PDR and FDAR.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Contractor's documentation.",
+              "content": "This subsection defines the contractor's reference documentation that is applicable to the descriptions and analyses presented in the PDR and FDAR.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "AMAC configuration.",
+          "content": "This section shall describe the aircraft hardware and processor software incorporated in the AMAC system. This section shall contain the information defined in the following paragraphs:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Overview.",
+              "content": "This subsection gives a functional overview of the complete AMAC system. This subsection briefly describes the role of each component in the AMAC system and the relative dedication of the component's function to the AMAC system function. Special points to consider in this subsection are: whether AMAC control in this aircraft is hardwired, whether the AMAC function is distributed throughout the avionics system or not, and the method of communications between all of the various components of the AMAC system (i.e., the message protocol involved).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Aircraft avionics nuclear configuration.",
+              "content": "This subsection describes the nuclear configuration of the aircraft's avionic system. The nuclear configuration consists of the hardware and processor software/firmware that directly or indirectly controls the monitor in which the nuclear weapon interfaces. The components of the avionics system that are defined as the nuclear configuration must be subjected to the controls necessary to maintain nuclear weapon compatibility throughout the service life of the aircraft system. This subsection describes as part of the nuclear configuration any nuclear input devices and displays the aircrew uses to monitor the status of nuclear weapons or control nuclear weapons. This subsection includes a detailed text description of the function of each component of the nuclear configuration with figures and diagrams used to clarify the text portion, but not in lieu of a text description.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "System hardware configuration.",
+              "content": "This subsection describes the avionics hardware that constitutes the AMAC system of the aircraft. It describes the avionics hardware in the aircraft's navigation subsystem, weapons delivery subsystem, controls and displays subsystems, and the stores management subsystems as they relate to the AMAC system function. This subsection also describes the aircraft's avionics processors and their role in the AMAC system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "System software/firmware configuration.",
+              "content": "This subsection describes the avionics flight software/firmware that participates in the tasks of controlling and monitoring the nuclear weapon interfaces. If the avionics flight software/firmware is stored on a nonvolatile media and then loaded into the avionics processor for operation, this subsection describes the transfer process and the initialization of the avionics processors until the avionics system is fully functional. This subsection describes the avionics system executive software/firmware, the weapon delivery system software/firmware, and the controls and displays software/firmware as they relate to the AMAC system function. Isolation of the AMAC functions will also be described.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "AMAC design analysis.",
+          "content": "This section shall contain the information described in paragraphs 3.4.1 through 3.4.4 below. The first and second subsections shall use the system hardware and software/firmware configurations to define where the appropriate AMAC requirements are satisfied and where they are not. The third and fourth subsection shall take a systems approach in the analysis of the avionic system to follow all design constraints in monitoring and controlling nuclear weapons. For the purposes of this DID, a system approach is defined as tracing each signal that goes into or comes out of the nuclear weapons connector through each hardware and software/firmware component of the AMAC functions that are integrated into the avionics system.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "System hardware design analysis.",
+              "content": "This subsection shall describe the hardware interaction and the sequence of events that take place from the time the aircrew member initiates an operator input to the controls and display subsystem of the aircraft's avionics, through the hardware interfaces, until that operator's input results in a signal which appears at the nuclear weapon interface. This design analysis shall cover all of the hardware components as they relate to each system interface requirement as a group, if the AMAC functions are distributed throughout various avionic subsystems. To demonstrate the ability of the AMAC system to meet the requirements of electrical loading with respect to one nuclear weapon interface only, in cases where the aircraft has a multi-station capability, the analysis of those weapon disconnect stations that could be used at the same time as the station being analyzed will also have loads applied. To demonstrate compliance, it is permissible to use maximum DC bus loadings that encompass future increases in aircraft bus loading in lieu of additional electrical station loads on multi-station nuclear weapon capable aircraft.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "System software/firmware design analysis.",
+              "content": "This subsection shall provide an analysis for the design of the avionics software/firmware as it relates to the AMAC of nuclear weapons. It shall also provide an analysis of the implementation of the authorization, safing, prearming, launch, and release signals in the avionic systems software/firmware (this includes avionic software executive program). The analysis shall describe how the implementation meets or fails the design criteria of SYS 1001 (System 1) or SYS 2001 (System 2) Specification. The analysis shall provide any underlying rationale or criteria used, if the analysis is used as the basis to recommend certification of software/firmware. A description of the software validation and qualification processes shall be provided. Compliance shall be shown by a description of hardware/software/firmware that controls the nuclear weapon interface.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "System monitor design analysis.",
+              "content": "This analysis shall describe the nuclear weapon monitor function as it exists in the aircraft's avionics system. The analysis shall show the software/firmware and hardware signal path from the aircrew members' input into the AMAC system to the response of that input at the weapons interface. The analysis shall also show the software/firmware signal path in the context of the hardware and physical interconnections that the software/firmware signals sequence through and the actions that the system hardware takes in response to those software commands.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "System control design analysis.",
+              "content": "This subsection shall describe the nuclear weapon control function as it exists in the aircrafts avionics system. The analysis shall show the software/firmware signal path in the context of the hardware and physical interconnections that the software/firmware signals sequence through and the actions that the system hardware takes in response to those software/firmware commands. This subsection shall show the software/firmware and hardware signal path from the aircrew members input into the AMAC system to the response of the input at the weapon's interface.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Aircraft suspension and release equipment.",
+          "content": "This section shall describe and analyze the suspension and release equipment used on the aircraft and their relationship to the AMAC function. The requirements of this section pertain to internal aircraft suspension and release systems, like rotary launchers, and to the external carriage of nuclear munitions on pylons. The hardware and software/firmware analysis of the suspension and release equipment shall be the same as section 3.4.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Test equipment.",
+          "content": "This section shall describe the test equipment used in the testing of the nuclear configuration components of the avionics system, weapon preload testing, and other nuclear weapon interface testing. This section shall also describe the configuration (hardware and software/firmware) of automatic testers used in the avionics testing, the type of testing, and the pass or fail criteria of the unit when testing nuclear configured line replaceable units. This section shall also describe the steps taken to prevent degradation of nuclear capability of the avionics when using testers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Appendices or addenda.",
+          "content": "To keep the main body of the PDR and FDAR as clear as possible appendices or addenda shall be used to present supporting design material. Information contained in existing documents shall be referenced rather than repeated. The following support design material is required:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Avionics system (diagrams and text).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Interface definition for the weapons interface unit(s) and the interface specifications for all interfaces that the software signal path analysis defines.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Timelines (timing sequences and timing diagrams as they relate to the AMAC functions release of the nuclear weapons).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Maintenance logic diagrams (for the key components of the nuclear weapon delivery system).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Nuclear weapon delivery system line replaceable unit schematics.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Software/firmware compatibility (listing Computer Program Identification Numbers (CPINs) for the avionics flight software/firmware versions currently in use at operational bases).",
+              "content": "The following items should also be included.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.6.1",
+                  "title": "Software/firmware signal path definition diagrams.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.6.2",
+                  "title": "An analysis of the AMAC compatibility of each software/firmware package listed in the CPIN list.",
+                  "content": "This shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.6.2.1",
+                      "title": "Software/firmware problems and analysis including technical order work-arounds, as appropriate.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.6.2.2",
+                      "title": "A review and analysis for all software/firmware patches and changes to the source code since the last recompile.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.6.2.3",
+                      "title": "A summary of software/firmware verification requirements, test requirements, test results and any test limitations.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.7.6.3",
+                  "title": "A description of all software/firmware documentation pertinent to the current avionics flight software/firmware packages in use at operational bases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-81408B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

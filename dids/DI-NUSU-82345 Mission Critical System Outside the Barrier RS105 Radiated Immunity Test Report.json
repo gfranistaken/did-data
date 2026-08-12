@@ -1,0 +1,393 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUSU-82345",
+  "slug": "di-nusu-82345",
+  "title": "Mission Critical System Outside the Barrier RS105 Radiated Immunity Test Report",
+  "summary": "The RS105 Test Report documents the test-execution, data-recording, analysis, inspection, and reporting procedures used to assess and certify an MCS's HEMP-protection performance and compliance with MIL-STD-461 and MIL-STD-188-125.",
+  "approval_date": "2021-03-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10240",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "DS",
+  "project_number": "NUSU-2021-007",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The RS105 Test Report applies to both parts of military standard MIL-STD-188-125, High-Altitude Electromagnetic Pulse (HEMP) Protection for Ground-Based Facilities Performing Critical, Time-Urgent Missions. This DID applies to fixed facilities in accordance with Part I (MIL-STD-188-125-1A) and to transportable systems in accordance with Part II (MIL-STD-188-125-2). This DID contains the format, content, and intended-use information for the data deliverable resulting from the radiated immunity RS105 test tasks described in section 5.8.1 of each part of MIL-STD-188-125, as applicable.\nThe purpose of RS105 testing the first article of every MCS installed outside the HEMP-protection subsystem's (HPS') low-risk electromagnetic (EM) barrier is to ensure that the MCS, and any associated special protective measures (SPMs), will provide sufficient hardness to HEMP's radiated-threat environment. The RS105 test procedures, as codified by MIL-STD-461, provide some of the baseline information for assuring that the given MCS, with any SPMs, is adequate to pass HEMP-verification testing.\nThe RS105 Test Report documents the test-execution, data-recording, analysis, inspection, and reporting procedures that were used by the contractor to assess and document the results of the MCS' performance. For each individual MCS that was immunity tested per MIL-STD-461 RS105, an individual test report shall be prepared. The report provides the means for the Government to evaluate and certify the HEMP-protection performance results of the MCS and any associated SPMs, in that the report demonstrates compliance with respect to MIL-STD-461's pass and fail requirements and MIL-STD-188-125's RS105-test requirements.\nThe report includes discussion of recommended corrective actions, if needed.\nIf the MCS has already been RS105 tested within seven years prior to its installation at the facility or integration with the system, then documentation of previous test plans, reports, and test data, is attached as an appendix.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions, shall be as specified in the contract. The RS105 Test Report's classification shall be in accordance with any relevant facility- or system-specific classification guides and also the Defense Threat Reduction Agency (DTRA) Security Classification Guide for DoD Electromagnetic Pulse (EMP) Programs and Activities. (DTRA's security classification guide is available by mail request to ATTN: RD-NTSA, Dr. William Linzey, PhD, Defense Threat Reduction Agency, 8725 John J. Kingman Road, MSC 6201, Fort Belvoir, VA 22060-6201.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable (comma-separated values (CSV) is preferred data format).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The RS105 Test Report shall document the test-execution, data-recording, analysis, inspection, and reporting procedures that were used by the contractor to perform the RS105 testing on MCS in accordance with MIL-STD-461 and MIL-STD-188-125.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Administrative data.",
+          "content": "The RS105 Test Report shall contain an administrative section covering the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contract number, CDRL number, and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Authentication and certification by a qualified representative of the procuring activity for the test report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary information.",
+          "content": "The RS105 Test Report shall summarize the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Introduction.",
+              "content": "to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "General objectives of the RS105 test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "A general description of the MCS and associated SPMs that were tested",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "A statement of any assumptions or limitations associated with the RS105 testing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "A summary of the RS105 test's pass and fail requirements per MIL-STD-461",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "A specific statement whether or not the MCS, with any associated SPMs, passed all requirements, and a summary listing of any requirements that were not passed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Scope.",
+              "content": "A general description of the overall test-requirements matrix that was used to demonstrate the MCS compliance with MIL-STD-188-125's performance requirements, and an associated listing of the test results. Also, a description of the relative roles of tests, inspections, and analyses shall be provided.\nThe following topics shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Synopsis of the RS105 test procedures performed (as applicable), and references to detailed procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Pass or failure performance results with respect to all requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Anticipated impact of any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Recommendations to resolve any failures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Lessons learned for the MCS's hardness and testability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Methods of demonstration.",
+              "content": "A general description of the procedures that were used to demonstrate the MCS's and associated SPMs' compliance with each RS105 test performance requirement as listed in section 3.3 below.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Engineering factors.",
+              "content": "Any important engineering factors that affected the test procedures, such as physical-accessibility constraints of the system's topology, resource limitations, safety and security protocols, and precedent reports.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed information.",
+          "content": "For each MCS being RS105 tested, a single test report shall be prepared. The test report shall contain the following detailed information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "An identification of the MCS that was tested; including photographs, figures, or diagrams; and including serial numbers, version of software used (if any), and calibration status and due date (if applicable)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "The location of where the MCS was tested and the testing dates",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Identification of the test-team personnel and of the Government witnesses that were present",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "A description, with diagrams, showing for the MCS locations of all points of entry (POEs), external cable interconnections, and a description of installed HEMP or other electromagnetic protection measures, including SPMs (if any)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Descriptions of the RS105 simulator and associated data acquisition equipment, to include: the manufacturer, model, and serial numbers of each equipment item; detailed calibration procedures for the equipment; and calibration-traceability documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Descriptions of the test procedures, including: system, subsystem, and circuit configuration requirements; test configuration diagrams; test point locations and descriptions; and step-by-step test procedures; and the approach to calculating norms-based design margins as required by MIL-STD-461",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Descriptions of methods for measuring noise (instrumental and local or ambient)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "A description of models, techniques, and tools used for preliminary analyses and predictions, and their application to the specific facility, system or equipment to be tested",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "A description of the methods that were applied to quantify and evaluate any failures of the MCS, and any associated SPMs, performance with respect to all pass and fail criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.10",
+              "title": "Identification of the pass and fail criteria, and of any deviations from the requirements of MIL-STD-461 that occurred, along with an explanation of why these deviations were necessary",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.11",
+              "title": "Descriptions of the data-management procedures that were used, to include: data quality control procedures, data acceptability criteria, annotation and preservation of data records, and the methods to compare results to pass and fail criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.12",
+              "title": "Identification of any safety risks encountered, and descriptions of procedures that were used to mitigate these risks, including any electromagnetic radiation hazards and electrical shock hazards",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.13",
+              "title": "Descriptions of the data-security and physical-security procedures that were applied",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.14",
+              "title": "A description of the test schedule as it was executed, including a listing of the prioritization of measurements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.15",
+              "title": "Photographs and/or diagrams of the actual test set up, with identification of subsystems and hardware and a distance scale to allow pertinent horizontal/vertical/lateral measurements to be extracted",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.16",
+              "title": "A description of the MCS's operating conditions that were set during the RS105 testing; e.g., power-on/off, and any other equipment/cables connected to the MCS, and comparisons of data being transferred and processed during testing (e.g., bit error checks, ping tests)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.17",
+              "title": "A description of the methods that were used to simulate the operational performance of the MCS during the testing if the actual MCS operation during the testing was impractical",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.18",
+              "title": "Descriptions of how the raw and processed test data were recorded, and the electronic data format used to store the data (CSV format is preferred)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.19",
+              "title": "Summary tables of measured quantities, with calculations and comparisons to pass and fail criteria, depicting any associated onsets of MCS upset or damage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.20",
+              "title": "Detailed presentation of data, as specified in the \"data presentation\" sections of the test procedure for RS105 in MIL-STD-461",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.21",
+              "title": "Copies of measured test results, including all raw and processed oscillographic waveform test data in engineering units, with a description of the electronic data format and guidance for users to locate specific data within this format (CSV format is preferred)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.22",
+              "title": "Findings from investigations into causes of failures, if any; and corrective actions recommended or, if performed, their re-test results",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.23",
+              "title": "A discussion of the uncertainties involved with the test procedure and measured quantities and any issues regarding the reproducibility of test results",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.24",
+              "title": "Descriptions of lessons learned, to include any insights learned during testing that could be applied to improving HPS performance and improving testing methodologies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.25",
+              "title": "If applicable, proposed updates to the Hardness Maintenance and Hardness Surveillance plans (data item description DI-NUSU-####)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.26",
+              "title": "Test conclusions, including a definitive statement of the hardness of the MCS to the RS105 radiated environment, based upon the results of the complete battery of RS105 tests and the supporting analyses",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.27",
+              "title": "References to applicable test plans and procedures",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUSU-82345.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

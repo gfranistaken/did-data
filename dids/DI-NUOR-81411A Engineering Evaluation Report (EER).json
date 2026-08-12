@@ -1,0 +1,119 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-81411A",
+  "slug": "di-nuor-81411a",
+  "title": "Engineering Evaluation Report (EER)",
+  "summary": "The Engineering Evaluation Report documents engineering evaluations supporting nuclear certification recommendations when a Nuclear Surety Analysis Report is neither required nor appropriate.",
+  "approval_date": "2013-02-01",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9328",
+  "limitation": "",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27 (AFNWC)",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The EER supports nuclear certification recommendations where a Nuclear Surety Analysis Report (NSAR), is neither required nor appropriate. Development or modifications to existing systems, subsystems, components, support equipment or test equipment which are not accomplished in conjunction with the development of a nuclear weapons system require an engineering evaluation by the Air Force. The analyses and tests which are conducted under this standard shall be documented in an EER for the specific type of equipment being developed or modified. The EER shall define the nuclear weapon system configuration, present system overview, contain an integrated functional analysis, and present a nuclear safety analysis summary to support the recommendation for nuclear certification.\na. Deliverable data identified on the DD Form 1423 shall be prepared in accordance with instructions specified in this Data Item Description (DID). Examples include modifications to existing certified equipment, or systems which either do not adversely impact the original design or are non-complex to the extent that a detailed NSAR is not warranted. This report contains sufficient detail to justify the recommendation made and contains design compliance data.\nb. This DID is related to DI-NUOR-81405, Nuclear Surety Analysis Report (NSAR), and DI-NUOR-81409, Certification Requirements Plan (CRP).\n(Copies of the DIDs are available online at https://assist.dla.mil/quicksearch/ or from the Standardization Document Order Desk, 700 Robbins Ave., Bldg 4D, Philadelphia PA 19111-5094.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81405",
+    "DI-NUOR-81409"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of this report shall be defined as below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Nuclear weapon system overview.",
+          "content": "This section shall describe the Nuclear Weapon System (NWS), subsystem, test and support equipment, its component parts, and the functional operation of the NWS. (This description shall be referenced to baseline documentation.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Nuclear weapon system nuclear configuration (for aircraft systems only).",
+          "content": "This section shall define the implementation of the monitor and control functions of the NWS. The NWS nuclear configuration shall highlight the following areas:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Electrical power control and the distribution of electrical power throughout the NWS.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "The computer and processor hardware, software/firmware, and the role(s) each play in the NWS towards the control and monitor function.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "The detection of critical faults and the reporting of critical faults.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Nuclear certification analyses.",
+          "content": "This section shall analyze the NWS design and its operation. The result of the analysis shall demonstrate the effectiveness of the NWS design to support the recommendation for nuclear certification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "EER nuclear safety summary.",
+          "content": "This section shall summarize the results of the previous analysis section and other nuclear surety analyses that are pertinent to the certification of the NWS. The nuclear safety summary shall contain the necessary information to support the analyses supplied in the previous section and recommendations for nuclear certification of the NWS. This section shall also define the known deficiencies of the NWS as it compares to the specified criteria.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-81411A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

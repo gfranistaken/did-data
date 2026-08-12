@@ -1,0 +1,143 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-81888B",
+  "slug": "di-nuor-81888b",
+  "title": "Nuclear Certification Impact Statement (NCIS)",
+  "summary": "The NCIS initiates the nuclear certification process for a new or changed weapon system, equipment, software, or procedure and provides the Program Manager's evaluation of potential nuclear certification impact.",
+  "approval_date": "2018-09-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9981",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27",
+  "project_number": "NUOR-2018-001",
+  "applicable_forms": "Nuclear Certification Impact Statement (NCIS) Form",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The NCIS initiates the nuclear certification process in accordance with Air Force Instruction (AFI) 63-125, Nuclear Certification Program. The NCIS advises AFNWC/NTS that a new weapon system or a change to an existing weapon system, equipment item, software or procedure needs to be evaluated for its impact to the nuclear certification status. The NCIS provides a functional description of the proposed new system or modification and includes the Program Manager's (PM's) evaluation of its potential for nuclear certification impact. If the certification process owners determine the NCIS is insufficient, the process can be delayed.\nThis Data Item Description (DID) contains the format, content and intended use information for the data deliverable resulting from the work task described in the solicitation and contract. This DID is related to DI-NUOR-81409, Certification Requirements Plan, AFI 63-125, Nuclear Certification Program, AFI 91-103, Air Force Nuclear Safety Design Certification Program, Air Force Manual (AFMAN) 91-118, Safety Design and Evaluation Criteria for Nuclear Weapon Systems, AFMAN 91-119, Safety Design and Evaluation Criteria for Nuclear Weapon Systems Software, MIL-STD-1822, Nuclear Compatibility Certification of Nuclear Weapon Systems, Subsystems and Support Equipment, and the NCIS Coordination Form available from AFNWC/NTS.\n(Copies of AFIs and AFMANs are available online at http://www.e-publishing.af.mil/. Copies of the NCIS Form can be obtained from: AFNWC/NTS, 1553 Wyoming Blvd. SE, and Bldg. 20332S, Kirtland AFB, NM 87117-5624 or via e-mail to: AFNWC/NTSC Workflow.)\nThis DID supersedes DI-NUOR-81888A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-NUOR-81888A"
+  ],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [
+    {
+      "label": "Copies of AFIs and AFMANs are available online at",
+      "url": "http://www.e-publishing.af.mil/"
+    },
+    {
+      "label": "Copies of the AFI and AFMANs are available online at",
+      "url": "http://www.e-publishing.af.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation and contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The NCIS Form provided by AFNWC/NTS shall be used.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The NCIS serves as the source document for determining the impact the program effort has on nuclear certification. It is important that the NCIS address the new acquisition or modification effort in enough detail to allow the process owners to effectively evaluate and substantiate the recommended certification approach.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "NCIS Form.",
+          "content": "To aid with the understanding of the nuclear certification impact, supplementary information can be attached to the NCIS Form. The NCIS Form provides sections for and shall include the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Section I",
+              "content": "Instructions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Section II",
+              "content": "New item or Modification to currently nuclear certified item. Administrative update to Master Nuclear Certification Listing (MNCL) or Nuclear Compatibility Certification Statement (NCCS).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Section III",
+              "content": "System(s) that are affected. Hardware/Software affected. Tech Orders (TOs) affected.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Signature Block",
+              "content": "Submitter's name. Nuclear Certification Manager's (NCM) name. System PM's name.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Section IV",
+              "content": "Description (a functional description of the project with enough information in sufficient detail for the nuclear certification process owners to determine whether nuclear certification is impacted and what actions are required to achieve nuclear certification).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Section V",
+              "content": "System PM Certification Recommendation. The certification recommendation will include the PM's evaluation of potential nuclear certification impact to compatibility certification (reference MIL-STD-1822B), published TOs, published Weapon System Safety Rules (WSSRs) and nuclear safety design criteria (established in AFI 91-107, Design, Evaluation, Troubleshooting, and Maintenance Criteria for Nuclear Weapon Systems; AFMAN 91-118, Safety, Design and Evaluation Criteria for Nuclear Weapon Systems; AFMAN 91-119, Safety Design and Evaluation Criteria for Nuclear Weapon Systems Software). Additionally, the NCIS will address potential operational certification impacts (i.e., task qualification training, initial nuclear surety inspection, nuclear surety training, or Personnel Reliability Assurance Program (PRAP)). (Copies of the AFI and AFMANs are available online at http://www.e-publishing.af.mil/.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "NCIS Form Continuation Sheet",
+              "content": "Provided by AFNWC/NTS to facilitate inclusion of additional information, if needed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Attachments",
+              "content": "Include any additional information deemed appropriate.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-81888B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

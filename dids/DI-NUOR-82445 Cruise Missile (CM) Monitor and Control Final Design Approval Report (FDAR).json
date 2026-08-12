@@ -1,0 +1,289 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-NUOR-82445",
+  "slug": "di-nuor-82445",
+  "title": "Cruise Missile (CM) Monitor and Control Final Design Approval Report (FDAR)",
+  "summary": "The CM FDAR defines the electrical design of the Cruise Missile (CM) in relation to the nuclear warhead it carries, submitted to AFNWC/NTS to document and control changes throughout the life of the weapon system.",
+  "approval_date": "2024-05-13",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10478",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "27",
+  "project_number": "NUOR-2023-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The CM FDAR are documents that define the electrical design of the CM in relation to the nuclear warhead it carries. The CM FDAR is submitted to AFNWC/NTS to provide a means to document and control changes throughout the life of the CM and nuclear warhead Weapon System.\na. This Data Item Description (DID) contains the format and content preparation instructions for the tasks described by MIL-STD-1822, Nuclear Compatibility Certification of Nuclear Weapon Systems, Subsystems and Support Equipment.\nb. This DID is related to and contains aspects of the following documents: Specification Standard No. SYS 2001, System 2 Basic Interface Specifications, and DI-NUOR-81409 (Certification Requirements Plan (CRP)), which defines the preparation task and submittal schedule for the FDAR. SYS 2001 is published by the AFNWC.\n(Copies of the DID and MIL-STD-1822 are available online at https://quicksearch.dla.mil, and copies of the AMAC POG System Specifications are available from the AFNWC, 8601 Frost Ave SE, Building 20203, Kirtland AFB, NM 87117-5624.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-NUOR-81409"
+  ],
+  "references": [
+    {
+      "label": "Copies of the DID and MIL-STD-1822 are available online at",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CM FDAR must contain a report of hardware and software/firmware information, which must describe and define the design concept to the extent that the components, as well as the operational capability of the system, are clearly understood. The CM FDAR must contain a complete description and analysis for the CM and nuclear warhead weapon system as installed on the operational aircraft. The detailed analysis shall include hardware and software/firmware designs. The analysis shall demonstrate compliance with the appropriate AMAC system interface specification, the Platform to Store Interface Control Document, the Weapon Specific Addendum, and the Missile to Warhead Interface Control Document criteria.\nDefinitions and analysis of changes to the CM hardware, firmware, and software will be provided as an addendum to the existing CM FDAR. Updates to software/firmware will be identified and detailed sufficiently as to present a clear understanding of the impacts due to the update. This addendum will be submitted to the AFNWC/NTS for review and approval. The CM FDAR shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "The introductory section shall describe the requirement(s) that the CM FDAR will satisfy, and the purpose and scope for the CM FDAR (i.e., any limitations on the description or analysis of the CM and nuclear warhead weapon system). The introduction shall briefly describe the contents of each section, addendum and appendix.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Applicable documents.",
+          "content": "This section shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Applicability.",
+              "content": "This subsection defines the relevancy of the documents listed in the applicable documents section and the hierarchy of the applicable documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Government documents.",
+              "content": "This subsection defines the applicable government reference documents that are pertinent to the descriptions and analyses in the CM FDAR.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Contractor's documentation.",
+              "content": "This subsection defines the contractor's reference documentation that is applicable to the descriptions and analyses presented in the CM FDAR.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "CM configuration.",
+          "content": "This section shall describe the CM hardware and processor software. This section shall contain the information defined in the following paragraphs:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Overview.",
+              "content": "This subsection gives a functional overview of the complete CM system. This subsection briefly describes the role of each component in the CM and the relative dedication of the component's function to the aircraft and nuclear warhead.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "CM configuration.",
+              "content": "This subsection describes the configuration of the CM system as it interfaces with the aircraft and nuclear warhead. The configuration consists of the hardware and processor software/firmware that directly or indirectly controls and monitors the nuclear warhead interface. The components of the system that are defined must be subjected to the controls necessary to maintain aircraft and nuclear warhead compatibility throughout the service life of the CM system. This subsection includes a detailed text description of the function of each component of the CM configuration with figures and diagrams used to clarify the text portion, but not in lieu of a text description.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "System hardware/software/firmware configuration.",
+              "content": "This subsection describes the CM hardware that constitutes the interface between the aircraft and the nuclear warhead. This includes a subsection that describes the CM software/firmware that participates in the tasks of controlling and monitoring the nuclear warhead interface. This includes multiplex bus topologies (where applicable) detailing cable lengths, bus controller circuitry, hub/sub-hub architectures, electrostatic discharge circuitry, bus terminators, and cable characteristics (impedance) including part numbers and manufacturers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "System Power Subsystem.",
+              "content": "This subsection describes the CM hardware that is responsible for providing power to the warhead interface. This includes generators, batteries, transformers, detailing cable length, cable characteristics (impedance), part numbers and manufacturers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Navigation Subsystem.",
+              "content": "This subsection describes the CM hardware that is responsible for navigation. This includes inertial, radar, and flight control elements description, part numbers, and manufacturers.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "CM design analysis.",
+          "content": "This section shall describe how the requirements of the Missile to Warhead Interface Control Document were met.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "System hardware design analysis.",
+              "content": "This subsection shall describe the hardware interaction and the sequence of events across the mission store interface (MSI) and CM to warhead interface. To demonstrate compliance, provide DC steady state analyses of the voltage drop present at discrete lines of the missile/warhead interface and dependence on aircraft/missile power system. Provide analog characteristics such as attenuation and distortion of the digital (e.g., foundation bus and MIL-STD-1553) waveforms, if any, at the missile/warhead interface as well.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "System software/firmware design analysis.",
+              "content": "This subsection shall provide an analysis for the design of the avionics software/firmware as it relates to communication across the MSI and CM to nuclear warhead interface. The analysis shall provide any underlying rationale or criteria used, if the analysis is used as the basis to recommend certification of software/firmware. Compliance shall be shown by a description of hardware/software/firmware that controls the nuclear warhead interface.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "System monitor design analysis.",
+              "content": "This analysis shall describe the nuclear warhead monitor function as it exists through the CM to the aircraft interface. The analysis shall show the software/firmware and hardware signal path from across the MSI to the CM system to the response of that input at the nuclear warhead interface. The analysis shall also show the software/firmware signal path in the context of the hardware and physical interconnections that the software/firmware signals sequence through and the actions that the system hardware takes in response to those software commands.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "System control design analysis.",
+              "content": "This subsection shall describe the nuclear warhead control function as it exists through the CM to the aircraft interface. The analysis shall show the software/firmware signal path in the context of the hardware and physical interconnections that the software/firmware signals sequence through and the actions that the system hardware takes in response to those software/firmware commands. This subsection shall show the software/firmware and hardware signal path from across the MSI to the CM system to the response of the input at the nuclear warhead interface.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Test equipment.",
+          "content": "This section shall describe the test equipment used in the testing of the CM components of the avionics system, warhead and CM preload testing, and other nuclear warhead interface testing. This section shall also describe the configuration (hardware and software/firmware) of automatic testers used in the avionics testing, the type of testing, and the pass or fail criteria of the unit when testing nuclear configured line replaceable units. This section shall also describe the steps taken to prevent degradation of nuclear capability of the avionics when using testers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Appendices or addenda.",
+          "content": "To keep the main body of the CM FDAR as clear as possible appendices or addenda shall be used to present supporting design material. Information contained in existing documents shall be referenced rather than repeated. The following support design material is required:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Avionics system (diagrams and text).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Interface definition for the weapons interface unit(s) and the interface specifications for all interfaces that the software signal path analysis defines.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Timing sequences and timing diagrams as they relate to the flight of the CM from launch to point of detonation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Maintenance logic diagrams for the key components of the CM system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "CM system line replaceable unit schematics.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Software/firmware compatibility (including Computer Program Identification Numbers (CPINs) for the flight software/firmware versions).",
+              "content": "The following items shall also be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.6.1",
+                  "title": "Software/firmware signal path definition diagrams.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.2",
+                  "title": "An analysis of the compatibility of each software/firmware package listed in the CPIN list.",
+                  "content": "This shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.2.1",
+                      "title": "Software/firmware problems and analysis including Technical Order (TO) workarounds, as appropriate.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.2.2",
+                      "title": "A review and analysis for all software/firmware patches and changes to the source code since the last recompile.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.2.3",
+                      "title": "A summary of software/firmware verification requirements, test requirements, test results and any test limitations.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.6.3",
+                  "title": "A description of all software/firmware documentation pertinent to the current avionics flight software/firmware packages in use at operational bases.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-NUOR-82445.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-81708",
+  "slug": "di-qcic-81708",
+  "title": "Non-Standard Part Qualification/Quality Conformance Test Plan",
+  "summary": "The Non-Standard Part Qualification/Quality Conformance Test Plan documents the qualification and quality conformance procedure, including tests, order of testing, sample sizes, and other pertinent data for non-standard parts.",
+  "approval_date": "2006-11-24",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "7662",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "NS/I5231",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The purpose of the plan is to document the qualification and quality conformance procedure, including tests to be performed, order of testing, sample sizes, and other pertinent data relating to the qualification of non-standard parts.\n\nThis Data Item Description (DID) contains the format and content preparation instructions for the Non-Standard Part Qualification/Quality Conformance Test Plan.\n\nThis DID shall be used in conjunction with MIL-PRF-38535 (G) 1, \"General Specification for Integrated Circuit Manufacturing,\" (entire document), MIL-PRF-38534 (F), \"General Specification for Hybrid Microcircuits,\" (entire document), MIL-STD-883G, \"Test Method Standard for Microcircuits,\" (Test Method 5004.11, Screening Procedures and Test Method 5005.14, Qualification and Quality Conformance Procedures) and other appropriate component specifications and program requirement documentation to ensure the parts are qualified to the appropriate reliability level (high reliability, military, industrial, commercial) and operating environment (space, tactical, ground, etc.).\n\nAll custom microcircuits are considered non-standard parts. All non-custom integrated circuits, discrete components, magnetics, passives, etc. which are not procured as Qualified Products List (QPL), Qualified Manufacturers List (QML) or Standard Microcircuit Drawing (SMD) parts are considered non-standard parts.\n\nThe following parts do not require the submission of a full Non-Standard Qualification/Quality Conformance Plan when the parts are considered non-standard because of additional space environment requirements such as Destructive Physical Analysis or Radiation. The submission of an abbreviated plan shall be required to state that the devices are being procured as QML, QPL or SMD parts and shall detail only the additional tests that are required.\na. Non-custom microcircuits and hybrids procured as QML or QPL devices in accordance with MIL-PRF-38535 (G) 1 and MIL-PRF-38534 (F).\nb. Passive and magnetic parts that are procured as QPL parts\nc. JANS level parts for space programs\nd. JANTX parts for non-space programs",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the current issue of the DODISS at the time of the solicitation.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The plan shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "Each part submitted for qualification must have an approved Part Qualification/Quality Conformance Test Plan associated with it. Each plan shall be divided into the following three distinct sections corresponding to the different part types: Custom microcircuits, non-custom microcircuits, and discrete/passive electronic components. Each plan shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Test plan objectives:",
+          "content": "The test plan objectives shall be stated.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Parts list:",
+          "content": "A list of all parts covered by the plan and the part quality level",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Test tables:",
+          "content": "Tables detailing the groups of tests to be performed, the tests within each group divided into subgroups, the chronological order of the tests, the method and applicable test conditions, and the sample size or the Lot Tolerance Percent Defective (LTPD) for each test.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Justification:",
+          "content": "Sufficient justification for using generic qualification, reduced testing, limited sampling, or limited usage procedures for qualifying parts (if applicable.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Deviations:",
+          "content": "All deviations from MIL-STD-883 (G) or other applicable part standards and requirements shall be properly justified (if applicable).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Test data sheets:",
+          "content": "Sample test data sheets shall illustrate data to be documented and delivered at each level of test, all operational criteria to be met, and a description of the failure analysis procedure.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Part acceptance criteria:",
+          "content": "Criteria for acceptance of parts at each level of test and documentation of all procedures to be followed in the case of malfunction or failure.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Test documentation:",
+          "content": "Documentation identifying critical or unusual tests or test conditions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Qualification inspection description:",
+          "content": "A description of how samples will be chosen and the elapsed time between qualification inspections.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Qualification schedule:",
+          "content": "The qualification schedule shall show estimated start and end dates, in calendar or bar graph format.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-81708.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

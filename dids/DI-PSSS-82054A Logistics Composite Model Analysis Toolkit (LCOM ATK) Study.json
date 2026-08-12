@@ -1,0 +1,140 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82054A",
+  "slug": "di-psss-82054a",
+  "title": "Logistics Composite Model Analysis Toolkit (LCOM ATK) Study",
+  "summary": "The LCOM ATK Study describes a full weapon system in terms of reliabilities, maintenance, manpower, spares, support equipment, facilities, and flying schedule for use in Monte-Carlo trade studies.",
+  "approval_date": "2023-04-28",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10391",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZJS)",
+  "project_number": "PSSS-2021-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Logistics Composite Model Analysis Toolkit (LCOM ATK) Study describes a full weapon system in terms of component reliabilities, maintenance tasks, manpower, spare parts, support equipment, facilities, and flying schedule. When this study is used in a Monte-Carlo simulation it provides a means to run trade studies on manpower, sparing, or component reliabilities, and to determine their impact on fleet availability and ability to meet sortie requirements. The LCOM ATK is developed and managed by the Air Force Life Cycle Management Center (AFLCMC) engineering home office (AFLCMC/EZJS) at Wright-Patterson Air Force Base.\na. The purpose of this Data Item Description (DID) is to develop and deliver an LCOM ATK model study.\nb. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nc. This DID is used in conjunction with DI-PSSS-82055, Logistics Composite Model Analysis Toolkit (LCOM ATK) Study Input Plan. (Copies of this document are available online at https://quicksearch.dla.mil.)\nd. This DID supersedes DI-PSSS-82054.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-PSSS-82054"
+  ],
+  "related_dids": [
+    "DI-PSSS-82055"
+  ],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/DD"
+    },
+    {
+      "label": "Copies of this document are available online at",
+      "url": "https://www.esd.whs.mil/DD"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The files which comprise the LCOM model shall be in LCOM ATK native format. All files required to run and operate the model shall be in an electronic government-readable container format (i.e., *.zip).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The LCOM ATK Study shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "LCOM ATK Database file (.dat)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "LCOM ATK Change Card(s) (.chg)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "LCOM ATK Seeds files (.sds)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "LCOM ATK Output files (as applicable):",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Main Single Repetition Files",
+              "content": "Performance Summary Report (PSR) File (.psr), Delimited PSR (DSR) Workbook (dsr.xlsm), Display Workbook (dply.xlsm), Mission Workbook (misn.xlsm), Matrix Workbook (mtrx.xlsm), Parts Workbook (parts.xlsm), Support Workbook (support.xlsm), and Time Workbook (time.xlsm)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Main Production Files",
+              "content": "Merged DSR Workbook (mdsr.xlsm), Merged Mission Workbook (mmisn.xlsm), Merged Matrix Workbook (mmtrx.xlsm), Merged Parts Workbook (mparts.xlsm), Merged Support Workbook (msupport.xlsm), and Merged Time Workbook (mtime.xlsm)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Distribution Statement",
+          "content": "The applicable Distribution Statement, as necessary, in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4. (Copies of this document are available online at https://www.esd.whs.mil/DD.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Classification markings",
+          "content": "The applicable classification markings, as necessary, in accordance with Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information. (Copies of this document are available online at https://www.esd.whs.mil/DD.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82054A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

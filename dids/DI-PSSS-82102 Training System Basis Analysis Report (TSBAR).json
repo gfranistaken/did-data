@@ -1,0 +1,225 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82102",
+  "slug": "di-psss-82102",
+  "title": "Training System Basis Analysis Report (TSBAR)",
+  "summary": "The TSBAR documents existing training programs and establishes the functional baseline for the design, development and operation of an integrated Training System.",
+  "approval_date": "2017-02-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9770",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WNE)",
+  "project_number": "SESS-2016-049",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The TSBAR documents existing training programs and establishes the functional baseline for the design, development and operation of an integrated Training System (TS). The TSBAR is used to define training capabilities and establish system requirements for the TS.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID is applicable to all TS acquisition programs.\nc. This DID interrelates with DI-PSSS-81635, Mission/Task Analysis Report (MTAR); DI-PSSS-82101, Training Requirements Analysis Report (TRAR); and DI-PSSS-80569, Objectives and Media Analysis Report (OMAR).\n(Copies of these documents are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-PSSS-81635",
+    "DI-PSSS-82101",
+    "DI-PSSS-80569"
+  ],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content for the TSBAR is shown in 3.1 through 3.7 below, along with a description of the material to be contained in each section.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "This section contains an overview of the purpose and expected application of the data and the results compiled from this analysis. It shall describe how information examined and assessments made during this analysis can be integrated with other Instructional System Development (ISD), Systems Engineering (SE), and Logistics Support Analysis (LSA), functions to establish the TS as an operational system. It shall describe how training capabilities and system requirements identified from this analysis will influence the eventual design, development and operation of the TS.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Planning and scheduling considerations.",
+          "content": "This section describes the planning and scheduling considerations needed to accomplish this analysis and implement the results. It shall also address these same considerations for any future analysis efforts that are required to establish the TS. It shall describe the planning/scheduling considerations required to establish a comprehensive set of system level and lower level specifications for the design and development of the TS.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Analytical process.",
+          "content": "This section describes the methods, procedures, data compilation, and analytical tools used to accomplish this analysis and derive the system requirements for the TS. It shall contain detailed flow diagrams of the process and describe each discrete event/step of the process. Any assumptions made during the course of the analytical process shall be described and include rationale.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Design goals and requirements selection.",
+          "content": "This section contains a list of design goals/objectives to be achieved by the design(s) of the TS, based on the system requirements identified by this analysis. It shall describe the optimization and trade-off criteria used in deriving system requirements for the TS. This section shall include functional diagrams and descriptions of the hierarchy of requirements and show the relationship between program, system, and training requirements at all levels.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "TSBAR results.",
+          "content": "The content for this section is described in 3.5.1 through 3.5.6 below.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Information sources and data collection.",
+              "content": "This section contains a description of all information sources and data collected during the course of this analysis. It shall include all locations, organizations and personnel contacted and used as information sources. It shall also describe the objective, utilization, and expected result for each informational event.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Existing training system analysis.",
+              "content": "This section addresses the existing training program(s) under consideration. It shall contain detailed course summaries for each program. It shall also include separate descriptions for results, assessments, and recommendations in each of the following areas:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Current training",
+                  "content": "Addresses the management, organization structure, conduct, delivery, and evaluation of training.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "Air Force/MAJCOM policy and procedure",
+                  "content": "Addresses relevancy, requirements flow-down, consistency, and standardization of these governing documents.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "MAJCOM organizational structure",
+                  "content": "Addresses identification of relationships, functions, interfaces, and interactions between organizations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.4",
+                  "title": "Resources and assets",
+                  "content": "Addresses numbers, types and locations of manpower, personnel, and training equipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.5",
+                  "title": "Basing and facility provisions",
+                  "content": "Addresses the training provisions, capacities, space, environmental conditions, and airspace restrictions at each base.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.6",
+                  "title": "Logistics and maintenance support",
+                  "content": "Addresses availability of test equipment and maintenance/logistic support of training devices and the aircraft.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.3",
+              "title": "Similar system analysis.",
+              "content": "This section documents the results, assessments and recommendations made from this analysis for each training program under consideration. It shall address each area listed in 3.5.2.1 through 3.5.2.6 above as a separate section. It shall also include a matrix and description that compares training programs and depicts similarities and differences among programs for selected training features (simulators, computer-based instruction, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Training technology assessment.",
+              "content": "This section addresses the training programs(s) under consideration. It shall include separate descriptions for results, assessments, and recommendations in the areas of training concepts, methods, techniques, technology, and system evaluation. It shall address the instructional and evaluative attributes of each area. It shall describe alternative and optimum combinations of training concepts, methods, techniques, technologies with rationale, for the TS under consideration.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Problem analysis.",
+              "content": "This section describes the weaknesses, deficiencies, and constraints identified by this analysis for the training program(s) under consideration. It shall include recommendations of how the TS under consideration can solve existing training deficiencies and anticipated training problems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "TS concept.",
+              "content": "This section describes and depicts the organizational, logistic support, and training concept(s) recommended for the TS under consideration. It shall describe the relationships among these concepts, functional capabilities, characteristics of training devices/media and system requirements. It shall describe system-level requirements for the chosen TS conceptual design.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Appendices.",
+          "content": "The appendices contain supporting data and detail necessary to complement descriptions in 3.5.2 and 3.5.6 above and provide detailed information on the subjects listed below as Appendices A and B.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Appendix A. Detailed Course Summaries",
+              "content": "Describes the courses in the existing training program. Provides statistical data, summary tables, and comparisons for courses/qualification levels and types of training provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Appendix B. System Requirements Document",
+              "content": "Specifies program, system, and training requirements; operational limiting factors; and design constraints for the TS. Includes requirements for trainee throughput, surge, entry and qualification levels, performance, evaluation, and management. Also specifies subsystem requirements for the TS.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "TSBAR updates.",
+          "content": "Updates to this report shall be submitted as change pages. With each revision to this report, this section shall contain a summary listing of pages changed and the date the change occurred. All revisions to derived system requirements shall be under configuration control.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82102.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-81068A",
+  "slug": "di-qcic-81068a",
+  "title": "Preparation of Final Inspection Record",
+  "summary": "The Final Inspection Record establishes and classifies quality characteristics for final examination and functional testing of major end items and components, serving as a permanent record of final inspection results for system level vehicles and major end items.",
+  "approval_date": "2018-07-23",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9972",
+  "limitation": "",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "Yes",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AT",
+  "project_number": "QCIC-2018-002",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Establishes and classifies quality characteristics for final examination and functional testing of major end items and components. Serves as a permanent record of final inspection results of system level vehicles and major end items. The FIR is a contractual document which sets forth the minimum inspection characteristic determined necessary to assure conformance to end item specifications and drawings. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation. This DID superseded DI-QCIC-81068.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-QCIC-81068"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DTIC Applicable",
+      "url": "http://www.dtic.mil/dtic/submit"
+    },
+    {
+      "label": "GIDEP Applicable",
+      "url": "http://www.gidep.org/data/submit.htm"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Final Inspection Record (FIR) shall be prepared for recording inspection results. The format of the FIR shall be organized so as to be compatible with assemblies, installations, and end item performance and acceptance requirements.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "General.",
+      "content": "It is intended that the FIR be developed in the same sequence that the major assemblies and all subassemblies, major systems, or subsystems are to be inspected. In any event, any characteristics that cannot be inspected after final assembly shall be inspected as the item is assembled during the normal manufacturing process. This does not preclude the contractor from changes in sequence to satisfy the inspection program. At the discretion of the procuring activity, the FIR may also include characteristics that are to be inspected and recorded during in-process manufacturing/assembly operations.\n\nThe FIR shall be prepared and maintained current with the Quality Conformance Inspection (QCI) and Control Test (CT) requirements set forth in the engineering drawings and vehicle/end item specification requirements.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Cover page shall include:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Title.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "Contract Number and corresponding CDRL Reference number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.3",
+              "title": "Name of Manufacturer/Contractor Organization.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.4",
+              "title": "Vehicle/End Item Model Number and Series.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.5",
+              "title": "Specification(s) Reference Number, Revision, and Date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.6",
+              "title": "Revision Control:",
+              "content": "Revision identifier, Revision Date, Change Description, Change Authority Reference number, Change Approver Name.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.7",
+              "title": "FIR document control ID reference number, Revision identifier, and Document effective Date.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Data Collection Sheets shall include:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "Title:",
+              "content": "Name and Part Number/NSN of item being inspected and serial number. (See 4.3 for additional data fields for Vehicle Inspections).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "Name of characteristic being inspected including reference number from Specification.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "Required parameters including unit of measure.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.4",
+              "title": "Inspection Method/Instruction.",
+              "content": "By detail or by reference. Attach any internal referenced instructions excluding externally available standard test methods.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.5",
+              "title": "Data field to record Inspection gage and traceability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.6",
+              "title": "Data field to record Date of Inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.7",
+              "title": "Data field to record actual data.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.8",
+              "title": "Data field to record Pass or Fail Disposition.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.9",
+              "title": "Data field to note corrections or corrective action activities for failures.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.10",
+              "title": "Data field to record actual data after correction and re-inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.11",
+              "title": "Data field to record the identification of the inspector.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.12",
+              "title": "Data field to record QA review if applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "In addition to items in 4.2 Vehicle Inspection data sheets shall include:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "Data field: Vehicle Serial Number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.2",
+              "title": "Data field: Manufacturer, Vehicle Number, and Model.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.3",
+              "title": "Data field: Engine Serial Number, if applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.4",
+              "title": "Data field: Transmission Serial Number if applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.5",
+              "title": "Data field: Transfer Transmission Serial Number if applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.6",
+              "title": "Data field: Mileage Before Test and Mileage After Test.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.7",
+              "title": "Acknowledgement that all in process and safety checks are complete before performing Vehicle/End Item Inspection.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.8",
+              "title": "Safety Checks shall be performed and recorded before road testing or functional inspections are performed.",
+              "content": "Enter safety checks for Tractor-trailer combination if applicable.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "Control Test data sheets shall be attached when applicable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "Certificates of Conformance required per the end item specifications and drawings shall be attached or available for review.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "Provide an acknowledgement and compliance statement with contract requirements.",
+          "content": "Include a signature block containing full name of the company official rendering the approval and date.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Process and responsibilities for data delivery and Government Review will be delineated in the contract.",
+      "content": "",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-81068A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

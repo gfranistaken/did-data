@@ -1,0 +1,343 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82161",
+  "slug": "di-psss-82161",
+  "title": "Training Systems Utilization Report",
+  "summary": "The Training Systems Utilization Report (TSUR) provides the data necessary to determine the cost benefit of training, cost avoidance, track training efficiencies, operational availability of training systems, and enhance training records.",
+  "approval_date": "2017-10-26",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9864",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MC",
+  "project_number": "PSSS-2017-031",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training Systems Utilization Report (TSUR) provides the data necessary to determine the cost benefit of training, cost avoidance, track training efficiencies, operational availability of training systems, and enhance training records. The TSUR contains the training data required perform analyses of the training accomplished.\na. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. It is not intended that all the requirements contained herein be applied to every program or program phase. Government may tailor or delete portions or individual data requirements of this DID as needed.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The TSUR shall be delivered in MS Excel. The format shall be approved by the Government. The approved format shall be used for all subsequent submissions. Revisions to format shall be approved by the Government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The TSUR shall contain the following training data:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Training Events & Exercises",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Dates",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "System/Training Name/Identifier utilized for training",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Location",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Number of trainees trained (per device as applicable)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Total hours operated (per device as applicable)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Type of exercise",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Units trained",
+              "content": "Identify which units received training",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Weapons utilized",
+              "content": "Identify which weapons are utilized in training per training event",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Ammo utilized",
+              "content": "Identify ammo quantity by type that is utilized in training per blanks, and simulated rounds",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Trainees per system",
+              "content": "Identify quantity of trainees trained on each system",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Miles driven",
+              "content": "Identify quantity of miles driven per simulated vehicle",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Scenarios trained",
+              "content": "Identify quantity for each scenario used for training",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Mission Essential Tasks (METs) and Training and Readiness (T&R) events trained",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Scenarios failed by trainees",
+              "content": "Identify quantity for each scenario of trainees that fail scenarios",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Formal Training Courses",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Units scheduled",
+              "content": "Unit designations (unit name and organization)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Unit no show",
+              "content": "Units who register for and schedule training, but do not show up or cancel less than forty eight (48) hours before training commencement.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Individuals scheduled",
+              "content": "Number of trainees who register for and schedule academic or practical device training.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Individual no show",
+              "content": "Number of trainees who register for and schedule training but do not show up.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Training disqualification",
+              "content": "Number of trainees who do not commence training due to disqualification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Commence",
+              "content": "Number of trainees that show up training",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Percentage of non-USMC (U.S. Military)",
+              "content": "Non-USMC trainees out of the total number trainees that \"commence\" the training",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Non-USMC commence (Joint Forces)",
+              "content": "Number of non-USMC, Joint Forces trainees who show up for training",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Percentage of non-USMC (Joint Forces)",
+              "content": "Non-USMC, Joint Forces trainees out of the total number trainees that \"commence\" the training.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Unit recall",
+              "content": "Number of trainees who commence a training course, but are recalled from the training from their unit, leave the training site, do not attempt to complete the entire training, and do not complete the course.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Med drop",
+              "content": "Number of trainees who commence a training course, but leave the training site due to medical reasons, does not attempt to complete the entire training, and do not complete the course.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Drop on request",
+              "content": "Number of trainees who commence a training, but provide notice during the training that they will not continue the training, do not attempt to complete the entire training, and do not complete the course.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "No return",
+              "content": "Number of trainees, who commence training, but leave or fail to return to the training site, do not attempt to complete the entire training, do not complete the course, and do not provide an explanation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "Total pass",
+              "content": "Number of trainees who participate in an entire course, master all course objectives and exercises, and complete the course.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "Late",
+              "content": "Number of trainees who schedule training and show up 30 minutes or more beyond the scheduled training commencement time.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Operational Hours",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Training system operational availability (%) based on contractual definition of operational availability.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Training systems hours available",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Training systems hours utilized for training",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Training systems non-operational hours by type",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Preventative maintenance hours",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Corrective maintenance hours",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Other non-operational hours",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82161.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

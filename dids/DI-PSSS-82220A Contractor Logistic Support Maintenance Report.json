@@ -1,0 +1,875 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82220A",
+  "slug": "di-psss-82220a",
+  "title": "Contractor Logistic Support Maintenance Report",
+  "summary": "The Contractor Logistic Support Maintenance Report is used to collect maintenance data from the logistic support contractor for tracking maintenance actions, parts usage, failure analysis, and inventory stock age levels.",
+  "approval_date": "2023-05-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10389",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "PSSS-2023-004",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Contractor Logistic Support Maintenance Report is used to collect maintenance data from the logistic support contractor. The maintenance data is used for updating and tracking maintenance actions, parts usage, selected failure analysis and resolution, and inventory stock age levels.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW, and is applicable to the acquisition of military systems, equipment, and facilities.\nThis DID supersedes DI-PSSS-82220.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-PSSS-82220"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Contractor Logistic Support Maintenance Report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Contractor Logistic Support Maintenance Report shall consist of a cover sheet and nine sections numbered sequentially. The cover sheet shall display the title, data, the month covered by the report, the full address to whom the report was sent, the current contract number, and the preparer's and approving official's signature block and signature.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Section I, Consolidated Monthly Maintenance Summary.",
+          "content": "This section provides a basis for analysis and evaluation of the performance, life, and maintenance requirements of materiel installed, operated, and maintained by the contractor. It also contains verification that maintenance has been performed (prior to turnover).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Section I includes historical and running records covering every item of significance affecting the life, performance, and maintenance requirements of the materiel.",
+              "content": "These records shall include provisions for analysis of the operation and performance of the materiel in progress to determine status and trends which require modification or correction. Corrective action may include changes in manpower, skills, procedures, or repair parts supply.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The format of Section I shall include all data elements listed below:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "End Item.",
+                  "content": "Enter the part number of the end item/assembly being inducted for repair.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Nomenclature.",
+                  "content": "Enter the nomenclature of the item/assembly being inducted for repair.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "Site.",
+                  "content": "Enter all site names where maintenance actions are being performed for each item/assembly being inducted for repair.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Month Begin.",
+                  "content": "Enter the number of items/assemblies that were awaiting maintenance or are in maintenance at the beginning of the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "New Inductions.",
+                  "content": "Enter the number of items/assemblies that were inducted for repair during the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.6",
+                  "title": "Repairs Completed.",
+                  "content": "Enter the number of repairs completed for each item/assembly for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.7",
+                  "title": "In Repair At Month End.",
+                  "content": "Enter the number of items/assemblies that are awaiting repair or are in repair at the end of the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.8",
+                  "title": "Mean Time To Repair (MTTR).",
+                  "content": "Enter the summation of all repair times divided by the number of repair actions for that item/assembly for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.9",
+                  "title": "Contractor Turnaround Time (CTAT).",
+                  "content": "Enter the number of work days the item/assembly was in the maintenance shop divided by the number of items/assemblies repaired for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.10",
+                  "title": "Total.",
+                  "content": "Total columns see 3.1.2.4 through 3.1.2.7 above at the end of each item/assembly.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.10.1",
+                      "title": "For the MTTR total at the end of each item/assembly, the following formula must be used.",
+                      "content": "Multiply the MTTR for the individual sites by the repairs completed at that site. Sum this product for all the sites reporting the item and divide the total by the total sum of the repairs completed on that item at that site.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.10.2",
+                      "title": "For the CTAT total at the end of each item/assembly, the following formula must be used.",
+                      "content": "Multiply the CTAT for the individual sites by the repairs completed at that site. Sum this product for all the sites reporting the item, and divide the total by the total sum of the repairs completed on that item at that site.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Section II, Site Monthly Maintenance Summary.",
+          "content": "This section contains the same type information as is required in Section I, except that it reflects maintenance information for each maintenance site separately. The format of Section II shall include all data elements as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Site.",
+              "content": "Enter the site name where maintenance actions are being performed for each item/assembly.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "End Item.",
+              "content": "Enter the part number of all end items/assemblies being inducted for repair.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Nomenclature.",
+              "content": "Enter the nomenclature of the items/assemblies being inducted for repair.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Month Being.",
+              "content": "Enter the number of items/assemblies that were awaiting maintenance or are in maintenance at the beginning of the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "New Inductions.",
+              "content": "Enter the number of items/assemblies that were inducted for repair during the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Repairs Completed.",
+              "content": "Enter the number of repairs completed for each item/assembly for the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "In Repair at Month End.",
+              "content": "Enter the number of items/assemblies that are awaiting repair or are in repair at the end of the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Mean Time To Repair (MTTR).",
+              "content": "Enter the summation of all repair items divided by the number of repair actions for that item/assembly for the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Contractor Turnaround Time (CTAT).",
+              "content": "Enter the number of work days the item/assembly was in the maintenance shop divided by the number of items/assemblies repaired for the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Total.",
+              "content": "Total columns see 3.2.4 through 3.2.7 above at the end of each site.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "A separate entry for sites performing canvas refurbishment will be provided at the end of this section containing the above data elements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Section III, Consolidated Inventory Usage Report.",
+          "content": "This section provides a basis for analysis and evaluation for parts/assemblies used in the repair and maintenance of materiel.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "This section includes a running record covering all parts/assemblies used for all sites in a consolidated inventory usage report.",
+              "content": "The entire bill of materials (BOM) that is used to support the assembly must be listed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "The format of Section III shall include all data elements as follows:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Part Number.",
+                  "content": "Enter the part number of the part/assembly used for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Nomenclature.",
+                  "content": "Enter the nomenclature of the part/assembly used for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Usage.",
+                  "content": "Enter the total number of parts/assemblies used by all maintenance sites for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "End Item.",
+                  "content": "Enter the nomenclature of the part/assembly of the end item inducted for repair that the piece part is used on.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "Replacement Rate.",
+                  "content": "Enter the replacement rate as a percentage to show the frequency at which this part is replaced on the end item.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Section IV, Site Inventory Usage Report.",
+          "content": "This section contains the same type information as is required, see 3.3 above, except that it reflects usage information for each maintenance site separately. The format of Section IV shall include all data elements as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Site.",
+              "content": "Enter the site name where usage data is being received from.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Part Number.",
+              "content": "Enter the part number of the part/assembly used for the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Nomenclature.",
+              "content": "Enter the nomenclature of the part/assembly used for the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Usage.",
+              "content": "Enter the total number of parts/assemblies used for each maintenance site for the month being reported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Site Total.",
+              "content": "Total column see 3.4.4 above at the end of each site.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Section V, Stock Status Report.",
+          "content": "This section contains inventory stockage levels at the contractor's warehouses and maintenance sites, quantities on order by the contractor through various parts buys, the minimum reorder point for parts, and the maintenance sites average monthly parts usage. This information is used to analyze parts stockage levels and availability of parts, as well as usage of parts.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "The format of Section V shall include all data elements as follows:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Part Number.",
+                  "content": "Enter the part number of the part/assemblies maintained in the contractor's inventory.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Nomenclature.",
+                  "content": "Enter the nomenclature of the part/assembly maintained in the contractor's entire inventory.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "Contractor's CONUS Warehouse Quantity On Order.",
+                  "content": "Enter the quantity of parts/assemblies due into the contractor's warehouse from repair parts buys.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "Quantity On Hand.",
+                  "content": "Enter the quantity on hand of parts/assemblies located at the contractor's warehouse for all maintenance sites.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "Quantity Available.",
+                  "content": "Enter the quantity of parts/assemblies on order (through repair parts buys), plus the quantity on hand, minus those awaiting parts as all sites.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.6",
+                  "title": "Contractor's CONUS Warehouse Minimum Level.",
+                  "content": "Enter the minimum reorder stockage level for each part/assembly.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.7",
+                  "title": "Sites Average Monthly Usage.",
+                  "content": "Enter the average monthly usage of parts/assemblies listed for all sites for the month being reported.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Section VI, Monthly Manhours Report.",
+          "content": "This section contains information concerning man-hour accounting for contractor personnel at each maintenance site for the month being reported.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "The format for Section VI shall include all data elements as follows:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Legend.",
+                  "content": "Enter a legend explaining the definitions of below entries at beginning of this section.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Site.",
+                  "content": "Enter the name of the maintenance site that manhours are being reported for.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Bench time.",
+                  "content": "Enter the Total maintenance hours expended repairing equipment, including dedicated or uncompensated repair overtime (time logged on repair actions).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Admin Time.",
+                  "content": "Enter the total manhours expended by the Site Manager (meetings with warehouse personnel or customer representatives) and all time not attributable to a listed category (e.g., bad weather, shop maintenance/update, etc.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.5",
+                  "title": "Computer time.",
+                  "content": "Enter the manhours spent inputting into the computer.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.6",
+                  "title": "Training.",
+                  "content": "Enter the manhours spent training site personnel. Time is to be identified in the notes portion as to what, who trained, and why training was performed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.7",
+                  "title": "Inv/Rcvg/Ship.",
+                  "content": "Enter the manhours spent conducting inventory control, shipping, and receiving.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.8",
+                  "title": "Other.",
+                  "content": "Enter the manhours not covered above, spent on special efforts/requirements, site maintenance, etc. Time is to be defined in notes.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.9",
+                  "title": "Productive Hr. Total.",
+                  "content": "Total of items see 3.6.1.3 through 3.6.1.8 above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.10",
+                  "title": "Holiday.",
+                  "content": "Enter all hours charged to paid holidays.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.11",
+                  "title": "Sick.",
+                  "content": "Enter all hours charged to paid/unpaid sick leave.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.12",
+                  "title": "Vacation/Absence.",
+                  "content": "Enter all hours charged to paid/unpaid leave.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.13",
+                  "title": "Total Available Time.",
+                  "content": "Total hours see 3.6.1.9 through 3.6.1.12 above. Should equal total available hours in other column.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.14",
+                  "title": "Regular Hours.",
+                  "content": "Enter the total hours available for work in that month (week days in the month times standard hours including holidays times the number of tech.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.15",
+                  "title": "Tech Assist In.",
+                  "content": "Enter those manhours where a technician has come into the reporting site from another site to perform equipment maintenance (do not include travel time).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.16",
+                  "title": "Tech Assist Out.",
+                  "content": "Enter those manhours where a technician from the reporting site is sent to another site to perform equipment maintenance (including travel time). Explain in the notes. Should be included as a negative.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.17",
+                  "title": "Overtime.",
+                  "content": "Enter all overtime hours charged to the contract. Explain in the notes.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.18",
+                  "title": "Uncompensated OT.",
+                  "content": "Enter all overtime hours not charged to the contract but worked by the technician.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.19",
+                  "title": "Total Available Hrs.",
+                  "content": "Regular hours plus others, see 3.6.1.14 through 3.6.1.18 above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.20",
+                  "title": "Notes.",
+                  "content": "A word processing area to clarify an entry or explain any/all exceptions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.21",
+                  "title": "Technicians/Clerks.",
+                  "content": "Enter the number of technicians/clerks assigned to the maintenance site.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Section VII, Action Item Log.",
+          "content": "This section contains information regarding failures beyond those that are anticipated and corrected as a matter of normal routine. These failure reports cover items that may include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Complete and continuous inoperable conditions unresponsive to normal corrective actions.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Excessive downtime required for corrective repair.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Uniqueness and/or complexity of trouble analysis and repair.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Corrective improvisations (temporary or permanent).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Critical design improvement.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Test equipment and/or facilities inadequacies.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Absence or inadequacy of safeguards and protection to personnel and/or equipment.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.8",
+              "title": "The format of Section VII shall include all data elements as follows:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.8.1",
+                  "title": "Enter table of contents listing all mail items since origination.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.2",
+                  "title": "System.",
+                  "content": "Enter the nomenclature of the system that is experiencing the problem/failure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.3",
+                  "title": "Site.",
+                  "content": "Enter the maintenance site(s) that are experiencing the problem/failure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.4",
+                  "title": "Originator.",
+                  "content": "Enter the name/source from where the problem/failure originated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.5",
+                  "title": "Date.",
+                  "content": "Enter the date the problem/failure initially surfaced.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.6",
+                  "title": "Description.",
+                  "content": "Enter a brief description of the problem area.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.7",
+                  "title": "Part Number.",
+                  "content": "Enter the part number of the problem/failed part/assembly.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.8",
+                  "title": "Statement of Problem.",
+                  "content": "Enter a statement defining the problem/failure of affected part/assembly.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.9",
+                  "title": "Probable Cause.",
+                  "content": "Enter a statement(s) defining the probable cause of the problem/failure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.10",
+                  "title": "Suggested Repair.",
+                  "content": "Enter a statement(s) defining a suggested repair to the problem/failure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.11",
+                  "title": "Current Status.",
+                  "content": "Enter all pertinent data regarding problem/failure that has occurred since problem/failure initially surfaced. Information to include all actions that have occurred and the dates at which they occurred.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.8.12",
+                  "title": "Reference.",
+                  "content": "Enter any reference documents (e.g., Field Alerts, internal memorandum numbers, etc.) that are pertinent to the problem/failure being reported. Copies of referenced documents should follow the applicable action item log.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Section VIII, Field Maintenance Bulletins (FMB).",
+          "content": "This section contains information regarding corrections to failures/problems that have surfaced in the field. The field maintenance bulletin explains the nature of the failure/problem and corrective action taken to fix said failure/problem.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "The format for Section VIII shall include all data elements listed below:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.1.1",
+                  "title": "Engineering Change Request & Analysis (ECRA) Number.",
+                  "content": "An internal number assigned by the contractor. Enter appropriate number in this block.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.2",
+                  "title": "Engineering Change Proposal (ECP) Number.",
+                  "content": "An internal contractor generated ECP number or Government assigned ECP number. Enter appropriate number in this block.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.3",
+                  "title": "Contract Number.",
+                  "content": "Enter the current CLS contract number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.4",
+                  "title": "Bulletin Number.",
+                  "content": "Internal number assigned by the contractor. Enter the appropriate sequence number for the bulletin.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.5",
+                  "title": "Issue Date.",
+                  "content": "Enter the date the FMB was issued.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.6",
+                  "title": "Affected End Item.",
+                  "content": "Enter the part number of the end item affected by the failure/problem.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.7",
+                  "title": "Name of Affected Assembly.",
+                  "content": "Enter the nomenclature of the assembly affected by the failure/problem.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.8",
+                  "title": "Part No. of Affected Assembly.",
+                  "content": "Enter the part number of the assembly affected by the failure/problem.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.9",
+                  "title": "Effectivity of Change.",
+                  "content": "Enter a statement defining what equipment will be affected by the change.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.10",
+                  "title": "Problem Description.",
+                  "content": "Enter the description of the failure/problem.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.11",
+                  "title": "Description of Change.",
+                  "content": "Enter the description of the change/fix that corrects the failure/problem, to include parts required, tools and materials required, instructions and diagrams that depict details of the change.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.12",
+                  "title": "Approvals.",
+                  "content": "Signatures of contractor personnel shall be affixed to the bottom of each bulletin signifying concurrence/approval of said bulletin. Approvals should be obtained from personnel in Engineering, Quality Assurance, Contractor Logistics Support, and Program Management.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Section IX, Consolidated Maintenance Summary for Canvas Repair, Cable Repair and Circuit Card Repair.",
+          "content": "This section provides a basis for analysis and evaluation of parts/assemblies used in canvas refurbishment, cable repair and circuit card repair programs. The format for Section IX shall include all data elements as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Period.",
+              "content": "Enter the time period that is covered by this report.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Part Number.",
+              "content": "Enter the part number of the part/assembly used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Nomenclature.",
+              "content": "Enter the nomenclature of the part/assembly used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "Quantity Used.",
+              "content": "Enter the total number of parts/assemblies used for each part number.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82220A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

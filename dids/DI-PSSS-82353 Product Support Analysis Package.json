@@ -1,0 +1,554 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82353",
+  "slug": "di-psss-82353",
+  "title": "Product Support Analysis Package",
+  "summary": "Defines the format and content for the Product Support Analysis Package, documenting the analysis required to field and maintain the readiness and operational capability of major weapon systems, subsystems, and components.",
+  "approval_date": "2021-09-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10252",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "PSSS-2021-004",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Product Support Analysis is the analysis required to create the package of support functions required to field and maintain the readiness and operational capability of major weapon systems, subsystems, and components, including all functions related to weapon system readiness. All functionally significant items, systems, equipment, components, will be subject to Product Support Analysis. All Product Support Analysis Candidates are assigned a Product Support Analysis Control Number in order to index and identify all of the Functionally Significant Items undergoing Product Support Analysis.\n\nThe product support package includes the array of product support functions required to deploy and maintain the readiness and operational capability of major weapon systems, subsystems, and components, including all functions related to weapon systems readiness. The package of product support functions includes the tasks associated with the 12 Integrated Product Support Elements.\n\nMIL-HDBK-502A, Department of Defense Handbook: Product Support Analysis shall be used as a guide for executing Product Support Analysis activities and repeat Product Support Analysis tasks in an iterative manner as required and identify refine product support requirements. The Product Support Analysis data shall be updated to reflect changes in support requirements.\n\nThis Data Item Description contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Product Support Analysis Package shall be in contractor's formats in accordance with TA-HB-0007-1, TA-STD-0017, and GEIA-STD-007B into the program's data repository as specified in the Statement of Work.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Product Support Analysis Package shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Product Support Strategy and updates",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Product Support Analysis Planning and updates",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Program and Design Reviews",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Product Support Analysis Technical Interchange Meetings",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Support System Standardization",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Support Standardization Constraints",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Standardization Costs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Hardware and Software Standardization Approaches",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Standardization Risks",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Supportability and Supportability Related Design Factors",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Key Performance Parameters",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Functional Analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Identify Functions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Unique Item Function",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Function Drivers",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Function Risks",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Failure Mode, Effects, and Criticality Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Functional Block Diagram",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Functional Failure Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Fault Tree Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Reliability Centered Maintenance Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.10",
+              "title": "Task Inventory",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Design Alternatives",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.12",
+              "title": "Function Updates",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Support System Alternatives",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Viable Support Plans",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Updated Viable Support Plans",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Support Plan Risks",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Evaluation Of Alternatives and Tradeoff Analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Tradeoff Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "New and Critical Support Tradeoffs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Design and Support Tradeoffs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Job and Duty Tradeoffs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "Level of Repair Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.6",
+              "title": "BCS/New System Tradeoffs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.7",
+              "title": "Energy Tradeoffs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.8",
+              "title": "Damage/Repair Tradeoffs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Task Analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Document Task Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "New and Critical Resources",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Training Requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "Design Influence",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.5",
+              "title": "Risk Reduction",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.6",
+              "title": "Transportability Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.7",
+              "title": "Supply Support",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.8",
+              "title": "Logistics Products",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.9",
+              "title": "Task Analysis Updates",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.10",
+              "title": "Parts Screening",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Early Distribution Analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "New Product Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Impacts on Manpower",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Readiness Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Survivability Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "Impact Solutions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Diminishing Manufacturing Sources and Material Shortages and Obsolescence System Support Analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Diminishing Manufacturing Sources and Material Shortages and Obsolescence",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Field Feedback",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Feedback Sources",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Feedback Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Disposal Analysis",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "Component Disposal",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.2",
+              "title": "Product Disposal",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "Operational Suitability Test, Evaluation, Verification and Validation",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.14.1",
+              "title": "Test Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.2",
+              "title": "Product Support Package",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.3",
+              "title": "Test Objectives and Resources",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.4",
+              "title": "Tests",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.5",
+              "title": "Test Results Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82353.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

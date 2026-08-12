@@ -1,0 +1,129 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82393",
+  "slug": "di-psss-82393",
+  "title": "Acquisition and Sustainment Data Package (ASDP) Contractor Problem Report",
+  "summary": "The ASDP Contractor Problem Report documents anomalies, problems, and deficiencies found during contractor test, inspection, demonstration, and analysis, supporting investigation, correction, and traceability in a PLM solution.",
+  "approval_date": "2022-08-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10350",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSI)",
+  "project_number": "PSSS-2022-006",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acquisition and Sustainment Data Package (ASDP) Contractor Problem Report identifies anomalies prohibiting hardware and software from performing as specified with system requirements, performance objectives, specification requirements, and test plans. It is used to document problems or deficiencies encountered during contractor test, inspection, demonstration, and analysis. It provides investigation and problem analysis necessary for the correction of those problems and deficiencies, and also allows ingestion and traceability of this information in a Product Lifecycle Management (PLM) solution.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID is applicable for use during all development program phases (design, integration, acceptance testing, and production).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The ASDP Contractor Problem Report shall be in a text searchable format. If a model (e.g., Cameo, CAD, etc.) is used for the analysis or correction of problems, the model shall be embedded in its native format. The Data Objects/Attributes and Associated Metadata (DOAM) listing shall be in Microsoft Excel spreadsheet format in accordance with the template provided in the DOAM Specification attached to the contract. All data shall be in the English language.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The ASDP Contractor Problem Report shall identify and include the following for each problem and deficiency:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Hardware name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Software name.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Part number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Serial number.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Severity level.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Problem encountered during testing.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Impact on testing.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Corrective action and resolution.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "DOAM.",
+          "content": "The completed Contractor Problem Report template, provided in the DOAM Specification attached to the contract, shall comply with the format requirements in 2. above so that it can be ingestible into a PLM solution to ensure proper tying, tracing, and linking to the lowest component of the end item to which the delivered Configuration Status Accounting (CSA) Information is applicable. Any field that is not applicable shall be marked \"NA.\"",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82393.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

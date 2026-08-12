@@ -1,0 +1,280 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-81707",
+  "slug": "di-qcic-81707",
+  "title": "Destructive Physical Analysis Report",
+  "summary": "The Destructive Physical Analysis (DPA) report identifies time dependent failures, latent defects, and precap visual inspection defects in devices.",
+  "approval_date": "2006-11-24",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "7661",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "NS/I5231",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Destructive Physical Analysis (DPA) report identifies time dependent failures, latent defects, and precap visual inspection defects in devices.\nThis Data Item Description (DID) contains the format and content preparation instructions for the DPA report resulting from the work task described in MIL-STD-1580(B)1, \"Destructive Physical Analysis for Electronic, Electromagnetic, and Electromechanical Parts\" (entire document).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the current issue of the DODISS at the time of the solicitation.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Destructive Physical Analysis report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Destructive Physical Analysis report shall contain the following information.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Sheet.",
+          "content": "The following information shall be included on the cover sheet:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Part type",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Manufacturer's name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Equipment part is used in",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "National Stock Number (if applicable)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Manufacturer's part number and 0N number (if different)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Date lot code",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Quantity procured",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Destructive Physical Analysis sample size",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Program name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Date Destructive Physical Analysis initiated and completed",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Serial numbers of Destructive Physical Analysis samples",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Destructive Physical Analysis report number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Name of analyst",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "Report date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "Approval signatures",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Summary.",
+          "content": "This section shall describe the results of all tests performed in the Destructive Physical Analysis. Any anomalous or discrepant conditions found shall be noted, to include any additional analysis performed (e.g. scanning electron microscope analysis, high magnification photographs, etc.) and referenced to the applicable sections of MIL-STD-1580(B)1 or the contractor's previously approved Destructive Physical Analysis plan. It shall also include any conclusions and recommendations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Photographs.",
+          "content": "The report shall contain a minimum of two views of high quality original photographs (color required for transistors, diodes, hybrids, and integrated circuits) for each sample. The photographs shall show an overall view of the delidded/depotted/open device and an increased magnification view of critical construction features of the device.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Identification.",
+              "content": "Each of the views shall be identified by:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Part number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Serial number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Figure reference number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Magnification ratio",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Integrated circuits and hybrid devices.",
+          "content": "One of the overall delidded views of each device shall be labeled so as to completely describe the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Bonding material used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Package construction",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Package materials",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Types of bonding used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Additional information.",
+          "content": "For all parts (except integrated circuits and hybrids), one of the overall views shall be labeled so as to completely describe the construction of the device. The labeling shall include an identification of all discernable features and materials used in the construction of the device.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-81707.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82055",
+  "slug": "di-psss-82055",
+  "title": "Logistics Composite Model Analysis Toolkit (LCOM ATK) Study Input Plan",
+  "summary": "The LCOM ATK Study Input Plan describes the inputs required to construct an LCOM study for a program office, including ground rules, assumptions, data sources, reliabilities, resource requirements, task networks, and operational flows.",
+  "approval_date": "2016-07-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9686",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZJS)",
+  "project_number": "PSSS-2016-004",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Logistics Composite Model Analysis Toolkit (LCOM ATK) Study Input Report shall describe the inputs required to construct an LCOM study for a program office, detailing all ground rules and assumptions, data sources, component reliabilities, resource requirements, maintenance task networks, and flight line operational flows.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work described in the contract.\nb. This DID is used in conjunction with DI-PSSS-82054, Logistics Composite Model Analysis Toolkit (LCOM ATK) Study.\n(Copies of this document are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-PSSS-82054"
+  ],
+  "references": [
+    {
+      "label": "Copies of this document are available online at",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The LCOM ATK Study Input Plan shall be in the following format:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The report shall be typewritten in Microsoft Word Format.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Text shall be prepared for printing on standard letter size paper (8 1/2 x 11\").",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Attachments shall be fully identified and referenced in the text (for example, large tables submitted in Microsoft Excel format).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Security classification and distribution marking shall conform to the requirements of the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The LCOM ATK Study Input Plan shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title Page.",
+          "content": "Identifies the report by providing contract number, project name or purchase description title, task number, and reporting period.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Introduction.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Purpose.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Summary of Changes.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Scope.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Ground Rules.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Modeling Assumptions including, but not limited to:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Operational flows.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Resources Assumptions, including, but not limited to:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.2.1",
+                  "title": "Supply.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.2",
+                  "title": "USAF maintainer manpower.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.3",
+                  "title": "Contractor manpower.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.4",
+                  "title": "USAF operator manpower.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.5",
+                  "title": "Facilities.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.6",
+                  "title": "Support equipment.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.3",
+              "title": "Maintenance Task Networks:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.3.1",
+                  "title": "Scheduled maintenance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.2",
+                  "title": "Unscheduled maintenance:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.8.3.2.1",
+                      "title": "Logistics Delay Time (LDT) (maintainer).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.3.2.2",
+                      "title": "Repair Turn-Around-Time (TAT) assumptions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.3.2.3",
+                      "title": "Minimum Essential Subsystems List (MESL) (or equivalent):",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.8.3.2.3.1",
+                          "title": "Incorporate into LCOM ATK model.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "LCOM ATK Model Validation Plan",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Reference Documents:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Contractor Program Documents.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Government Documents.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Acronyms and Abbreviations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Appendix A: Resource data sources and assumptions.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Scheduled maintenance data sources.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82055.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

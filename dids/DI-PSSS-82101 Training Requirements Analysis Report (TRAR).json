@@ -1,0 +1,118 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82101",
+  "slug": "di-psss-82101",
+  "title": "Training Requirements Analysis Report (TRAR)",
+  "summary": "The Training Requirements Analysis Report documents the target population/entry skills analysis and required skills/knowledge analysis to establish basic training requirements for a Training System.",
+  "approval_date": "2017-02-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9769",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WNE)",
+  "project_number": "SESS-2016-048",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training Requirements Analysis Report (TRAR) documents the results of the target population/entry skills analysis and the required skills/knowledge analysis. The TRAR is used to establish the most basic level of training requirements for a Training System (TS) and satisfy aircrew, maintenance and ground personnel Job Performance Requirements (JPRs).\na. The TRAR establishes the skill, knowledge, and attitude training requirements for each type of aircrew, maintenance and ground personnel to be trained in the TS. Based on the types of skills and knowledges required to be trained, proficiency levels/codes are assigned for each task/task activity.\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nc. This DID is applicable to all TS acquisition programs.\nd. This DID interrelates with DI-PSSS-81635, Mission/Task Analysis Report (MTAR); DI-PSSS-80569, Objectives; and Media Analysis Report (OMAR), DI-PSSS-82102 Training System Basis Analysis Report (TSBAR).\n(Copies of these documents are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-PSSS-81635",
+    "DI-PSSS-80569",
+    "DI-PSSS-82102"
+  ],
+  "references": [
+    {
+      "label": "Copies of these documents are available online at",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content for the TRAR is shown in 3.1 through 3.4 below, along with a description of the material to be contained in each section.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Skills and knowledge analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Procedures.",
+              "content": "This section describes the methods and procedures used to conduct the analysis of skills, knowledges, and desired attitudes. It shall include detailed narratives, descriptions, flow diagrams and other information on any taxonomies, typologies, or classification strategies used to identify skills, knowledges, and attitudes from JPR data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Skills and knowledge profiles.",
+              "content": "This section addresses each type of crew member, maintainer, and ground personnel JPRs. It shall include evaluation results and profiles of perceptual/motor skills, cognitive tasks, information processing skills, knowledge requirements, and desired attitudes for each critical task identified.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Target population/entry skills analysis.",
+          "content": "This section describes the results of the target population analysis conducted for each unique population type entering the TS for training. It shall include evaluation reports for each JPRs and skill/knowledge profile identified. These reports shall contain estimations of the degree of retention, comprehension, and proficiency each student population already has for the task and task activities identified to be trained in the TS. Results of this analysis will establish the training requirements baseline for each personnel type.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Master task/skills list.",
+          "content": "This section of the TRARs shall contain the master task/skills lists for each type aircrew, maintenance, and ground personnel. Each list shall show codes assigned to knowledge, skill, and task proficiency and allocated to each qualification level for each population type.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "TRAR updates.",
+          "content": "Updates to this report shall be submitted as change pages. Each revision to this report shall contain a summary listing of pages changed and date the change occurred. All revisions to derived skills, knowledges, and attitudes shall be under configuration change control.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82101.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

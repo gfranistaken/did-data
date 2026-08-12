@@ -1,0 +1,61 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-80203",
+  "slug": "di-qcic-80203",
+  "title": "Interface Analysis Record",
+  "summary": "The Interface Analysis Record documents results of interface analysis shown on a breakdown diagram, the last step in determining test elements under the DOD-STD-2106(NAVY) engineering process.",
+  "approval_date": "1986-08-04",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N3908",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "OS",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "NAVSEA Form 3990/1",
+  "approval_limitation": "",
+  "form_version": "FEB 85",
+  "use_relationship": "",
+  "description_purpose": "The interface analysis record provides documentation of results of analysis of interfaces shown on a breakdown diagram. Interface analysis is the last step in determining test elements under the DOD-STD-2106(NAVY) engineering process.",
+  "application_interrelationship": "This Data Item Description describes data required by 5.2.2.3 of DOD-STD-2106(NAVY).\n\nRelated Data Item Descriptions are:\nDI-QCIC-80202, Breakdown Diagram\nDI-QCIC-80204, Test Elements List",
+  "supersedes": [],
+  "related_dids": [
+    "DI-QCIC-80202",
+    "DI-QCIC-80204"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be as reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format and Content.",
+      "content": "The interface analysis record shall be completed on NAVSEA Form 3990/1. Content of the record shall be in accordance with the requirements of 5.2.2.3 of DOD-STD-2106(NAVY).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-80203.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

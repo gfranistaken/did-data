@@ -1,0 +1,966 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82464",
+  "slug": "di-psss-82464",
+  "title": "Acquisition & Sustainment Data Package (ASDP) Digital Specification Development and Verification Criteria",
+  "summary": "The ASDP Digital Specification Development and Verification Criteria DID governs specification development, requirements generation, and bi-directional requirements verification within a digital system model for a single end item or a whole system.",
+  "approval_date": "2025-01-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10523",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSI)",
+  "project_number": "PSSS-2025-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acquisition & Sustainment Data Package (ASDP) Digital Specification Development and Verification Criteria provides specification development, requirements generation, and requirements verification for a single end item or for a whole system accomplished within a digital system model. ASDP Digital Specification Development and Verification Criteria shall identify all system and lower level requirements, bi-directional trace of each requirement within the specification from highest to lowest level requirement, and identify how each requirement is to be verified and the associated data utilized to establish compliance. This DID shall be used for all specifications types to include; System Specifications, Software Requirements Specifications, Program-unique Specifications, and Interface Requirement Specifications (i.e. performance specification, detailed specification, and subsystem specification).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Format for ASDP Digital Specification Development And Verification Criteria shall be as follows:\nIf the Contractor develops requirements in a digital system model format, then the model shall be delivered in its native form with the information of the version of tool used providing requirements and attribute trace from the highest level to the lowest level of specifications. All data shall be in the English language. The final specification and verification criteria shall have all outstanding changes incorporated into the data.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The requirements shall be developed in a requirements tool (e.g. SysML, DOORS, Teamcenter, etc.), and deliver it in its native file with the information of the version of tool used.",
+          "content": "Extracts from that tool shall be delivered in Product Lifecycle Management (PLM) Extensible Markup Language (XML) format. The extract shall provide trace from the highest level to the lowest level.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The specification shall be format in accordance with the below table.",
+          "content": "Refer to MIL-STD-961E for clarifications, details and definitions.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Specification Development Content.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The digital system model shall contain the following data fields:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Title, Creation Date, Revision Dates and History, Dates Submitted for Approval, Contractor's name and address, Distribution Statement (as delineated in the contract), Export Control Warning Label (as delineated in the contract and if applicable), and Security classification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Record of Changes:",
+                  "content": "The digital system model shall include a record of all changes made to the DRT.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "The section numbers shown below correlates with MIL-STD-961E and contains content requirements for each of those sections as it relates to specification development within a digital system model.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "SECTION 1 - SCOPE.",
+                  "content": "The Scope section shall meet all requirements listed in MIL-STD-961E, Paragraph 5.6.1 and corresponding subparagraphs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "SECTION 2 - APPLICABLE DOCUMENTS.",
+                  "content": "The Applicable Documents section shall referenced within the digital system model and meet all requirements listed in MIL-STD-961E, Paragraph 5.7.1 and corresponding subparagraphs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "SECTION 3 - REQUIREMENTS",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.3.1",
+                      "title": "General.",
+                      "content": "Top-level performance requirements that may be included in program-unique specifications are described in Sections 3.2 through 3.5. Typically, system specifications would begin with these requirements. All specifications shall have a requirement ID and be associated to the higher level specification document and specification requirement ID. The specification requirements shall also have reference to the model(s) used to flow down the requirements from a top level to the lower level. All Government directed requirements shall be contained within the model (e.g. Government Reference Architecture, Initial Capability Document, Capability Development Document, Rapid Prototyping Requirements Document, System Requirements Document, System Specification, Open Mission System standards, Universal Command & Control Interfaces, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.2",
+                      "title": "Missions.",
+                      "content": "The digital system model shall describe the missions of the system to the extent that such use cases affect design requirements. This description should include operational information such as tactics, system deployment, operating locations, and facilities. If this information is classified, it may be contained in a separate document and referenced. The mission shall include verification of requirements and be tied to the models as described in 3.1. The missions shall consist of both normal and loaded use cases, be documented with all relevant assumptions and rationale, and summarized in both the model and this section.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.3",
+                      "title": "Threat.",
+                      "content": "The digital system model shall describe the characteristics of potential targets, the characteristics of current and potential enemy weapon capabilities that are relevant to the system, and any additional threat considerations that affect the system design. If this information is classified, it may be contained in a separate document and referenced in this paragraph.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.4",
+                      "title": "Required States and Modes.",
+                      "content": "If the entity is required to operate in more than one state or mode having requirements distinct from other states or modes, the digital system model shall identify each state and mode. Examples of states and modes include idle, ready, active, post-use analysis, training, degraded, emergency, backup, wartime, and peacetime. If states or modes are required, each requirement or group of requirements in this specification should be correlated to the states and modes. A table or other method may be used to depict this correlation, but a model or an extract from a model is preferred.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.5",
+                      "title": "Entity Capability Requirements.",
+                      "content": "The digital system model shall, identify all of the requirements associated with each capability of the entity. A \"capability\" is defined as a group of related requirements. The word \"capability\" may be replaced with \"function,\" \"subject,\" \"object,\" or other term useful for presenting the requirements.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.5.1",
+                          "title": "Entity Capability Itemized Requirements.",
+                          "content": "The digital system model shall identify a required capability of the entity and should itemize the requirements associated with the capability in measurable terms. The requirements should specify the required behavior of the entity and should include applicable parameters such as response times, sequencing, accuracy, capacities (how much/how many), priorities, continuous operation requirements, and allowable deviations based on operating conditions. If the capability can be more clearly specified by dividing it into constituent capabilities, the requirements for each constituent capability should be provided as one or more sub-subparagraphs. Where applicable, the requirements should also address required behavior under unexpected or \"out of bounds\" conditions, requirements for error handling, and any provisions to be incorporated into the entity to provide continuity of operations in the event of emergencies",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.6",
+                      "title": "Logistics Composite Model.",
+                      "content": "The digital system model shall state all requirements for inputs and outputs of the Logistics Composite Model to include constrained and unconstrained values in addition to Non-Mission Capable status requirements and specified sensitivity parameters on modeled values.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.6.1",
+                          "title": "Reliability.",
+                          "content": "The digital system model shall state the reliability requirements numerically (with confidence levels, if appropriate). As a minimum, a reliability requirement should consist of a specified reliability, time associated with the specified reliability, and a desired confidence level. For example, you could specify that a product should have 90% reliability at 1,000 hours of operation with a 95% confidence level. In simpler terms, this means that we want to be 95% confident that 90% of the population will survive at least 1,000 hours. In addition, verification of this requirements will be 10 lifetime for Safety Critical Functions (SCF) and 5 lifetime for Mission Critical Functions (MCF) as based on the service life and mission usage.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.6.2",
+                          "title": "Maintainability.",
+                          "content": "The digital system model shall state the numerical maintainability requirements in such terms as Mean-Time-To-Repair or maintenance man-hours per flight or operational hours. Maintainability is a significant design parameter. Its requirements are used to influence design for maintainability and to differentiate between already existing candidates. Maintainability is a measure of the quickness and ease with which a failed system can be restored to operating condition. It is a design consideration that centers around making a system repairable as easily, quickly and inexpensively as practical. Median Time to Repair (MedTTR) and Maximum Time to Repair (MaxTTR) for essential unscheduled maintenance demands are two performance-based measures that are typically specified as requirements for systems. Mean Time To Repair (MTTR) was used widely in the past, but is being replaced by MaxTTR and MedTTR. Maintenance Ratio (MR) is a logistics-oriented measure typically specified as a system requirement. MR is a measure of manpower intensity needed to support a system. MR describes the ratio of maintenance man-hours to system usage. The smaller the MedTTR, MaxTTR and MR, the better the systems maintainability characteristics.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.6.3",
+                          "title": "Deployability.",
+                          "content": "The digital system model shall state the deployability requirements in terms of numerical limits (for example, two of a specific type of transport aircraft or one of a specific type of merchant vessel). The limits should be related to the transport of a specific number of items over a specific distance for a specific period of deployment.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.6.4",
+                          "title": "Availability.",
+                          "content": "The digital system model shall specify the extent to which the entity shall be in an operable state at the start of the mission(s). If quantitative requirements for both reliability and maintainability are specified, this requirement is not applicable.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.6.5",
+                          "title": "Service Life.",
+                          "content": "The digital system model shall specify the service life of the weapon system. This service life shall be tied to the safety and airworthiness requirement below.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.7",
+                      "title": "Environmental Conditions.",
+                      "content": "The digital system model shall specify the operational environments in which the entity is expected to experience in shipment, storage, service, and use. For entities that include software and firmware, these requirements would define the environment in which the software and firmware would operate, such as the computer hardware or the operating system on which it must run. It specifies whether the system will be required to withstand, or be protected against, specified environmental conditions. In addition, it provides a description of the electromagnetic spectrum environment in which the system must operate effectively and the external environments in which the item must survive. The digital system model shall also specify requirements pertaining to nuclear survivability. Where systems must survive the initial nuclear weapons effects phase, it shall specify permissible deviations from baseline system performance characteristics after exposure to nuclear detonation environments. Performance requirements for mechanical configurations, optical components, electronic or electrical circuits, and electronic components shall be outlined as well. The digital system model shall cover other environmental conditions such as climate, shock, vibration, noise, noxious gases, chemical agents, biological agents, and nuclear weapons effects in accordance with the Environment Control Document (ECD) and MIL-STD-810. The ECD shall be verified and accredited in Section 4.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.8",
+                      "title": "Transportability.",
+                      "content": "The digital system model shall identify requirements for transportability that are common to all components and permit both employment and logistic support. For example, it might specify that the equipment be designed so that, with its packing for transport, each package would be no greater than ---- (volume units) and no more than ---- (length units) high, ---- (length units) wide, and ---- (length units) deep. It should identify all major functional elements of the system or item that, due to operational characteristics, will be unsuitable for normal transportation methods (for example, oversize, hazardous, or delicate items).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.9",
+                      "title": "Materials and Processes.",
+                      "content": "The digital system model shall specify requirements for materials and processes to be used in the entity covered by the specification. Requirements of a general nature should be first, followed by specific requirements.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.10",
+                      "title": "Electromagnetic Environmental Effects.",
+                      "content": "The digital system model shall specify requirements pertaining to electromagnetic radiation as it related to performance, design (including grounding requirements), safety, and interface considerations per MIL-STD-464 and MIL-STD-461",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.11",
+                      "title": "Nameplates or Product Markings.",
+                      "content": "The digital system model shall specify all requirements pertaining to nameplates or markings, referencing applicable specifications, drawings, or standards. If PIN descriptions are included in the specification, the digital system model shall include the requirement that parts be marked with the design CAGE code and PIN. The digital system model shall also address the use of special markings (for example, colored letters, lines, or dots) for function or identification coding and the use of stamped or imprinted information (for example, standard alloy designators or scannable bar codes) on the entity.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.12",
+                      "title": "Producibility.",
+                      "content": "The digital system model shall require the selection of fabrication techniques, design parameters, and tolerances that enable the product to be fabricated, assembled, inspected, and tested economically and with repeatable quality. Product and process characteristics having a direct relationship to safety, performance, durability, or supportability shall be matched to corresponding manufacturing capabilities. These requirements shall be consistent with potential production quantities and rates, and compatible with flexible, automated or semi-automated manufacturing and inspection processes.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.13",
+                      "title": "Interchangeability.",
+                      "content": "The digital system model shall specify the requirements for the level of assembly at which components should be interchangeable or replaceable.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.14",
+                      "title": "Safety.",
+                      "content": "The digital system model shall specify requirements to preclude or limit hazards to the physical environment and to personnel and equipment. To the extent practicable, it shall cite established and recognized standards. It shall identify those safety characteristics unique to the entity that constrain the design due to hazards in assembly, disassembly, test, transport, storage, operation, maintenance or disposal when they are not addressed by standard industrial or service practices. It shall address \"fail-safe\" and emergency operating restrictions. The digital system model shall also include health and safety criteria, which encompass Environmental Safety and Occupational Health in accordance with MIL-STD-882, including physical, mechanical, biological and explosive effects. These criteria shall include consideration of the toxicological effect and environmental impact of hazardous materials, waste and by-products; ionizing and non-ionizing radiation; provisions in the software to prevent inadvertent actions or non-actions; gas detection and warning devices; grounding of electrical systems; decontamination; explosion proofing; and mishap mitigating factors such as crash worthiness, escape and fire suppression systems. It shall also identify special safety rules such as those required for nuclear weapons, including requirements for component design, prevention of inadvertent detonation, and compliance with nuclear safety rules. It shall also have direct requirements for probability of loss and leverage Failure Mode Effect Analysis (FEMA) and Criticality Analysis (FMECA), and Fault Tree Analysis (FTA).",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.14.1",
+                          "title": "Airworthiness.",
+                          "content": "The digital system model shall specify airworthiness requirements as derived and incorporated into the design from the approved MIL-HDBK-516 Technical Airworthiness Authority (TAA) approved Certification Basis with corresponding allocation to subsystem and component functions and design elements.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.15",
+                      "title": "Human Factors Engineering.",
+                      "content": "The digital system model shall specify human factors engineering requirements for the entity, including any special or unique requirements (for example, constraints on allocation of functions to personnel, interactions of communications and of personnel with equipment in accordance with MIL-STD-1472. Included shall be those specified areas, stations, or equipment that require concentrated human engineering attention due to the sensitivity of the operation or criticality of the task, particularly those areas where the effects of human error would be particularly serious. These requirements shall include considerations for:\na. Human information processing capabilities and limitations.\nb. Foreseeable human errors under both normal and extreme conditions (especially for input, display, control, maintenance and management of critical information and systems).\nc. Implications for the total system environment (including training, support, and operational environment).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.16",
+                      "title": "Cybersecurity and Resiliency.",
+                      "content": "The digital system model shall specify cyber security and resiliency in accordance with the Program Protection / System Security Engineering Process Guidebook (PP/SSE PG) for the Functional Thread Analysis down to the component level.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.17",
+                      "title": "Computer Resource Requirements.",
+                      "content": "The digital system model shall specify computer resource requirements (such as memory reserve, timing constraints, capacity, etc.) necessary to assure that the entity meets its performance requirements. The computer resources covered in the subparagraphs may constitute the environment of the entity (as for a software entity) or the components of the entity (as for a hardware entity). All software and firmware requirements tied to Safety Critical Functions (to include Flight Critical Functions), Mission Critical Functions, and Functions associated with Critical Program Information in accordance with the Functional Thread Analysis shall have Section 4 verification testing defined IAW MIL-HDBK-516. In addition, they shall be identified with Airworthiness attributes as stated in the Digital Requirements Traceability Matrix (i.e. 100% Full Qualification Testing (FQT), Failure Modes Effects Testing (FMET) based on the FMEA, FMECA, Fault Tree Analysis and Safety Assessments, with normal and loaded case lab testing (include worse and degraded) based on the mission section of this specification.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.17.1",
+                          "title": "Computer Hardware Resource Utilization Requirements.",
+                          "content": "The digital system model shall specify the requirements on the entity's computer hardware resource utilization, such as maximum allowable use of processor capacity, memory capacity, input/output device capacity, auxiliary storage device capacity, and network communications capacity. The requirements (for example, stated as percentages of the capacity of each computer hardware resource) shall include the conditions (nominal, worse, degraded) under which the resource utilization is to be measured. Utilization shall be no more than 75% for all Safety Critical Functions, Mission Critical Functions, and Functions associated with Critical Program Information IAW the Functional Thread Analysis.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.2",
+                          "title": "Design and Implementation Constraints.",
+                          "content": "The digital system model shall specify the requirements that constrain the design and implementation of the entity. For hardware-software entities, the digital system model shall include physical requirements imposed on the entity. These requirements may be specified by reference to appropriate commercial or military standards and specifications. Examples include requirements concerning:\na. Use of a particular architecture or requirements on the architecture, such as required databases or other software units; use of standard, military, or existing components; or use of government-furnished property (equipment, information, software) to include Free and Open Source Software (FOSS). The design architecture shall meet the requirement as tied to the probability of loss for redundancy and redundancy management.\nb. Use of a particular design or implementation standards; use of particular data standards; use of a particular programming language.\nc. Flexibility and expandability that shall be provided to support anticipated areas of growth or changes in technology, threat, or mission.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.3",
+                          "title": "Sizing and Timing Requirements.",
+                          "content": "The digital system model shall specify the amount, and location, of internal and auxiliary memory and the amount of processing time allocated. It shall also specify the resources required of both the memory unit and the Central Processing Unit.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.4",
+                          "title": "Database/Data Bank Requirements.",
+                          "content": "The digital system model shall specify any requirements imposed on databases/data banks that must be incorporated into the item. A data element dictionary may be referenced.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.5",
+                          "title": "Flexibility and Expansion.",
+                          "content": "The digital system model shall specify areas of software, firmware, and computer hardware growth that require planning for system flexibility and expansion. In addition, the digital system model shall define specific system or item elements that require spare capacity (for example, memory and timing) to support flexibility and expansion.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.6",
+                          "title": "Software Portability.",
+                          "content": "The digital system model shall specify requirements for the replication, distribution, and installation of new software versions for the item. In addition, the digital system model shall specify system or item requirements that will permit minimum cost and time impacts in the methods used for replication, deployment, and installation of the new versions of software to fielded systems or items. Logistic support considerations required for fielding new software versions shall be included.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.7",
+                          "title": "Software Supportability.",
+                          "content": "The digital system model shall identify requirements for software supportability; for integration or use of existing software support capabilities; for the development or delivery of added support resources; and for any limitations on the use of any particular support facilities, computer equipment or software.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.8",
+                          "title": "Adaptation Requirements.",
+                          "content": "The digital system model shall specify the requirements concerning installation-dependent data that the entity is required to provide (such as site-dependent latitude and longitude or state tax codes). This also includes any operational parameters that may vary according to operational needs (such as operation-dependent targeting constants or data recording).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.9",
+                          "title": "Software Quality Factors.",
+                          "content": "The digital system model shall be divided into subparagraphs to specify each software and firmware quality factor that must be achieved. These factors may include reusability (the ability to be used in multiple applications), testability (the ability to be easily and thoroughly tested), usability (the ability to be easily learned and used), and other attributes as required.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.17.10",
+                          "title": "Computer Communications Requirements.",
+                          "content": "The digital system model shall specify the requirements concerning computer communications that must be used. Examples include: geographic locations to be linked, configuration and network topology, transmission techniques, data transfer rates, gateways, required system use times, type transmission/reception/response; peak volumes of data, and diagnostic features.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.18",
+                      "title": "Logistics.",
+                      "content": "The digital system model shall specify logistic considerations and conditions that will apply to the entity. It shall define logistic conditions such as maintenance considerations, software support, modes of transportation, supply system requirements, and impact of existing facilities and equipment.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.18.1",
+                          "title": "Maintenance.",
+                          "content": "The digital system model shall specify requirements relating to:\na. Use of multipurpose test equipment.\nb. Repair versus replacement criteria.\nc. Levels of maintenance.\nd. Maintenance and repair cycles.\ne. Accessibility.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.18.2",
+                          "title": "Supply.",
+                          "content": "The digital system model shall specify the limitations of the supply system as a basis for the subassembly and piece part breakout of the entity. It shall define supply elements such as centralized supply systems used for certain classes of parts, supply stock locations, and types of items stored at those locations.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.18.3",
+                          "title": "Facilities and Facility Equipment.",
+                          "content": "The digital system model shall specify the constraints imposed on the system or item by the existing facilities and facility equipment.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.18.4",
+                          "title": "Personnel and Training.",
+                          "content": "The digital system model shall specify requirements imposed by, or limited by, personnel or training considerations. It shall allocate the numbers and skills of personnel required for the operation, maintenance, and control of the system, item, and software. It shall also establish constraints on the types and degree of training relating to the use of existing facilities, to equipment, to special or emergency procedures, to hazardous tasks, and to the use of training simulators, as well as the need for additional facilities, equipment, and mission simulators.",
+                          "asterisk": false,
+                          "children": [
+                            {
+                              "number": "3.1.2.3.18.4.1",
+                              "title": "Personnel.",
+                              "content": "The digital system model shall specify personnel requirements including:\na. Skills and numbers of personnel that are to be allocated to the operation, maintenance, and control of the system or item.\nb. Numbers and skills of support personnel for each operational deployment mode and the intended duty cycle, both normal and emergency mission sets.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.1.2.3.18.4.2",
+                              "title": "Training.",
+                              "content": "The digital system model shall include the following training requirements:\na. Restrictions on the type of training to be used for the system or item (for example, technical training school, local on-the-job training).\nb. Constraints specifying the use of available government training facilities and equipment.\nc. Required capabilities of training devices to be developed, characteristics of the training devices, and training and skills to be developed through the use of training devices.\nd. Limitations on the length of training time and on training locations.",
+                              "asterisk": false,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.19",
+                      "title": "Interface Requirements.",
+                      "content": "This paragraph, or a series of subparagraphs, shall describe interface requirements between the entity and other entities. Quantitative interface requirements may be defined in separate specifications, standards, or drawings and referenced.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.19.1",
+                          "title": "Government-Furnished Property (GFP) Interfaces.",
+                          "content": "The digital system model shall identify the interface characteristics for all items of GFP that have been identified for incorporation into the system, item, or software. It shall include a list of all GFP items by their nomenclature, specification number, and PIN. In addition, if software is furnished by the government to a contractor for integration into the system or item, it shall be treated as GFP and identified in the specification by its software identifier, specification number, and PIN. If the list of GFP is extensive, it may be included as an appendix to the specification and referenced in this paragraph.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.19.2",
+                          "title": "External Interface Requirements.",
+                          "content": "The digital system model shall identify the external interfaces of the system, item, or software. An external interface figure(s) may be used to aid in this description. It shall identify each external interface by name (and, for software, project-unique identifier); shall designate the interfacing entities (such as systems, configuration items, parts, software units) by name, number, version, and documentation reference(s); and shall provide a brief description of each interfacing entity. In addition, all system interfaces shall be designated either as utilizing the OMS Message Set (OMS) or OMS Isolators for external non-OMS systems, IAW the guidance outlined in the OMS D&D Standards between subsystems, services, and platforms. In the event an interface is critical to the execution of machine-to-machine command and control, other specifications such as Universal Command & Control Interface (UCI) communication standards shall be documented. The identification shall state which items already exist (and therefore impose interface requirements on interfacing entities) and which are being developed or modified (thus having interface requirements imposed on them). Identifying documentation, such as an interface specification, standard, or drawing shall be referenced for each interface. The paragraph shall be divided into subparagraphs to identify each required external interface and to specify the requirements associated with each interface.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.20",
+                      "title": "Computer Hardware Requirements.",
+                      "content": "The digital system model shall specify the requirements regarding computer hardware that must be used by, or incorporated into, the entity. The requirements shall include number of each type of equipment, type, size, capacity, and other required characteristics of processors, memory, input/output devices, auxiliary storage, communications/network equipment, and other required equipment.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.21",
+                      "title": "Computer Software and Firmware Requirements.",
+                      "content": "The digital system model shall specify the requirements regarding computer software that must be used by, or incorporated into the system design. Examples include operating systems, database management systems, communications and network software, utility software, input and equipment simulators, test software, and manufacturing software. The correct nomenclature, version, and documentation references of each software item shall be provided.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.22",
+                      "title": "Mission Critical Software (MCS) & Safety Critical Software (SCS) Internal Interfaces.",
+                      "content": "The digital system model shall specify the requirements imposed on internal interfaces. Note: these requirements do not apply to the internal interfaces of an unmodified COTS product or Government-recognized non-developmental item (NDI) developed at private expense unless, they are critical to the sustainment of the product itself.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.23",
+                      "title": "MCS and SCS Internal Data Requirements.",
+                      "content": "The digital system model shall specify the requirements imposed on internal data. It shall include requirements on databases and data files. This paragraph may reference other documents (such as data dictionaries, standards for communication protocols, government approved OMS/UCI interface standards for user interfaces, etc.) in place of stating the information here.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.24",
+                      "title": "Software and Firmware Design.",
+                      "content": "The digital system model shall specify the requirements regarding computer firmware and software design that must be used by, or incorporated into, the entity.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.24.1",
+                          "title": "Executable Files.",
+                          "content": "The digital system model shall specify the requirements regarding computer software or firmware that must be used by, or incorporated into, the entity. paragraph shall provide, by reference to an enclosed or otherwise provided electronic medium, the executable files and any batch files, command files, or other software files needed to install and operate the software on its target computer(s). In order for a body of software to be considered a valid copy of the source files, it must be shown to match these source files exactly.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.24.2",
+                          "title": "Source Files.",
+                          "content": "The digital system model shall specify the requirements regarding computer software or firmware that must be used by, or incorporated into, the entity. The paragraph shall provide, by reference to an enclosed or otherwise provided electronic medium, the source files and any batch files, command files, or other software files needed to regenerate the executable files. In order for a body of software to be considered a valid copy of the source files, it must be shown to match these source files exactly.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.24.3",
+                          "title": "\"As Built\" Software Design.",
+                          "content": "The digital system model shall contain or reference a document that describes the design of the \"as built\" configuration of the end item.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.24.4",
+                          "title": "Compilation/Build Procedures.",
+                          "content": "The digital system model shall describe the compilation and build process used to create the executable files from the source files and to prepare the executable files to be loaded into end item or other distribution media (including version numbers). It shall specify the compiler(s)/assembler(s) to be used, other hardware and software needed, and any settings, options, or conventions to be used. Additionally, any procedures for compiling/assembling, linking, and building the software, firmware, and the software system/subsystem, including variations for different sites, configurations, and versions shall be included.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.24.5",
+                          "title": "Modification Procedures.",
+                          "content": "The digital system model shall describe procedures that shall be followed to modify the software and firmware. It shall include or reference information on the following:\na. Support facilities, equipment, and software, and procedures for their use\nb. Personnel needed to support the deliverable software/firmware, including anticipated number of personnel, types and levels of skills, expertise, and security clearances.\nc. Databases/data files used by the software, firmware, and procedures for using and modifying them\nd. Design, coding, or other conventions to be followed\ne. Compilation/build procedures if different from those above\nf. Integration and testing procedures to be followed\ng. Verification through testing for ability to modify shall be completed through the laboratory as delivered IAW the Engineering Design Data and Associated List Data Item Description (DID).\nh. Necessary programming language proficiency and experience required",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.24.6",
+                          "title": "Computer Hardware Resource Utilization.",
+                          "content": "The digital system model shall describe the \"as built\" measured utilization of computer hardware resources (such as processor capacity, memory capacity, input/output device capacity, auxiliary storage capacity, and communications/network equipment capacity). It shall cover all computer hardware resources included in the utilization requirements, in system-level resource allocations affecting the computer hardware, or in the software development plan. If all utilization data for a given computer hardware resource is presented in a single location, such as in a single software specification, this paragraph may reference that source. Included for each computer hardware resource shall be:\na. The requirements or system-level resource allocations being satisfied.\nb. The assumptions and conditions on which the utilization data are based (for example, typical usage, worst-case usage, degraded usage, assumption of certain events)\nc. Any special considerations affecting utilization (such as use of virtual memory, overlays, or multiprocessors or the impacts of operating system overhead, library software, or other implementation overhead)\nd. The units of measure used (such as percentage of processor capacity, cycles per second, bytes of memory)\ne. The level(s) at which the estimates or measures have been made (such as software unit, or executable program)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.24.7",
+                          "title": "Design Traceability.",
+                          "content": "This section shall provide:\na. Traceability from each source file to the software unit(s) that it implements, or, if a software unit corresponds to multiple source files, traceability from each source file to the detailed design aspects of those software units that it implements.\nb. Traceability from each software unit to the source files that implement it, or if a software unit corresponds to multiple source files, traceability from each detailed design aspect of the software unit to the source files that implement it.\nc. Traceability from each computer hardware resource utilization measurement to the requirements it addresses. (Alternatively, this traceability may be provided in the computer hardware resource utilization section.)\nd. Traceability from each requirement regarding computer hardware resource utilization to the utilization measurements given in the computer hardware resource utilization section.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.25",
+                      "title": "Design and Construction.",
+                      "content": "The digital system model shall specify essential requirements that define the exact design of the entity covered by the specification. The subparagraphs shall reference the documentation that defines the design and shall include appropriate design standards.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.26",
+                      "title": "Workmanship.",
+                      "content": "The digital system model shall specify the workmanship requirements and shall include the necessary requirements relative to the standard of workmanship desired, freedom from defects, and general appearance of the finished product. The requirements shall be so worded as to provide a logical basis for rejection in those cases where workmanship is such that the item is unsuitable for the purpose intended.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.27",
+                      "title": "Product Characteristics.",
+                      "content": "The digital system model shall identify specific conditions and properties such as color, protective coating, surface texture, surface finish, dimensions, weight, and other similar descriptors necessary for the material to perform adequately in its intended use.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.28",
+                      "title": "Chemical, Electrical, and Mechanical Properties.",
+                      "content": "The digital system model shall define the requirements for composition, concentration, hardness, tensile strength, elasticity, thermal expansion, electrical resistivity, and other similar descriptors necessary for the material to perform adequately in its intended use.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.29",
+                      "title": "Stability.",
+                      "content": "The digital system model shall define the requirements for shelf-life and aging that are necessary for the material to perform adequately in its intended use and over its intended life.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.30",
+                      "title": "Qualification.",
+                      "content": "When inclusion of a qualification requirement has been properly authorized for a specification, one of the statements below shall be included as one of the first paragraphs in Section 3. The parenthetical paragraph reference in these statements shall direct the reader to the qualification tests in Section 4 and the guidance on how to apply for qualification approval in Section 6.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.3.30.1",
+                          "title": "If the specification requires that products be approved for listing on a qualified products list (QPL), include this statement:",
+                          "content": "\"3.X Qualification. (Item) furnished under this specification shall be products that are authorized by the qualifying activity for listing on the applicable qualified products list before contract award (see 4. and 6.).\"",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.3.30.2",
+                          "title": "If the specification requires that manufacturers be approved for listing on a qualified manufacturers list (QML), include this statement:",
+                          "content": "\"3.X Qualification. (Item) furnished under this specification shall be products that are manufactured by a manufacturer authorized by the qualifying activity for listing on the applicable qualified manufacturers list before contract award (see 4. and 6.).\"",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.2.3.31",
+                      "title": "First Article.",
+                      "content": "First article includes pre-production models, initial production samples, test samples, first lots, pilot models, and pilot lots. If it may be necessary to test a first article for conformance with specification requirements prior to regular production on a contract, the following statement shall appear as one of the first paragraphs in Section 3:\n\"3.X First article. When specified (see 6.2), a sample shall be subjected to first article inspection in accordance with 4._.\"",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.3.32",
+                      "title": "Recycled, Recovered, Environmentally Preferable, or Biobased Materials.",
+                      "content": "Specifications shall include the following paragraph in Section 3 to encourage the procurement and use of products made from recycled, recovered, environmentally preferable, or biobased materials:\n\"3.X Recycled, recovered, environmentally preferable, or biobased materials. Recycled, recovered, environmentally preferable, or biobased materials shall be used to the maximum extent possible, provided that the material meets or exceeds the operational and maintenance requirements, and promotes economically advantageous life cycle costs.\"",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "SECTION 4 - VERIFICATION.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.4.1",
+                      "title": "General.",
+                      "content": "The digital system model include all inspections to be performed by the contractor or the government to determine that the item to be offered for acceptance conforms to the requirements within the digital systems model. Verification may be accomplished by analysis, demonstration, examination, testing, or any combination thereof. This section shall not include quality requirements that belong in the contract, such as responsibility for inspection, establishment of quality or inspection program requirements, warranties, instructions for nonconforming items, and contractor liability for nonconformance.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.4.2",
+                      "title": "Classification of Inspections.",
+                      "content": "The digital system model shall include the classifications of inspections. See MIL-STD-961E for further explanation.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.4.3",
+                      "title": "Inspection Conditions.",
+                      "content": "Unless otherwise specified, all inspections shall be performed in accordance with the test conditions specified in (applicable test method document or applicable paragraph(s) in the specification).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.4.4",
+                      "title": "Qualification Inspection.",
+                      "content": "The qualification inspections shall include a description of the inspection procedure, sequence of inspections, number of units to be inspected, and the criteria for determining conformance to the qualification requirement. It is recommended that a table be included, cross-referencing the requirements with the appropriate qualification examinations and tests. In general, a specification that has first article inspection shall not also have qualification inspection, unless it can be shown the item is so critical that failure would likely result in death or injury.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.4.5",
+                      "title": "First Article Inspection.",
+                      "content": "The first article inspections shall include a description of the inspection procedure, sequence of the inspections, number of units to be inspected, and the criteria for determining conformance to the requirement specified. It is recommended that a table be included, cross-referencing the requirements with the appropriate first article examinations and tests.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.4.6",
+                      "title": "Conformance Inspection.",
+                      "content": "Conformance inspection shall ensure that production items meet specification requirements prior to acceptance by the Government. Conformance inspection shall include a description of the inspection procedure, sequence of inspections, number of units to be inspected, and the criteria for determining conformance to the requirement specified. Conformance examinations and tests may be the same as those specified for first article inspection, but they shall not duplicate any long-term or special tests that were used to justify inclusion of qualification in a specification. It is recommended that a table be included, cross-referencing requirements with the appropriate conformance examinations and tests.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.4.7",
+                      "title": "Examination and Tests for Verifying Requirements in Section 3.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.4.7.1",
+                          "title": "Sampling.",
+                          "content": "Sampling is a valuable tool for verification of compliance with specification requirements. Specifications may include sampling, but shall not include any fixed acceptable quality levels, lot tolerance percent defectives, or other types of fixed levels of defects. Such provisions may be included in the quality assurance section of the contract, but shall not be in the specification.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.4.7.2",
+                          "title": "Inspection lot.",
+                          "content": "When inspections are to be based on lots or samples from lots, the definition of what constitutes an inspection lot shall be provided. Restrictions concerning the formation of inspection lots, such as limiting inspection lots to like units of the same part number or manufacturing lot number, should be specified.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.4.7.3",
+                          "title": "Classification of defects.",
+                          "content": "The digital system model shall include classification of defects. When required for reference purposes in reporting inspection results, the defects in a classification shall be numbered. See MIL-STD-961E for examples.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "SECTION 5 - SPECIFICATION TREE.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.5.1",
+                      "title": "Specification Tree.",
+                      "content": "For each specification developed or utilized to fully define the System and its subordinate hierarchical elements, the digital system model shall produce a graphical depiction displaying all specifications to show the linkages between each shall be provided. Within the specification tree, each specification block shall have the name, higher and lower level linkages traced and displayed, WBS elements associated and displayed, data rights notated, and CI, CSCI, or subsystem notation where applicable.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.2.6",
+                  "title": "SECTION 6 - PACKAGING.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.6.1",
+                      "title": "Packaging.",
+                      "content": "For acquisition purposes, the packaging requirements shall be as specified in the contract or order. When packaging of materiel is to be performed by DoD or in-house contractor personnel, these personnel need to contact the responsible packaging activity to ascertain packaging requirements. Packaging requirements are maintained by the Inventory Control Point's packaging activities within the Military Service or Defense Agency, or within the military service's system commands. Packaging data retrieval is available from the managing Military Department's or Defense Agency's automated packaging files, CD-ROM products, or by contacting the responsible packaging activity.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.6.2",
+                      "title": "Packaging for Ammunition and Explosives.",
+                      "content": "For ammunition and explosives specifications under FSG 13 or this group's FSCs, or specifically for propellant chemicals under FSC 6810, specific packaging requirements and inspection/verification procedures and acceptance criteria may be included in Sections 4 and 5 of the specification. If the packaging requirements are included in an ammunition or explosive specification, the above shall not apply as determined by the preparing activity.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.2.7",
+                  "title": "SECTION 7 - NOTES.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.7.1",
+                      "title": "Section 7 is not contractually binding.",
+                      "content": "No requirements shall be included in Section 7. It shall only contain information of a general or explanatory nature. Such information shall assist in determining the applicability of the specification; the selection of appropriate type, grade, or class of the commodity; additional superseding data; changes in product designation such as grades or class; standard sample (if required); and other information deemed appropriate. See MIL-STD-961E for other information deemed appropriate.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.2.8",
+                  "title": "APPENDIX(ES).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.8.1",
+                      "title": "General.",
+                      "content": "When required, an appendix shall be included as an integral part of a specification, beginning on the next page following the \"SECTION 7 - NOTES\" section. See MIL-STD-961E for further explanation.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Digital Requirements Traceability (DRT).",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Digital Requirements Traceability shall be integral to the digital system model.",
+              "content": "The digital system model shall contain the following data fields constructed to include bi-directional requirements and verification traceability of all specifications from System Specification to the lowest level hardware and software items:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Unique Identification Number (UID):",
+                  "content": "Enter the UID for every requirement in the system configuration baseline to include all lower level specifications and requirements (functional, allocated, and physical).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Source document or data:",
+                  "content": "For each specification and source document or data, enter the document number or data origination point and title for the source of each requirement statement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Specification or Source Document Paragraph Number or Data Location:",
+                  "content": "Enter the specification or source document paragraph number or data location for each requirement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Requirement Text:",
+                  "content": "Enter the specification or source document requirement text for each requirement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Requirement Traceability:",
+                  "content": "For each requirement, identify and show the traces between all other requirements within the bi-directional specification dataset to the lowest hardware and software component.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Requirement Type:",
+                  "content": "The digital system model shall identify if the requirement is directly provided, derived, decomposed, allocated, or regression",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Requirement Attribute:",
+                  "content": "For each requirement define whether the requirement is a measure of the following by including each relevant attribute:\na. Performance\nb. Reliability, Maintainability, or Availability parameter\nc. Software functional requirement\nd. Interface requirement(s) to include the interface protocol(s) used, the interfacing item, and associated ICD\ne. Manufacturing or producibility parameter\nf. Environmental\ng. Cybersecurity\nh. Key Performance Parameter\ni. Key System Attribute\nj. Computer Program Identification Number (CPIN) assignment association\nk. Safety Critical Function (SCF)\nl. Mission Critical Function (MCF)\nm. Statement of Functionality (SoF)\nn. Location(s) within systems (WL/BL/Station)\no. Airworthiness (with included associated criterion)\np. Configuration Item (CI)\nq. Computer Software Configuration Item (CSCI)\nr. Nomenclature assignment association\ns. Configuration information including part number(s), revision(s), serial number, software version(s)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Requirement Status:",
+                  "content": "Identify the Requirement status for each requirement, as approved by contractor, under review by contractor, disapproved by contractor, approved by USG, under review by USG, or disapproved by USG. The status should identify the latest revision number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.9",
+                  "title": "Non-Conforming Requirements:",
+                  "content": "For non-conforming requirements enter the System Trouble Report (STR), Deficiency Report (DR) number and title, Request for Variance (RFV) ID and title, and Specification Change Notice (SCN) ID and title",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.10",
+                  "title": "Enter the Next Higher Assembly (NHA) drawing/model ID and title associated with each requirement.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.11",
+                  "title": "Requirement Allocation:",
+                  "content": "Enter the specific system, subsystem, Configuration Item, component, Computer Software Configuration Item, Computer Software Component and Computer Software Unit that each requirement has been allocated. System level requirements shall be allocated to all Configuration Items defined for the system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.12",
+                  "title": "Form and maturity of End Product:",
+                  "content": "Enter the form and maturity level of the end product used for verification within the digital system model. For example the form can be the system, subsystem, unit level, configuration item, computer software configuration item, or component. The design name (e.g. landing gear, fuselage, or propulsion) shall be included for each associated End Product form. The maturity level can be the first article, production representative, prototype or final configuration item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.13",
+                  "title": "Verification Method:",
+                  "content": "For each digital system model verification requirement, enter the verification method as follows:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.13.1",
+                      "title": "\"Analysis\"",
+                      "content": "An element of verification that uses established technical or mathematical models or simulations, algorithms, charts, graphs, circuit diagrams, or other scientific principles and procedures to provide evidence that stated requirements were met. [Source: MIL-STD-961E with Change 2]",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.13.2",
+                      "title": "\"Demonstration\"",
+                      "content": "An element of verification that involves the actual operation of an item to provide evidence that the required functions were accomplished under specific scenarios. The items may be instrumented and performance monitored. [Source: MIL-STD-961E with Change 2]",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.13.3",
+                      "title": "\"Examination\"",
+                      "content": "An element of verification that is generally nondestructive and typically includes the use of sight, hearing, smell, touch, and taste; simple physical manipulation; and mechanical and electrical gauging and measurement. [Source: MIL-STD-961E with Change 2]",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.13.4",
+                      "title": "\"Test\"",
+                      "content": "An element of verification in which scientific principles and procedures are applied to determine the properties or functional capabilities of items. [Source: MIL-STD-961E with Change 2]",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.14",
+                  "title": "Verification Data:",
+                  "content": "Enter the document number, title, and date of the verification document or digitally-generated data that contains the verification method.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.15",
+                  "title": "Verification Procedure:",
+                  "content": "Enter the verification procedure section, and verification procedure step(s) that provides the verification method for each requirement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.16",
+                  "title": "Verification Results:",
+                  "content": "Enter the results of the verification for each requirement. The data outlined in the Digital Verification Data Artifacts section of this DID shall be included here",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.17",
+                  "title": "Corrective Actions:",
+                  "content": "Enter all corrective actions taken and the results of the corrective actions for designs presented for verification which were found to be non-conforming.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.18",
+                  "title": "Comments:",
+                  "content": "Enter explanatory notes as required.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Digital Verification Data Artifacts",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "For each requirement provided, decomposed, derived, allocated, regressed, or otherwise generated within the System Specification and each lower level specification, all verification artifacts, to include analysis reports, inspection reports, demonstrations, test plans, test procedures, and test reports, corresponding verification data shall be generated",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "This verification data shall be one digital data set for each of the verification methods established to demonstrate compliance against a corresponding specification's requirements within Section 3",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Each data set shall demonstrate and define how the verification artifacts result in compliance to the verification method defined in a specification's requirements within Section 4 to meet the corresponding requirements within Section 3",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "All supporting documentation shall be embedded or attached within this data set",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82464.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

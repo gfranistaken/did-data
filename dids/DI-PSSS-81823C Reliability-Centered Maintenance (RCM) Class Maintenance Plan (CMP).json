@@ -1,0 +1,416 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81823C",
+  "slug": "di-psss-81823c",
+  "title": "Reliability-Centered Maintenance (RCM) Class Maintenance Plan (CMP)",
+  "summary": "The RCM Class Maintenance Plan (CMP) documents the overall maintenance strategy for a ship class, including prescribed maintenance tasks, material condition assessments, and availability routines across organizational, intermediate, and depot level maintenance activities.",
+  "approval_date": "2023-11-09",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10447",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "PSSS-2023-017",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Reliability-Centered Maintenance (RCM) Class Maintenance Plan (CMP) provides the overall maintenance strategy for a ship class, as well as a listing of all prescribed maintenance tasks accomplished by organizational, intermediate and depot level maintenance activities, including material condition assessment, life renewal (preventive and corrective maintenance), alterative maintenance (ship change and alteration) tasks and availability routines. The RCM CMP provides the Government the transparency into the development of the CMP to assure that it is developed in accordance with all current policies and directives.\nThis Data Item Description (DID) contains the format, content, preparation instructions and intended use information for the data product resulting from the work task described in 5.1.12 of MIL-STD-3034A.\nThis DID is related to DI-PSSS-81829A, RCM Corrective Maintenance (CM) Development Report; DI-PSSS-80986B, RCM Maintenance Requirements Index (MRI); DI-PSSS-80988B, RCM Task Definition Report; DI-PSSS-80987B, RCM Procedure Validation Report; DI-PSSS-80990A, RCM Documentation Control Sheet.\nThis DID supersedes DI-PSSS-81823B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-PSSS-81823B"
+  ],
+  "related_dids": [
+    "DI-PSSS-81829A",
+    "DI-PSSS-80986B",
+    "DI-PSSS-80988B",
+    "DI-PSSS-80987B",
+    "DI-PSSS-80990A"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The CMP report shall be in Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The CMP report shall contain all the information specified in this DID.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "CMP Organization.",
+          "content": "The CMP shall identify the ship class's overall maintenance program in narrative form. The plan shall also identify all data elements for each applicable configuration-based CMP maintenance requirement developed using the Reliability-Centered Maintenance (RCM) analyses process, as specified in MIL-STD-3034A.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "CMP Maintenance Program.",
+          "content": "Provide the ship class's overall maintenance program as defined in OPNAVINST 4700.7, Section 201.4. and Chapter 7. The overall maintenance program must be defined to properly determine applicable maintenance requirements. The overall maintenance strategy for a class shall be considered as an integral component to the CMP and provided in narrative form as follows.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Executive Summary.",
+              "content": "Provide an executive summary that includes a narrative overview of the development of the CMP and its goals. The executive summary shall provide insight into how the CMP was formulated and the maintenance policies that affected its process and products.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Maintenance Program Strategy.",
+              "content": "Provide a description of the overall maintenance program for the ship class over the entire ship class life to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Salient and maintenance worthy features of the ship's design, e.g., types of propulsion systems, weapons systems, integrated combat systems, aviation launch, recovery, storage and maintenance, and strategic systems, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Class specific deviations from standard designs, margins, or materials with future maintenance implications, e.g., use of uncommon materials for hull or structural systems, uncommon hull forms, unusual propulsion types, non-standard construction techniques, etc.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Summary of the Required Operational Capabilities and Projected Operating Environment (ROC and POE).",
+                  "content": "ROC and POE features shall be mapped to important class specific equipment and their critical material condition parameters.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "An overview of the maintenance strategies for critical systems and equipment, specialized facilities, capabilities, and personnel.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "CMP Maintenance Requirement Development.",
+          "content": "Maintenance requirements (tasks) shall be condition-based to the maximum extent possible and be identified in the CMP. CMP maintenance requirements shall include Preventive Maintenance, e.g., Condition-Directed, Time-Directed, Failure Finding, Servicing and Lubrication tasks, Corrective Maintenance tasks, Alterative Maintenance tasks, material condition assessment requirements, and availability routines. Each CMP maintenance requirement shall be developed with engineered periodicities and contain standardized maintenance data to the maximum extent possible. Each CMP maintenance requirement shall contain the following data fields to relate to maintenance task information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "System / Expanded Ship Work Breakdown Structure (ESWBS).",
+              "content": "Enter the ESWBS of the system, equipment, component for the maintenance requirement, as contained in NAVSEAINST 4790.1 (Series). The maintenance requirement shall include the ESWBS level 5 number of the equipment/component to which the task is applicable. If applicable to the entire subsystem/system, the ESWBS level 4/level 3 number shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "System / ESWBS Description.",
+              "content": "Enter the long system description for a referenced ESWBS value in 3.3.1, as contained in NAVSEAINST 4790.1 (Series). Identify the ESWBS level 5 description of the equipment/component to which the task is applicable. If applicable to the entire subsystem/system, the ESWBS level 4/level 3 description shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Maintenance Requirement Description (MRD) - Planned Text.",
+              "content": "Enter a concise description of specific maintenance actions required for the maintenance requirement. The task description shall begin with the maintenance action verb, e.g., \"Replace\", \"Clean\", \"Inspect\", etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Current Ship's Maintenance Project (CSMP) Summary.",
+              "content": "Enter an abbreviated version of the task description. All abbreviations shall be identified in accordance with ASME Y14.38 (Abbreviations and Acronyms for Use on Drawings and Related Documents). This field shall be in the format of \"Action\" - \"Equipment Noun Name\" and shall be limited to 30 characters. This data element shall contain the information for Block 37 of the OPNAV 4790/2-Kilo.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Problem Description.",
+              "content": "Enter a brief narrative explanation of the maintenance problem/trigger that requires performance of the maintenance requirement. This data field shall have a 2000-character limit and shall contain information for the first portion for Block 35 of the OPNAV 4790/2-Kilo.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Recommended Solution.",
+              "content": "Enter a narrative explanation of the maintenance required to correct the problem described, complete the scheduled task, or scheduled ship change, as applicable. This 2000-character field shall expound upon the task description and shall contain the information for the second portion for Block 35 of the OPNAV 4790/2-Kilo. The recommended solution shall include amplifying information, e.g., reporting requirements, situational requirements, and relationships with other tasks.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Planned Periodicity.",
+              "content": "Enter the periodicity (frequency) of the maintenance requirement in months, based on information identified by the applicable RCM analyses. The periodicity shall identify the longest period between scheduled maintenance tasks selected to ensure that a predicted failure will not occur and shall specify acceptable equipment maintenance during an operational condition.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "Situational Periodicity.",
+              "content": "Enter an \"R\" to indicate a situational periodicity for an applicable condition, e.g., pre-deployment, dry-docking, etc. If no applicable situation exists, enter a \"U\" for an unscheduled maintenance requirement.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "Situational Periodicity Condition.",
+              "content": "Enter the ship specific condition, e.g., operational, maintenance event, etc. for maintenance requirements with an \"R\" entered in the \"Situational Periodicity\" field of 3.3.8.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.10",
+              "title": "Recommended Maintenance Level (RML).",
+              "content": "Enter the applicable RML to identify the activity level that will perform the work for the maintenance requirement. Applicable entries shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.10.1",
+                  "title": "D - Depot",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.10.2",
+                  "title": "I - Intermediate",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.10.3",
+                  "title": "TAV - Technical Assist Visit",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.10.4",
+                  "title": "O - Organizational",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.11",
+              "title": "Capable Maintenance Level (CML).",
+              "content": "Enter the applicable activity level capable to perform the maintenance, if the RML activity became unavailable. The CML shall identify O, I, TAV or D level as defined in 3.3.10.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.12",
+              "title": "Man-Days.",
+              "content": "Enter the number of man-days, up to five digits, required to perform the maintenance requirement based on one person working an eight-hour workday.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.13",
+              "title": "Material Cost Estimate.",
+              "content": "Enter the estimated material cost to accomplish the full intent of the maintenance requirement for one equipment. This field shall be limited to six figures and rounded to the nearest dollar. The estimate shall be configuration specific and based on the corresponding Task Material List (TML).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.14",
+              "title": "Maintenance Requirement Identifier.",
+              "content": "Enter a unique identifier for the maintenance requirement under development. The alpha-numeric identifier shall include search and filtering capabilities for various parameters, e.g., system, task type, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.15",
+              "title": "Unit Identification Code (UIC).",
+              "content": "Enter the assigned UIC value for the specific entity, e.g., ship hull, shore facility, etc. to which the maintenance requirement is applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.16",
+              "title": "Class.",
+              "content": "Enter the applicable ship class designation for the CMP maintenance requirement under development.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.17",
+              "title": "Hull Identification.",
+              "content": "Enter the identity of the ship hull applicable to the CMP maintenance requirement under development. Hull identification shall contain the following data fields:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.17.1",
+                  "title": "Ship Type.",
+                  "content": "Enter the ship type, e.g., \"DDG\", \"CVN\", \"SSN\", etc. based on the Class defined in 3.3.16.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.17.2",
+                  "title": "Hull Number.",
+                  "content": "Enter the applicable hull number for the ship.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.18",
+              "title": "Hull Name.",
+              "content": "Enter the narrative ship name of the hull identified in 3.3.17, applicable to the maintenance requirement under development.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.19",
+              "title": "Maintenance Instruction Document (MID).",
+              "content": "Identify all maintenance instruction documents applicable to the maintenance requirement under development. MIDs shall contain applicable Maintenance Requirement Cards (MRC), as well as technical and design information for acceptable restoration, overhaul, refurbishment, inspection, and testing of systems, components and equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.20",
+              "title": "Document Type.",
+              "content": "Enter the Maintenance Instruction Document type and number that dictates the need for the maintenance requirement, e.g., NSTM, MRC, CSWT, TM, CLAD, of the MIDs identified in 3.3.19 above.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.21",
+              "title": "Document Title.",
+              "content": "Enter the narrative title of the MIDs identified in 3.3.19 above.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.22",
+              "title": "Maintenance Instruction Comments.",
+              "content": "Enter applicable Maintenance Instruction comments. These comments shall contain additional detailed information about the MID being used, e.g., page number, chapter, etc., as applicable. This field shall be limited to 2000 characters.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.23",
+              "title": "Hierarchical Structure Code (HSC).",
+              "content": "Enter the HSC to identify the functional and hierarchical relationship of the ship, ship system, and equipment configuration records, as contained in NAVSEAINST 4790.1. The HSC shall also identify essential data organization that will be used for its efficient and effective control, display, and retrieval.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.24",
+              "title": "Equipment Functional Description (EFD).",
+              "content": "Enter the EFD to identify the function performed by a specific piece of equipment within a system. The EFD shall include a full description of each unique and complete HSC.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.24.1",
+                  "title": "The EFD's Equipment System Designator (ESD) shall be identified at its next higher level of indenture.",
+                  "content": "Each EFD shall be identified as a unique identifier within the ship's CMP database and shall be identified consistently across the ship class.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.24.2",
+                  "title": "The EFD shall show a one-to-one correspondence between HSC and EFD.",
+                  "content": "When major equipment types are involved, the EFD identification shall begin with the identity of the major equipment, followed by the unit identity. The noun name shall be included in accordance with ASME Y14.38. The remainder of the functional description shall follow with a comma and no space. Abbreviations shall be from right to left, when applicable.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.25",
+              "title": "Equipment System Designator (ESD).",
+              "content": "Enter the ESD to identify the principal system/subsystem into which a group of individual components are combined to perform a specific function. The ESD shall have a valid entry and shall be uniformly identified across the class with standardization controlled by the Configuration Data Manager (CDM). The description shall begin with the identity of the principal equipment/subsystem followed by any unit identity. The ESD shall be contained within the EFD, where the ESD represents up to the first five characters of the HSC. ESDs shall be fifteen-alpha/numeric characters and shall be specified to all data records.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.26",
+              "title": "Repairable Identification Code (RIC).",
+              "content": "Enter the RIC to identify the systems, equipment, components, tools, and materials addressed by the maintenance requirement. Also referred to as the Allowance Parts List (APL)/Allowance Equipage List (AEL), this identifier shall be as contained in NAVSEA Technical Specification 9090-700.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.27",
+              "title": "Noun Name.",
+              "content": "Enter the noun name to identify the component at the lowest echelon, e.g., unit, type designator, assembly, etc. having its own configuration identity. The component may have its own RIC. The noun name shall be a nomenclature description of the equipment and shall be the same nomenclature assigned to the Equipment Identification Code (EIC).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.28",
+              "title": "Component Identification (COMP_ID).",
+              "content": "Enter the Component ID, employing the local numbering system used to identify equipment, e.g., Station Number: \"1A BOILER\", Valve Mark: \"ASW 25\", etc. A description of the component may be entered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.29",
+              "title": "Record Identification Number (RIN).",
+              "content": "Enter the applicable RIN to identify the ship (hull) specific number assigned to an individual RIC/APL record. RIN information can be derived from the configuration information contained in the Model Based Product Support (MBPS) Navy Product Data Management (NPDM) module.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.30",
+              "title": "Location.",
+              "content": "Enter the identification of the onboard location of an installed equipment/component, and the space and location of the equipment on which maintenance was required.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Media Requirements.",
+      "content": "The narrative portion of the CMP media shall be delivered in Microsoft Word. The CMP maintenance requirements and applicable data elements shall be delivered in Comma Separated Value (CSV) format for upload to the electronic database specified in the contract.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81823C.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

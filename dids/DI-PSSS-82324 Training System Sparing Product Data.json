@@ -1,0 +1,293 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats - DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them - set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82324",
+  "slug": "di-psss-82324",
+  "title": "Training System Sparing Product Data",
+  "summary": "Training System Sparing Product Data captures support and support-related engineering and logistics data from contractors resulting from product support analysis during design, development, and initial fielding of a training system.",
+  "approval_date": "2020-07-28",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10189",
+  "limitation": "None",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "PSSS-2020-006",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Training System Sparing Product Data comprises the support and support-related engineering and logistics data acquired from contractors generated as a result of the product support analysis conducted during the design, development, and initial fielding of a training system or training end item. This includes data for maintenance planning; logistics design requirements, reliability and maintainability, system safety, supply support, initial sparing, and item management.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The Training System Sparing Product Data shall be delivered in table form with columns for each element contained in section 3.2.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The report shall contain a row for each item recommended by the contractor to maintain the delivered training system or end item at an operational availability (AO) of 90% for a time period specified in the applicable Statement of Work (SOW).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The report will contain a column for each of the following fields:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "PROVISIONING LIST ITEM SEQUENCE NUMBER (PLISN)",
+              "content": "An alpha numeric sequentially assigned value for each item contained in the system/equipment breakdown (EXAMPLE-A001-Cockpit, B001-Visual, C001-IOS, etc. This alphanumeric format will allow for separate System Sorting. Once a PLISN NUMBER has been assigned to an item, that number may not be used again.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "TYPE OF CHANGE CODE (TOCC)",
+              "content": "This block, which is blank on initial submissions of provisioning data, shall be used as a type of change code that indicates deletions, modifications, typographical errors, quantity changes (increase, decrease), and limited part applications as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "A - Added Item.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "D - Indicates a deleted item.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "G - Deletion of a data element.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "L - Item is replaced during production and support of the old part may be required for prior production quantities.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "M - Indicates a modified item.",
+                  "content": "Required to identify entries for those items changed as a result of either administrative or engineering requirements (not for initial entry of NSN) before or during production. Examples of changes are as follow:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.2.5.1",
+                      "title": "Prime contractor's reference number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.2",
+                      "title": "CAGE code.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.3",
+                      "title": "Manufacturer's reference number.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.4",
+                      "title": "Item name.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.2.5.5",
+                      "title": "Other data elements, as may be subsequently defined, wherein the hardware is not affected.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.2.6",
+                  "title": "Q - Used to make quantity field changes.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.7",
+                  "title": "T - Used to make a typographical error correction.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "MANUFACTURER'S COMMERCIAL AND GOVERNMENT ENTITY (CAGE) CODE",
+              "content": "A five-character code assigned by the Defense Logistics Information Service (DLIS) to the design control activity or actual Manufacturer/Supply Company of an item as contained in the Cataloging Handbook H4/H8 Series.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "ORIGINAL EQUIPMENT MANUFACTURER'S PART NUMBER (OEM/P/N)",
+              "content": "The actual Original Equipment Manufacturer's part, model or drawing number used by the manufacturer to identify their item of supply.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "ITEM NAME/NOMENCLATURE",
+              "content": "An identifying noun with appropriate adjective modifier, as contained in Cataloging Handbook H6. Item names contained in Cataloging Handbook H6 cannot be abbreviated unless approved by the requiring authority.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "QUANTITY PER END ITEM",
+              "content": "The quantity per end item of the system/end item as a model (\"A\" indentured) item. Exception: If the item does not have a NHA, the Quantity per End Item should be blank. The total number of times the line item is used in the complete system/equipment. If the quantity is unknown or cannot be determined specify the quantity by \"V\" (variable) or as specified by the provisioning activity.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "UNIT OF ISSUE (UI)",
+              "content": "A code that indicates the UI quantity of an item. The UI quantity is the managing activity's established accounting unit upon which the smallest unit pack is based, accountable records are maintained, and requirements are computed. For applicable codes see DLA Cataloging Data and Transaction Standards, Volume 10, Table 53.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "UNIT OF ISSUE PRICE",
+              "content": "An estimated cost associated with each performing activity recommended requirement for budgeting and planning.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "TOTAL QUANTITY RECOMMENDED",
+              "content": "A recommended quantity of an items required to support a specific number of applications for a specific period of time (see para 3.1). The applications may be to a system, end item, component, or combinations thereof, which are contained in the applicable contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "TOTAL PRICE",
+              "content": "The total price after multiplying the UI Price and the Total Quantity Recommended.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "NATIONAL STOCK NUMBER/NATIONAL ITEM IDENTIFICATION NUMBER (NSN/NIIN)",
+              "content": "A NIIN provides a unique identification of an item of supply within a specified FSC. The combination of the two identifiers (FSC and NIIN) constitutes the NSN (see Appendix B for a complete definition of NSN and Related Data). The nine digit NIIN is made up of a two-digit NATO Codification Bureau (NCB) code indicating the assigning country (e.g., the United States uses \"00\" and \"01\") and the final seven digits are assigned sequentially and have no inherent significance. The NIIN relates to one and only one item of supply within the codifying country. It can consist of one or many \"items of production\" (i.e., a product of a specific manufacturer) having equivalent \"fundamental characteristics\".\nNOTE: An alphanumeric NIIN is used to document management control or temporarily assigned numbers prior to final NIIN assignment. Final NIINs are completely numeric. For applicable codes, see DLA Cataloging Data and Transaction Standards, Volume 10.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "LONG-LEAD ITEM",
+              "content": "The computed or expected time interval expressed in months between placement of a new contract and shipment of the first deliverable quantity.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "ESSENTIALITY CODE",
+              "content": "A numeric code to indicate the degree to which the failure of the part affects the ability of the end item to perform its intended operation.\nCodes are as follows:\n1 - Failure to this part will render the training system completely inoperable.\n2 - Failure to this part will not render the training system inoperable, but will reduce the training capability of the system by over 50%.\n3 - Failure to this part will not render the training system inoperable, will reduce the training capability of the system by less than 50%.\n4 - Failure to this part will not render the training system inoperable, but procurement time of a replacement item may cause an extended period of trainer down time that exceeds 6 months.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "MEAN TIME BETWEEN FAILURES (MTBF)",
+              "content": "Mean time between failures (MTBF) for a particular interval is calculated by dividing total functional life of a population of an item by total number of failures within the population during the measurement interval. The definition holds for time, rounds, miles, events, or other measure of life units. MTBF is documented as both technical and operational characteristics. Technical parameters reflect the technical reliability that the system/equipment must demonstrate. In determining these parameter values, all failures and resultant actions to restore the item will be considered (e.g., a broken tail light is a technical, but not operational characteristic). Operational parameters reflect operational RAM characteristics that the system must demonstrate. Only operational mission failures and the resultant tasks are included (e.g., engine failure will result in mission abort that is both an operational and technical failure). The contractor shall obtain approval from Government IPT on formula(s) to derive MTBF and MTTR calculations not supplied by item manufactures. MTBF should be expressed in hours.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "PART AVAILABILITY CODE",
+              "content": "A numeric code showing the manufacturer's estimated time before the part becomes discontinued and unavailable.\n(1) 1 - 6 months\n(2) 7 - 12 months\n(3) 1 - 2 years\n(4) 2 - 5 years\n(5) Greater than 5 years",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.16",
+              "title": "TRAINING DEVICE SERIAL NUMBER",
+              "content": "The training device serial number that the items will be procured to support. Enter \"NA\" in the field if a singular device or item will be supported.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.17",
+              "title": "SUPPORTING DATA",
+              "content": "Reference to data that provides definitive information on the supportability, reliability, maintainability, availability of the item. For Commercial Off the Shelf (COTS) items, an active hyperlink to manufactures' data sheets may be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.18",
+              "title": "PROVISIONING REMARKS",
+              "content": "Narrative clarification of provided data or any information required for procurement of the item.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82324.pdf",
+    "extraction_date": "2026-08-11",
+    "extraction_method": "claude_cowork"
+  }
+}

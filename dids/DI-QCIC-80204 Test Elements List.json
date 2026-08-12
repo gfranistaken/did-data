@@ -1,0 +1,85 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-80204",
+  "slug": "di-qcic-80204",
+  "title": "Test Elements List",
+  "summary": "A test elements list provides a listing of functions, characteristics, or interfaces that may be verified or demonstrated through testing during the engineering process for test procedure development under DOD-STD-2106(NAVY).",
+  "approval_date": "1986-08-04",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N3909",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "OS",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "FEB 85",
+  "use_relationship": "",
+  "description_purpose": "A test elements list provides a listing of functions, characteristics, or interfaces that may be verified or demonstrated through testing. Test elements lists are generated as an integral part of the engineering process for test procedure development described by DOD-STD-2106(NAVY).",
+  "application_interrelationship": "This Data Item Description (DID) describes data required by 5.2.4.2 and 5.2.6 of DOD-STD-2106(NAVY).\n\nWhen applied in contracts, this DID should be tailored to the specific test elements required for the list by citing 10.3.1 or 10.3.2 below in the DD Form 1423.\n\nRelated Data Item Descriptions are:\nDI-QCIC-80202, Breakdown Diagram\nDI-QCIC-80203, Interface Analysis Record\nDI-QCIC-80205, Ship Test Outline\nDI-QCIC-80206, Shipboard Industrial Test Procedures",
+  "supersedes": [],
+  "related_dids": [
+    "DI-QCIC-80202",
+    "DI-QCIC-80203",
+    "DI-QCIC-80205",
+    "DI-QCIC-80206"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source document.",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format.",
+      "content": "The test elements list shall be typed in the contractor's format on 8 1/2 by 11-inch (metric size A4) white bond paper.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.3.1",
+          "title": "Test elements (other test stages).",
+          "content": "Test elements that are recommended for testing in stages which are outside of the contractor's cognizance shall be listed in accordance with the requirements of 5.2.4.2 of DOD-STD-2106(NAVY).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.2",
+          "title": "Test elements (nonredundant).",
+          "content": "Nonredundant test elements which are the basis for the contractor's test outlines and test procedures shall be listed in accordance with the requirements of 5.2.6 of DOD-STD-2106(NAVY).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-80204.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-80906",
+  "slug": "di-qcic-80906",
+  "title": "Calibration System Description",
+  "summary": "The Calibration System Description defines the contractor's system for calibrating all measuring and test equipment used to fulfill contractual requirements.",
+  "approval_date": "1989-10-06",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "A4839",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "A/MICOM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "MAR 87",
+  "use_relationship": "",
+  "description_purpose": "3.1 The Calibration System Description defines the contractor's system for the calibration of all measuring and test equipment used in fulfilling contractual requirements.\n3.2 The description is used as documentation of the contractor's calibration system.",
+  "application_interrelationship": "7.1 This Data Item Description (DID) contains the format and content preparation instructions for the Calibration System Description resulting from the work task described by 5.1 of MIL-STD-45662.\n7.2 This DID is related to DI-CMAN-80787, \"Special Inspection Equipment Calibration Procedures\".\n7.3 This DID supersedes DI-R-7064.",
+  "supersedes": [
+    "DI-R-7064"
+  ],
+  "related_dids": [
+    "DI-CMAN-80787"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Format.",
+      "content": "The Calibration System Description format shall be contractor selected. Unless effective presentation would be degraded, the initially used format arrangement shall be used for all subsequent submissions.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Content.",
+      "content": "The Calibration System Description shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "10.2.1",
+          "title": "Calibration intervals and sources for test and measurement equipment.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.2",
+          "title": "Applicable reference measurement standards, and transfer measurement standards.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.3",
+          "title": "Nomenclature, identification number, calibration interval and source for measurement standards.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.4",
+          "title": "Environmental conditions under which the measurement standards will be applied and calibrated.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-80906.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81873A",
+  "slug": "di-psss-81873a",
+  "title": "Level of Repair Analysis (LORA) Input Data",
+  "summary": "This DID documents the contractor-assembled LORA input data elements, values, and sources needed by the requiring authority to conduct Level of Repair Analysis evaluations.",
+  "approval_date": "2014-07-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9471",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "TM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This report documents the contractor-assembled LORA input data for use in conducting LORA evaluations. The LORA data elements and their corresponding values depict the design, performance, cost, support characteristics, factors, and other features related to the system/equipment under analysis and its support alternatives. These data elements affect the maintenance level associated with the support system. The LORA Candidates List contains all of the items for which the LORA program is being established. It shall include all items covered under, by, or associated with the acquisition program. This report provides the requiring authority with the data necessary to perform the LORA evaluations.\na. This Data Item Description (DID) contains the format and content preparation instructions for the LORA Input Data which documents the data and sources indentified in the LORA evaluations described by SAE AS1390, Level of Repair Analysis (LORA), and also Activity 11.7 of SAE TA-STD-0017, Product Support Analysis (formerly known as ANSI/TA-STD0017). The definitions for the data elements which form the content of this report can be obtained from the LORA model(s) specified in the contract.\nb. This DID is applicable whenever LORA evaluation(s) are to be conducted by the requiring authority with information furnished by the contractor. It is not to be used when the contractor is required to conduct LORA evaluations and deliver DI-PSSS-81872A, LORA Report.\nc. This DID is related to DI-PSSS-81872A, Level of Repair Analysis (LORA) Report.\nd. This DID supersedes DI-SESS-81873.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81873"
+  ],
+  "related_dids": [
+    "DI-PSSS-81872A"
+  ],
+  "references": [
+    {
+      "label": "online",
+      "url": "http://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the solicitation or contract.\nSAE AS1390 - Level of Repair Analysis (LORA)\nSAE TA-STD-0017 - Product Support Analysis (formerly known as ANSI/TA-STD-0017)\n(Copies of these standards are available from SAE International, 400 Commonwealth Drive, Warrendale, PA 15096-0001; email CustomerService@sae.org; online http://www.sae.org.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The LORA Input Data shall conform to one of the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The contractor's format.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The input format required by the LORA model specified in the contract.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "General.",
+      "content": "The LORA Input Data shall document the following information necessary for the requiring authority to conduct LORA evaluations:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The LORA input data elements and their corresponding values related to each of the items in the LORA Candidates List and its associated support alternatives.",
+          "content": "This shall include the source(s) from which the data element values were obtained.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The specific policies, constraints, and factors which affect items in the LORA Candidates List and its associated support alternatives.",
+          "content": "This shall include identification of the specific source(s) from which the factors were obtained.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Content.",
+      "content": "The LORA Input Data consists of two sections (Section I, Introductory Information and Section II, LORA Input Data) and shall include the following items. Reference Activity 4 of SAE AS1390 for additional information concerning the compilation of LORA Input Data.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Section I. Introductory Information.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Identification of the contractor preparing the LORA Input Data, the requiring authority contracting for the LORA Input Data, and the contract number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "Identification of the system/equipment for which the LORA Input Data was developed.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.3",
+              "title": "Identification and description of the operational scenario (i.e., wartime, peacetime, or combination) for which the data was collected.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.4",
+              "title": "Identification of the base year in which values related to cost have been adjusted and expressed.",
+              "content": "This shall include an explanation of the method used to make all adjustments to these values.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Section II. LORA Input Data.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "Identification of the factors which affect the support and maintenance alternatives available and the resources associated with support of the items in the LORA Candidates List.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "Identification of the data element names and their corresponding values for all items in the LORA Candidates List.",
+              "content": "These values shall be provided in the format specified in the contract. These values shall also be in the correct units of measure and input field size (including placement of decimal points, if applicable). Refer to the LORA model specified in the contract for guidance in properly formatting the values. The data element names are not a requirement when the input data is required to be delivered in LORA model input format per Section 2(b) above.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "Identification of all data elements which directly affect the maintenance and support concepts for the system/equipment under analysis.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.4",
+              "title": "Identification of all proprietary data being used to conduct the LORA evaluations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.5",
+              "title": "Identification of specific source(s) from which the data elements and their values were obtained.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81873A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

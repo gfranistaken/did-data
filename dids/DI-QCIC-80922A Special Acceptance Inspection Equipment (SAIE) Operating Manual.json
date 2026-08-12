@@ -1,0 +1,646 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-QCIC-80922A",
+  "slug": "di-qcic-80922a",
+  "title": "Special Acceptance Inspection Equipment (SAIE) Operating Manual",
+  "summary": "The SAIE Operating Manual DID specifies procedures for setting up and operating a specific item of Special Acceptance Inspection Equipment in accordance with the quality assurance provisions for the item under test.",
+  "approval_date": "2019-08-01",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10058",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "QCIC-2019-001",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The SAIE Operating Manual provides detail procedures for setting up and operating a specific item of SAIE in accordance with (IAW) the quality assurance provisions for the item under test.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nThis DID is applied for acquisition of operating manuals for SAIE.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General.",
+      "content": "The SAIE Operating Manual shall delineate all the installation, operation, calibration, and maintenance aspects of the SAIE.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Format and content.",
+      "content": "The format and content requirements of the SAIE Manual shall be IAW the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Credits.",
+          "content": "The names of individuals or groups connected in any way with the preparation of the manual shall not appear in the manual nor may manuals be used to publicize any individual or group.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Advertising.",
+          "content": "The SAIE Operating Manual shall not contain any advertising matter. Manufacturers' names shall not be used except where absolutely necessary to clarify installation, operation, and maintenance procedures. Manufacturers' names shown on equipment nameplates are permitted provided the nameplate appears in an illustration in the manual.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Paper.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Review manuscript.",
+              "content": "Review manuscript shall be on white paper (8X 10 1/2 inches or 8 1/2X 11 inches).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Final manuscript.",
+              "content": "Final manuscript (camera ready) shall be on 20 pound weight bond paper (8X 10 1/2 inches or 8 1/2 X 11 inches).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Covers.",
+          "content": "Front and back covers shall be prepared from paper of heavier stock than the text. Reproduction may be by any suitable method which will result in a clear copy. The final camera ready cover shall contain the manual number, approval date, supersession data and title of manual.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Typing.",
+          "content": "The following are some general rules for typing manuscripts:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Spacing.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Review manuscript.",
+                  "content": "Type the manuscript double spaced on one side of the paper only. The pages shall be of uniform size. Use black ribbon.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Final manuscript.",
+                  "content": "Type the manuscript single spaced on one side of the paper only. The pages shall be of uniform size. Use black ribbon.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Spacing limits for page typing.",
+              "content": "When typing pages of manuscript, the manual number and the body of the text shall be enclosed in an imaginary frame 6 1/2 inches wide by approximately 9 inches long. The page number shall be centered at the bottom of the page approximately 3/8 inch below the last line of the page. (In no case shall any line of the type extend beyond these limits.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Page numbering.",
+              "content": "Number pages with Arabic numerals. Number the title page and content pages consecutively with lower case Roman numerals.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Notes.",
+          "content": "Use notes throughout the text only when necessary to emphasize an operating procedure, condition, or the like.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Cautions.",
+          "content": "Use cautions to call attention to an operating procedure, practice, or the like which, is not strictly observed, may result in damage to the equipment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Warnings.",
+          "content": "Use warnings to bring to the attention an operating procedure, practice, or the like which, if not strictly observed, may result in personal injury or loss of life.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Table numbering and titling.",
+          "content": "Provide numbers and titles for all tables. Number tables consecutively throughout the manuscript. Double space between entries in the body of the table. When a single entry carries over to additional typed lines, single space the carry-over and indent two spaces.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Division of text.",
+          "content": "Divide the manuscript into sections, paragraphs and subparagraphs, as necessary, provided no fewer than two of any subdivision are used. Use simple organization with as few subparagraph as possible.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Subparagraph headings.",
+          "content": "Number subparagraphs with Arabic numerals and small letters (as applicable). If subparagraphs, identified by letters, require identification beyond the letter z, continue with aa --- bb --- cc and so forth.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Appendix headings.",
+          "content": "Number appendices consecutively with upper case Roman numerals.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Publication references.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "Use references to other publications to avoid repeating large volumes of information contained therein.",
+              "content": "Do this, however, only when the publications preferred to are available to the intended reader, otherwise, include the essential data in the text. However, it is preferable to repeat a small amount of information from another manual rather than to make reference to it.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.2",
+              "title": "Do not refer to temporary publications such as circulars and letters or to publications of limited distribution.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "General Style.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.14.1",
+              "title": "Use a simple, forceful style.",
+              "content": "Present information clearly, concisely and coherently in the order in which the reader needs it. Keep the general vocabulary of the text as simple and direct as possible.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.2",
+              "title": "Do not use specialized vocabulary.",
+              "content": "Use commonly understood words instead of uncommon words likely to confuse the reader. Select words to make each thought clear, precise and understandable at all times.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.3",
+              "title": "Be explicit.",
+              "content": "For example, when telling an operator to do something, also tell him how, when and why. Avoid indefinite words such as \"excessive\", \"nearly\" and \"approximately\" when referring to quantities that can be measured.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.4",
+              "title": "Make a positive statement when giving instructions.",
+              "content": "Do not leave any doubt nor give the reader a choice if it is not so intended.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.15",
+          "title": "Nomenclature.",
+          "content": "Be consistent in the use of nomenclature throughout the manual. Use approved nomenclature the first time that an item is mentioned. Shortened nomenclature may be used in later references but no change in terminology shall be made.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "General illustration requirements.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.16.1",
+              "title": "Use illustrations to clarify text, call attention to details, identify component parts and identify electrical circuits and flows of air, water, steam and the like.",
+              "content": "Do not use illustrations which have no specific instructional purpose. Prepare final illustrations so that a minimum of work by cameramen or plate makers is required. Submit final illustrations with the final manuscript that are mounted and ready for the camera. The quality requirements for each type of illustration are as follows:\nEach final illustration shall consist of a photograph, mounted on a board with tissue and paper protective flaps. The illustration shall have crop marks and sizing. Callouts may be mounted on a transparent overlay or on the illustration and shall be firmly affixed. All numbers and letters on the illustration must be legible when reproduced in the manual.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.2",
+              "title": "Wiring diagrams.",
+              "content": "Prepare wiring diagrams when the interconnection and not the shape of the various components or elements is important. Wiring diagrams depict the way in which the components or elements are connected, but usually make no attempt to portray the appearance of the components. Use nomenclature on the wiring diagram that is consistent with that used in text. Separate parallel lines in writing diagrams so that they are no less than one-eights inch part when printed. Use the symbols indicated in the latest revision of IEEE Standard (Std) 315, Graphic Symbols for Electrical and Electronics Diagrams.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.3",
+              "title": "Flow diagrams.",
+              "content": "Prepare flow diagrams to show the direction of flow of fluids or gases between components using symbols or outlines for the components. All symbols must be identified. Use the symbols indicated in the latest revision of ASTM-F1000, Standard Practice for Piping System Drawing Symbols and ASTM F856, Standard Practice for Mechanical Symbols, Shipboard-Heating, Ventilation, and Air Conditioning (HVAC).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.4",
+              "title": "Electrical schematics.",
+              "content": "Prepare an electrical schematic to show symbolically the functional relationship of the various electrical and electronic elements of the equipment. Separate parallel lines on the schematic so that they are no less than one-eights inch apart when printed. Use symbols indicated in the latest revision of IEEE Std 91, IEEE Std Symbols for Logic Functions; IEEE Std 315, Graphic Symbols for Electrical and Electronics Diagrams; and ASME Y14.44, Reference Designations for Electrical and Electronics Parts and Equipment.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.17",
+          "title": "Illustration location of text.",
+          "content": "Insert the illustration in the manuscript following the page where it is first referenced. When two illustrations are referenced, insert them in chronological order following the page where they are first referenced.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Cutlines and legends for illustrations.",
+          "content": "The cutlines and legends shall be typed on a separate sheet of white bond paper as they are to appear on the illustration and of the same style type and type size that is used to prepare the text. Include on the bond paper the page numbers of the illustrations and the manual identifying symbol without the revision designation.\nType the cutline and legends of each illustration twice; each page number twice; and the manual identification symbol once for each illustration. Space on bond paper to allow printer to photograph, cut out and position the same on the illustrations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "References.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.19.1",
+              "title": "Use authorized abbreviations and symbols on illustrations in the text which are listed in the latest issue of each of the following publications:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.19.1.1",
+                  "title": "ASME Y14.38, Abbreviations and Acronyms for Use on Drawings and Related Documents",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.2",
+                  "title": "ASTM F1000, Standard Practice for Piping System Drawing Symbols",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.3",
+                  "title": "ASTM F856, Standard Practice for Mechanical Symbols, Shipboard-Heating, Ventilation, and Air Conditioning (HVAC)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.4",
+                  "title": "AMSE Y14.24, Types and Applications of Engineering Drawings",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.5",
+                  "title": "IEEE Std 315, Graphic Symbols for Electrical and Electronics Diagrams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.6",
+                  "title": "IEEE Std 91, IEEE Std Symbols for Logic Functions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.7",
+                  "title": "ASME Y14.44, Reference Designations for Electrical and Electronics Parts and Equipment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.19.1.8",
+                  "title": "General Printing Office (GPO) Style Manual.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.19.2",
+              "title": "The GPO Style Manual shall also be used as the standard for compound words, use of numerals, and capitalization.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.20",
+          "title": "Human figure.",
+          "content": "Do not use the human figure in Inspection Aids Instruction Manuals.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Color.",
+          "content": "Do not use color in illustrations unless specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "Illustration negatives.",
+          "content": "Negatives shall be unscreened on 8 X 10 inch or larger nonflammable film. Place each negative in a separate open-end manila envelope. Identify the contents of the contents of the envelope with the figure number and publication number in the upper left corner of the envelope.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Identification.",
+          "content": "Manuals shall be identified by number and the approval date. The number shall be provided by the ordering agency. The symbol and date shall appear at the top right side of the cover sheet, title page, and page 1 of the manual. The symbol without the dates shall appear on all other pages (top left on even numbered pages and top right on odd numbered pages).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.24",
+          "title": "Revisions and supersessions.",
+          "content": "Revisions to a manual shall be indicated by capital Gothic letter following the symbol. The latest approval date shall appear under the symbol. The cover sheet, title page, and page 1 shall include a note indicating that the previous manual has been superseded. The supersession shall not be placed under the approval date, separate from the date by a ruled line. The supersession date shall list each manual superseded, together with its date.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.25",
+          "title": "Format.",
+          "content": "The contents of the manual shall be governed by its purpose. In general; however, the manual shall be developed IAW the following listing:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.25.1",
+              "title": "Cover page.",
+              "content": "The title, number, revision, symbol, date of issue, supersession date (when applicable) and the name of the ordering agency shall appear on the cover page.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.25.2",
+              "title": "Title page.",
+              "content": "The title, number, revision, symbol, date of issue, supersession date (when applicable) and source of copies shall appear on the title page.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.25.3",
+              "title": "Contents page.",
+              "content": "The single word CONTENTS in capital letters and underlined shall appear at the top center of the contents page. The contents shall contain the eight or nine sections, first subparagraph heading (under applicable sections) and list of Appendices.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.25.4",
+              "title": "Caption for page one.",
+              "content": "The caption for page one shall be centered at the top of the page. It shall consist of the name of the ordering agency and the title of the manual.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.25.5",
+              "title": "Text.",
+              "content": "The text of the manual shall contain eight or nine numbered sections as outlined below:\n1. SCOPE\n2. THEORY OF OPERATION\n3. APPLICABLE DOCUMENTS\n4. UTILITIES AND FACILITIES\n5. REAGENTS AND MATERIALS (When applicable)\n6. APPARATUS\n7. INSTALLATION AND OPERATIONS\n8. SAFETY\n9. MAINTENANCE\nAdditional subheadings shall be added under the numbered sections above as applicable to the instruction manual being prepared.\nNOTE: When the REAGENTS AND MATERIALS sections is not applicable, the subsequent sections shall be renumbered, APPARATUS becoming section 5, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.25.6",
+              "title": "Appendices.",
+              "content": "Each manual shall contain three appendices. Appendix I shall consist of an index of figures, tables, charts, and the like which appear in the body of the text; Appendix II, an index of major parts of the equipment; and Appendix III, the repair parts.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.26",
+          "title": "Definition of manual sections.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.26.1",
+              "title": "Section 1. SCOPE.",
+              "content": "A clear, concise description of the extent or range of technical content which shall be used as the principal statement of the scope. A second statement shall define the purpose of the tester.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.26.2",
+              "title": "Section 2. THEORY OF OPERATION.",
+              "content": "This section outlines the theory and sequence of operation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.26.3",
+              "title": "Section 3. APPLICABLE DOCUMENTS.",
+              "content": "All specifications, standards, drawings, publications, and the like which form a part of the manual shall be listed under this section. Except for Government publications, the name and identification symbol of the specific issue of the document referenced shall be used. For Government documents the basic name and symbol (without revision identifications shall be used. Where changes in title have occurred in referenced documents, the title current at the time of the development of or revisions to the manual shall be used. Referenced documents shall be grouped under appropriate headings. Documents issued by the Government shall be listed under \"Government Documents\". Documents published commercially shall be listed under \"Other Publications\".",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.26.4",
+              "title": "Section 4. UTILITIES AND FACILITIES.",
+              "content": "List all the utilities and facilities that are required to install, operate and maintain the test equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.26.5",
+              "title": "Section 5. REAGENTS AND MATERIALS.",
+              "content": "This sections (when applicable) shall contain a list of reagents and materials peculiar to the equipment. Included in this listing shall be information which may be helpful when procuring reagents or other material such as type, class, grade, composition or other classifications. The use of federal or military specifications and standards is mandatory provided the reagent or material is suitable for the intended use.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.26.6",
+              "title": "Section 6. APPARATUS.",
+              "content": "This section covers the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.26.6.1",
+                  "title": "Description of components.",
+                  "content": "The major parts of the test equipment are described in sufficient detail to establish the location, physical characteristics and function in relation to the equipment and to associated components. Major parts are identified by index numbers (callouts) and are tabulated in Appendix II.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.26.6.2",
+                  "title": "Systems operation.",
+                  "content": "Systems operation is the method in which the components of the test equipment are caused to act independently or in combination to produce a desired result. The action may be caused by any one, or a combination of manual and conventional power sources such as pneumatics, electricity, etc. Diagrams and schematics shall be used to depict the travel of each type of power through the systems of the equipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.26.6.3",
+                  "title": "Sensitivity.",
+                  "content": "Sensitivity with respect to this test equipment is the minimum measuring, detecting, or indicating capability of the equipment. The range of sensitivity is the measuring detecting or indicating capability of the equipment from the minimum to the maximum, within established tolerances.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.26.6.4",
+                  "title": "Production capability.",
+                  "content": "The production capability is the number of items that the equipment is capable of testing in one hour on the production line basis. When the production capability is applicable to more than one type test item, the hourly production rate for each item shall be stated.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.26.7",
+              "title": "Section 7. Installation and Operation.",
+              "content": "This section contains instructions for the installation, calibration, adjustment, operation and shutdown procedures. Information and instructions shall be compiled under the application headings:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.26.7.1",
+                  "title": "Installation.",
+                  "content": "Include instructions and information such as mounting the tester, connecting air, water, steam, electrical power and the like. Include only the information required to initially install the equipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.26.7.2",
+                  "title": "Calibration.",
+                  "content": "This portion of Section 7 provides the step-by-step calibration procedure required to ensure that the tester is maintained within prescribed accuracy limits, which in turn will ensure that supplies and services presented to the Government for acceptance are in conformance with the prescribed technical requirements.\nThe definition of the word \"calibration\" as intended for use herein is, \"The comparison of a measuring standard or instrument to detect, correlate, report, or eliminate by adjustment, any variation in the accuracy of the item being compared\". The following considerations are applicable when establishing calibration requirements:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.26.7.2.1",
+                      "title": "What items will require calibration?",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.26.7.2.2",
+                      "title": "What range of accuracy is required?",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.26.7.2.3",
+                      "title": "The method or alternate method to control the accuracy.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.26.7.2.4",
+                      "title": "The calibration interval.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.26.7.3",
+                  "title": "Adjustment.",
+                  "content": "After the tester has been installed and all applicable components calibrated, adjustments may or may not be necessary prior to actual operation of the tester. Adjustments could vary from tightening screws to opening and closing valves. In some instances, adjustment and calibration may be so closely related that they cannot be separated. Should this condition occur, combine the two and title the same \"Calibration and Adjustment\".",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.26.7.4",
+                  "title": "Operation.",
+                  "content": "When preparing this portion of Section 7, it is most important to detail, in operational sequence, the step-by-step procedures that the operator must follow. Simplicity of presentation is most important. Where an explanation of a phase of operation can be of value to the operator, add the same as a note under that particular phase. Keep sentence structure short and elementary. Refrain from using terms that are peculiar to technicians and engineers. If such terms must be used, follow the operational step with an explanation of the term. This again would appear as a note following the operational step.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.26.7.5",
+                  "title": "Shutdown.",
+                  "content": "In this portion of Section 7, describe the procedures for daily shutdown and for complete shutdown of the equipment.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.26.8",
+              "title": "Section 8. Safety.",
+              "content": "This section describes the hazards involved in using the tester. The following statement shall be included: The using organization shall prepare a standard operating procedure (SOP) including all precautions necessary for the safety of using personnel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.26.9",
+              "title": "Section 9. Maintenance.",
+              "content": "This section covers the maintenance procedures that are necessary to keep equipment in good operating condition. The equipment may be such that it requires daily and long range maintenance. Troubleshooting shall also appear in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-QCIC-80922A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

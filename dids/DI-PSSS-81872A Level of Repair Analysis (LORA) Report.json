@@ -1,0 +1,188 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-81872A",
+  "slug": "di-psss-81872a",
+  "title": "Level of Repair Analysis (LORA) Report",
+  "summary": "This DID defines the format and content for a contractor's LORA Report, documenting conclusions, findings, and recommendations on repair versus discard, support equipment, and life cycle costs.",
+  "approval_date": "2014-07-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9470",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "TM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The purpose of this LORA report is to document the results of the LORA program. This report documents and supports the contractor's conclusions, findings, and recommendations on the economic, noneconomic, and operational impacts to the requiring authority concerning repair versus discard at failure; optimum repair levels; support equipment which includes test program sets, built-in-test equipment, and test, measurement, and diagnostic equipment requirements; maintenance facility requirements; maintenance, manpower, and supply support life cycle costs; spare parts provisioning; and specific design recommendations for each item undergoing the LORA.\na. This Data Item Description (DID) contains the format and content preparation instructions for the LORA Report resulting from the activities described by SAE AS1390, Level of Repair Analysis (LORA), and also Activity 11.7 of SAE TA-STD-0017, Product Support Analysis (formerly known as ANSI/TA-STD-0017).\nb. This DID is applicable whenever a LORA is required.\nc. This DID is related to DI-PSSS-81873A, Level of Repair Analysis (LORA) Input Data.\nd. This DID supersedes DI-SESS-81872.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81872"
+  ],
+  "related_dids": [
+    "DI-PSSS-81873A"
+  ],
+  "references": [
+    {
+      "label": "Copies of these standards are available from SAE International, 400 Commonwealth Drive, Warrendale, PA 15096-0001; email CustomerService@sae.org; online",
+      "url": "http://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the solicitation or contract.\n\nSAE AS1390 - Level of Repair Analysis (LORA)\n\nSAE TA-STD-0017 - Product Support Analysis (formerly known as ANSI/TA-STD-0017)\n\n(Copies of these standards are available from SAE International, 400 Commonwealth Drive, Warrendale, PA 15096-0001; email CustomerService@sae.org; online http://www.sae.org.)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The LORA report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The LORA report shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "A description of the system/equipment under analysis",
+          "content": "including the top-down breakdown structure of how the system was modeled.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A discussion of similar systems/equipment",
+          "content": "including the associated part numbers, and their maintenance concept which were compared against the system/equipment under analysis. This shall include the identification of specific items which have a similar established maintenance concept.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "A listing of the input data element titles",
+          "content": "and their corresponding values. This shall include the identification of all values calculated or estimated along with an explanation of the method used to establish these values; the standard values used and any deviation from these values; identification of the base year in which the data elements related to cost have been adjusted or expressed; the rationale to support reliability and maintainability values used in the LORA; and the specific source(s) from which the values were obtained.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "A discussion of the LORA evaluations performed",
+          "content": "This shall include the LORA model(s) used to perform the economic and sensitivity evaluations, including specific software and tool information; a description of the maintenance and support alternatives considered along with the associated support equipment; facility requirements; the impacts to the overall life cycle costs; all ground rules and assumptions made; and the operational scenario (i.e., wartime, peacetime, or combination) modeled.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "A discussion of the noneconomic analysis performed",
+          "content": "This shall include all affected maintenance levels, support alternatives, and associated support equipment, along with a description of all restrictions or limitations, such as policy and data rights, that exist. Also, discuss all recommended repair or discard level decisions. Specifically, discuss each of the noneconomic factors which were considered and those that resulted in a different decision than the economic LORA evaluation determined at least cost.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Summary of the results of the economic and noneconomic evaluations conducted.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "The contractor's conclusions and recommendations",
+          "content": "including source, maintenance, and recoverability (SMR) codes and level of repair or discard recommendations, for each item undergoing LORA based on the evaluations conducted. Also, include all recommendations for updating existing maintenance and logistic support planning factors which are impacted by these evaluations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "A detailed description of the sensitivity analysis performed",
+          "content": "This information is intended to qualify the uncertainty of design characteristics by providing a measure of the validity of the LORA recommendations. The description shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Identification of the input data elements varied/analyzed during the sensitivity evaluations.",
+              "content": "Specify if these parameters were calculated, estimated, or based on historical data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "The rationale for the variance of each data element.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Numerical range over which the data element was varied and the rationale for that range.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "The results obtained after executing the LORA model over this range.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "The impacts on the maintenance and support concepts due to implementing the most cost effective alternative.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "A listing of the formatted input records and the formatted model output reports.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Identification of specific items which have established maintenance concepts that are to be used by the system/equipment under analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "A discussion of all recommendations to the system/equipment designer for incorporating the LORA decisions into the system/equipment design.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-81872A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82281",
+  "slug": "di-psss-82281",
+  "title": "Integrated Logistics Support Plan (ILSP) for Foreign Military Sales (FMS)",
+  "summary": "The ILSP for FMS documents integrated logistics support planning developed in early program phases in parallel with system planning and acquisition documentation for foreign military sales.",
+  "approval_date": "2019-08-01",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10060",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WIN)",
+  "project_number": "PSSS-2018-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Integrated Logistics Support Plan (ILSP) in support of Foreign Military Sales (FMS) is developed in the early program phases for systems and equipment in parallel with system planning, definition, and other acquisition documentation.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The contractor's format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The ILSP for FMS shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Integrated Logistics Support Management.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "System Description.",
+              "content": "Provide a narrative description of the system or equipment that summarizes performance and operational characteristics and provides an overview of the system or equipment adequate to assist personnel in understanding its functional and operational capabilities. State the kind of system or equipment being discussed (e.g., one-of-a-kind, prototype, production). When known, identify the system or equipment that will be replaced by the new system or equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "List of Equipment.",
+              "content": "Provide a list of the system or equipment addressed in this plan, representative and unique test equipment, and special tools required for maintenance of the system or equipment following installation.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "System Block Diagram.",
+                  "content": "When a system is comprised of three or more equipment or subsystems, a block diagram shall be included to show their relationships within the system.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Support Validation.",
+              "content": "Describe methods to be used to validate and evaluate the support processes established in the ILSP. Define parameters for preparing support validation reports and identify recipients of the reports. Describe procedures for accomplishing corrective actions in the support processes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Point of Contact (POC).",
+              "content": "A POC shall be listed for all significant Integrated Logistics Support (ILS) actions to be implemented. List the POC to include: ILSP title, responsible organization, email, and telephone number.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Schedule.",
+              "content": "Introduce and include a chart showing the schedule for major system and integrated logistics support events and tasks. The schedule shall present current and future milestone data and list previous events as \"accomplished.\"",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Maintenance.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "General.",
+              "content": "Provide a narrative description of the maintenance planning for the system and test equipment and indicate when the planning begins in order to support the system in its operational environment. Identify the maintenance plan prepared in support of the maintenance concept.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Maintenance Concept.",
+              "content": "Summarize the general maintenance concept to be used in support of the system or equipment (e.g., remove or replace modules and boards on-site, depot level maintenance for repair of modules, or contractor repair of boards). State how the maintenance concept was developed. Identify the organizations that participated in any analysis conducted. Define how and when effective maintenance can be performed and by whom; correlation shall include the appropriate maintenance element.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Contract Maintenance.",
+                  "content": "Identify hardware, firmware, and software end items selected for contract maintenance. Include processes and procedures to be used by site and other Government representatives, to include the Field Service Representative (FSR), to obtain such maintenance.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Reliability, Availability, Maintainability (RAM).",
+              "content": "RAM related data shall be included in the ILSP for FMS, when available.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Maintenance, Test, and Support Equipment (MT&SE).",
+              "content": "MT&SE requirements (including Built-In Test Equipment (BITE)) shall be addressed. Discuss whether MT&SE is a requirement, under consideration, or not applicable to the system or equipment. Also, the ILSP for FMS shall identify specific MT&SE requirements and organizational responsibilities for calibration and maintenance of the system or equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Maintenance Technical Assistance.",
+              "content": "Describe established procedures for obtaining call-back support assistance concerning engineering support problems, when applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Repair and Return Procedures.",
+              "content": "Describe established procedures for repair and return of faulty line-replaceable units (LRUs). List procedures to include freight forwarder, etc. Provide the message format for reporting the repair and return of LRUs.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Supply Support and Provisioning.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "General.",
+              "content": "Provide a general description of the supply support concepts and provisioning tasks for the system or equipment. Provide a general description of the responsibilities of each organization in the supply support and provisioning process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Stock Management and Inventory.",
+              "content": "Define the responsibilities for spares management on-site. Identify the organizational responsibilities and method of management to be used, to include bench stock. List if organic, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Provisioning.",
+              "content": "Provide the scope of provisioning to be accomplished in support of the system or equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Support Concept.",
+              "content": "Provide the initial support concept with end item or system installation and checkout at the site.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Mission Expendable Supplies.",
+              "content": "Identify expendable supplies (e.g., computer paper, ribbons, teletype paper, and magnetic tape). Identify organizational responsibilities for providing expendable supplies initially and during the follow-on phase.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Packaging, Handling, Storage, and Transportation (PHS&T).",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Purpose.",
+              "content": "State the purpose of PHS&T and identify applicable regulations, directives, specifications, and other documents that describe and define both domestic and foreign transportation, packaging, handling, and shipping requirements, to include POCs for packaging house, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Organizational Responsibilities.",
+              "content": "Describe the organizational responsibilities for ensuring PHS&T functions are accomplished. Identify any requirement for notifying the affected sites of shipment of the subject system or equipment and the methods and responsibilities for PHS&T.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Material Movement Plans.",
+              "content": "Identify shipping instructions and the Government shipping coordinator. Identify applicable document reference(s) that provide requirements for material movement. Provide delivery schedules and shipment priorities. Identify modes of transportation to be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Special Handling.",
+              "content": "Identify and describe any special handling requirements for moving (e.g., loading, unloading, or transportation) or storing the system or equipment, such as preservation, temperature control, humidity control, protection from shock or radiation, security requirements, and similar information.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Preservation and Packaging.",
+              "content": "Identify applicable reference(s) that provide requirements for preservation, packaging, and packing of components and spare parts.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Transportation Requirements.",
+              "content": "Provide general planning for transportability requirements related to gross weight and outside dimensions. The contractor shall define specific transportation requirements, if the recipient country is responsible for the cost of Continental United States (CONUS) transportation and subsequent movement, or when transportation is provided as a case line, such as high flight or special assignment airlift mission.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "Marking.",
+              "content": "Identify applicable reference(s) that provide requirements for container markings for shipment and storage.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "Damage or Loss.",
+              "content": "Identify applicable reference(s) and POCs that provide requirements for reporting damaged or lost shipments.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Technical Data and Data Management.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Purpose and Scope.",
+              "content": "Provide a summary of and reference to detailed information concerning the data deliverables necessary to support the system or equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Data Management.",
+              "content": "Describe how the data requirements were established. Identify organizational responsibilities for obtaining the data. Describe procedures for reviewing the data for accuracy and completeness, shipping it when needed, and monitoring or revising the data when necessary.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Data Deliverables.",
+              "content": "Summarize the data deliverables by category of system or equipment to be supported (e.g., commercial, Government designed, test, etc.), and the type of support the data will provide (i.e., operational maintenance, test specification). Provide the number and title of each data product as it appears on the applicable DID. Reference the DID for a detailed description of the appropriate deliverable. Provide the schedule for development, delivery, and validation as a part of the milestone chart.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Installation and Facilities.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "General.",
+              "content": "Provide a general description of how the system or equipment is going to be integrated into an existing site or installed in a new site.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Site Surveys.",
+              "content": "Discuss the purpose of the site surveys to be conducted to determine facility requirements (e.g., electrical power, heating, cooling, physical space, security, etc.) for installation of new systems or equipment, organizational responsibilities for their accomplishment, and the schedule (i.e., plan) for conducting the surveys. The schedule information shall be included in the milestone chart.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Site Preparation and Installation Plan.",
+              "content": "Identify the organizational responsibilities for the preparation of an installation plan with drawings for alternatives, if no plan is to be developed. Cite the applicable DID, if the installation plan is to be accomplished by contract. If an installation plan exists, cite the applicable document. The development, delivery, and validation of the installation plan shall be treated as any other data product and the schedule shall be included in the milestone chart.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "System or Equipment Layout.",
+              "content": "In order to assist using organizations in their planning for installation and facilities requirements, provide a general layout of the system configuration or rack elevations of the equipment comprising the system.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Personnel and Training.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "General.",
+              "content": "Provide a typical layout of requirements for the system. State the organizations and contractor responsibilities for the operation and maintenance training of the equipment, subsystem, or system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Personnel.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.2.1",
+                  "title": "Operations Personnel.",
+                  "content": "State the personnel specialties and skill levels that must be assigned to perform operational tasks on the equipment, subsystem, or systems at the respective installation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.2",
+                  "title": "Maintenance Personnel.",
+                  "content": "State the personnel specialties and skill levels that must be assigned to perform maintenance tasks on the equipment, subsystems, or systems at their respective installation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.3",
+                  "title": "Software Personnel.",
+                  "content": "State the personnel specialties and skill levels that must be assigned to perform software tasks on the equipment, subsystem, or systems at their respective installation.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Training.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Training Requirements.",
+              "content": "Describe the initial and follow-on supervisory, operator, and maintenance training requirements. Identify and describe the training strategy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Training Equipment.",
+              "content": "Summarize the training equipment requirements.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82281.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-PSSS-82114B",
+  "slug": "di-psss-82114b",
+  "title": "United States Marine Corps Reliability-Centered Maintenance (RCM) Analysis Report",
+  "summary": "The RCM Analysis Report documents in complete detail the information resulting from the RCM analysis of a system or asset completed on behalf of Marine Corps Systems Command or supported organizations.",
+  "approval_date": "2026-03-02",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10623",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MC",
+  "project_number": "PSSS-2026-001",
+  "applicable_forms": "DI-PSSS-82115B, DI-PSSS-82116B",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Reliability Centered Maintenance (RCM) Analysis Report documents, in complete detail, the information resulting from the RCM analysis of a system or asset completed on behalf of Marine Corps Systems Command (MCSC) or supported organizations.\na. The Reliability Centered Maintenance (RCM) Analysis Report documents, in complete detail, the information resulting from the RCM analysis of a system or asset completed on behalf of Marine Corps Systems Command (MCSC) or supported organizations.\nb. The content of this Data Item Description (DID) reflects the information provided by an RCM review group composed of subject-matter experts, including military personnel, with substantial knowledge and experience regarding the operational requirements, maintenance, and design characteristics of the system under analysis.\nc. This DID provides guidance on the format, content, and intended purpose of the information derived from a Society of Automotive Engineers (SAE) JA1011 standard-compliant RCM analysis completed. This DID is related to and requires the prior completion of DI-PSSS-82115B, RCM Analysis Information Phase Report, and DI-PSSS-82116B, RCM Analysis Decision Phase Report.\nd. This DID supersedes DI-PSSS-82114A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-PSSS-82114A"
+  ],
+  "related_dids": [
+    "DI-PSSS-82115B",
+    "DI-PSSS-82116B"
+  ],
+  "references": [
+    {
+      "label": "Copies of SAE JA1011 and SAE JA1012 are available online at",
+      "url": "https://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The report and all attachments shall be in a Microsoft Office-compatible format.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The report shall be formatted for printing on standard letter-size paper (8\u00bd\" x 11\").",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "All enclosures shall be fully identified, referenced in the text, and, when necessary, folded to conform to the paper size of the report.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Security classification and distribution markings shall conform to the requirements of the contract, purchase description, and security requirements, as applicable.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title page.",
+          "content": "Identifies the report, project name, system name, contract number, task number, and analysis date.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Table of contents.",
+          "content": "Identifies the topics covered in each part of the report and references the page on which each topic begins.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Executive summary.",
+          "content": "A brief statement of the failure management strategy developed with the support of an RCM review group, including any high-level observations by the group.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Introduction.",
+          "content": "Addresses the objectives and details of the analytical effort.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Section I.",
+          "content": "Includes the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Operating context of the asset or system.",
+              "content": "Addresses the applicable criteria defined in the SAE JA1011 standard and supplemented in the SAE JA1012 guide. (Copies of SAE JA1011 and SAE JA1012 are available online at www.sae.org.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Review group members.",
+              "content": "Identifies the name, title/rank, qualifications, and organization of the RCM facilitator, review group members, and other support personnel involved in the analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "References.",
+              "content": "Identifies the Marine Corps technical publications, as well as industry or government publications, standards, or regulations consulted by the RCM review group to support the analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Analysis assumptions.",
+              "content": "Addresses in detail any assumptions adopted by the RCM review group to conduct the analysis.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Section II.",
+          "content": "Includes the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Analysis boundary.",
+              "content": "Provides a high-level, graphical representation of the inputs to the system or asset during operation, systems, subsystems, and components under analysis, and outputs from the system or asset as a result of its operation. The analysis boundary may also include a detailed written justification for the exclusion of any system, subsystem, or component from the analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Asset or system overview.",
+              "content": "Provides a brief visual and written representation of the asset or system under analysis.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Section III.",
+          "content": "Includes the following RCM analysis results:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Analysis highlights.",
+              "content": "Analysis highlights are extracted from the RCM information phase (DI-PSSS-82115B) and RCM decision phase (DI-PSSS-82116B). Note that in some cases, one or more of the following topics may not apply and may therefore be omitted from the report.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.1.1",
+                  "title": "Safety-related issues and recommendations.",
+                  "content": "Provides a detailed description of each safety-related issue identified during the analysis, along with the resulting recommendations developed by the RCM review group.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.2",
+                  "title": "Notable training-related issues and recommendations.",
+                  "content": "Provides a detailed description of noteworthy training-related issues identified during the analysis, along with the resulting recommendations developed by the RCM review group.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.3",
+                  "title": "Notable technical manual-related issues and recommendations.",
+                  "content": "Provides a detailed description of noteworthy technical manual-related issues identified during the analysis along with the resulting recommendations developed by the RCM review group.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.4",
+                  "title": "Notable design-related issues and recommendations.",
+                  "content": "Provides a detailed description of noteworthy design-related issues identified during the analysis along with the resulting recommendations developed by the RCM review group.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.5",
+                  "title": "Notable process-related issues and recommendations.",
+                  "content": "Provides a detailed description of noteworthy process-related issues identified during the analysis along with the resulting recommendations developed by the RCM review group.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.2",
+              "title": "Preventive Maintenance Checks and Services (PMCS) requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.2.1",
+                  "title": "Validation of current tasks.",
+                  "content": "Addresses the current preventive maintenance, checks, and service requirements validated through the conduct of the RCM analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.2",
+                  "title": "Modification of current tasks.",
+                  "content": "Provides a detailed justification for any recommendation to modify any aspect of a current PMCS requirement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.3",
+                  "title": "Additional PMCS tasks.",
+                  "content": "Provides a detailed description and justification for any additional PMCS requirement recommended by the RCM review group.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.2.4",
+                  "title": "Current tasks recommended for deletion.",
+                  "content": "Provides a detailed justification for any recommendation to delete a current PMCS requirement.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.3",
+              "title": "List of safety-related recommendations.",
+              "content": "Formatted as a table. Provides a complete list of failure modes that may affect safety, in Risk Assessment Code sequence, along with the recommendations developed by the RCM review group. These recommendations must be intended to prevent or reduce the probability of the event to a level tolerable to the user or owner.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Complete list of recommendations.",
+              "content": "Formatted as a table. Provides a complete list of recommendations, in Risk Priority Number sequence, along with the recommendations developed by the RCM review group that are intended to prevent or reduce the risk of failure.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Section IV - Appendices.",
+          "content": "Appendices shall include the RCM information and decision worksheets generated during the analysis in accordance with the requirements outlined in DI-PSSS-82115B and DI-PSSS-82116B. Any other information that enhances the value of the Analysis Report may also be included.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-PSSS-82114B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

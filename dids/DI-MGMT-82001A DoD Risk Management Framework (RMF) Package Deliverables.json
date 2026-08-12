@@ -1,0 +1,202 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82001A",
+  "slug": "di-mgmt-82001a",
+  "title": "DoD Risk Management Framework (RMF) Package Deliverables",
+  "summary": "The RMF Package Deliverable data is used to satisfy the requirements of the DoD Risk Management Framework.",
+  "approval_date": "2020-02-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10161",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2020-008",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The RMF Package Deliverable data will be used to satisfy the requirements of the RMF.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described by the contract.\nThis DID supersedes DI-MGMT-82001.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82001"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "The RMF package artifacts shall be delivered in a format approved by the Government's Designated Accrediting Authority (DAA), Navy Authorizing Official (NAO) Authorizing Official (AO), or Information Systems Security Manager (ISSM).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of the RMF package artifacts shall contain the necessary artifacts required by the DAA, NAO, AO, or ISSM to successfully achieve Platform IT (PIT) Designation, Platform IT Risk Approval (PRA), Interim Authority to Test (IATT), or Authority to Operate (ATO).",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "This section shall contain a narrative of the RMF package deliverable content.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "IATT Request.",
+              "content": "The IATT Request shall use the approved DAA, NAO, AO, or ISSM format. The IATT Request shall use the approved Test Plan document to identify the 'who', 'what', 'why', 'where', 'when', and 'how' of the requested Test event. The IATT Request may require IA Test Plan artifacts such as vulnerability scans and STIG checklists. The IATT Request shall be delivered not less than 30 days prior to the start of the Test Event to the Program Office.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Security Plan (SP).",
+              "content": "The SP shall use the approved DAA, NAO, AO, or ISSM format. The SP shall contain at a minimum, System Information, Mission Description, Concept of Operations (CONOPS), Environment, Operating and Computing Environment, Physical Security Measures, Facilities Descriptions, Threat Analysis, System Architecture Description, Components, Configurations, Accreditation Boundaries, Connection Process Guide (CPG) Compliant Network Diagrams, External Interfaces and Data Flow, Internal Data Flow, Contingency Plan, Incident Response Plan, User Descriptions and Clearances, Security Roles, Hardware Lists, Software Lists, Ports, Protocols, and Services (PPS), Configuration Management Plan, Information Assurance Vulnerability Management (IAVM) Plan, and A&A Tasks and Milestones. The SP shall be approved and signed by the ISSM, User Rep, Program Manager (PM), and DAA, NAO, or AO.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Assessment and Authorization (A&A) Project Plan.",
+              "content": "The A&A Project Plan shall use the approved DAA, AO, or ISSM format. The A&A Project Plan is used to establish an executable RMF project plan. The A&A Project Plan shall be approved and signed by the ISSM, Echelon II Representative, and PM. The A&A Project Plan shall define the various A&A Tasks and Milestones needed to achieve PRA, IATT, or ATO.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Collaboration Brief.",
+              "content": "The Collaboration Brief is a summary of the System Overview, RMF Package, and Residual Risk that is presented to the DAA, NAO, AO, Certification Authority (CA), or Security Control Assessor (SCA) during Collaboration. The Collaboration Brief shall use the approved DAA, NAO, AO, or ISSM format. The Collaboration Brief is submitted with the RMF package and is used to describe the System and Residual System Risk during the Collaboration meeting.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "RMF Implementation Plan.",
+              "content": "The RMF Implementation shall use the approved DAA, NAO, AO, or ISSM format. The DIP shall be used during the DIP Concurrence meeting with the Echelon II, Navy CA, and ODAA. The DIP shall define which IA Controls (IACs) will be 'Implemented', 'Inherited', 'Non-Compliant', or 'Not Applicable'. The DIP shall be approved by the DAA, AO, and ISSM prior to execution of the IA Test Plan. The DIP must be approved before moving forward with IA Control Implementation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "PIT Implementation Plan (PIP).",
+              "content": "The PIP shall use the approved DAA, NAO, AO, or ISSM format. The PIP shall be used during the PIT Concurrence meeting with the Echelon II, Navy CA, and ODAA. The PIP shall define which IACs will be 'Implemented', 'Inherited', 'Non-Compliant', or 'Not Applicable'. The PIP shall be approved by the DAA, AO, and ISSM prior to execution of the IA Test Plan. The PIP must be approved by the DAA, NAO, AO, CA, or SCA before moving forward with IA Control Implementation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "IA Test Plan.",
+              "content": "The IA Test Plan shall use the approved DAA, NAO, AO, or ISSM format. The IA Test Plan shall define all required Vulnerability Scans, Security Technical Implementation Guides (STIGs), Security Readiness Guides (SRGs), Secure Content Automation Protocol (SCAP) benchmarks, and other IA Controls or Security Overlays to be applied to the System. The IA Test Plan shall be approved by the DAA, NAO, AO, and ISSM during the DIP or PIP Concurrence Meeting. The IA Test Plan must be approved by the DAA, NAO, AO, CA, or SCA prior to moving forward with IA Control Implementation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "PIT Designation Request.",
+              "content": "The PIT Designation Request shall use the approved DAA, NAO, AO, or ISSM format. The PIT Designation Request is the formal request to the DAA, NAO, or AO that the System meets the requirements of PIT and shall be designated as Platform IT (versus an Information System (IS)). The PIT Designation Request shall be approved and a PIT Designation Letter shall be signed by the DAA or AO prior to the execution of the IA Test Plan and implementation of IA Controls.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "PIT Determination Brief.",
+              "content": "The PIT Determination Brief shall use the approved DAA, NAO, AO, or ISSM format. The PIT Determination Brief shall be used in conjunction with the PIT Designation Request to formally request the System be designated Platform IT (versus and Information System).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Plan of Action and Milestones (POA&M).",
+              "content": "The POA&M shall use the approved DAA, NAO, AO, or ISSM format. The POA&M shall be considered a 'living' document and shall regularly be updated throughout the entire lifecycle of the System through Decommission. The POA&M shall contain all Not Applicable (N/A) IA Controls, All Non-Compliant IA Controls, and all Noncompliant Vulnerability Findings as identified in the Vulnerability Scans, STIGs, SRGs, and SCAP Benchmarks. At a minimum, the POA&M shall be updated monthly.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Privacy Impact Assessment (PIA).",
+              "content": "The PIA shall use the approved DAA, AO, or ISSM format. The PIA shall be approved and signed by the ISSM, PM, and the Command PIA Officer.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Vulnerability Scans.",
+              "content": "In accordance with the approved IA Test Plan, the System shall be scanned using the approved vulnerability scanning tools as identified by the DAA, AO, or ISSM. The vulnerability scanner shall be updated with the latest signatures and scanning engines prior to the execution of each vulnerability scan. At a minimum, vulnerability scans shall be conducted monthly against the System. Non-compliant findings shall be documented in the System POA&M on a minimum monthly basis. At a minimum, vulnerability scans shall be submitted electronically to the ISSM or uploaded into the RMF package (eMASS) or the Vulnerability Remediation Asset Manager (VRAM). Vulnerability scans shall be handled and transmitted in accordance with the System's classification level. Vulnerability reports shall be in a format approved by the DAA, NAO, AO, or ISSM. Vulnerability scans shall be protected in accordance with the System's classification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Security Technical Implementation Guides (STIGs), Security Readiness Guides (SRGs), Secure Content Automation Protocol (SCAP) Benchmarks.",
+              "content": "In accordance with the approved IA Test Plan, the System shall be hardened using the required and approved STIGs, SRGs, SCAP Benchmarks, and other approved hardening tools. Non-compliant STIG, SRG, SCAP Benchmark, and other findings shall be documented in the System POA&M on a minimum monthly basis. Updates to the STIGs, SRGs, and SCAP Benchmarks are released on a monthly, quarterly, and yearly basis. Updates to the STIGs, SRGs, and SCAP Benchmarks shall be implemented into the System as they are released. Non-compliant STIG, SRG, and SCAP Benchmark findings shall be documented in the System POA&M on a minimum monthly basis. STIG, SRG, and SCAP Benchmark artifacts shall be provided in a format approved by the DAA, NAO, AO, or ISSM. STIG, SRG, and SCAP Benchmark artifacts shall be handled in accordance with the System's classification level. At a minimum, STIG, SRG, and SCAP Benchmarks shall be submitted electronically to the ISSM or uploaded into the RMF/RMF Package on a minimum monthly basis. STIG, SRG, and SCAP Benchmark results shall be protected in accordance with the System's classification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Scorecard.",
+              "content": "The Scorecard shall use the approved DAA, NAO, AO, or ISSM format. The Scorecard shall be maintained and updated on a minimum monthly basis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "Contingency Plan.",
+              "content": "The Contingency Plan shall use the approved DAA, NAO, AO, or ISSM format. The Contingency Plan shall be submitted in conjunction with the System's SP. The Contingency Plan shall be approved and signed by the PM, ISSM, and DAA, NAO, or AO.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "Information Assurance Vulnerability Management (IAVM) Plan.",
+              "content": "The IAVM Plan will define how the Developer and Program Office will track, notify, and implement security vulnerabilities as they are identified. The IAVM Plan shall use the approved DAA, NAO, AO, or ISSM format. The IAVM Plan shall be submitted in conjunction with the System's SP. The IAVM Plan shall be approved and signed by the PM, ISSM, and DAA, NAO, or AO.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.17",
+              "title": "Cyber Security Waiver Requests.",
+              "content": "Cyber Security Waiver Requests are an acknowledgement by the PM that compliance will not or can not be made during the life of the System due to technology or Programmatic constraints. Cyber Security Waivers shall use the approved DAA, NAO, or AO format. All Cyber Security Waivers shall be approved and signed by the ISSM, PM, and First Flag or Equivalent prior to submission to the DAA or AO.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.18",
+              "title": "Cyber Security Waiver Extension Request.",
+              "content": "Cyber Security Waiver Extension Requests are an acknowledgment by the PM that compliance will be met beyond the stated compliance date. Cyber Security Waiver Extensions shall use the approved DAA, NAO, or AO format. All Cyber Security Waiver Extensions shall be approved and signed by the ISSM, PM, and First Flag or Equivalent prior to submission to the DAA or AO.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82001A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

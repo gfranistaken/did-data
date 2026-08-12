@@ -1,0 +1,388 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82002B",
+  "slug": "di-mgmt-82002b",
+  "title": "Cybersecurity Implementation Plan",
+  "summary": "The Cybersecurity Implementation Plan (CSIP) is used to ensure industry partners are protecting government data as set forth by the Cybersecurity Plan (CSP).",
+  "approval_date": "2021-02-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10222",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2021-004",
+  "applicable_forms": "CSIP Template",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Cybersecurity Implementation Plan (CSIP) will be used to ensure that industry partners are protecting government data set forth by the Cybersecurity Plan (CSP).\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described by the contract.\nThis DID supersedes DI-MGMT-82002A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82002A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents.",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor's format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The content of the CSIP shall contain the necessary artifacts required by the Authorizing Official (AO), Functional Authorization Official (FAO), or Program Information System Security Manager (ISSM) to successfully assess that industry partners are protecting Government data at the required level set forth by the CSP.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction.",
+          "content": "This section shall contain a narrative summary of the CSIP.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The content of this Cybersecurity Implementation Plan",
+          "content": "is to document how the contractor proposes to implement the requirements set forth in the Cybersecurity Plan (CSP).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Section \"G\" Assessment & Authorization and section \"Q\" Software",
+          "content": "may require additional documentation to validate the requirements set forth in the \"G\" and \"Q\" sections of the CSP per CDRL YYY, Subtitle: Cyber Security System/Software Assurance Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Section A.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "CYBERSECURITY.",
+              "content": "Describe how your company plans on addressing Cyber Security (CS) based on Section \"A\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Section B.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "ARCHITECTURE.",
+              "content": "Describe how your company plans on addressing Cyber Security based on Section \"B\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Section C.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "CYBERSECURITY PRACTICES.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"C\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Section D.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "PUBLIC KEY INFRASTRUCTURE (PKI).",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"D\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Section E.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "ELECTRONIC MAIL (E-MAIL).",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"E\" of the CSP. Address all statements in this section. The goal of this section is to articulate how PKI certificates will be utilized with email programs for digital signature and encryption.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Section F.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "DATA AT REST.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"F\" of the CSP. Address all statements in this section. List the encryption tools and the encryption methods utilized.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Section G.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "ASSESSMENT & AUTHORIZATION (A&A).",
+              "content": "Describe how your company plans on adhering to CS practices based on Section \"G\" of the CSP. Address all statements in this section. If an Information Technology (IT) system that includes Platform Information Technology (PIT) systems or a system deemed as a \"Control System\" is NOT being delivered to the Government, state that fact and mark the section \"not applicable\".",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Section H.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "CYBER SECURITY (CS) POINT OF CONTACT (POC)/CYBER SECURITY WORKFORCE (CSWF).",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"H\" of the CSP. Address all statements in this section. Each CSIP is required to include a CS POC.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Section I.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "WEB SITES, ELECTRONIC ROOMS (E-ROOMS), COLLABORATION TOOLS & CLOUD SERVICES.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"I\" of the CSP. Address all statements in this section. Web Sites, E-Rooms and other collaboration tools must utilize token based PKI certificates for the authentication of all users. Describe how this will be accomplished. The utilization of \"Cloud Services\" must contain the following information: cloud service provider, types of data being stored, sensitivity level of data being stored, off-premises connectivity, cloud service model, NIST defined cloud deployment model, security objectives level (categorization), security control baseline applied, physical location of cloud service center, personnel requirements, FEDRAMP information impact level, and any current authorizations. There should also be a network diagram and a cloud configuration diagram. Storage of CUI must utilize Impact Level (IL) 4 NSS data must utilize IL5.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Section J.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "COMMON ACCESS CARDS (CAC) & SAAR-N FORMS.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"J\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "Section K.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.14.1",
+              "title": "CONTRACTOR OWNED UNCLASSIFIED NETWORK SECURITY.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"K\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.15",
+          "title": "Section L.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "INFORMATION SECURITY REQUIREMENTS FOR PROTECTION OF UNCLASSIFIED DOD INFORMATION ON NON-DOD SYSTEMS.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"L\" of the CSP. Address all statements in this section. Include any company specific policies and SOP's currently in place for achieving this goal.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Section M.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.16.1",
+              "title": "CLASSIFIED SYSTEMS.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"M\" of the CSP. Address all statements in this section electronically transmitting classified information. If access to classified information is not a requirement in this contract state that fact and make the section \"not applicable\".",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.17",
+          "title": "Section N.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.17.1",
+              "title": "CLASSIFIED SPILLAGES & INFORMATION LEAKAGE.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"N\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.18",
+          "title": "Section O.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.18.1",
+              "title": "CLASSIFIED RADIOS & TEMPEST CONTROLS.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"O\" of the CSP. Address all statements in this section. If classified radios with TEMPEST controls are NOT being delivered to the Government; state that fact and mark the section \"not applicable\".",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.19",
+          "title": "Section P.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.19.1",
+              "title": "PROCUREMENT OF CELLULAR TELEPHONES, PDA'S, AIR CARDS AND CALLING CARDS.",
+              "content": "Describe how your company plans on adhering to Cyber Security practices based on Section \"P\" of the CSP. Address all statements in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.20",
+          "title": "Section Q.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.20.1",
+              "title": "SOFTWARE.",
+              "content": "Describe in detail how your company plans on adhering to software deliverables based on Section \"Q\" of the CSP. Address all statements in this section. Ensure that each of the subsections are sufficiently explained to determine a software security posture and baseline.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.20.1.1",
+                  "title": "Data Input Validation.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.20.1.2",
+                  "title": "Integrity Checking.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.20.1.3",
+                  "title": "Software Quality Assurance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.20.1.4",
+                  "title": "Supply Chain Management and Software Assurance.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.21",
+          "title": "Section R.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.21.1",
+              "title": "MISC.",
+              "content": "Describe how your company plans to adhere to requirements in Section \"R\" Misc. of the CSP.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82002B.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

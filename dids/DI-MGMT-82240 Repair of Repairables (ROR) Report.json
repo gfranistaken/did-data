@@ -1,0 +1,417 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82240",
+  "slug": "di-mgmt-82240",
+  "title": "Repair of Repairables (ROR) Report",
+  "summary": "The Repair of Repairables Report is used to track parts usage, categorize failures, identify test failures, quantify No Fault Found instances, document repair turn-around time, and link repaired items to removal.",
+  "approval_date": "2018-08-14",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9977",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "MGMT-2018-042",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Data is used to track parts usage; categorize failures; identify test failures; quantify instances of NFF (No Fault Found); document RTAT (Repair Turn-Around Time) and link repaired items back to removal from the end item.\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The Repair of Repairables Report shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The report shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Contract Information.",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Contract number.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Contract CLIN / CDRL / TI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Calendar reporting period covered by the report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Repair facility name.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.5",
+              "title": "Repair facility address (including city, state, and zip code).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.6",
+              "title": "Repair CAGE (repair facility's Commercial and Government Entity Code).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "UUT (Unit Under Test) information.",
+          "content": "This section shall include the following information for each unit repaired and any inducted for repair during the reporting period:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Repair ID (repair facility's unique repair number)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "NIIN/NSN (National Item Identification Number or National Stock Number).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Part Description (Name/Nomenclature).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "P/N (full part number)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.5",
+              "title": "Ref Des (Reference Designator).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.6",
+              "title": "S/N (complete, unabbreviated Serial Number).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.7",
+              "title": "NHA P/N (Part Number of Next Higher Assembly)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.8",
+              "title": "NHA Ref Des (Ref Des of Next Higher Assembly)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.9",
+              "title": "NHA S/N (Serial Number of Next Higher Assembly)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.10",
+              "title": "Date Received (date unit was received/inducted for repair).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.11",
+              "title": "Source (organization which submitted unit for repair).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Field Failure Data.",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "Government JCN (Job Control Number from MAF)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.2",
+              "title": "BUNO (System/Ship/Aircraft Serial Number)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.3",
+              "title": "Failure Date (date failed/removed from System/Ship/Aircraft)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.4",
+              "title": "Indications (failure explanation and codes provided with unit)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.4",
+          "title": "Test Results.",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.4.1",
+              "title": "Incoming Software/Firmware Revision",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.2",
+              "title": "Incoming Test Type and Result",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.3",
+              "title": "Interim or Diagnostic Test Type and Results",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.4",
+              "title": "Final Test Type and Result",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.5",
+          "title": "Repair Information.",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.5.1",
+              "title": "UUT Operating Hours (Elapsed Time Indicator)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.2",
+              "title": "Repair Status (Pending, Open, Complete, Shipped)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.3",
+              "title": "Parts and Material (list for each component repaired/replaced)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.4",
+              "title": "P/N (full Part Number)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.5",
+              "title": "Description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.6",
+              "title": "Quantity",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.7",
+              "title": "Ref Des",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.8",
+              "title": "S/N (if serialized, full Serial Number)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.9",
+              "title": "Repaired/Replaced",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.6",
+          "title": "Repair Narrative.",
+          "content": "This section shall list individual actions during the repair process by date in chronological order and shall include the following info:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.6.1",
+              "title": "Date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.6.2",
+              "title": "Action (Received, Transferred, Shipped, Repaired, Replaced, Tested, RTV)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.6.3",
+              "title": "Action Narrative.",
+              "content": "Provide complete and thorough details.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.7",
+          "title": "Additional Actions.",
+          "content": "This section shall list all actions performed not directly related to the failure and shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.7.1",
+              "title": "ECP incorporation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.7.2",
+              "title": "Software updates",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.7.3",
+              "title": "Incidental repairs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.8",
+          "title": "Post Repair Information.",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.8.1",
+              "title": "Shipped (date unit was shipped out of repair facility).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.8.2",
+              "title": "Destination (location to which unit was shipped).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82240.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

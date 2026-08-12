@@ -1,0 +1,306 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82138A",
+  "slug": "di-mgmt-82138a",
+  "title": "Naval Aviation Cyber Risk Assessment (CRA) Report Template",
+  "summary": "The Naval Aviation Cyber Risk Assessment (CRA) Report Template provides the format and content for a contractor to report the results of a cyber risk assessment.",
+  "approval_date": "2022-07-28",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10336",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2022-022",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Naval Aviation Cyber Risk Assessment (CRA) Report Template contains the format and content for the contractor to report results of the cyber risk assessment.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task.\nThis DID supersedes DI-MGMT-82138.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82138"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced Documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "NAVAIR Standard Work Package Cyber Risk Analysis SWP-4000-001 Rev 7 dtd 09 Dec 2016.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "NAVAIR Cyber Risk Analysis Implementation Guide Version R7-1.2 09 Dec 2016.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The Analysis shall contain the following information and be submitted in the format specified below. This will allow ease of integration with other cyber risk assessments performed in relation to this effort. Each paragraph includes a description of the expected content associated with that particular paragraph. The contractor shall pay close attention to the classification of this analysis and mark the deliverable in accordance with the security marking requirements of the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Executive Summary.",
+          "content": "Summarize the entire study. Include the purpose for the study, the team members and their roles, the scope of the study, and the study timeframe. Include any rationale for approved (Specify Government POC) tailoring or deviations from the SWP and Implementation Guide. The major findings of the study will likely be classified at the SECRET or higher level, so the findings should only be included if the report is appropriately classified. Also include any considerations, difficulties, compromises, or assumptions that may have significantly impacted the output of the assessment. Finally, include a high-level discussion on the recommendations and mitigation strategies. Ensure portion markings are maintained, especially if an UNCLASSIFIED subset of the Executive Summary is needed for communications at that level. This summary should not be longer than two pages in length.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Introduction.",
+          "content": "This is the formal introduction to the Cyber Risk Assessment (CRA) task at hand. The introduction should contain some content about the overall reasons behind conducting a CRA in general and how a CRA will inform and support the betterment of the Program and the System(s) assessed. Also include the results from previous cyber security assessments (if any) that were used to inform this assessment. Finally, include any recommendations or lessons learned specific to the system under study that will inform upcoming system CRA iterations or SETR events.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Background.",
+          "content": "This section should contain 3 main paragraphs:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "High-level description the CRA Report.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "High-level description of the system under review.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "The current position in the acquisition lifecycle of the system.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Study Scope and Purpose.",
+          "content": "This is a high-level description of the systems and missions considered for the CRA effort. It should also identify the goals and objectives that are driving the team to conduct a CRA for this system at this time. If there are specific threats that are deemed out of scope for the effort, those caveats should be made here. This should also clearly describe the mission- and system-scoping effort of the assessment, clearly defining which portions of the system are 'in-play,' and which mission (thread[s]) they support.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Cyber Risk Assessment (CRA) Methodology:",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Explanation of CRA: Layout of the Work Steps.",
+              "content": "Describe the CRA work steps as applied to this specific CRA study/iteration. Any deviation from the CRA SWP Revision 7 and the associated Implementation Guide (ref (a)) should be detailed and justified. Deviations from the current SWP and associated Implementation Guide are acceptable, and if properly documented they could be used to contribute to an improved future revision of the SWP and associated Implementation Guide.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "List of Challenges and Limitations.",
+              "content": "This section should expose all technical, logistic and programmatic challenges and/or limitations affecting the CRA performed on the system.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "System Information.",
+          "content": "This section will require the system under analysis to be defined. Include information from the planning phase (Section 1, 'CRA planning Phase').",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "System Definition.",
+          "content": "This is where you formally define the system for the analysis and the current stage of acquisition for the system. It should include which sub-systems and interfaces are considered in scope. In addition, it is where you define the limitations / edges of your study.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "System Operational / Mission Information.",
+          "content": "This section defines the missions supported by the system that could experience an impact via a cyber-risk. Specific measurements of mission effectiveness (related to the table in Step 2.1 of Section 2 'CRA Assessing Phase') could be highlighted in this section as well. Additionally, the identification of mission-critical information and data flows can be identified in this section.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "System Technical Information.",
+          "content": "All relevant technical data should be listed here. This section should begin with an OV-1 of your system if available. From there, it should identify the systems within the system of systems for your CRA effort. A summary wiring diagram/system model should be presented at the conclusion of this section. Make sure to determine information source; where (owners, SMEs, etc.) the data came from and the management controls (FOUO, Unclassified, Classified, etc.) on the data.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Threat Information.",
+      "content": "This section identifies tactical objectives from a threat actor with respect to the subject of the CRA. The goal of this section is not to enumerate known vectors from threat reports. It should describe access points for your risk analysis and identify any specific assumptions with respect to the threat space of your system. Any assumptions, and the related rationale concerning the assumptions, made during the study about threat and/or threat vectors should be provided. This is especially important if the received threat information led to the addition or prioritization of an attack and attack path.\nThe section should also include a description of the threat model of threat actors/sources utilized for the study. Suggested threat models are the DSB, NASIC, NIE, and GIAP models. Their descriptions can be found in Section 2, CRA Assessing Phase, Step 2.2 (reference b).",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Analysis.",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Attack tree assessment model design.",
+              "content": "This section will specify the connections within your attack tree assessment model. It should explain the assumptions made to either reduce or group the number of entries into the model. Additionally, the factors used in the qualitative/subjective scoring categories needs to be documented in this section. If Subject Matter Experts are utilized, a description of the qualifications for those SMEs should be summarized as well. This section should also include an overview of how the team came up with the considered access points supporting the attack tree development, and should explain how they were down-selected (prioritized) in use.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Attack Tree Confirmation.",
+          "content": "This section should describe activities taken to confirm the results of the assessment phase, and any deviations, assumptions and/or changes made during the CRA application on the system and its supported missions. It should also underpin any follow-on verification recommendations necessary to confirm the outcomes presented within the assessment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "Attack tree assessment model conclusions.",
+          "content": "This is a summary of the risk cubes developed by the CRA process. It should highlight common sources of impact or likelihood and explain any results that are non-intuitive. A chart will be used to display the results of the attack paths and their associated level of risk (risk cube).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Report Team Members & Stakeholders.",
+      "content": "Provide the list of team members, their organizations, and roles for the CRA.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "6",
+      "title": "References.",
+      "content": "This section should include a collection of documentation used to generate the CRA Report. It is important to include any program, NAVAIR, and other Security Configuration Guides (SCG) that apply to the system and CRA. In general, anything generated in the CRA process will be a CRA report appendix. Anything else used in the report generation process will be a reference.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "7",
+      "title": "Conclusion.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "7.1",
+          "title": "Summary of Risk to Systems and Mission.",
+          "content": "This section provides a summary of the key risk drivers and critical cyber compromises for the baseline system (if any exist). It will highlight the impact to mission survivability of a cyber compromise.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.2",
+          "title": "Suggested Mitigations.",
+          "content": "This section will provide a prioritized list of mitigations for addressing the risk drivers identified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7.3",
+          "title": "Recommendations.",
+          "content": "This section will provide specific recommendations (could be technical or administrative) that address or support programmatic aspects or technical actions required by the program manager. This section should also include recommended follow-on actions, such as Test & Evaluation (T&E) and Verification & Validation activities. Also, consider adding discussion on how the report can support other related Cybersecurity processes and requirements (e.g., CYBERSAFE and the Navy Risk Management Framework [RMF] implementation).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Appendices.",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "8.1",
+          "title": "Appendix A - References.",
+          "content": "This is a bibliography of references used throughout the study.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.2",
+          "title": "Appendix B - Staffing Level of Effort.",
+          "content": "This section will provide a list of the estimated level of effort (staffing).\nProvide a description of the level of effort demanded of the CRA team and SMEs to complete the project. This should include the time spent in planning, retrieving documentation, assessing, and completing the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.3",
+          "title": "Appendix C - Acronym List.",
+          "content": "This section will provide a full acronym dictionary for the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.4",
+          "title": "Appendix D - Lessons Learned.",
+          "content": "This section will provide a list of all the lessons learned throughout the study. Include any identified recommendations to the SWP and Implementation Guide Owner (i.e., NAVAIR Cyber Warfare Detachment or AIR-4.1.14, as appropriate).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8.5",
+          "title": "Appendix E - Out Brief.",
+          "content": "This section will reflect the Out Brief presentation provided to the program office as a result of the CRA.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82138A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82021",
+  "slug": "di-mgmt-82021",
+  "title": "United States Air Force (USAF) - Owned Aviation Fuel Stock Report",
+  "summary": "The USAF-Owned Aviation Fuel Stock Report accounts for aviation fuel provided to contractors as Government Furnished Property, used by the Fuels Division for billing USAF Major Commands, Army, Navy, and other agencies.",
+  "approval_date": "2016-01-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9621",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WWQE)",
+  "project_number": "MGMT-2015-040",
+  "applicable_forms": "AF 210",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The USAF-Owned Aviation Fuel Stock Report, accompanied by supporting receipt and issue documents, is designed to account for aviation fuel provided to contractors as Government Furnished Property (GFP). The reports are utilized by the Fuels Division, Air Force Stock Fund Accounting Office for subsequent billing to USAF Major Commands, Army and Navy and other government agencies for fuel consumed in support of their respective contracts.\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\nb. This DID applies to all contracts involving fuel as GFP.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of the AF 210 are available online at",
+      "url": "https://www.e-publishing.af.mil/"
+    },
+    {
+      "label": "Copies of DD Forms are available online at",
+      "url": "http://www.dtic.mil/whs/directives/forms/index.htm"
+    },
+    {
+      "label": "copies of the AFMCMAN, AF Form and AFI are available on line at",
+      "url": "http://www.e-publishing.af.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "AF 210, USAF-Owned Aviation Fuel Stock Report, shall be used. (Copies of the AF 210 are available online at www.e-publishing.af.mil/.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "Specific instructions for preparing the AF 210 are as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Block 1, Reporting Contractor:",
+          "content": "Enter the complete name and address of the reporting contractor.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Block 2, Activity Address Code:",
+          "content": "Enter Department of Defense (DoD) activity address code assigned to contractor location, for example, EZ8262.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Block 3, Period of Report (YYMM).",
+          "content": "Enter month being reported in DoD standard sequence (YYMM), for example, October 2015 would be entered as \"1510.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Block 4, Date of Preparation (YYYYMMDD):",
+          "content": "Enter the date of preparation in DoD standard sequence (YYYYMMDD), for example, 1 October 2015 would be entered as \"20151001.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Grade(s) of Turbine or Aviation Fuel:",
+          "content": "Enter the grade of fuel being reported in the spaces provided under the appropriate heading of each column.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Line No. 1, Beginning Inventory:",
+          "content": "Enter total inventory that was on hand as of 0800 hours on the first day of the report period.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Line No. 2, Quantity Received:",
+          "content": "Enter total quantity received during the report period.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Line No. 3, Total Issues:",
+          "content": "Enter new quantity issued to all programs that is quantity issued minus defuels.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Line No. 4. Ending Book Inventory:",
+          "content": "Add lines 1 and 2 and from this sum subtract line 3. Enter the result on line 4.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Line No. 5, Ending Physical Inventory:",
+          "content": "Enter the actual quantity in bulk as determined by a physical inventory as of 0800 hours on the date of the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Line No. 6, Gain or Loss:",
+          "content": "Subtract line 5 from line 4 and enter the result on line 6 (in parenthesis to indicate loss). If line 5 exceeds line 4, subtract line 4 from line 5, and enter the result on line 6 as a gain. All entries on line 6 shall include a footnote explanation.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Gains and losses of petroleum products due to temperature and handling variations are recognized as normal occurrences in all aspects of petroleum supply operations.",
+              "content": "The report shall address inventory variations exceeding normally accepted tolerances and identify corrective action.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.11.1.1",
+                  "title": "Compute the overall temperature and handling gain/loss.",
+                  "content": "This figure (line 6) preceded by a plus (+) for a gain or minus (-) for a loss, is then divided by the sum of new issues (line 3) for the same period plus the beginning physical inventory (line 1). Enter the percentage of gain/loss immediately below line 6.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.2",
+                  "title": "Gains/Losses sustained by contractors in storing and handling bulk petroleum fuels are allowable when they do not exceed +/- 0.5 percent.",
+                  "content": "Gains/losses which exceed the normal allowable tolerances shall include an explanation on the reverse of AF 210.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Supporting documentation.",
+      "content": "The report shall include one copy of supporting documentation, i.e., DD Form 250, Material Inspection and Receiving Report or DD Form 1338-1A, Issue Release/Receipt Document as specified in AFMCMAN 23-5V1, D035A, D035B, Ramp and Whsl Module Data Subsystems. When applicable to USAF contracts, one (1) copy of Fuels Issue/Defuel Document (AF Form 500) shall be included as specified in AFI 23-204, Organizational Fuel Tanks. If applicable to other Services or government agencies, the report shall include three (3) copies of the supporting documents described above. (Copies of DD Forms are available online at http://www.dtic.mil/whs/directives/forms/index.htm.; copies of the AFMCMAN, AF Form and AFI are available on line at http://www.e-publishing.af.mil/)",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82021.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

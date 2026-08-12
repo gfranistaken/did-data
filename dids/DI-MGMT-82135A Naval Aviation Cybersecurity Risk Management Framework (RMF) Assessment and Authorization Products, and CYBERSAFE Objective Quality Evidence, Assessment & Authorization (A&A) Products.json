@@ -1,0 +1,249 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82135A",
+  "slug": "di-mgmt-82135a",
+  "title": "Naval Aviation Cybersecurity Risk Management Framework (RMF) Assessment and Authorization Products, and CYBERSAFE Objective Quality Evidence, Assessment & Authorization (A&A) Products",
+  "summary": "This DID specifies the format, content, and intended use of the Cybersecurity Risk Management Framework (RMF) Assessment and Authorization (A&A) Products provided in support of a program.",
+  "approval_date": "2022-09-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10346",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2022-025",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) contains the format, content and intended use for the Cybersecurity Risk Management Framework (RMF) Assessment & Authorization (A&A) Products to be provided in support of the (state your program name).\n\nThis DID contains the format, content, and intended use information for the data product resulting from the work task.\n\nThis DID supersedes DI-MGMT-82135.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82135"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DoDI 8500.01, available at",
+      "url": "https://www.esd.whs.mil/Directives/issuances/dodi/"
+    },
+    {
+      "label": "DoDI 8510.01, available at",
+      "url": "https://www.esd.whs.mil/Directives/issuances/dodi/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents.",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "DoDI 8500.01, available at https://www.esd.whs.mil/Directives/issuances/dodi/",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "DoDI 8510.01, available at https://www.esd.whs.mil/Directives/issuances/dodi/",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format.",
+      "content": "Contractor's Format Acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content.",
+      "content": "The following products shall be provided in support of RMF A&A IAW DoDI 8500.01 and DoDI 8510.01. The provided products will be incorporated by the Government into the overall air system A&A package. Products shall be classified IAW the (Program Name) Security Classification Guide provided as Government Furnished Information (GFI).",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "RMF System Security Plan",
+          "content": "The Security Plan describes the security controls in place or planned for meeting cybersecurity requirements. The security plan will include expected implementation status, current implementation status, responsible entities, resources, and estimated completion dates. The Security Plan will also include a compiled list of system characteristics or qualities required for system registration (if required), key security-related documents such as a risk assessment, privacy impact assessment, system interconnection agreements, contingency plan, security configurations, configuration management plan, software lists, and hardware list.\nReference the draft System Security Plan document provided as GFI.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Security Assessment Plan",
+          "content": "For content, reference the following documents provided as GFI:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "National Institute of Standards and Technology Special Publication 800-53A",
+              "content": "\"Guide for Assessing the Security Controls in Federal Information Systems and Organizations: Building Effective Security Assessment Plans\"",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Security Assessment Plan Template",
+              "content": "The template includes information related to test objectives; schedule; limitations; personnel; related tests; location; equipment; configurations; satisfactory/unsatisfactory criteria; entrance/exit criteria; logistics; qualifications/certifications; security considerations; and test procedures.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Risk Assessment Report (RAR)",
+          "content": "The focus of a risk assessment is to determine if there is residual risk associated with the security controls found to be non-compliant during the contractor's assessment, leaving vulnerability. The Risk Assessment Report is used to capture any findings that will not be corrected prior to the control assessment in the Assess Phase and to communicate the contractor's risk assessment results to the Government to inform the final air system RMF authorization. Reference the GFI document \"USN RMF RAR\" for further content guidance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Plan of Action and Milestones (POA&M)",
+          "content": "The POA&M addresses all vulnerabilities identified during the contractor's security control assessment. It will include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Identify tasks that need to be accomplished to remediate or mitigate vulnerabilities.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Specify resources required to accomplish the elements of the planned tasks.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Include milestones for completing tasks and their scheduled completion dates.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Security Assessment Report",
+          "content": "The output and end result of the security control assessment is the security assessment report, which documents the assurance case for the system and is one of three key documents in the security authorization package developed by system owners and common control providers for authorizing officials. The security assessment report to be provided per this CDRL includes the Contractor's assessment of the findings to determine the effectiveness of the security controls employed within or inherited by the system. The security assessment report will include an assessment summary from the detailed findings that are generated during the security control assessment. The assessment summary will provide an abbreviated version a of Security Assessment Report focusing on the highlights of the assessment, synopsis of key findings, and/or recommendations for addressing weaknesses and deficiencies in the security controls. The following elements are included in security assessment reports:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "System name;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Security categorization;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Site(s) and/or systems assessed and assessment date(s);",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Assessor's name/identification;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Previous assessment results (if reused);",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Security control or control enhancement designator;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Selected assessment methods and objects;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Depth and coverage attributes values;",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Assessment finding summary (indicating satisfied or other than satisfied);",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.10",
+              "title": "Assessor comments (weaknesses or deficiencies noted); and",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.11",
+              "title": "Assessor recommendations (priorities, remediation, corrective actions, or improvements).",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Information System Continuous Monitoring Strategy (ISCM)",
+          "content": "The ISCM Strategy describes the system including the continuous monitoring requirements, system architecture, and interfaces. The ISCM Strategy also identifies key personnel, continuous monitoring tools, supporting processes, communication plan, and the continuous improvement plan.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82135A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

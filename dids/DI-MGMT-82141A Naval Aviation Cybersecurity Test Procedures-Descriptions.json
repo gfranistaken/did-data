@@ -1,0 +1,603 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82141A",
+  "slug": "di-mgmt-82141a",
+  "title": "Naval Aviation Cybersecurity Test Procedures/Descriptions",
+  "summary": "This DID establishes the format and content for Naval Aviation Cybersecurity Test Procedures/Descriptions (CSTP/CSTD), the data product resulting from work described in the contract statement of work.",
+  "approval_date": "2022-06-02",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10322",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2022-015",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) contains the format and content for the Cybersecurity Test Procedures/Descriptions (CSTP/CSTD).\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract statement of work (SOW).\nThis DID supersedes DI-MGMT-82141.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82141"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The CSTP/CSTD will contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Test preparations",
+          "content": "This paragraph will identify a test by project-unique identifier, will provide a brief description, and will be divided into the following subparagraphs. When the information required duplicates information previously specified for another test, that information may be referenced rather than repeated. This section will be divided into the following paragraphs. Safety precautions, marked by WARNING or CAUTION, and security and privacy considerations will be included as applicable.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Hardware preparation",
+              "content": "This paragraph will describe the procedures necessary to prepare the hardware for the test. Reference may be made to published operating manuals for these procedures. The following will be provided, as applicable:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "The specific hardware to be used, identified by name and, if applicable, number.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Any switch settings and cabling necessary to connect the hardware.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "One or more diagrams to show hardware, interconnecting control, and data paths.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Step-by-step instructions for placing the hardware in a state of readiness.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Software preparation",
+              "content": "This paragraph will describe the procedures necessary to prepare the item(s) under test and any related software, including data, for the test. Reference may be made to published software manuals for these procedures. The following information will be provided, as applicable:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "The specific software to be used in the test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "The storage medium of the item(s) under test (e.g., magnetic tape, CD).",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.2.1",
+                      "title": "The storage medium of any related software (e.g., simulators, test drivers, databases).",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.2.2",
+                      "title": "Instructions for loading the software, including required sequence.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.2.3",
+                      "title": "Instructions for software initialization common to more than one test case.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.2.4",
+                      "title": "Other pre-test preparations",
+                      "content": "This paragraph will describe any other pre-test personnel actions, preparations, or procedures necessary to perform the test.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Test descriptions",
+          "content": "This section will be divided into the following paragraphs. Safety precautions, marked by WARNING or CAUTION, and security and privacy considerations will be included as applicable.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "This paragraph will identify a test case by project-unique identifier, state its purpose, and provide a brief description.",
+              "content": "The following subparagraphs will provide a detailed description of the test case.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Requirements addressed",
+                  "content": "This paragraph will identify the CSCI or system requirements addressed by the test case.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.1.1",
+                      "title": "Prerequisite conditions",
+                      "content": "This paragraph will identify any prerequisite conditions that must be established prior to performing the test case. The following considerations will be discussed, as applicable:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.2.1.1.1.1",
+                          "title": "Hardware and software configuration.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.1.1.2",
+                          "title": "Flags, initial breakpoints, pointers, control parameters, or initial data to be set/reset prior to test commencement.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.1.1.3",
+                          "title": "Preset hardware conditions or electrical states necessary to run the test case.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.1.1.4",
+                          "title": "Initial conditions to be used in making measurements.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.1.1.5",
+                          "title": "Conditioning of the simulated environment.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.2.1.1.1.6",
+                          "title": "Other special conditions peculiar to the test case.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Test inputs",
+          "content": "This paragraph will describe the test inputs necessary for the test case. The following will be provided, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Name, purpose, and description (e.g., range of values, accuracy) of each test input.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Source of the test input and the method to be used for selecting the test input.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.1.1",
+                      "title": "Whether the test input is real or simulated.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.2",
+                      "title": "Time or event sequence of test input.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.3",
+                      "title": "The manner in which the input data will be controlled to:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.4",
+                      "title": "Test the item(s) with a minimum/reasonable number of data types and values",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.5",
+                      "title": "Exercise the item(s) with a range of valid data types and values that test for overload, saturation, and other \"worst case\" effects.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.6",
+                      "title": "Exercise the item(s) with invalid data types and values to test for appropriate handling of irregular inputs.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.7",
+                      "title": "Permit retesting, if necessary.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Identify required Government furnish information (GFI) and Government furnished equipment required to conduct and complete the test.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Expected test results",
+                  "content": "This paragraph will identify all expected test results for the test case. Both intermediate and final test results will be provided, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Criteria for evaluating results",
+                  "content": "This paragraph will identify the criteria to be used for evaluating the intermediate and final results of the test case. For each test result, the following information will be provided, as applicable:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.4.1",
+                      "title": "Minimum number of combinations or alternatives of input and output conditions that constitute an acceptable test result.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.2",
+                      "title": "Maximum/minimum allowable test duration, in terms of time or number of events.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.3",
+                      "title": "Maximum number of deviations or failures that may occur.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.4",
+                      "title": "Allowable tolerances of errors.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.5",
+                      "title": "Conditions under which the result is inconclusive and re-testing is to be performed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.6",
+                      "title": "Conditions under which the outputs are to be interpreted as indicating irregularities in input test data, in the test database/data files, or in test procedures.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.7",
+                      "title": "Allowable indications of the control, status, and results of the test and the readiness for the next test case.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.8",
+                      "title": "Additional criteria not mentioned above.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Test procedure",
+          "content": "This paragraph will define the test procedure for the test case. The test procedure will be defined as a series of individually numbered steps listed sequentially in the order in which the steps are to be performed. For convenience in document maintenance, the test procedures may be included as an appendix and referenced in this paragraph. The appropriate level of detail in each test procedure depends on the type of Cybersecurity testing being performed and the hardware/software configuration. The appropriate level of detail is the level at which it is useful to specify expected results and compare them to actual results. The following will be provided for each test procedure, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Test operator actions and equipment operation required for each step, including commands, as applicable, to:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.1.1",
+                  "title": "Initiate the test case and apply test inputs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.1.1.1",
+                      "title": "Inspect test conditions.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.2",
+                      "title": "Perform interim evaluations of test results.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.3",
+                      "title": "Record data.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.4",
+                      "title": "Halt or interrupt the test case.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.5",
+                      "title": "Request data dumps or other aids, if needed.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.6",
+                      "title": "Modify the database/data files.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.7",
+                      "title": "Number of repetitions required.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.8",
+                      "title": "Apply alternate modes as required by the test case.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.9",
+                      "title": "Terminate the test case.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.10",
+                      "title": "Expected result and evaluation criteria for each step.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.11",
+                      "title": "If the test case addresses multiple requirements, identification of which test procedure step(s) address which requirements.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.12",
+                      "title": "Actions to follow in the event of a failure or deviation, such as:",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.13",
+                      "title": "Recording of critical data from indicators for reference purposes.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.14",
+                      "title": "Halting or pausing time-sensitive test-support software and test apparatus.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.15",
+                      "title": "Collection of system and operator records of test results.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.1.16",
+                      "title": "Procedures to sanitize and restore the system following the test.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.4.2",
+              "title": "Procedures to be used to reduce and analyze test results to accomplish the following, as applicable:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.2.1",
+                  "title": "Detect whether a security failure has occurred.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.2",
+                  "title": "Identify media and location of data produced by the test case.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.3",
+                  "title": "Evaluate output as a basis for continuation of test sequence.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.4",
+                  "title": "Evaluate test output against required output.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.3",
+              "title": "Assumptions and constraints",
+              "content": "This paragraph will identify any assumptions made and constraints or limitations imposed in the description of the test case due to system or test conditions, such as limitations on timing, interfaces, equipment, personnel, and database/data files. If waivers or exceptions to specified limits and parameters are approved, they will be identified and this paragraph will address their effects and impacts upon the test case.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Requirements traceability",
+              "content": "This paragraph will contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.4.1",
+                  "title": "Traceability from each test case in this CSTD to the system security requirements it addresses.",
+                  "content": "If a test case addresses multiple requirements, traceability from each set of test procedure steps to the requirement(s) addressed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.4.2",
+                  "title": "Traceability from each system or requirement covered by this CSTD to the test case(s) that address it.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.4.3",
+                  "title": "If a test case addresses multiple requirements, the traceability will indicate the particular test procedure steps that address each requirement.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Appendixes",
+      "content": "Appendixes may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix will be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82141A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

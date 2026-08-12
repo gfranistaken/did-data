@@ -1,0 +1,417 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82172",
+  "slug": "di-mgmt-82172",
+  "title": "Ships Incremental Material History and Disposition Report",
+  "summary": "The Ships Incremental Material History and Disposition Report provides the Government information needed to update residual asset NSNs with current generation NSNs and to apply available assets to unfilled allowance requirements and other disposition actions.",
+  "approval_date": "2018-01-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9881",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "MGMT-2018-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Report provides the Government with the information needed to update residual asset National Stock Numbers (NSNs) with current generation NSNs and for applying available assets to unfilled allowance requirements or other disposition actions and identification of items ordered, received and deleted.\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The Report shall be in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The Report shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Section 1 - Incremental Asset.",
+          "content": "This section shall identify the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Nomenclature",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Ship Unit Identification Code (UIC)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Locations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Contractor and Government Entity (CAGE) Code",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.5",
+              "title": "Part Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.6",
+              "title": "Source Document",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.6.1",
+                  "title": "Purchase Order (PO)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.6.2",
+                  "title": "Contract",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.6.3",
+                  "title": "Requisition Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.1.7",
+              "title": "Status",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.7.1",
+                  "title": "On Hand",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.7.2",
+                  "title": "Due In",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.1.8",
+              "title": "Unit of Issue (U/I)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.9",
+              "title": "Cognizance Symbol (COG)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.10",
+              "title": "Material Control Code (MCC)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.11",
+              "title": "Stock Number",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.11.1",
+                  "title": "Federal Supply Classification (FSC)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.11.2",
+                  "title": "National Item Identification Number (NIIN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.11.3",
+                  "title": "National Item Control Number (NICN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.1.12",
+              "title": "Special Material Identification Code (SMIC)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.13",
+              "title": "Quantity",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.13.1",
+                  "title": "Allowed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.13.2",
+                  "title": "In Transaction",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.13.3",
+                  "title": "Received",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.13.4",
+                  "title": "Issued",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.13.5",
+                  "title": "On hand",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.1.14",
+              "title": "Requisition Number (UIC + Julian + serial number)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Section 2 - Disposition of Material not loaded.",
+          "content": "This section shall identify the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Cognizance (COG) Code",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Federal Supply Classification (FSC)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "National Stock Number (NSN)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "Quantity",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.5",
+              "title": "Unit of Issue (U/I)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.6",
+              "title": "Unit Price",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.7",
+              "title": "Document Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.8",
+              "title": "Customer Order Acquisition Record (COAR)/ Material Group",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.9",
+              "title": "Disposition of excess Material",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Section 3 - Material History.",
+          "content": "This section shall identify the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "System Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.2",
+              "title": "Equipment name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.3",
+              "title": "Equipment Serial Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.4",
+              "title": "Equipment Compartment Location",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.5",
+              "title": "Equipment Start-Up Date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.6",
+              "title": "Total number of hours Equipment has been used from start up until Ship Delivery",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Section 4 - The Stowage location.",
+      "content": "This section shall contain the stowage number and shall identify:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The storeroom location, such as bin location or the deck",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Frame",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Compartment",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Location numbers for items stowed in special locations outside designated storerooms",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82172.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82148A",
+  "slug": "di-mgmt-82148a",
+  "title": "Naval Aviation Supply Chain Risk Management (SCRM) Subcontractor Analysis",
+  "summary": "This DID defines the format, content, and intended use of the Naval Aviation Supply Chain Risk Management (SCRM) subcontractor status report on critical component suppliers and threats.",
+  "approval_date": "2019-08-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10063",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "Yes",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "MGMT-2019-021",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Delivery Item contains the format, content and is intended use information for the Naval Aviation Supply Chain Risk Management (SCRM) status report.\nThis DID contains the format, content, and intended use information for the data product resulting from the work task.\nThis DID supersedes DI-MGMT-82148.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82148"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document can be found at",
+      "url": "https://csrc.nist.gov/publications/detail/sp/800-161/final"
+    },
+    {
+      "label": "Copies of this document can be obtained at",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "Copies of this document can be obtained at",
+      "url": "https://www.esd.whs.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Individual program office program protection plan.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "National Institute of Standards and Technology (NIST) Special Publication (SP) 800-161, Supply Chain Risk Management (SCRM) Practices for Federal Information Systems and Organizations, April 2015.",
+          "content": "Copies of this document can be found at https://csrc.nist.gov/publications/detail/sp/800-161/final",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Explain criticality analysis process.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Provide a list of critical components.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Provide supplier information for all critical components.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Provide assessment of any threat to critical components from suppliers and indicate countermeasures taken to mitigate the threat(s).",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Provide counterfeit prevention plan for protection of critical components.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Specify assurance measures to ensure no malicious intent is designed into critical component.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Describe SCRM security controls implementation per NIST SP 800-161.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Objective Quality Evidence (OQE)",
+      "content": "Objective Quality Evidence (OQE) is any statement of fact, either quantitative or qualitative, pertaining to the quality of a product or service based on observations, measurements, or tests which can be verified and is required in sufficient detail to describe the data elements in the Statement of Work.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Distribution Statement",
+          "content": "as appropriate, in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents (Copies of this document can be obtained at: https://www.esd.whs.mil/). Classification markings, as necessary, in accordance with DoD Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information. (Copies of this document can be obtained at: https://www.esd.whs.mil/).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82148A.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

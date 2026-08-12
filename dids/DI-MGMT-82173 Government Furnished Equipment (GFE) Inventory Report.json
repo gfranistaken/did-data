@@ -1,0 +1,216 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-MGMT-82173",
+  "slug": "di-mgmt-82173",
+  "title": "Government Furnished Equipment (GFE) Inventory Report",
+  "summary": "This DID captures Government furnished equipment provided to the contractor for contracted work, enabling tracking of accountability for Government property asset management.",
+  "approval_date": "2018-01-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9882",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "MGMT-2018-006",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This DID will be used to capture Government furnished provided to the contract and in pursuit of contracted work and will allow to track accountability for asset management of Government property.\n\nThis DID contains the format and content and intended use information for the data product resulting from the work task described in the contract SOW.\n\nThis DID is applicable to contracts in which GFE has been provided to the contractor in support/execution of the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format.",
+      "content": "The Report shall be in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content.",
+      "content": "The Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Section 1 - Government Furnished Equipment Inventory.",
+          "content": "This section shall identify the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Contract Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Contractor Point of Contact",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Location of GFE",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Date Inventory Completed",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Section 2 - Government Furnished Equipment Inventory.",
+          "content": "This section shall identify the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Asset Identification Number (Asset ID#)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Unique Item Identifier (UII) or DoD recognized Item Unique Identifier (IUID)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "National Stock Number (NSN)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "Part Number (P/N)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.5",
+              "title": "Nomenclature (NOMEN)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.6",
+              "title": "Serial Number (S/N)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.7",
+              "title": "Model Number (M/N), if applicable",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.8",
+              "title": "Manufacturer",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.9",
+              "title": "Quantity",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.10",
+              "title": "Current condition of equipment, per the equipment condition status listed below as applicable:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.2.10.1",
+                  "title": "Condition A - Serviceable Usable without Qualification.",
+                  "content": "New, used, repaired, or reconditioned equipment which is serviceable and useable for its intended purpose.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.10.2",
+                  "title": "Condition B - Serviceable Usable with Qualification.",
+                  "content": "New, used, repaired, or reconditioned equipment which is serviceable and useable for its intended purpose.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.10.3",
+                  "title": "Condition D - Serviceable Test/Modification.",
+                  "content": "Serviceable equipment which requires test, alteration, modification, conversion or disassembly. This does not include items which must be inspected or tested immediately prior to issue.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.10.4",
+                  "title": "Condition F - Unserviceable Reparable.",
+                  "content": "Economically reparable equipment which requires repair, overhaul, or reconditioning.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.10.5",
+                  "title": "Condition H - Condemned.",
+                  "content": "Equipment which has been determined to be unserviceable and cannot be repaired.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Section 3 - Government Furnished Equipment Inventory.",
+          "content": "This section shall identify all equipment Loss, Damaged, Missing with explanation and required a DD Form 200.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-MGMT-82173.pdf",
+    "extraction_date": "2026-08-10",
+    "extraction_method": "claude_cowork"
+  }
+}

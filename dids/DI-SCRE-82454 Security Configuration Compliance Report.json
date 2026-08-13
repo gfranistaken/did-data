@@ -1,0 +1,501 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SCRE-82454",
+  "slug": "di-scre-82454",
+  "title": "Security Configuration Compliance Report",
+  "summary": "Defines the format, content, and use of the Security Configuration Compliance Report (SCCR) documenting cybersecurity controls for standalone training systems delivered under Foreign Military Sales programs.",
+  "approval_date": "2024-09-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10506",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "PT",
+  "project_number": "SCRE-2024-002",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) defines the format, content, and intended use of the Security Configuration Compliance Report (SCCR) for Foreign Military Sales (FMS) programs that do not contain Critical Program Information. The SCCR is a key deliverable at the Preliminary Design Review and approved prior to Acceptance Testing. This is specifically for standalone training systems. Standalone training systems include those operating on intranets and closed networks. This DID demonstrates how the contractor has implemented cybersecurity controls to meet applicable security requirements. The SCCR facilitates a clear overview and verification of these implemented controls, ensuring the project adheres to established security best practices through written documentation and relevant system reports.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Security Configuration Compliance Report (SCCR) shall be delivered in a common readable format such as Microsoft Excel or Word.  Supplemental evidence for each control, such as screenshots, system scans, and configuration reports, are acceptable. Contractor format is acceptable for the SCCR.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The SCCR shall include each of the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Section 1. System Security Configuration Management",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "LEAST FUNCTIONALITY",
+              "content": "Describe how the principle of least functionality has been implemented on the system and associated configurations. This includes:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "SOFTWARE",
+                  "content": "Detail how non-essential software applications have been removed or disabled. Acceptable supporting evidence: screenshots of relevant system configuration settings or software inventory lists.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "SERVICES",
+                  "content": "Describe how all non-essential system services have been disabled or removed.  For any essential services that remain enabled, document the rationale for their continued operation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "FEATURES",
+                  "content": "List the system features that are enabled or required for system operation. State whether all other features have been disabled or removed. Examples of features include but are not limited to: Wi-Fi, Bluetooth camera, microphone, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "USER ACCOUNTS",
+                  "content": "Describe how user accounts (e.g. administrator, instructor, student) are created with the principle of least privilege, granting only minimal access required for assigned roles.  Additionally, describe how administrator accounts are configured to prevent internet access.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "PORTS AND PROTOCOLS",
+                  "content": "Provide a table of what ports are enabled on the system. Each entry in the table includes: the port number, the protocol Transmission Control Protocol/User Datagram Protocol (TCP/UDP/Both), service name, and purpose. The goal of this paragraph is to ensure only necessary ports are opened on the system.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "SERVER CONFIGURATION",
+              "content": "Describe how the server is configured and hardened. Include at a minimum: the server make, model, firmware version, IP filtering rules, disabling of unused services and ports, logging and auditing configuration (e.g. what events are logged, log retention period), and password complexity.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "SYSTEM AUDITING AND MONITORING",
+                  "content": "Describe what mechanisms are in place for monitoring network activities and what is being monitored such as access attempts, and whether designated personnel are notified of unauthorized attempts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "TOMBSTONE LIFETIME",
+                  "content": "Specify the current tombstone lifetime setting (in calendar days) to accommodate anticipated shipping delays and prevent potential data loss. Tombstone lifetime determines how long deleted objects are retained in Active Directory, which allows for data recovery and ensures data consistency during synchronization across domain controllers. Furthermore, the tombstone lifetime setting impacts the time a system can remain powered down in an inoperative state before all account authorizations are permanently deleted, necessitating system reinstallation or reconfiguration. Provide the expected date for system assembly and state the intended adjustment to the tombstone lifetime (in calendar days) after the system is assembled. Consider potential impacts on system performance, data availability, and the length of time the system can be in an inoperative state when determining the necessary tombstone lifetime setting.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Section 2. Data Protection",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "DATA AT REST",
+              "content": "Describe the encryption tools and methods used to protect data at rest on hard drives. Specify whether all hard drives or only specific ones (e.g., system drive) are encrypted. State whether the Trusted Platform Module (TPM) is enabled and used for data encryption. Briefly describe what the encryption recovery process is.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "DATA IN TRANSIT",
+              "content": "Describe the measures implemented to protect data while it is being transferred between system components or transmitted over external networks.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Section 3. Access Control",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "ACCESS ENFORCEMENT",
+              "content": "Describe how Role-Based Access Control (RBAC) is implemented to manage user access to the system. This description includes: The mechanism used to enforce RBAC (e.g., automated system, manual processes). A list of user roles defined within the RBAC system. For each user role, describe the access permissions granted (e.g., data access, functionality restrictions).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "SEPARATION OF DUTIES",
+              "content": "Building upon the RBAC implementation described in Section 3.3.1, further describe the controls in place to enforce separation of duties. Describe how no single user account has permissions that could be misused for unauthorized activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "LEAST PRIVILEGE",
+              "content": "Describe how the principle of least privilege has been implemented to grant user accounts the minimum access required to perform their assigned duties. Address user roles and account permissions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "LOGIN ATTEMPTS",
+              "content": "Describe how the Operating System (OS) has been configured to limit unsuccessful login attempts. This description includes: The specific method used to configure login attempt limits within the OS (e.g., group policy for Active Directory, local security settings for standalone systems). The predefined number of consecutive unsuccessful login attempts allowed before the account is locked. The duration for which the account is to be locked.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "SESSION LOCK",
+              "content": "Describe how the OS has been configured to automatically lock a user's session after a period of inactivity. This description includes: The specific method used to configure session timeouts (inactivity thresholds) within the OS (e.g., group policy for Active Directory, local security settings for standalone systems). The time period for session inactivity after which user sessions are be automatically locked. List timeouts by account type if applicable (e.g., shorter timeouts for administrator and longer for instructor accounts).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "SESSION TERMINATION",
+              "content": "Describe how the OS has been configured to automatically terminate a user's session after a period of inactivity, following a session lock. This description includes: Whether the OS automatically terminates sessions after a lock. The additional time period of inactivity after a session lock that triggers automatic session termination.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Section 4. Identity and Authentication",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "PASSWORD MANAGEMENT",
+              "content": "Describe in detail the password configuration complexity to enforce strong password creation practices. This description includes: The minimum password length requirement. The required character types for passwords (e.g., uppercase letters, lowercase letters, numbers, symbols). Password history requirements (e.g., details for when a password can be reused). A description of how password filters are used to prevent weak passwords (e.g., disallowing dictionary words, common keyboard patterns). Whether the operating system's built-in password complexity filter has been enabled.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "SECURE USER AUTHENTICATION",
+              "content": "Describe in detail the supported Multi-Factor Authentication (MFA) methods on the system (e.g. fingerprint scanner, one time password). Description of the Public Key Infrastructure solution implemented, including the type of digital certificates used and the Certificate Authority (CA) employed. Reference the rationale for each (e.g. FMS customer requirements).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Section 5. Security and Information integrity",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "MALICIOUS CODE PROTECTION",
+              "content": "Describe the anti-virus software used to protect the system from malware threats. Include details about: Software name, version, when it was last updated, and how it is configured.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Section 6. System Assurance and Maintenance",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "UNSUPPORTED SOFTWARE",
+              "content": "Describe any software identified as End-of-Life (EOL) or End-of-Support (EOS) on the system. Include: listing what software is EOL/EOS, the rationale or requirement of using the EOL/EOS software, an assessment on the feasibility of upgrading or replacing the EOL/EOS software, a description of mitigations implemented to minimize risks associated with the EOL/EOS software. An example of mitigations would be implementation of a vendor's applicable security baseline or best practice guides.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Appendix: Other Technical Documents",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Appendix A.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.1.1",
+                  "title": "CYBERSECURITY ADMINISTRATOR GUIDE (CSAG)",
+                  "content": "The Cybersecurity Administrator Guide (CSAG) is an essential document that provides a comprehensive set of step-by-step instructions and procedures for system administrators responsible for the secure operation of a system. The CSAG should include the following sections and requirements:\n\n1. System Overview: A summary of the system, its purpose, and intended use.\n\n2. System Security Configuration: A detailed description of how the server is configured and hardened, adhering to relevant government regulations. This section should include the following:\nServer make and model\nOperating system version and patch status\nFirmware version\nIP filtering rules\nDisabling of unused services and ports\nLogging and auditing configuration (e.g., events logged, log retention period)\nPassword complexity and identity and access management details\nAntivirus/anti-malware software and updates\n\n3. Access Control: Detailed descriptions of the system's access control methods, such as role-based access control (RBAC), authentication, and authorization mechanisms.\n\n4. Account Management: Instructions for managing user and administrator accounts, including account creation, modification, and deletion, as well as password policies and procedures.\n\n5. Incident Response: Procedures for responding to security incidents, including detection, containment, eradication, recovery, and lessons learned.\n\n6. Anti-Malware Configuration: Details on the installation, configuration, and ongoing management of anti-malware software, such as antivirus, anti-spyware, and other security tools.\n\n7. Encryption Recovery Procedures: Instructions for managing encryption keys and passwords, and procedures for recovering encrypted data when necessary.\n\n8. Backup and Recovery procedures: Detailed processes for creating system backups, defining backup schedule, retention policy, and storage locations, as well as recovery procedures for forgotten administrator passwords.\n\n9. Software Supply Chain Risk Management: Any information about the install media used for software/firmware installs or updates, such as batch, serial, date, and URL of download or control information. For physical media, specify the source (i.e., vendor(s) and/or websites), type, and manufacturer for effective software supply chain risk management.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.2",
+              "title": "Appendix B.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.2.1",
+                  "title": "SYSTEM SECURITY PLAN (SSP)",
+                  "content": "The System Security Plan (SSP) is a comprehensive document detailing the security controls implemented to protect the system. Appendix B contains a copy of the SSP, tailored to meet the specific security requirements of the FMS Customer. The SSP shall address the following minimum control areas: System Description, Security Concept of Operations (CONOPS), System Hardware Components, System Software Components, Ports, Protocols, and Services (PPS), Network Diagram, Information Flow Diagram (if different), Access Control, Account Management, Separation of Duties, Least Privilege,  Unsuccessful Logon Attempts, Session Lock, Session Termination, Audit and Accountability, Configuration Management, Contingency Planning, Identification and Authentication, Incident Response, Risk Assessment, System and Communications Protection, System and Information Integrity, Acronym List. The SSP shall be signed by the company Information System Security Manager (ISSM).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.3",
+              "title": "Appendix C.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.3.1",
+                  "title": "PLAN OF ACTION AND MILESTONES (POA&M)",
+                  "content": "The Plan of Action and Milestones (POA&M) is a living document that tracks the progress of addressing Information Assurance (IA) control deficiencies and non-compliant vulnerability findings identified in the system's security assessments. Appendix C contains a copy of the company's POA&M. The POA&M details the following: Not Applicable (N/A) IA Controls with justification why it's N/A, All Non-Compliant IA Controls with description, remediation steps, and target dates, and all non-compliant vulnerability findings as identified in the vulnerability Scans, Security Technical Implementation Guides (STIGs), System Requirements Guides (SRGs), and Security Content Automation Protocol (SCAP) Benchmarks.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.4",
+              "title": "Appendix D.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.4.1",
+                  "title": "CONTINUITY OF OPERATION PLAN (COOP)",
+                  "content": "The Continuity of Operations Plan (COOP) outlines the procedures and resources for maintaining essential business functions during and after a disaster or other disruptive event. Appendix D contains a copy of the company's COOP. At a minimum, the COOP addresses the following key elements:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.4.1.1",
+                      "title": "Essential Functions",
+                      "content": "Identification of the critical functions that must be maintained during a disruption.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.2",
+                      "title": "Personnel Roles and Responsibilities",
+                      "content": "Assignment of roles and responsibilities for personnel involved in COOP execution.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.3",
+                      "title": "Communications Plan",
+                      "content": "Strategies for maintaining communication with employees, customers, and other stakeholders during a disruption.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.4",
+                      "title": "Data Backup and Recovery",
+                      "content": "Procedures for backing up critical data and restoring it in the event of a loss.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.4.1.5",
+                      "title": "Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs)",
+                      "content": "Definition of expected timeframes for restoring critical functions and data after a disruption.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.7.5",
+              "title": "Appendix E.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.5.1",
+                  "title": "HARDWARE, SOFTWARE, AND DIAGRAM",
+                  "content": "Provide a copy of the system's hardware list, software list, and architecture diagram within Appendix E of the SCCR.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.5.1.1",
+                      "title": "The hardware list shall be in the form of a table",
+                      "content": "The list shall at a minimum contain: Device name, manufacturer, model number, firmware version, and purpose.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.5.1.2",
+                      "title": "The software list shall be done in the form of a table",
+                      "content": "The list shall at a minimum contain: software name, acronym, version, and intended function.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.5.1.3",
+                      "title": "The system diagram depicts the system architecture",
+                      "content": "Acceptable formats include embedded image or separate Microsoft Visio file. The diagram at a minimum contains: A solid black line delineating the system boundary, a legend explaining the line connections used, connections between devices, all devices listed on the hardware list to include applicable information listed in 3.7.5.1.1., the device IP address, and a separate table listing the open TCP/UDP ports and services.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.7.6",
+              "title": "Appendix F.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.6.1",
+                  "title": "SYSTEM HARDENING",
+                  "content": "This appendix describes the system hardening process used to establish a secure baseline configuration. Include the following principles:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.6.1.1",
+                      "title": "Security Baselines",
+                      "content": "List applicable STIGs, SRGs, and/or SCAP Benchmarks identified and used as the foundation for system configuration.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.6.1.2",
+                      "title": "Configuration Compliance",
+                      "content": "Describe how the system is configured to comply with requirements outlined in these baselines. Describe and address any deviations from these baselines (non-compliant findings).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.6.1.3",
+                      "title": "Non-compliant Findings and Mitigation",
+                      "content": "Non-compliant findings identified during vulnerability scans, STIG assessments, SRG reviews, or SCAP benchmark evaluations are documented in the POA&M (refer to Appendix C). Include the following details within the POA&M and STIG remarks section: The identified issue. The associated mitigation strategy (administrative, physical, or technical). The target completion date for implementing the mitigation strategy.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.7.6.2",
+                  "title": "STIG, SRG, and SCAP Benchmark Artifacts",
+                  "content": "STIG, SRG, and SCAP Benchmark artifacts (e.g., checklists, reports) are in a readable format, or the original \".ckl\" file. These artifacts are secured according to the system's classification level and protected accordingly.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.6.2.1",
+                      "title": "STIG, SRG, and SCAP Benchmark Updates",
+                      "content": "STIGs, SRGs, and SCAP Benchmarks are updated periodically. State when the most recent update was applied.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.7.7",
+              "title": "Appendix G.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.7.1",
+                  "title": "SYSTEM SCANNER",
+                  "content": "Provide details about the automated system scanning software used to identify security vulnerabilities and configuration weaknesses. Include details such as: software name, type (Government-Off-The-Shelf (GOTS) or Commercial-Off-The-Shelf (COTS)), software version.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.7.1.1",
+                      "title": "Scan Results",
+                      "content": "A report summarizing the scan results in a clear and readable format (e.g., spreadsheet, table). At a minimum include: Identified vulnerabilities with severity levels. Recommended remediation actions. Scanned ports (\"0-65535\" or \"all\"). A full list of system software. Document non-compliant findings in the system POA&M (refer to Appendix C).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.7.1.2",
+                      "title": "Vulnerability scans are handled and transmitted in accordance with the system's classification level",
+                      "content": "Vulnerability reports are provided in a commonly readable format. If ACAS is used, the original \".nessus\" file format is acceptable. Vulnerability scans and associated software are to be protected according to the system's classification.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.7.8",
+              "title": "Appendix H.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.8.1",
+                  "title": "MISCELLANEOUS",
+                  "content": "Appendix H contains additional requirements not specified in any of the above sections of the SCCR.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SCRE-82454.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

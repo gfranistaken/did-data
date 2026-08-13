@@ -1,0 +1,67 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81652A",
+  "slug": "di-sess-81652a",
+  "title": "Request for Confirmation of Nomenclature",
+  "summary": "Specifies the requirements for a formal contractor letter requesting confirmation of nomenclature for previously nomenclatured electronic aeronautical and support equipment to be procured on follow-on production contracts.",
+  "approval_date": "2024-09-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10501",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-053",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The purpose of this request is to have nomenclature confirmed for previously nomenclature items to be procured on follow-on production contracts or other procurement action.\n\nThis DID contains instructions for requesting confirmation of nomenclature for electronic aeronautical and support equipment required by 3.2.2 of MIL-DTL-18307(AS).\n\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.\n\nThis DID is applicable to the acquisition of electronic aeronautical and support equipment.  When applied in contracts, this DID will be tailored to the specific information required in Block 16 of the DD Form 1423, Contract Data Requirements List (CDRL).\n\nThis DID supersedes DI-SESS-81652.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81652"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the document cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in the solicitation or contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The request for confirmation of nomenclature shall be a formal letter in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The request for confirmation of nomenclature for electronic aeronautical and support equipment shall be as specified in 3.2.2 of MIL-DTL-18307(AS) or as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81652A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82280",
+  "slug": "di-saft-82280",
+  "title": "Manufacturing Safety Checklist",
+  "summary": "Provides identification of manufacturing problems that impact the safety of personnel, disable equipment, and degrade the usefulness of facilities when a contractor manufactures, tests, or uses hazardous items or materials.",
+  "approval_date": "2019-08-01",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10059",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "170 (AFLCMC/WWM)",
+  "project_number": "SAFT-2017-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Manufacturing Safety Checklist provides the identification of manufacturing problems that impact the safety of personnel, disable equipment, and degrade the usefulness of facilities.\n\na. This Data Item Description (DID) is applicable when a contractor is involved in the manufacture, test, or use of hazardous items or materials.\n\nb. This DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract statement of work (SOW).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Manufacturing Safety Checklist shall be in the contractor's format and shall be titled \"Manufacturing Safety Checklist for contract #________________________.\"",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Manufacturing Safety Checklist shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Process Title",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Identification of any solvents, coolants, or materials",
+          "content": "used in processing items that are toxic, flammable, radioactive, or otherwise hazardous to personnel or facilities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Analysis of the development and interim processing of the composition, components, or end items",
+          "content": "The analysis shall identify whether any of the following events occurred during the development and interim processing of the composition, components, or end items:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Any safety and health incidents or accidents experienced",
+              "content": "during any portion of the processing; loading, assembling, packing of the components or end items; or during testing.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "If so, describe the event(s)",
+                  "content": "Describe root cause(s) and corrective action(s) taken.  Indicate if corrective action(s) are noted in the Technical Data Package (TDP), Standard Operating Procedure (SOP), or process specifications.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Any energetic reactions experienced",
+              "content": "(e.g., explosion, deflagration, fire, smoke) during any portion of the processing; loading, assembling, packing of the components or end items; or during testing.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "If so, describe the event(s)",
+                  "content": "Describe root cause(s) and corrective action(s) taken.  Indicate if corrective action(s) are noted in the TDP, SOP, or process specifications.  Identify equipment failures having an impact on the safety of the process and describe corrective action(s) taken.  Identify any other potential safety critical areas of operation associated with the manufacturing of the item and describe action(s) taken to reduce the risk.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Include any recommendations that can improve the safety of development and interim processing operations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82280.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

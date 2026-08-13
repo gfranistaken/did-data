@@ -1,0 +1,184 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SCRE-82143A",
+  "slug": "di-scre-82143a",
+  "title": "Cybersecurity Strategy Implementation Plan",
+  "summary": "The Cybersecurity Strategy Implementation Plan (CSIP) is used to ensure industry partners correctly implement the Government Program Office Cybersecurity Strategy for the development environment and product deliverables.",
+  "approval_date": "2022-10-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10362",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SCRE-2022-032",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Cybersecurity Strategy Implementation Plan (CSIP) will be used to ensure that industry partners are correctly implementing the Government Program Office Cybersecurity Strategy (CSS) for both the developmental environment and in the product deliverables.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the work task.\n\nThis DID supersedes DI-MGMT-82143.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-MGMT-82143"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.2",
+          "title": "Gov't CSIP (GFI)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The plan shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The content of the CSIP",
+          "content": "The content of the CSIP establishes the cybersecurity construct under which the contractor must operate in order to comply with the CSS. The Cybersecurity Strategy Implementation Plan shall include an introduction and the following sections to document how the contractor proposes to implement the requirements set forth in the CSS. The following is a narrative of the CSIP package content:",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Cybersecurity Environment",
+          "content": "This section shall contain a description addressing how cybersecurity is managed during system development. Include any examples of how the company keeps up with cybersecurity changing threats, industry trends, etc. Cover any general approaches to the protection of electronic information and overall awareness of threats and mitigations. This paragraph will also summarize the company's cybersecurity posture within their business model. The contractor will articulate:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "How PKI certificates will be utilized",
+              "content": "How PKI certificates will be utilized with email programs for digital signature and encryption.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "How the contractor will fulfill requirements",
+              "content": "How the contractor will fulfill requirements for securing data at rest.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "How the contractor will fulfill requirements",
+              "content": "How the contractor will fulfill requirements for securing data in transit.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "How the contractor will support various aspects",
+              "content": "How the contractor will support various aspects of the Assessment and Authorization (A&A) effort on corporate systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Reserved for CS Work Force requirements",
+              "content": "Reserved for CS Work Force requirements to be determined later.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "An understanding of the process and requirements",
+              "content": "An understanding of the process and requirements associated with obtaining a CAC and access to government systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "How the contractor will meet cybersecurity requirements",
+              "content": "How the contractor will meet cybersecurity requirements when electronically transmitting classified information.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Product Cybersecurity",
+          "content": "The goal of this section is for the contractor to demonstrate that cybersecurity design will be fully integrated into delivered system(s). Plan as to how will implement",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Key Management",
+              "content": "Describe how your company plans on adhering to crypto key management practices. The goal of this section is to articulate how the contractor will comply with the NSA process for certification of cryptographic products.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Cybersecurity Requirements Flow-Down",
+              "content": "The goal of this section is to articulate how the contractor will flow down cybersecurity requirements to vendors and subcontractors.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Cybersecurity Assessment",
+          "content": "The goal of this section is for the contractor to provide their strategy to ensure that cybersecurity design is fully assessed in delivered system(s).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Describe cybersecurity verification methodologies anticipated for use",
+              "content": "Describe cybersecurity verification methodologies anticipated for use during system development and the time phasing.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "How validate their infrastructure is safe for",
+              "content": "How validate their infrastructure is safe for USG data, how flow down to subcontractor?",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SCRE-82143A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

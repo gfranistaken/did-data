@@ -1,0 +1,159 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81253E",
+  "slug": "di-sess-81253e",
+  "title": "Configuration Status Accounting (CSA) Information",
+  "summary": "Provides details about the current configuration of items developed for and used in the Department of Defense inventory, related documentation and identification numbers, and changes to items and their configuration documentation.",
+  "approval_date": "2020-08-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10192",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "NM",
+  "project_number": "SESS-2020-038",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Configuration Status Accounting (CSA) Information provides details about the current configuration of items being developed for and used in the Department of Defense inventory, documentation and identification numbers relating to those items, and changes to the items and their configuration documentation.  This information is needed to manage and provide support during the lifecycle of those items.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in EIA-649-1, Configuration Management Requirements for Defense Contracts, and the principles of EIA-649, Configuration Management Standard (copies of these standards are available online at www.sae.org or from SAE International, 400 Commonwealth Drive, Warrendale, PA  15096-0001, Tel 877-606-7323 [inside USA and Canada] or 724-776-4970 [outside USA]).\n\nThis DID supersedes DI-SESS-81253D.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81253D"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The CSA Information shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The CSA Information shall identify:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "A listing of specifications generated for this project",
+          "content": "A listing of specifications generated for this project, including: unique identifier, title, revision, Next Higher Assembly (NHA), and change history from initial release.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "A listing of engineering design data and associated lists",
+          "content": "A listing of engineering design data and associated lists generated for this project, including: unique identifier, title, revision, NHA, related specifications, and change history from initial release.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "A listing of software and firmware generated for this project",
+          "content": "A listing of software and firmware generated for this project, including: unique identifier, title, revision, NHA, related specifications, and change history from initial release.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "A listing of all supporting documents generated as a part of this project",
+          "content": "A listing of all supporting documents (such as test procedures, reports, analyses) generated as a part of this project, including: unique identifier, title, revision, NHA, related specifications, and change history from initial release.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Special identifiers utilized to tag parts, assemblies, and software",
+          "content": "Special identifiers utilized to \"tag\" parts, assemblies, and software used in each product.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "An Indentured Parts List (IPL) of all parts installed",
+          "content": "An Indentured Parts List (IPL) of all parts installed in each serial-numbered product or end-item as delivered and as changed through maintenance and modification activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "Engineering changes and their implementation activities",
+          "content": "Engineering changes and their implementation activities, including the reason for change, with justification for change or reference thereto, and the change effectivity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "h",
+          "title": "Variances and activities related to obtaining the CSA consideration",
+          "content": "Variances and activities related to obtaining the CSA consideration.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "i",
+          "title": "Configuration audit action items and their closeout dates",
+          "content": "Configuration audit action items and their closeout dates.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "j",
+          "title": "The organizations performing the roles of Current Document Change Authority, Application Activity, and Document Custodian",
+          "content": "The organizations performing the roles of Current Document Change Authority, Application Activity, and Document Custodian for each project document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "k",
+          "title": "A unique identifier that indicates the file version number",
+          "content": "A unique identifier that indicates the file version number and reflects a \"submitted\" status for each digital file.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "l",
+          "title": "An altered file version number from the originally submitted file version number",
+          "content": "An altered (i.e., annotated or redlined) file version number from the originally submitted file version number to ensure file integrity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "m",
+          "title": "Any item that is a Critical Safety Item (CSI)",
+          "content": "Any item that is a Critical Safety Item (CSI).  A CSI is any component, assembly, sub-assembly, or process with one or more critical characteristics that would result in an unsafe condition if not in compliance with the design data or quality requirements.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81253E.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

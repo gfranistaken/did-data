@@ -1,0 +1,542 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82239",
+  "slug": "di-saft-82239",
+  "title": "Environmental Hazard Analysis (EHA) Report",
+  "summary": "Documents the results of an Environmental Hazard Analysis to influence design decisions by integrating environmental considerations into the Systems Engineering process and support NEPA and EO 12114 requirements.",
+  "approval_date": "2018-07-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9974",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZV)",
+  "project_number": "SAFT-2018-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "An Environmental Hazard Analysis (EHA) Report documents the results of an EHA in order to influence design decisions by integrating environmental considerations into the Systems Engineering (SE) process.  It is a comprehensive evaluation of the environmental risks associated with the system throughout all lifecycle phases and provides data to support National Environmental Policy Act (NEPA) and Executive Order (EO) 12114, Environmental Effects Abroad of Major Federal Actions, requirements.  The EHA Report provides system-specific data on environmental hazard analyses, risk assessment, and recommended mitigations for risk reduction to avoid adverse impact to the environment based on application of the system safety process from MIL-STD-882, System Safety.  The EHA report supports MIL-STD-882, Task 210.\n\n(The NEPA can be viewed online at www.epa.gov/nepa and EO 12114 can be viewed online at www.archives.gov/federal-register/codification/executive-order/12114.html.)\n\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nb. This DID is related to DI-HFAC-81975, Noise Measurement Report (NMR); DI-MGMT-81398, Hazardous Material Management Program (HMMP) Plan; DI-MGMT-81397, Hazardous Material Management Program (HMMP) Report; DI-MGMT-82169, Occupational Ionizing Radiation Exposure Report; DI-SAFT-80101, System Safety Hazard Analysis Report; DI-SAFT-80102, Safety Assessment Report (SAR); DI-SAFT-80103, Engineering Change Proposal System Safety Report (ECPSSR); DI-SAFT-80106, Health Hazard Assessment Report (HHAR); DI-SAFT-80931B, Explosive Ordnance Disposal Data; DI-SAFT-81640, Ammunition Demilitarization and Disposition Plan; DI-SAFT-82008, Radiation Hazard Control Procedures (RHCP); DI-SAFT-82085, Hazard Tracking System (HTS) Data; DI-TMSS-81532, Aerospace Emergency Rescue and Mishap Response Information (Emergency Services) Source Data; DI-SESS-81758, Logistics Product Data; and DI-SESS-81874, Engineering Data for Provisioning (EDFP).\n\n(Copies of MIL-STD-882 and the DIDs are available on line at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-HFAC-81975",
+    "DI-MGMT-81398",
+    "DI-MGMT-81397",
+    "DI-MGMT-82169",
+    "DI-SAFT-80101",
+    "DI-SAFT-80102",
+    "DI-SAFT-80103",
+    "DI-SAFT-80106",
+    "DI-SAFT-80931B",
+    "DI-SAFT-81640",
+    "DI-SAFT-82008",
+    "DI-SAFT-82085",
+    "DI-TMSS-81532",
+    "DI-SESS-81758",
+    "DI-SESS-81874"
+  ],
+  "references": [
+    {
+      "label": "NEPA",
+      "url": "https://www.epa.gov/nepa"
+    },
+    {
+      "label": "EO 12114, Environmental Effects Abroad of Major Federal Actions",
+      "url": "https://www.archives.gov/federal-register/codification/executive-order/12114.html"
+    },
+    {
+      "label": "MIL-STD-882 and the DIDs",
+      "url": "http://quicksearch.dla.mil"
+    },
+    {
+      "label": "CAA Laws and Regulations",
+      "url": "https://www.epa.gov"
+    },
+    {
+      "label": "CWA Laws and Regulations",
+      "url": "https://www.epa.gov"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The EHA Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The contractor shall document results of the analysis to include the following (as identified by the Government in Block 16 of the CDRL):",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "References",
+          "content": "A list of source materials used in preparing the report. Include for example, government and contractor reports, system specifications and documentation, policy and regulatory drivers. If references are numerous place them in an Appendix as a bibliography.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Proprietary Data",
+          "content": "Proprietary data should be documented and reported in accordance with the relevant contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Summary",
+          "content": "Provide a brief summary of the environmental hazard assessment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "System Description",
+          "content": "Provide a brief system description, consistent with MIL-STD-882, Task 210, 210.2.3a.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Hazard Analysis Scope and Methods",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Describe the scope of the hazard analysis effort",
+              "content": "Describe the scope of the hazard analysis effort using MIL-STD-882, Task 210, 210.2.2a.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Describe the methodology for identifying relevant environmental requirements",
+              "content": "Describe the methodology for identifying relevant environmental requirements and hazards based on MIL-STD-882, Task 210, 210.2.2b.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Describe the hazard analysis methods and techniques",
+              "content": "Describe the hazard analysis methods and techniques used to produce the report, consistent with MIL-STD-882, Task 210, 210.2.1, 210.2.2 and 210.2.3.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Identify the applicable risk assessment code",
+              "content": "Identify the applicable risk assessment code for each assessed hazard, consistent with MIL-STD-882, Task 210, 210.2.1.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Hazard Analysis Results",
+          "content": "Document the system-related environmental hazards and associated mitigations identified by analysis of the anticipated operation and maintenance of the system, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Identify the primary system-related regulatory compliance requirements",
+              "content": "Identify the primary system-related regulatory compliance requirements that directly relate to operation of the system and the environmental hazards resulting from those operations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Analysis of environmental hazards associated with hazardous material",
+              "content": "Analysis of environmental hazards associated with hazardous material (HAZMAT) contained in the system and used for operation, training, maintenance activities, and demilitarization and disposal addressing the elements identified in MIL-STD-882, Task 210, 210.2.2 and 210.2.4.  Additionally, the HAZMAT the Chemical Abstracts Service (CAS) Registry number shall be identified.  Include engineered nano-materials in the EHA for the HAZMAT analyzed using currently available risk information.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Hazards associated with the pollutants generated",
+              "content": "Hazards associated with the pollutants generated by the system per MIL-STD-882, Task 210, 210.2.5.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Identify system-related air contaminant emissions regulated",
+                  "content": "Identify system-related air contaminant emissions regulated by the Clean Air Act (CAA) (i.e., emissions of criteria pollutants, hazardous air pollutants, and greenhouse gases).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "Provide air emission factors and fuel flow rate",
+                  "content": "Provide air emission factors and fuel flow rate for all of the vehicle engine power levels.  These typically will relate to the vehicle power settings for the vehicle or system noise measurements.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Identify system-generated solid and hazardous material waste",
+              "content": "Identify system-generated solid and hazardous material waste byproducts (from operations, maintenance and system disposal) and forecast generated quantities of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.4.1",
+                  "title": "Solid waste",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.2",
+                  "title": "Hazardous waste",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.5",
+              "title": "Identify hazards from planned system related releases",
+              "content": "Identify hazards from planned system related releases or discharges to the ground or earth's surface.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Identify system noise data hazards for air systems",
+              "content": "Identify system noise data hazards for typical modes of operation for air systems or aircraft:\n\nThis includes data generated for compliance with relevant Federal Aviation Regulations (FARs) and data that can be used by the DoD Noise models, Noise Map and the Advanced Acoustics Model.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.6.1",
+                  "title": "On-ground static engine run-up",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.2",
+                  "title": "In-flight",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.6.2.1",
+                      "title": "100% power and afterburner power departure",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.2.2",
+                      "title": "Approach (clean)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.2.3",
+                      "title": "Approach (configured/dirty)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.2.4",
+                      "title": "Hover, as applicable",
+                      "content": "Hover, as applicable; for helicopters and vertical take-off and landing (VTOL) aircraft",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.6.2.5",
+                      "title": "VTOL, as applicable",
+                      "content": "VTOL, as applicable; for helicopters and VTOL aircraft",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.6.7",
+              "title": "Identify system noise data hazards for ground systems",
+              "content": "Identify system noise data hazards for typical modes of operation for ground systems:\n\nThis includes data that can be used by the DoD Noise ground weapons noise models; Small Arms Range Noise Assessment Model (SARNAM) and Blast Noise Prediction (BNOISE).",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.7.1",
+                  "title": "Support equipment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.7.2",
+                  "title": "Tanks and tracked vehicles",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.7.3",
+                  "title": "Trucks",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.7.4",
+                  "title": "Cars",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.7.5",
+                  "title": "Other ground vehicles",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.7.6",
+                  "title": "Weapon systems",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.7.6.1",
+                      "title": "Medium caliber weapons",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.7.6.2",
+                      "title": "Large caliber weapons",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.7.7",
+                  "title": "Rockets",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.7.8",
+                  "title": "Missiles",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.8",
+              "title": "Identify system noise data hazards for water systems",
+              "content": "Identify system noise data hazards for typical modes of operation for water systems (in a transporter, in port, and at sea) for:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.8.1",
+                  "title": "Ships (large, medium, small)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.8.2",
+                  "title": "Aircraft Carriers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.8.3",
+                  "title": "Boats",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.8.4",
+                  "title": "Landing Craft",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.8.5",
+                  "title": "Submarines",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.8.6",
+                  "title": "Hovercraft",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.8.7",
+                  "title": "Other water vehicles",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.9",
+              "title": "Identify system noise data hazards for space systems",
+              "content": "Identify system noise data hazards for typical modes of operation for space systems for:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.9.1",
+                  "title": "Launch",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.9.2",
+                  "title": "Descent",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.9.3",
+                  "title": "Landing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.10",
+              "title": "Identify system radio frequency emission hazards",
+              "content": "Identify system radio frequency emission hazards for typical modes of operation for emitting systems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Identify radioactive material (both licensed and non-licensed) hazards",
+              "content": "Identify radioactive material (both licensed and non-licensed) hazards that are part of the system or used with the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.12",
+              "title": "Identify directed energy system hazards",
+              "content": "Identify directed energy system hazards that are part of the system intentional application and non-intentional releases.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.13",
+              "title": "Identify water hazards, anticipated system releases",
+              "content": "Identify water hazards, anticipated system releases or discharges both accidental pollution and from routine operations, regulated by the Clean Water Act (CWA), its Amendments, the International Convention for the Prevention of Pollution from Ships, as modified by the Marine Pollution (MARPOL) Protocol of 1978 and other DoD policies, per cycle of operations, training, and maintenance for:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.13.1",
+                  "title": "Ground water",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.13.2",
+                  "title": "Surface water",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.13.3",
+                  "title": "Open ocean waters",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.14",
+              "title": "Identify incidental emission and Department of Transportation",
+              "content": "Identify incidental emission and Department of Transportation (DoT) HAZMAT releases created by system mishaps/accidents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.15",
+              "title": "Propose mitigations for identified hazards",
+              "content": "Propose mitigations for identified hazards per MIL-STD-882, Task 210, 210.2.2c.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Hazard Analysis Documentation",
+          "content": "Document environmental hazards and the associated risk data and mitigations in the contractor's Hazard Tracking System (HTS) (see DI-SAFT-82085).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Periodic extracts from the Hazard Tracking System",
+              "content": "Periodic extracts from the Hazard Tracking System shall be provided to the program office to update the Programmatic Environment, Safety and Occupational Health (ESOH) Evaluation (PESHE).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82239.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,1598 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81519C",
+  "slug": "di-sess-81519c",
+  "title": "Instructional Media Requirements Document",
+  "summary": "Specifies the media selection model, primary and alternate media requirements, and functional requirements for the instructional delivery system, serving as the baseline for instructional media performance specifications.",
+  "approval_date": "2013-05-24",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "N9380",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "AS/PMA205/PMS339",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Instructional Media Requirements Document provides specifications for the media selection model used, a description of primary and alternate media requirements, and functional requirements for the instructional delivery system. Its purpose is to serve as the baseline for instructional media performance specifications.\n\na.  This Data Item Description (DID) contains the preparation instructions for the content and format of the Instructional Media Requirements Document.\n\nb.  This DID contains the format, content, and intended use information for the data product resulting from the performance requirements described by 3.2.3 of MIL-PRF-29612B, and is applicable to the acquisition of training data products. Data product performance evaluation criteria are specified in 4.3.3 of MIL-PRF-29612B.\n\nc.  It is not intended that all the requirements contained herein be applied to every program or program phase. Portions of this DID are subject to deletion tailoring depending upon the program phase in which it is applied in the contract. Any individual data requirement contained in this DID is subject to deletion tailoring.\n\nd.  This DID supersedes DI-SESS-81519B.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81519B"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format",
+      "content": "The contractor format is acceptable.  Standard digital data, when specified, must be in compliance with the content and format requirements specified in the DoD Data Architecture (DDA) and the Defense Data Dictionary System (DDDS).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content",
+      "content": "The Instructional Media Requirements Document shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Front matter",
+          "content": "The content of front matter shall be in accordance with Appendix A of MIL-PRF-29612B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Part 1: Media selection model specifications data",
+          "content": "The model data shall describe the procedures to be used to identify primary and alternate media for each Learning Objective (LO) and shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Methodology for identifying the sensory stimulus requirements of the LOs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Method for identifying the sensory stimulus of the media",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Procedure for consideration of LOs presentation sequence in the selection of media",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "The hardware and software specifications if the model is automated",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Special proprietary license requirements, if any",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "The relationship between media selection and course outline development",
+              "content": "(i.e., does media selection follow course outline development; or does course outline development follow media selection).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "A flow chart which shows the questions asked, the decision points, and the sequence of events for media selection",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Media selection model",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Part 2: Media selection analysis data",
+          "content": "The media selection analysis data shall provide descriptions of the source of the instructional media requirements, the results of the media selection and allocation process, and descriptions of primary and alternate media and methods to satisfy each LO.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "Instructional media requirements source data",
+              "content": "The data shall include a summary of the historical background of the training requirements analysis, a description of the operational system, and a discussion of the scope, magnitude, and constraints of the analysis. The data shall also include a summary description with a justification for the proposed media as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "A description of the purpose and function of the operational system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "A description of unique knowledge, skills, and attitudes required for the operational system",
+                  "content": "Identify existing applicable training systems and their shortfalls. Provide rationale (e.g., safety, non-availability, cost) for use or non-use of operational equipment for training.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "A description of significant events and source documents",
+                  "content": "(e.g., training concept document, training plan) that detail the training requirement and training deficiency, and the resulting evolution of the training requirement.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.3.2",
+              "title": "Instructional delivery system selection",
+              "content": "This data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "A description of resources and constraints impacting media selection",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "A list of sensory stimulus requirements",
+                  "content": "(e.g., sound, visual, motion, color) required for each training task, LO, or learning event, and degree of realism required.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Primary and alternate instructional delivery systems",
+                  "content": "(e.g., paper-based materials, films, IMI, simulator, Internet, intranet) capable of providing sensory stimulus for each training task, LO, and learning event.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "A summary of the media features analysis",
+                  "content": "including man-machine interface devices, visual output features, audio output, and motion features shall be provided in matrix or narrative format with the following content:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Identification of critical features and their relationship to LOs",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Identification of applicability of features to LOs",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Identification of the frequency of application to LOs",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "e",
+                  "title": "A chart showing the daily schedule of learning events and activities",
+                  "content": "in relation to the primary and alternate instructional delivery systems.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "A chart showing the time sequence of learning events and the recommended media mix",
+                  "content": "The chart shall be organized using unit and lesson numbers, lesson titles and learning objective relationships.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "g",
+                  "title": "A chart of the total media resources required",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "h",
+                  "title": "A description of the life cycle cost analysis",
+                  "content": "(i.e., procurement, development, and implementation as appropriate) and evaluation of the advantages and disadvantages training effectiveness) of the alternatives.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "i",
+                  "title": "A description of the results of trade studies made on vendor equipment",
+                  "content": "for the purpose of selecting preferred media, training equipment, and courseware production tools. It shall include rationale to justify selection of new versus existing media and methods.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.3.3",
+              "title": "Recommendations",
+              "content": "The recommendations data shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Justification for the selected media",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "A recommendation for the media features",
+                  "content": "(hardware and software) which includes the rationale for each feature based on LOs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "A recommendation identifying the best suited instructional delivery system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "A summary of the following",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Instructional delivery system capability needed",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Purpose of the instructional delivery system",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Proposed location(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Program milestone schedule",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Alternative training solutions considered",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(6)",
+                      "title": "Cost effectiveness analysis",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(7)",
+                      "title": "Adverse impact if instructional delivery system is not provided",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(8)",
+                      "title": "For distributed learning, a description of requirements",
+                      "content": "for Course Management System (CMS), Learning Management System (LMS), communication tools, reference resources, and student station hardware and software requirements.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2.4",
+          "title": "Part 3: Instructional delivery system functional characteristics data",
+          "content": "The data shall describe the instructional delivery system functional characteristics as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.4.1",
+              "title": "Training considerations",
+              "content": "The training considerations data shall summarize the training analysis which forms the basis for development of the instructional delivery system. It shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "A description of any assumptions which affected the instructional delivery system requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "A summary of requirements from source documents",
+                  "content": "(e.g., training concept document, training plan).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "A summary of the process used to conduct the instructional delivery system requirements analysis",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "A description of performance goals",
+                  "content": "(expected achievement levels).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "A list of knowledge, skills, and attitudes to be trained",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "A list of LOs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "g",
+                  "title": "A description of training strategies, methods, and techniques",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "h",
+                  "title": "A description of the trainee population as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Initial, peak, and steady state quantity of trainees per session",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Initial, peak, and steady state quantity of sessions per year",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Sources of trainees",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Military grade and occupation",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Training cycle",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(6)",
+                      "title": "Prerequisites",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(7)",
+                      "title": "Qualifications",
+                      "content": "(i.e., entry level knowledge and skills).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "i",
+                  "title": "A description of instructor requirements as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Types and numbers required",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Prerequisites and qualifications",
+                      "content": "(e.g., education, military grade and occupation, civilian grade or occupational series, experience).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Special training required",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Anticipated instructor to student ratios",
+                      "content": "(e.g., classroom, laboratory).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Anticipated operational requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "j",
+                  "title": "A description of utilization as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Relationship of instructional delivery system to existing training program",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Type of instruction",
+                      "content": "(e.g., individualized, team, subteam).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Percent of training time using the instructional delivery system",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Description of exercise(s) to be conducted using the instructional delivery system",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Anticipated usage to include hours of operation per day and week",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "2.4.2",
+              "title": "Functional characteristics",
+              "content": "The functional characteristics data shall describe the instructional delivery system in terms of performance capabilities. The description shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "A description of the constraints to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Operational baseline constraints imposed by the configuration of the operational equipment",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Physical constraints to include",
+                      "content": "technological, fiscal, personnel, hazards, environmental, and security.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Assumptions to include",
+                      "content": "platform or equipment characteristics, targets, physical environment, and exercise scenarios.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "b",
+                  "title": "A description of the functional characteristics to be modeled to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "A general description to include the",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Tactical environment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Role of operational equipment to be modeled",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "System or equipment performance and capabilities to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Weapon system(s) or equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Sensor systems",
+                          "content": "(e.g., sonar, radar, periscope).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Command, control, and communication",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Dynamic performance characteristics",
+                          "content": "(e.g., speed, depth, altitude).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(e)",
+                          "title": "Countermeasures",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(f)",
+                          "title": "Propulsion systems",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(g)",
+                          "title": "Hull, mechanical, electrical, and etc.",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(h)",
+                          "title": "Limitations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Target performance characteristics to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Number of targets",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Dynamic performance characteristics",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Weapons",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Sensors",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(e)",
+                          "title": "Countermeasures",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(f)",
+                          "title": "Propulsion",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(g)",
+                          "title": "Limitations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Physical environment to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Gaming area",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Ocean conditions",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Land mass simulation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Weather",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(e)",
+                          "title": "Job-task environment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(f)",
+                          "title": "Limitations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Training modes of operation to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Basic modes",
+                          "content": "(e.g., individual).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Joint modes",
+                          "content": "(e.g., team, subteam).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Alternate or degraded modes of operation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Acceptable tolerances of degradation in training equipment",
+                          "content": "before training is aborted.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(e)",
+                          "title": "Normal scenarios",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(f)",
+                          "title": "Abnormal scenarios",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(6)",
+                      "title": "Instructor/operator station characteristics to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Specific behavioral objectives to be trained with the equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Training concept",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Functional performance characteristics of the instructor operator station",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Typical training exercises and scenarios",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(e)",
+                          "title": "Trainer facility configuration including interfaces between trainer subsystems",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(f)",
+                          "title": "Manning",
+                          "content": "(i.e., qualitative and quantitative characteristics of instructors and operators).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(g)",
+                          "title": "Training of instructors and operators",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(h)",
+                          "title": "Test and evaluation of the instructor operator station",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(i)",
+                          "title": "Documentation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(7)",
+                      "title": "Instructor/operator station features to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Exercise initiation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Control of training problems",
+                          "content": "(i.e., manual or automated).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Event programming",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Instructor flags",
+                          "content": "(e.g., identification of events in program).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(e)",
+                          "title": "Environment modification",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(f)",
+                          "title": "Controller models",
+                          "content": "(i.e., simulated conditions).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(g)",
+                          "title": "Intelligent adversary models",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(h)",
+                          "title": "Malfunction selection, insertion, and cancellation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(i)",
+                          "title": "Performance measurement diagnosis and recording capability",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(j)",
+                          "title": "Scenario or exercise playback capability",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(k)",
+                          "title": "Pause and resume",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(l)",
+                          "title": "Reinitialization and restart of frozen simulation program",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(m)",
+                          "title": "Hard copy output for debriefing",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(n)",
+                          "title": "Communications",
+                          "content": "(i.e., cued, recorded, or selective).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(o)",
+                          "title": "Crash or grounding control",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(p)",
+                          "title": "Instructor aids",
+                          "content": "(e.g., assistance, tutorials).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(q)",
+                          "title": "Management reports and findings for student evaluation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(8)",
+                      "title": "Degree of fidelity to include",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Physical and functional fidelity",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Areas of fidelity critical to training",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(9)",
+                      "title": "A description of the interfaces with other stations, training devices, or systems",
+                      "content": "including communication networks.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(10)",
+                      "title": "A list of faults to be modeled",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(11)",
+                      "title": "Other characteristics",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Types and number of student stations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Unique types of information to be presented",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Cues which can be modified, slowed, accelerated, enhanced, or reduced",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Other information pertinent to the training characteristics",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "c",
+                  "title": "A description of the availability and use to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Design goals for steady state availability",
+                      "content": "such as hours per day and days per week.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Design goal for the operating life",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Probability of lesson completion without failure",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Reliability goal in terms of mean time between failures",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Maintainability goals in terms of system mean time to repair and maximum corrective maintenance time",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(6)",
+                      "title": "Preventive maintenance goals",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "d",
+                  "title": "A description of the installation site requirements to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Location",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Existing training system or complex into which the new instructional delivery system is to be integrated",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Mockup or equipment layout",
+                      "content": "inclusive of Government Furnished Equipment (GFE).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Anticipated site installation problems",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(5)",
+                      "title": "Facilities required",
+                      "content": "(e.g., new building construction, building modifications, power, air conditioning, reinforced flooring).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(6)",
+                      "title": "Lighting requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(7)",
+                      "title": "Unusual requirements for electromagnetic environmental effects",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(8)",
+                      "title": "Security requirements",
+                      "content": "(e.g., physical, automatic data processing, electromagnetic).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(9)",
+                      "title": "Other unusual environmental conditions",
+                      "content": "(e.g., temperature variations, water, vibration, dust).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "e",
+                  "title": "Joint Service/Intraservice interoperability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Sharable Content Object (SCO) interoperability",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "High Level Architecture (HLA) compliance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Joint Technical Architecture (JTA) compliance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "2.4.3",
+              "title": "PrePlanned Product Improvement (P3I)",
+              "content": "(The P3I data should be included only when a difference exists between the functional performance baseline required in the trainer to meet the training need as defined in 2.4.2 above, and that capability which is technically achievable through standard commercial practices within known limitations of funding availability, producibility, or supportability. This information is of use to: (1) influence training device design, (2) identify the resource base needed to implement the required performance enhancements subsequent to training equipment delivery, or (3) to provide the basis for a research initiative to achieve full performance.) The P3I plan shall identify required capabilities which will not be delivered with the first article development and shall describe the plan of action to correct the shortfall. This subsection shall provide a summary of P3I data to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Training capabilities not provided and rationale",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Actions required to eliminate shortfall",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Plan for training system upgrade to full capability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.4.4",
+              "title": "Training system support considerations",
+              "content": "The support considerations data shall provide a description of the concepts, goals, and constraints which will control design of media, to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "A description of the support program as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Support strategy",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Level and type of support analysis anticipated",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(3)",
+                      "title": "Description of any differences in strategy or support considerations between the prototype and production units",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(4)",
+                      "title": "Anticipated operational test and evaluation parameters",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "b",
+                  "title": "A description of the maintenance planning as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Maintenance concept",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Anticipated differences in maintenance concept between the prototype and production units",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "c",
+                  "title": "A description of the technical data support package as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Qualification documents for instructors, operators, and maintainers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Support and technical documentation for instructors, operators, and maintainers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "d",
+                  "title": "A description of the personnel staffing to include identifying the sources of support personnel",
+                  "content": "(e.g., contractor operation and maintenance, Government civilian, military).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "A description of the contractor engineering and technical services as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Anticipated contractor engineering, technical, and maintenance services required for both prototype development and test and evaluation",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Contractor engineering and technical services needed for production units following the ready-for-training date",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "f",
+                  "title": "A description of the life cycle support as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "(1)",
+                      "title": "Software support",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Anticipated level of change",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Planned hardware and software support approaches",
+                          "content": "(i.e., Government, contractor, or Government and contractor).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Planned training system support activity",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(d)",
+                          "title": "Requirements to establish, operate, and maintain training system support capability",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "(2)",
+                      "title": "Supply support",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "(a)",
+                          "title": "Length of anticipated initial support period",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(b)",
+                          "title": "Type and level of supply support",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "(c)",
+                          "title": "Unusual parameters in provisioning or technical documentation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2.5",
+          "title": "Part 4: Training system modification data",
+          "content": "This data shall describe the modification required to an existing training system. The data shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "A description of the training deficiency causing the requirement for the training system modifications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "A comparative analysis of modification life cycle costs, training gains, and equipment system life expectancy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Estimates of training resource savings or other gains to include",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(1)",
+                  "title": "Instructor time",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(2)",
+                  "title": "Operational equipment training hours",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(3)",
+                  "title": "More effective training resource utilization",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(4)",
+                  "title": "Elimination of training problems",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2.6",
+          "title": "Appendices",
+          "content": "The appendices shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.6.1",
+              "title": "Appendix A",
+              "content": "A list of references.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.6.2",
+              "title": "Appendix B",
+              "content": "A bibliography.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.6.3",
+              "title": "Appendix C",
+              "content": "Key milestone dates, key decision points, and points of contact.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.6.4",
+              "title": "Appendix D",
+              "content": "A distribution list.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.6.5",
+              "title": "Appendix E",
+              "content": "A list of definitions, acronyms, and specialized terms.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Standard digital data",
+      "content": "Standard digital data shall be delivered for the Standard Data Elements (SDEs).",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81519C.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

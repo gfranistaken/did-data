@@ -1,0 +1,281 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82516",
+  "slug": "di-saft-82516",
+  "title": "Recommended Critical Safety Item (CSI) and Critical Application Item (CAI) Replenishment Parts List",
+  "summary": "Specifies the format and content for the contractor to provide and update a listing of replenishment parts recommended for classification as Critical Safety Items and Critical Application Items.",
+  "approval_date": "2026-03-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10630",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SAFT-2026-001",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This DID shall be used by the contractor to provide a listing of replenishment items recommended to be classified as CSIs and CAIs in the system, subsystem, or equipment being contracted. It shall include relevant information on the CSIs and CAIs; it shall be used by the contractor to provide updates to the recommended listing of CSIs and CAIs.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "DoD Instruction 4140.69",
+          "content": "Engineering Support Instructions For Items Supplied By Defense Logistics Agency (DLA)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "SECNAVINST 4140.2/AFI20-106/DA Pam 95-9/DLAI3200.4/DCMA INST CSI (AV)",
+          "content": "Management of Aviation Critical Safety Items",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.3",
+          "title": "Public Law, 10 U.S.C. Section 3243",
+          "content": "Encouragement of new competitors: qualification requirement",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.4",
+          "title": "DFARS 217.75",
+          "content": "Acquisition of Replenishment Parts",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.5",
+          "title": "Definitions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "1.5.1",
+              "title": "Critical Application Item",
+              "content": "An item that is essential to weapon system performance or operation, or the preservation of life or safety of operating personnel, as determined by the cognizant engineering activity(s).  For the purpose of this DID, replenishment parts shall be designated \"Critical Application Item\" when failure of the item results in failure or malfunction of an aviation system, subsystem, or equipment, and the item is not a Critical Safety Item. (reference 1.1.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.5.2",
+              "title": "Critical Characteristic (CC)",
+              "content": "Any feature throughout the life cycle of a critical item, such as dimension, tolerance, finish, material, or assembly, manufacturing or inspection process, operation, field maintenance, or depot overhaul requirement that if nonconforming, missing, or degraded may cause the failure or malfunction of the critical item. (reference 1.2.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.5.3",
+              "title": "Critical Safety Item",
+              "content": "An aviation Critical Safety Item (CSI) is a part, assembly, installation equipment, launch equipment, recovery equipment, or support equipment for an aircraft or aviation weapons system that contains a characteristic any failure, malfunction, or absence of which could cause a catastrophic or critical failure resulting in the loss of or serious damage to the aircraft or weapon system, an unacceptable risk of personal injury or loss of life, or an uncommanded engine shutdown that jeopardizes safety. The determining factor in CSIs is the consequence of failure, not probability. (reference 1.2. and 1.3.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "1.5.4",
+              "title": "Replenishment Parts",
+              "content": "Repairable or consumable parts acquired after the initial provisioning process.  Replenishment parts are often called spare and repair parts. (reference 1.4.)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The listing of replenishment parts proposed to be classified as CSIs and CAIs shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The listing of replenishment parts (consumable or expendable) proposed by the contractor to be classified as CSIs and CAIs in accordance with contract definitions or the definitions in this DID, shall contain the following elements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title Page, containing the following",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title/identification of the system/program/equipment/component/project",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Title of CDRL and CDRL number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Contractor's name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Security classification, when required",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Distribution Statement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Contents in table form containing",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Prime manufacturers, vendors, or original actual manufacturer's part number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Complete item nomenclature",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Commercial and Government Entity (CAGE) Code",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "National Stock Number (NSN) if assigned",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "CSI or CAI criticality recommendation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Basis for criticality recommendation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Associated critical characteristics; major characteristics; special processes; and key inspections and tests",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Manufacturing source(s) including CAGE Code",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Next higher assembly part number, nomenclature, and NSN (if assigned)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Replenishment parts recommended to be classified as noncritical",
+          "content": "The table shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Item identification including part number, nomenclature, and NSN if assigned",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Next higher assembly part number, nomenclature, and NSN if assigned",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "All other replenishment parts not recommended",
+          "content": "All other replenishment parts not recommended to be CSI, CAI, or NonCritical will be considered to have criticality undetermined.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82516.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

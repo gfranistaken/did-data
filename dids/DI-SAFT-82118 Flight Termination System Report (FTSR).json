@@ -1,0 +1,346 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82118",
+  "slug": "di-saft-82118",
+  "title": "Flight Termination System Report (FTSR)",
+  "summary": "Provides a detailed description of the Flight Termination System (FTS) and serves as the medium through which FTS approval is obtained from the launch range.",
+  "approval_date": "2017-04-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9791",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "24 (96 TW/SEU)",
+  "project_number": "SAFT-2016-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Flight Termination System Report (FTSR) provides a detailed description of the Flight Termination System (FTS).  It is the medium through which FTS approval is obtained from the launch range.\n\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nb. This DID is applicable to all missile and space contracts that include direct support or management of missile launches and other munitions which require an FTS.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The FTSR contains technical information on the FTS.  When applicable, previously furnished documentation shall be referenced rather than incorporated into the report.  The FTSR shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction",
+          "content": "Scope and purpose.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "General system description",
+          "content": "This section contains a brief and general description of the FTS and includes a block diagram showing the location of all FTS components on the vehicle, including interfaces with other systems.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed system description",
+          "content": "This section contains the complete and detailed narrative description of all the major components of the FTS.  The following items are included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Narrative description",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(1)",
+                  "title": "The complete and detailed description of the FTS operation",
+                  "content": "The complete and detailed description of the FTS operation including all possible scenarios and discussion of how FTS components function at the system and piece-part levels.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(2)",
+                  "title": "A complete and detailed description of each FTS component",
+                  "content": "A complete and detailed description of each FTS component and how it functions, including references to specifications and schematics, mechanical and piece-part specifications, and operating parameters.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "b",
+              "title": "Detailed schematics of the complete FTS",
+              "content": "Detailed schematics of the complete FTS showing component values (resistance, capacitance, wattage), tolerances, shields, grounds, connectors and pin numbers, and telemetry pickoff points.  The schematics include all vehicle components and elements which interface with or share common use with the FTS.  All pin assignments shall be accounted for.  Results of the bent-pin analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Drawings showing the location of all FTS system components",
+              "content": "Drawings showing the location of all FTS system components on the vehicle.  Description of element siting, mounting (attach points), and cable routing (for physical isolation).  Includes a description of electrical connectors and electrical isolation of the FTS.  Include an illustrated parts breakdown of all mechanically operated FTS components.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Antenna link analysis and battery load analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Environmental testing",
+          "content": "This section references all qualification, acceptance, and certification test plans, procedures, and reports.  This section includes the following data:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "The maximum predicted flight loads",
+              "content": "The maximum predicted flight loads (per axis for three axis) for all anticipated environmental forces (for example, shock, vibration, acceleration and thermal) for each FTS component.  Include a summary of the analysis or measurements used to derive the maximum predicted environments for each component.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "A matrix of the actual qualification and acceptance test levels",
+              "content": "A matrix of the actual qualification and acceptance test levels used for each component in each test versus the predicted flight levels for each environment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "A clear identification of those components qualified by similarity",
+              "content": "A clear identification of those components qualified by similarity, analysis or a combination of analysis and test.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Failure analysis and corrective action",
+          "content": "This section contains all failure analyses, reports and corrective actions for all FTS major components which fail to meet specifications, tolerances or test procedure requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Modifications",
+          "content": "This section includes all proposed and final modifications to an approved FTS, associated equipment, component identification, test procedures, or any changes affecting the configuration or integrity of the FTS.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Reliability analysis",
+          "content": "This section includes all analysis and data to support the reliability requirements for the FTS.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "A discussion of how the FTS meets the design requirements",
+              "content": "A discussion of how the FTS meets the design requirements of single-fault tolerance and reliability design goal.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "The results of fratricide and sneak circuit analyses",
+              "content": "The results of fratricide and sneak circuit analyses when required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Include the Failure Modes, Effects, and Criticality Analysis (FMECA)",
+              "content": "Include the Failure Modes, Effects, and Criticality Analysis (FMECA) when required.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Installation and checkout",
+          "content": "This section includes all procedures for installation and checkout of all FTS components and a description of all equipment used during the checkout, to include a wiring diagram depicting any interfaces to the FTS.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "A test history shall be maintained for each FTS component",
+              "content": "A test history shall be maintained for each FTS component.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "The test history shall be made available to Range Safety",
+              "content": "The test history shall be made available to Range Safety upon request.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "The history for each component shall include the following information",
+              "content": "The history for each component shall include the following information.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(1)",
+                  "title": "Component part, serial, and lot number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(2)",
+                  "title": "Date of initial manufacture",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(3)",
+                  "title": "Date of acceptance or LAT",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(4)",
+                  "title": "Date of modification with brief description of the modification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(5)",
+                  "title": "Reuse or captive-carry time log",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(6)",
+                  "title": "Bench test or other pre-launch test data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(7)",
+                  "title": "Shelf life expiration and any subsequent age surveillance extension data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(8)",
+                  "title": "Storage conditions for thermally sensitive components",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(9)",
+                  "title": "Retest data and reason for retest",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(10)",
+                  "title": "Any failures and corrective action",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Waivers",
+          "content": "This section includes all required and existing waivers, technical agreements, and understandings concerning FTS.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Telemetry design data",
+          "content": "Includes the following data:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "A complete and detailed description of the FTS telemetry system",
+              "content": "A complete and detailed description of the FTS telemetry system and how it functions, including general specifications and schematics.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "A listing of typical telemetry calibration data for each safety channel",
+              "content": "A listing of typical telemetry calibration data for each safety channel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "A tabulation of measurement accuracy, sampling rate, and time delay",
+              "content": "A tabulation of measurement accuracy, sampling rate, and time delay for each telemetry measurement used for safety purposes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "A set of single-thread wiring diagrams showing the end-to-end schematic",
+              "content": "A set of single-thread wiring diagrams showing the end-to-end schematic for each safety monitoring channel from the pickoff point to telemetry input, ground support equipment, or safety console readout.  Identify all connectors and pin numbers, components, and wire sizes.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82118.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

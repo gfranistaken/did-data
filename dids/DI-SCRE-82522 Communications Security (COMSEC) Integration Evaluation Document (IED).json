@@ -1,0 +1,342 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SCRE-82522",
+  "slug": "di-scre-82522",
+  "title": "Communications Security (COMSEC) Integration Evaluation Document (IED)",
+  "summary": "Specifies content and format for the COMSEC Integration Evaluation Document, which documents host security requirements, design, and validation for systems integrating NSA High Assurance Devices.",
+  "approval_date": "2026-04-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10640",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19",
+  "project_number": "SCRE-2026-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The COMSEC Integration Evaluation Document (IED) provides information regarding host security functional requirements, functional and physical design details, and requirement validation tasks to ensure appropriate system security requirements are met.  Additionally, the COMSEC IED describes and contains security, functional, and software architecture composition, bypass control details, and a fail-safe design analysis.\n\nThis Data Item Description (DID) is applicable to all systems integrating National Security Agency (NSA) High Assurance Devices (HADs) and addresses the validation of how HADs are being securely integrated into any host system. Criteria requiring validation are outlined in HAD-specific host integration requirements, as well as the Host Integration Functional Requirements Document for the Design of Satellite Bypass External to the Cryptographic Device (see also reference 2.1. below). For the purposes of this document, the term \"system\" refers to the entire space vehicle not including the hosted payloads.\n\nThis DID contains the format and content preparation instructions for deliverable generation in support of the specific and discrete task requirements for this data item, as described in the contract.\n\nNote: This DID is directly linked to and associated with DI-SCRE-82523, COMSEC Integration Test Report (ITR).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SCRE-82523"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "Email jyoti.woodman.1@spaceforce.mil to request access to reference documents:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Cryptographic Modernization Office - Space (CMO-S), United States Space Force Crypto Playbook: Program Management Guide to Satellite Cryptography",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "Operational Security Doctrine (OSD) associated with the integrated High Assurance Device (HAD)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Compliance documents",
+      "content": "The COMSEC IED shall demonstrate, describe, and maintain compliance with the applicable sections of each document cited below.  Email jyoti.woodman.1@spaceforce.mil to request access to reference documents:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "CMO-S, Host Integration Functional Requirements Document for the Space Vehicle Design of a Bypass External to the Cryptographic Device",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "National Security Agency, C Technical Report 02-00, Library No. S-247,160: \"Fail-Safe Design and Analysis: Revised,\" 27 January 2000",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "The Contractor's COMSEC IED shall contain narrative content, diagrams, and technical detail addressing each of the topics delineated in the following major sections and subsections. Provide data using the electronic preparation instructions below.  The COMSEC IED shall:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Formatting requirements",
+          "content": "Be formatted strictly in accordance with the COMSEC IED Template established for this purpose and that is included in this DID.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Classification and portion marking",
+          "content": "Be appropriately classified and portion marked in accordance with requirements provided in the Contractor's DD Form 254.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Submission format",
+          "content": "Be submitted in Microsoft Word format for initial submission and either Microsoft Word format or Adobe PDF format after review and validation for submission to the Government Program Office. Microsoft Word format is preferred as it supports more efficient tracking and management of changes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Embedded files",
+          "content": "Not contain embedded files (i.e., Microsoft Visio drawings). All embedded pictures and diagrams must be converted to a JPG, PNG, TIFF, or GIF.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Title page",
+          "content": "Include a title page that identifies the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Program Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Contract Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Version/revision and date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Contractor Program Manager's name and telephone number and, if applicable, the Government Program Office Point of Contact name and office designator",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Security Classification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Distribution Statement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Revision Page",
+          "content": "Include a Revision Page, listing all past changes to the document in reverse chronological order.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Reference and Compliance Documents list",
+          "content": "Include a list of Reference and Compliance Documents, to include those cited in 1. and 2. above, and all other documents used to develop the COMSEC IED.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Table of Contents",
+          "content": "Include a Table of Contents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Abbreviations and acronyms table",
+          "content": "Include a Table defining all the abbreviations and acronyms.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Content",
+      "content": "The COMSEC IED shall:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Integration Evaluation Document (IED) Template",
+          "content": "Be completed using the Integration Evaluation Document (IED) Template, Version 1.0, included in this DID. Note: Wherever requested information does not apply, identify it as \"N/A.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "COMSEC IED Template",
+          "content": "The COMSEC IED Template follows.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "1",
+              "title": "System Requirements and Operational Environment",
+              "content": "Provide a concise description of the top-level systems architecture, security services, and host integration functional requirements of the system design. This information includes an overview of the integration components and technology, if applicable, of the system to be protected, as well as a description of the operational environment and constraints (e.g., airborne, command post, access by cleared personnel only, etc.), to support the statement of top-level system security requirements and goals. The level of classification for the data protected by the system must also be identified in this section. Include a table listing the applicable host integration functional requirements.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "1.1",
+                  "title": "Scope",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "1.2",
+                  "title": "Overview",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "1.3",
+                  "title": "High-Level System Architecture",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "1.4",
+                  "title": "Top-Level System Security Requirements and Goals",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2",
+              "title": "Security Architecture",
+              "content": "[Note: This section applies to HAD integration as referenced in 2.1., including the use of any internal bypass functions (Cat 1).]\n\nProvide a detailed description of the system security design approach and architecture, components, and functions. The following lists the type of supportive information and level of detail to include in this chapter. Note: this is not an exhaustive list; use as an example:\n\na. Commands and Messages (e.g., verbal descriptions, protocols/syntax & formats, parameters & parameter definitions, state transitions, checks, error conditions, responses)\nb. Data rates\nc. Memory (e.g., types, usage, mapping, handling - allocation/deallocation, separation & access)\nd. Communication protocols\ne. Timing characteristics\nf. Detailed descriptions of alarm conditions and responses\ng. Detailed descriptions of check functions\n\nFor the NSA approved HAD embedded in the design, provide a detailed description of how the security features of that approved product are utilized in the system, including specific configurations, implementations, and modes of operation used. If the embedment is being used to satisfy system integration security requirements, a detailed description of how the host system utilizes and preserves the integrity of the security features of the embedded product is included in this chapter. This must include a detailed description of all interfaces, and how the host handles critical information passed to and from the embedded product.\n\nThis Chapter of the COMSEC IED also outlines the internal cryptographic bypass policies, if applicable, as well as provides system design details for the security features and components used to support the host integration requirement compliance statements provided in Appendix A.\n\nIn particular, provide design details for all system integration security functions required by reference 2.1. of this DID.  The security architecture also covers redundant processors and comparators implemented to monitor system functions to ensure a robust High Assurance security design.\n\nA functional diagram and description of the Security Isolation (formerly the INFOSEC) Boundary, identifying the critical hardware and software components used to comply with the security requirements must be included in this section. For the system security features, provide a functional flow of all system operations to demonstrate how the product encrypts, decrypts, routes, stores and transmits classified data to meet customer mission needs described in Chapter 1. The requirement compliance statements in Appendix A reference the appropriate sections of Chapter 2 to provide the security design details needed to explain compliance.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1",
+                  "title": "Operational Security Doctrine (OSD) Compliance",
+                  "content": "Provide comprehensive statements that outline how the integration implementation meets OSD compliance in accordance with applicable OSD(s) that will be provided to the Contractor, post-award.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3",
+              "title": "Functional and Physical Architecture",
+              "content": "This section describes the high-level details of the sub-assemblies associated with the host integration components, and depicts how they will be deployed in its intended mission. Illustrate and describe a superset of functions, including data flows, control and status bypass and TEMPEST considerations in this section.\n\nProvide high-level diagrams of the integration components. Include details regarding the associated hardware and mechanical components as they relate to system integration.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4",
+              "title": "Software Architecture",
+              "content": "Discuss key characteristics of the software architecture as it relates to the features and functionality required to accomplish mission objectives. This section shows the external software interconnections as well as the relationship between software modules. Topics include detailed information regarding control and status bypass implementation, software updates, boot image, and drivers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "5",
+              "title": "Fail Safe Design Analysis",
+              "content": "[Note: This section only applies if the host implements bypass external to the HAD.]\n\nThis Chapter will document the first two FSDA Steps in the Modernized Process, which is based on a reduced set of the Steps defined in reference 2.2. to this DID. The Step numbers in parenthesis refer to the Step taken from this document that still apply in the Modernized Process:\n\na. Identify the Required Security Services (Step 1) and Data Classification Level (New)\nb. Determine which Unauthorized Events (as outlined in reference 2.1. to this DID) are applicable and provide rationale for those that are not (Step 4)",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "5.1",
+                  "title": "Functional/Physical Decomposition (Step 6)",
+                  "content": "This Chapter also provides a functional and physical description/decomposition of the design of the system integrating the HAD, giving the reader an explanation of the hierarchy of functions within the system and how this functional architecture satisfies the top-level requirements identified in Chapter 1. The description logically flows from the system's top-level functions, down through several layers of functional partitioning, to a functional design level where each function represents an individual task that is identified as occurring within or by a specific physical element of the system.\n\nThe description provides the reader with an explanation of the functional and physical elements of the system (e.g., hardware, tamper approach, software, databases, and communication paths) and their relationships to each other (e.g. Client/Server, sub-element). The description associates the functions identified in this Chapter to specific elements, explaining the interdependencies among the elements in achieving functionality, and provides FSDA Functional-to-Physical System Decomposition as detailed in reference 2.2. to this DID.\n\na. This Chapter deals with the last two Steps of Modernized Fail-Safe Design Analysis that address:\n1. Unauthorized Events Analysis & Failure Summary (Steps 7 and 9)\n2. Physical Pin-to-Pin Analysis (Step 8)\n3. Detailed information related to the content of the Steps specified above is provided in reference 2.2. to this DID.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "6",
+              "title": "Final Covert Channel Analysis Report (CCA)",
+              "content": "[Note: This section only applies if the host system implements external consistent bypass.]\n\nThis chapter includes a documented description of the CCA. A covert channel is a method of communicating data through or within a system in violation of the information flow policy using paths that are not intended to carry the data. Covert channels only exist in the context of systems that require information flow policies to be enforced. Covert channels are characterized as either storage or timing channels as defined below. The covert channel analysis must address both types of channels.\n\nA storage channel is a covert channel that directly or indirectly writes to a storage location to pass information. The storage location may correspond to data-at-rest, such as a file on disk. Examples of this include using steganography to encode a message in the low order bits of an image or modulating the size of a text file. Alternatively, a storage channel may write to storage locations corresponding to data in transit (e.g., using protocol header fields which may bypass filtering or encryption) with non-fixed values to convey information through a network encryptor or a firewall.\n\nThe CCA Report must contain the following:\n\na. A description of the covert channel protection policy must be provided that mitigates violations to the information flow requirements. The policy must document how the assurance required for the system is commensurate with the sensitivity of the information protected and risks associated with the technology and operating environment.\nb. The covert channel protection policy must specify the level of CCA, (i.e., informal, systematic/formal, or exhaustive), required for the target system.\n* For a systematic CCA, the analysis must describe how it is structured and repeatable.\n* For an exhaustive CCA the analysis must describe how it is structured, repeatable, and exercises all possible methods for determining the existence of covert channels.\nc. The covert channel protection policy must specify whether covert channels are to be documented, limited (in terms of capacity), monitored, or eliminated. For a particular system, if multiple mitigations are specified, the distinction must be based on the characteristics of an individual channel.\nd. The CCA must document the analysis of each information flow policy specified in the system security policy in terms of a potential covert channel.\ne. The CCA must document the analysis of both the design and implementation of the target system for potential covert channels. Low-level implementation details, including external interface definitions and source code or hardware logic specification must be used as inputs to the analysis.\nf. The CCA must document the analysis of all bypass policies for potential creation of covert channels.\ng. The CCA must identify each covert channel and describe a worst-case exploitation scenario for the channel.\nh. The CCA must identify the characteristics of each channel, including but not limited to:\n* Categorization (storage or timing)\n* Capacity estimate (including the method used for estimation)\n* Direction (ingress, egress, bidirectional)\n* Encoding (direct or indirect)\n* Reliability (noisy or noiseless)\ni. The CCA must describe all assumptions made during the analysis and provide evidence that the level of analysis and mitigation complies with the specified policy. An example of such an assumption would be the relative physical or logical location of the processes participating in the covert communication. For example, for an inline network encryptor, the processes may be hosts residing on the plaintext and ciphertext networks. Alternatively, a covert channel may require malicious code to be executing in the network processors themselves.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "7",
+              "title": "Reference Documents",
+              "content": "* Operational Security Doctrine (OSD) associated with the integrated High Assurance Device (HAD)\n* Interface Control Document (ICD) associated with the integrated HAD\n* User's Guide/Manual associated with the integrated HAD",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "8",
+              "title": "Compliance documents",
+              "content": "* [List all applicable compliance documents]",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "Appendix A",
+              "title": "Security Design Requirements Compliance and Validation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "Appendix B",
+              "title": "Comment and Response Matrix",
+              "content": "Appendix B of the COMSEC IED tracks comments along with the appropriate Developer responses and changes. These responses must answer the question or comment and reference corresponding locations in the body of the document where the content was updated in response to the comment and marked by change bars. These comments and responses include remedial actions conducted to address deficiencies and remain within the COMSEC IED for each revision.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SCRE-82522.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

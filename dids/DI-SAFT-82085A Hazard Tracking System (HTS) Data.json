@@ -1,0 +1,621 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82085A",
+  "slug": "di-saft-82085a",
+  "title": "Hazard Tracking System (HTS) Data",
+  "summary": "Specifies the format and content for Hazard Tracking System (HTS) Data used to document and track hazard tracking and Software Level of Rigor information required by MIL-STD-882E(C1).",
+  "approval_date": "2025-07-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10584",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "40 (AFMC/SE)",
+  "project_number": "SAFT-2025-009",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Hazard Tracking System (HTS) Data will be used to document and track essential information from contractors for accomplishing the tracking system requirements of MIL-STD-882E(C1). This data includes the closed loop hazard tracking requirements in MIL-STD-882E(C1) paragraph 4.3.1.d and Task 106 as well as the Software Level of Rigor (LOR) Data requirements of paragraph 4.4.3.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work tasks described in MIL-STD-882E(C1). This applies to all developmental and sustaining engineering activities for the Department of Defense (DoD) systems, equipment, and facilities. This DID also contains additional data elements required when MIL-STD-882E(C1) Detailed Requirements Tasks are applied to the contract.\n\n(Copies of this document are available online at https://quicksearch.dla.mil.)\n\nThis DID supersedes DI-SAFT-82085",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SAFT-82085"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Copies of this document are available online",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The HTS database shall be in a format compatible with government office capabilities. Data shall be delivered in one of these formats; (e.g., software tools/applications such as spreadsheets or databases).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The HTS shall contain the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Safety Hazard Tracking System Data",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Unique Hazard Identifier",
+              "content": "Identifier used for positive Closed-Loop Hazard Tracking.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "System/Subsystem Description",
+              "content": "Information needed to describe the system or subsystem. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "System/subsystem description",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "System/subsystem interfaces",
+                  "content": "System/subsystem interfaces of interest to included interfaces between subsystems, between hardware and software, between different units of software, with the environment, with the human, and to include Architectural/Facility Enterprises.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "System configuration(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "System of system interfaces",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Hardware",
+              "content": "Information needed to properly characterize hardware being cited, if applicable. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.3.1",
+                  "title": "Relevant Component Identification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.2",
+                  "title": "Specific Component Configuration(s) and related Configuration History",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.3",
+                  "title": "Manufacturing Details (forging, milling, casting, additive manufacturing, etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.4",
+                  "title": "Testing Details",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.5",
+                  "title": "Materials",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.6",
+                  "title": "Treatments",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.7",
+                  "title": "Installation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.4",
+              "title": "Software",
+              "content": "Information needed to properly characterize software being cited, if applicable. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.4.1",
+                  "title": "Software architecture description",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.2",
+                  "title": "The program's definition of what a Unit",
+                  "content": "The program's definition of what a Unit of Software is (e.g. Computer Software Configuration Item (CSCI), Computer Software Component (CSC), Computer Software Unit (CSU); this definition is to be used in all documentation required by this DID.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.3",
+                  "title": "Unit(s) of software associated with the hazard",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.4",
+                  "title": "Additional clarification of where within the unit of software relates to the hazard",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.5",
+                  "title": "Software Versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.6",
+                  "title": "Relevant Control Laws",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.5",
+              "title": "Human (Consider/Use occupational health data)",
+              "content": "Information needed to describe how the human is involved in a hazard, if applicable. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.5.1",
+                  "title": "Ergonomic hazardous conditions (user physical characteristics)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.2",
+                  "title": "Exposure to physical, chemical, radiological, biological hazardous conditions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.6",
+              "title": "Environment",
+              "content": "(Consider/Use environmental data) Information needed to describe how undesired environment effects (e.g. wind, precipitation, light, etc.) are involved in a hazard, if applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Hazard Description",
+              "content": "Information needed to sufficiently describe the hazard. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.7.1",
+                  "title": "Hazard characterization",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.2",
+                  "title": "Modes of operation of interest (normal, emergency, maintenance, text, disposal, etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.3",
+                  "title": "Environmental interfaces (vibration, heat, exposure to corrosive substances, etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.4",
+                  "title": "Hazard effects involving hardware, software, human, environmental",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.8",
+              "title": "Safety Relationship to Requirements",
+              "content": "Those requirements with a relationship to safety. This shall include citations for a system's safety requirement or requirements associated with hazard controls.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Risk Assessment",
+              "content": "Details needed to properly document a hazard. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.9.1",
+                  "title": "Assertions and assumptions behind Severity (Per MIL-STD-882E(C1) Table I)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.2",
+                  "title": "Assertions and assumptions behind Probability (Per MIL-STD-882E(C1) Table II)",
+                  "content": "include all math in the derivation of quantitative probabilities",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.3",
+                  "title": "Identify all unknown data associated with the hazard",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.4",
+                  "title": "Resultant Risk (Per MIL-STD-882E(C1) Table III) for \"Initial Risk\", \"Risk As of Today\", \"Target Risk\", and/or \"Event Risk\" (aka Test Event)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.5",
+                  "title": "Unique conditions during a special event",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.10",
+              "title": "Hazard Controls",
+              "content": "Document the hazard controls associated with a hazard. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.10.1",
+                  "title": "An explanation of each selected hazard control",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.2",
+                  "title": "An association with the selected hazard controls and the System Safety Order of Precedence",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.3",
+                  "title": "Reducing Probability (aka Mitigation) or Severity (aka Amelioration)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.4",
+                  "title": "Rejected controls",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.5",
+                  "title": "Projected amount of \"risk\" bought back (e.g. the amount of risk reduction as the result of incorporating hazard controls)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.6",
+                  "title": "Projected control implementation plan",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.7",
+                  "title": "Schedule for each control to be installed throughout fleet",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.8",
+                  "title": "Verification control implemented into design (verifications of risk reduction)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.9",
+                  "title": "Validation control achieving desired hazard intervention",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.11",
+              "title": "Hazard Status",
+              "content": "Description of the hazard status. Typical Topics Include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.11.1",
+                  "title": "Progress of hazard control implementation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.11.2",
+                  "title": "Formal acceptance by the Risk Acceptance Authority",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.11.3",
+                  "title": "Open/In Work/Closed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.12",
+              "title": "Related Hazards",
+              "content": "Referenced to other related hazards.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Other",
+              "content": "Related anomalies, incidents, or mishaps.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.13.1",
+                  "title": "Such citations shall not cite Limited Use Mishap Data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.2",
+                  "title": "Any other items (i.e., studies, analyses, test data, notes or similar data) generated in the performance of the contract with respect to the HTS",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.3",
+                  "title": "Hazard Point of Contact",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Software LOR Data",
+          "content": "This data is generated as a result of MIL-STD-882E(C1) paragraph 4.4.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Unit of Software",
+              "content": "Information needed to properly characterize software being cited. The program's definition of what a Unit of Software is (e.g. CSCI, CSC, CSU); this definition is to be used in all documentation required by this DID.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "SwCI/LOR Determination",
+              "content": "The rationale supporting how the Software Criticality Index (SwCI)/LOR was derived for each Unit of Software. Typical Discussion Includes",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "For each unit of software, the Software Control Category",
+                  "content": "For each unit of software, the Software Control Category (SCC; MIL-STD-882E(C1) Table IV) and supporting rationale for determining applicable SCC.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "For each unit of software, the rationale behind determining",
+                  "content": "For each unit of software, the rationale behind determining worst potential Severity (MIL-STD-882E(C1) Table I) for the software unit. Several hazards may involve the same unit of software, the most severe Severity is used.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "MIL-STD-882E(C1) Table V Results for the software unit's SwCI and tier of LOR",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "LOR Activities",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Describe each LOR Activity for each LOR Tier (corresponding to SwCI Tier)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Provide LOR artifacts correlated to each LOR activity for each Unit of Software",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.4",
+              "title": "LOR Activity Status",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Define the timeline when MIL-STD-882E(C1) Table VI questions",
+                  "content": "Define the timeline when MIL-STD-882E(C1) Table VI questions are to be asked. (e.g. prior to Preliminary Design Review - PDR; prior to Critical Design Review - CDR; prior to formal testing; prior to fielding, periodically during sustainment).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "For each Unit of Software, provide status of",
+                  "content": "For each Unit of Software, provide status of MIL-STD-882E(C1) Table VI question for each LOR Activity",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "For each LOR Tier's Activity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.4.3.1",
+                      "title": "Annotate what is left to be defined",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.4.3.2",
+                      "title": "Annotate Government Program Management (PM) decision to expend",
+                      "content": "Annotate Government Program Management (PM) decision to expend additional resources to define LOR activity or obtain Risk Acceptance Authority's formal acceptance for the unspecified LOR Tier. If unavailable, highlight the need for a decision to be made.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.4.4",
+                  "title": "For each incomplete (e.g. non-compliant) LOR activity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.4.4.1",
+                      "title": "Annotate specifically what is incomplete with the LOR criteria",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.4.4.2",
+                      "title": "Provide partial artifacts if available",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.4.4.3",
+                      "title": "Annotate Government PM decision to expend additional",
+                      "content": "Annotate Government PM decision to expend additional resources to define LOR activity or obtain Risk Acceptance Authority's formal acceptance for the incomplete LOR activity. If unavailable, highlight the need for a decision to be made.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82085A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

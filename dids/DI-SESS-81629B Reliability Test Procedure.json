@@ -1,0 +1,343 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81629B",
+  "slug": "di-sess-81629b",
+  "title": "Reliability Test Procedure",
+  "summary": "Provides detailed technical directions for implementing an individual reliability test at the equipment, subsystem, and system levels during the integrated test program.",
+  "approval_date": "2020-02-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10154",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "Yes",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2020-020",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Reliability Test Procedure provides detailed technical directions for implementing an individual reliability test (e.g. conventional reliability growth test, highly accelerated life test, accelerated life test, environmental stress screening, reliability qualification test, production reliability acceptance test) at the equipment, subsystem, and system levels during the integrated test program. The procedure contains step-by-step instructions of how the equipment, including software, is utilized during the reliability test. This document will be used by the procuring activity for review and approval of the contractor's procedure for conducting the reliability test and in the subsequent surveillance of the test and evaluation of the results.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\n\nThis DID supersedes DI-SESS-81629A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81629A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Reliability Test Procedure shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Reliability Test Procedure shall contain:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Description, date, and location of the test to be performed",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Test objectives and requirements to be demonstrated",
+          "content": "Test objectives and requirements to be demonstrated, including specific references to the applicable sections of the solicitation or contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Description of the test team roles and responsibilities",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Test article identification and description of test articles to be utilized",
+          "content": "Test article identification and description of test articles to be utilized, including hardware and software test item version or configuration and quantity to be tested.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Deviations from the configuration specified in the test plan",
+          "content": "Deviations from the configuration specified in the test plan and the reason for each deviation.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "List of test and monitoring equipment, calibration status",
+          "content": "List of test and monitoring equipment, calibration status (due date), facility descriptions and requirements, test software, and provisions for power, temperature, humidity, and vibration.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "When applicable, Environmental Stress Screening (ESS) requirements",
+          "content": "When applicable, Environmental Stress Screening (ESS) requirements and a description of the environment to which equipment will be exposed prior to test.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Statistical reliability test design criteria, as appropriate",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "The levels and tolerances for time, temperature, and other details of the combined stress environmental cycle",
+          "content": "The levels and tolerances for time, temperature, and other details of the combined stress environmental cycle, including the duty cycle, moisture, vibration stress and duration, and input voltage.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Test sequence, test condition combination, and any pre and post conditioning",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Allowable adjustments and normal checkout procedures for the equipment under test",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Preventive maintenance measures to be performed during the test",
+          "content": "Preventive maintenance measures to be performed during the test, if such maintenance is permitted by the detailed equipment specification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Diagrams of complete test setup",
+          "content": "Diagrams of complete test setup, including equipment under test, test monitoring equipment, and interconnecting cables.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Test methods and mode(s) of operation of the items",
+          "content": "Test methods and mode(s) of operation of the items, including software under test, including configuration and mission requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Performance parameters to be measured, frequency of measurement, and the method used",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Test duration and conditions",
+          "content": "Test duration and conditions, including the duty cycle and environmental, operational, and performance profiles during performance parameter measurement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Performance parameter limits used to determine failure occurrence",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "List of government furnished equipment, property, or material to be used during the test",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "A description of the failure recurrence control system",
+          "content": "A description of the failure recurrence control system to be used to ensure corrective action.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "Definition of items termed replaceable at failure and reason for each proposed deviation",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Test conduct ground rules, decision (failure and accept) criteria, and interface boundaries",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "A description of the action(s) to be taken if a reject decision is reached",
+          "content": "A description of the action(s) to be taken if a reject decision is reached, including corrective action plan and retest provisions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Data analysis methods, analytical procedures to be employed",
+          "content": "Data analysis methods, analytical procedures to be employed, data reduction routines, and reliability growth techniques used to assess demonstrated and projected reliability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.24",
+          "title": "List of data to be recorded during tests and samples of report or log forms to be used",
+          "content": "List of data to be recorded during tests and samples of report or log forms to be used. Include preliminary applicable data collection sheets and scoring and evaluation criteria. Data elements for the test log and data record include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.24.1",
+              "title": "Test type, equipment type, serial number, and date test initiated",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.2",
+              "title": "Date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.3",
+              "title": "Time",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.4",
+              "title": "Elapsed time of test",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.5",
+              "title": "Environmental, Input, and Performance parameters",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.6",
+              "title": "Remarks",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.7",
+              "title": "Tech initials",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.8",
+              "title": "Government inspector initials",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.24.9",
+              "title": "Sample equipment failure record data elements including:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.24.9.1",
+                  "title": "Type of test, equipment type, unit serial number, test position, date test initiated",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.24.9.2",
+                  "title": "Failure report number xi",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.24.9.3",
+                  "title": "Removal for repair- time/date, elapsed time of test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.24.9.4",
+                  "title": "Returned to test- time and date, elapsed time of test",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.24.9.5",
+                  "title": "Description of failure",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.24.9.6",
+                  "title": "Technician initials",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81629B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

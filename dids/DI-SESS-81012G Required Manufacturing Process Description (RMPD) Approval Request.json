@@ -1,0 +1,119 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81012G",
+  "slug": "di-sess-81012g",
+  "title": "Required Manufacturing Process Description (RMPD) Approval Request",
+  "summary": "Identifies manufacturing processes proposed for inclusion in the Technical Data Package as mandatory to meet the engineering requirements of an item or component part.",
+  "approval_date": "2025-03-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10548",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AR",
+  "project_number": "SESS-2025-018",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Required Manufacturing Process Description Approval Request identifies manufacturing processes which are proposed for inclusion in the Technical Data Package (TDP) as mandatory to meet the engineering requirements of the item or a component part thereof for which the TDP is being prepared.\n\na. This Data Item Description (DID) contains the format and content preparation instructions for the data resulting from the work task described by 5.14.4 of MIL-STD-31000.\n\nb. This DID is applicable to acquisitions in which the Government intends to retain approval authority over designating manufacturing processes as mandatory.\n\nc. This DID supersedes DI-SESS-81012F and is related to DI-SESS-81000F.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81012F"
+  ],
+  "related_dids": [
+    "DI-SESS-81000F"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General",
+      "content": "The RMPD Approval Request shall meet the requirements of MIL-STD-31000.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "The RMPD Approval Request shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content",
+      "content": "The RMPD Approval Request shall include as applicable:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Contractor's name, address and CAGE Code",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Contract number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "Item nomenclature and part number to which the proposed process applies",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.4",
+          "title": "Drawing number or specification number which defines the process in detail",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.5",
+          "title": "An explanation as to why the process should be considered required or mandatory to the manufacture of the item or part",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.6",
+          "title": "A statement as to whether the process or portions thereof are considered contractor proprietary and the status of Government rights in technical data",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81012G.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

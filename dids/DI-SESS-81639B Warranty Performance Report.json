@@ -1,0 +1,544 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81639B",
+  "slug": "di-sess-81639b",
+  "title": "Warranty Performance Report",
+  "summary": "Provides information on items under warranty, including contractor repair, replacement, and reimbursement, and equipment failure data associated with Reliability Improvement Warranties (RIW).",
+  "approval_date": "2022-06-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10327",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "170 (AFLCMC F-16)",
+  "project_number": "SESS-2021-019",
+  "applicable_forms": "DD Form 250 Office of Management and Budget (OMB) Control Number 0704-0248",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Warranty Performance Report provides information on items under warranty; contractor repair, replacement, and reimbursement; and equipment failure data associated with Reliability Improvement Warranties (RIW).\n\na. The data is used to track and assess the effectiveness and implementation of the contract warranty provisions; to apprise the government of the type, severity, and frequency of failures; to verify warranty coverage for each item delivered; and to document warranty periods and delivery schedules.\n\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\n\nc. The warranty status section of this DID is used to warranty provisions where individual warranted item identification is required, and remedies include repair, replacement, and reimbursement. The warranty data section is used to warranty provisions where a RIW is delineated in the contract or data on reliability and performance achievement is required.\n\nd. This DID supersedes DI-SESS-81639A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81639A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DD Form 250, Material Inspection and Receiving Report - forms available online",
+      "url": "https://www.esd.whs.mil/Directives/forms/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Warranty Performance Report shall be in government-approved contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Warranty Performance Report shall delineate data for each contract line item (CLIN) covered by the warranty.  The Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Warranty status information",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Header information",
+              "content": "The header information shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Contract number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Calendar reporting period covered by the report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Warrantor's name",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Repair facility address, including city, state, and zip code",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Warrantor's Commercial and Government Entity (CAGE) code",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "Warrantor's Department of Defense Activity Address Code (DoDAAC)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Warranted item information",
+              "content": "The warranted item information for each CLIN covered by a warranty delivered to the Government during the reporting period, which shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "CLIN",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "National Stock Number (NSN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Government issued nomenclature (noun)",
+                  "content": "in accordance with MIL-STD-1812 Aeronautical and Support Equipment Type Designation System.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Serial Number (SN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Part Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "Delivery date",
+                  "content": "Completed DD Form 250, Material Inspection and Receiving Report. (Copies of this form are available online at https://www.esd.whs.mil/Directives/forms/)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "g",
+                  "title": "Shipping date",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "h",
+                  "title": "Shipping destination",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "i",
+                  "title": "In-service date",
+                  "content": "(i.e., Date when the warranted items are turned over to field users).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "j",
+                  "title": "Contract date",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "k",
+                  "title": "Warranty date",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "l",
+                  "title": "Warranty length",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "m",
+                  "title": "Warranty end date",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "n",
+                  "title": "Applicable weapon system(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "o",
+                  "title": "Cumulative data",
+                  "content": "Cumulative data of 3.1.2 for CLIN items delivered under the contract to the Government from start date of contract award to the end date of the reporting period.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "p",
+                  "title": "Cumulative data",
+                  "content": "Cumulative data of 3.1.2 for CLIN items delivered under the contract to the Government for which the warranty has expired from the start date of contract award to the end date of the reporting period.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Contractor's plant warranty repair or replacement information",
+              "content": "For CLINs returned for repair or replacement at the contractor's facility during the reporting period, the following information shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "NSN and Government issued nomenclature of the returned CLIN",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Date returned CLIN received at contractor's facility",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "SN",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Action taken",
+                  "content": "(i.e., Repaired, replaced, awaiting action, or shipped).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "NSN(s), part number(s), and quantity of repair parts used",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "Cost (U.S. dollars) of repair or replacement",
+                  "content": "including parts and labor, and base year for the dollar amounts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "g",
+                  "title": "Cost (U.S. dollars) of failure",
+                  "content": "and base year for the dollar amounts.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.4",
+              "title": "On-site contractor warranty repair or replacement",
+              "content": "For CLINs repaired or replaced during the reporting period, for which repairs or replacements are performed by the contractor or the contractor's designated representative at the contractor's facility or dealership, the following information shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "NSN and Government issued nomenclature of the CLIN",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "SN",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Action taken",
+                  "content": "(i.e., Repaired, replaced, awaiting action, or shipped).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "NSN(s), part number(s), and quantity of repair parts used",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Cost (U.S. dollars) of repair or replacement",
+                  "content": "including parts and labor, and base year for the dollar amounts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "Cost (U.S. dollars) of failure",
+                  "content": "and base year for the dollar amounts.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.5",
+              "title": "Warranty repair contractor reimbursements to the Government",
+              "content": "When the Government submits a warranty claim reimbursement to the contractor for Government costs expended for warranty repair during the reporting period, the contractor's reimbursement to the Government shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Government warranty claim number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "NSN and Government issued nomenclature",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Government claim (U.S. dollars) amount",
+                  "content": "and base year for the dollar amount.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Contractor reimbursement (U.S. dollars) amount",
+                  "content": "and base year for the dollar amount.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Reason for denial of reimbursement",
+                  "content": "if applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "f",
+                  "title": "Reason for lesser amount of reimbursement than Government claim amount",
+                  "content": "if applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "g",
+                  "title": "Status of claim",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.6",
+              "title": "Cumulative data",
+              "content": "for 3.1.3, 3.1.4, and 3.1.5 shall be included from the start date of contract award to the end date of the reporting period.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Remarks",
+              "content": "Contractor comments and recommendations regarding the warranty status information, including improvements, changes, or other specific details, shall be provided, as needed.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Warranty data",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Program summary",
+              "content": "The program summary information shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Program detail",
+                  "content": "The program or RIW start date, reporting period start date, and reporting period cut-off date.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Utilization details",
+                  "content": "The average operating time (AOT) and total operating hours (TOH) for the average quantity of installed systems.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Repair detail",
+                  "content": "The quantity of units returned subdivided by: exclusions, which shall include a quantity and a percent of total units returned; non-verified failures, which shall include a quantity and a percent of total units returned; and quantity of warranted failures, warranty units repaired, and quantity of total repair days.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Performance statistics",
+                  "content": "The achieved mean time between failures (MTBF) and average turn-around time (TAT).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Program status",
+                  "content": "The number of days from the start of the contract warranty, TOH from start of the contract warranty, warranty used, and warranty remaining.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Unit summary",
+              "content": "A unit summary of the activity for each type unit, line replaceable unit (LRU), and shop replaceable unit (SRU), which shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Delivery and processing status",
+                  "content": "The number of total units delivered and units returned subdivided by: exclusions, which shall include a quantity and a percentage of total units returned; non-verified failures, which shall include a quantity and a percentage of total units returned; and quantity of warranted failures, quantity in repair, quantity in secure storage, quantity shipped, quantity condemned or lost, quantity on consignment, repair man hours, repair parts, and material costs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Utilization details",
+                  "content": "The average quantity of units installed and TOH.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Unit cycle time",
+                  "content": "The unit cycle time shall include the average days for the following segments: shipment-to-contractor-receipt, contractor-receipt-to-storage, storage-to-shipment, shipment-to-installation, installation-to-removal, and removal-to-shipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Unit performance",
+                  "content": "MTBF guaranteed, MTBF achieved, TAT guaranteed, and TAT achieved.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Unit detail",
+                  "content": "Historical activity of all delivered units as follows: unit SN; date sent to or located in storage; date of material release order (MRO); date shipped; elapsed time indicator (ETI) read in; ETI read out; configuration codes; shipping destination; date installed; aircraft and equipment type, tail number, and SN; date removed; date shipped to contractor; date received by contractor; originating activity; and RIW repair code (e.g., warranty exclusion, non-verified failure, warranty failure).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Modification status summary",
+              "content": "A modification status summary for each type unit, LRU, and SRU, which shall contain all engineering change proposals (ECP) submitted for reliability improvements as follows: ECP number, date submitted, date approved, status code (e.g., government approval, automatic approval, disapproval), configuration code(s) applicable to the specific weapon system (e.g., F-16 A-Model block 01/05/10/15 Type/Version [T/V]:61]; B-Model block 01/05/10/15 T/V:62; C-Model block 25/30/32 T/V:5C), production effectivity (date), quantity of units, total percentage of units affected by the ECP, and total percentage of units with the ECP completed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Consignment spares inventory list",
+              "content": "The consignment spares inventory list shall include the following for each consignment spare: number of units, if the spare is a LRU or a SRU, if the spare is on consignment or loan to the Government include the date of consignment, nomenclature, and SN.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Parts consumption list",
+              "content": "The parts consumption list shall include a list organized in alphabetical or numerical order, of all parts associated with or contained in the equipment under warranty, including the total quantity of each part consumed during repair actions, and a description of all repair actions completed from the warranty start date through the required report cut-off date.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81639B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

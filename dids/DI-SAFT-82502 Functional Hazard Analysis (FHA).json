@@ -1,0 +1,207 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82502",
+  "slug": "di-saft-82502",
+  "title": "Functional Hazard Analysis (FHA)",
+  "summary": "Specifies requirements for a Functional Hazard Analysis (FHA) used to identify and evaluate system functions and associated hazards, mapping Safety Significant Functions (SSF) and Safety Significant Items (SSI) to the system design architecture.",
+  "approval_date": "2025-09-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10603",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "40 (AFMC/SE)",
+  "project_number": "SAFT-2025-014",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Functional Hazard Analysis (FHA) is used for identification and evaluation of functions within the system and associated hazards. The FHA is a mapping of the Safety Significant functions (SSF) and Safety Significant Items (SSI) to the system design architecture.\n\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\n\nb. This DID is related to DI-SAFT-80101, System Safety Hazard Analysis Report, DI-SAFT-80102, Safety Assessment Report (SAR); and DI-SAFT-80105 System Safety Program Progress Report (SSPPR); and DI-SAFT-82085, Hazard Tracking System (HTS) Data.\n\n(Copies of these DIDs are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SAFT-80101",
+    "DI-SAFT-80102",
+    "DI-SAFT-80105",
+    "DI-SAFT-82085"
+  ],
+  "references": [
+    {
+      "label": "https://quicksearch.dla.mil",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The FHA shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The FHA shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction",
+          "content": "The FHA shall state, in narrative form, the purpose of the FHA.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "System Description",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "The physical (e.g. hardware) and functional (e.g. hardware and software) characteristics of the system and its subsystems at a major component level.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "A functional description of each subsystem shall include:",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "A functional description of each component of the interfaces between the identified subsystems and components.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Interface descriptions addressing the connectivity, functional inputs and outputs.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Function Assessment",
+          "content": "Documentation of the assessment shall address the implementation of the identified functions.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Function mapping shall be included identifying SSI components for each SSF.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "The functional map documentation shall be decomposed to the lowest level of the design.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "SSIs shall be designated either SCI (e.g. Catastrophic or Critical severity potential) or SRI (e.g. Marginal or Negligible severity potential) as appropriate.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "NOTE",
+                  "content": "An SSI may be SCI for one SSF but SRI for a different SSF.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "NOTE",
+                  "content": "An SCF may possess both SCIs and SRIs thereby reflecting functional redundancies or the lack thereof.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Interfaces between subsystems, hardware components, and units of software shall be documented within the assessment.",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "Unit of Software",
+                  "content": "Information needed to properly characterize software being cited. The program's definition of what a Unit of Software is (e.g. CSCI, CSC, CSU); this definition is to be used in all documentation required by this DID.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Interfaces with human and environmental design aspects shall be annotated.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Documentation of the summary of HTS hazards related to each SSF shall be included.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Documentation of the summary for each unit of software shall include which SSFs are supported, the SCC and the SwCI.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "References and Remarks",
+          "content": "Any additional technical information associated with the FHA.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82502.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

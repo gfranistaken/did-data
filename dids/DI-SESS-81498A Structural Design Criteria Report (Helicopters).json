@@ -1,0 +1,157 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81498A",
+  "slug": "di-sess-81498a",
+  "title": "Structural Design Criteria Report (Helicopters)",
+  "summary": "Documents information necessary to delineate and expand system mission requirements into specific structural terms, providing a basis for presenting the contractor's interpretation of system requirements for determining airframe structural loads and design.",
+  "approval_date": "2019-11-26",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10104",
+  "limitation": "N/A",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2019-054",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The structural design criteria report documents information necessary to delineate and expand into specific structural terms, the system mission requirements. The purpose of this report is to document these specific structural terms and requirements and to provide a basis for presenting the contractor's interpretation of system requirements for the determination of airframe structural loads and subsequent design.\n\nThis data item description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.\n\nThis DID supersedes DI-RELI-81498.\n\nDefense Technical Information Center (DTIC), Attn: DTIC-FDAC, Bldg.5, Cameron Station, Alexandria, VA 22304-6145.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-RELI-81498"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DTIC Applicable",
+      "url": "https://discover.dtic.mil/submit-documents/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The report shall be in contractor format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "A complete list of all deviations requested",
+          "content": "from the structural design requirements as cited in the contract and the reason for such requests shall be included as an appendix to the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Criteria for service loads design spectra",
+          "content": "including planned operational usage (mission and ground profiles), dynamic response methods, summary of design and analysis conditions (flight and ground), discussions of design features which affect determination of mission segments contribution on fracture/fatigue damage, and other data pertinent to service loading conditions or design.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Flight loads design criteria, including three views",
+          "content": "of the helicopter, vehicle physical characteristics descriptions and surface areas, the maximum and minimum gross weights, a weight breakdown of all variable weight items, center of gravity envelopes. The specific design conditions selected for detail analysis together with basis for their selection and method of analysis projected for the various maneuver conditions. Discussions of design features, which affect determination of critical conditions, sources of aerodynamic data, methods and assumptions applied in the calculation of aerodynamic loads, design V-n diagrams, rotational velocities and acceleration, temperature criteria, weights with definitions of each, all possible loading configuration, and an altitude-velocity envelope.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Ground loads criteria, shall be presented for",
+          "content": "the terrestrial landing condition and ship deck landing separately. This covers a summary of design gross weights, center of gravity positions, all practicable distributions of variable and removable mass items that will be considered for design. Also, range of touchdown speeds, takeoff speeds, sinking speeds, helicopter touchdown attitudes, terrain roughness, CBR's, load factors, external load configurations, the specific design conditions selected for detailed analyses, discussion of design features which affect determination of critical conditions and other parameters pertinent to the ground loads. Whenever necessary, substantiating data, pertinent references, and additional discussion shall be included to indicate that the range of parameters considered comply with applicable design requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Control system loads, including appropriate summaries",
+          "content": "of loads to be used for design. Components of the control system, their functions, and operation shall be explained in sufficient detail to show clearly their operation and source loads.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Water loads criteria, presenting the maximum",
+          "content": "and minimum gross weights, center of gravity envelopes, sea conditions, the specific design conditions selected for analysis and basis of their selection, the methods employed in the analysis of water loads and pressures and their distributions, weight distributions, design load factors, angular velocities and accelerations, store configurations, and other items pertinent to water loading conditions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "For all cargo/personnel carriers a complete detailed",
+          "content": "description of structural design criteria utilized for troop and passenger seats, cargo tie downs, lifters, cargo aerial delivery, cargo jettison, cargo hooks, rescue hoist, mission equipment etc.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Repeated loads and fatigue criteria, including spectra",
+          "content": "used for design and fatigue methodology report(s). Methods of analyzing mission profile, flight time for each mission, mission distribution and ground-air-ground (GAG) cycles shall be presented. In addition, rotor blade and tail surface fold spectra and landing gear and ground maneuvering/operations fatigue spectra shall also be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Miscellaneous flight loads criteria, presenting critical loads",
+          "content": "encountered during rotor starting, braking for all rotors, blade trailing edge loads at transonic speeds, limit load factors for design store pylons and other support structures.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Miscellaneous ground loads criteria, presenting discussion of",
+          "content": "design features which affect determination of critical conditions when helicopter on ground such as towing, jacking, hoisting, rebound and securing. Various landing field condition including ship deck.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Wind loads criteria, covering critical rotor speed",
+          "content": "for ground flapping and impact of gust generated by the ship-structure for ship-based helicopters.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Crash loads criteria, presenting the maximum g-loads",
+          "content": "along vertical, lateral and longitudinal directions for crew, passenger, engine, transmission, fuel tank landing gears, and other structural items. Crash energy absorbing consideration for protecting crew during crash will be discussed.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81498A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

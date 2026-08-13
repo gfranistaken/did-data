@@ -1,0 +1,1439 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81518D",
+  "slug": "di-sess-81518d",
+  "title": "Instructional Performance Requirements Document",
+  "summary": "Provides mission, and collective and individual task information, along with knowledge, skills, attitudes, and learning objective listings for tasks selected for training, to support the design of a training program.",
+  "approval_date": "2019-05-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10027",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2019-010",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This document provides mission, and collective and individual task information. This document also provides listings of knowledge, skills, attitudes, and learning objectives for the tasks that have been selected for training. The Instructional Performance Requirements Document contains data necessary to support the design of a training program.\n\nThis Data Item Description (DID) contains the preparation instructions for the content and format of the Instructional Performance Requirements Document.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the performance requirements described by 3.2.2 of MIL-PRF-29612B, and is applicable to the acquisition of training data products. Data product performance evaluation criteria are specified in 4.3.2 of MIL-PRF-29612B.\n\nIt is not intended that all the requirements contained herein be applied to every program or program phase. Any individual data requirement contained in this DID is subject to deletion tailoring.\n\nThis DID supersedes DI-SESS-81518C.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81518C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor format is acceptable. Standard digital data, when specified, must be in compliance with the content and format requirements specified in the DoD Data Architecture (DDA) and the Defense Data Dictionary System (DDDS). The deliverable of the product required by this DID meets the intent and requirements of DODINST 5000.2.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Instructional Performance Requirements Document shall provide the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter",
+          "content": "The content of front matter shall be in accordance with Appendix A of MIL-PRF-29612B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Introduction",
+          "content": "The introduction shall specify the purpose, scope, and intended use of the Instructional Performance Requirements Document, as well as the background information and a description of the methodology used in each of the analyses utilized to develop the information.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Part 1: Mission, and collective and individual task data",
+          "content": "The task data contains the requirements for the mission, and collective and individual tasks as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Mission information",
+              "content": "This data shall consist of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Organization",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Echelon",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Mission objectives",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Stated missions related to unit mission",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Implied missions related to each stated mission",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Mission scenarios (e.g., combat functions, aircrew, tank crew)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "A description of the segments for each of the missions",
+                  "content": "(Each mission phase or segment consists of a collection of related functions and tasks with a common outcome, timing, and contribution to total mission performance.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Mission profile to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.8.1",
+                      "title": "Mission map and chart descriptions",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.8.2",
+                      "title": "Graph and scale descriptions",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.8.3",
+                      "title": "System and operator requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Collective and individual task information",
+              "content": "The task information shall consist of the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Analyst and reviewer identification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Date of analysis",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Task category (i.e., collective or individual)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Learning Outcomes",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.4.1",
+                      "title": "Knowledge",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.2",
+                      "title": "Skill",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.3",
+                      "title": "Abilities",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.4.4",
+                      "title": "Attitudes",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "Learning domain",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "Task identification number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.7",
+                  "title": "Task title",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.8",
+                  "title": "Task description, to include a single unit of specific work behavior with clear beginning and ending points",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.9",
+                  "title": "Task performance steps",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.10",
+                  "title": "Subordinate tasks for each task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.11",
+                  "title": "Elements within each subordinate task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.12",
+                  "title": "Task conditions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.13",
+                  "title": "Task standards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.14",
+                  "title": "Initiating cues",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.15",
+                  "title": "Tools, equipment, and materials related to the task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.16",
+                  "title": "Performance measures for each task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.17",
+                  "title": "Relationship of collective tasks to individual tasks",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.18",
+                  "title": "List of all individual tasks for each collective task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.19",
+                  "title": "Occupational specialties performing task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.20",
+                  "title": "Skill levels performing task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.21",
+                  "title": "Proficiency codes for each task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.22",
+                  "title": "Relationship of tasks to each mission",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.23",
+                  "title": "Environmental, safety, and risk analysis requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.24",
+                  "title": "Proponent related to task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.25",
+                  "title": "Organization related to task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.26",
+                  "title": "Echelon related to task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.27",
+                  "title": "Training task selection criteria for each task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.27.1",
+                      "title": "Criticality of performance value",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.2",
+                      "title": "Frequency of performance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.3",
+                      "title": "Probability of inadequate performance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.4",
+                      "title": "Consequence of inadequate performance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.5",
+                      "title": "Training emphasis rating",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.6",
+                      "title": "Difficulty of performance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.7",
+                      "title": "Task delay tolerance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.8",
+                      "title": "Susceptibility to skill decay",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.9",
+                      "title": "Percentage of personnel, by occupational specialty and skill level, who perform the task",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.27.10",
+                      "title": "Task completion time",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.28",
+                  "title": "Identification number and title of the following type references to the task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.28.1",
+                      "title": "Manning documents",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.28.2",
+                      "title": "Field manuals and doctrinal publications",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.28.3",
+                      "title": "Technical manuals",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.28.4",
+                      "title": "Equipment requirement documents",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.28.5",
+                      "title": "Basis of issue plan",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.29",
+                  "title": "Combat functions related to the task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.30",
+                  "title": "System related to task (e.g., weapon system, information system, management system)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.31",
+                  "title": "Information requirements shall include input information, decision/judgmental requirements, information processing information, control adequacy of feedback response, and acceptable feedback results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.32",
+                  "title": "Diagram requirements shall include task diagrams to clarify task descriptions where applicable",
+                  "content": "(Diagram types include tabular, functional flow, hierarchical input and output process, operational sequence, and others.)",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Task lists",
+              "content": "The task lists shall be comprised of:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "All collective task titles",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "All individual task titles",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Training data matrix",
+              "content": "The training data matrix shall identify the system level or subsystems/equipment, and the task to be performed. It shall also include a matrix listing of the system level and subsystem/equipment level.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Task information summary and clarification",
+              "content": "The summary shall include the data collector's qualification of collective and individual task information in the context of current and future operations.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Part 2: Training task data",
+          "content": "The training task data shall include listings of knowledge, skills, and attitudes for the tasks that have been selected for training. The training task data shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Training task lists",
+              "content": "Listings of training tasks shall be provided as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.1.1",
+                  "title": "Collective training tasks with knowledge, skills, and attitudes for each collective training task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.2",
+                  "title": "Individual training tasks with knowledge, skills, and attitudes for each individual training task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.2",
+              "title": "Collective and individual training task data",
+              "content": "Collective and individual training task data shall include the following for each task selected for training:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.2.1",
+                  "title": "Collective and individual training task data shall contain",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.2.1.1",
+                      "title": "An indication if the training task can be supported using job aids",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.2",
+                      "title": "Task category (i.e., collective or individual)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.3",
+                      "title": "Training task number",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.4",
+                      "title": "Training task statement",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.5",
+                      "title": "Training task conditions",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.6",
+                      "title": "Training task standards",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.7",
+                      "title": "Training task cues",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.8",
+                      "title": "Performance measures",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.9",
+                      "title": "Skill requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.10",
+                      "title": "Knowledge requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.11",
+                      "title": "Attitude requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.12",
+                      "title": "References",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.13",
+                      "title": "Instructional setting",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.14",
+                      "title": "Task learning difficulty",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.15",
+                      "title": "Notes",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.4.2.2",
+                  "title": "The training task hierarchies data shall establish relationships among training tasks by learning type (domain) and learning outcome",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.3",
+              "title": "Training exercise data",
+              "content": "Training exercise data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.3.1",
+                  "title": "Exercise title used for training each collective task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.2",
+                  "title": "Military training program number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.3",
+                  "title": "Exercise number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.4",
+                  "title": "Threat situation for exercise or drill",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.5",
+                  "title": "Results of war gaming exercise or drills",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.6",
+                  "title": "Objective of exercises or drills",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.7",
+                  "title": "Relationship of exercise with exercises of subordinate units",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.8",
+                  "title": "Approvals (e.g., analyst, reviewer, revisions) with dates",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.9",
+                  "title": "Operating systems supported by exercises",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.10",
+                  "title": "Training equipment required",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.11",
+                  "title": "List of all collective tasks associated with exercise",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.3.12",
+                  "title": "List of all individual tasks associated with exercise",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Part 3: Learning objectives data",
+          "content": "The Learning Objectives (LO) data shall include information related to the design of training courses as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Training course data",
+              "content": "Training course data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Course title",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Course mission statement",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "Course length",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "Class size data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "Learning Objectives",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.6",
+                  "title": "Knowledge, skills, attitudes, and information required for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.7",
+                  "title": "Trainee prerequisite knowledge and skills required for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.8",
+                  "title": "Hierarchies of LOs based on types and learning outcomes/domain",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.9",
+                  "title": "Collective training task LOs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.10",
+                  "title": "Individual training task LOs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.11",
+                  "title": "Strategy for combining, sequencing, and presenting LOs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.12",
+                  "title": "Setting for each course or LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.13",
+                  "title": "Learning events and activities for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.14",
+                  "title": "Media selected for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.14.1",
+                      "title": "Media by instructional progression: Introduce; Practice; Validate",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.15",
+                  "title": "Assessment measures and techniques",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.16",
+                  "title": "Instructional methods selected for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.17",
+                  "title": "Functional area supported by LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.18",
+                  "title": "Requirements and concerns for safety and environmental issues for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.19",
+                  "title": "Notes",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.20",
+                  "title": "Training sequence lists LO and sub tasks/items within the LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.20.1",
+                      "title": "Deleted",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.20.2",
+                      "title": "Deleted",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.20.3",
+                      "title": "Deleted",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.20.4",
+                      "title": "Deleted",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.21",
+                  "title": "Learning objective to training task cross-reference as follows",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.21.1",
+                      "title": "Lists of tasks supported by each LO, with task number, Topic, Unit or Program of Instruction number",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.1.21.2",
+                      "title": "LOs supporting each task, with task number, Topic, Unit or Program of Instruction number",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.1.22",
+                  "title": "References for each LO",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Learning objective hierarchies and flow diagrams",
+              "content": "These diagrams shall contain LOs arranged in a hierarchical relationship with flow diagrams to describe the superordinate, ordinate, subordinate, and sequential relationship among LOs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Learning analysis summary",
+              "content": "The learning analysis summary shall contain the mission statement, course objective, LO, and the knowledge, skills, and attitudes to support the LOs. The summary shall provide a listing of LOs and the knowledge, skills, and attitudes required to perform the tasks. The summary shall be arranged in a sequence appropriate for presentation.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Part 4: Knowledge, skills, abilities and attitudes analysis data",
+          "content": "This data shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Procedures",
+              "content": "This data shall describe the methods and procedures used to conduct the analysis of knowledge, skills, and desired attitudes. It shall also provide detailed narratives, descriptions, flow diagrams, and other information on any taxonomies, typologies, or classification strategies used to identify knowledge, skills, and abilities and attitudes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Performance profiles",
+              "content": "This data shall include evaluation results and profiles for each task identified as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Perceptual/motor skills",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "Cognitive tasks",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "Knowledge requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.4",
+                  "title": "Information processing skills",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.5",
+                  "title": "Desired abilities and attitudes",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Category of knowledge",
+              "content": "The category of knowledge (e.g., general, physical, functional interface, operational maintenance, documentation, etc.) and the associated item number for each knowledge required shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Category of skills",
+              "content": "The category of skills (e.g., operation, maintenance, etc.) and the associated item number for each skill required shall be provided",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Target population/entry skills analysis data",
+              "content": "This data describes the results of the target population analysis conducted for each unique population type. It shall include evaluation reports and skill and knowledge profiles. These reports shall also contain estimations of the degree of retention, comprehension, and proficiency the target student population already possesses for the task and task activities identified to be trained. (Results of this analysis data establishes the training requirements baseline for each personnel type.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Master task and skills data",
+              "content": "This data shall contain the master task and skills lists for each type personnel. Lists shall be provided that show codes assigned to knowledge, skills, and task proficiency and allocated to each qualification level for each type personnel skill area.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Part 5: Mission Performance Standards (MPS)",
+          "content": "The MPS shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Number and title of the unit task",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Combat conditions under which each unit task will be performed to include any equipment, tools, or manuals available to the unit as well as any environmental constraints",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Criteria that constitute acceptable performance of the unit task",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Evaluator instructions that provide general information which will be useful during the evaluation process",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "The designation (KI) shall be placed at the end of each statement of standards, to identify standards that are essential to unit performance of a task or that require additional explanation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Individual Training Standards (ITS)",
+          "content": "The ITS shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "ITS system data",
+              "content": "ITS system data shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.1.1",
+                  "title": "Occupational field title",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.2",
+                  "title": "Job data to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.8.1.2.1",
+                      "title": "Job description",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.1.2.2",
+                      "title": "Functional area title",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.8.1.2.3",
+                      "title": "Occupational specialty skills titles",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.8.1.3",
+                  "title": "Description of the ITS development process",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.4",
+                  "title": "ITS numbering system description",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.5",
+                  "title": "Description of the use of ITSs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.6",
+                  "title": "Description of the maintenance of ITSs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.7",
+                  "title": "Listing of training devices and equipment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.8",
+                  "title": "Listings of ordnance and other expendables required",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.1.9",
+                  "title": "Environmental and safety hazards descriptions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.2",
+              "title": "ITS listings",
+              "content": "ITS listings shall be provided for each occupational field duty area as follows:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.2.1",
+                  "title": "Task description",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.2",
+                  "title": "Conditions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.3",
+                  "title": "Standards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.4",
+                  "title": "Performance measures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.5",
+                  "title": "Performance steps",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.6",
+                  "title": "References",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.2.7",
+                  "title": "Administrative instructions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.3",
+              "title": "Index of tasks",
+              "content": "This index shall include an explanation of all abbreviations and shall also include the following information in table format:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.3.1",
+                  "title": "Task number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.2",
+                  "title": "Task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.3",
+                  "title": "Formal School (FS)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.4",
+                  "title": "Managed On the Job Training/Sustainment (MOJT/SUST)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.3.5",
+                  "title": "Lowest grade required to perform this task",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.4",
+              "title": "Common ITS listing",
+              "content": "This listing shall include a cross-reference of ITS common to more than one occupational skill area within an occupational field. The listing shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.8.4.1",
+                  "title": "General (explains the common listing)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.2",
+                  "title": "Format (explains the format of the common listing)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.8.4.3",
+                  "title": "Task titles, listed in one column with the common task numbers listed in a second column",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.8.5",
+              "title": "Table of contents",
+              "content": "A listing of task numbers and titles shall be given for each duty area.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Standard digital data",
+          "content": "Standard digital data shall be delivered for the Standard Data Elements (SDEs).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81518D.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

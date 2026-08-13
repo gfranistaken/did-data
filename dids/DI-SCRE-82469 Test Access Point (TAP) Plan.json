@@ -1,0 +1,175 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SCRE-82469",
+  "slug": "di-scre-82469",
+  "title": "Test Access Point (TAP) Plan",
+  "summary": "Specifies the format and content for the Test Access Point (TAP) Plan, which records interface and data collection information for placing TAPs on the network to support defensive cyber operations tools.",
+  "approval_date": "2025-01-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10529",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19",
+  "project_number": "SCRE-2025-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The TAP Plan provides a record of all interface and data collection information (such as drawings, diagrams, tables, and textual information for placing Test Access Points (TAPs) on the network) generated for the project in order to collect the data needed for defensive cyber operations tools. The TAP Plan should be used with the Interface Control Document (ICD) and be jointly developed by the mission system program office, the defensive cyber program office and applicable cyber operations unit. (Refer to DI-SESS-81248B, Interface Control Document (ICD) for guidance).\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-81248B",
+    "DI-SESS-81785"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The TAP Plan shall be prepared in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The TAP Plan shall be consistent with the government Systems Engineering Plan (SEP) and the contractor's SEMP, if available. (Refer to DI-SESS-81785, Systems Engineering Management Plan (SEMP) for guidance.) The TAP Plan shall identify:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "All interface and data collection information for the project",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A revision record for all interface information for the project, including release dates",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "A cross-reference listing relating all interface information for the project to the configuration items and system elements to which they apply",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "A description of the physical and functional relationships between all interface and data information for the project",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The links to the actual documentation defining the interface and data information for the project",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Methodologies for determining the type, number and placement of TAPs to collect the necessary data to provide to the defensive cyber operations suite of tools",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Identify critical mission data flows",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Identify cyber threats and cyber key terrain to the mission system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Identify critical data to be collected",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "The plan for placement of TAPs and the data to be collected, transported and stored",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "The plan for physical infrastructure for installation (e.g. include equipment racks, cabling, power and cooling requirements)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "The plan for aggregating data collected by the TAPs",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "The methodology and plan to ensure security of all data",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Documentation of interfaces and connections",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Appendices",
+          "content": "This section shall contain any general information that aids in the understanding of the TAP Plan (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in the TAP Plan and a list of any terms and definitions needed to understand the TAP Plan.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SCRE-82469.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

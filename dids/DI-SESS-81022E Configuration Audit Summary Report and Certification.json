@@ -1,0 +1,94 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81022E",
+  "slug": "di-sess-81022e",
+  "title": "Configuration Audit Summary Report and Certification",
+  "summary": "Provides a listing of text and marked-up technical documents that identify discrepancies between materiel and applicable technical documents, plus certification that the configuration audit was completed and discrepancies adjudicated.",
+  "approval_date": "2020-02-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10145",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "NM",
+  "project_number": "SESS-2020-008",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Configuration Audit Summary Report and Certification provides a listing of text and marked-up technical documents (e.g., specifications, engineering drawings) that identify discrepancies between the materiel (including software) and the requirements delineated in the applicable technical documents. The Configuration Audit Summary Report and Certification also provides a documented certification that the audit was completed and any discrepancies have been properly adjudicated.\n\na. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in EIA-649-1 and the principles of EIA-649 (Copies of these standards are available online at www.sae.org or from SAE International, 400 Commonwealth Drive, Warrendale, PA 15096-0001, Tel 877-606-7323 [inside USA and Canada] or 724-776-4970 [outside USA]).\n\nb. This DID is applicable to contracts that require the Supplier to perform a configuration audit of materiel and applicable technical documents. Both the Configuration Audit Summary Report and Configuration Audit Certification shall be required when this DID is invoked.\n\nc. This DID may be used in conjunction with a contractual requirement for a Functional Configuration Audit (FCA), Physical Configuration Audit (PCA), or any other audit used to identify discrepancies between materiel and the applicable technical documents.\n\nd. This DID supersedes DI-SESS-81022D.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81022D"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "SAE International",
+      "url": "https://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Configuration Audit Summary Report and Certification shall be in Supplier format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Report and Certification shall describe the Supplier's processes and procedures for Configuration Audits and Configuration Audit Certification and shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "List text and marked-up technical documents",
+          "content": "List text and marked-up technical documents that identify discrepancies between the materiel and the requirements delineated in the technical documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Certification of configuration audit completion",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Documentation of adjudication of identical discrepancies",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81022E.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

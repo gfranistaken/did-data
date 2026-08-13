@@ -1,0 +1,767 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-82313",
+  "slug": "di-saft-82313",
+  "title": "Environmental, Safety, and Occupational Health (ESOH) Plan",
+  "summary": "Defines how the contractor complies with applicable federal, state, and local environmental, safety, and occupational health laws through the contractor's ESOH Plan deliverable.",
+  "approval_date": "2020-03-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10162",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "184 (AFLCMC/WLS)",
+  "project_number": "SAFT-2019-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Environmental, Safety, and Occupational Health (ESOH) Plan defines how the contractor complies with all federal, state, and local environmental, safety, and occupational health laws.  The requirements define the contractor's ESOH Plan. Refer to Enclosure 3, paragraph 16, of the Department of Defense Instruction (DoDI) 5000.02T, Operation of the Defense Acquisition System, for guidance.  (Copies of this document are available online at https://www.esd.whs.mil/Directives/issuances/dodi/.)\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DoDI 5000.02T, Operation of the Defense Acquisition System",
+      "url": "https://www.esd.whs.mil/Directives/issuances/dodi/"
+    },
+    {
+      "label": "DoDM 5200.01, Volume 2, DoD Information Security Program: Marking of Information",
+      "url": "https://www.esd.whs.mil"
+    },
+    {
+      "label": "DoDI 5230.24, Distribution Statements on Technical Documents",
+      "url": "https://www.esd.whs.mil"
+    },
+    {
+      "label": "40 CFR, Chapter I, Subchapter C, Parts 50-99 (Air Quality)",
+      "url": "https://www.ecfr.gov/"
+    },
+    {
+      "label": "MIL-STD-882, System Safety",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor's format is acceptable",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The ESOH plan shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title page requirements",
+          "content": "A title page specifying the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Title or identification of the program",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Title of document",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Preparing activity and contractor's Safety and Health Manager",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Security Classification, when required",
+              "content": "in accordance with Department of Defense Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information.  (Copies of this document are available online at https://www.esd.whs.mil.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Distribution Statement, as appropriate",
+              "content": "in accordance with DoDI 5230.24, Distribution Statements on Technical Documents.  (Copies of this document are available online at https://www.esd.whs.mil.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Date of ESOH Plan generation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Additional ESOH plan content",
+          "content": "The ESOH plan shall also include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "A description of roles and responsibilities regarding program safety",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Contractor's procedures for ensuring compliance with health and safety standards",
+              "content": "including in the following areas:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "1",
+                  "title": "ESOH required elements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "a",
+                      "title": "General - People",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Pedestrian crosswalks",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Walking and working surfaces",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Housekeeping",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Confined space program elements",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Personal protective equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Respiratory protection program elements",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Hearing conservation program elements",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Medical and first aid",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "9",
+                          "title": "Fire protection and prevention",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "10",
+                          "title": "Flammables and combustibles",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "11",
+                          "title": "Composite materials",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "b",
+                      "title": "Environmental and Safety",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "National Environmental Policy Act (NEPA)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Air Quality",
+                          "content": "(Applicable Air Quality Laws, 40 Code of Federal Regulations (CFR), Chapter I, Subchapter C, Parts 50-99)  (Copies are available online at https://www.ecfr.gov/.)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Water Resources",
+                          "content": "(40 CFR, Chapter I, Subchapter D, Parts 100-149)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Land Use, Geology, and Soils",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Pesticides",
+                          "content": "(40 CFR, Chapter I, Subchapter E)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Radiation Protection",
+                          "content": "(40 CFR, Chapter I, Subchapter F, Parts 190-197)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Noise Abatement",
+                          "content": "(40 CFR, Chapter I, Subchapter G, Parts 201-211)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Spill Prevention and Clean-up",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "9",
+                          "title": "Reproductive Hazards",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "10",
+                          "title": "Solid Waste",
+                          "content": "(40 CFR, Chapter I, Subchapter I, Parts 239-299)",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "11",
+                          "title": "Toxic and Hazardous Substances",
+                          "content": "(Toxic Substance Control Act and Lead and Oil Based Paint, Asbestos, Inventory, etc. (40 CFR, Chapter I, Subchapter R, Parts 700-799))",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "12",
+                          "title": "Hazardous Materials Usage, Tracking, and Reporting",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "13",
+                          "title": "Hazardous Communications",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "c",
+                      "title": "General - Equipment",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Motor vehicles",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "System modifications altering form, fit, or function",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "General environmental controls",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "d",
+                      "title": "Material Related",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Materials handling and storage",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Machinery and machine guarding",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Hand and portable powered tools and other hand-held equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Painting and paint removal",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Cleaning and corrosion control",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "e",
+                      "title": "Air and Liquids",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Handling, storage, and use of flammable and combustible liquids",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Compressed gas and compressed air equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Liquid gaseous oxygen and cryogenics",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "f",
+                      "title": "Electrical",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Electrical",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Soldering",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Electronic and electrostatic discharge sensitive components",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Hazardous energy control program elements (lockout-tagout)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Grounding and bonding of aircraft and avionics equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "g",
+                      "title": "Airfield and Facilities",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Airfield criteria",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Foreign Object Damage (FOD) awareness, prevention, and responsibilities",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Aircraft towing, parking, and mooring",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Hangaring of fueled aircraft",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Aircraft jacking operations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Fueling and defueling operations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Airfield rescue and firefighting capabilities",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Severe weather plan",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "h",
+                      "title": "Aircraft Specific",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Aircraft maintenance",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Egress and escape systems",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Cleaning and corrosion control of aircraft",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Aircraft painting and paint removal operations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Fluid purging of aircraft",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Fuel tank and fuel cell repair",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Fuel tank and cell foam removal, drying, storage, and installation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Removal and installation of aircraft engines",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "9",
+                          "title": "On-aircraft engine operations and engine runs",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "10",
+                          "title": "Acceptance and functional check flights and maintenance operation checks",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "11",
+                          "title": "Contractor's flight and ground operations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "i",
+                      "title": "Elevated Surfaces",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "General fall protection",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Work stands and platforms",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Scaffolding",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Personal protective equipment for aerial lift devices",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Powered platforms, man-lifts, and vehicle-mounted work platforms",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Aerial lift equipment",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Contractor aerial lift devices",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Cranes, derricks, hoists, elevators, and conveyors",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "j",
+                      "title": "Weapon Related",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Explosive safety requirements",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "k",
+                      "title": "Mishap Notification",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "l",
+                      "title": "Inspections",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "m",
+                      "title": "Training",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "c",
+              "title": "Risk",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "1",
+                  "title": "Identify and provide analysis of all risks",
+                  "content": "Identify and provide analysis of all risks identified per section 4 of MIL-STD-882, System Safety.  (Copies of this document are available online at https://quicksearch.dla.mil.)",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-82313.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

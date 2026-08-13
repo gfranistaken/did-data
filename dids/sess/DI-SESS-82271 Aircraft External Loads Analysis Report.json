@@ -1,0 +1,164 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82271",
+  "slug": "di-sess-82271",
+  "title": "Aircraft External Loads Analysis Report",
+  "summary": "Specifies requirements for the Aircraft External Loads Analysis Report, which documents the magnitude and distribution of all applied and induced external loads an aircraft structure may encounter within its design envelope.",
+  "approval_date": "2019-05-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10036",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11",
+  "project_number": "SESS-2019-020",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Aircraft External Loads Analysis Report is used to obtain data that establishes, in detail, the magnitude and distributions of all applied and induced external loads which the aircraft structure may encounter when operated within the design envelope established by the structural design criteria.\n\na. This report is applicable to all programs as described in MIL-STD-1530, Aircraft Structural Integrity Program (ASIP).  (Copies of this document are available online at https://quicksearch.dla.mil.)  MIL-STD-1530 is applicable to all aircraft the United States Air Force (USAF) acquires, uses, or leases.\n\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nc. This DID interfaces with DI-SESS-82122, Structural Design Criteria (SDC) Report (Aircraft).  (Copies of this document are available online at https://quicksearch.dla.mil.)\n\nd. This DID supersedes canceled DI-S-30588.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-S-30588"
+  ],
+  "related_dids": [
+    "DI-SESS-82122"
+  ],
+  "references": [
+    {
+      "label": "MIL-STD-1530",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "DI-SESS-82122",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The specific approaches used for development of external loads on the aircraft shall be documented in the Aircraft External Loads Analysis Report in accordance with the requirements of 5.2.2 in MIL-STD-1530.  The documented approaches shall encompass all items procured under the contract and defined in the scope of work, including installation of Government-furnished equipment (GFE).  The data provided shall include the magnitude and distribution of static and dynamic loads which the aircraft structure may encounter when operated within the envelope established by the structural design criteria.  This data shall also breakout the flight loads, ground loads, power plant loads, control system loads, and weapon effects loads from which design limit and design ultimate loads are established.  The Aircraft External Loads Analysis Report shall include the effects of temperature, aeroelasticity, and dynamic response of the aircraft structure.  The report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Design Criteria",
+          "content": "Pertinent design criteria (refer to DI-SESS-82122).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Flight Loads",
+          "content": "Determination of magnitudes and distribution of all flight loading conditions (air and inertial) based on airframe response to pilot induced or autonomous maneuvers, loss of control maneuvers, gust and turbulence (considering both required and expected to be encountered critical combinations of configurations, gross weights, centers of gravity, thrust or power, altitudes, speeds, and type of atmosphere).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "Ground Loads",
+          "content": "Determination of magnitudes and distribution of all ground loading conditions (considering both required and expected to be encountered for critical combinations of configurations, gross weights, centers of gravity, landing gear and tire servicing, external environments, thrust or power, and speeds).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Miscellaneous Loads",
+          "content": "Determination of magnitudes and distribution of all miscellaneous loading conditions, to include: flight control devices, internal pressurized systems, fuel slosh, system failures, crash loads, bird strike and foreign object damage (FOD), engine mount loads, aerial delivery, escape capsules, floors and ramps, stores and missiles, launchers and associated suspension structures, and weapons effects.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Dynamic Loads",
+          "content": "Determination of the magnitudes of all dynamic loads in such areas as: gust, abrupt maneuver, taxi, landing, air drop, launch, handling, and shipping.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "Service Loads",
+          "content": "Determination of the magnitudes of all the repeated loads to be included in the service loads spectra.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "Limit Loads",
+          "content": "Maximum and most critical combination of loads which can result from authorized ground and flight use of the air vehicle, including: maintenance activities, system failures from which recovery is expected, a lifetime of usage, and all loads whose frequency of occurrence meets the requirements specified in 5.5.6 of MIL-STD-1530.  This information shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "The loading conditions and associated loads",
+              "content": "The loading conditions and associated loads that are selected by the contractor as being the critical design loading conditions (along with the basis for condition selection).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(2)",
+              "title": "Discussion of design features",
+              "content": "Discussion of design features which affect the determination of critical conditions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(3)",
+              "title": "Detailed presentation of the method of analysis",
+              "content": "Detailed presentation of the method of analysis and sample calculations for determining the critical design loads.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(4)",
+              "title": "Gross weights, load factors, methods, and assumptions",
+              "content": "Gross weights, load factors, methods, and assumptions used in the calculations of loads or component loads for critical conditions.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "h",
+          "title": "Allowable loads envelopes",
+          "content": "Allowable loads envelopes for each component group enumerating the conditions for which loads have been determined.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82271.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82269",
+  "slug": "di-sess-82269",
+  "title": "Structural Risk Analysis Report",
+  "summary": "Provides an evaluation of a potential structural hazard's severity and probability of occurrence to document structural risk analyses for design analyses, development testing, and force management execution.",
+  "approval_date": "2019-05-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10034",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2019-021",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Structural Risk Analysis Report provides an evaluation of a potential structural hazard's severity and probability of occurrence.  Potential structural hazards include structural failures that can cause injury or death to personnel, damage to or loss of the aircraft, and dropped objects in flight resulting in reduction of mission readiness and availability.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the risk analysis work described in Tasks II and V of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP), to document structural risk analyses for Design Analyses and Development Testing and Force Management Execution.  (Copies of this document are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "https://quicksearch.dla.mil",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor's electronic format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Structural Risk Analysis Report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "System description",
+          "content": "This section can be developed by referencing other program documentation, such as: technical manuals, system program plan, system specification, etc., and shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "A general description of the airframe",
+              "content": "and its components, including: any unique or non-conventional materials, joining methods, and physical characteristics of the structure.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(2)",
+              "title": "A summary of planned and completed",
+              "content": "structures development tests (e.g., element, component, and full-scale tests), to include: test findings and a summary of relevant in-service damage data that supports the risk assessment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(3)",
+              "title": "Photos, charts, flow or functional diagrams",
+              "content": "sketches, and schematics, as applicable, to support the system description, tests, and damage findings.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "b",
+          "title": "Risk Evaluation (Single Flight Probability of Failure)",
+          "content": "This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "A description of the probabilistic analysis",
+              "content": "methods and software used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(2)",
+              "title": "A description of the aircraft component",
+              "content": "subcomponent, or detail part considered in each risk analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(3)",
+              "title": "Documentation of deterministic input data sources",
+              "content": "assumptions, and data used in the risk analysis, such as:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(a)",
+                  "title": "Static strength analysis for overload structural",
+                  "content": "risk analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(b)",
+                  "title": "Durability and damage tolerance analysis for",
+                  "content": "fatigue cracking structural risk analysis.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "(4)",
+              "title": "Documentation of the probabilistic input data",
+              "content": "sources, assumptions, and data used in the risk analysis, such as:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(a)",
+                  "title": "Part dimension variability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(b)",
+                  "title": "Material static strength property variability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(c)",
+                  "title": "Maximum stress exceedance per flight distribution",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(d)",
+                  "title": "Material crack growth rate variability",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(e)",
+                  "title": "Material fracture toughness distribution",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(f)",
+                  "title": "Equivalent Initial Damage Size (EIDS) distribution at manufacture",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(g)",
+                  "title": "Probability of Detection (POD) function for inspection method",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(h)",
+                  "title": "Equivalent Repair Damage Size (ERDS) distribution for the anticipated repairs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "(5)",
+              "title": "Documentation of results of the risk analysis",
+              "content": "to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(a)",
+                  "title": "Predictions of probability of failure",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(b)",
+                  "title": "Predictions of the onset of wide-spread fatigue",
+                  "content": "damage and loss of fail-safety, both as a function of flight hours, if applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(c)",
+                  "title": "A description of parametric evaluations to assess",
+                  "content": "the sensitivity of the risk analysis results to the uncertainties in the deterministic and probabilistic inputs.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "c",
+          "title": "Risk Mitigation Planning (i.e., corrective actions)",
+          "content": "This section shall describe the risk mitigation options for structural components with a probability of catastrophic failure exceeding 10-7 per flight, such as:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "Operational restrictions",
+              "content": "(e.g., load factor restriction, weight restriction, airspeed restriction, reduced certified service life).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(2)",
+              "title": "Preventive maintenance provisions",
+              "content": "(e.g., inspections, repairs, modifications, replacement).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "d",
+          "title": "Risk Mitigation Implementation",
+          "content": "This section shall describe implementation of corrective actions, such as: documentation of operational restrictions in the flight manual and documentation of preventive maintenance provisions in the Force Structure Maintenance Plan and corresponding Technical Orders.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82269.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

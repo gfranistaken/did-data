@@ -1,0 +1,209 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81924",
+  "slug": "di-sess-81924",
+  "title": "Process Review Report",
+  "summary": "The Process Review Report documents the examination and evaluation of a current, active process against one or more quality standards, including any scores, ratings, or grades required.",
+  "approval_date": "2013-07-10",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "F9387",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "AF-84",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Process Review Report demonstrates that a current, active process has been examined and evaluated against one or more quality standard(s).  It assigns any scores, ratings, or grades required by the standard(s).\n\na.  Use this DID for reports resulting from process reviews carried out by contractors or governmental entities based on relevant quality standards.  The term review shall be used herein to encompass any inspection, audit, evaluation, assessment, analysis, or similar event involving an examination relative to a fixed standard.  Any reference to a reviewer shall be understood to include an inspector, auditor, evaluator, assessor, analyst, or examiner.  All references to standards shall be understood to mean specific, identified, codified, published quality standards.  Associated measures of value or worth are also included within the scope of quality, such as, but not limited to, reliability, effectiveness, utility, surety, feasibility, practicability, maintainability, producibility, or sustainability.\n\nb.  This DID is applicable when a Government organizational unit enters into a contract, interagency agreement, or other formal relationship where a process is reviewed with respect to one or more quality standards (internal, governmental, or third party).  All references to a contract herein shall be understood to refer to any agreement made in writing between the audited unit and the auditing entity.\n\nc.  This DID also applies when the unit (or firm) performs an internal process review or self-review of its process.  If the objective is for an external or independent party to carry out or supervise the review, such a requirement must be specified and defined by contract.\n\nd.  Within the scope of this DID, a process consists of a procedure, a systematic series or cluster of functions or activities, or a defined series of procedures that yield one or more distinct (but related) results, intermediate products, or end products.\n\ne.  This DID applies only to review of those processes that are active or in use, even if only on a pilot scale or for a trial period.  It does not apply to a pre-emptive or preparatory review of a process that either is under development or has not yet been implemented.  The review shall be geared towards determining (1) the success of a process in contributing to the value stream, which means that outputs, metrics, and records must exist for a process to be properly reviewed, (2) general compliance and conformance with written guidance and direction, (3) whether compliance and conformance yield results that contribute to the value stream, and (4) any areas where improvement is required or encouraged.\n\nf.  This DID applies to reports resulting from process reviews that support one or more standards with requirements for process review related to monitoring, surveillance, accreditation, certification, or validation.\n\ng.  All kinds of processes may be subjected to review for quality.  For example, processes may be administrative, industrial, manufacturing, logistical, descriptive, engineering, calculational, computational, analytical, investigatory, or evaluative in nature.\n\nh.  Some examples of processes that may be reviewed for quality are as follows:  correcting a technical order, approving an operating instruction, seeking engineering guidance on a nonconforming part, extending shelf-life for paints and coatings, applying sealant to an aircraft, use of the government purchase card, procuring hazardous materials, drum peel testing of bonded sandwich (honeycomb) composites, autoclaving of bonded metal parts, or installation of sheet metal on an aircraft wing.\n\ni.  In some cases, processes represent activities of short duration and with few steps (e.g., lap shear testing of bonded metal coupons).  In other cases, processes may include significant activities performed under a major program (e.g., shelf-life extension of paints and coatings).  Because the scope of a process may be very broad, the review may be narrowly focused on its application for specific products, a set of subprocesses, or a specific pathway through the value stream.\n\nj.  This DID can be achieved only when the reviewers possess those certifications, accreditations, skills, knowledge, or other credentials required pursuant to the relevant standard. Likewise, the employing firm or agency must also have the certification, accreditation, or other credentials requisite for the review.\n\nk.  Some examples of entities producing third-party standards to which this DID could apply are as follows: International Organization for Standardization (ISO), American Society for Quality (ASQ), American National Standards Institute (ANSI), International Electrotechnical Commission (IEC), and the Society of Automotive Engineers (SAE).  This DID can also apply when the standard is created or owned by the organization or a Government agency (e.g., the Food and Drug Administration, Environmental Protection Agency, or Occupational Safety and Health Administration). Reviews in support of a third-party standard typically will not be carried out by the third-party organization creating or promulgating the relevant quality standard.\n\nl.  Some examples of third-party quality standards to which this DID could apply are as follows:  ISO9001 (Quality Management Systems - Requirements), ISO/IEC17025 (General Requirements for the Competence of Testing and Calibration Laboratories), ANSI/ISO/ASQ Q9001 (Quality Management Systems - Requirements), and SAE AS9100 (Quality Management Systems: Aerospace Requirements). This DID can also apply when the standard is internal to the organization or a governmental standard (e.g., EPA or FDA Good Laboratory Practices or OSHA Voluntary Protection Program).\n\nm.  This DID may be used alone or in conjunction with other DIDs.\n\nn.  This DID may be used when the Government requires a report of a process review for a non-governmental entity.\n\no.  This DID is a first issuance and does not supersede any other DID.\n\np.  This DID applies to items with various names, such as process audit report, process review report, process quality review report, process quality audit report, process effectiveness evaluation report, and process effectiveness assessment report.  The word report may be substituted with another word, such as document, digest, study, white paper, or analysis.  The word report may be omitted altogether from the title of the actual deliverable when it is clear that the deliverable is a report or document.  Analogous terms may be used to identify a process review report consistent with the verbiage of any specific quality management system or standard so long as the deliverable represents a work product similar in form, intent, and purpose.  Note that the title on this DID must be used in Block 2 of DD Form 1423, Contract Data Requirements List; however, the preferred name or verbiage in the standard may be placed in the Remarks (Block 16) on DD Form 1423 for clarity.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-81921"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "Relevant quality standard(s) shall be identified by contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content",
+      "content": "Reports generated under this DID shall conform to the following requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "State name and commonly used abbreviation/identifier/number",
+          "content": "(Mandatory) State name and commonly used abbreviation/identifier/number for each relevant standard.  See examples in paragraph k under the heading Use/relationship.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "State name of entity (contractor or Governmental unit)",
+          "content": "(Mandatory) State name of entity (contractor or Governmental unit) performing the process review.  Clearly differentiate external (independent) reviews from internal (self) reviews.  If not provided elsewhere, include any registration/certification number or other unique identifier needed to verify credentials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "State contract number and data item number",
+          "content": "(Mandatory) State contract number and data item number from DD Form 1423, Contract Data Requirements List (CDRL).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Provide legible name of authoring reviewer",
+          "content": "(Mandatory) Provide legible name of authoring reviewer with signature.  If more than one reviewer has contributed to the report, then a lead reviewer shall be indicated by placing an asterisk (*) next to that name. Whenever there are multiple contributors, the lead reviewer shall sign the report. Always include the names of all reviewers.  If not provided elsewhere, include any registration/certification number or other unique identifier needed to verify credentials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "State date (or range of dates)",
+          "content": "(Mandatory) State date (or range of dates) the review was performed.  If the report is to be issued or delivered more than 10 calendar days after a site visit or on-site inspection is completed, then the date of issuance shall also be given on the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "State name of process that was reviewed",
+          "content": "(Mandatory) State name of process that was reviewed with sufficient detail and specificity to be readily, clearly, and uniquely identifiable.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "List or describe physical areas",
+          "content": "(Mandatory) List or describe physical areas (e.g., buildings, shops, or lines), conceptual or subject areas (e.g., engineering, supply, training, regulatory, material, equipment, recordkeeping), controlling/guiding documents (e.g., instructions, technical orders, chapters, steps, job aids, process guides, forms), and records examined, analyzed, evaluated, or otherwise considered.  Sufficient explanation or description shall be provided to meet industry standards of accuracy, precision, coherence, clarity, emphasis, traceability, verifiability, and auditability.  At a minimum, the report must cover all matters that are explicitly called out for consideration by the relevant quality standard(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "State any rating(s), grade(s), or score(s)",
+          "content": "(Mandatory) State any rating(s), grade(s), or score(s) pursuant to the scheme(s) outlined in or mandated by the relevant quality standard(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "State period(s) covered by report",
+          "content": "(Optional) State period(s) covered by report, dates on which site visits or on-site reviews occurred, and/or the contract period of performance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "State other information specified by contract",
+          "content": "(Optional) State other information specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "Give other relevant information",
+          "content": "(Optional) Give other relevant information (including observations or comments) at the discretion of the reviewer or reviewing entity.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "The report shall meet the following requirements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Paper shall contain at least 30%",
+          "content": "Paper shall contain at least 30% post-consumer recycled matter pursuant to Executive Order 13101.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Use letter size paper",
+          "content": "Use letter size paper (8 1/2 inches by 11 inches) that is white or light-colored (ensure color does not produce darkened image when photocopied).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Reports may be typed or legibly handwritten",
+          "content": "Reports may be typed or legibly handwritten at the discretion of the auditor or reviewer.  For reports completed incident to a site visit or on-site inspection, it is recognized that a handwritten report may be the easiest, fastest, and cheapest way to provide the information to the Government.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Report format shall be determined largely",
+          "content": "Report format shall be determined largely by the reviewer or the reviewing entity, subject to any explicit requirements mandated by the relevant quality standard(s) or by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "At least one hard copy",
+          "content": "At least one hard copy of each report shall be provided to the Government.  If more copies are to be provided, the contract shall state the number of copies explicitly.  Photocopies shall be as good as originals.  The requirement for a hard copy report may be waived by the Government's designated recipient for the report (normally a technical contact or quality program manager) upon receiving a satisfactory electronic version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "All text, logos, and names",
+          "content": "All text, logos, and names on hard copy reports (or copies thereof) must be legible.  Ink and toner colors must be such that the salient information is reproducible by photocopying.  Minor losses in image quality (such as faint borders or designs unrelated to the salient information) that occur during photostatic reproduction are tolerable. If both sides of the paper are used, the paper weight/thickness shall be such that the print/writing does not bleed through during photostatic reproduction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Individual format requirements may be waived",
+          "content": "Individual format requirements may be waived or modified by contract. Additional/other format requirements may be specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Electronic versions of reports may be required",
+          "content": "Electronic versions of reports may be required or substituted for hard copies by contract.  If electronic versions are specified without further elaboration, the default file type shall be Adobe portable document format (PDF) with handwritten (cursive/payroll) signatures (no digital signatures) embedded in the digital versions.  Any specific requirements for electronic versions beyond what is stated in this DID shall be explicitly stated by contract (e.g., file format, digital signature use/verification).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Multiple process review reports may be",
+          "content": "Multiple process review reports may be consolidated into a single document, provided that information for each process review is clearly delineated.  Process review reports may be appended to or incorporated into quality audit site visit reports (see DID DI-SESS-81921, titled Quality Audit Site Visit Reports) when the process reviews are conducted and completed entirely within a site visit.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81924.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

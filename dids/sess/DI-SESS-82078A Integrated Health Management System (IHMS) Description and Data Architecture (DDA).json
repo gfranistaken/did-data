@@ -1,0 +1,386 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82078A",
+  "slug": "di-sess-82078a",
+  "title": "Integrated Health Management System (IHMS) Description and Data Architecture (DDA)",
+  "summary": "Describes the Integrated Health Management System (IHMS), including its data architecture, subsystem/system design, testing, and diagnostic capabilities used to monitor system health and report faults for maintenance.",
+  "approval_date": "2021-07-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10259",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2021-017",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Integrated Health Management System (IHMS) Description and Data Architecture (DDA) provides a comprehensive description of the IHMS design of the system with detail pertaining to data architecture, design at the subsystem/system levels, testing, and any other detailed information critical to the full maturation of the IHMS. The IHMS is the essential functionality of the system to monitor its own health, collect all related parameters and report out failures and other maintenance related issues to the maintainer and/or operator for proper awareness of the system's functionality as well as corrective and preventative maintenance. IHMS includes, but is not limited to, all Built-In-Test (BIT) faults, mechanical diagnostics, exceedances and other health management state parameters to assess the health of the system.\n\nThis Data Item Description contains the format, content, and intended use information for the data product resulting from the work task described by the contract.\n\nThis DID supersedes DI-SESS-82078.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82078"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Required Documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "This data shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Summary of IHMS capabilities and ability",
+          "content": "to meet all Contract requirements (specification and SOO/SOW) related to IHMS and Diagnostics.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Description of all tasking related to",
+          "content": "the design and testing of the IHMS. This includes IHMS engineering tasks laid out as part of the product development schedule and all planned testing (to include planned dates) at the subsystem/system level to verify the performance of the IHMS. Also, include the layout of the IHMS engineering team during developmental testing and integration of that team with the government test team in assessing the IHMS numerical requirements (if applicable).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Description of the diagnostics capabilities of",
+          "content": "every subsystem down to the Weapons Replaceable Assembly (WRA) level. Include mapping of diagnostic design capabilities down to lower levels of indenture.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "(for Air Vehicles) Description of fault",
+          "content": "detection and isolation capabilities related to the Vehicle Management System (VMS) and integrated subsystems affecting the vehicle control function of an air vehicle. This includes analysis of how the BIT and pre-flight checks verify these systems/subsystems are operating normally and without latent failures in flight essential VMS functions prior to takeoff. Also include how detected failures to the VMS and integrated subsystems affecting the vehicle control function are reported to VMS processing computer(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Detailed architecture of the IHMS to include",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Subsystem and system level architecture analysis",
+              "content": "that shows the data paths for all fault/IHMS codes generated and sent within the system (between WRAs).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Data path for all WRA fault/IHMS",
+              "content": "codes sent to a central processing center (Mission Computer, health management computer, etc.) and onboard data storage devices.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "For unmanned systems, data path for",
+              "content": "all WRA fault/IHMS codes sent to the VMS and what autonomous actions are taken.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Architecture strategy of on-board vs off-board",
+              "content": "portions of the IHMS.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Data path and prioritization of all",
+              "content": "fault codes/IHMS data that is sent off board the system (i.e. maintenance computer, control station). This includes a description of the format of the fault logs that will be provided to the maintainers for proper troubleshooting and maintenance of the system as well as real time alerts to the operator.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Hierarchy of diagnostic coverage to address",
+              "content": "IHMS monitoring and reporting of safety and mission critical subsystems.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Strategy/architecture to integrate GFE IHMS solutions",
+              "content": "in to the overall system's single IHMS solution.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Detail of the software needed to",
+              "content": "implement the IHMS functionality including how the thresholds for each IHMS parameter and test can be changed as the system matures. Links to other software design documentation as needed. Component, Block, Class, and Activity Diagrams (under the UML standards or something similar) should be provided, wherever possible. If an API is available, detailed endpoint documentation should be required (using Swagger or something comparable). Further, providing a configuration management plan for the schema is desirable.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Detailed data dictionary of the IHMS to include",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "A listing of all fault codes",
+              "content": "including their formats at the WRA level as well as the system level. The format of the data shall be documented and exportable either in the Contractor format or as otherwise required by the Contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Inter-relationships of all WRA fault codes",
+              "content": "to each other.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Relationships of all WRA fault codes",
+              "content": "to their lower level Shop Replaceable Assembly (SRA) fault codes. (i.e. the hierarchy of the data).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Frequency of all BIT/other diagnostics checks",
+              "content": "stored onboard or sent off-board the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Listing of all other IHMS data",
+              "content": "collected to assess the health of the system (ex. temperatures, pressures, speeds) with update rate, accuracy, and IHMS recording frequency of those signals.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Frequency of status checks for all",
+              "content": "other IHMS indicators.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Relationship of fault codes/exceedance indications to",
+              "content": "safety/mission critical failure modes. Additional links should be added to Mission Essential Subsystem Matrix/List (MESM/MESL).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Relationship of all fault codes to",
+              "content": "messages displayed to operator/maintainer in a human readable format.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "A minimum of semi-annual updates to",
+              "content": "the data dictionary provided to the Government once the design baseline is established (or as required by the Contract).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Description of the different levels of",
+          "content": "the system's BIT Diagnostics (e.g. Periodic BIT, Start-Up BIT, Initiated BIT) and other IHMS diagnostics as required by the Contract. This includes a listing of all Initiated BITs available to the maintainer/operator broken out by operating phase of the system.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Description of the diagnostics capabilities of",
+          "content": "all mechanical components to include sensors used, sensor placement, sample rates, algorithms and analysis applied, frequency of the data collected and storage strategy for all mechanical diagnostics data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Description of other diagnostic capabilities for the following, as required",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Engine/Motor performance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Structural Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Corrosion Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "Electrical System and Generator Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.5",
+              "title": "Hydraulic System/Pump Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.6",
+              "title": "Flight Control Systems Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.7",
+              "title": "Monitoring and maintenance of fleet adjustable items",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.8",
+              "title": "Exceedance Monitoring",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.9",
+              "title": "Any subsystem that does not have",
+              "content": "inherent health monitoring capabilities.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Additional design strategy for alternate sensor",
+          "content": "mounting, spare sensors, and other algorithms/IHMS capabilities held in reserve as the need arises for safety and readiness.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Description of the maintainer interface, including",
+          "content": "display of all fault codes and other displayed data in a human readable format without the use of cross reference tables.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Description of the engineering organization responsible",
+          "content": "for the design, development upkeep, and testing of the IHMS.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Numerical estimates of BIT",
+          "content": "(fault detection/fault isolation) capability thresholds as required by the Contract. All fault detection/isolation capabilities and estimates shall be tied to the Failure Modes, Effects and Criticality Analysis (FMECA).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "A testability analysis to identify any",
+          "content": "gaps in the system's fault detection/isolation capabilities. This also includes a fault isolation strategy for multiple/cascading failures discovered during test as well as the burn down plan to achieve appropriate levels of fault isolation. Also include the process within the Contractor organization to identify fault isolation issues, perform root cause analysis and implement corrective actions as required.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "False alarm mitigation strategy during system",
+          "content": "level testing as well as the burn down planning for any false alarms issues that arise during operational use of the system. This includes the process within the Contractor organization to identify false alarms, perform root cause analyses and propose/implement corrective actions to false alarm issues and other IHMS software deficiencies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "All necessary IHMS information to perform",
+          "content": "integration into maintenance, training and other support activities to include the development of the maintenance publications and Automated Logistics Environment (ALE) development. This includes detail of any Contractor developed pieces of the ALE as well as detailed interfaces with any Government provided portions of the ALE. If the Contractor develops the ALE then this includes off-board IHMS capabilities developed and delivered by the Contractor.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Any algorithms necessary for off board",
+          "content": "processing of the IHMS data for fault isolation and trending. This includes any off board processing as part of the complete system design.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Description and implementation planning for any",
+          "content": "prognostic or related condition based maintenance capability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Description of any other IHMS/BIT related",
+          "content": "activities as required by the Contract.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82078A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81923",
+  "slug": "di-sess-81923",
+  "title": "Quality Audit Finding and Response Record (QAFRR)",
+  "summary": "Records a nonconformance found during a quality audit and enables the audited organizational unit to submit a suitable remedy to document conformance with the quality standard(s).",
+  "approval_date": "2013-07-10",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "F9386",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "AF-84",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Quality Audit Finding and Response Record is used to record a nonconformance with one or more quality standard(s) found during a quality audit.  It provides for the audited organizational unit to submit a suitable remedy in order to return to and document conformance with the quality standard(s).\n\na.  Use this DID for findings resulting from quality audits carried out by contractors or governmental entities external to the audited organizational unit as well as internal quality audits.  The term audit shall be used herein to encompass any inspection, review, evaluation, assessment, analysis, or similar activity involving an examination relative to a fixed standard.  Any reference to an auditor shall be understood include an inspector, reviewer, evaluator, assessor, analyst, or examiner.  All references to standards shall be understood to mean specific, identified, codified, published quality standards.  Associated measures of value or worth are also included within the scope of quality, such as, but not limited to, reliability, effectiveness, utility, surety, feasibility, practicability, maintainability, producibility, or sustainability.\n\nb.  In the scope of this DID, a finding is an identified nonconformance or noncompliance with a requirement in a relevant standard. The term finding is used synonymously with the terms discrepancy, defect, and deficiency (with or without the word quality as a modifier).  A finding may consolidate multiple like instances of nonconformance or noncompliance that represent a pattern, trend, or widespread phenomenon, particularly if they are suspected to stem from a single root cause.\n\nc.  In the scope of this DID, a response includes one or more actions taken to contain the spread of the defect, determine the significance or effect of the defect, mitigate the impact of the defect, root cause analysis, correct the instant defect (manifested in a corrective action plan), and prevent the defect from recurring (manifested in a preventive action plan).  A response typically includes verification (checking to see that the action plans were completed) and validation (checking to see that the problem was really fixed).\n\nd.  This DID applies to findings resulting from on-site or off-site audits that support one or more quality standards with requirements related to monitoring, surveillance, accreditation, or certification.  Such findings directly support certification to one or more relevant quality standard(s).  The term certification shall be understood to include accreditation and validation as well as any equivalent or similar terms used by relevant standard(s).\n\ne.  In the scope of this DID, a quality audit finding and response record is incomplete until reconciliation occurs.  The auditing entity that issued the finding must reconcile the response with the finding, which means it must evaluate and accept the response to determine that compliance has been achieved (conformance with the standard).  Sometimes this will require verification or validation on the part of the auditing entity.  Other times, a simple review will suffice.  Once reconciliation occurs, the auditing entity closes the finding.  Documentation of closure is a critical element in maintaining certification to a quality standard. If the auditing entity (also called a certification body or registrar) does not accept the response and does not close the finding, certification may be in jeopardy.  Although closure ends the process, mandating closure of findings in this DID would render certification meaningless and would violate the standard for which certification was being sought.  For this reason, closure is not an element of the DID.\n\nf.  This DID is applicable when a Government organizational unit enters into a contract, interagency agreement, or other formal relationship where the unit is audited to one or more standard(s).  All references to a contract herein shall be understood to refer to any agreement made in writing between the audited unit and the auditing entity.\n\ng.  This DID also applies to internal audits or self-audits, especially if the audit is performed by a private business on itself as part of an overall quality management system or plan.\n\nh.  This DID can be achieved only when auditors possess those certifications, accreditations, or other credentials required pursuant to the relevant standard.  Likewise, the employing firm or agency must also have the certification, accreditation, or other credentials requisite for the audit.\n\ni.  Some examples of entities producing third-party standards to which this DID could apply are as follows: International Organization for Standardization (ISO), American Society for Quality (ASQ), American National Standards Institute (ANSI), International Electrotechnical Commission (IEC), and the Society of Automotive Engineers (SAE).  This DID can also apply when the standard is created, maintained, or owned by an external Government agency (e.g., the Food and Drug Administration, Environmental Protection Agency, or Occupational Safety and Health Administration).  Audits in support of a third-party standard typically will not be carried out by the third-party organization creating or promulgating the relevant quality standard.\n\nj.  Some examples of third-party quality standards to which this DID could apply are as follows: ISO9001 (Quality Management Systems - Requirements), ISO/IEC17025 (General Requirements for the Competence of Testing and Calibration Laboratories), ANSI/ISO/ASQ Q9001 (Quality Management Systems - Requirements), and SAE AS9100 (Quality Management Systems: Aerospace Requirements).  This DID can also apply when the standard is a governmental standard (e.g., EPA or FDA Good Laboratory Practices or OSHA Voluntary Protection Program) that is created, maintained, or owned by an external agency. Such external governmental standards shall be regarded as third-party standards for the sake of this DID.\n\nk.  This DID may be used alone or in conjunction with other DIDs.\n\nl.  This DID may be used when the Government requires an external (independent) quality audit for a non-governmental entity and a finding is discovered.\n\nm.  This DID is a first issuance and does not supersede any other DID.\n\nn.  This DID specifically addresses nonconformances (findings) identified during audits rather than nonconformance identified by a customer.  It contrasts with Standard Form 368 (SF-368), Product Quality Deficiency Report, which is used by a customer to identify nonconforming products tendered by the Government. It contrasts with DID DI-ALSS-81535, Deficiency Report, which is used by a contractor to identify nonconforming Government-furnished material (GFM) undergoing repair.  It also contrasts with DID DI-QCIC-80736, Quality Deficiency Report, which is used by a contractor who receives nonconforming GFM. This DID does not apply to GFM. This QAFRR is more akin to AF Form 4395, Logistics Compliance Assessment Program (LCAP) Finding Response.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "Relevant quality standard(s) shall be identified by contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content",
+      "content": "Finding documents (QAFRRs) generated under this DID shall conform to the following requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Give name and commonly used abbreviation/identifier/number",
+          "content": "(Mandatory) Give name and commonly used abbreviation/identifier/number for each relevant standard.  See examples in paragraph 10 under the heading Application/Use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Give date on which the finding was discovered",
+          "content": "(Mandatory) Give date on which the finding was discovered.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Give physical location (normally installation name)",
+          "content": "(Mandatory) Give physical location (normally installation name), e.g., Robins AFB, Redstone Arsenal, or NAS Pensacola.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Cite passage number (or other identifier)",
+          "content": "(Mandatory) Cite passage number (or other identifier) that pinpoints the applicable portion of the standard (i.e., the requirement that was not met).  Cite exactly one passage per QAFRR.  The term passage will be used throughout this DID to refer to a portion of a standard regardless of similar terms that may be used elsewhere, such as element, item, part, section, paragraph, phrase, clause, requirement, specification, or provision.  The passage must exist within a standard specified by the contract.  A passage that appears only in a draft, developmental version, annotated edition, unpublished revision, or shall not be cited.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Describe or explain the finding with sufficient detail",
+          "content": "(Mandatory) Describe or explain the finding with sufficient detail for the audited unit to identify the location/situation and respond appropriately.  The level of detail must be sufficient to make the nonconformance with the cited passage readily apparent.  Sufficient description or explanation shall be provided to meet industry standards of accuracy, precision, coherence, clarity, emphasis, traceability, verifiability, and auditability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "State any required actions that must be taken",
+          "content": "(Mandatory) State any required actions that must be taken to accomplish containment, mitigation, correction, or prevention in support of eventual closure. Specify any time constraints or time-sensitive actions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "If the standard distinguishes among findings by severity",
+          "content": "(Mandatory when applicable) If the standard distinguishes among findings by severity, include appropriate severity rating.  Do not create a severity rating if the standard does not classify findings as to severity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Describe the frequency and extent of observed occurrence",
+          "content": "(Mandatory) Describe the frequency and extent of observed occurrence.  For example, indicate the fraction or number of inspected items (i.e., parts, records, etc.) that show the defect and the number inspected; give the number of organizational subunits in which the defect was seen; or identify as isolated incident.  If the frequency or extent of the defect is suspected to go beyond the observed occurrence and the auditor seeks a particular means of assessment, the auditor shall provide guidance with respect to how the unit should respond with an eye towards effectuating closure.  For example, write \"Survey 25% of personnel training records in each maintenance group within the air logistics complex for omission of foreign object damage course and initiate containment/mitigation based on results.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "Provide direction for how to respond",
+          "content": "(Mandatory) Provide direction for how to respond (e.g., to whom, in what manner, with what evidence, by when).  Provide information on how the reconciliation and closure processes will be handled.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "Document closure or inability of the unit",
+          "content": "(Mandatory at appropriate time) Document closure or inability of the unit to carry out an overall satisfactory remedy to permit closure.  If appropriate, findings may be closed on the spot or during a site visit.  If responses are submitted at a later time, proof of closure (or reason for denial) must be returned to the unit to make the deliverable compliant with this DID.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "Give name of entity (contractor or Government agency)",
+          "content": "(Mandatory) Give name of entity (contractor or Government agency) performing the quality audit. Include any registration/certification number or other unique identifier needed to verify credentials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.12",
+          "title": "Provide legible name of authoring auditor with signature",
+          "content": "(Mandatory) Provide legible name of authoring auditor with signature. If more than one auditor has contributed to the finding, then a designated corresponding auditor shall sign the finding.  A different corresponding auditor may be designated for each finding.  The corresponding auditor shall provide clarification needed to effectuate closure.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.13",
+          "title": "Cover all matters that are explicitly called out",
+          "content": "(Mandatory) Cover all matters that are explicitly called out for consideration by the relevant quality standard(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.14",
+          "title": "Give contract number and data item number",
+          "content": "(Optional) Give contract number and data item number from DD Form 1423, Contract Data Requirements List (CDRL).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.15",
+          "title": "State other information specified by contract",
+          "content": "(Optional) State other information specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.16",
+          "title": "Give other relevant information",
+          "content": "(Optional) Give other relevant information (including observations, recommendations, or comments) at the discretion of the auditor or auditing entity.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "The QAFRR shall meet the following requirements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Paper shall contain at least 30% post-consumer",
+          "content": "recycled matter pursuant to Executive Order 13101.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Use letter size paper (8.5 inches by 11 inches)",
+          "content": "that is white or light-colored (ensure color does not produce darkened image when photocopied).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Findings may be typed or legibly handwritten",
+          "content": "at the discretion of the auditor or auditing entity.  When documents are written during or immediately after a site visit, it is recognized that handwritten submissions may be the easiest, fastest, and cheapest way to provide the information to the Government.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Format and structure used for findings shall be",
+          "content": "determined largely by the lead auditor, subject to any explicit requirements of the relevant quality standard(s) or by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Either a standard form maintained or provided",
+          "content": "by the auditing entity or a free-form document generated by the auditor shall be used for the QAFRR.  Ideally, the QAFRR ought to reserve dedicated space for both the unit's response and auditing entity's endorsement of closure.  A form or document without space for the unit's response is acceptable provided that it accommodates closure and is accompanied by a defined process for submitting the unit's response.  A QAFRR must have a space reserved for certifying closure of a finding and affirming the unit's conformance with the standard. A QAFRR must meet one of the following criteria:  (1) incorporates space for responses and closure information, (2) incorporates space for closure information and instructions for responses (the responses may be appended), or (3) incorporates space for closure information and refer to accompanying instructions for responses (the responses may be appended).  In the cases where responses are appended, the auditing entity is not required to send a Government unit a copy of its own responses back.  However, when the audit is performed on another unit (or a private business), the auditing entity shall append a copy of the responses to complete the QAFRR.  All forms shall include or be accompanied by directions for attaching additional pages as necessary to document a response needed to effectuate closure.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Whenever a finding is issued, it shall",
+          "content": "include directly or be accompanied by instructions for disputing the finding in accordance with the relevant standard(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "At least one hard copy of each",
+          "content": "QAFRR shall be provided to the Government.  If more copies are to be provided, the contract shall state the number of copies explicitly.  Photocopies shall be as good as originals.  The requirement for a hard copy may be waived by the Government's designated recipient for the QAFRR (normally a technical contact or quality program manager) upon receiving a satisfactory electronic version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "All text, logos, and names on hard copy",
+          "content": "QAFRRs (or copies thereof) must be legible. Ink and toner colors must be such that the salient information is reproducible by photocopying.  Minor losses in image quality (such as faint borders or designs unrelated to the salient information) that occur during photostatic reproduction are tolerable.  If both sides of the paper are used, the paper weight/thickness shall be such that the print/writing does not bleed through during photostatic reproduction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Individual format requirements may be waived or",
+          "content": "modified by contract. Additional/other format requirements may be specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Electronic versions of QAFRRs may be required",
+          "content": "or substituted for hard copies by contract. If electronic versions are specified without further elaboration, the default file type shall be Adobe portable document format (PDF) with handwritten (cursive/payroll) signatures (no digital signatures) embedded in the digital versions.  Any specific requirements for electronic versions beyond what is stated in this DID shall be explicitly stated in the contract (e.g., file format, digital signature use/verification).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81923.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

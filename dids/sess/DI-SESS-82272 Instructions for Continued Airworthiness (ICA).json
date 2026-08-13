@@ -1,0 +1,415 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82272",
+  "slug": "di-sess-82272",
+  "title": "Instructions for Continued Airworthiness (ICA)",
+  "summary": "Specifies the format, content, and intended use for the Instructions for Continued Airworthiness (ICA) required by 14 CFR Section 21.50(b) for aircraft, engine, or propeller design approval holders.",
+  "approval_date": "2019-06-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10037",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WWB)",
+  "project_number": "SESS-2019-029",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Instructions for Continued Airworthiness (ICA) will be used to obtain ICA as required by 14 Code of Federal Regulations (CFR) Section 21.50(b), Instructions for continued airworthiness and manufacturer's maintenance manuals having airworthiness limitations sections. (Copies of this document can be obtained or viewed online at: https://www.ecfr.gov/.)\n\na. 14 CFR Section 21.50(b) requires the holder of a design approval, including either a type certificate or a supplemental type certificate for an aircraft, aircraft engine, or propeller for which application was made after January 28, 1981, to furnish at least one set of complete ICA to the owner of each type aircraft, aircraft engine, or propeller upon its delivery, or upon issuance of the first standard airworthiness certificate for the affected aircraft, whichever occurs later.\n\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "eCFR",
+      "url": "https://www.ecfr.gov/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The ICA must be in the form of an electronic manual or manuals, as appropriate for the quantity of data to be provided. The contractor's Microsoft Office compatible or Adobe Acrobat (.pdf) format is acceptable. If the ICA consists of multiple manuals, the Airworthiness Limitations section required by 3.1.8 shall be included in the principal manual.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The ICA content shall be as specified within 14 CFR Section 23.1529, Instructions for Continued Airworthiness; Section 33.4, Instructions for Continued Airworthiness; or Section 35.4, Instructions for Continued Airworthiness, as applicable. (Copies of these documents can be obtained or viewed online at: https://www.ecfr.gov/.) The contents of the manual or manuals shall be written in the English language and shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Normal Category Aircraft (14 CFR Section 23.1529)",
+          "content": "The ICA shall contain the following manuals or sections, as appropriate, and information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Airplane maintenance manual or section",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Introduction information",
+                  "content": "Introduction information that includes an explanation of the airplane's features and data to the extent necessary for maintenance or preventive maintenance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "A description of the airplane and its systems and installations",
+                  "content": "A description of the airplane and its systems and installations, including: its engines, propellers, and appliances.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Basic control and operation information",
+                  "content": "Basic control and operation information describing how the airplane components and systems are controlled and how they operate, including any special procedures and limitations that apply.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Servicing information",
+                  "content": "Servicing information that covers details regarding servicing points; capacities of tanks and reservoirs; types of fluids to be used; pressures applicable to the various systems; location of access panels for inspection and servicing; locations of lubrication points; lubricants to be used; equipment required for servicing; tow instructions and limitations; mooring, jacking, and leveling information.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Maintenance instructions",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Scheduling information",
+                  "content": "Scheduling information for each part of the airplane and its engines, auxiliary power units, propellers, accessories, instruments, and equipment that provides the recommended periods at which they should be cleaned, inspected, adjusted, tested, and lubricated, and the degree of inspection, the applicable wear tolerances, and work recommended at these periods. An accessory, instrument, or equipment manufacturer shall be referred to as the source of this information, if the item has an exceptionally high degree of complexity requiring specialized maintenance techniques, test equipment, or expertise. The recommended overhaul periods and necessary cross-references to the Airworthiness Limitations section of the ICA shall also be included. In addition, a description of the inspection program that includes the frequency and extent of the inspections necessary to provide for the continued airworthiness of the airplane shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Troubleshooting information",
+                  "content": "Troubleshooting information describing probable malfunctions, how to recognize those malfunctions, and the remedial action for those malfunctions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "Information describing the order and method of removing and replacing products and parts",
+                  "content": "Information describing the order and method of removing and replacing products and parts with any necessary precautions to be taken.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Other general procedural instructions",
+                  "content": "Other general procedural instructions, including: procedures for system testing during ground running, symmetry checks, weighing and determining the center of gravity, lifting and shoring, and storage limitations.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Diagrams of structural access plates",
+              "content": "Diagrams of structural access plates and information needed to gain access for inspections when access plates are not provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Details for the application of special inspection techniques",
+              "content": "Details for the application of special inspection techniques, including radiographic and ultrasonic testing where such processes are specified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Information needed to apply protective treatments to the structure after inspection",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "All data relative to structural fasteners",
+              "content": "All data relative to structural fasteners, such as: identification, discard recommendations, and torque values.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "A list of special tools needed",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Airworthiness Limitations section",
+              "content": "The ICA shall contain a section titled Airworthiness Limitations that is segregated and clearly distinguishable from the rest of the document. This section shall set forth each mandatory replacement time, structural inspection interval, and related structural inspection procedure required for type certification.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Engine and Engine Parts (14 CFR Section 33.4)",
+          "content": "The ICA shall contain the following manuals or sections, as appropriate, and information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Engine maintenance manual or section",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Introduction information",
+                  "content": "Introduction information that includes an explanation of the engine's features and data to the extent necessary for maintenance or preventive maintenance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "A detailed description of the engine and its components, systems, and installations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Installation instructions",
+                  "content": "Installation instructions, including proper procedures for uncrating, deinhibiting, acceptance checking, lifting, and attaching accessories, with any necessary checks.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Basic control and operating information",
+                  "content": "Basic control and operating information describing how the engine components, systems, and installations operate, and information describing the methods of starting, running, testing, and stopping the engine and its parts, including any special procedures and limitations that apply.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Servicing information",
+                  "content": "Servicing information that covers details regarding servicing points, capacities of tanks and reservoirs, types of fluids to be used, pressures applicable to the various systems, locations of lubrication points, lubricants to be used, and equipment required for servicing.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Scheduling information",
+                  "content": "Scheduling information for each part of the engine that provides the recommended periods at which it should be cleaned, inspected, adjusted, tested, and lubricated, and the degree of inspection, the applicable wear tolerances, and work recommended at these periods. An accessory, instrument, or equipment manufacturer shall be referred to as the source of this information, if the item has an exceptionally high degree of complexity requiring specialized maintenance techniques, test equipment, or expertise. The recommended overhaul periods and necessary cross-references to the Airworthiness Limitations section of the ICA shall also be included. In addition, a description of the inspection program that includes the frequency and extent of the inspections necessary to provide for the continued airworthiness of the engine shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Troubleshooting information",
+                  "content": "Troubleshooting information describing probable malfunctions, how to recognize those malfunctions, and the remedial action for those malfunctions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Information describing the order and method of removing the engine and its parts and replacing parts",
+                  "content": "Information describing the order and method of removing the engine and its parts and replacing parts, with any necessary precautions to be taken. Instructions for proper ground handling, crating, and shipping shall also be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.9",
+                  "title": "A list of the tools and equipment necessary for maintenance",
+                  "content": "A list of the tools and equipment necessary for maintenance and directions as to their method of use.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Propeller and Propeller Parts (14 CFR Section 35.4)",
+          "content": "The ICA shall contain the following sections, as appropriate, and information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Propeller maintenance section",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Introduction information",
+                  "content": "Introduction information that includes an explanation of the propeller's features and data to the extent necessary for maintenance or preventive maintenance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "A detailed description of the propeller and its systems and installations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Basic control and operation information",
+                  "content": "Basic control and operation information describing how the propeller components and systems are controlled and how they operate, including any special procedures that apply.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Instructions for uncrating, acceptance checking, lifting, and installing the propeller",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Instructions for propeller operational checks",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Scheduling information",
+                  "content": "Scheduling information for each part of the propeller that provides the recommended periods at which it should be cleaned, adjusted, and tested, the applicable wear tolerances, and the degree of work recommended at these periods. An accessory, instrument, or equipment manufacturer shall be referred to as the source of this information, if the item has an exceptionally high degree of complexity requiring specialized maintenance techniques, test equipment, or expertise. The recommended overhaul periods and necessary cross-references to the Airworthiness Limitations section of the ICA shall also be included. In addition, a description of the inspection program that includes the frequency and extent of the inspections necessary to provide for the continued airworthiness of the propeller shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Troubleshooting information",
+                  "content": "Troubleshooting information describing probable malfunctions, how to recognize those malfunctions, and the remedial action for those malfunctions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Information describing the order and method of removing and replacing propeller parts",
+                  "content": "Information describing the order and method of removing and replacing propeller parts with any necessary precautions to be taken.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "A list of the special tools needed for maintenance other than for overhauls",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Propeller overhaul section",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Disassembly information",
+                  "content": "Disassembly information, including the order and method of disassembly for overhaul.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Cleaning and inspection instructions",
+                  "content": "Cleaning and inspection instructions that cover the materials and apparatus to be used and methods and precautions to be taken during overhaul. Methods of overhaul inspection shall also be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Details of all fits and clearances relevant to overhaul",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Details of repair methods for worn or otherwise substandard parts and components",
+                  "content": "Details of repair methods for worn or otherwise substandard parts and components, along with information necessary to determine when replacement is necessary.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "The order and method of assembly at overhaul",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.6",
+                  "title": "Instructions for testing after overhaul",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.7",
+                  "title": "Instructions for storage preparation",
+                  "content": "Instructions for storage preparation, including any storage limits.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.8",
+                  "title": "A list of tools needed for overhaul",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82272.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

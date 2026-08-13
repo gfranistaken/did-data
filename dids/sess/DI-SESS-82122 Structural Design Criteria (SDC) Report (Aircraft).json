@@ -1,0 +1,192 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82122",
+  "slug": "di-sess-82122",
+  "title": "Structural Design Criteria (SDC) Report (Aircraft)",
+  "summary": "The Structural Design Criteria (SDC) Report shall contain the information necessary to delineate and expand the system mission requirements into structural terms and requirements.",
+  "approval_date": "2017-04-28",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9804",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AF 11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2017-012",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Structural Design Criteria (SDC) Report shall contain the information necessary to delineate and expand the system mission requirements into structural terms and requirements.  This report forms the basis for creation of program unique engineering standards that will be used to meet the structural design requirements and achieve the needed operational, maintenance, engineering, and test capabilities.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Quick Search (referenced documents)",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor's format for the SDC Report is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The SDC report shall include:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "General aircraft description",
+          "content": "A general aircraft description including three-view drawings, vehicle physical characteristics, major dimensions, and surface areas.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "General aircraft requirements",
+          "content": "General aircraft requirements for air vehicle configurations, equipment, payloads, speeds, altitudes, flight load factors, ground loading parameters, design service life and usage, aerial refueling, aerial delivery, service environments (including temperature gradients due to operation), power or thrust, structure survivability, maximum sink speed, lightning strike, electrostatic charge, foreign object damage (FOD), producibility, maintainability, supportability, repairability, and replaceability/interchangeability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "List of all deviations requested in MIL-STD-1530",
+          "content": "List of all deviations requested in MIL-STD-1530, Aircraft Structural Integrity Program (ASIP), and JSSG-2006, Aircraft Structures, and the associated rationale for such requests.  (Copies of these documents are available online at http://quicksearch.dla.mil.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Criteria for design loads/environment spectra",
+          "content": "Criteria for design loads/environment spectra including planned operational service life and usage (mission and ground profiles, mission mixes, environmental exposure mixes and exceedance data), dynamic response methods, design and analysis conditions (flight and ground loads), discussion of design features (e.g., aerial refueling boom) which affect mission segments contribution to durability and damage tolerance analysis, and other data pertinent to service loading conditions or design (such as residual strength).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "Flight loads design criteria",
+              "content": "Flight loads design criteria including the methods of analysis to be used for the various maneuver conditions with the basis for their selection including piloted or autonomous symmetric, asymmetric, directional, evasive, and loss of control maneuvers.  Discussion of loading conditions for turbulence, gust, aerial refueling, aerial delivery, speed and lift control, braking wheels in air, extension and retraction of landing gear, pressurization, aeroelastic deformation effects, hammershock, and dynamic response during flight operations.  Discussion of design features which affect determination of critical loading conditions, methods and assumptions to be used in the calculation of aerodynamic loads, design V-n diagrams for symmetrical and asymmetrical flight, design load factors, design speeds and weights with definition of each, flutter boundaries and sonic pressure level contours, all possible loading configurations, and an Altitude-Mach number envelope with the following data superimposed on it:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "(a)",
+                  "title": "Maneuvering capability",
+                  "content": "Maneuvering capability as defined by all limiting factors such as control power, directional stability, angle of attack, buffet onset, etc.  The effects of gross weight, center of gravity, and variable surface sweep positions (if applicable) shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "(b)",
+                  "title": "Range of KEAS curves",
+                  "content": "A range of KEAS curves and VG, VH, and VL curves shall be included.  Resulting gust load factors on the VG, VH, and VL curves shall be shown.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "(2)",
+              "title": "Ground loads design criteria",
+              "content": "Ground loads design criteria including the methods of analysis to be used for loads associated with taxi, turns, pivots, braking, takeoffs, landings, dynamic response during ground operations, ski-equipped air vehicles, maintenance, ground winds, crashes, and ditching shall be presented.  Include summary of design gross weights, center of gravity positions, load factors, stall speeds, sinking speeds, takeoff speeds, external store configurations, the specific design conditions selected for detailed analysis, discussion of design features which affect determination of critical conditions, and other data pertinent to ground loading conditions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(3)",
+              "title": "Descriptions of the control system loads criteria",
+              "content": "Descriptions of the control system loads criteria including description of functions of the control system and their components in sufficient detail to show clearly their operation and sources of loads.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "e",
+          "title": "Minimum margins for aeroelastic and aeroservoelastic stability",
+          "content": "Descriptions of minimum margins for aeroelastic and aeroservoelastic stability, and allowable requirements for maximum control surface free play and mass balancing.  Descriptions of methods to account for aeroelastic deformation effects, aeroelastic and aeroservoelastic stability, as well as fail-safe stability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "Aeroacoustic and vibration load sources",
+          "content": "Descriptions of aeroacoustic and vibration load sources, magnitudes, and design factors.  Descriptions of methods to account for sonic fatigue and vibration including dynamic response during flight operations, as well as any load alleviation methods employed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "Strength criteria parameters",
+          "content": "Description of the strength criteria parameters including the factors of safety, factor on design limit load for no detrimental deformation, and fitting, bearing, and casting factors to ensure the aircraft structure has adequate static strength capability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "h",
+          "title": "Durability approach",
+          "content": "Description of the durability approach (e.g., stress-life, strain-life, or crack growth) to be used to ensure the aircraft can achieve the design service life and that in-service maintenance is economically viable to include fatigue life scatter factor, wear and erosion requirements, and residual strength and damage growth limits as appropriate.  Description of the criteria used to select materials, processes, finishes, joining methods, and structural concepts to prevent structure corrosion throughout the aircraft life cycle.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "i",
+          "title": "Damage tolerance design concept",
+          "content": "Description of the damage tolerance design concept (e.g., fail-safe or slow damage growth) to be used.  Description of the surrogate damage types, sizes, orientations, and locations with consideration of all phases of the life cycle to include:  material processing, shipping, handling, manufacturing, flight operations, nondestructive inspection methods, and maintenance for the selected damage tolerance design concept.  Description of the criteria to establish minimum critical damage sizes to enable nondestructive inspection/evaluation or structural health monitoring as an effective force management option.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "j",
+          "title": "Aerodynamic center of gravity and inertia changes",
+          "content": "Description of the criteria to ensure the aircraft can accommodate aerodynamic center of gravity and inertia changes, which result from all sources, to include:  refueling, fuel usage, fuel dump, fuel offload, stores configurations and expenditure, fuel migration at high angles of attack and roll rates, aerial refueling, loading and unloading of payload, air drop of payload, egress of personnel, and asymmetric fuel and store loading, and requirements for minimum and maximum weights, weight distribution, and center of gravity tolerances/envelope.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "k",
+          "title": "Cargo/personnel transport aircraft structural design criteria",
+          "content": "For all cargo/personnel transport aircraft, detailed structural design criteria necessary to react loads from the following:  troop and passenger seats, cargo tie downs, litters, cargo aerial delivery, cargo jettison, etc. shall be provided.  Where applicable, the structural criteria used and substantiation of compatibility for the 463L Material Handling System shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "l",
+          "title": "Specific design and construction criteria parameters",
+          "content": "Specific design and construction criteria parameters for:  doors and panels, doors and ramp mechanisms of pressurized compartments, ramps, cargo floors, transparencies, tail bumper, tail hook, vents and louvers, cavities, armor, refueling provisions, cables and pushrods, airframe bearings and pulleys, fasteners, integral fuel tanks and lines, weapons carriage, rapid decompression, repeatable release holdback bar, boarding ladder, and landing gear, if these items have a service life, maintainability, or inspection requirement different than the parent airframe.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82122.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

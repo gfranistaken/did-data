@@ -1,0 +1,220 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82123",
+  "slug": "di-sess-82123",
+  "title": "Strength Summary and Operating Restrictions (SSOR) Report",
+  "summary": "The Strength Summary and Operating Restrictions (SSOR) Report is used to define restrictions, in terms of capabilities and limitations, for service operation of the aircraft that permits rapid and accurate assessment of strength relative to loading conditions and operational parameters.",
+  "approval_date": "2017-05-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9805",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2017-013",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Strength Summary and Operating Restrictions (SSOR) Report will be used to define restrictions (in terms of capabilities and limitations) for service operation of the aircraft that permits rapid and accurate assessment of strength relative to loading conditions, specification requirements, and the effects of varying important operational parameters such as gross weight, payload, and fuel.\n\na. The SSOR report shall summarize the strength of the aircraft structure for all design operating conditions at the specified and other critical weights by showing a comparison of strength required by applicable specifications with the strength determined by analysis and test; shall recommend restrictions for service operation of the aircraft; and shall afford a basis for determining the practicality of modifying restrictions, of varying useful loads, and for making structural modifications.  The report shall present sufficient data and information to substantiate the structural strength and operating restrictions applicable to the authorized flight envelope and operating conditions.  The report shall provide rapid visibility of the important structural characteristics, limitations, and capabilities in terms of operational (flight and ground) parameters.  The summary shall include brief descriptions of each major structural assembly, indicating structural arrangements, materials, critical design conditions, and minimum margins of safety.  Appropriate references to design drawings, detail analyses, test reports, and other back-up documentation shall be provided.\n\nb. The report describes the contractor's revised analysis which accounts for differences revealed between analysis and test to relate important structural characteristics, limitations, and capabilities in terms of operational parameters.\n\nc. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described by Task 4 of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP).\n\n(Copies of this document are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "quicksearch.dla.mil",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SSOR Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The final SSOR report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Brief description of the aircraft",
+          "content": "A brief description of the aircraft.  If the aircraft is a modified version of a previous model, the differences between the models shall be described and the effect of these differences on minimum margins of safety and operating restrictions shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Summary of basic data",
+          "content": "A summary of basic data, including design and actual weights, center of gravity positions, principle surface areas, and a three-view drawing showing front, top, and side views of the aircraft with physical dimensions, including control surfaces.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "V-n diagrams",
+          "content": "V-n diagrams depicting the required and available strength in terms of load factor, airspeed, and altitude.  Load factors developed by specified symmetrical gusts and maximum speeds for which limit strength exists for specified side gusts shall be shown on these V-n diagrams.  Values of static and dynamic aircraft normal force coefficients on which the V-n diagrams are based.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Effects of variations in weight",
+          "content": "Discussions of the effects of variations in weight, weight distribution, or both on strength, including all sources of potential aircraft weight variations (e.g., fuel, stores, and payload).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Maximum design sinking speeds",
+          "content": "Maximum design sinking speeds at various design weights.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "Table of recommended combinations",
+          "content": "A table of recommended combinations of the aircraft, racks, and stores to be authorized.  For each combination listed, the following limits and configurations shall be stated:\n\nFor each store listed, the load factors and flight or ground loading condition resulting from the specified design conditions including take-off, unsymmetrical landing, braking, turning, or other conditions that are critical for the supporting aircraft structure shall be shown.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "Maximum carriage limits",
+              "content": "The maximum carriage limits (airspeed, acceleration, and altitude)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(2)",
+              "title": "Release, launch, and jettison limits",
+              "content": "The release, launch, and jettison limits (airspeed, acceleration, altitude, dive angle, and attitude)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(3)",
+              "title": "Take-off and catapult launch configuration",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(4)",
+              "title": "Field landing and arrested landing configurations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "g",
+          "title": "Recommendations for restrictions",
+          "content": "Recommendations for restrictions to be observed while in operation, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "(1)",
+              "title": "Maximum weights for field take-off",
+              "content": "Maximum weights for field take-off, field landing, and when applicable, catapulting, arrested landing, and rough field take-off and landing.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(2)",
+              "title": "Maximum permissible speeds and load factors",
+              "content": "Maximum permissible speeds and load factors for flight with and without external stores.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(3)",
+              "title": "Restrictions on use of lateral and directional controls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(4)",
+              "title": "Maximum permissible speeds with devices",
+              "content": "Maximum permissible speeds with devices such as flaps; spoilers; cockpit enclosures; landing gear speed brakes; bomb bay doors in partially extended, fully extended or open positions, or both; and for combinations of devices when a combination results in adverse aerodynamic effects, such as buffet.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(5)",
+              "title": "Maximum permissible aircraft center of gravity accelerations",
+              "content": "Maximum permissible aircraft center of gravity accelerations for arresting and catapulting versus gross weight.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(6)",
+              "title": "Maximum permissible drag load components",
+              "content": "Maximum permissible drag load components for arresting and catapulting.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "(7)",
+              "title": "Maximum permissible drag load factor",
+              "content": "Maximum permissible drag load factor as a function of gross weight for both catapulting and arresting.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "h",
+          "title": "Summary charts of all tests",
+          "content": "Summary charts of all tests performed to support the design conditions for the aircraft structure.  These summaries are to include a comparison of specification design strength with the actual strength as revealed by analysis and test.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "i",
+          "title": "List of critical margins of safety",
+          "content": "List of critical margins of safety for each major structural component including margins of safety for supporting structures including stores listed in 3.f above.  This list shall include, for each margin of safety listed, the critical design condition and reference to the report and page wherein the margin of safety was determined.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "j",
+          "title": "Diagrams or reduced-size drawings",
+          "content": "Diagrams or reduced-size drawings of each major aircraft component, such as, a wing, fuselage, landing gear, etc., which shows the most critical and second most critical loading conditions for each area or region of the component.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82123.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

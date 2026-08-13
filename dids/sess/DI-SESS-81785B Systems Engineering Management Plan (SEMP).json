@@ -1,0 +1,175 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81785B",
+  "slug": "di-sess-81785b",
+  "title": "Systems Engineering Management Plan (SEMP)",
+  "summary": "Describes the contractor's technical approach and proposed plan for the conduct, management, and control of the integrated systems engineering effort, reflecting the program's scope, purpose, and life-cycle phases.",
+  "approval_date": "2025-01-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10515",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SE",
+  "project_number": "SESS-2024-043",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The SEMP describes the contractor's technical approach and proposed plan for the conduct, management, and control of the integrated systems engineering (SE) effort.  It reflects the scope, purpose, and life-cycle phase(s) of the program.\n\nThis Data Item Description (DID) contains the content and intended use information for the data deliverable resulting from the work task described in paragraph 6.3.1.4 of IEEE 24748-7:2019, or by the specific and discrete task requirements as delineated in the contract.\n\nThis DID supersedes DI-SESS-81785A",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-81785A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Office of the Secretary of Defense (OSD) Systems Engineering Plan (SEP) Outline",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "IEEE 24748-7:2019, IEEE Standard for Application of Systems Engineering on Defense Programs",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "IEEE 24748-8:2019, IEEE Standard for Technical Reviews and Audits on Defense Programs",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SEMP format shall be selected by the contractor.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The SEMP shall be consistent with and address all topics in the government SEP, if available. In the absence of a government SEP, the SEMP shall address the topics in the OSD SEP Outline active at the time of the Request for Proposal (RFP). Minimally, the SEMP shall:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Describe the contractor's planned engineering approach",
+          "content": "to meeting the program's contract, objectives, and overall technical and management approach.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Describe the contractor's detailed operational plan",
+          "content": "for executing systems engineering, including integration of the specialty engineering disciplines.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Contain an annotated mapping between contractor",
+          "content": "and government SE processes. Identify any technical or technical management processes not mapped, including rationale for why they are not needed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Show alignment of SE processes",
+          "content": "of the contractor and subcontractors providing engineering effort.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Describe planned technical solution activities",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Development, documentation, maintenance, and communication",
+              "content": "of the system architecture, including both internal and external interfaces.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Formal technical reviews and audits",
+              "content": "as defined in IEEE 24748-8 or by the specific and discrete task requirements delineated in the contract, including the entry and exit criteria for each review/audit.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Trade studies for system requirements definition",
+              "content": "architecture definition, design definition, integration, and verification/validation decisions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Integration, verification, and validation down to",
+              "content": "the appropriate system element level.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Describe related planning associated with application",
+          "content": "of the contractor's systems engineering processes as tailored to meet the needs of the program and at a level of detail necessary for the contractor to manage and execute the technical effort. Details of process integration and communication with suppliers (i.e., subcontractors of engineered system elements and COTS vendors) shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Include referenced lower-level and subcontractor technical plans",
+          "content": "(e.g., risk management plan, requirements management plan, data management plan, and configuration management plan) as determined necessary by the contractor to plan and execute a total systems engineering effort.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Provide detail related to other areas deemed",
+          "content": "necessary to execute systems engineering to meet the program's contract, objectives, and overall technical and management approach.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81785B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

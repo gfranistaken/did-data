@@ -1,0 +1,318 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82176",
+  "slug": "di-sess-82176",
+  "title": "Software Architecture Description (SWARD)",
+  "summary": "Establishes preparation instructions for the Software Architecture Description (SWARD), which forms the basis for detailed design and gives the acquirer visibility into the architecture and software support needs.",
+  "approval_date": "2018-01-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9886",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MI",
+  "project_number": "SESS-2018-004",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nThis DID describes the preparation instructions for the Software Architecture Description (SWARD) which is used as the basis for creating the detailed design and provides the acquirer visibility into the architecture as well as information needed for software support.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SWARD shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope",
+          "content": "This section shall be divided into the following paragraphs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Identification",
+              "content": "This paragraph shall contain a full identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "System overview",
+              "content": "This paragraph shall briefly state the purpose of the system to which this document applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Document overview",
+              "content": "This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Referenced documents",
+          "content": "This section shall list the number, title, revision, and date of all documents referenced in this document. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Software architecture documentation",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The software architectural documentation shall include a high level overview",
+              "content": "The software architectural documentation shall include a high level overview and summary description of the architectural drivers and design along with a set of views created by the architect that describe the software system. In addition to providing and describing each of the relevant views, the documentation shall include the relevant cross-view information that applies to more than one view. These views shall be analyzable and provide the information needed to conclusively show that the software architecture can, in fact, achieve the software quality attributes. Moreover, the software architecture documentation shall be sufficiently robust to enable an analysis to be performed that shows how the system will respond to any particular scenario that is representative of one or more of the quality attributes that the system is required to satisfy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "When creating the software architecture documentation, the following",
+              "content": "When creating the software architecture documentation, the following guidelines shall be observed:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Use a key/legend to define the graphical notation in diagrams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Use consistent graphical notation across diagrams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Identify in a clear way the elements that are external",
+                  "content": "Identify in a clear way the elements that are external to the system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "Use multiple levels of abstraction as needed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "If part of the architecture follows a known architectural style/pattern",
+                  "content": "If part of the architecture follows a known architectural style/pattern, indicate that in the documentation.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Software architecture views",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "The SWARD shall include three view types",
+                  "content": "The SWARD shall include three view types:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.1.1",
+                      "title": "Module views",
+                      "content": "Show and describe how the software system is structured as a set of code unites or modules; i.e., document the principal units of implementation.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.1.2",
+                      "title": "Component-and-connector views",
+                      "content": "Show and describe how the software system is structured as a set of software elements that have runtime behavior and interactions; i.e., document the units of execution.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.1.3",
+                      "title": "Allocation views",
+                      "content": "Show and describe how the software system relates to non-software structures in its environment such as CPUs, file systems, networks, development teams, and so forth; i.e., document the relationship between the system's software and its development and execution environments.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "The SWARD shall include enough views to enable",
+                  "content": "The SWARD shall include enough views to enable a complete analysis to be performed; i.e., sufficient to determine the ability of the software architecture to achieve all the system's specified quality attribute requirements. Each view shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.2.1",
+                      "title": "A primary graphical presentation along with a description",
+                      "content": "A primary graphical presentation along with a description of the view.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.2.2",
+                      "title": "An element catalog that explains the elements and relations",
+                      "content": "An element catalog that explains the elements and relations in the primary presentation, including interface specification (or reference to it if documented in another view).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.2.3",
+                      "title": "A description of the variability points",
+                      "content": "A description of the variability points (as determined via commonality and variability analysis) supported by the view, the variation mechanisms (e.g., inheritance, extension points, parameterization, configuration files, compile-time selection, etc.) and how to exercise the mechanisms, and rationale for the variation mechanisms.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.2.4",
+                      "title": "Rationale for non-obvious design decisions",
+                      "content": "Rationale for non-obvious design decisions or decisions that are the source of questions, are critical, or have a widespread effect. It shall include relevant constraints, rejected alternatives, ramifications of the decision, and evidence that the decision was the correct one.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.2.5",
+                      "title": "Results of analyses of the architecture",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.2.6",
+                      "title": "Other pertinent information",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Software architecture cross-view information",
+              "content": "Additionally, since the software architecture documentation represents the unifying vision for all software development, it shall include the data needed to document information that applies across views. This cross-view information shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "A documentation roadmap",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "A view template",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "A system overview, including a context diagram",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.4",
+                  "title": "Mapping between views",
+                  "content": "Mapping between views (using a table or equivalent means to show how the elements of one view correspond to elements of another).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.5",
+                  "title": "A directory",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.6",
+                  "title": "A project glossary and acronym list",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Requirements allocation to software architecture",
+              "content": "The software architecture documentation shall include traceability from the derived software requirements into the software architecture. The software architecture shall have coverage for all of the derived software requirements.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Notes",
+          "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Appendices",
+          "content": "Appendices shall be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data, etc.) as necessary. As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendices shall be bound as separate documents for ease in handling. Appendices shall be lettered alphabetically (A, B, etc.). Document where open architecture requirements conflict in an appendix to this document, including proposed resolution thereof.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82176.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82235A",
+  "slug": "di-sess-82235a",
+  "title": "Materials and Processes List",
+  "summary": "Outlines the specific materials and standardized processes used to fabricate the system, subsystem, or configuration item, to ensure standardized materials and processes with known and validated qualification requirements are implemented.",
+  "approval_date": "2023-05-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10400",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2023-019",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Materials and Processes List Report outlines the specific materials and standardized processes used to fabricate the system, subsystem, or configuration item (CI). The data will be used to ensure standardized materials and processes with known and validated qualification requirements are being implemented in the system design.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described by the contract SOW.\n\nThis DID supersedes DI-SESS-82235.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82235"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Materials and Processes List Report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Materials Usage",
+          "content": "Describe the materials used in the system, subsystem, or configuration item such as metals (including alloy, heat treatment/strength condition, product form, and additional processing), polymers, ceramics, composites, adhesives, sealants, transparencies, organic and inorganic finish systems, and non-destructive inspection processes. Describe data on connectors, conformal coatings, gaskets, sealants, finish systems, and housings used for avionics construction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Part Nomenclature",
+          "content": "Describe the part nomenclature, categorized by material type and part construction including machined wrought stock, castings, forgings, sheet, and sandwich construction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "System Description",
+          "content": "Describe perspective 3-view drawings of the system, the system's major components/subsystems, and the structure. Describe the usage location of each material within the system. Define the strength conditions for all materials including the specific temper, age, anneal, and method of manufacture, where applicable. Define the post processing for all materials including coatings, chemical treatments, and surface modification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Fabrication and Joining Methods",
+          "content": "Describe the methods of fabrication and assembly of major components/subsystems. Include a description of co-cured and/or co-bonded composites, and welded metal joints. Describe the adhesive systems to be used including bonded construction, bonded studs, and bonded nut plates. Describe the use and configuration of bolted connections and all associated hardware.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Specification Usage",
+          "content": "List each material and process proposed for use in the system construction. List the protective finishes, protective coatings, and sealants used for corrosion protection associated with each material. List the corresponding material specifications, process specifications, and all applicable cross references to military or industry standards.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82235A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81925",
+  "slug": "di-sess-81925",
+  "title": "Quality Audit Site Visit Schedule",
+  "summary": "Establishes format and content requirements for a schedule that lays out on-site quality audit visits and related activities in support of certification to third-party quality standards.",
+  "approval_date": "2013-07-10",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "F9388",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "AF-84",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Quality Audit Site Visit Schedule lays out a timeline for on-site audits and related/similar activities based on requirements in quality standard(s) with the end objective of certification to those quality standard(s).\n\na.  Use this DID for schedules to support on-site quality audits carried out by contractors or governmental entities external to the audited organizational unit.  The term audit shall be used herein to encompass any inspection, review, evaluation, assessment, analysis, or similar activity involving an examination relative to a fixed standard.  Any reference to an auditor shall be understood include an inspector, reviewer, evaluator, assessor, analyst, or examiner.  All references to standards shall be understood to mean specific, identified, codified, published quality standards.  Associated measures of value or worth are also included within the scope of quality, such as, but not limited to, reliability, effectiveness, utility, surety, feasibility, practicability, maintainability, producibility, or sustainability.\n\nb.  Do not use this DID for quality audits that are conducted by the organizational unit (self-audits or internal audits) or by a unit within the audited unit's chain of command.\n\nc.  Do not use this DID for audits or similar events conducted exclusively off-site. A site visit is mandatory for use of this DID.  This DID can be used when a portion of the audit process is conducted off-site so long as there is a site visit associated with the audit event.\n\nd.  This DID applies to schedules for on-site audits that support one or more quality standards with requirements related to monitoring, surveillance, accreditation, or certification.  Scheduled audits directly support certification of meeting or exceeding one or more relevant quality standard(s).  The term certification shall be understood to include accrediation, validation, as well as any equivalent or similar terms used by relevant standard(s).\n\ne.  A key focus of the schedule shall be on audit hour requirements so as to ensure (1) availability of Government personnel and facilities, and (2) adequate length, scope, and depth of audit to meet the requirements of relevant standard(s) in support of certification.\n\nf.  This DID is applicable when a Government organizational unit enters into a contract, interagency agreement, or other formal relationship where the unit is audited to one or more standard(s).  All references to a contract herein shall be understood to refer to any agreement made in writing between the audited unit and the auditing entity.\n\ng.  This DID can be achieved only when the auditing firm or agency has the certification, accreditation, or other credentials requisite for the audit.\n\nh.  Some examples of entities producing third-party standards to which this DID could apply are as follows: International Organization for Standardization (ISO), American Society for Quality (ASQ), American National Standards Institute (ANSI), International Electrotechnical Commission (IEC), and the Society of Automotive Engineers (SAE).  This DID can also apply when the standard is created, maintained, or owned by an external Government agency (e.g., the Food and Drug Administration, Environmental Protection Agency, or Occupational Safety and Health Administration).  Audits in support of a third-party standard typically will not be carried out by the third-party organization creating or promulgating the relevant quality standard.\n\ni.  Some examples of third-party quality standards to which this DID could apply are as follows: ISO9001 (Quality Management Systems - Requirements), ISO/IEC17025 (General Requirements for the Competence of Testing and Calibration Laboratories), ANSI/ISO/ASQ Q9001 (Quality Management Systems - Requirements), and SAE AS9100 (Quality Management Systems: Aerospace Requirements).  This DID can also apply when the standard is a governmental standard (e.g., EPA or FDA Good Laboratory Practices or OSHA Voluntary Protection Program) that is created, maintained, or owned by an external agency.  Such external governmental standards shall be regarded as third-party standards for the sake of this DID.\n\nj.  This DID may be used alone or in conjunction with other DIDs.\n\nk.  This DID may be used when the Government requires a schedule for external (independent) quality audit site visits for a non-governmental entity.\n\nl.  This DID is a first issuance and does not supersede any other DID.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-81924"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "Relevant quality standard(s) shall be identified by contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content",
+      "content": "Schedules generated under this DID shall conform to the following requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Give name and commonly used abbreviation/identifier/number for each relevant standard",
+          "content": "(Mandatory) See examples in paragraph 9 under the heading Application/Use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Give name of entity (contractor or Governmental unit) performing the quality audit",
+          "content": "(Mandatory) Include any registration/certification number or other unique identifier needed to verify credentials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Give contract number and data item number from DD Form 1423, Contract Data Requirements List (CDRL)",
+          "content": "(Mandatory)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Specify site visits in terms of audit hours on each calendar day",
+          "content": "(Mandatory) Appropriate allowance for travel time shall be indicated if travel time represents an accountable charge that is distinct from overhead built into the hourly audit rate. Audit hours shall be shown in terms of man hours and number of auditors. For example, break down 15 audit hours per day as 3 auditors working 5 audit hours each or 2 auditors working 7.5 hours each.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Give calendar dates each site visit will be performed",
+          "content": "(Mandatory) Specify number of man hours expended during each site visit. If applicable, identify any off-site labor hours (such as writing reports, evaluating technical orders, or analyzing data) separate from audit days.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "Lay out milestones and inchstones as appropriate",
+          "content": "Include site visits and process reviews as well as other support activities to be performed by the auditor(s) or auditing firm. The schedule may identify instances where the auditing firm is awaiting information, material, or other inputs from the Government, but otherwise shall not include activities to be carried out by the Government.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Give physical location where audit will take place (normally installation name)",
+          "content": "(Mandatory) e.g., Robins AFB or NAS Pensacola.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Show the number of process reviews to be conducted during each site visit (list zero or none when appropriate)",
+          "content": "(Mandatory) Use a range if the exact quantity is unknown at the time the schedule is prepared. Ensure that the schedule is consistent with contractual obligations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "State contract period of performance",
+          "content": "(Mandatory) If multiple schedules are used to cover the entire period of performance, indicate the covered period on each schedule.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.10",
+          "title": "Show any activities called out explicitly by the relevant standard(s) or the contract",
+          "content": "(Mandatory)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.11",
+          "title": "List or describe physical areas planned to be examined, analyzed, evaluated, or otherwise considered",
+          "content": "(Optional) List or describe physical areas (e.g., buildings, shops, or lines), conceptual or subject areas (e.g., engineering, supply, training, regulatory, material, equipment, recordkeeping), controlling/guiding documents (e.g., instructions, technical orders, chapters, steps, job aids, process guides, forms), and records planned to be examined, analyzed, evaluated, or otherwise considered. Sufficient explanation or description shall be provided to meet industry standards of accuracy, precision, coherence, clarity, emphasis, traceability, verifiability, and auditability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.12",
+          "title": "List any names of any processes for which process reviews are to be conducted",
+          "content": "(Optional) (see DID DI-SESS-81924, titled Process Review Report).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.13",
+          "title": "State other information specified by contract",
+          "content": "(Optional)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "The schedule shall meet the following requirements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Paper shall contain at least 30% post-consumer recycled matter",
+          "content": "pursuant to Executive Order 13101.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Use letter size paper (8 1/2 inches by 11 inches) that is white or light-colored",
+          "content": "(ensure color does not produce darkened image when photocopied).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Schedules shall be typed or printed",
+          "content": "Use of color to clarify or emphasize dates, activities, or requirements is encouraged.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Schedule format shall be determined largely by the auditing firm",
+          "content": "subject to any explicit requirements mandated by the relevant quality standard(s) or by contract. A standard form generated by the auditing firm may be used.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "At least one hard copy of each schedule shall be provided to the Government",
+          "content": "If more copies are to be provided, the contract shall state the number of copies explicitly. Photocopies shall be as good as originals. The requirement for a hard copy schedule may be waived by the Government's designated recipient for the schedule (normally a technical contact or quality program manager) upon receiving a satisfactory electronic version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "All text and markings on hard copy schedules (or copies thereof) must be legible",
+          "content": "Ink and toner colors must be such that the salient information is reproducible by photocopying. Minor losses in image quality (such as faint borders or designs unrelated to the salient information) that occur during photostatic reproduction are tolerable. If both sides of the paper are used, the paper weight/thickness shall be such that the print/writing does not bleed through during photostatic reproduction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Individual format requirements may be waived or modified by contract",
+          "content": "Additional/other format requirements may be specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Electronic versions of schedules may be required or substituted for hard copies by contract",
+          "content": "If electronic versions are specified without further elaboration, the default file type shall be any of the following: Adobe portable document format (PDF), Microsoft Excel (xls or xlsx), or Microsoft Word (doc or docx); signatures are not required. Any specific requirements for electronic versions beyond what is stated in this DID shall be explicitly stated in the contract (e.g., file format, digital signature use/verification).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81925.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

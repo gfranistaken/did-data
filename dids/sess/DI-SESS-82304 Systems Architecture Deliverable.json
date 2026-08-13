@@ -1,0 +1,536 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82304",
+  "slug": "di-sess-82304",
+  "title": "Systems Architecture Deliverable",
+  "summary": "Provides the detailed representation of a system and its components, supporting viewpoints, architecture products, component relationships, and physical, functional, and software architecture priorities for a program.",
+  "approval_date": "2019-10-29",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10120",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "SESS-2019-069",
+  "applicable_forms": "No",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Systems Architecture Deliverable (SysAD) provides the detailed representation of a system and the system components organized in a manner that supports viewpoints, architecture products, system component relationships, and additional descriptions that comprise the authoritative representation of the system architecture for the program.  The SysAD details physical and functional architectures and interfaces, along with software architecture priorities of the system.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.  This DID is applicable to all Department of Defense (DoD) acquisition programs through all program lifecycle phases.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "https://dodcio.defense.gov/library/dod-architecture-framework/",
+      "url": "https://dodcio.defense.gov/library/dod-architecture-framework/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.  The SysAD shall describe the number, title, revision, and date of all documents referenced in the deliverable.  This section shall also identify the source for all documents not available through normal Government stocking activities.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SysAD shall be in the form of a document, a digital system model, or a part of a larger digital system model that also encompasses other available system models that describe the system, e.g., system requirements, software architecture, system operational viewpoints, system behavior models, and system parametric models as specified in the contract statement of work.  When delivered as a digital system model, the format shall be in the native model or standard-defined data format(s) as specified in the contract statement of work.  If delivered as a document, the SysAD shall in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The SysAD shall be divided into paragraphs, as needed, to establish the context for the planning described in the deliverable.  In the case of a digital system model, the terms \"section\" or \"paragraph\" in this DID shall mean the digital system model element(s) that fulfill the section or paragraph's requirements.  The term \"document\" in this DID shall mean a collection of data regardless of its medium.  The SysAD shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Document or model management and configuration control information",
+          "content": "Identify the version, release date, and other relevant management and configuration control information associated with the current version of the document or model.  Include a change history, highlighting significant changes from version to version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Purpose and Scope of the SysAD",
+          "content": "Explain the SysAD's overall purpose and scope. Explain the criteria for deciding which design decisions are architectural (and therefore included in the SysAD) and which design decisions are non-architectural (and therefore included elsewhere).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "How the SysAD Is Organized",
+          "content": "Provide a narrative description of the seven major sections of the SysAD (as identified by this DID) and the overall contents of each.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Stakeholder Representation",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Stakeholders and their concerns",
+              "content": "Identify the stakeholder roles considered in the development of the architecture described by the SysAD.  For each identified stakeholder, include the concerns that the stakeholder has that can be addressed by the information in the SysAD.  Indicate how serious each concern is to a stakeholder in that role.  The following stakeholders shall be considered:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.1.1",
+                  "title": "Hardware and software developers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.2",
+                  "title": "Infrastructure developers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.3",
+                  "title": "End users",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.4",
+                  "title": "Project Segment Teams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.5",
+                  "title": "Application system engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.6",
+                  "title": "Application and platform hardware engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.7",
+                  "title": "Security engineers and certifiers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.8",
+                  "title": "Safety engineers and certifiers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.9",
+                  "title": "Communications engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.10",
+                  "title": "System of system engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.11",
+                  "title": "Interoperability and Interface engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.12",
+                  "title": "Chief Engineer/Chief Scientist",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.13",
+                  "title": "Lead System Integrator (LSI) Program manager(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.14",
+                  "title": "Government Program manager(s) (including those concerned with licensing)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.15",
+                  "title": "System integration and test engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.16",
+                  "title": "External test agencies",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.17",
+                  "title": "Operational system managers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.18",
+                  "title": "Trainers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.19",
+                  "title": "Maintainers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.20",
+                  "title": "Other Service representatives",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.21",
+                  "title": "Auditors (LSI internal, General Accounting Office (GAO), etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.22",
+                  "title": "Program Protection Lead",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.23",
+                  "title": "Trusted Systems and Networks Focal Point",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.24",
+                  "title": "System Security Engineer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.25",
+                  "title": "Intelligence Analysis Engineer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Use Cases or User Stories",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Stakeholder Scenarios for Using the SysAD",
+              "content": "For each stakeholder role identified, detail a few short scenarios that explain how that stakeholder would use specific sections of the SysAD to help address concerns.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Viewpoint and View Definitions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Introduction to Viewpoints",
+              "content": "Provide a short textual definition of a viewpoint and how the concept is used in the SysAD.  The Systems Viewpoint, for Legacy support, is the design for solutions articulating the systems, their composition, interconnectivity, and context providing for or supporting operational and capability functions.  Systems Viewpoint will describe the systems and interconnections providing for or supporting DoD functions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Describe each viewpoint used in the SysAD",
+              "content": "using the following outline.  The SysAD shall include the following viewpoints:  Department of Defense Architecture Framework (DoDAF) Systems Viewpoint models SV-1, SV-2, SV-3, SV-4, SV-5a, SV-5b, SV-6, SV-7, SV-8, SV-9, SV-10a, SV-10b, and SV-10c (see https://dodcio.defense.gov/library/dod-architecture-framework/).",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Viewpoints",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.2.1.1",
+                      "title": "Name the viewpoint",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.6.2.1.1.1",
+                          "title": "Abstract",
+                          "content": "Provide a brief overview of the viewpoint.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.1.1.2",
+                          "title": "Stakeholders and Their Concerns Addressed",
+                          "content": "Identify the stakeholders and their concerns that this viewpoint is intended to address.  Indicate questions that can be answered by consulting views that conform to this viewpoint.  Include significant questions that cannot be answered by consulting views conforming to this viewpoint.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.1.1.3",
+                          "title": "Elements, Relations, Properties, and Constraints",
+                          "content": "Define the types of elements, the relations among them, the significant properties they exhibit, and the constraints they obey for views conforming to this viewpoint.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.1.1.4",
+                          "title": "Language(s) to Model or Represent Conforming Views",
+                          "content": "Identify the language or languages that are used to model or represent views conforming to this viewpoint, and cite a definition document for each.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.1.1.5",
+                          "title": "Applicable Evaluation or Analysis Techniques and Consistency and Completeness Criteria",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.1.1.6",
+                          "title": "Viewpoint Source",
+                          "content": "Include a citation for the source of this viewpoint definition, if any.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "How a view is documented",
+          "content": "Identify the documentation organization for documenting a view.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Relationship to Other SysADs",
+          "content": "Identify the relationship and functional allocation between this SysAD and other architectures and requirements on the facility, system, hardware, interfaces, and software.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Process for Updating the SysAD",
+          "content": "Indicate the reporting process for discrepancies, errors, inconsistencies, or omissions from the SysAD.  Include necessary point of contact information for submitting the report.  If a form is to be used for reporting, a copy of the blank form or reference to an online electronic version shall be included in the SysAD.  Indicate how error reports are handled, and how and when a submitter is notified of the issue's disposition.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Architecture background",
+          "content": "The architecture background information shall be organized as follows and include the following information",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Problem Background",
+              "content": "In this section, indicate the constraints that significantly influenced the architecture, to include:  any mission critical attribute, safety critical attribute, and other Configuration Item goals.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "System Overview",
+              "content": "Indicate the general function and purpose for the system or subsystem whose architecture is described in the SysAD.  Denote the functions that are mission critical and system critical (see Procedures for Protection of Critical Program Information, Mission Critical Functions, and Critical Components within the Missile Defense Agency, MDA MANUAL 5200.08-M; available via MDA/DS, 5700 18th Street, Building 245, Fort Belvoir, VA 22060-5573",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Goals and Context",
+              "content": "Indicate the goals and major contextual factors for the system architecture.  Include the role system architecture plays in the life cycle, relevant acquisition factors, the impact of the LSI model, the effects of incremental development, and the relationship to system engineering and system security engineering results and artifacts.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Significant Requirement's Drivers",
+              "content": "Indicate behavioral and quality attribute requirements (original or derived) that shaped the system architecture.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "Special Considerations",
+              "content": "Describe special system architecture design considerations, e.g., if the system will be a viable Defense Exportability Feature (DEF) candidate.  Identify the impacts and risks to the system from Foreign Military Sales (FMS) and Direct Commercial Sales (DCS).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Solution Background",
+          "content": "In this section, indicate why the architecture is the way that it is, and include a convincing argument that the architecture is the right one to satisfy the functional and quality attribute goals levied upon it.  The solution background information shall be organized as follows and include the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Architectural Approaches",
+              "content": "Include a rationale for the major design decisions embodied by the system architecture.  Indicate any design approaches applied to the system architecture.  Include a rationale for the selection of those approaches, and indicate why they were chosen over other approaches that were seriously considered, but ultimately rejected.  Indicate any relevant Commercial off-the-shelf (COTS) or Government off-the-shelf (GOTS) issues, including any associated trade spaces and security concerns.  Indicate the incorporation of Open Systems Architecture (OSA) with a Modular Open Systems Approach (MOSA) to ease scalability and technology refresh.  Note:  \"Open Standards\" are widely accepted and supported by recognized standards organizations or the marketplace that support interoperability, portability, and scalability [Glossary of Defense Acquisition Acronyms & Terms, 13th Edition, Nov. 2009].",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Analysis Results",
+              "content": "Include the results of any quantitative or qualitative analyses that have been performed that provide evidence that the system architecture is fit for purpose.  If an architecture evaluation has been performed, the analysis sections of its final report shall be included.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Requirements Coverage",
+              "content": "Indicate the requirements (original or derived) addressed by the system architecture.  Include those requirements or constraints that are derived from higher-level SysADs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.4",
+              "title": "Constraints",
+              "content": "Indicate any constraints on elements or relations not otherwise described.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.5",
+              "title": "Summary of Changes in Current Version",
+              "content": "For versions of the SysAD after the original release, include a summary of the actions, decisions, decision drivers, analysis and trade studies results that became decision drivers, requirements changes that became decision drivers, and how these decisions have caused the architecture to evolve or change.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "General relations among views",
+          "content": "Indicate the general relationship among the views chosen to represent the architecture.  Include the context, operation, functions, interfaces, and activities of interoperability, interfaces, and integration.  Identify consistency among those views, and any known inconsistencies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "View-to-view relations",
+          "content": "For each set of views that are related to one another, show how the elements in one view are related to the elements in the other.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Referenced materials",
+          "content": "Provide citations for each reference used, giving enough information so that a user of the SysAD could be reasonably expected to locate the reference.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Directory",
+          "content": "Include an index of all element names, relation names, and property names.  For each entry, identify where in the SysAD it was defined, and each place it was used.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "Glossary",
+              "content": "Include definitions of locally defined terminology used in the SysAD. If terms are used in the SysAD that are also used in a parent SysAD, and the definition is different, indicate why.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.2",
+              "title": "Acronym list",
+              "content": "Include a definition of the acronyms used in the SysAD.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Appendices",
+          "content": "Appendices shall be included, when necessary to provide information published separately for convenience in document maintenance (e.g., charts, classified data).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82304.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

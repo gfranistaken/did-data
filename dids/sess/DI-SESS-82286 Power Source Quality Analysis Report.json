@@ -1,0 +1,157 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82286",
+  "slug": "di-sess-82286",
+  "title": "Power Source Quality Analysis Report",
+  "summary": "Documents the predicted power quality of an electrical power system as compared to the standard power characteristics defined by MIL-STD-704 to verify interoperability of electrical power sources and utilization equipment.",
+  "approval_date": "2019-08-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10070",
+  "limitation": "None",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2019-036",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Power Source Quality Analysis Report documents the predicted power quality of an electrical power system as compared to the standard power characteristics defined by MIL-STD-704. The data will be used to verify the interoperability of electrical power sources and utilization equipment\n\nThis Data Item Description (DID) contains the format, content and intended use information for the Power Source Quality Analysis Report resulting from work tasking described by the contract statement of work.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "MIL-STD-704",
+      "url": "https://quicksearch.dla.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates of any applicable amendments, notices, and revisions shall be as specified in the solicitation or contract.\n\n(Copies of the Department of Defense Interface Standard, MIL-STD-704, Aircraft Electric Power Characteristics are available online at https://quicksearch.dla.mil/)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor's format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "A description of the model",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A description of the methods used to generate the model",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "A justification of the validity of the selected modeling approach",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "The results of modeling the electrical power system",
+          "content": "including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Power quality of each electrical power source within the system performance during all operating conditions",
+              "content": "including source failures",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "A comparison of the power quality results to the power quality limits in MIL-STD-704",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "The ability of system utilization equipment to operate when provided with nominal, abnormal, and emergency power from each power source within the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "The limits of the ability of system utilization equipment to handle transient conditions outside of MIL-STD-704",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Performance of the power regulation equipment when connected to the utilization equipment",
+              "content": "including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.5.1",
+                  "title": "Regions of stable operation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.2",
+                  "title": "Amount of positive control margin",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.6",
+              "title": "The control logic and states of the electric power system including operation during normal, abnormal, and source failure conditions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82286.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

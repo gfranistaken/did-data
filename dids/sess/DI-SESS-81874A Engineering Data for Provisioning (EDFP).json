@@ -1,0 +1,175 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81874A",
+  "slug": "di-sess-81874a",
+  "title": "Engineering Data for Provisioning (EDFP)",
+  "summary": "Engineering Data for Provisioning (EDFP) is the engineering data used during initial provisioning of support resources, providing definitive item identification data to the Defense Logistics Agency for National Stock Number assignment.",
+  "approval_date": "2026-02-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10615",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "LS",
+  "project_number": "PSSS-2025-003",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Engineering Data for Provisioning (EDFP) is the engineering data used during the initial provisioning of support resources. Per DODM 4140.26 Vol 4, this technical data provides definitive identification of dimensional, material, mechanical, electrical, or other characteristics adequate for provisioning of the support items of the end item(s) on contract. As such, it serves as the primary means of transmitting item identification requirements to the Defense Logistics Agency (DLA) for National Stock Number (NSN) assignment. EDFP consists of data needed to identify the physical characteristics, location, and function of an item. IAW DODM 4100.39, EDFP will be used to\n- Establish each item of supply with item identification that includes the minimum data required to identify the unique characteristics of the item and differentiate it from any other item.\n- Perform Item Entry Control (IEC) review and assign a distinct NSN to every proposed item of supply that is not a duplicate of an existing item of supply.\n- Ensure technical data supporting supply and logistics life-cycle requirements are available in the Federal Catalog Program (FCP) to facilitate the proper performance of cataloging, item identification, and other logistics data management tasks.\n\nEDFP format composition (in order of precedence):\n- Military or industry specifications or standards (e.g. Mil Specs, ASME, ANSI ISO, DIN)\n- Engineering drawings\n- Production or commercial drawings and associated lists\n- Commercial catalogs\n- Sketches or photographs with descriptive characteristics\n\na. This Data Item Description (DID) contains the format and content preparation instructions for EDFP resulting from the work described by Activities D.1.8 and D.1.10 of SAE-TA-STD-0017, Product Support Analysis. (Copies of these documents, along with SAE-GEIA-STD-0007, are available from SAE International (c), 400 Commonwealth Drive, Warrendale, PA 15096-0001; http://www.sae.org)\n\nb. This DID is applicable to all contracts which contain a provisioning requirement. However, EDFP is not required when the item is\n- Identified by a military or civilian industrial specification or standard which completely describes the item including its materiel, dimensional, mechanical, and electrical characteristics.\n- Identified as an Item of Supply in the Federal Logistics Information System (FLIS) via a National Stock Number (NSN) deemed suitable for procurement purposes by the Defense Logistics Agency (DLA).\n- Listed as a reference item (subsequent appearance of an item) on a parts list.\n\nc. Codifying Design Control Activity (DCA) is an essential element of Federal Cataloging. For contracting purposes, the following DCA definition should be cited in relation to this element and EDFP:\n- A contractor or Government activity having responsibility for the design of a given part, and for the preparation and currency of engineering drawings and other technical data for that part. The design control activity may or may not be the actual manufacturer.\n\nd. This DID supersedes DI-ALSS-81557, Supplemental Data for Provisioning (SDFP).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-ALSS-81557"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "SAE International",
+      "url": "http://www.sae.org"
+    },
+    {
+      "label": "SAE-GEIA-STD-0007, Logistics Product Data",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "MIL-HDBK-539 Digital Engineering and Modeling Practices",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of documents cited herein shall be the current, publicly available version as of the date of the solicitation or contract award, unless a specific version is identified within this DID. The following documents are applicable to the extent specified in this DID:\n\nSAE-GEIA-STD-0007, Logistics Product Data (https://www.sae.org)\nMIL-HDBK-539 Digital Engineering and Modeling Practices (available at https://quicksearch.dla.mil)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "If submitted as an Engineering Drawing (which encompasses Detail, Source Control, Vendor Item Control, and Altered Item types and applications of drawings), the EDFP format shall be IAW ASME Y14.24 and adhere to Content requirements defined below. If submitted as production or commercial drawings and/or associated lists, commercial catalogs, or sketches/photographs with descriptive characteristics, the EDFP shall adhere to Content requirements defined below.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Contents",
+      "content": "EDFP shall provide the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Form, Fit and Function data",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "IAW DFARS 252.227.7013 Rights in technical data - Noncommercial Items & DFARS 252.227-7015 Rights in technical data - Commercial Items",
+              "content": "Technical data that describes the required overall physical, functional, and performance characteristics (along with the qualification requirements, if applicable) of an item, component, or process to the extent necessary to permit identification of physically and functionally interchangeable items.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "IAW MIL-HDBK-61B",
+              "content": "Form: The shape, size, dimensions, mass, weight, and other physical parameters that uniquely characterize an item. For software, form denotes the language and media.\n\nFit: The ability of an item to physically interface or interconnect with or become an integral part of another item.\n\nFunction: The action or actions that an item is designed to perform.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Data sufficient to complete the following Provisioning and Federal Cataloging tasks",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Item Entry Control",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Standardization",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Review for potential Interchangeability and Substitutability",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Item Identification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Item Management Code (IMC) assignment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Source, Material and Recoverability (SMR) codification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Authoritative source for IEC",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "DLA utilizes the IEC process to enable a",
+              "content": "standardized, reliable record for each item of supply in the FCP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "IEC prevents duplicate Item of Supply (IoS)",
+              "content": "entries, minimizes FCS codification errors, and facilitates efficient logistics and supply chain operations.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81874A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

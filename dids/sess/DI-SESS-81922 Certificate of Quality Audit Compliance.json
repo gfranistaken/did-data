@@ -1,0 +1,207 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81922",
+  "slug": "di-sess-81922",
+  "title": "Certificate of Quality Audit Compliance",
+  "summary": "The Certificate of Quality and Audit Compliance certifies that an organizational unit has met or exceeded one or more third-party quality standards.",
+  "approval_date": "2013-07-10",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "F9385",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "AF-84",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Certificate of Quality and Audit Compliance certifies that an organizational unit has met or exceeded one or more third-party quality standards.\n\na.  Use this DID for certificates resulting from quality audits (not individual process reviews) of organizational units carried out by contractors or governmental entities.  The term audit shall be used herein to encompass any inspection, review, evaluation, assessment, analysis, or similar activity involving an examination relative to a fixed standard.  Any reference to an auditor shall be understood include an inspector, reviewer, evaluator, assessor, analyst, or examiner.  All references to standards shall be understood to mean specific, identified, codified, published quality standards.  Associated measures of value or worth are also included within the scope of quality, such as, but not limited to, reliability, effectiveness, utility, surety, feasibility, practicability, maintainability, producibility, or sustainability.\n\nb.  This DID applies when an organization that is external to the audited unit (outside its chain of command or contracted) issues a certificate validating conformance or compliance to a third-party standard.  This DID shall not apply to an organization that self-certifies compliance or conformance to a third-party standard.\n\nc.  This DID applies to a certificate that offers documentation (proof) of certification at meeting or exceeding one or more relevant quality standard(s).  The term certification shall be understood to include accreditation and validation as well as any equivalent or similar terms used by relevant standard(s).  The term certificate shall be construed to include terms such as affidavit, credential, endorsement, or warrant that are used in a similar or equivalent fashion in relevant standard(s).\n\nd.  This DID can be achieved only when auditors or their certification bodies (also called registrars) possess those certifications, accreditations, or other credentials required pursuant to the relevant standard(s). Likewise, the employing firm or agency (the certification body) must also have the certification, accreditation, or other credentials requisite for the audit.\n\ne.  This DID is applicable when a Government organizational unit enters into a contract, interagency agreement, or other formal relationship where the unit is audited to an identified standard and requires documentation that a specific third-party standard has been met or exceeded.  All references to a contract herein shall be understood to mean any agreement made in writing between the audited unit and the auditing entity.\n\nf.  Some examples of entities producing third-party standards to which this DID could apply are as follows: International Organization for Standardization (ISO), American Society for Quality (ASQ), American National Standards Institute (ANSI), International Electrotechnical Commission (IEC), and the Society of Automotive Engineers (SAE).  Audits in support of a third-party standard typically will not be carried out by the third-party organization creating or promulgating the relevant quality standard.\n\ng.  Some examples of third-party quality standards to which this DID would apply are as follows: ISO9001 (Quality Management Systems - Requirements), ISO/IEC17025 (General Requirements for the Competence of Testing and Calibration Laboratories), ANSI/ISO/ASQ Q9001 (Quality Management Systems - Requirements), and SAE AS9100 (Quality Management Systems: Aerospace Requirements).\n\nh.  This DID may be used alone or in conjunction with other DIDs.\n\ni.  This DID may be used when the Government requires proof of a quality audit certification for a non-governmental entity.\n\nj.  This DID is a first issuance and does not supersede any other DID.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "Relevant quality standard(s) as identified by contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The certificate shall meet the following requirements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The certificate shall be made using",
+          "content": "The certificate shall be made using non-fading (archival quality) ink and toner on 100% linen or 100% cotton (rag) stock.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Certificate size shall be no smaller",
+          "content": "Certificate size shall be no smaller than 6 inches by 9 inches (6\" x 9\") and no larger than 9 inches by 13 inches (9\" x 13\").  Regular letter size (8 1/2\" x 11\") is ideal.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "All mandatory content shall be on",
+          "content": "All mandatory content shall be on one side of one page unless exempted above or by contract.  Optional content may extend beyond one page.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Certificate text shall be in a",
+          "content": "Certificate text shall be in a font size of no less than 12 points and in a common, highly readable typeface family (e.g., Times, Schoolbook, Helvetica, Palatino, or Verdana).  Restrict use of stylized, ornamented, baroque, or fancy typefaces to the title or heading as well as logos, trademarks, or servicemarks.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "Orientation may be portrait or landscape",
+          "content": "Orientation may be portrait or landscape unless otherwise specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "If hard copies are used at",
+          "content": "If hard copies are used, at least two shall be provided.  If more copies are needed, the contract shall state the number of copies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "All text, logos, and names on",
+          "content": "All text, logos, and names on the certificate must be legible.  Ink and toner colors must be such that the salient information is reproducible by photocopy.  Minor losses in image quality (such as faint borders or designs unrelated to the salient information) that occur during photostatic reproduction are tolerable.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Individual format requirements may be waived",
+          "content": "Individual format requirements may be waived or modified in the written contract.  Additional/other format requirements may be specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.9",
+          "title": "Electronic images may be required or",
+          "content": "Electronic images may be required or substituted for hard copies if authorized/required in writing.  If electronic images are specified in the contract without further elaboration, the default file type shall be Adobe portable document format (PDF) with handwritten (cursive/payroll) signatures (no digital signatures) embedded in the digital images.  If electronic images are authorized to be substituted for or required to be provided along with hard copy certificates, any specific requirements beyond what is stated in this DID shall be explicitly stated in the contract (e.g., file formats, digital signature use/verification).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "Certificates generated under this DID shall comply with the following requirements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Give name and commonly used abbreviation/identifier/number",
+          "content": "(Mandatory) Give name and commonly used abbreviation/identifier/number for the standard. See examples in paragraph 7 under the heading Application/Use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Give name of entity issuing",
+          "content": "(Mandatory) Give name of entity (contractor or external Governmental unit) issuing the certificate.  Include, along with the name, any registration number or other identifier needed to explicitly associate the entity with relevant credentials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Give name of organizational unit being",
+          "content": "(Mandatory) Give name of organizational unit being certified as meeting the third-party standard.  Include, along with the name, any registration number or other identifier needed to explicitly tie the organizational unit with the certification.  If applicable to the specific certification, list sites, subunits, or addresses.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "State date of issue or",
+          "content": "(Mandatory) State date of issue or final approval.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "State expiration date",
+          "content": "(Mandatory) State expiration date.  If there is no expiration date or if the certification is good until withdrawn or canceled, state so.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "State contract number and data item",
+          "content": "(Mandatory) State contract number and data item number from DD Form 1423, Contract Data Requirements List (CDRL).  This information may appended to the certificate using a letter or memorandum if it does not fit into a standard format certificate used by the issuer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Affix signature(s) of responsible person(s)",
+          "content": "(Mandatory) Affix signature(s) of responsible person(s) issuing and/or approving certificate on behalf of entity in 3.2.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "For conditional certificates, indicate conditions",
+          "content": "(Mandatory) For conditional certificates, indicate conditions under which certificate applies and any changes that could affect the status of the certificate.  This includes provisional certificates that automatically change status upon completion of an action or failure to complete an action.  Omit if the certificate is not conditional or provisional in nature.  This information may appended to the certificate using a letter or memorandum if it does not fit into a standard format certificate used by the issuer.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "State period (dates) audit occurred",
+          "content": "(Optional) State period (dates) audit occurred.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "State other information specified by",
+          "content": "(Optional) State other information specified by the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "State other information at the",
+          "content": "(Optional) State other information at the auditing entity's discretion.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81922.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

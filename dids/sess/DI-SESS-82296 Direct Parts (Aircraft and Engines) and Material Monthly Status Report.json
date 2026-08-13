@@ -1,0 +1,296 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82296",
+  "slug": "di-sess-82296",
+  "title": "Direct Parts (Aircraft and Engines) and Material Monthly Status Report",
+  "summary": "Specifies the format and content for the Aircraft and Engine Direct Parts and Material Monthly Status Report used to identify aircraft and engine parts and material status each month in accordance with COMNAVIRFORINST 4790.2C.",
+  "approval_date": "2019-10-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10099",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2019-059",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Aircraft and Engine Direct Parts and Material Monthly Status Report is used to identify Aircraft and Engine parts and material status each month In Accordance With (IAW) the Commander Naval Air Forces Instruction (COMNAVIRFORINST) 4790.2C\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DoD Manual (DoDM) 5200.01 Volume 2, DoD Information Security Program",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents",
+      "url": "https://www.esd.whs.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable. The report shall be in Microsoft Office 2016 file format (i.e., 2016 Microsoft Word, Excel, PowerPoint, and Project) and shall be completely accessible (including formulas) to the Government. Forms, letters, and signed documents will be in fully-searchable Portable Document Format (.pdf). The plan shall be free of proprietary markings.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The plan shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page",
+          "content": "The cover page shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title and identification of the system, component, program, or project",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Contract Data Requirements List (CDRL) number and title",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Type of report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Date of report and period covered",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Preparing activity and location of the site where prepared",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Security classification, when required",
+              "content": "in accordance with DoD Manual (DoDM) 5200.01 Volume 2, DoD Information Security Program: Making of information. (copies of the document can be obtained at: https://www.esd.whs.mil/.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Distribution Statement as appropriate",
+              "content": "in accordance with Department of Defense Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents (copies of this document can be obtained at: https://www.esd.whs.mil/)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "The each Aircraft and Engine Direct Parts",
+          "content": "and Material Monthly Status Report shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Procurement",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Nomenclature",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.2.1.1.1",
+                      "title": "Repair Action",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.2",
+                      "title": "Date material turned in",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.3",
+                      "title": "Date material received at repair agency",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.4",
+                      "title": "Name and address of repair agency",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.5",
+                      "title": "Cost of repair",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.6",
+                      "title": "Date material shipped from repair agency",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.2.1.1.7",
+                      "title": "Date material received",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Requisition Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Part Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Quantity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Unit of issue",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Date requisition received",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.7",
+                  "title": "Date order with vendor",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.8",
+                  "title": "Purchase order number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.9",
+                  "title": "Date material shipped",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.10",
+                  "title": "Date receipt processed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.11",
+                  "title": "Unit price",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Report Preparer",
+          "content": "Name of person(s) preparing report, email addresses, and telephone number(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Appendices",
+          "content": "Include appendices where applicable; including tables, references, charts, or other descriptive material. Each appendix shall be identified and referenced in the appropriate area of this report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82296.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

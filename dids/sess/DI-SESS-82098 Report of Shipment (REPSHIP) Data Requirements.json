@@ -1,0 +1,222 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82098",
+  "slug": "di-sess-82098",
+  "title": "Report of Shipment (REPSHIP) Data Requirements",
+  "summary": "This report notifies the domestic customer or transshipping activity clearance authority (OCEAN) or customer service branch (CSB) (AIR) or Continental United States (CONUS) sea terminal of the transportation of arms, ammunition, and explosives (AA&E) and sensitive materiel.",
+  "approval_date": "2017-01-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9762",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2017-005",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This report notifies the domestic customer or transshipping activity clearance authority (OCEAN) or customer service branch (CSB) (AIR) or Continental United States (CONUS) sea terminal of the transportation of arms, ammunition, and explosives (AA&E) and sensitive materiel.\n\nThis Data Item Description (DID) contains the format, content, and intended use for the data product resulting from the work task described in the contract statement of work (SOW).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Format",
+      "content": "The REPSHIP shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Content",
+      "content": "The REPSHIP shall contain the following data:\n\nFrom: Shipping Activity\nTo: Domestic Customer or Transshipping Activity Clearance Authority (OCEAN) or Customer Service Branch (CSB) (AIR) or CONUS sea terminal\n\nInfo: Sponsoring Service Accountable Supply Activity Ultimate Consignee/Final Destination\nSubject: Report of Shipment (REPSHIP)",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1",
+          "title": "Shipment date",
+          "content": "Shipment date written as a three-digit day of the year (Julian).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2",
+          "title": "Estimated Time of Arrival (ETA)",
+          "content": "Estimated Time of Arrival (ETA) written as a three-digit day of the year (Julian) (Observe Standard Transit Time (STT) if CONUS truck shipment and no required delivery date (RDD) identified).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3",
+          "title": "Required Delivery Date (RDD) or Delivery Date (DD)",
+          "content": "Required Delivery Date (RDD) or Delivery Date (DD) if specified.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4",
+          "title": "Carrier",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5",
+          "title": "Bill of Lading (BL) Number",
+          "content": "Bill of Lading (BL) Number (See Notes 1, 2, 3, 4).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "6",
+          "title": "MTX-GS Service Number",
+          "content": "MTX-GS Service Number (See Notes 1, 2, 3).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "7",
+          "title": "Air Release Number",
+          "content": "Air Release Number (See Notes 1, 2, 3) or for Surface Shipments, Export Traffic Release (ETR) Number, Vessel Name, and Voyage Document Number.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "8",
+          "title": "Shipment (Cargo) Name",
+          "content": "Shipment (Cargo) Name (Example: Bombs).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "9",
+          "title": "Container and Seal Number (If Applicable)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "9.1",
+              "title": "Container Transportation Control Number (TCN)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.2",
+              "title": "Total weight of contents",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "9.3",
+              "title": "Rounds, pieces, weight, cube, condition code, and lot numbers",
+              "content": "Rounds, pieces, weight, cube, condition code, and lot numbers (See Note 4).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "title": "Security Risk Category (SRC)",
+          "content": "Security Risk Category (SRC), (e.g., Security Risk Category I, II, III, IV, U, Secret, Confidential, None).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "11",
+          "title": "Controlled Inventory Item Code (CIIC)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "12",
+          "title": "Total Net Explosive Weight (NEW)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "13",
+          "title": "Hazard Classification(s)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "14",
+          "title": "Department of Defense Identification Code/Navy Ammunition Logistic Code (DODIC/NALC)",
+          "content": "Department of Defense Identification Code/Navy Ammunition Logistic Code (DODIC/NALC). (See Note 4).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "Notes",
+      "title": "Notes",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1",
+          "title": "Multiple shipment units",
+          "content": "When the conveyance contains more than one shipment unit, repeat the data elements in separately lettered paragraphs for each shipment unit.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2",
+          "title": "Cargo for more than one vessel or flight",
+          "content": "Cargo for more than one vessel or flight, but shipped to Point of Embarkation (POE) in a single conveyance, is included in a single REPSHIP. When cargo for a single vessel is moved to the Secondary Point of Embarkation (SPOE) in more than one conveyance, repeat all the data elements as above in separate numbered paragraphs for each conveyance or REPSHIP.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3",
+          "title": "Separate REPSHIP for each mode of shipment",
+          "content": "A separate REPSHIP is used for each mode of shipment to the POE.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4",
+          "title": "Lot number, DODIC, and NALC",
+          "content": "Lot number, DODIC, and NALC are not mandatory fields. If available, they may be provided in the electronic REPSHIP or in the template above. If a Commercial Bill of Lading (CBL) is used, the lot number and ammunition condition code should be included in the remarks section. Weapons must be identified on the CBL by each serial number contained within the shipment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "5",
+          "title": "DODIC and NALC",
+          "content": "DODIC and NALC are codes used specifically for logistic administration and control of ammunition.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82098.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

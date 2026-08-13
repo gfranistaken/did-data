@@ -1,0 +1,224 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81921",
+  "slug": "di-sess-81921",
+  "title": "Quality Audit Site Visit Report (QASVR)",
+  "summary": "This DID documents an on-site audit conducted by an external (independent) auditor to one or more quality standard(s).",
+  "approval_date": "2013-07-10",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "F9384",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "AF-84",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This DID documents an on-site audit conducted by an external (independent) auditor to one or more quality standard(s).\n\na.  Use this DID for reports resulting from on-site quality audits carried out by contractors or governmental entities external to the audited organizational unit.  The term audit shall be used herein to encompass any inspection, review, evaluation, assessment, analysis, or similar activity involving an examination relative to a fixed standard.  Any reference to an auditor shall be understood include an inspector, reviewer, evaluator, assessor, analyst, or examiner.  All references to standards shall be understood to mean specific, identified, codified, published quality standards.  Associated measures of value or worth are also included within the scope of quality, such as, but not limited to, reliability, effectiveness, utility, surety, feasibility, practicability, maintainability, producibility, or sustainability.\n\nb.  Do not use this DID for quality audits that are conducted by the organizational unit (self-audits or internal audits) or by a unit within the audited unit's chain of command.\n\nc.  Do not use this DID for audits or similar events conducted exclusively off-site.  A site visit is mandatory for use of this DID.  This DID can be used when a portion of the audit process is conducted off-site so long as there is a site visit associated with the audit event.\n\nd.  This DID applies to reports resulting from on-site audits that support one or more quality standards with requirements related to monitoring, surveillance, accreditation, or certification.  Such reports directly support certification to one or more relevant quality standard(s).  The term certification shall be understood to include accrediation and validation as well as any equivalent or similar terms used by relevant standard(s).\n\ne.  This DID is applicable when a Government organizational unit enters into a contract, interagency agreement, or other formal relationship where the unit is audited to one or more standard(s).  All references to a contract herein shall be understood to refer to any agreement made in writing between the audited unit and the auditing entity.\n\nf.  This DID can be achieved only when auditors possess those certifications, accreditations, or other credentials required pursuant to the relevant standard.  Likewise, the auditing entity (i.e., the employing firm or agency) must also have the certification, accreditation, or other credentials requisite for the audit.\n\ng.  Some examples of entities producing third-party standards to which this DID could apply are as follows: International Organization for Standardization (ISO), American Society for Quality (ASQ), American National Standards Institute (ANSI), International Electrotechnical Commission (IEC), and the Society of Automotive Engineers (SAE).  This DID can also apply when the standard is created, maintained, or owned by an external Government agency (e.g., the Food and Drug Administration, Environmental Protection Agency, or Occupational Safety and Health Administration).  Audits in support of a third-party standard typically will not be carried out by the third-party organization creating or promulgating the relevant quality standard.\n\nh.  Some examples of third-party quality standards to which this DID could apply are as follows: ISO9001 (Quality Management Systems - Requirements), ISO/IEC17025 (General Requirements for the Competence of Testing and Calibration Laboratories), ANSI/ISO/ASQ Q9001 (Quality Management Systems - Requirements), and SAE AS9100 (Quality Management Systems: Aerospace Requirements).  This DID can also apply when the standard is a governmental standard (e.g., EPA or FDA Good Laboratory Practices or OSHA Voluntary Protection Program) that is created, maintained, or owned by an external agency.  Such external governmental standards shall be regarded as third-party standards for the sake of this DID.\n\ni.  This DID may be used alone or in conjunction with other DIDs.\n\nj.  This DID may be used when the Government requires a report of an external (independent) quality audit site visit for a non-governmental entity.\n\nk.  This DID is a first issuance and does not supersede any other DID.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-91923",
+    "DI-SESS-81924"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "Relevant quality standard(s) shall be identified by contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The report shall meet the following requirements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Paper shall contain at least 30%",
+          "content": "Paper shall contain at least 30% post-consumer recycled matter pursuant to Executive Order 13101.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Use letter size paper (8\u00bd inches by 11 inches)",
+          "content": "Use letter size paper (8\u00bd inches by 11 inches) that is white or light-colored (ensure color does not produce darkened image when photocopied).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Reports may be typed or legibly handwritten",
+          "content": "Reports may be typed or legibly handwritten at the discretion of the auditor or auditing entity.  For reports completed during or immediately after a site visit, it is recognized that a handwritten report may be the easiest, fastest, and cheapest way to provide the information to the Government.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Report format shall be determined largely",
+          "content": "Report format shall be determined largely by the lead auditor, subject to any explicit requirements mandated by the relevant quality standard(s) or by contract. A standard form generated by the auditing entity may be used.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "At least one hard copy of each",
+          "content": "At least one hard copy of each audit report shall be provided to the Government.  If more copies are to be provided, the contract shall state the number of copies explicitly.  Photocopies shall be as good as originals.  The requirement for a hard copy report may be waived by the Government's designated recipient for the report (normally a technical contact or quality program manager) upon receiving a satisfactory electronic version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.6",
+          "title": "All text, logos, and names on hard",
+          "content": "All text, logos, and names on hard copy reports (or copies thereof) must be legible.  Ink and toner colors must be such that the salient information is reproducible by photocopying.  Minor losses in image quality (such as faint borders or designs unrelated to the salient information) that occur during photostatic reproduction are tolerable.  If both sides of the paper are used, the paper weight/thickness shall be such that the print/writing does not bleed through during photostatic reproduction.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.7",
+          "title": "Individual format requirements may be waived",
+          "content": "Individual format requirements may be waived or modified by contract. Additional/other format requirements may be specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.8",
+          "title": "Electronic versions of reports may be required",
+          "content": "Electronic versions of reports may be required or substituted for hard copies by contract. If electronic versions are specified without further elaboration, the default file type shall be Adobe portable document format (PDF) with handwritten (cursive/payroll) signatures (no digital signatures) embedded in the digital versions.  Any specific requirements for electronic versions beyond what is stated in this DID shall be explicitly stated in the contract (e.g., file format, digital signature use/verification).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "Reports generated under this DID shall conform to the following requirements.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Give name and commonly used abbreviation/identifier/number",
+          "content": "(Mandatory) Give name and commonly used abbreviation/identifier/number for each relevant standard.  See examples in paragraph 8 under the heading Application/Use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Give name of entity (contractor or Governmental unit)",
+          "content": "(Mandatory) Give name of entity (contractor or Governmental unit) performing the quality audit. Include any registration/certification number or other unique identifier needed to verify credentials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Provide legible name of authoring auditor with signature",
+          "content": "(Mandatory) Provide legible name of authoring auditor with signature.  If more than one auditor has contributed to the report, then a lead individual shall be indicated by placing an asterisk (*) next to that name.  Whenever there are multiple contributors, the lead auditor shall sign the report.  Always list the names of all auditors.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Give dates the site visit was performed",
+          "content": "(Mandatory) Give dates the site visit was performed.  Specify number of man hours expended during the site visit by each auditor.  If additional labor hours were used for off-site work (such as report writing or analysis), list those hours separately.  If the report is to be issued or delivered more than 10 calendar days after a site visit is completed, then show the date of issuance on the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Give contract number and data item number",
+          "content": "(Mandatory) Give contract number and data item number from DD Form 1423, Contract Data Requirements List (CDRL).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "State contract period of performance",
+          "content": "(Mandatory) State contract period of performance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "State physical location where site visit was performed",
+          "content": "(Mandatory) State physical location where site visit was performed (normally installation name), e.g., Robins AFB, Redstone Arsenal, or NAS Pensacola.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Cover all matters that are explicitly called out",
+          "content": "(Mandatory) Cover all matters that are explicitly called out for consideration by the relevant quality standard(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "List the number of findings, broken down by severity",
+          "content": "(Mandatory) List the number of findings, broken down by severity (if applicable).  Findings may be appended to or integrated into the QASVR.  See DID DI-SESS-91923, titled Quality Audit Finding and Response Record.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "List the number of process reviews conducted",
+          "content": "(Mandatory) List the number of process reviews conducted during the visit.  Process review reports may be appended to or integrated into the QASVR.  See DID DI-SESS-81924, titled Process Review Report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "List or describe physical areas",
+          "content": "(Optional) List or describe physical areas (e.g., buildings, shops, or lines), conceptual or subject areas (e.g., engineering, supply, training, regulatory, material, equipment, recordkeeping), controlling/guiding documents (e.g., instructions, technical orders, chapters, steps, job aids, process guides, forms), and records examined, analyzed, evaluated, or otherwise considered.  Sufficient explanation or description shall be provided to meet industry standards of accuracy, precision, coherence, clarity, emphasis, traceability, verifiability, and auditability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "List any process reviews conducted or process review reports written",
+          "content": "(Optional) List any process reviews conducted or process review reports written",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "State other information specified by contract",
+          "content": "(Optional) State other information specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Give other relevant information",
+          "content": "(Optional) Give other relevant information (including observations or comments) at the discretion of the auditor or auditing entity.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81921.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

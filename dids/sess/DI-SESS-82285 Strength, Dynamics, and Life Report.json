@@ -1,0 +1,129 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82285",
+  "slug": "di-sess-82285",
+  "title": "Strength, Dynamics, and Life Report",
+  "summary": "Documents the primary aerodynamic and mechanical analyses performed during turbomachinery and rotating equipment design, describing the loading environment and each component's predicted life for propulsion and power systems.",
+  "approval_date": "2019-08-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10069",
+  "limitation": "NONE",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2019-035",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Strength, Dynamics, and Life Report is the primary documentation for the aerodynamic and mechanical analyses performed during design of turbomachinery, other rotating equipment, and associated structures in propulsion and power systems, and includes a description of the loading environment and each component's predicted life in that environment. The data will be used to evaluate the life of turbomachinery in its expected environment\nThis Data Item Description (DID) contains the format, content, and intended use information for the Strength, Dynamics, and Life Report resulting from the work task described by the contract statement of work.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report describes the analyses used to verify the strength and life design of propulsion and turbine components. The report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The report shall contain a table of contents",
+          "content": "a list of symbols and acronyms with definitions, a summary of results, a document revision history, and a list of references.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The report shall contain a summary of the minimum margin of safety for each part",
+          "content": "the load condition that generated that minimum margin for that part, and a reference to the section of the report that documents the detailed analysis that generated the summarized result.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The report shall contain a summary of the material and process properties and allowables",
+          "content": "for the components included in the analysis. This summary shall document the initial flaw feature size present in the components based on the inherent defect distribution of the materials selected, the processes used to manufacture them, and the inspection methods used in manufacturing and acceptance testing to detect those flaws.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "The report shall contain a summary of the models and analytical methods",
+          "content": "used to generate the results documented in the report. This summary shall document the configuration version, source materials, dimensioned diagrams and drawings of the model, dimensioned diagrams and drawings of the loads, orientation of the component in the system, a description of the physical phenomena being analyzed, and a summary and rationale of assumptions, source boundary conditions, and the analyzed load conditions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The report shall describe the instrumentation and test methods",
+          "content": "required to verify the loads and stresses analyzed in the report. The description shall include basic test descriptions, instrumentation types, sensor placement locations, and the range of measured values that correspond to the components' operating limits.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The report shall contain a loading environment analysis",
+          "content": "for each component describing derivation of and the resulting combination of internally generated and externally applied loads encountered during operation. The loading environment analysis shall include mechanical, aerodynamic, thermal, and cyclic loads, including source documentation for the loads and rationale for including those loads. The mechanical and aerodynamic loads shall include shock and impact loads, catapult loads, arrested landing loads, maneuver loads, residual manufacturing stresses, centripetal loads, torque loads, thrust loads, aerodynamic loads, and pressurization loads. The impact loads shall be derived from expected debris present in the operating environment. The cyclic loads shall include vibration loads, rotor dynamic, thermal, and acoustic loads. The analysis shall identify sources of flow distortion including flow path blockages, the resulting distortion patterns, and the resulting cyclic loads on the components. The analysis shall identify frequency response and resonance conditions that exist in the components and the external conditions required to excite those resonance conditions. The analysis shall document the worst case combined stress conditions for each component analyzed. The report shall use Campbell and Goodman diagrams to document all modes and critical speeds of the components below the burst speed and the interaction of mean and alternating stresses on material fatigue life. The report shall display stress profiles visually on the components.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "The report shall contain a strength and life analysis",
+          "content": "for each component describing the strength of each component, the stresses present in those components, and the expected life of those components when subjected to the loads environment described above. The report shall compare the results of this strength and life analysis to the relevant requirements for each component. The strength analysis shall include yield strength, ultimate strength, rotor integrity, disk burst speed, blade out or containment, and displacement under the loading conditions for each component analyzed. The life analysis shall include high cycle fatigue, low cycle fatigue, creep, wear out, and flaw growth. The life analysis shall include the growth rate of initial flaws and the time required for the initial flaws to grow to critical size due to the loading conditions on each component. The life analysis shall include the life of each component in terms of operating hours and start-stop cycles. The life analysis shall include a minimum durable life for the entire system based on the predicted life spans of the components. The life analysis shall include the replacement schedule for components based on all the analyzed factors causing them to wear and the components' ability to withstand that wear. The life analysis shall include the conditions or measurable characteristics that indicate each component requires repair or replacement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "For each component analyzed, the report shall contain a damage tolerance analysis",
+          "content": "describing the maximum initial flaws and maximum amount of damage that could be sustained while retaining sufficient residual strength to withstand the loading conditions described above. The damage tolerance analysis shall identify the relative likelihood of areas of the system being affected by different sources of damage.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "For each component analyzed that does not meet some requirement, the report shall describe a mitigation strategy",
+          "content": "to bring the system into compliance with its requirements.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82285.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

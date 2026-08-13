@@ -1,0 +1,2640 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82168",
+  "slug": "di-sess-82168",
+  "title": "Technical Review Presentation Package (TRPP)",
+  "summary": "Defines the format and content requirements for the presentation package used by the government to determine whether an emerging system has demonstrated sufficient maturity to enter the next development phase.",
+  "approval_date": "2017-11-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9874",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2017-025",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Technical Review Presentation Package (TRPP) is used by the government to determine and ensure that the emerging system has demonstrated sufficient maturity to enter the next phase of development.\n\nThis Data Item Description (DID) contains the format and content preparation instructions for the data product resulting from the discrete task requirements as delineated in the contract. This DID covers all presentation material for Systems Engineering Technical Review Processes (SETRs) and all other technical reviews.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "NAVAIRINST 4355.19E - Systems Engineering Technical Review (SETR) Process",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The TRPP shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The TRPP shall contain the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Section 1 - Alternative System Review (ASR)",
+          "content": "The ASR section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "System purpose",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Existing system shortfalls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Threat/Targets",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Operational requirements status",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "ConOps",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Operational Mode Summary/Mission Profile",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Sustainment Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "RAM-C",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "System architecture of each alternative concept",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Key technologies for each alternative concept",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Technology risk and abatement approaches",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Approach to estimating performance aspect of the system concepts and their architectures",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Key metrics and how they were measured",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Estimates of performance for each system concept",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "System and human performance estimates for the best overall system concept alternative",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Operational impacts to the selection of each concept alternative",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Key Information Assurance (IA) considerations that impact the certification and accreditation risks for concept alternatives",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "Technical performance measures to assess Hardware (HW), Software (SW) and human performance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Risk assessment measures to assess risk and the effectiveness of mitigation upon those risks",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Alternative selection decision approach",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Preferred concept selection and standing",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Technical review team recommendation of the preferred concept",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "Status of the requirements documentation along with the development and approval schedule and document hierarchy scheme",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "Key system technical and IA requirements and allocations to subsystems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "An overview of the proposed system development, acquisition schedule, and test and operational evaluation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Detailed schedule and costs associated with the next phase of development",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aa",
+              "title": "Overall acquisition cost and plans for completion",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bb",
+              "title": "Technical review team recommendation on the system development plans",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Section 2 - System Requirements Review (SRR)",
+          "content": "The SRR section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "System mission",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Agenda",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Entrance and Exit criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Integrated Master Schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Draft Subsystem Specification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Trade Study",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Design Reference Mission (DRM)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Mission Threads",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Reliability and Maintainability Program Plan, including Reliability Growth Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Preliminary Reliability and Maintainability Allocations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Preliminary Reliability and Maintainability Block Diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "R&M Engineering",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Availability/Readiness",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Manufacturing",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "Quality",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Functional Definitions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Draft Logistics Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "System Safety Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Risks and Associated Mitigation Strategies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Operational views and documentation of the operational requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Scenarios, campaigns, and threats that comprise the DRM for the system, the manner in which the DRM shall be utilized in subsequent system development, and development status",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Description of the capability development document, system threat assessment report, and concept of operations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "System boundaries describing the system apart from other systems and its environment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "Internal system structure describing the division of the systems into subsystems, major foreseen interface relationships between the major divisions, and boundaries between security-critical and non-critical functions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Unique states of the system and identification of all static and dynamic modes",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aa",
+              "title": "System trades and analyses",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bb",
+              "title": "Key performance parameters, technologies, system concept, anticipated human performance requirements, and the differences between the system concept used at the SRR and the ASR",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "cc",
+              "title": "Results of the system effectiveness and performance assessment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "dd",
+              "title": "Status of the development of the requirements documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ee",
+              "title": "Identification of the required threat and the IA threat",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ff",
+              "title": "System capability requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "gg",
+              "title": "Requirements not related to mission capabilities",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "hh",
+              "title": "How the system requirements will be qualified",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ii",
+              "title": "Description of the process of the allocation of requirements from the system-level to the subsystem level and major system requirements allocations to subsystems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "jj",
+              "title": "Remaining schedule of the entire system development and acquisition",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "kk",
+              "title": "Near term schedule and costs plans for the next phase of development",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ll",
+              "title": "Estimation of cost and progress for the overall acquisition program",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "mm",
+              "title": "Description of the approach to management of the system requirements, architecture, design, and the special configuration management requirements of security-critical elements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Section 3 - System Functional Review (SFR)",
+          "content": "The SFR is the functional baseline and this section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Agenda",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Entrance and Exit criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Integrated Master Schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Draft Subsystem Specification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Trade Study",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Mass Properties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Functional Definitions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Draft Logistics Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Description of Health Management functional requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Final R&M Allocations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Final R&M Block Diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Product support functional requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Use Cases (e.g. Day in the life of the maintainer, etc.)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Design Reference Mission",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "System Safety Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Risks and Associated Mitigation Strategies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Description of the functional architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "Performance specifications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "System Requirements Document (SRD)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Draft prime item performance and prime item detail specifications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Design data defining the overall system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Risk assessment results",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "Risk mitigation plans",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "Trade studies and analyses",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "Technical performance measurements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Draft enabling product plans, Systems Engineering Plan (SEP) and a summary of comments",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Section 4 - Software Specification Review (SSR)",
+          "content": "The SSR section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "An overview of the system requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Growths of requirements for each system build",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "The error/failure handling concept for the Software Development Plan (SDP)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Allocation of system requirements to Software Configuration Items (SCIs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Identification of security-critical and non-critical SCIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Interfaces between the Configuration Items (CIs), broken out into builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Layers of the architecture, if layers have been defined",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "User interfaces, including displays and the rational for their selection",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Operator job descriptions, based on functions allocated to humans",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Planned locations for new and reused software, Commercial Off-The-Shelf (COTS), Non-Developmental Items (NDI), legacy equipment, and Government Furnished Information (GFI)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Plans for how reused software will meet IA requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "An overview of the SCI requirements, both functional and IA",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Where the SCI fits into the system architecture and the system build plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "Description of how the system requirements are allocated to the various CIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "A breakdown of how the requirements are allocated across builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "References defining which Software Requirements Specification (SRS) requirements are allocated to which builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "System requirements changes made since the SFR",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Safety critical requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Quality requirements (including reliability, availability, maintainability)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Requirements supporting test and analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Human Machine Interface (HMI) requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "How the build plan for the SCI is consistent with the overall system build plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "Dates when technical agreements are needed on the content of the various requirements and design documentation artifacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "Description of the software development processes/methods and tools that will be used, as documented in the Software Development Plan (SDP)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Explanation of any process and tool changes made since the SDP was released, why the changes were made, and an assessment of the impact of these changes on the SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aa",
+              "title": "Processes and measures to be used in developing the HMI and evaluating its usability and impact on operator performance and workload",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bb",
+              "title": "Progress made in SCI development compared to the plan defined in the system development landscape",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "cc",
+              "title": "Requirements and implementation constraints allocated to the SCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "dd",
+              "title": "Performance requirements of the SCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ee",
+              "title": "Test approaches planned for qualification of the requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ff",
+              "title": "Summary of the risk items and mitigation plans identified for the SCI that will impact successful completion of the SCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Section 5 - Preliminary Design Review (PDR)",
+          "content": "The PDR is the allocated baseline and this section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Agenda",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Entrance and Exit criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Integrated Master Schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "CDRL Status",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Final Subsystem Specification",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Draft Assessment Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Trade Study",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Preliminary Product Drawings/Models and Associated Lists",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Mass Properties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Preliminary Reliability and Maintainability Predictions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Preliminary Testability Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Parts Management Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Producibility Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Producibility Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "Manufacturing Technology Availability",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Industrial Capabilities",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Draft Allocation Report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "Draft Failure Mode Effects and Criticality Analysis (FMECA)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Failure Reporting, Analysis and Corrective Action System (FRACAS)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Draft Reliability and Maintainability Test Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Draft Maintainability and Testability Demonstration Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Draft Logistics Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "Draft Incorporation Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "System Safety Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "Risks and Associated Mitigation Strategies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aa",
+              "title": "An overview of the total system requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bb",
+              "title": "Allocation of requirements to each of the hardware and software configuration items (HWCIs & SCIs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "cc",
+              "title": "Allocation of requirements to any SCI hosted by the HWCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "dd",
+              "title": "User interfaces, including displays",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ee",
+              "title": "Growths of requirements for each system build",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ff",
+              "title": "Interfaces between the CIs, broken out into builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "gg",
+              "title": "Layers of the architecture (if layers have been defined)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "hh",
+              "title": "Connectivity among system HWCIs as defined in the Interface Design Specifications (IDSs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ii",
+              "title": "Identification of all NDIs, Government Furnished Equipment (GFE), and legacy equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "jj",
+              "title": "Identification of all Computer Software Components (CSCs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "kk",
+              "title": "Operator and maintainer job descriptions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ll",
+              "title": "An overview of the HWCI & SCI requirements and any associated SCI/firmware documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "mm",
+              "title": "Where the HWCIs & SCIs fit into the system architecture and system development schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "nn",
+              "title": "How the system requirements are allocated to the various HWCIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "oo",
+              "title": "A breakdown of how the requirements are allocated across builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "pp",
+              "title": "Documentation defining which SRS requirements are allocated to which builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "qq",
+              "title": "Documentation defining the SCI's architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "rr",
+              "title": "Requirements applicable to the production equipment, but not the Engineering Development Model (EDM)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ss",
+              "title": "A breakdown of the requirements relative to SCI/firmware builds associated with the particular HWCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "tt",
+              "title": "Requirement changes made since the SSR",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "uu",
+              "title": "Safety critical requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "vv",
+              "title": "Quality requirements (including reliability, availability and maintainability)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ww",
+              "title": "Requirements supporting test and analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "xx",
+              "title": "Design error budgets for meeting allocated requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "yy",
+              "title": "Ship integration requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "zz",
+              "title": "System security/IA requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aaa",
+              "title": "Environmental requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bbb",
+              "title": "Explanation of any process and tool changes that have been made since the SSR, why the changes were made, and an assessment of the impact of these changes on the SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ccc",
+              "title": "How the equipment and SCI/firmware build plans for the HWCI are consistent with the overall SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ddd",
+              "title": "Dates when technical agreements are needed on the content of the various requirements and design documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "eee",
+              "title": "Description of the equipment and software development process/methods and tools that are to be used, as documented in the SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "fff",
+              "title": "Description of the measures to be used in assessing human performance and operator workload (cognitive/temporal/physical)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ggg",
+              "title": "An overview of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "hhh",
+              "title": "Description of the processes and methodologies for assessing the ergonomics and operational suitability of the hardware configurations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "iii",
+              "title": "Description of the intra-HCI & intra-SCI landscape",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "jjj",
+              "title": "Where, within the architecture, development/new and reuse components will be located, including NAVSEA Data Environment, NDI, COTS, legacy equipment and GFE",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "kkk",
+              "title": "Locations of new and reused software, including COTS, NDI, legacy, and GFI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "lll",
+              "title": "How reused components and CIs will meet IA requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "mmm",
+              "title": "Where industry and government standards are applied",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "nnn",
+              "title": "Description of the maturity of the functional/subsystem design",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ooo",
+              "title": "Description of the HWCI's/SCI's performance requirements, including design margins",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ppp",
+              "title": "Metrics to include plan vs. specified parameters, Earned Value Metrics (EVMs), and the programs' Work Breakdown Structure (WBS)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "qqq",
+              "title": "Summary of the risk items identified for the HWCI & SCI that impact successful completion of the HWCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "rrr",
+              "title": "Test approaches planned for the HWCI and SCI testing",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "sss",
+              "title": "Lower-level tests to be performed on the HWCI and SCI components, modules and subsystems from unit-level to top-level",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ttt",
+              "title": "Degree of functional and environmental coverage planned for the tests",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Section 6 - Hardware Critical Design Review (HCDR)",
+          "content": "The HCDR is the product baseline and this section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Agenda",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Entrance and Exit criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Integrated Master Schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "CDRL Status",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Final Assessment Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Draft Assessment Report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Final Product Drawings/Models and Associated Lists",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Mass Properties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Organizational description of operators and maintainers associated with the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Update producibility plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Final Reliability and Maintainability Predictions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Final Allocation Report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Final Failure Mode Effects and Criticality Analysis (FMECA)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Failure Reporting, Analysis and Corrective Action System (FRACAS)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "Final Reliability and Maintainability Test Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Final Maintainability and Testability Demonstration Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Draft Manufacturing Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "Draft Producibility & Quality Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Draft Subcontractor Management Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Draft Logistics Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Draft Incorporation Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Final Testability Analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "Final parts management Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "Growth of requirements for each system build including any training required",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "System Safety Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Risks and Associated Mitigation Strategies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aa",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bb",
+              "title": "An overview of the total system requirements as defined in the system specifications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "cc",
+              "title": "Allocation of system requirements to each of the CIs comprising the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "dd",
+              "title": "User interfaces, including displays",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ee",
+              "title": "Interfaces between the SCIs, broken out into builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ff",
+              "title": "Connectivity among system HCIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "gg",
+              "title": "Layers of the architecture (if layers have been defined)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "hh",
+              "title": "Identification of all NDIs, GFE, and legacy equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ii",
+              "title": "An overview of the HCI requirements and associated SCI and firmware documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "jj",
+              "title": "Where the HCI fits into the system architecture and the system development schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "kk",
+              "title": "How the system requirements are allocated to the various HCIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ll",
+              "title": "Requirements applicable to the production equipment, but not the EDM",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "mm",
+              "title": "An overview of the SCI requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "nn",
+              "title": "A breakdown of the requirements relative to SCI/Firmware builds associated with the particular HCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "oo",
+              "title": "A breakdown of how the requirements are allocated across builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "pp",
+              "title": "Documentation defining which SRS requirements is allocated to which builds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "qq",
+              "title": "Where the SCI fits into the system architecture and system build plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "rr",
+              "title": "Requirements changes made since PDR",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ss",
+              "title": "Safety critical requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "tt",
+              "title": "Quality requirements (including reliability, availability and maintainability)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "uu",
+              "title": "Requirements supporting test and analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "vv",
+              "title": "Design error budgets for meeting allocated requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ww",
+              "title": "Ship integration requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "xx",
+              "title": "System security/IA requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "yy",
+              "title": "Environmental requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "zz",
+              "title": "Processes for assessing the ergonomics and suitability of hardware configurations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "aaa",
+              "title": "How the equipment and SCI/firmware build plans for the HCI is consistent with the overall SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "bbb",
+              "title": "Dates when technical agreements are needed on the content of the various requirements and design documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ccc",
+              "title": "Equipment/Software development process/methods being followed and tools that are to be used, as documented in the SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ddd",
+              "title": "Detailed explanation of any process and tool changes that have been made since the PDR, including rationale on why the changes are made and an assessment of the impact of these changes on the development plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "eee",
+              "title": "Description of the intra-HCI & intra-SCI landscape",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "fff",
+              "title": "An overview of the HCI's configuration",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ggg",
+              "title": "Documentation defining the SCI's architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "hhh",
+              "title": "Identification of all CSCs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "iii",
+              "title": "Identification of HCIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "jjj",
+              "title": "Where, within the architecture, development and reuse components will be located",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "kkk",
+              "title": "Locations of new and reused software, including COTS, NDI, legacy, and GFI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "lll",
+              "title": "Plans for how reused components/software will meet IA requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "mmm",
+              "title": "How reused HCIs will meet IA requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "nnn",
+              "title": "Where industry and government standards are applied",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ooo",
+              "title": "Description of the test plans and procedures that will be applied to the HCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ppp",
+              "title": "Test approaches planned for the CIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "qqq",
+              "title": "FQT descriptions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "rrr",
+              "title": "Lower-level tests to be performed on the CI components, modules and subsystems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "sss",
+              "title": "Maturity of the functional/subsystem design",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ttt",
+              "title": "Description of the performance requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "uuu",
+              "title": "Software/Hardware metrics appropriate to the particular development",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "vvv",
+              "title": "Summary of the risk database items identified that impact successful completion of the HCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "www",
+              "title": "Risk items for the SCI that will impact successful completion of the SCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Section 7 - Production Readiness Review (PRR)",
+          "content": "The TRPP for the Production Readiness Review shall include no less than the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Agenda",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Entrance and Exit criteria",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Integrated Master Schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Production screens and tests",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Final Reliability and Maintainability Test Report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Final Maintainability and Testability Demonstration Report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Failure Reporting, Analysis and Corrective Action System (FRACAS)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Final manufacturing Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Final Producibility & Quality Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Final Subcontractor management Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Logistics Strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Final Incorporation Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "System Safety Impacts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Risks and Associated Mitigation Strategies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Section 8 - Test Readiness Review (TRR)",
+          "content": "The TRR section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "An overview of the total system requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Test Schedule",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "FRACAS Plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Organizational description of operators and maintainers associated with the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Allocation of system requirements to the CI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "User interfaces, including displays",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Connectivity among system CIs as defined in the IDSs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Identification of all NDIs, GFE, and legacy equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "An overview the CI functional and performance requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Associated SCI and firmware documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "How the test and evaluation management plan are allocated to the various CIs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Requirements changes made since the CDR",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Security requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "Environmental requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Safety critical requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Quality requirements (including reliability, availability and maintainability)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "Requirements supporting test and analysis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Summary of risk items and mitigation plans that impact successful completion of the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Test approaches planned for the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Section 9 - Functional Configuration Audit (FCA)",
+          "content": "The FCA section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Description of the system production process/methods and tools to be used",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Explanation of process and tool changes since the SDP was released, why the changes were made, and an assessment of the impact of these changes",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Test approaches planned for the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "A summary of the risk items and mitigation plans that will impact successful completion of the system mission",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Section 10 - Physical Configuration Audit (PCA)",
+          "content": "The PCA section of the TRPP shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Description of the system architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "An overview of the total system requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Allocation of system requirements to each of the CIs comprising the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "User interfaces, including displays",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Connectivity among system CIs as defined in the in IDSs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Identification of all NDIs, GFE, and legacy equipment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Description of the system production and deployment process/methods and tools to be used, as documented in the SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Explanation of process and tool changes that have been made since the SDP was released, why the changes were made, and an assessment of the impact of these changes on the SDP",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Description of the processes to be used in developing HMI and its usability",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "An overview of the CI's functional and performance requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Specifications of interfaces and protocols",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Additions and changes made to COTS equipment, including market research and upgrade strategy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Where the CI fits into the system and system production and deployment schedules",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "How the equipment and SCI/firmware build plans for the CI are consistent with the overall system production plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "Dates when technical agreements are needed on the content of the various requirements and design documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Summary of the risk items and mitigation plans that impact successful completion of the SCI",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Test approaches planned for the system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Section 11 - Content Definitions",
+          "content": "Content Definitions shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Agenda",
+              "content": "The Agenda includes topics of discussion for the design review/technical interchange meeting and proposed lengths of discussion.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Entrance and Exit Criteria",
+              "content": "The Entrance and Exit Criteria includes the criteria for entrance and exit from any event, milestone, or task necessary for the development of the design change to proceed in accordance with the Systems Engineering Strategy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Integrated Master Schedule",
+              "content": "The Integrated Master Schedule includes all scheduled tasks, at the corresponding level, and milestones, with predecessors and successors assigned, necessary for the development of the design and the critical path of those tasks to meet desired maturity in accordance with the proposed schedule.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Subsystem Specification",
+              "content": "The Subsystem Specification includes all of the requirements for the design change, the methods to verify and validate those requirements, and how the requirements trace back to higher level specifications, the Government provided component specification, and standards that define the requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Trade Study Status",
+              "content": "The Trade Study Status includes the trade-offs being considered, the method of conducting the trade study, and the results of the trade study.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Functional Block Diagram",
+              "content": "The Functional Block Diagram includes all of the functions required of the design change and how those functions trace back to the functions of the overall system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Functional Definitions",
+              "content": "The Functional Definitions includes all of the functions to be performed by the design change and a description of that function in relation to the overall function of the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Logistics Strategy",
+              "content": "The Logistics Strategy provides the current status of all 12 ILS Elements (Maintenance Planning, Supply Support, Packaging, Handling, Storage & Transportation, Production Support Management, Sustainment Engineering, Computer Resources, Tech Data, Design Interface, Facilities, Manpower & Personnel, Support Equipment, and Training & Training Support)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Risks and Associated Mitigation Strategies",
+              "content": "The Risks and Associated Mitigation Strategies includes all technical, cost, and schedule risks associated with the program, including probability and consequence, the mitigation plan/method(s) of reducing the risk to an acceptable level, and the mitigated risk level.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Product Drawings/Models and Associated Lists",
+              "content": "The Product Drawings/Models and Associated Lists includes all drawings and/or models of the design and lists associated with those drawings that are required to be able to produce and qualify the new component(s)/system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "k",
+              "title": "Assessment Plan",
+              "content": "The Assessment Plan includes all planned requirement validation activities, the procedures or methods to perform those activities, and the artifacts that will contain the results from the assessment activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "l",
+              "title": "Assessment Report",
+              "content": "The Assessment Report includes the results and success criteria from all the requirements validation activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "m",
+              "title": "Manufacturing Plan",
+              "content": "The Manufacturing Plan identifies the contractor's overall manufacturing system and detailed factors necessary to achieve an effective and efficient manufacturing program. The Plan includes the sequence and schedule of events that define availability/use of materials, fabrication flow, test equipment, tools, facilities, and personnel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "n",
+              "title": "Producibility & Quality Plan",
+              "content": "The Producibility & Quality Plan includes methods to ensure the end product is designed in such a manner that fabrication and manufacturing methods and processes have necessary flexibility in producing the product at a reasonable cost while maintaining the required functionality, performance, quality, and reliability. The plan also identifies and document key characteristics, if any, of the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "o",
+              "title": "System Safety Impacts",
+              "content": "System Safety Impact: is characterizes as system's hazards, potential mishaps resulting from hazard and their causal factors. MIL-STD-882E outlines the System Safety practice (hardware and software), the respective hazard analyses that can be performed depending upon the system, its architecture (hardware or software), and the hazards incumbent in that system. These analyses are leveraged in the Systems Engineering (SE) process to mitigate or eliminate hazards and facilitate the characterizing of the resultant risk from hazards remaining as a result of the SE process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "p",
+              "title": "Subcontractor Management Plan",
+              "content": "The Subcontractor Management Plan includes the Contractor's plan to manage all subcontractor's quality and manufacturing capabilities in accordance with the Contractor's quality and manufacturing plans.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "q",
+              "title": "Reliability and Maintainability Program Plan",
+              "content": "The Reliability and Maintainability Program Plan defines the roles, responsibilities and systems engineering approach associated with the development and growth of reliability and implementation of maintainability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "r",
+              "title": "Reliability and Maintainability Predictions",
+              "content": "The Reliability and Maintainability Predictions evaluates the reliability and maintainability of the design by assigning probabilities and resulting effects on the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "s",
+              "title": "Allocation Report",
+              "content": "The Allocation Report documents the methods and results of the allocation of the reliability, maintainability and testability requirements. End item quantitative requirements must be broken down to appropriate system/subsystem/unit levels necessary to establish requirements for designers and subcontractors.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "t",
+              "title": "Failure Mode Effects and Criticality Analysis (FMECA)",
+              "content": "The Failure Mode Effects and Criticality Analysis (FMECA) identifies potential failure modes for a system to assess the risk associated with those failure modes, rank the failure modes in terms of criticality and to identify and carry out corrective actions to address the most serious concerns.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "u",
+              "title": "Failure Reporting, Analysis and Corrective Action System (FRACAS)",
+              "content": "The Failure Reporting, Analysis and Corrective Action identifies the process for reporting, classifying and analyzing failures and planning corrective actions in response to those failures.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Reliability and Maintainability Test Plan",
+              "content": "The Reliability and Maintainability Test Plan describes the necessary tasks, responsibilities, procedures and controls that should be implemented for the specified test.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "w",
+              "title": "Reliability and Maintainability Test Report",
+              "content": "The Reliability and Maintainability Test Report describes the tasks, tasks, responsibilities, procedures and controls utilized during and the results of the specified tests from the",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "x",
+              "title": "Maintainability and Testability Demonstration Plan",
+              "content": "The Maintainability and Testability Demonstration Plan describes the necessary tasks, responsibilities, procedures and controls that should be implemented for the specified demonstration.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "y",
+              "title": "Maintainability and Testability Demonstration Report",
+              "content": "The Maintainability and Testability Demonstration Report describes the tasks, responsibilities, procedures and controls that were utilized during and the results of the specified demonstration.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "z",
+              "title": "Block Diagrams and Math Models",
+              "content": "The Block Diagrams and Math Models Modeling models the system by decomposing the overall system into individual subsystems to demonstrate how individual component reliability contributes to the success or failure of the system.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82168.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

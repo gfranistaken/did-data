@@ -1,0 +1,305 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82197",
+  "slug": "di-sess-82197",
+  "title": "Commissioning Plan (CxP)",
+  "summary": "Establishes the format, content, and intended use for the Commissioning Plan, which describes the scope, strategies, and responsibilities for confirming that equipment and systems perform interactively according to design intent throughout the commissioning process.",
+  "approval_date": "2018-04-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9916",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "SESS-2018-013",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Commissioning (Cx) is a methodical process of confirming that all equipment and systems perform interactively according to the design intent and the owner's operational needs. This is achieved by beginning in the design phase and continuing through construction and acceptance with actual verification of performance.\n\nThe Commissioning Plan (CxP) describes and identifies the scope, strategies, and responsibilities of all the team members within the commissioning process for each phase of the project. The CxP outlines the overall process, schedule, organization, responsibilities and documentation for the commissioning process.\n\nThis DID contains the format, content, and intended use information for the CxP. It is intended that all requirements contained herein shall apply to all applicable DoD acquisition programs through all program phases.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference",
+      "content": "ER 1110-345-723, Engineering and Design Total Building Commissioning Procedures, 31 Mar 17.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable. Format shall be machine-readable by the government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The CxP shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page and Document Tracking Information",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Cover Page",
+              "content": "Title, Date of Issue, Revision Date, Contract Number, Contractor's name and address, Distribution Statement, Export Control Warning Label, and Security classification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Record of Change Page",
+              "content": "Enter a record of all changes made to the CxP.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents",
+          "content": "A listing of the major sections identified as below.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Overview",
+          "content": "Describe the purpose of the CxP and to the system(s) to which it applies.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Reference Documentation",
+              "content": "List the reference documentation for the CxP and process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Goals and Objectives",
+              "content": "Outline the goals and objectives for achieving successful Cx during the design phase and the construction phase.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Main Components",
+              "content": "Outline and describe the main components/systems that require Cx. Include layout diagrams and identify which components/systems are MILCON and Prime.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Work Packages",
+              "content": "Define and lay out the general breakout of MILCON and Prime by Construction Package identified by color codes in alignment with layout diagrams in 2.3.3.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Cx Team Members, Roles and Responsibilities",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Team Members",
+              "content": "Outline and define the Cx team to include a chart describing the organizational structure and lines of authority. Provide a general description of the Cx team roles.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Names, Duties, Responsibilities and Authorities of Cx Team",
+              "content": "Provide the name and classification of each member of the Cx Team. List and outlined the duties, responsibilities, and authorities of each person.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Outside Organizations",
+              "content": "Provide a listing define the role(s) of outside organizations such as architectural and consulting engineering firms, testing firms, and a description of their services.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Communication Protocol, Coordination, Meetings and Management",
+              "content": "Define how the team communicates and coordinates activities during each phase of the effort. Describe the types and frequencies of meetings required to fully satisfy the requirements and contractual requirements for Cx. Outline the roles of management to facilitate the communication, coordination, and meetings.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Cx Tasks and Procedures",
+          "content": "Provide a generic sequential overview of the Cx process by task or activity to include flowcharts to show typical sequential processes to for each construction package. Outline and detail the priorities of each construction package.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Design",
+              "content": "Outline and describe the design decisions that meet the Owner's project requirements. The basis of design describes the systems, components, conditions and methods chosen to meet the intent. Outline and describe each stage of design reviews.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Pre-Design Activities",
+                  "content": "Outline the pre-design activities. Itemize and describe the pre-Cx issues and plans for resolution. Detail each system/subsystem for Cx.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Design Activities",
+                  "content": "Outline the design activities and describe the Design Intent and Design Analyses activities to demonstrate compliance with the contract and the contract requirements. Describe each organization's role in the design process and their role in issue resolution.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Construction",
+              "content": "Describe the pre-construction and construction activities, by phase if applicable, and meetings.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Submittals and Documentation",
+                  "content": "Describe the types of submittals and documentation that will submitted to support the construction and project requirements. Additionally, describe the procedures and process for special submittals, notifications, and/or clarifications.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "Checklist",
+                  "content": "Provide the type of construction checklists that will be used during the effort.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.3",
+              "title": "Checks",
+              "content": "Describe the process, plan, and verification for checks.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.3.1",
+                  "title": "Pre-Installation Checks",
+                  "content": "Detail the types of pre-installation checks and outline the responsible organization.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.2",
+                  "title": "Installation Checks",
+                  "content": "Detail the types of installation checks and outline the responsible organization.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.3",
+                  "title": "Construction Checks",
+                  "content": "Detail the types of construction checks and outline the responsible organization.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.4",
+              "title": "Start-up and Test Verification",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.4.1",
+                  "title": "Provide the plans and procedures for each start-up activity",
+                  "content": "Provide the plans and procedures for each start-up activity coupled with a schedule for the activity. Describe how each non-conformance will be addressed and resolved.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.2",
+                  "title": "Functional and Verification Procedures",
+                  "content": "Provide the testing strategy, plans, and procedures coupled with a schedule for each test and verification event. Describe dry-run activities. Describe and provide how deficiencies/issues will be identified, evaluated, analyzed, and corrected. Describe re-testing activities to provide deficiency/issue resolution. If applicable, include any seasonal testing events.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.5",
+              "title": "Integration Testing",
+              "content": "Provide the integration testing strategy, plans, and procedures coupled with a schedule for each integration test event. Describe and provide how deficiencies/issues will be identified, evaluated, analyzed, and corrected. Describe re-testing activities to provide deficiency/issue resolution. If applicable, include any seasonal testing events.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Documentation",
+              "content": "Describe the process, plans, description, and schedule for the Cx documentation. Include at the minimum:\n\nSystems Manual(s)\nFacility Systems Operations and Maintenance Manuals (FSOMMS)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Training",
+              "content": "Describe the process, plans, description, and schedule for the training. List the types of training and the method of training.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Reports",
+              "content": "Describe the process, plans, description, and schedule for the Preliminary Cx Report and Final Cx Report. Provide detail at a minimum on warranties, warranty periods, training, occupancy, lessons learned, testing, issues, verification methods and analysis, and integration testing and analysis.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "The applicable issue of the documents cited herein",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82197.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

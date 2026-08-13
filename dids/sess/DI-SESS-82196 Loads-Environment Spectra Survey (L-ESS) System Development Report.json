@@ -1,0 +1,229 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82196",
+  "slug": "di-sess-82196",
+  "title": "Loads/Environment Spectra Survey (L/ESS) System Development Report",
+  "summary": "Defines the system used to perform a Loads/Environment Spectra Survey to obtain operational usage data that updates or confirms the design spectrum and establishes a baseline usage spectrum.",
+  "approval_date": "2018-03-26",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9913",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2018-011",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Loads/Environment Spectra Survey (L/ESS) System Development Report will be used to define the system (for example, flight hardware, flight data download equipment, data processing, data transmission, software) on which to perform an L/ESS to obtain operational usage data that can be used to update or confirm the design spectrum, identify when usage changes occur that warrant an update, and provide the data needed to establish or update a baseline spectrum.\n\na. The L/ESS System Development Report shall identify the time-history data to be recorded, such as, vertical and lateral load factors, roll, pitch and yaw rates, roll, pitch, and yaw accelerations, altitude, Mach number, control surface positions, selected strain measurements, ground loads, and aerodynamic excitations.  The report shall identify the data to be recorded to characterize the thermal and chemical environments within the aircraft and associated with aircraft basing.  The report shall identify instrumentation and/or sensors that are part of the L/ESS system.\n\nb. This DID contains the format, content and intended use information for the data deliverable resulting from the technical requirements described in Task IV of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP).\n\n(Copies of this document are available online at http://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DLA Quicksearch",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The L/ESS System Development Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Description of on-board L/ESS data collection system",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Instrumentation and/or sensors with on-board locations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Data recording and storage equipment with on-board locations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Supportability requirements for L/ESS flight hardware and software",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Description of aircraft usage and environment parameters/factors for which the time-history is to be recorded",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Description of parameters to be used to characterize the loads, thermal, acoustic, vibration, and chemical environments within the aircraft and associated with aircraft basing",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Description of the resolution, accuracy, and sampling rates requirements for the parameters to be recorded",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Detailed flow diagrams, discussions, and examples for the processing and handling of L/ESS data",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Procedures, methods, assumptions, and limitations for download/transmission of recorded on-board data to ground analysis system",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Analysis system and data processing methodology and procedures",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "The method(s) to be used to derive loads, thermal, acoustic, vibration, and chemical environments from recorded parameters",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "The method(s) to be used to calculate/estimate gross weight, fuel weight, store configuration, etc., throughout the flight, as required",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "The method(s) to be used to characterize the thermal, acoustic, vibration, and chemical environment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.4",
+                  "title": "The method(s) to be used to check recorded data for validity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.5",
+                  "title": "The proposed parameter threshold values and data ranges, if appropriate",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.6",
+                  "title": "The method(s) to be used to determine where appropriate load peaks and valleys occur from the recorded parameter data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.7",
+                  "title": "The method(s) to be used to develop baseline usage spectra from recorded aircraft data that represents both an average and 90th percentile severe usage/environment",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Description of the processes and plans for archiving and retrieving data",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Detailed description of the L/ESS implementation strategy",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Methodology for substantiation of derived loads from recorded usage parameters collected from flight and ground tests",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Methodology for 20% valid data capture rate of the fleet usage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Criteria for updating baseline usage spectra and durability and damage tolerance analyses",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82196.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

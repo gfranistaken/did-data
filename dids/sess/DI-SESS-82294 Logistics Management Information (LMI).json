@@ -1,0 +1,89 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82294",
+  "slug": "di-sess-82294",
+  "title": "Logistics Management Information (LMI)",
+  "summary": "Logistics Management Information (LMI) comprises the support and support-related logistics data acquired from contractors during product support analysis, delivered as a single all-inclusive database.",
+  "approval_date": "2019-09-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10097",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2019-052",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Logistics Management Information (LMI) comprises the support and support-related logistics data acquired from contractors generated because of the product support analysis conducted during the design, development, and initial fielding of a system or end item that the requiring authority needs to develop their internal materiel management processes.  The LMI database is an all-inclusive database that provides the content necessary to support multiple data products in one single delivery.  This includes data for maintenance planning, indentured and repair bill of materials (BOM), logistics design requirements, reliability and maintainability, system safety, maintenance engineering, support and test equipment, training and training devices, manpower and skills, facilities, transportation, supply support, parts packaging, initial provisioning, provisioning parts list (PPL), support equipment recommendation documents (SERDs), cost, cataloging, item management and in-service feedback.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the contract Statement of Work (SOW).\nThis DID is applicable to the acquisition of military systems, equipment and components.\nWhen contracting for Provisioning Data using Appendix D of GEIA-STD-0007 (Logistics Product Data and Handbook), Engineering Data for Provisioning (EDFP), is required to properly support cataloging items in the Federal Cataloging System.\n\n(Copies of GEIA-STD-0007 are available at https://www.sae.org/standards/content/geiahb0007a)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "GEIA-STD-0007",
+      "url": "https://www.sae.org/standards/content/geiahb0007a"
+    },
+    {
+      "label": "SAE International",
+      "url": "https://www.sae.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and the dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "SAE International GEIA-STD-0007, Logistics Product Data",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "GEIA-HB-0007, Logistics Product Data Handbook",
+          "content": "(Copies of these documents are available at SAE International, 400 Commonwealth Dr. Warrendale, PA 15096; https://www.sae.org)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Extensible Markup Language (XML) Schemas and XML file formats defined in Appendix C and D of GEIA-STD-0007 shall be used as the format for delivery of the LMI.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The content of the LMI is described in Section 2 and Appendix A of GEIA-STD-0007 and GEIA-HB-0007 Appendix D.  The Attribute Selection Sheet (Appendix A, GEIA-HB-0007), shall specify the selected data required to comprise the LMI.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82294.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

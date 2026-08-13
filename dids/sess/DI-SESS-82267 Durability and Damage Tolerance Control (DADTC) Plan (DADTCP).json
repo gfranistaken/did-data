@@ -1,0 +1,191 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82267",
+  "slug": "di-sess-82267",
+  "title": "Durability and Damage Tolerance Control (DADTC) Plan (DADTCP)",
+  "summary": "Describes the tasks necessary to ensure compliance with the durability and damage tolerance requirements of MIL-STD-1530 (ASIP), covering design, analysis, quality assurance, inspection, manufacturing, certification, and maintenance to prevent structural damage.",
+  "approval_date": "2019-05-15",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10032",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2019-014",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Durability and Damage Tolerance Control (DADTC) Plan (DADTCP) describes the tasks necessary to ensure compliance with the durability and damage tolerance requirements contained in 5.1.4 of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP).  (Copies of this document are available online at https://quicksearch.dla.mil.)  The DADTCP includes the application of engineering design and analysis, quality assurance (QA), nondestructive inspection (NDI), manufacturing, structural certification, and maintenance to prevent damage initiation, damage growth, functional impairment, and loss of residual strength that could compromise structural safety or require costly maintenance actions.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "quicksearch.dla.mil",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The DADTCP shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The DADTCP shall include the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "DADTC Team (DADTCT) organizational responsibilities",
+          "content": "Describe DADTCT authority and responsibility in regards to evaluating design concepts, material, weight, performance, and cost trade studies relative to DADTC throughout the aircraft's design.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "DADTC",
+          "content": "Describe the processes used to ensure DADT procedures during design and development, manufacturing, materials handling, packaging, shipping, testing, modification, and operation are controlled.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Classification of durability and fracture critical parts",
+          "content": "Describe the criteria and principles used for conducting parts criticality classification.  Define the process for reviewing and updating durability and fracture critical parts throughout the design of the airframe.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Collection of basic material data",
+          "content": "Describe the basic material data utilized in the initial trade studies and the final design and analyses, including units of measure (as appropriate), to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Metallic materials",
+              "content": "Quantified properties, such as:  constant-amplitude fatigue crack growth rate (da/dN), plane strain fracture toughness (KIC), plane stress fracture toughness (Kc), apparent fracture toughness (KAPP), stress corrosion cracking threshold (KISCC), constant-amplitude stress-life (S-N), strain-life (e-N), and cyclic stress-strain.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Composite materials",
+              "content": "Quantified properties, such as:  resistance to low velocity impact damage, interlaminar fracture properties, fatigue properties, and effects of acceptable defects.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Structural design and manufacturing",
+          "content": "Describe local design detail concepts, materials, inspectability, maintainability, processing and fabrication practices, and procedures to minimize incorporation of adverse residual stresses.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Structural analysis",
+          "content": "Describe the analyses and design processes used to account for DADT requirements in preliminary designs.  Describe the processes used to validate that DADT requirements are attained in the final design.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Development and verification testing",
+          "content": "Describe the developmental testing to be used to establish material properties when not available from other sources, to develop and validate analytical tools and methods as necessary, to aid in material selection and selecting allowable stress levels, to evaluate spectra effects (for example, retardation, range truncation, etc.), to verify crack growth marking techniques, and to obtain an early evaluation of DADT characteristics of the design.  Describe verification testing to be used to assess the accuracy of the DADT analysis tools relative to their ability to predict the fatigue and crack growth behavior of the structure under operational conditions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Engineering drawings and specifications",
+          "content": "Define the requirements for the manufacture, processing, assembly, inspection, testing, storage, handling, shipping, and maintenance of durability and fracture critical parts.  Include any special views or isometric drawings highlighting critical zones, and include details, such as:  principle grain direction or 0 degree fiber direction, as needed.  Describe the responsibilities and procedures for DADT review and approval of drawings, drawing change orders, and specifications.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Procurement of materials and parts",
+          "content": "Describe the approval process for suppliers of durability and fracture critical parts or materials.  Identify supplier responsibilities in maintaining and producing certified test data, traceability records, engineering documentation, and specifications.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Material Review (MR), design changes, and material substitutions",
+          "content": "Describe the responsibilities and procedures for DADT review and approval of proposed changes to fracture critical part design, material substitution, manufacturing changes, and MR.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "NDI and structural health monitoring (SHM)",
+          "content": "Define the processes for determining minimum detectable flaw sizes and inspection procedures for durability and fracture critical parts.  Describe how NDI and SHM locations are identified and defined in the engineering dataset or in a specification referenced by the dataset.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Quality assurance",
+          "content": "Describe the QA procedures and criteria used to verify that durability and fracture critical parts conform to engineering requirements.  Describe the processes used to ensure implementation and function of fracture control practices throughout the supplier chain.  Describe the process for material approval for durability and fracture critical parts.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Traceability and serialization",
+          "content": "Describe the process for traceability and serialization of durability and fracture critical parts.  As necessary, describe the traceability and serialization process for critical parts that receive processing and fabrication operations, which could degrade the design material properties.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Corrosion prevention and control",
+          "content": "Describe the corrosion prevention and control methods and processes used for durability and fracture critical parts.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Force management",
+          "content": "Describe the process for ensuring the DADTCP is followed for continuing airworthiness.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82267.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

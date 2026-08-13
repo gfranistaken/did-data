@@ -1,0 +1,229 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82038",
+  "slug": "di-sess-82038",
+  "title": "Static Test Reports",
+  "summary": "Specifies preparation instructions for static test plan, progress, and final reports used by the procuring agency to evaluate static testing and verify structural strength analysis.",
+  "approval_date": "2016-04-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F9648",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2016-012",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The static test reports consist of a static test plan, static test progress and static test final reports.  These reports will be used by the procuring agency to evaluate the suitability of the planned static test, to assess static test progress, and to verify the actual static strength as well as to document the data collected to substantiate the contractor's strength analysis.\n\na. This document contains preparation instructions for data resulting from the technical requirements described in MIL-STD-1530, Aircraft Structural Integrity Program (ASIP). (Copies of this document are available online at http://quicksearch.dla.mil.)\n\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "MIL-STD-1530, Aircraft Structural Integrity Program (ASIP)",
+      "url": "http://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The reports shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Static Test Reports shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Static Test Plan",
+          "content": "For each static test, this report shall contain schedule information as well as detailed information on the: test article configuration, test article instrumentation, load introduction and control system, environmental control system, data acquisition system, and critical load conditions.  The report shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Test objectives and entrance/exit criteria",
+              "content": "The test objectives shall include obtaining data necessary to verify the structural analysis and demonstrating compliance with strength requirements.  The entrance criteria shall include evaluation of test loading accuracy and pre-test predictions of strains and deflections at all critical locations.  The exit criteria shall include test conditions and load levels that must be completed and data that must be acquired.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Processes for selection of the critical test conditions",
+              "content": "Processes for selection of the critical test conditions and the associated flight condition and critical structure for each condition selected for testing.  Describe comparisons of test loads and environment with corresponding design analyses loads and environment.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "1",
+                  "title": "Describe the intermediate and maximum test loads",
+                  "content": "Describe the intermediate and maximum test loads to be applied to the test article, including loading sequence.  Include estimated dates for attainment of intermediate and maximum test loads.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2",
+                  "title": "Describe all major component static test loads",
+                  "content": "Describe all major component static test loads including shear, bending and torsion compared to design analyses.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3",
+                  "title": "Describe the distributed and inertia loads",
+                  "content": "Describe the distributed and inertia loads compared to the design analyses.  Describe which loads are not properly represented and any unbalanced loads that must be reacted and their associated magnitudes and impacts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4",
+                  "title": "For each test condition, summarize all applicable test parameters",
+                  "content": "For each test condition, summarize all applicable test parameters such as, but not limited to, aircraft weight, load factor, speed, altitude, and the critical stress points of the structure for that particular test loading condition.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5",
+                  "title": "Describe the temperature, moisture, etc., requirement",
+                  "content": "Describe the temperature, moisture, etc., requirement for each test condition and the method to achieve, control, and verify the environment.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "c",
+              "title": "Test article configuration, test article instrumentation, test fixture",
+              "content": "Test article configuration, test article instrumentation, test fixture, load introduction and control system (including test article protection and safety), environmental control system, and data acquisition system.  For instrumentation, include drawings and photographs documenting the exact location and orientation for each.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Predicted and allowable parameters",
+              "content": "Predicted and allowable parameters (stress or strain, deflection, temperature, pressure, load, etc.) for all measurements for each test condition.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Static Test Progress Report",
+          "content": "This report shall contain details for static testing progress and include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Test article configuration changes made since the last progress report",
+              "content": "Test article configuration changes made since the last progress report to include drawings and photographs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Deviations from the test plan",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Events to date which affect the progress of the test program",
+              "content": "Events to date which affect the progress of the test program (premature failures, inability to sustain load, delays in the planned test schedule, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Test loading conditions completed since the last progress report",
+              "content": "Test loading conditions completed since the last progress report and results.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Inspection results including any elastic buckling, permanent buckling, and failures",
+              "content": "Inspection results including any elastic buckling, permanent buckling, and failures with photographs for each.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Schedule estimates for remaining test conditions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Final Static Test Report",
+          "content": "This report shall describe each test condition and data obtained and shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Details of test results and conclusions",
+              "content": "Details of test results and conclusions and necessary changes to production and delivered aircraft.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Load versus deflection plots",
+              "content": "Load versus deflection plots at locations throughout the test article and any location with permanent deformation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Instrumentation measurements compared to predictions",
+              "content": "Instrumentation measurements compared to predictions for each location and condition.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Final inspection results including any elastic buckling, permanent buckling, and failures",
+              "content": "Final inspection results including any elastic buckling, permanent buckling, and failures with photographs for each.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82038.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

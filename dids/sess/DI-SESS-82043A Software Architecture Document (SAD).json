@@ -1,0 +1,805 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82043A",
+  "slug": "di-sess-82043a",
+  "title": "Software Architecture Document (SAD)",
+  "summary": "The Software Architecture Document (SAD) provides viewpoints, views, and additional descriptions that comprise the authoritative description of software architecture for the program.",
+  "approval_date": "2025-07-28",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10592",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2025-028",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Architecture Document (SAD) provides viewpoints, views and additional descriptions that comprise the authoritative description of software architecture for the program.\n\nThis Data Item Description contains the format, content, and intended use information for the data product resulting from the work task described by the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents",
+      "content": "This section shall list the number, title, revision, and date of all documents referenced in this plan. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor's format acceptable. The SAD shall adhere to the format described under Content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "This section shall be divided into paragraphs as needed to establish the context for the planning described in later sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Document management and configuration control information",
+          "content": "Identify the version, release date, and other relevant management and configuration control information associated with the current version of the document. Include a change history, highlighting significant changes from version to version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Purpose and Scope of the SAD",
+          "content": "Explain the SAD's overall purpose and scope. Explain the criteria for deciding which design decisions are architectural (and therefore documented in the SAD) and which design decisions are non-architectural (and there documented elsewhere).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "How the SAD Is Organized",
+          "content": "Provide a narrative description of the seven major sections of the SAD (as identified by this DID) and the overall contents of each.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Stakeholder Representation",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Stakeholders and their concerns",
+              "content": "Provide a list of the stakeholder roles considered in the development of the architecture described by this SAD. For each, list the concerns that the stakeholder has that can be addressed by the information in this SAD. A convenient way to represent this information is as a matrix, where the rows list stakeholder roles, the columns list concerns, and a cell in the matrix contains an indication of how serious the concern is to a stakeholder in that role. The following stakeholders shall be considered:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.1.1",
+                  "title": "Application software developers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.2",
+                  "title": "Infrastructure software developers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.3",
+                  "title": "End users",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.4",
+                  "title": "Project Segment Teams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.5",
+                  "title": "Application system engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.6",
+                  "title": "Application and platform hardware engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.7",
+                  "title": "Security engineers and certifiers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.8",
+                  "title": "Safety engineers and certifiers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.9",
+                  "title": "Communications engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.10",
+                  "title": "System of system engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.11",
+                  "title": "Chief Engineer/Chief Scientist",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.12",
+                  "title": "LSI Program management",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.13",
+                  "title": "Government Program management (including those concerned with licensing)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.14",
+                  "title": "System integration and test engineers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.15",
+                  "title": "External test agencies",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.16",
+                  "title": "Operational system managers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.17",
+                  "title": "Trainers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.18",
+                  "title": "Maintainers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.19",
+                  "title": "Other Service representatives",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.20",
+                  "title": "Auditors (LSI internal, GAO, etc.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Representatives of standardization activities",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Stakeholder Scenarios for Using the SAD",
+              "content": "For each stakeholder role identified in Section 1.4.1, detail a few short scenarios that explain how that stakeholder would use specific sections of the SAD to help address concerns.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Viewpoint and View Definitions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Introduction to Viewpoints",
+              "content": "Provide a short textual definition of a viewpoint and how the concept is used in this SAD.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Describe each viewpoint used in the SAD using the following outline",
+              "content": "The SAD shall include at least the following viewpoints:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Communications viewpoint",
+                  "content": "Views conforming to this viewpoint show the communication paths used by software-initiated or software-carried messages, and the software elements that send and receive information along those paths. Views conforming to this viewpoint provide the basis for analysis to determine whether necessary communication bandwidth and performance will be achieved to enable the system to meet all of its operational requirements that depend on communication.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "Data load viewpoint",
+                  "content": "Views conforming to this viewpoint show data required and provided by software elements, and show where that data is stored, how it is backed up and recovered in the event of loss. Views conforming to this viewpoint provide the basis for analysis to determine whether units will have access to the necessary information.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "Information assurance viewpoint",
+                  "content": "Views conforming to this viewpoint show the location and flow of classified or otherwise sensitive information in the system, as well as elements that provide essential services that must be protected from denial-of-service attacks. Views conforming to this viewpoint provide the basis for analysis to determine whether the system's information assurance needs will be met.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.4",
+                  "title": "Safety viewpoint",
+                  "content": "Views conforming to this viewpoint show elements that provide safety-critical functionality and how they are used. Views conforming to this viewpoint provide the basis for analysis to determine whether the system's safety needs will be satisfied.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.5",
+                  "title": "Cyber Security viewpoint",
+                  "content": "Views conforming to this viewpoint show elements that provide cyber security functionality and how they are used. Views conforming to this viewpoint provide the basis for analysis to determine whether the system's cyber security needs will be satisfied. Considerations:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.2.5.1",
+                      "title": "Separation Kernel",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.2",
+                      "title": "Separation of portions of Operational Flight Program that use data from external sources and reuse of unsecure code",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.3",
+                      "title": "Use of time and space partitioning",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.4",
+                      "title": "Use of information flow control",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.5",
+                      "title": "Data validation of any data from external sources",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.6",
+                      "title": "Use of sanitization",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.7",
+                      "title": "Use of encryption",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.8",
+                      "title": "Use of watchdog timers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.9",
+                      "title": "Use of non-volatile memory storage for Operational Flight Program",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.10",
+                      "title": "Separation of control instructions and data",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.11",
+                      "title": "Health and fault monitoring and reporting",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.12",
+                      "title": "System degraded states",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.13",
+                      "title": "Host-Based Security System (HBSS) incorporation",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.14",
+                      "title": "Authentication and lowest level privilege access",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.2.5.15",
+                      "title": "Common Attack Pattern Enumeration and Classification (CAPEC)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.6.2.5.15.1",
+                          "title": "Design and architecture considerations",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.5.15.2",
+                          "title": "Selection of programming language(s)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.6.2.5.15.3",
+                          "title": "Use of COTS and open-source code",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.2.6",
+                  "title": "Reliability viewpoint",
+                  "content": "Views conforming to this viewpoint show elements that provide mission-critical functionality, how they are used, and any redundancy or failover capabilities provided to assume that functionality in the event of failure. Views conforming to this viewpoint provide the basis for analysis to determine whether the system's reliability needs will be satisfied.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Viewpoints",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Name the viewpoint",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.3.1.1",
+                      "title": "Abstract",
+                      "content": "Provide a brief overview of the viewpoint.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.2",
+                      "title": "Stakeholders and Their Concerns Addressed",
+                      "content": "Describe the stakeholders and their concerns that this viewpoint is intended to address. List questions that can be answered by consulting views that conform to this viewpoint. Include significant questions that cannot be answered by consulting views conforming to this viewpoint.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.3",
+                      "title": "Elements, Relations, Properties, and Constraints",
+                      "content": "Define the types of elements, the relations among them, the significant properties they exhibit, and the constraints they obey for views conforming to this viewpoint.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.4",
+                      "title": "Language(s) to Model/Represent Conforming Views",
+                      "content": "List the language or languages that will be used to model or represent views conforming to this viewpoint, and cite a definition document for each.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.5",
+                      "title": "Applicable Evaluation/Analysis Techniques and Consistency/Completeness Criteria",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.3.1.6",
+                      "title": "Viewpoint Source",
+                      "content": "Provide a citation for the source of this viewpoint definition, if any.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "How a view is documented",
+          "content": "Describe the documentation organization for documenting a view.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Relationship to Other SADs",
+          "content": "Describe the relationship between this SAD and other architecture documents, both system and software.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Process for Updating this SAD",
+          "content": "Describe the process a reader should follow to report discrepancies, errors, inconsistencies, or omissions from this SAD. Include necessary contact information for submitting the report. If a form is required, either include a copy of the blank form that may be photocopied, or give a reference to an on-line electronic version. Describe how error reports are handled, and how and when a submitter will be notified of the issue's disposition.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Architecture background",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Problem Background",
+              "content": "In this section, explain the constraints that provided the significant influence over the architecture. Structure the information in the following sections:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.1.1",
+                  "title": "System Overview",
+                  "content": "Describe the general function and purpose for the system or subsystem whose architecture is described in this SAD.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.2",
+                  "title": "Goals and Context",
+                  "content": "Describe the goals and major contextual factors for the software architecture. Include a description of the role software architecture plays in the life cycle, relevant acquisition factors, the impact of the LSI model, the effects of incremental development, and the relationship to system engineering results and artifacts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.3",
+                  "title": "Significant Driving Requirements",
+                  "content": "Describe behavioral and quality attribute requirements (original or derived) that shaped the software architecture. Include any scenarios that express driving behavioral and quality attribute goals, such as those crafted during a software architecture evaluation.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Solution Background",
+          "content": "In this section, provide a description of why the architecture is the way that it is, and a convincing argument that the architecture is the right one to satisfy the functional and quality attribute goals levied upon it. Structure the information in the following sections:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Architectural Approaches",
+              "content": "Provide a rationale for the major design decisions embodied by the software architecture. Describe any design approaches applied to the software architecture, including the use of architectural styles or design patterns, when the scope of those approaches transcends any single architectural view. Provide a rationale for the selection of those approaches, and why they were chosen over other approaches that were seriously considered but ultimately rejected. Describe any relevant COTS/GOTS issues, including any associated trade spaces,",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Analysis Results",
+              "content": "Describe the results of any quantitative or qualitative analyses that have been performed that provide evidence that the software architecture is fit for purpose. If an architecture evaluation has been performed include the analysis sections of its final report. Refer to the results of any other relevant trade studies, quantitative modeling, or other analysis results.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Requirements Coverage",
+              "content": "Describe the requirements (original or derived) addressed by the software architecture. Include those requirements or constraints that are derived from higher-level SADs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.4",
+              "title": "Summary of Changes in Current Version",
+              "content": "For versions of the SAD after the original release, summarize the actions, decisions, decision drivers, analysis and trade studies results that became decision drivers, requirements changes that became decision drivers, and how these decisions have caused the architecture to evolve or change.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Product Line Reuse Considerations",
+          "content": "When a product line is being developed, this section details how the software covered by this SAD is planned or expected to be reused in order to support the product line vision. In particular, this section includes a complete list of the variations that are planned to be produced and supported. \"Variation\" refers to a variant of the software produced through the use of pre-planned variation mechanisms made available in the software architecture. It may refer to a variant of one of the modules identified in this SAD, or a collection of modules, or the entire system or subsystem covered by this SAD. For each variation, the section identifies the increment(s) of the software build in which (a) the variation will be available; and (b) the variation will be used. Finally, this section describes any additional potential that exists to reuse one or more of the modules or their identified variations, even if this reuse is not currently planned for any increment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Views",
+          "content": "Describe each view using the outline below. The SAD shall contain one view for each viewpoint listed in Section 3.6.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "Name and View description",
+              "content": "Describe the purpose and contents of the view. Refer to the viewpoint description in Section 3.6 to which this view conforms.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.13.1.1",
+                  "title": "View packet overview",
+                  "content": "Show the set of view packets in this view and provide rationale that explains why the set is complete and non-duplicative.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.1.2",
+                  "title": "Architecture background",
+                  "content": "Provide any architecture background (including significant driving requirements, design approaches, patterns, analysis results, and requirements coverage) that applies to this view.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.1.3",
+                  "title": "Variability mechanisms",
+                  "content": "Describe any architectural variability mechanisms (e.g., adaptation data, compile-time parameters, variable replication, and so forth) described by this view, including a description of how and when those mechanisms may be exercised and any constraints on their use.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.1.4",
+                  "title": "View packets",
+                  "content": "For each view packet in the view, describe it using the following outline:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.13.1.4.1",
+                      "title": "View packet # j",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.13.1.4.1.1",
+                          "title": "Primary presentation",
+                          "content": "Present the elements and the relations among them that populate this view packet, using an appropriate language, languages, notation, or tool-based representation.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.13.1.4.1.2",
+                          "title": "Element catalog",
+                          "content": "",
+                          "asterisk": false,
+                          "children": [
+                            {
+                              "number": "3.13.1.4.1.2.1",
+                              "title": "Elements",
+                              "content": "Describe each element shown in the primary presentation, along with the values of its relevant properties, which are described in the viewpoint to which this view conforms.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.2",
+                              "title": "Relations",
+                              "content": "Describe any additional relations among elements shown in the primary presentation, or specializations or restrictions on the relations.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.3",
+                              "title": "Interfaces",
+                              "content": "Specify the software interfaces to any elements shown in the primary presentation that must be visible to other elements.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.4",
+                              "title": "Behavior",
+                              "content": "Specify any significant behavior of elements or groups of interacting elements shown in the primary presentation.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.5",
+                              "title": "Constraints",
+                              "content": "List any constraints on elements or relations not otherwise described.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.6",
+                              "title": "Context diagram",
+                              "content": "Provide a context diagram showing the context of the part of the system represented by this view packet. Designate the view packet's scope with a distinguished symbol and show interactions with external entities in the vocabulary of the view.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.7",
+                              "title": "Variability mechanisms",
+                              "content": "Describe any variabilities that are available in the portion of the system shown in the view packet, along with how and when those mechanisms may be exercise.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.8",
+                              "title": "Architecture background",
+                              "content": "Provide rationale for any significant design decisions whose scope is limited to this view packet.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.13.1.4.1.2.9",
+                              "title": "Related view packets",
+                              "content": "Provide section references for related view packets, including the parent, children, and siblings of this view packet. Related view packets may be in the same view or in different views.",
+                              "asterisk": false,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "Relations among views",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "General relations among views",
+          "content": "Describe the general relationship among the views chosen to represent the architecture. Discuss consistency among those views, and identify any known inconsistencies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "View-to-view relations",
+          "content": "For each set of views related to each other, show how the elements in one view are related to elements in another.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Referenced materials",
+          "content": "Provide citations for each reference document, giving enough information so that a reader of the SAD could be reasonably expected to locate the document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Directory",
+          "content": "Provide an index of all element names, relation names, and property names. For each entry, identify where in the SAD it was defined, and each place it was used.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.18.1",
+              "title": "Index",
+              "content": "Provide an index of all element names, relation names, and property names. For each entry, identify where in the SAD it was defined, and each place it was used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.2",
+              "title": "Glossary",
+              "content": "Provide a list of definitions of special terms used in the SAD. If terms are used in this SAD that are also used in a parent SAD and the definition is different, explain why.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.3",
+              "title": "Acronym list",
+              "content": "Provide a definition of the acronyms used in the SAD.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.19",
+          "title": "Appendixes",
+          "content": "Appendixes may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82043A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

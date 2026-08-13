@@ -1,0 +1,352 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82268",
+  "slug": "di-sess-82268",
+  "title": "Aircraft Structural Teardown Inspection and Evaluation Report",
+  "summary": "Describes the teardown inspection and evaluation procedures, processes, and results for all lifecycle phases of an aircraft structural teardown program.",
+  "approval_date": "2019-05-17",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10033",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFS)",
+  "project_number": "SESS-2019-015",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Aircraft Structural Teardown Inspection and Evaluation Report describes the teardown inspection and evaluation procedures, processes, and results for all lifecycle phases of a program.\n\na. The report shall describe the teardown data management system used to identify, track, and electronically document the five primary teardown execution elements: extraction, disassembly, coating removal, nondestructive inspection (NDI), and failure analysis. The report shall describe the results of all NDI findings and any supporting failure analysis and root cause evaluation activities.\n\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from structural teardown inspections, including the work tasks described by Tasks III and V of MIL-STD-1530, Aircraft Structural Integrity Program (ASIP). (Copies of the document are available online at https://quicksearch.dla.mil.)",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "MIL-STD-1530, Aircraft Structural Integrity Program (ASIP)",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall include the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Photographs and descriptions of the aircraft",
+          "content": "Photographs and descriptions of the aircraft, to include: its model number, production date, applicable engineering changes (e.g., deviations from operational configuration), and testing and service history.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Descriptions of the teardown data management system",
+          "content": "Descriptions of the teardown data management system that serves as the permanent electronic record of the entire teardown inspection and evaluation program, and that provides the ability to create and maintain continuity of data visibility and control through every stage of the program. The report shall include descriptions of the processes and protocols for electronic photographic and records entry into the teardown data management system for documenting data, findings, and analysis throughout all lifecycle phases of the program. The report shall document the processes for identifying and tracking:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Teardown sections, parts, and sub-parts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Disassembly procedures and protocols",
+              "content": "Disassembly procedures and protocols for each section, part, and sub-part.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Required NDI and failure analysis",
+              "content": "Required NDI and failure analysis for each teardown section, part, and sub-part.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "All teardown, NDI, and failure analysis data and results",
+              "content": "All teardown, NDI, and failure analysis data and results, to include: supporting files and photographs for all protocols.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Teardown, NDI, and failure analysis status",
+              "content": "Teardown, NDI, and failure analysis status for each section, part, and sub-part.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Descriptions of the processes for ensuring accurate teardown component identification",
+          "content": "Descriptions of the processes for ensuring accurate teardown component identification and continuous tracking throughout the teardown inspection and evaluation program. The report shall document the protocols and methods for:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Specifying the standard convention for establishing and maintaining unique identification",
+              "content": "Specifying the standard convention for establishing and maintaining unique identification for all lots, teardown sections, parts, and sub-parts.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Section, part, and sub-part physical identification marking, tagging, and labeling",
+              "content": "Section, part, and sub-part physical identification marking, tagging, and labeling throughout the teardown and failure analysis processes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Electronic photographic and records entry",
+              "content": "Electronic photographic and records entry into the teardown data management system for component identification and tracking.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Descriptions of the protocols for performing teardown section extraction",
+          "content": "Descriptions of the protocols for performing teardown section extraction that removes structural parts and assemblies while preventing incidental damage. The report shall document the processes for:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Accurately locating the physical extent or boundaries of designated teardown sections",
+              "content": "Accurately locating the physical extent or boundaries of designated teardown sections, to include: application of extraction cut line markings (if authorized), component identification, orientation, and aircraft coordinate reference marks to the designated teardown section prior to extraction.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Documentation of repairs and anomalies",
+              "content": "Documentation of repairs; loose fasteners; missing fasteners; missing fastener elements; corrosion; paint, coating, and material conditions; gouges; chafing; cracking; or any other anomalies on the surface of the teardown section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Descriptions of the protocols for conducting precision parts and sub-parts disassembly",
+          "content": "Descriptions of the protocols for conducting precision parts and sub-parts disassembly in a deliberate and organized manner that minimizes damage induced by disassembly. The processes for documenting observed damage, cleaning parts, removing all mechanical fasteners, and removing all sealants shall be documented in the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Descriptions of the part coating removal process",
+          "content": "Descriptions of the part coating removal process that prevents substrate material damage in order to optimize NDI results. The report shall describe the coating removal system for each coating type, to include: removal chemicals, holding containers, part removal tools, any heating or circulation elements, rinsing items, and post-coating removal storage to prevent environmental corrosion.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Descriptions of corrosion preventive compound (CPC) evaluation processes",
+          "content": "Descriptions of corrosion preventive compound (CPC) evaluation processes to determine whether CPC application helped to mitigate corrosion (if applicable). The report shall include documentation of article repairs; loose fasteners; missing fasteners; missing fastener elements; corrosion; paint, coating, and material degradation; gouges; chafing; and cracking.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Descriptions of the NDI procedures",
+          "content": "Descriptions of the NDI procedures that are used to interrogate sections, parts, sub-parts, and materials for discontinuities, defects, and damage without causing damage to a component or resulting in loss of vital metallographic grain structure and crack face microstructure evidence. For each NDI indication, the report shall include descriptions of the full extent of the observed damage, indication details, the suspected source of the indications, the NDI methods used, and any other relevant descriptors used by NDI inspectors to help quantify the strength of the indications.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Descriptions of the protocols for specimen sectioning and related metallurgical evaluation",
+          "content": "Descriptions of the protocols for specimen sectioning, mounting, polishing, crack opening, fracture surface examination and characterization, corrosion type identification, corrosion product identification, fracture surface corrosion product removal, corrosion grindout evaluation, and related metallurgical evaluation (alloy and temper identification). The report shall describe the results of the failure analysis and root cause analysis for NDI indications for each specimen, to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "A description of the NDI indication which resulted in the requirement for a failure analysis investigation",
+              "content": "A description of the NDI indication which resulted in the requirement for a failure analysis investigation, including: the precise structural location and pertinent NDI details.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "A summary of the failure analysis investigation",
+              "content": "A summary of the failure analysis investigation by detailing the methodology, the failure analysis tools used, a summary of the analysis performed on the indication, and finding results.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "The macroscopic indication and finding images",
+              "content": "The macroscopic indication and finding images to include detailed photographs of the indication prior to beginning destructive failure analysis and a finding and analysis schematic.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "Data and evidence that supports the finding",
+              "content": "Data and evidence that supports the finding that shall include (if applicable):",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.4.1",
+                  "title": "Enhanced visual images of the finding at the indication site",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.2",
+                  "title": "Micrographs of the sectioned part showing the damage, if any",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.3",
+                  "title": "Elemental analysis plot from energy-dispersive X-ray spectroscopy (EDXS)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.4",
+                  "title": "Scanning electron microscope (SEM) images",
+                  "content": "Scanning electron microscope (SEM) images of:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.4.4.1",
+                      "title": "The opened fracture surface with clearly identified fracture surface features",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.9.4.4.1.1",
+                          "title": "Striation measurement sites, if applicable",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.9.4.4.1.2",
+                          "title": "Initiating feature(s), if applicable",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.9.4.5",
+                  "title": "X-ray computed tomography or ultrasonic images",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.6",
+                  "title": "Digital imagery from any technique",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.7",
+                  "title": "Geolocation information",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.9.5",
+              "title": "Programmatic information",
+              "content": "Programmatic information, to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.5.1",
+                  "title": "The vendor conducting the failure analysis investigations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.5.2",
+                  "title": "The names of the investigator and senior metallurgist who validated each failure analysis investigation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.5.3",
+                  "title": "The contact information for the investigator and the senior metallurgist",
+                  "content": "The contact information for the investigator and the senior metallurgist who conducted the failure analysis investigations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.5.4",
+                  "title": "The completion date and expenditure details",
+                  "content": "The completion date and expenditure details for each failure analysis investigation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.5.5",
+                  "title": "The teardown program name",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82268.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

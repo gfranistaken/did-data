@@ -1,0 +1,158 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81856",
+  "slug": "di-sess-81856",
+  "title": "Contractual Baseline Report",
+  "summary": "Identifies the planned configuration of each individual end item being built under a specific Government contract and is used to track, reconcile, and audit contractor compliance with the Contractual Baseline.",
+  "approval_date": "2011-12-20",
+  "did_format": "free_text",
+  "963c_compliant": false,
+  "amsc_number": "9236",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "AR",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Contractual Baseline Report identifies the planned configuration of each individual end item being built under a specific Government contract.  The planned configuration (i.e., Contractual Baseline) is defined by the contract and any subsequent modifications to the contract that result in configuration changes.  The Contractual Baseline continuously changes throughout the life of a contract.  The Contractual Baseline Report will be used to track and reconcile status of the Contractual Baseline.  The Contractual Baseline Report will also be used to audit contractor compliance with the Contractual Baseline.\n\nThis Data Item Description (DID) contains the format, content and preparation instructions for the data product resulting from the work task specified in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of any documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Contractual Baseline Report shall be prepared in contractor format.  The format shall allow the history of obsolete configurations to be retained in the report whenever changes in configuration are incorporated.  Historical configurations shall be marked in an obvious manner (lining out, highlighting, color coding, etc.).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain a list of all drawings and specifications needed to fully define the planned configuration of each end item being built.  For each document listed, the following information shall be provided for both the current configuration and historical configurations:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Document number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Document type",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "Nomenclature or description of the document",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Indenture level of the document within the product configuration tree",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Latest revision of the document that has been incorporated into the contract",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "Distribution statement applicable for the document",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "A list of any and all documentation",
+          "content": "A list of any and all documentation authorizing changes in configuration from that specified by the base document, to include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "i",
+              "title": "Section C of the original contract (exceptions to the Technical Data)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "ii",
+              "title": "Contractual Letters issued by the Procuring Contracting Officer (PCO)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "iii",
+              "title": "Incorporated Engineering Change Proposals (ECPs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "iv",
+              "title": "Incorporated Value Engineering Change Proposals (VECPs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "v",
+              "title": "Approved Requests for Deviation (RFDs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "h",
+          "title": "Effectivity date for when the configuration identified",
+          "content": "Effectivity date for when the configuration identified by items 3.a through 3.g was incorporated into the contract.  Effectivity of a configuration change is the date established by the Procuring Contracting Officer in official correspondence.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81856.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

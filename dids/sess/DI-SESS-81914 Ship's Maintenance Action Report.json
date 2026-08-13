@@ -1,0 +1,74 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-81914",
+  "slug": "di-sess-81914",
+  "title": "Ship's Maintenance Action Report",
+  "summary": "Specifies the format, content, and preparation instructions for reporting material conditions and recommended corrective action found during inspections and repair tasks.",
+  "approval_date": "2013-05-20",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "N9373",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "SH/SEA 00C",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "OPNAV 4790/2K",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Material conditions determined during conduct of inspections and repair tasks in accordance with the contract must be reported along with recommended corrective action. This Data Item Description (DID) contains the format, content, and preparation instructions for the data product resulting from the work task specified in the contract. Commander Fleet Forces Command Instruction 4790.3C, Joint Fleet Maintenance Manual can be accessed from: http://www.submepp.navy.mil/jfmm NAVSEA Instruction 4790.8C, Ship's Maintenance and Material Management (3-M) Manual, dated 14 March 2013. Available on https://navsea.portal.navy.mil/.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Commander Fleet Forces Command Instruction 4790.3C, Joint Fleet Maintenance Manual",
+      "url": "http://www.submepp.navy.mil/jfmm"
+    },
+    {
+      "label": "NAVSEA Instruction 4790.8C, Ship's Maintenance and Material Management (3-M) Manual",
+      "url": "https://navsea.portal.navy.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendment, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Ship's Maintenance Action Report shall be presented on OPNAV form 4790/2K in accordance with NAVSEA Instruction 4790.8C.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Ship's Maintenance Action Report content shall be as specified in the Joint Fleet Maintenance Manual.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-81914.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

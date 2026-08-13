@@ -1,0 +1,755 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82045",
+  "slug": "di-sess-82045",
+  "title": "Firmware Development Plan",
+  "summary": "Establishes the format and content for a plan that standardizes the collection of information on firmware development and ensures appropriate rigor is applied.",
+  "approval_date": "2016-05-25",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N9667",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2016-027",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Firmware Development Plan (FDP) contains the format and content to standardize a way to collect information on the development of firmware and assure that the appropriate rigor is applied.\n\nThis Data Item Description contains the format, content, and intended use information for the data product resulting from the work task described by the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced documents",
+      "content": "This section shall list the number, title, revision, and date of all documents referenced in this plan. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor's format is acceptable. The FDP shall adhere to the format described under Content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The content shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Overview of required work",
+          "content": "This section shall be divided into paragraphs as needed to establish the context for the planning described in later sections. It shall include, as applicable, an overview of:",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Requirements and constraints on the system and firmware to be developed",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Handling of critical requirements",
+              "content": "This paragraph shall be divided into the following subparagraphs to describe the approach to be followed for handling requirements designated critical. The planning in each subparagraph shall cover all contractual clauses concerning the identified topic.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Safety Assurance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "a",
+                      "title": "Software Requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "b",
+                      "title": "System Software Architecture and Software Preliminary Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "c",
+                      "title": "Software Detailed Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "d",
+                      "title": "Software Coding and Unit Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "e",
+                      "title": "Computer Software Component (CSC) Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "f",
+                      "title": "Computer Software Configuration Item (CSCI) Formal Qualification Test (FQT)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Cyber-Security / Software Assurance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "a",
+                      "title": "Software Requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "b",
+                      "title": "System Software Architecture and Software Preliminary Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "c",
+                      "title": "Software Detailed Design",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "d",
+                      "title": "Software Coding and Unit Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "e",
+                      "title": "CSC Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "f",
+                      "title": "CSCI FQT",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "g",
+                      "title": "Subsystem Integration and Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "h",
+                      "title": "System Qualification Test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "i",
+                      "title": "Describe the mechanism to address constant emerging cyber-security requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Requirements and constraints on project documentation",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Position of the project in the system life cycle",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "The selected program/acquisition strategy or any requirements or constraints on it",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Requirements and constraints on project schedules and resources",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Other requirements and constraints, such as on project security, privacy, methods, standards, interdependencies in hardware and software development, etc.",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Plans for performing general firmware development activities",
+          "content": "This section shall be divided into the following paragraphs. Provisions corresponding to non-required activities may be satisfied by the words \"Not applicable.\" If different builds or different firmware on the project require different planning, these differences shall be noted in the paragraphs. In addition to the content specified below, each paragraph shall identify applicable risks/uncertainties and plans for dealing with them.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Project Organization and Resources",
+          "content": "This paragraph shall be divided into the following subparagraphs to describe the project organization and resources to be applied.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Project Organization",
+              "content": "This paragraph shall describe the organizational structure to be used on the project, including the organizations involved, their relationships to one another, and the authority and responsibility of each organization for carrying out required activities. This paragraph shall also include the definition of Systems Engineering, Software Engineering, Integrated Product and Process Development, and processes for the Division(s) responsible for the development and the principle sub-contractors responsible for software/firmware development, as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Project Resources",
+              "content": "This paragraph shall describe the resources to be applied to the project. This section shall include a description of the extent to which personnel who contributed to these previous efforts using these processes will be supporting this development effort. It shall include, as applicable:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.2.1",
+                  "title": "Personnel resources, including:",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.2",
+                  "title": "The estimated staff-loading for the project",
+                  "content": "(number of personnel over time)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.3",
+                  "title": "The breakdown of the staff-loading numbers by responsibility",
+                  "content": "(for example, management, engineering, testing, configuration management, product evaluation, and/or quality assurance)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.4",
+                  "title": "A breakdown of the skill levels, geographic locations, and security clearances of personnel performing each responsibility",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.5",
+                  "title": "Overview of developer facilities to be used",
+                  "content": "Including geographic locations in which the work will be performed, facilities to be used, and secure areas and other features of the facilities as applicable to the contracted effort.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.6",
+                  "title": "Acquirer-furnished equipment, software, services, documentation, data, and facilities required for the contracted effort",
+                  "content": "A schedule detailing when these items will be needed shall also be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.7",
+                  "title": "Other required resources",
+                  "content": "Including a plan for obtaining the resources, dates needed, and availability of each resource item.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.9.3",
+              "title": "Peer Review",
+              "content": "This paragraph shall describe the peer review process covering: System requirements, system design, firmware requirements, firmware design, firmware implementation and firmware testing.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Technical Development Planning",
+          "content": "The following subparagraphs shall detail the planning activities associated with the firmware development. Repeat for each Module as applicable. A Module is defined as a single file of source code that contains functions or routines as well as all the variables needed to support the functions.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Firmware Estimation",
+              "content": "This paragraph will detail the methodology for the firmware size estimate and complexity.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.1.1",
+                  "title": "Definitions",
+                  "content": "Modified: Any deletion, modification, addition or development of code, documentation (e.g., test procedures), design or development environment that deviates from the predefined modules developed for production, deployment and/or use.\n\nReuse: Any product, code, documentation or design that requires no modification from the predefined modules developed for production, deployment and/or use.\n\nSimple - Code that performs easily tested functions, has linear relationships between inputs and outputs, i.e. linear domain & range relationships, single firmware/software & hardware relationship, and performs simplistic data management functions like look up tables or library functions. The main difference between simple and routine code is the relative degree of testing required to determine code functionality. Simple code can consist of simulation, maintenance, data handling, or human interface components.\n\nRoutine - Code that has multiple input and output paths requiring a moderate degree of testing to certify functionality, may be newly written or adaption of existing code from other DOD programs and generally performs non real time, non-algorithm intense functions like simulation, tools, maintenance, Graphical User Interface (GUI) or data handling. Code is rarely constrained by the operating environment.\n\nComplex - Code that has a very high number of input and output paths making it very difficult to test, may perform real time mathematical intense functions, may be constrained by the operating environment, may be written in a highly secure environment, or involves new or novel algorithms or applications. Complex code tends to be found in functions that emulate or interface with the physical world, i.e. radar signal processing, sensor and electronic warfare signal processing. Human interface is infrequent with this type of code. Key to identifying complex code is the difficulty in verifying and validating the code in a laboratory environment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.2",
+                  "title": "Source Lines of Code (SLOC)",
+                  "content": "This paragraph shall detail how the size was developed (analogy, function point, requirements analysis, etc.) along with any data justifying the estimate.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.3",
+                  "title": "Reuse and Modified Firmware",
+                  "content": "For reuse and modified firmware, the following shall be detailed:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "a",
+                      "title": "Lineage of the proposed reuse firmware and how it compares or relates to the target system(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "b",
+                      "title": "Ability to provide required capabilities and meet required constraint(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "c",
+                      "title": "Ability to provide required safety, security and privacy constraint(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "d",
+                      "title": "Reliability/Maturity and the metrics to verify and validate the claim",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "e",
+                      "title": "Firmware defect history",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "f",
+                      "title": "Anticipated changes in terms of SLOC",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "g",
+                      "title": "Fielding issues",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Restrictions on copying/distributing the firmware or documentation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "License or other fees applicable to each copy",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "h",
+                      "title": "Maintainability",
+                      "content": "Including:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Feasibility and complexity of changing the firmware to meet new or emerging requirements",
+                          "content": "(ex: Anti-Tamper, Cybersecurity, Safety, etc.).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Availability and quality of documentation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Likelihood that the current version will not be supported, or is not supportable and the impact on the overall system",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "The acquirer's data rights to firmware products and associated documentation",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "i",
+                      "title": "Short and long term cost impact of using the firmware product",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.10.1.4",
+                  "title": "Programming Language(s) to be used",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.5",
+                  "title": "Complexity",
+                  "content": "Detail the relative measure of the complexity of the firmware to be developed (Simple, Routine or Complex as defined above) to include rationale and methodology.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.10.2",
+              "title": "Firmware Requirements Plan",
+              "content": "This paragraph shall detail the requirements plan as well as requirements documentation, requirement types, and their respective requirements attributes, specifying the information and control mechanisms to be collected and used for measuring, reporting, and controlling changes to the product requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Firmware Preliminary Design Plan",
+              "content": "This paragraph shall detail the design plan that will correctly and completely implement the requirements. This design concept may be expressed as functional block diagrams, design and architecture descriptions, sketches, and/or behavioral hardware description language (HDL).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Firmware Detailed Design Plan",
+              "content": "This paragraph shall detail the design plan that will further the Preliminary Design and translate it into a gate-level design, which can then be mapped to the logic blocks of the device.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "Physical Fabrication Plan",
+              "content": "This paragraph shall detail the implementation of the firmware.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.5.1",
+                  "title": "Synthesis",
+                  "content": "This paragraph shall detail the process of converting the detailed design into a lower-level implementation on the field programmable gate array (FPGA) or other programmable logic device.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.5.2",
+                  "title": "Layout",
+                  "content": "This paragraph shall detail the physical arraignment and/or allocation of components on the FPGA or other programmable logic device.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.10.6",
+              "title": "Programming equipment",
+              "content": "This paragraph shall describe the equipment to be used for programming and reprogramming the firmware device. It shall include computer equipment, general purpose equipment, and special equipment to be used for device erasure, loading, verification, and marking, as applicable. Each piece of equipment shall be identified by manufacturer's name, model number, and any other information that is necessary to uniquely identify that piece of equipment. A description of each piece of equipment shall be provided, including its purpose, usage, and major capabilities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.7",
+              "title": "Programming software",
+              "content": "This paragraph shall describe the software to be used for programming and reprogramming the firmware device. It shall include software to be used for device erasure, loading, verification, and marking, as applicable. Each software item shall be identified by vendor's name, software name, number, version/release, and any other information necessary to uniquely identify the software item. A description of each software item shall be provided, including its purpose, usage, and major capabilities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.8",
+              "title": "Programming procedures",
+              "content": "This paragraph shall describe the procedures to be used for programming and reprogramming the firmware device. It shall include procedures to be used for device erasure, loading, verification, and marking, as applicable. All equipment and software necessary for each procedure shall be identified, together with any security and privacy measures to be applied.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.9",
+              "title": "Firmware Tools",
+              "content": "This paragraph shall list all tools for the firmware development including requirements, coding, design, and testing.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Firmware Development Standards",
+          "content": "The following subparagraphs will detail the development standards associated with the to-be-developed firmware.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Project(s)",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.11.1.1",
+                  "title": "Directory Structure",
+                  "content": "This paragraph shall detail the directory structure of the source code.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.2",
+                  "title": "Version File(s)",
+                  "content": "This paragraph shall detail the firmware version name, version date, and part number and how it is documented in the source code.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.3",
+                  "title": "Make and Project File(s)",
+                  "content": "This paragraph shall detail all of the information needed to automatically build the entire ROM image.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.4",
+                  "title": "Startup Code",
+                  "content": "This paragraph shall detail, as applicable, an initial startup module that sets up the compiler's runtime package and initializes certain hardware on the processor itself, including chip selects, wait states, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.1.5",
+                  "title": "Stack and Heap",
+                  "content": "This paragraph shall detail the rationale for determining maximum stack requirements and how the initialization code fills the entire amount of memory allocated to the stack, if applicable.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.11.2",
+              "title": "Modules",
+              "content": "The following paragraphs shall describe the modules of the source code.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.11.2.1",
+                  "title": "General",
+                  "content": "This paragraph shall describe the module (i.e. name, layout, functions, author, date created, if applicable).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.2.2",
+                  "title": "Templates",
+                  "content": "This paragraph shall detail any standardized templates used for modules.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.2.3",
+                  "title": "Module Name(s)",
+                  "content": "This paragraph shall describe module name creation methodologies.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.11.3",
+              "title": "Variables",
+              "content": "The following paragraphs shall describe the Variables methodology.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.11.3.1",
+                  "title": "Naming Convention",
+                  "content": "This paragraph shall describe naming conventions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.3.2",
+                  "title": "Global Variables",
+                  "content": "This paragraph shall detail the global variables and how they are initialized and utilized in the firmware.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.11.3.3",
+                  "title": "Portability",
+                  "content": "This paragraph shall detail how the firmware is developed to ensure portability.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.11.4",
+              "title": "Functions",
+              "content": "This paragraph shall detail the methodology of functions, to include size, real-time constraints, parameter passing and any function prototyping used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.5",
+              "title": "Interrupt Service Routines (ISR)",
+              "content": "This paragraph shall detail the usage, or non-usage, of ISR.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.6",
+              "title": "Comments",
+              "content": "This paragraph shall detail how the source code is commented by the author to detail the functionality of the code.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.7",
+              "title": "Coding Conventions/Standards",
+              "content": "This paragraph shall detail coding standards to include: Line size, spacing and indentations, formatting based upon programming language and macros.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Firmware Testing",
+          "content": "These subparagraphs shall detail the testing methodology at multiple levels to ensure correct functionality and adherence to other properties. Some tests can only be done at a low level (e.g., at the chip or board level), where faults and failures of external components can be simulated. Some tests require other system elements in order to accurately reflect how the device will function in the full system.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Post-Programming Testing",
+              "content": "Detail the methodology for how device is tested to verify correct programming and functionality.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Integration Testing",
+              "content": "Detail the methodology for testing components or assemblies as part of a system element, to include: Hardware and firmware/software interfaces, timing, requirements that cannot be tested at a higher level, and fault injection to show that the board or assembly functions properly with anticipated faults and errors.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "System Testing",
+              "content": "Detail the methodology for system requirements verification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.4",
+              "title": "Acceptance Testing",
+              "content": "Detail the methodology for validation of the system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.5",
+              "title": "Simulation and Stimulation",
+              "content": "This paragraph shall detail all simulation and stimulation methods used in the testing if not covered elsewhere in Section 3.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Notes",
+          "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Appendices",
+          "content": "Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82045.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

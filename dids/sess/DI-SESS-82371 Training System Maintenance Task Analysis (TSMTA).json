@@ -1,0 +1,216 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82371",
+  "slug": "di-sess-82371",
+  "title": "Training System Maintenance Task Analysis (TSMTA)",
+  "summary": "Describes the Training System Maintenance Task Analysis (TSMTA), which identifies the steps, spares, materials, tools, support equipment, and personnel required for scheduled and unscheduled training system maintenance tasks, including cybersecurity hygiene tasks.",
+  "approval_date": "2022-01-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10290",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2022-003",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training System Maintenance Task Analysis (TSMTA) is the identification of the steps, spares, materials, tools, support equipment, and personnel that must be considered for a given repair task. TSMTAs cover both scheduled (preventive) and unscheduled (corrective) maintenance tasks and, when complete, identifies all physical resources required to support a training system in accordance with the Government's maintenance concept. Cybersecurity-cyber hygiene tasks must be considered for all training system network system and host based applications, including all non-network systems with information assurance vulnerabilities. At a minimum, Cyber hygiene tasks must include Scanning, Patching, Reporting, Configuration Management, Log File Analysis, and Host Based Security System or Host Intrusion Prevention System.\n\na. The TSMTA also provides a detailed understanding of the necessary logistics support element requirements to sustain required material availability. The process identifies logistics support tasks and the physical location where maintenance tasks will be accomplished.\n\nb. TSMTA results must be analyzed to assess the compliance of the items with all supportability issues such as ease of maintenance, accessibility, and standardization requirements defined by the training system performance specification.\n\nc. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nDefinitions:\n\na. Reference the Federal Acquisition Regulations (FAR), Part 2.101, for the definitions of Commercial Item, Commercial-off-the-Shelf (COTS), and Non-Developmental Item (NDI).\n\nb. On-equipment maintenance. Emphasizes \"remove and replace\" procedures rather than \"repair at point of failure\" by the Contractor Field Services or maintenance contractor at the Lowest Replaceable Unit (LRU). LRU replacement refers to the smallest unit, assembly, subassembly, and part in which a malfunction can be quickly identified, the unit can be easily replaced, and the replacement spare can be timely and economically provided and conveniently stored. On-equipment maintenance activities include the following:\n\n1. Verify that the trainer is ready for training by performing daily readiness tests and inspections.\n\n2. Isolate trainer malfunctions to faulty LRUs using standard test equipment, test procedures, computer-based diagnostics Built-in Test (BIT), maintenance documentation, inspection and by substitution when an ambiguity group is identifiable.\n\n3. Isolate and repair/replacement of defective wiring connectors using standard test equipment, hand tools, and technical documentation.\n\n4. Remove and replace faulty LRUs in a manner that minimizes trainer downtime with verification of the repair using the trainer as a test bed.\n\n5. Perform scheduled maintenance inspections during non-training hours as required.\n\n6. Isolate and document software related failures.\n\n7. Perform Adjustments and alignments.\n\n8. Load software and computer programs.\n\n9. Perform cybersecurity tasks to include scanning, patching, reporting, configuration management, log file analysis and host based security system or host intrusion prevention system.\n\nc. Off-equipment maintenance. Off-equipment maintenance consists of fault isolation and repair of failed LRUs. The Contract Field Service (CFS) or maintenance contractor maintains an off-equipment repair capability on-site or returns the failed LRUs to the Original Equipment Manufacturer (OEM) or vendor to accomplish the following:\n\n1. Overhaul/rebuild LRUs.\n\n2. Perform repair of printed circuit cards.\n\n3. Return defective LRUs to an operable condition.\n\nd. Trainer-Unique Equipment (TUE). The following types of equipment are defined as TUE:\n\n1. Trainer equipment which has not been classified by the Government as a Commercial Item, Government-Furnished Equipment (GFE), NDI, or Contractor Acquired Operational Equipment (CAOE).\n\n2. Commercial Item, NDI, GFE, or CAOE, that:\n\n(i) Needs other than Minor Modifications or modifications which are not of a type customarily available in the commercial marketplace to meet the requirements of the contract, or:\n\n(ii) Does not have sufficient existing product documentation for Government logistics support.\n\ne. Special tools. Tools not listed in the Federal Supply Catalog, or tools designed and developed specifically for support of the system, subsystem, or equipment.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including the approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The TSMTA shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The TSMTA shall contain the following content organized in the order below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter",
+          "content": "shall contain a cover, record of changes, and table of contents.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The cover",
+              "content": "shall include security classification or Controlled Unclassified Information (CUI) marking, document number, revision number, destruction notice, disclosure statement, export control warning statement, CUI designation indicator block, and authority notice. Front matter shall be in accordance with MIL-STD-38784B.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Warnings, cautions, and notes",
+          "content": "shall be in accordance with MIL-STD-38784B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "The report",
+          "content": "shall contain scheduled (preventive) and unscheduled (corrective) maintenance in support of the Government's maintenance concept for the training system. The levels of maintenance for the training system shall be designated as either on-equipment or off-equipment maintenance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "The TSMTA report",
+          "content": "shall contain information for each of the following fields:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "TASK ID NUMBER",
+              "content": "An alphanumeric sequence number assigned to the task.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "EQUIPMENT/LRU NOMENCLATURE",
+              "content": "The title or nomenclature of the maintenance significant item.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "REFERENCE DESIGNATOR",
+              "content": "The reference designator assigned to the training system unit, assembly, subassembly, or LRU.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "NEXT HIGHER ASSEMBLY",
+              "content": "The next higher assembly reference designator of the maintenance significant item.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "MAINTENANCE FUNCTIONS",
+              "content": "The following maintenance functions shall be included:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.5.1",
+                  "title": "MAINTENANCE LEVEL",
+                  "content": "The determination of the maintenance level for each identified maintenance significant item: O - On-equipment or F - Off-equipment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.2",
+                  "title": "PART TYPE",
+                  "content": "The part classification of each identified maintenance significant item: COTS, Commercial, GFE, NDI, TUE, CAOE, Modified parts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.3",
+                  "title": "TYPE OF MAINTENANCE TASK",
+                  "content": "Identification of each maintenance task as scheduled (preventive) or unscheduled (corrective): S - scheduled or U - unscheduled.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.5.4",
+                  "title": "TROUBLE MALFUNCTION",
+                  "content": "Identification of possible faults or malfunctions that could cause a failure and would therefore require troubleshooting.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.6",
+              "title": "NAME OF MAINTENANCE FUNCTION OR TASKS",
+              "content": "The name of the maintenance task, sub-task, or function to be performed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "NUMBER OF PERSONNEL REQUIRED TO COMPLETE TASKS",
+              "content": "The number of personnel required to complete the maintenance task.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "SKILL LEVEL OF PERSONNEL REQUIRED TO COMPLETE TASKS",
+              "content": "The skill level of the person(s) required to perform the task based on their minimum technical capabilities, knowledge, and experience.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "TIME TO COMPLETE TASKS",
+              "content": "The total estimated time for each person to complete the task from start to completion for each.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "SPECIAL TOOLS, TEST EQUIPMENT, PARTS, AND CONSUMABLE MATERIALS",
+              "content": "Identification of support equipment, special tools, test equipment required to support the task, and parts or other materials required to complete the maintenance step.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.11",
+              "title": "FACILITIES REQUIREMENTS",
+              "content": "Facility implications such as space limitations, environmental controls, health hazards, or minimum capacity requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.12",
+              "title": "PROCEDURES FOR MAINTENANCE ACTION",
+              "content": "The step-by-step procedure required to complete the maintenance task. The narrative shall include a description of each person's role in the completion of the task and references to drawings that assist in completing the maintenance action.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82371.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

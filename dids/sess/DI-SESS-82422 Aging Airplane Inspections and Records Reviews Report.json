@@ -1,0 +1,207 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82422",
+  "slug": "di-sess-82422",
+  "title": "Aging Airplane Inspections and Records Reviews Report",
+  "summary": "Defines the format and content of a report used to maintain a cumulative record of aircraft repairs, alterations, and inspection status to support FAA aging airplane reporting requirements under 14 CFR 121.1105.",
+  "approval_date": "2023-10-27",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10439",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2023-036",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Paragraph 1105 of Part 121 of Title 14 of the Code of Federal Regulations (CFR) defines reporting requirements to the Federal Aviation Administration (FAA) for records reviews of aging airplanes. The purpose of this report is to maintain a cumulative record of repairs and alterations on aircraft to support FAA reporting requirements.\n\nThis Data Item Description (DID) contains the format and content for the data product resulting from the work task specified in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "NOTE: Any applicable updates or changes to 14 CFR, Section 121.1105(d) shall apply to this report and be incorporated at the next revision/update. Any updates or changes to 14 CFR, Section 121.1105(d) that result in cost changes will be addressed under a contract modification.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following information related to the program:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Report title",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Report number, revision, and date",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Revision record",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Contract number",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Corporate name and address",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Signature block(s) showing corporate release approval",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Security classification",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Distribution statement",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Destruction notice",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Data content",
+          "content": "as defined in the Code of Federal Regulations, Title 14 (14 CFR) Section 121.1105(d), items (i) through (x), shall be provided for each aircraft in the fleet from the date of delivery for each aircraft. These data points are:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Total years in service of the airplane",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Total time in service of the airframe",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Total flight cycles of the airframe",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Date of the last inspection and records review required by this section",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "Current status of life-limited parts of the airframe",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.6",
+              "title": "Time since the last overhaul of all structural components required to be overhauled on a specific time basis",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.7",
+              "title": "Current inspection status of the airplane",
+              "content": "including the time since the last inspection required by the inspection program under which the airplane is maintained",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.8",
+              "title": "Current status of applicable airworthiness directives",
+              "content": "including the date and methods of compliance, and if the airworthiness directive involves recurring action, the time and date when the next action is required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.9",
+              "title": "A list of major structural alterations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.10",
+              "title": "A report of major structural repairs and the current inspection status for those repairs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82422.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

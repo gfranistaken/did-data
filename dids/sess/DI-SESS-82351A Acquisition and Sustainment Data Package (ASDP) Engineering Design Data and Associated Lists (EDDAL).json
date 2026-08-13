@@ -1,0 +1,2285 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82351A",
+  "slug": "di-sess-82351a",
+  "title": "Acquisition and Sustainment Data Package (ASDP) Engineering Design Data and Associated Lists (EDDAL)",
+  "summary": "Provides engineering design data and associated lists adequate to serve as an authoritative and complete technical description of an item, supporting competitive procurement, manufacture, and maintenance identical to the original item.",
+  "approval_date": "2023-09-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10423",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSC/LZPE)",
+  "project_number": "SESS-2023-025",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acquisition and Sustainment Data Package (ASDP) Engineering Design Data and Associated Lists (EDDAL) provide engineering data adequate to serve as an authoritative and complete technical description of an item.  This data, when authorized, is adequate to support competitive procurement and maintenance for items, including for substitutability, backward compatibility, and interchangeability with the as-designed and as-delivered assets.  The ASDP EDDAL shall provide the design, engineering, manufacturing, and sustainment information to procure or manufacture an item to be identical to the original item.  The product shall be defined to the extent for a competent manufacturer to produce an item that duplicates the physical, interface, and functional characteristics of the original product, as delivered, without additional processing, design engineering effort, or recourse to the design activity.  This DID can be used for conceptual, developmental, and product level EDDAL and shall meet the requirements of the applicable TDP level on contract. In addition, this DID can be used for EDDAL for Special Inspection Equipment, special tooling, special packaging instructions, test equipment, support equipment, military systems, and components, including spares.\n\na. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in MIL-STD-31000, Technical Data Packages, as related to EDDAL.  (Copies of this document are available online at quicksearch.dla.mil.)  The ASDP EDDAL data contains the digital product definition data for end items or products and is the documented engineering design from the work task described in the solicitation.\n\nb. In the event of a conflict between this DID and the references cited herein, the text of this DID takes precedence.  Nothing in this DID, however, supersedes applicable laws and regulations.\n\nc. This DID is related to DI-SESS-81000, Product Engineering Design Data and Associated Lists, but is created to meet specific enterprise PLM business requirements.  Other related design data DIDs include: DI-SESS-81001, Conceptual Design Drawings/Models, DI-SESS-81002, Developmental Design Drawings/Models and Associated Lists, DI-SESS-81003, Commercial Engineering Design Data and Associated Lists, DI-SESS-81004, Special Inspection Equipment (SIE) Engineering Design Data and Associated Lists, DI-SESS-81008, Special Tooling (ST) Engineering Design Data and Associated Lists.  (Copies of these documents are available online at quicksearch.dla.mil.)\n\nd. This DID supersedes DI-SESS-82351.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82351"
+  ],
+  "related_dids": [
+    "DI-SESS-81000",
+    "DI-SESS-81001",
+    "DI-SESS-81002",
+    "DI-SESS-81003",
+    "DI-SESS-81004",
+    "DI-SESS-81008"
+  ],
+  "references": [
+    {
+      "label": "ASME Y14 documents",
+      "url": "https://www.asme.org"
+    },
+    {
+      "label": "ANS US PRO IGES",
+      "url": "https://www.uspro.org"
+    },
+    {
+      "label": "ANSI/EIA-656 (IBIS)",
+      "url": "https://ibis.org/specs/"
+    },
+    {
+      "label": "32 CFR Part 117 (NISPOM)",
+      "url": "https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-D/part-117"
+    },
+    {
+      "label": "DoDI documents",
+      "url": "https://www.esd.whs.mil"
+    },
+    {
+      "label": "Drawing Requirements Manual (DRM)",
+      "url": "https://ihsmarkit.com/index.html"
+    },
+    {
+      "label": "The Gerber Layer Format Specification",
+      "url": "https://www.ucamco.com/en/"
+    },
+    {
+      "label": "IEEE documents",
+      "url": "https://standards.ieee.org"
+    },
+    {
+      "label": "IPC documents",
+      "url": "https://shop.ipc.org"
+    },
+    {
+      "label": "ISO documents",
+      "url": "https://www.iso.org"
+    },
+    {
+      "label": "JEDMICS C4 document",
+      "url": "https://www.jedmics.net/public/open-specs.html"
+    },
+    {
+      "label": "MIL specifications and standards",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "RS-274X / The Gerber Layer Format Specification",
+      "url": "https://www.ucamco.com"
+    },
+    {
+      "label": "TIFF Revision 6.0",
+      "url": "https://www.itu.int/itudoc/itu-t/com16/tiff-fx/docs/tiff6.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Requirements",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Reference documents",
+          "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be the latest released/published version as of the approval date of this DID, or as specified in the contract.  The documents listed in this section are needed to meet the requirements defined in this DID.  While every effort has been made to ensure the completeness of this list, this DID in total defines the complete requirement.\n\nASME Y14.100, Engineering Drawing Practices and Appendices B through F\nASME Y14.1, Drawing Sheet Size and Format\nASME Y14.3, Orthographic and Pictorial Views\nASME Y14.5, Dimensioning and Tolerancing\nASME Y14.8, Castings, Forgings, and Molded Parts\nASME Y14.24, Types and Applications of Engineering Drawings\nASME Y14.31, Undimensioned Drawings\nASME Y14.34, Associated Lists\nASME Y14.35, Revision of Engineering Drawings and Associated Documents\nASME Y14.36, Surface Texture Symbols\nASME Y14.37, Product Definition for Composite Parts\nASME Y14.38, Abbreviations and Acronyms for Use in Product Definition and Related Documents\nASME Y14.41, Digital Product Definition Data Practices\nASME Y14.44, Reference Designations for Electrical and Electronics Parts and Equipment\nASME Y14.47, Model Organization Practices\nCopies of ASME Y14 documents are available online at www.asme.org.\n\nANS US PRO/IPO-10001996 (IGES 5), Digital Representation for Communication of Product Definition Data\nCopies of ANS US PRO IGES are available at www.uspro.org.\n\nANSI/EIA-656, I/O Buffer Information Specification (IBIS)\nCopies of ANSI/EIA-656 are available at ibis.org/specs/.\n\nDoD 5220.22-M, National Industrial Security Program (NISP) is now 32 CFR Part 117, National Industrial Security Program Operating Manual (NISPOM)\nCopies of 32 CFR Part 117 documents are available at www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-D/part-117.\n\nDoDI 5220.22, National Industrial Security Program\nDoDI 5230.24, Distribution Statements on Technical Documents\nDoDM 5200.01, Volume 2, DoD Information Security Program:  Marking of Information\nCopies of DoDI documents are available at www.esd.whs.mil.\n\nDrawing Requirements Manual (DRM)\nCopies of the DRM are available at ihsmarkit.com/index.html.\n\nThe Gerber Layer Format Specification.\nCopies of The Gerber Specification are available online at www.ucamco.com/en/\n\nIEEE Std. 1029.1, Standard for Waveform and Vector Exchange to Support Design and Test Verification (WAVES) Language\nIEEE Std. 1076, VHDL Language Reference Manual\nCopies of IEEE documents are available at standards.ieee.org.\n\nIPC-2221, Generic Standard on Printed Board Design\nIPC-2611, Generic Requirements for Electronic Product Documentation\nIPC-D-350, Printed Board Description in Digital Form\nIPC-D-356, Bare Substrate Electrical Test Data Format\nIPC-T-50, Terms and Definitions for Interconnecting and Packaging Electronic Circuits\nCopies of IPC documents are available at shop.ipc.org.\n\nISO 8601-1, Date and time - Representations for information interchange\nISO 9660, Volume and File Structure of CD-ROM for Information Interchange\nISO 10149, Data Interchange on Read-Only 120mm Optical Data Disks (CD-ROM)\nISO 10303, Product Data Representation and Exchange - AP203, AP209, AP210, AP212, AP214, AP219, AP224, AP232, AP233, AP237, AP238, AP239, AP240, and AP242\nISO 14306, Industrial automation systems and integration - JT file format specification for 3D visualization\nISO 14772-1, Information technology - Computer graphics and image processing - The Virtual Reality Modeling Language\nISO 32000, Document management - Portable document format\nCopies of ISO documents are available at www.iso.org.\n\nJEDMICS C4 Compressed Image File Format Technical Specification\nCopies of JEDMICS C4 document are available online at www.jedmics.net/public/open-specs.html.\n\nMIL-HDBK-516, Airworthiness Certification Criteria\nMIL-HDBK-780, Standard Microcircuit Drawings\nMIL-PRF-28002, Raster Graphics Representation in Binary Format - INACTIVE\nMIL-STD-129, Military Marking for Shipment and Storage\nMIL-STD-130, Identification Marking of U.S. Military Property\nMIL-STD-31000, Department of Defense Standard Practice Technical Data Packages\nMIL-STD-882, System Safety\nCopies of MIL documents are available online at quicksearch.dla.mil.\n\nRS-274X, Extension to RS-274-D - Interchangeable Variable Block Data Format for Positioning, Contouring, and Contouring/Positioning Numerically Controlled Machines is now The Gerber Layer Format Specification\nCopies of this document are available online at www.ucamco.com.\n\nTIFF Revision 6.0\nCopies of TIFF Revision 6.0 are available online at www.itu.int/itudoc/itu-t/com16/tiff-fx/docs/tiff6.pdf.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Native, neutral, and viewable formats",
+          "content": "In addition to the requirements set forth in this DID, the ASDP EDDAL shall be IAW all specifications and standards listed in Section 1.1 above.  The ASDP EDDAL shall contain product definition data and be the master technical data in the native format.  If required by the contract, derivative technical data shall be in neutral format and viewable format.  See MIL-STD-31000 for definition of native, neutral, and viewable formats as well as authoritative and derivative technical data. When contractor validation is required by the contract, proof of validation shall be in contractor format.  The ASDP EDDAL shall be in the English language.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Native, neutral, and viewable formats for Engineering Models and Drawings",
+              "content": "Native, neutral, and viewable formats for Engineering Models and Drawings shall be in accordance with the Option Selection Worksheet attached to the contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Formats for Digital Electrical/Electronic Product Definition Data",
+              "content": "Formats for Digital Electrical/Electronic Product Definition Data not called out in the Option Selection Worksheet shall meet the specifications below.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.2.1",
+                  "title": "Native (Binary)",
+                  "content": "Native (Binary) - Native CAD format shall be as specified on the TDP Option Selection Worksheet incorporated into the contract or purchase order.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.2.2",
+                  "title": "Native (ASCII) (if export capability exists)",
+                  "content": "Native (ASCII) (if export capability exists) - shall be in Cadence Allegro (R), Mentor Graphics Design Architect (R), ABEL (R), OrCAD Capture (R), OrCAD PCB (R), Zuken VISULA (R), POWER LOGIC (R), POWER PCB (R), or as specified on contract.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.2.3",
+                  "title": "Neutral (industry standard)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "2.1.2.3.1",
+                      "title": "For CAD design entry and logical circuit design database",
+                      "content": "For CAD design entry and logical circuit design database such as HDLs, RTLs, gate level data, schematics, etc.  shall be in EDIF, Verilog (R) HDL, VHDL (VHSIC Hardware Description Language) (IEEE Std 1076), OSCI SystemC, STEP (ISO 10303 -AP210, AP212), Truth Tables (ASCII), IBIS (R) (I/O Buffer Information Specification, ANSI/EIA-656), Berkeley's OPEN-PLA (R) (Programmable Logic Array), Berkeley's SPICE (R), Boolean Equations (ASCII), or as specified on contract.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2.1.2.3.2",
+                      "title": "For Simulation and Test data",
+                      "content": "For Simulation and Test data for stimulus-response information, test benches, timing data, test vectors, etc. not specified on the Option Selection Worksheet shall be in WAVES (R) (Waveform and Vector Exchange Standard, IEEE Std 1029.1), VHDL (IEEE Std 1076), Verilog (R) HDL, EDIF, or as specified on contract.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2.1.2.3.3",
+                      "title": "For CAD physical product designs data",
+                      "content": "For CAD physical product designs data for component placement and connectivity (conductor routing), physical layouts for PBAs, PBs, PLDs, ICs, etc. not specified on the Option Selection Worksheet shall be in GDS II (R) Stream, EDIF PCA V400, STEP (ISO 10303 -AP210, AP212, or as specified on contract.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2.1.2.3.4",
+                      "title": "For 2D/3D mechanical interface data",
+                      "content": "For 2D/3D mechanical interface data for PBAs, PLDs, ICs, etc. not specified on the Option Selection Worksheet shall be in STEP (ISO 10303 - AP203, AP210, or AP214), IDF (Intermediate Data File), or as specified on contract.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2.1.2.3.5",
+                      "title": "For Programming data for PLDs",
+                      "content": "For Programming data for PLDs not specified on the Option Selection Worksheet shall be in JEDEC Standard (EIA JESD3), ASCII Hex or as specified on contract.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2.1.2.3.6",
+                      "title": "PB Artwork, Drill, and Test data files",
+                      "content": "PB Artwork, Drill, and Test data files not specified on the Option Selection Worksheet shall be in Gerber format IAW The Gerber Layer Format Specification and PDF for artwork.  Drill data shall be in Excellon (R). Testing data shall be in IPC-D-356 for testing.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Formats for Digital Associated Lists and Revision Authorization Documents",
+          "content": "Formats for Digital Associated Lists and Revision Authorization Documents.  Documents shall be the standard \"A\" [8-1/2\" by 11\"] or \"B\" [11\" by 17\"] drawing size, IAW ASME Y14.1.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Native Format",
+              "content": "Native Format:  MS Word (*.docx)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Neutral Format",
+              "content": "Neutral Format:  Rich Text Format (*.rtf)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Viewable Format",
+              "content": "Viewable Format:  PDF (*.pdf)",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Metadata format",
+          "content": "The metadata shall be formatted and delivered as a MS Excel populated spreadsheet format IAW Section 3.6.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "IPL format",
+          "content": "IPL shall be formatted and delivered as a MS Excel populated spreadsheet format IAW Section 3.5.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "General",
+          "content": "The ASDP EDDAL shall describe the complete physical and performance characteristics of an item or component in sufficient detail to ensure that an item or component produced IAW this data is identical to the original item or component.  The ASDP EDDAL shall consist of Engineering Design Data for end items, elements, and all components, assemblies, and related special test equipment and interface adaptors which shall be provided to define the details for the manufacture, test, inspection, maintenance, operations, and logistic support of the system.  The ASDP EDDAL shall:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Define the product to the TDP level",
+              "content": "Define the product to the TDP level specified on the TDP Optional Selection Worksheet.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Provide the data to permit competitive acquisition, repair, and manufacture",
+              "content": "Provide the data to permit competitive acquisition, repair, and manufacture of the original item(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Provide the required tying, linking, and tracing component information",
+              "content": "Provide the required tying, linking, and tracing component, subassembly, and assembly information to produce the lowest level design and specification for a digital representation of a physical item.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Provide details of any unique processes and specifications",
+              "content": "Provide details of any unique processes and specifications (not published or available to industry) utilized to build the end items IAW the contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Details of unique processes and specifications",
+              "content": "Details of unique processes and specifications (i.e., not published or generally available to industry) when essential to manufacture.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "All dimensional and tolerance data",
+              "content": "All dimensional and tolerance data needed to fully define the part or assembly, including GD&T to define and control dependencies and critical interfaces.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Company Modeling and Drafting Standards",
+              "content": "Company Modeling and Drafting Standards.  If a company standard, which is a non-public or non-military standard, is utilized for modeling designs, drafting GD&T, and creating other PMI for drawings and MBD models, just drawings, or just MBD models, then the company standard(s) shall be included in the ASDP EDDAL.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Manufacturing processes, specifications, and assembly sequences",
+              "content": "Manufacturing processes, specifications, and assembly sequences.  If a manufacturing process or specification is required, it shall be clearly annotated in the EDD.  Any process or specification referenced within the EDD that is a non-public or non-military standard shall be defined and delivered within the applicable EDD.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Tolerance input and output characteristics",
+              "content": "Tolerance input and output characteristics.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Diagrams with vector starting points and dimensional scaling",
+              "content": "Diagrams with vector starting points and dimensional scaling.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Mechanical and electrical connections",
+              "content": "Mechanical and electrical connections.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Physical characteristics, including interface(s), form, finishes, and protective coatings",
+              "content": "Physical characteristics, including interface(s), form, finishes, and protective coatings.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Details of material characteristics, heat treatments, conditions, coatings and plating",
+              "content": "Details of material characteristics, heat treatments, conditions, coatings and plating, surface finishes and treatments, and all other data to define the material condition for all components and their locations in the assembly.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.14",
+              "title": "Inspection, test, and evaluation criteria",
+              "content": "Inspection, test, and evaluation criteria. First Article Acceptance, Lot test plans and procedures, ATP, NDI, and any Military screening shall be referenced and annotated in the EDD.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.15",
+              "title": "Quality assurance requirements for test, inspection, acceptance, and verification information",
+              "content": "Quality assurance requirements for test, inspection, acceptance, and verification information. Engineering design data shall reference the information required to test, inspect, accept, and verify quality assurance requirements to the level specified in the contract or purchase order.  All QAP shall be clearly annotated identifying any special tests, inspections, measurements, or certifications required to ensure the item being defined meets its intended performance. Any QAP referenced within the engineering data that is a non-public or non-military standard shall be defined and delivered within the applicable engineering design data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.16",
+              "title": "All Critical Safety Characteristics, CSI, CSP, Critical Inspection, and critical quality assurance",
+              "content": "All Critical Safety Characteristics, CSI, CSP, Critical Inspection, and critical quality assurance shall be clearly annotated in the EDD. The CSIs shall be flagged in the indentured parts list. Definition and markings shall be IAW ASME Y14.100, AFI20-106, and AFI 63-101/20-101.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.17",
+              "title": "All HCI, and HCP shall be clearly annotated in the EDD",
+              "content": "All HCI, and HCP shall be clearly annotated in the EDD. Definition and conforming markings shall be IAW ASME Y14.100. HCIs shall be flagged in the indentured parts list.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.18",
+              "title": "All SCF and SCI shall be clearly annotated in the engineering design data",
+              "content": "All SCF and SCI shall be clearly annotated in the engineering design data with a pointer to the component that is deemed SCI or SCF. Definitions of SCI and SCF shall be IAW MIL-STD-882, System Safety, and MIL-HDBK-516, Airworthiness Certification Criteria.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.19",
+              "title": "MCF or MCI shall be clearly annotated in the engineering design data",
+              "content": "MCF or MCI shall be clearly annotated in the engineering design data.  MCF and MCI are defined in MIL-HDBK-516, under \"Mission Critical\".  \"MCF\" or \"MCI\" shall be clearly annotated in the engineering design data with a pointer to the component(s) that are deemed MCF or MCI.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.20",
+              "title": "Hardware Marking Requirements",
+              "content": "Hardware Marking Requirements.  Engineering design data shall identify the UID and UII marking requirements and methods for identification to be utilized and applied and shall provide the exact location of the marking and the information to be contained within the marking, per MIL-STD-130.  For material subject to the marking requirements of other specifications or standards, the EDD shall specify the marking method, location, and content of those markings.  EDD containing statements for items, such as, \"Government Furnished Property\" or \"Government Furnished Equipment\" shall also include the contract number providing the government furnished property or equipment to the contractor (for example: \"Government Furnished Property under F34601-99-#-####.\").",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.21",
+              "title": "References to requirements for reliability, maintainability, environmental conditioning",
+              "content": "References to requirements for reliability, maintainability, environmental conditioning, shock, and vibration testing, and other operational or functional tests.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.22",
+              "title": "References to requirements for programming software into devices or assemblies",
+              "content": "References to requirements for programming software into devices or assemblies, including a description of the input media and the procedures for validating that the software has been installed correctly.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.23",
+              "title": "Interconnection diagrams required for wiring harnesses and cable assemblies",
+              "content": "Interconnection diagrams required for wiring harnesses and cable assemblies.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.24",
+              "title": "STE and SIE to include special test fixtures shall be annotated in the EDD",
+              "content": "STE and SIE to include special test fixtures shall be annotated in the EDD.  Equipment calibration requirements shall be identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.25",
+              "title": "Control Drawings and Models",
+              "content": "Control Drawings and Models.  Control drawings and models disclose form, fit, function, and performance requirements for interchangeable purchased items of existing designs or of items to be specially developed by vendors to the control drawing or model requirements.  Control drawings or models permit the acquisition of commercial items and vendor-developed items from specialized segments of industry without disclosing details of designs or divulging proprietary vendor data.  Control drawings and models shall be IAW ASME Y14.24.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.25.1",
+                  "title": "Vendor Item Control Drawings and Models",
+                  "content": "Vendor Item Control Drawings and Models.  Vendor item control drawings are also known as vendor item drawings or specification control drawings.  Vendor item control drawings and models shall be used to specify the requirements for purchased items when such items have been approved, by the Government, for use in the design and they are used without alteration, selection, or source qualification (testing of an item prior to procurement action to ensure that it satisfies the specified requirements).  Vendor item control drawings and models, when selected in lieu of, or in addition to, control drawings and models for repairable commercial items, shall be included and provide information to permit Government maintenance and modification of the items.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.25.2",
+                  "title": "Source Control Drawings and Models",
+                  "content": "Source Control Drawings and Models.  Source control drawings and models shall be included to specify the requirements for purchased items only when such items have been approved by the Government for use in the design and:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.25.2.1",
+                      "title": "The item is for a critical application",
+                      "content": "The item is for a critical application.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.25.2.2",
+                      "title": "The requirements can be met by an item from one or more sources",
+                      "content": "The requirements can be met by an item from one or more sources.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.25.2.3",
+                      "title": "The application requires source qualification",
+                      "content": "The application requires source qualification (testing of a critical item prior to procurement action to ensure that it satisfies the specified requirements).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.1.26",
+              "title": "Form, fit, and function requirements conforming to the requirements for control data",
+              "content": "Form, fit, and function requirements conforming to the requirements for control data e.g., models, drawings, etc., as defined in ASME Y14.100 and ASME Y14.24 shall be specified for EDD for which the Government does not have unlimited rights.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.27",
+              "title": "Distribution Statement",
+              "content": "Distribution Statement.  A Distribution statement, IAW the contract, shall be marked on each dataset item IAW ASME Y14.100 and ASME Y14.41. Associated distribution code shall be populated in the metadata spreadsheet for each dataset item, and associated distribution code shall be populated in the attribute for each CAD model.  The distribution codes in the metadata shall match the delivered artifact.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.28",
+              "title": "Other Markings",
+              "content": "Other Markings. Export control warning IAW DoDI 5230.24, authorized and conforming rights legend, or notice of copyright in accordance with DFARS Subpart 252.227, CUI markings in accordance with DoDI 5200.48 Volume 4, and classified markings in accordance with DoDM 5200.01 Volume 2.  Annotations shall be used to display all markings.  EDD shall not contain unjustified or non-conforming markings per DFARS Subparts 227.71 and 252.227.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.29",
+              "title": "Warranty Statements",
+              "content": "Warranty Statements.  Warranty statements shall be in the EDD.  The statements shall not obliterate, nor obscure, information on the field of the EDD.  The warranty statement shall specify the warranty period, all actions that would render it as voided, and include the contractor or agency that shall correct or repair the deficiency. Warranty statements in the EDD shall contain the following information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.29.1",
+                  "title": "Warranted item until",
+                  "content": "\"Warranted item until (warranty expiration date using YYMMDD format).\"",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.29.2",
+                  "title": "Contract number",
+                  "content": "Contract number (i.e., the contract number that invokes the warranty of the engineering design data).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.29.3",
+                  "title": "Deficiencies in the engineering design data",
+                  "content": "\"Deficiencies in the engineering design data shall be corrected by (enter the contractor and contractor's address or the agency that shall correct the deficiency).\"",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Item Definition",
+          "content": "All parameters required to define each unit, assembly, subassembly, part or component, or material shall be included in the ASDP EDDAL.  This shall include the following data:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "All mechanical dimensions",
+              "content": "All mechanical dimensions to fully describe fabrication, acceptance, interface, and installation of the item defined.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "All electrical parameters",
+              "content": "All electrical parameters to fully describe fabrication, acceptance, interface, and installation of the item defined.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "All other physical parameters",
+              "content": "All other physical parameters to fully describe fabrication, part and material location(s), acceptance, interface, and installation of the item defined (i.e., weight, pressure, viscosity, etc.).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "All environmental conditions",
+              "content": "All environmental conditions that units, assemblies, subassemblies, parts, and materials must meet to perform effectively in the end item, such that the end item will meet its specification requirements.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "CAD Product Definition Data",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Digital MBD Data",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Native CAD Data",
+                  "content": "Native CAD Data.  Products shall be defined by native 3D models using MBD, without the use of drawing graphic sheets.  Native 3D models shall serve as the master technical data source of the products they define and shall be the authoritative technical data to communicate design intent clearly and accurately.  Products shall be modeled in accordance with ASME Y14.41, ASME Y14.47, and MIL-STD-31000.  Only one native 3D model shall define a given product, and all native 3D models shall be monodetail, legible, and digitally text searchable to the fullest extent possible. When converting a 2D drawing to 3D MBD, the MBD shall require revising to the next sequential revision IAW ASME Y14.35.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.1.1",
+                      "title": "Geometry, Attributes, & Annotations",
+                      "content": "Geometry, Attributes, & Annotations.  All digital elements of native 3D models shall be in accordance with ASME Y14.41 and ASME Y14.47.  Digital elements shall be detailed to meet the requirements of the applicable TDP level on contract.",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.1.1.1.1",
+                          "title": "Dimensioning and tolerancing",
+                          "content": "Dimensioning and tolerancing shall be in accordance with ASME Y14.41 and ASME Y14.5.  When metadata values (see Section 3.6) are used in annotations, the tools and procedures corresponding to the respective original authoring CAD software shall be utilized to link and synchronize these values.  All annotations can rotate if needed to meet the requirements of this DID.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.1.1.2",
+                      "title": "Presentation States",
+                      "content": "Presentation States.  All content to clearly communicate design intent shall be displayed in presentation states within all native 3D models in accordance with ASME Y14.47.  However, Site Map presentation states as described in ASME Y14.47 are not required.  The presentation states shall be as described in ASME Y14.47, and as described below:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.1.1.2.1",
+                          "title": "Default Notice",
+                          "content": "Default Notice.  This presentation state shall be the first presentation state in the native 3D model and shall display all applicable markings including distribution statement, export control warning, destruction notice, rights legend, notice of copyright, CUI markings, and classified markings in accordance with the contract.  If space and legibility allow for human-readability, this presentation state shall also display the unannotated model geometry and applicable management data.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.2.2",
+                          "title": "Management Data",
+                          "content": "Management Data.  This presentation state shall display all applicable management data, including the contract number, and shall be the second presentation state in the native 3D model.  If space and legibility allow for human-readability, this presentation state shall also display the unannotated model geometry.  This presentation state is not required if the Default Notice presentation state displays all applicable management data.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.2.3",
+                          "title": "Model Only",
+                          "content": "Model Only.  This presentation state shall display the unannotated model geometry.  This presentation state is not required for non-geometric native 3D models.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.2.4",
+                          "title": "Notes",
+                          "content": "Notes.  The first Notes presentation state shall display all general notes.  This view shall also display model geometry (annotated or unannotated) if space and legibility allow for human-readability.  This presentation state is not required if a separate notes list is to be used in conjunction with the native 3D model and the notes list is clearly referenced in a presentation state.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.1.1.3",
+                      "title": "Models & Drawing Types",
+                      "content": "Models & Drawing Types.  The principles and use-cases outlined in ASME Y14.24 still apply to MBD.  When the 3D equivalent of a drawing type defined in ASME Y14.24 is required, the requirements for said drawing type shall be interpreted and implemented to suit the context of a native 3D model.  For example, the required notation(s) specified in ASME Y14.24 shall be modified to replace \"DRAWING\" with \"MODEL\" (e.g., VENDOR ITEM CONTROL MODEL, SOURCE CONTROL MODEL, ALTERED ITEM MODEL, etc.) and shall be displayed with management data.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.4",
+                      "title": "Variable Forms",
+                      "content": "Variable Forms.  The tools and procedures corresponding to the respective original authoring CAD software shall be utilized to define and display the various forms of a given product (e.g., flat pattern, alternate design, etc.) within a native 3D model.  For example, geometric elements omitted from the alternate representation also known as the alternate design of a product shall be suppressed or hidden in presentation states meant to only display the product's alternate design.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.5",
+                      "title": "Applied Items",
+                      "content": "Applied Items.  Geometry may not be necessary or applicable when modeling applied items.  In such cases, a non-geometric native 3D model shall be created for the subject item.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.1.6",
+                      "title": "Assemblies & Installations",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.1.1.6.1",
+                          "title": "All native 3D models shall accurately reflect the design intent",
+                          "content": "All native 3D models shall accurately reflect the design intent of the functional and interface constraints to the fullest extent possible without compromising the integrity or function of the model.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.6.2",
+                          "title": "Official models shall be used to represent all subcomponents",
+                          "content": "Official models shall be used to represent all subcomponents in native 3D assembly models.  When modeling assemblies, priority shall be given to depicting an accurate product structure with the native 3D model's model tree.  For example, assemblies shall not be modeled as single entities to better represent weldments, as this would result in the assembly being incorrectly represented in the model tree as a part with no subcomponents. Tool design models with multiple components can be modeled as a single part.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.1.1.7",
+                      "title": "Product Families",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.1.1.7.1",
+                          "title": "Only one native 3D model dataset shall be created for a given product family",
+                          "content": "Only one native 3D model dataset shall be created for a given product family, and the customary tools/procedures corresponding to the respective original authoring CAD software shall be utilized to create native 3D models of all family members within the same dataset.  The PIN and differentiating properties shall be applied to the parent and each respective child in the native 3D Model.  If the parent is not a producible item, then it shall not have a PIN.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.7.2",
+                          "title": "All variations between family members shall be annotated and tabulated",
+                          "content": "All variations between family members shall be annotated and tabulated to communicate the differences between family members.  This information shall be displayed in one or more presentation states within the native 3D model.  Children shall not be parents of other children within a native 3D model, often called multilevel, hierarchical, or generational families.  In other words, a parent can have as many children as required. Children within the associated parent family cannot then be a parent.  If a child is to be modified, the resulting new product shall no longer be product of the original family and shall become a separate model. Family members with the same PIN value shall also have the same REV value within their native 3D model.  However, family members shall not have duplicate PIN values within their native 3D assembly model. Native 3D models described in this section are still considered monodetail and are the 3D equivalent of tabulated monodetail drawings outlined in ASME Y14.24.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.7.3",
+                          "title": "Dissimilar Product Definitions",
+                          "content": "Dissimilar Product Definitions. Products that are dissimilar in geometry or product structure shall not be modeled as a family.  Children shall also not be used as a subcomponent of their parent or siblings within a native 3D model.  Consequently, when creating an MBD accurate to existing drawing that defines multiple dissimilar products (e.g., multidetail drawing, inseparable assembly drawing, etc.), new and separately revisable MBD shall be created for individual products defined in the existing drawing, but only to meet the requirements previously described. In such cases, new MBD shall have the same ODA CAGE code as the existing drawing they were created from.  The PIN of the product that a new MBD defines, shall also serve as that MBD's Dataset ID.  The existing drawing shall be updated to avoid conflict with the content of the new MBD(s). Inseparable assemblies shall be modeled as single parts if the assembly's subcomponents are not identified by PIN in the existing product structure.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.1.1.8",
+                      "title": "Reference Models",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.1.1.8.1",
+                          "title": "Reference models shall only be used to represent products",
+                          "content": "Reference models shall only be used to represent products for which an official model; cannot be obtained from the subject product's CDA, does not exist, and cannot be created by the modeling/procuring organization, or cannot be accurately used in the required context.  Reference models are separately revisable from the dataset that officially defines the respective product and are most commonly needed for: products defined by industry or military standards, electronic products, and products that must be modeled with different geometry/properties for use in a specific context (e.g., assemblies, contracts, etc.).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.8.2",
+                          "title": "When creating a reference model for a product family or product family member",
+                          "content": "When creating a reference model for a product family or product family member, it is not necessary to create reference models for all family members.  Reference models shall only be created for family members needed to satisfy the intended purpose.  Reference models can also be modeled as product families themselves, as described in Section 3.3.1.1.7.  However, reference models specifically created for use in different contexts shall not be defined in the same dataset.  When reference models are modeled as product families, all family members shall share the same ORMDA. Family members with the same PIN, ODA CAGE code, ORMDA CAGE code, Context ID, and Instance ID values shall have the same REV value within their native 3D model.  However, family members shall not have duplicate PIN, ODA CAGE code, ORMDA CAGE code, Context ID, and Instance ID values within their native 3D assembly model.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.8.3",
+                          "title": "Reference models shall accurately depict products to the level of detail",
+                          "content": "Reference models shall accurately depict products to the level of detail for their intended purpose.  All reference models shall clearly display the following note, referencing the authoritative data that defines the subject product:\n\n\"REFERENCE MODEL: SEE <identification of authoritative data> FOR OFFICAL DEFINITION OF THE SUBJECT PRODUCT.\"\n\nNote examples:\nREFERENCE MODEL: SEE NASM39086 FOR OFFICAL DEFINITION OF THE SUBJECT PRODUCT.\nREFERENCE MODEL: SEE 201646968 CAGE: 98752 AND 201646968PL CAGE: 98752 FOR OFFICAL DEFINITION OF THE SUBJECT PRODUCT.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.8.4",
+                          "title": "Reference models shall be uniquely identifiable",
+                          "content": "Reference models shall be uniquely identifiable by combining the following metadata fields:\n\nPIN | ODA CAGE Code | ORMDA CAGE Code | Context ID | Instance ID",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.8.5",
+                          "title": "The PIN, ODA CAGE code, and Dataset ID of a given reference model",
+                          "content": "The PIN, ODA CAGE code, and Dataset ID of a given reference model shall match the PIN, ODA CAGE code, and Dataset ID of the product definition data that officially defines the product represented by the reference model.  When a PIN is not applicable for a given reference model and would normally be left unpopulated, the PIN shall be populated with the same value as the Dataset ID.  Below are examples of the above fields correctly populated IAW Section 3.3.1.1.8 for reference models created by the USAF representing PIN: MS20995C20 (a wire defined by industry standard NASM20995 with ODA CAGE code 80205).\n\nReference model with multiple configurations:\nGeneric:\nNASM20995 | 80205 | 98752\nConfigurations:\nMS20995C20 | 80205 | 98752\nMS20995C32 | 80205 | 98752",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.8.6",
+                          "title": "Reference model for a wire with different geometry/properties",
+                          "content": "Reference model for a wire with different geometry/properties for use in PIN: 201646968 CAGE: 98752.  (The ODA CAGE code can be added to the end of PINs in the CONTEXT ID field, separated by an underscore, to differentiate reference models made for separate assemblies, where the assemblies happen to have the same PIN.):\n\nMS20995C20 | 80205 | 98752 | 201646968\nMS20995C20 | 80205 | 98752 | 201646968_98752\nMS20995C20 | 80205 | 98752 | 201646968_19200",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.1.1.8.7",
+                          "title": "Multiple reference models for same wire with different geometry/properties",
+                          "content": "Multiple reference models for same wire with different geometry/properties for use in PIN: 201646968 CAGE: 98752:\n\nMS20995C20 | 80205 | 98752 | 201646968 | AFT\nMS20995C20 | 80205 | 98752 | 201646968 | FORWARD\nMS20995C20 | 80205 | 98752 | 201646968 | 1ST\nMS20995C20 | 80205 | 98752 | 201646968 | 2ND\nMS20995C20 | 80205 | 98752 | 201646968 | 1\nMS20995C20 | 80205 | 98752 | 201646968 | 2\nMS20995C20 | 80205 | 98752 | 201646968 | A\nMS20995C20 | 80205 | 98752 | 201646968 | B",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Neutral CAD Data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.2.1",
+                      "title": "Applicable neutral CAD data shall be producible from all native 3D models",
+                      "content": "Applicable neutral CAD data shall be producible from all native 3D models with no errors, using the customary tools, procedures, or APIs of the corresponding original authoring CAD software. This errorless neutral CAD data shall be demonstrated via the translation log file.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.2.2",
+                      "title": "Non-applicable neutral CAD datasets shall not be derived from a given native 3D model",
+                      "content": "Non-applicable neutral CAD datasets shall not be derived from a given native 3D model.  For example, STL datasets shall not be derived from non-geometric native 3D models.  All content in a neutral CAD dataset shall be derived from and match the content of its corresponding native 3D model (e.g., geometry, annotations, metadata, etc.).  No datasets shall be attached to a neutral CAD dataset.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Viewable CAD Data",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.3.1",
+                      "title": "Viewable CAD data shall be producible from all native 3D models with no errors",
+                      "content": "Viewable CAD data shall be producible from all native 3D models with no errors caused by the native 3D model, using the customary tools, procedures, or APIs of the corresponding original authoring CAD software.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.3.2",
+                      "title": "A viewable CAD dataset shall be derived from every native 3D model",
+                      "content": "A viewable CAD dataset shall be derived from every native 3D model with the exception of reference models.  It is not necessary to derive viewable CAD datasets from native 3D models that define children within a product family, if the viewable CAD dataset derived from the native 3D model defining the corresponding parent, clearly communicates the design intent of all family members.  With the exception of a viewable CAD dataset's 3Di Format, all content in a viewable CAD dataset shall be derived from and match the content of its corresponding native 3D model (e.g., geometry, presentation states, metadata, etc.).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.3.3",
+                      "title": "All viewable CAD datasets shall be printable without loss of content",
+                      "content": "All viewable CAD datasets shall be printable without loss of content.  Users shall be able to print all content (e.g., pages, presentation states, notes, etc.), both selectively and comprehensively.  No datasets shall be attached to a viewable CAD dataset except those to facilitate formatting or functionality.  Such datasets are considered part of the 3Di format.  3Di PDF is the preferred viewable CAD dataset format for USAF MBDs.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.3.4",
+                      "title": "3Di PDF",
+                      "content": "3Di PDF.  The first page of the 3Di PDF shall contain separate areas which display the selected presentation state, management data, contract number, notes, time, and date of 3Di PDF creation, and identification of the 3Di PDF template.  When text exceeds the boundary of a given area, an indicator shall be present to clearly signify that the area contains additional content.  Functional scroll bars shall also be present in such areas to ensure all content can be viewed without the use of additional pages.  Users shall be able to select which presentation state to view in the presentation state area and shall be able to query the model within this area per ASME Y14.41.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Digital Non-MBD Data",
+              "content": "Datasets shall be delivered at the overall revision level for a given document and shall contain all sheets in the respective document revision they represent. Conversely, datasets shall not be delivered containing only a subset of sheets in a given document revision. All sheets within a given dataset shall be in sequential order and digitally text searchable.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Engineering Drawings",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.1.1",
+                      "title": "Engineering Drawings shall be made from presentations",
+                      "content": "Engineering Drawings shall be made from presentations describing a particular physical/logical entity or process using 2D geometry and textual information for both electrical/electronic and mechanical items.  These drawings can also be created from view plane projections of a 3D model or from parametric-based models that will facilitate semi-automatic creation of engineering drawings from the 3D database.  The requirements set forth in Section 3.3.1.1.1 shall apply.  Loft surfaces shall also be provided in the aircraft coordinate system to correlate with delivered drawings when loft data drawings are delivered.  Statements for drawings that appear in one file extension (native, neutral, raster, or viewable) shall appear and contain the same statements on all other file extensions delivered.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.2",
+                      "title": "Marking note annotations in a PDF drawing are not allowed",
+                      "content": "Marking note annotations in a PDF drawing are not allowed.  PDF drawing deliveries containing raster graphics can be delivered, when the following conditions are met:  when it is determined the native drawing contains graphics that shall not need to be edited at a later time (such as a photograph) and the raster images are embedded within the PDF pages whereby the graphics are visible for that sheet on paper.  Contractual ASME specifications allow for picture drawings that shall be used for acceptance for each delivery in PDF format.  Associated lists such as parts lists, etc. and supplement datasets shall be separated into their own separate PDF file and not included in the drawing PDF file.  This PDF File shall not be Write Protected or Password Protected, unless approved by the acquiring activity before data delivery.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.1.3",
+                      "title": "Fluid System Schematics",
+                      "content": "Fluid System Schematics.  The fluid system schematics shall illustrate and describe all components with symbols and flow designators such that the fluid system can be traced from component to component (such as: pumps, valves, meters, regulators, and filters).  The schematics shall document the range requirements (i.e., flow, temperature, and pressure) for all component external interfaces and line sizes.  The placement and arrangement of the components shall follow a logical sequence of presentation to provide a clear description of the flow of fluids in the system.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Geometry and CAD Creation Requirements for 2D Drawings and 3D Models",
+                  "content": "Geometry and CAD Creation Requirements for 2D Drawings and 3D Models.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.2.1",
+                      "title": "Geometric representation of a physical detailed part, assembly, surface, or system",
+                      "content": "Geometric representation of a physical detailed part, assembly, surface, or system in either two or three dimensions created using CAD tools that consist of elemental (wireframe using lines and points like drafting), surfaces, and solids (swept, constructive solid geometry (CSG), and boundary representation (Brep)). These product data CAD and model requirements are in addition to the above drawing requirements in Section 3.3.2.1.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.2",
+                      "title": "Solid, wireframe, Brep, and other formats delivered as the native 3D model format",
+                      "content": "Solid, wireframe, Brep, and other formats delivered as the native 3D model format shall only be done when the original 3D models were made in these formats.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.3",
+                      "title": "Digital models used in the creation of the engineering drawings",
+                      "content": "Digital models used in the creation of the engineering drawings associated with the models in the same file shall not have the model information visible when the drawing is viewed or printed.  Similarly, any delivered model files shall not have the drawing data visible when the model is viewed or printed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.4",
+                      "title": "Objects or other model data that are not pertinent to the drawing",
+                      "content": "Objects or other model data that are not pertinent to the drawing and especially those located outside the drawing borders need to be removed, hidden, or located to an area inside the borders and hidden where they will not interfere with the drawing data.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.5",
+                      "title": "Model and mold files shall either contain annotation information",
+                      "content": "Model and mold files shall either contain annotation information to determine critical dimensions and surfaces, notes, materials, etc. or have this information delivered separately in files packaged with the model or mold files.  The annotations and attributes per ASME Y14.41 for the native, neutral, and viewable models are not required if the annotations and attributes are displayed on the drawing and a note on the drawing referencing the model(s) states that the drawing is a standalone document representing the master design and the model files are for reference purposes only.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.6",
+                      "title": "For each assembly and subassembly model of which the associated drawing is included",
+                      "content": "For each assembly and subassembly model of which the associated drawing is included in the ASDP EDDAL, all applicable subassembly and part files need to be zipped together upon delivery (i.e., one zip file per end item for which the associated drawing is a deliverable).  These zipped files are then listed on the metadata spreadsheet.  In addition to the assembly requirement, individual end item part files for which their drawings are included in the ASDP EDDAL and are represented with a single file are to be delivered unzipped and listed in the metadata spreadsheet.  However, if multiple files are needed for the part model, individual end item part files are zipped with one zip file per end item for which the associated drawing is a deliverable.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.7",
+                      "title": "Models, mold files, and non-part mold line surface data shall be delivered separately",
+                      "content": "Models, mold files, and non-part mold line surface data shall be delivered separately from the drawing files.  Filenames for models, tubing, and mold data do not have the same naming restrictions and maximum length for special characters that drawings do.  Metadata spreadsheet information for models, tubing, and mold data shall be annotated as appropriate under the Product Data Type and Document Type columns as applicable.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.8",
+                      "title": "Loft Data or Surface Definitions",
+                      "content": "Loft Data or Surface Definitions.  Loft data that are contained in a ASDP EDDAL shall be produced in native format in the latest version available in addition to the drawing requirements stated in Section 3.3.2.1.1.  The loft data shall be delivered by surfaces.  A map of the delivered loft surfaces shall also be provided in the applicable aircraft coordinate system to correlate with delivered drawings.  Digital loft data shall simplify part production, repair, inspection, and allow for data transfer for spares procurement.  Loft data shall allow for the Government to access, analyze, and manipulate loft surfaces for the purpose of extracting geometric surface data for the purpose of transferring to existing government manufacturing systems for use in part design, manufacture, and inspection by the acquiring activity personnel or by outside vendors.  Mold line surface data shall be in separate files for each surface and a map(s) that uniquely identifies each discrete surface shall be provided for all configurations.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Data Encapsulation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.3.1",
+                      "title": "Applicability",
+                      "content": "Applicability.  To enhance manageability, transportability, and usability, applicable native and neutral design files shall be grouped and encapsulated at each item level.  This requirements for encapsulated data files shall be applicable to printed board datasets in Section 3.3.3.11.1; software and memory device data files in Section 3.3.3.12; and Electrical/Electronic CAD product data(s) in Section 3.3.3.1.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.3.2",
+                      "title": "Methods",
+                      "content": "Methods.  Either Windows compression .zip format or UNIX \"TAR\" command are acceptable encapsulation methods.  Single files that exceed the storage capacity of delivery media e.g., DVD, CD, etc., shall use a file splitter program that creates a *.BAT file that can be used to reconstruct the parts of the split files after delivery.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Digital Electrical/Electronic Product Definition Data",
+              "content": "In addition to the requirements in section 3.3.2, these requirements include product data files for electrical/electronic end products and systems and shall be IAW IPC-D-350, IPC-D-356, IPC-2221 and IPC-2611. This product data includes designs for IC devices, PLDs, PBs, PBAs, LRUs, electrical wiring cables and harnesses, etc.  This product data shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Electrical/Electronic Product data shall include CAD files",
+                  "content": "Electrical/Electronic Product data shall include CAD files to provide design, simulation, testing, assembly, and manufacturing information.  Data files shall be delivered for all applicable design levels [e.g., high-level behavioral and structure levels, RTL, and gate-level designs].  Product data files shall include (as applicable) source files (e.g., for schematics, truth tables, bubble diagrams, state diagrams, other design entry methodologies, and printed circuit assemblies), compiled files, object files, design models (such as those used in logical circuit designs, design simulations, and physical product designs), netlists (both flatten and hierarchical types for the logical circuit and physical product designs), component placement and connectivity (conductor routing), physical layouts, programming data, simulation and test files (stimulus-response data, test benches, timing data, test vectors, etc.), 2D/3D mechanical interface files, machine control files (for drilling, photo-plotting, parts assembly, etc.), and other electrical/electronic product data files.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "The electrical/electronic product data types or entities shall be independent",
+                  "content": "The electrical/electronic product data types or entities shall be independent of external links to other software tools or databases.  The file(s) shall provide stand-alone design or logistic support disclosure information.  Any restriction to the usage of the product data files shall be detailed in an ASCII text file named \"README - RESTRICTIONS.TXT.\"  Identify the affected files and explain the type of and reason for the additional restriction(s).  This file shall be stored with the applicable encapsulated files and stored at the root directory level of the media on which the files are delivered.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Deliver both the ASCII and binary file formats of the native design data",
+                  "content": "Deliver both the ASCII and binary file formats of the native design data if the capability exists.  The neutral data files shall be optimized for reusability in other CAD systems in compliance with the neutral standard that the native CAD software is exporting.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "CID",
+                  "content": "CID.  The CID shall show graphically the arrangement of external electrical cabling that interconnects electrical assemblies and equipment.  The CID shall show all cable runs and terminations and each cable shall be identified by a reference designation number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "Electrical System Schematics",
+                  "content": "Electrical System Schematics.  Electrical system schematics shall illustrate and describe circuit items with symbols placed such that a circuit can be traced from item to item in the sequence of its function.  The placement and arrangement of the circuits shall follow a logical sequence of presentation to provide a clear description of the distribution of power.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.6",
+                  "title": "Standard Microcircuit Drawings and Models shall be IAW MIL-HDBK-780",
+                  "content": "Standard Microcircuit Drawings and Models shall be IAW MIL-HDBK-780.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.7",
+                  "title": "Cable Harness Assembly",
+                  "content": "Cable Harness Assembly.  Cable harness assembly models or drawings shall meet the requirements of ASME Y14.100 and ASME Y14.24. The DRM can be used for reference in development.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.8",
+                  "title": "Component Level Documentation",
+                  "content": "Component Level Documentation.  Schematics and wiring lists for components, including interconnecting cable harnesses, shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.9",
+                  "title": "Overall Grounding Documentation",
+                  "content": "Overall Grounding Documentation.  The grounding schematics shall show the details of all grounds and power returns from source to loads.  All connections shall be shown.  Documentation shall also show details of all EGSE interconnections to facility and safety grounds.  The grounding schematics shall meet the requirements of the DRM.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.10",
+                  "title": "Printed Board Artwork Master, Test, and Drill NC Data",
+                  "content": "Printed Board Artwork Master, Test, and Drill NC Data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.11",
+                  "title": "Printed Board Artwork Master, Test, and Drill NC Data",
+                  "content": "Printed Board Artwork Master, Test, and Drill NC Data. PDF images of the master artwork shall be provided as reference data in addition to the Gerber files.  These PDF images shall be generated directly from the Gerber artwork images.  The Gerber format IAW The Gerber Layer Format Specification shall not contain data that would restrict its usage as a neutral file for laser photo-plotters.  The content, format, and configuration control requirements for the printed board dataset shall be as follows:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.11.1",
+                      "title": "A printed board dataset shall meet latest version of ASME Y14.24",
+                      "content": "A printed board dataset shall meet latest version of ASME Y14.24 as of the contract date. The printed board dataset information shall be provided as an integral part of the printed board master drawing, which shall include the PIN.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.11.2",
+                      "title": "A PIN shall be assigned for each printed board",
+                      "content": "A PIN shall be assigned for each printed board and defined on the printed board dataset or master drawing.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.11.3",
+                      "title": "The printed board dataset shall include the following information",
+                      "content": "The printed board dataset shall include the following information:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.3.11.3.1",
+                          "title": "Board document number",
+                          "content": "Board document number.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.2",
+                          "title": "Board dataset REV",
+                          "content": "Board dataset REV.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.3",
+                          "title": "Board PIN",
+                          "content": "Board PIN.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.4",
+                          "title": "ODA CAGE Code",
+                          "content": "ODA CAGE Code.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.5",
+                          "title": "Master Drawing Document Number",
+                          "content": "Master Drawing Document Number.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.6",
+                          "title": "The purpose of the Board dataset",
+                          "content": "The purpose of the Board dataset.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.7",
+                          "title": "Used on data (System(s))",
+                          "content": "Used on data (System(s)).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.8",
+                          "title": "Name of each file in the Board dataset",
+                          "content": "Name of each file in the Board dataset.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.9",
+                          "title": "Description of each file in the Board dataset",
+                          "content": "Description of each file in the Board dataset (such as for silk screen, component layer, solder mask, etc.).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.10",
+                          "title": "Column headings shall identify horizontal (width) and vertical (height) dimensions",
+                          "content": "Column headings shall identify horizontal (width) and vertical (height) dimensions which correspond to \"X\" and \"Y\" coordinates, respectively, for proper orientation of shapes.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.11",
+                          "title": "Artwork image revision letter of each image produced by the image file",
+                          "content": "Artwork image revision letter of each image produced by the image file.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.12",
+                          "title": "Date and time each file was last changed",
+                          "content": "Date and time each file was last changed.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.13",
+                          "title": "Polarity of each image (positive or negative)",
+                          "content": "Polarity of each image (positive or negative).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.14",
+                          "title": "Instructions for composite layers, if any",
+                          "content": "Instructions for composite layers, if any.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.15",
+                          "title": "Gerber file format information",
+                          "content": "Gerber file format information:  Gerber type X1, X2, X3, etc. IAW The Gerber Layer Format Specification.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.16",
+                          "title": "Native and neutral drill file format information",
+                          "content": "Native and neutral drill file format information:",
+                          "asterisk": false,
+                          "children": [
+                            {
+                              "number": "3.3.3.11.3.16.1",
+                              "title": "Drill file character set",
+                              "content": "Drill file character set (such as EIA, ASCII, and EBCDIC).",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.2",
+                              "title": "Native type with version",
+                              "content": "Native type with version (such as Excellon, Sieb & Meyer 3000, Trudrill, etc.).",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.3",
+                              "title": "Neutral type with revision",
+                              "content": "Neutral type with revision (such as Plain ASCII Text, ACL (ANSI/EIA 494), etc.).",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.4",
+                              "title": "Data unit of measurement",
+                              "content": "Data unit of measurement (inches, millimeters, etc.).",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.5",
+                              "title": "Mode type",
+                              "content": "Mode type (absolute or incremental).",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.6",
+                              "title": "Unit scale factor",
+                              "content": "Unit scale factor.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.7",
+                              "title": "Zero suppression type",
+                              "content": "Zero suppression type (leading, trailing, or none).",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.8",
+                              "title": "Number of integer and decimal digits",
+                              "content": "Number of integer and decimal digits.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.9",
+                              "title": "Drill rotation angle",
+                              "content": "Drill rotation angle.",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "3.3.3.11.3.16.10",
+                              "title": "Drill x-y offset dimensions",
+                              "content": "Drill x-y offset dimensions.",
+                              "asterisk": false,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "number": "3.3.3.11.3.17",
+                          "title": "Identify the vendor of the PB design software",
+                          "content": "Identify the vendor of the PB design software and name of the PB design software with version used to produce the Gerber and drill files.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.18",
+                          "title": "Identification of the target photo-plotter model, manufacturer, type",
+                          "content": "Identification of the target photo-plotter model, manufacturer, type (laser, vector, etc.), and controller model, including any required special controller software configuration or processing packages, for the Gerber data, as applicable.  Provide aperture wheel table or a list of correlating apertures with \"D\" codes.  If the table or list is contained in a separate document, identify the document in a file and supply the document with the PB dataset.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.19",
+                          "title": "Identification of the target NC drill machine and controller software",
+                          "content": "Identification of the target NC drill machine and controller software with version for the native drill file.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.20",
+                          "title": "Special instruction, if any",
+                          "content": "Special instruction, if any.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.21",
+                          "title": "Units of measurement",
+                          "content": "Units of measurement.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.3.22",
+                          "title": "Identify the board test file format with revision",
+                          "content": "Identify the board test file format with revision such as IPC-D-356.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.3.11.4",
+                      "title": "Board dataset shall include the following files",
+                      "content": "Board dataset shall include the following files:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.3.11.4.1",
+                          "title": "Gerber Artwork image files",
+                          "content": "Gerber Artwork image files.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.4.2",
+                          "title": "Native and neutral drill data files",
+                          "content": "Native and neutral drill data files.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.4.3",
+                          "title": "Neutral PB test file",
+                          "content": "Neutral PB test file.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.4.4",
+                          "title": "PDF Artwork image files",
+                          "content": "PDF Artwork image files.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.3.11.5",
+                      "title": "The Gerber artwork images shall be properly aligned",
+                      "content": "The Gerber artwork images shall be properly aligned and the Gerber dataset shall include the following Artwork images:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.3.11.5.1",
+                          "title": "Circuit layers",
+                          "content": "Circuit layers.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.5.2",
+                          "title": "Board outline",
+                          "content": "Board outline.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.5.3",
+                          "title": "Silk screen of component reference designations",
+                          "content": "Silk screen of component reference designations.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.5.4",
+                          "title": "Silk screen of component's outlines as they appear on the PB",
+                          "content": "Silk screen of component's outlines as they appear on the PB.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.5.5",
+                          "title": "Solder masks (Top and Bottom of board)",
+                          "content": "Solder masks (Top and Bottom of board).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.5.6",
+                          "title": "Plated and un-plated drill holes",
+                          "content": "Plated and un-plated drill holes.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.3.11.6",
+                      "title": "Each of the above Gerber Artwork image files shall include the following information",
+                      "content": "Each of the above Gerber Artwork image files shall include the following information:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.3.11.6.1",
+                          "title": "Board PIN",
+                          "content": "Board PIN.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.6.2",
+                          "title": "REV of Artwork image",
+                          "content": "REV of Artwork image.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.6.3",
+                          "title": "ODA CAGE Code",
+                          "content": "ODA CAGE Code.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.6.4",
+                          "title": "Layer order number or image name",
+                          "content": "Layer order number or image name.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.6.5",
+                          "title": "Vertical and horizontal register marks",
+                          "content": "Vertical and horizontal register marks with x-y coordinate dimensions and tolerances.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.3.11.7",
+                      "title": "The drill data dataset shall contain the following information",
+                      "content": "The drill data dataset shall contain the following information:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.3.3.11.7.1",
+                          "title": "Board PIN",
+                          "content": "Board PIN.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.2",
+                          "title": "File REV, if any",
+                          "content": "File REV, if any.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.3",
+                          "title": "ODA CAGE Code",
+                          "content": "ODA CAGE Code.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.4",
+                          "title": "File type",
+                          "content": "File type (Excellon, Plain ASCII Text, etc.).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.5",
+                          "title": "Drill tool sizes",
+                          "content": "Drill tool sizes.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.6",
+                          "title": "Holes x-y coordinates",
+                          "content": "Holes x-y coordinates.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.7",
+                          "title": "Drill tool (bit) used at each x-y location",
+                          "content": "Drill tool (bit) used at each x-y location.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.3.3.11.7.8",
+                          "title": "Identify plated and un-plated holes",
+                          "content": "Identify plated and un-plated holes, if not identified on the master drawing or model.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.3.3.11.8",
+                      "title": "Test data files for PBs shall be delivered as IPC-D-356",
+                      "content": "Test data files for PBs shall be delivered as IPC-D-356 or other acceptable industry standard format.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.11.9",
+                      "title": "Comply with The Gerber Layer Format Specification version at time of contract award",
+                      "content": "Comply with The Gerber Layer Format Specification version at time of contract award.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.11.10",
+                      "title": "Delivery media shall have a CONTENTS.TXT file",
+                      "content": "Delivery media shall have a CONTENTS.TXT file in ASCII format listing files on the delivery media, drawing or model number, PIN(s), assigned ODA CAGE code(s), size of each file in uncompressed form, application data, revision level of the file, and the purpose of the file.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.11.11",
+                      "title": "Delivery media containing more than one PB assembly dataset",
+                      "content": "Delivery media containing more than one PB assembly dataset shall separate each PB dataset into its own directory.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.12",
+                  "title": "Software and Memory Device Data",
+                  "content": "Software and Memory Device Data.  See the CAD Product Definition Data Section (3.3.1.1.4 above) for the delivery of design and programming files for programmable devices (such as PALs, PROMs, etc.).  The requirements include documenting the PIN for the programming data file (burn data), source and programming data filenames, file formats, file format versions, etc. on the appropriate drawing such as the Altered Item or Software Installation Drawing.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Digital Associated Lists and Revision Authorization Documents",
+              "content": "In addition to the requirements in section 3.3.2, the ASDP EDDAL shall include all data for Associated Lists IAW ASME Y14.34 and Revision Authorization Documents (RAD) IAW ASME Y14.35 to describe the complete physical and performance characteristics of an item or component being acquired.  This data includes company specifications and standards; Associated Lists such as Parts Lists, Data Lists, Wire Lists, and Application Lists; and RADs such as ECOs, Safety Notices, and Specifications.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Digitized Legacy Data",
+              "content": "In addition to the requirements in section 3.3.2, legacy data is any type of document developed in a non-electronic format (e.g., manual drafting board created drawings on Mylar) or any type of document which has been scanned into a raster image format and validated to accurately represent the original non-electronic format.  Once scanned and validated, Legacy Data becomes Digitized Legacy Data.  The PDF documents shall be full text searchable.  Compression shall be Group 4 IAW TIFF Version 6 and non-wrap format.  The image density or resolution for raster images shall be 200 dots per inch (dpi), including raster PDF documents.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Physical media drawings include both dimensional and scaled drawings",
+                  "content": "Physical media drawings include both dimensional and scaled drawings as well as un-dimensioned, one-to-one scale drawings.  Un-dimensioned, one-to-one scale drawings include stable base media such as PB artwork and Mylar mechanical design drawings such as flat patterns, loft, and painting templates.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "After scanning, validation tests shall be done",
+                  "content": "After scanning, validation tests shall be done by overlaying prints of the scanned image over the original media checking for exact overlay and matches of grid lines, curves, other drawing details, and possible distortion and deviation.  As an acceptance criterion, an exact overlay and match to the original without distortion and deviation is required.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "IPL",
+          "content": "The ASDP EDDAL shall depict the indentured structure for each approved product configuration, depict the hierarchical structure of all parts (to include software and consumables) from the top-level configuration item down to assemblies, subassemblies, and components with reference to the associated engineering design data.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.a",
+              "title": "IPL fields to be populated within a spreadsheet",
+              "content": "The following table lists IPL fields that shall be populated within a spreadsheet using Microsoft Excel, unless the CAD assembly represents all design elements within the model tree then an Excel spreadsheet is not needed.\n\nTable 3.4.a-1: IPL Fields\nDOD_INDENT_LEVEL - String - Required - Two-character integer 00-99\nPIN - String - Required - All Uppercase, alphanumeric\nSW_PIN - String - As Required - All Uppercase, alphanumeric\nDOD_CPIN - String - As Required\nODA_CAGE_CODE - String - Required - Five characters, All uppercase\nDOD_QPA - String - Required - Integer\nDOD_QPA_AR - Boolean - Required\nDOD_UoM - String - Required - Two uppercase characters IAW MIL-STD-129\nDOD_NHA_PIN - String - Required - All uppercase\nDOD_NHA_ODA_CAGE - String - Required - Five characters, All uppercase\nDOD_ATTCH_PART - Boolean - Required\nDOD_SUBST_PART - Boolean - Required\nDOD_SUBST_PART_PIN - String - See Instructions - All Uppercase\nDOD_ALT_PART - Boolean - Required\nDOD_ALT_PART_PIN - String - See Instructions - All Uppercase\nSPECIFICATION - String - Required - All Uppercase, alphanumeric, performance specification unique ID associated with EDD\nINTERFACE_CONTROL_DOCUMENT(ICD) - String - Required - All Uppercase, alphanumeric, ICD unique ID associated with EDD",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.1",
+                  "title": "IPL Spreadsheet Field Definitions & Instructions",
+                  "content": "IPL Spreadsheet Field Definitions & Instructions.  The following definitions apply in the context of this requirement for an IPL spreadsheet.  If an IPL field is required per Table 3.4.a-1 or the instructions below, it shall be populated.  Any field that is not applicable shall be marked \"NA.\"",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.1.1",
+                      "title": "DOD_INDENT_LEVEL",
+                      "content": "DOD_INDENT_LEVEL:  Indenture level shall indicate the relationship of a part to the next and shall be indicated by a two-digit integer.   Begin with \"00\" for the system/top assembly part, increase by 1 (\"01\", \"02\", etc.) for each lower tier.  Go down each \"leg\" of the tier until there is no lower part in that \"leg\".  Go backwards up that same \"leg\", until finding a tier containing a second or subsequent unlisted part.  Begin down this new \"leg\" until there is no lower part.  Repeat this process until all parts have been listed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.2",
+                      "title": "PIN",
+                      "content": "PIN:  PIN is the primary ID of the product the dataset represents, that is assigned by the product's ODA.  Usually referred to as \"Part Number\".  (See ASME Y14.100).\nInstructions:  Required for datasets that represent a producible product.  If dataset is a native CAD template or does not represent a producible product, this field shall not be populated.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.3",
+                      "title": "ODA_CAGE_CODE",
+                      "content": "ODA_CAGE_CODE:  CAGE code of the dataset's ODA which defines the PIN.  Usually referred to as \"ODA CAGE\".",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.4",
+                      "title": "DOD_CPIN",
+                      "content": "DOD_CPIN: IAW TO 00-5-16, a CPIN is alphanumeric software identification method with a minimum of 14 and a maximum of 39 positions comprised of four fields containing various components.\nInstructions: A CPIN shall be requested and assigned for each CSCI and the associated engineering documentation. A CSCI may consist of a single computer program, or a group of computer programs, which satisfies an end-use function. All electronic media unless excluded by the Program Office in direct support of a USAF or FMS weapon system that contains strategic data (operating system, PROM data, RAM data, UART logic, component drivers, etc.) that, if not available would impede the functional operation and support of a weapon system, shall also have a CPIN assigned. (See TO 00-5-16)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.5",
+                      "title": "DOD_QPA",
+                      "content": "DOD_QPA:  Denotes the quantity required for each item in the assembly.  This shall be in numeric integer values only.  Data that are deemed \"as required\" shall have the DOD_QPA_AR value set to \"Positive\".  If known, the numeric average quantity consumed for \"as required\" shall be entered as a rounded integer.  If the average quantity consumed is not known for \"as required\", then the QPA shall be '1' (one).  The QPA for Alternate Parts and Substitute Parts shall be '0' (zero).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.6",
+                      "title": "DOD_QPA_AR",
+                      "content": "DOD_QPA_AR:  Denotes whether the quantity per assembly is \"as required\".\nInstructions: Positive -- Dataset identifies QPA \"as required\".\nNegative -- Dataset does not identify QPA \"as required\".",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.7",
+                      "title": "DOD_UoM",
+                      "content": "DOD_UoM:  Denotes the unit of measure defined in MIL-STD-169 required for each quantity per assembly established for the part.  For items that are not applicable, leave this field blank, unless it is a component, then use \"EA\" for the component.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.8",
+                      "title": "DOD_NHA_PIN",
+                      "content": "DOD_NHA_PIN:  Denotes the PIN of the next higher assembly to which the PIN above applies.  This is the indenture level for the BoM as a parent/child relationship.  Only a single entry per data field is allowed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.9",
+                      "title": "DOD_NHA_ODA_CAGE",
+                      "content": "DOD_NHA_ODA_CAGE:  CAGE code of the NHA ODA.  Usually referred to as \"NHA ODA CAGE\".",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.10",
+                      "title": "DOD_ATTCH_PART",
+                      "content": "DOD_ATTCH_PART:  Denotes whether the PIN above is an attaching part such as a fastener screw or bolt.\nInstructions: Positive -- Dataset identifies PIN above as an attaching part.\nNegative -- Dataset does not identify PIN above as an attaching part.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.11",
+                      "title": "DOD_SUBST_PART",
+                      "content": "DOD_SUBST_PART:  Denotes whether a substitute part exists which is interchangeable with the PIN above in its structure in the product structure.\nInstructions: Positive -- Dataset identifies PIN above has a substitute part.\nNegative -- Dataset does not identify PIN above has a substitute part.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.12",
+                      "title": "DOD_SUBST_PART_PIN",
+                      "content": "DOD_SUBST_PART_PIN:  Denotes the PIN of the substitute part which is interchangeable with the PIN above in its structure in the product structure.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.13",
+                      "title": "DOD_ALT_PART",
+                      "content": "DOD_ALT_PART:  Denotes whether an alternate part exists which is interchangeable with the PIN above everywhere the PIN above is used in all product structures.  Alternates are used when the same part is coming from multiple suppliers, and you want those parts to be interchangeable globally.\nInstructions: Positive -- Dataset identifies PIN above has a substitute part.\nNegative -- Dataset does not identify PIN above has a substitute part.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.14",
+                      "title": "DOD_ALT_PART_PIN",
+                      "content": "DOD_ALT_PART_PIN:  Denotes the PIN of the substitute part which is interchangeable with the PIN above globally where the PIN above is used in all product structures.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Dataset Filenames",
+          "content": "All datasets shall be given a filename unique to their ODA.  Filenames of native 3D models shall not include their REV. Native CAD dataset filenames that have already been delivered to the Government shall not be changed unless agreed to by the Government. Datasets that are considered part of a viewable CAD dataset's 3Di format do not need to meet any specific filename requirements. Special characters that shall not be used in filenames or in their extensions that could introduce processing problems include the following:\n\nTable 3.5.-1: Special Characters to Avoid in Filenames\n` (Accent), & (Ampersand), ' (Apostrophe), * (Asterisk), @ (At sign), \\ (Backslash), ^ (Caret), , (Comma), {} (Curly brackets or braces), $ (Dollar sign), \" (Double quote), ! (Exclamation), / (Forward slash), () (Parentheses), % (Percent), | (Pipe), + (Plus), # (Pound), ? (Question mark), [] (Square or box brackets), ~ (Tilde)",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Government Native CAD Datasets",
+              "content": "Government Native CAD Datasets. With the exception of reference models and native CAD templates, all native CAD datasets for which the Government is the CDA shall follow the filename convention:\n\nDataset ID_ODA CAGE Code.xxx\n\nExamples:\n201646968_98752.asm\n201646968_98752.drw",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Dataset Type shall be added to the end of filenames",
+                  "content": "Dataset Type shall be added to the end of filenames for drawings and associated lists to establish uniqueness:\n\nDataset ID_ODA CAGE Code_Dataset Type.xxx\n\nExamples:\n201646968_98752_Parts List.drw\n201646968_98752_PL.docx",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.1.1.1",
+                      "title": "If filename size restrictions prevent population of all fields",
+                      "content": "If filename size restrictions prevent population of all fields, then the Dataset Type shall be acronymized to achieve an acceptable filename, as shown in the last example above. If these actions still result in an invalid filename, a different convention can be used if agreed to by the Government.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Government Reference Model Datasets",
+              "content": "Government Reference Model Datasets. All reference model datasets for which the Government is the CDA shall follow the filename convention:\n\nPIN_ODA CAGE Code_ORMDA CAGE Code_Context ID_Instance ID.xxx\n\nExamples:\nMS20995C20_80205_98752_201646968_AFT.prt\nMS20995C20_80205_98752.prt",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "If filename size restrictions prevent population of all fields",
+                  "content": "If filename size restrictions prevent population of all fields, then the following actions shall be taken in the order presented until an acceptable filename is achieved:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.5.2.1.1",
+                      "title": "Remove ORMDA CAGE Code",
+                      "content": "Remove ORMDA CAGE Code.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.1.2",
+                      "title": "Remove ODA CAGE Code",
+                      "content": "Remove ODA CAGE Code.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.1.3",
+                      "title": "Shorten Instance ID",
+                      "content": "Shorten Instance ID.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.5.2.1.4",
+                      "title": "Shorten Context ID",
+                      "content": "Shorten Context ID.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "If a field is not applicable or removed",
+                  "content": "If a field is not applicable or removed, then it shall be eliminated along with the preceding \"_\", as shown in the last example above. If these actions still result in an invalid filename, a different convention can be used if agreed to by the Government.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.3",
+              "title": "Non-Government Native CAD Datasets",
+              "content": "Non-Government Native CAD Datasets. The file naming convention used for native CAD datasets, for which the Government is not the CDA, can be at the discretion of the respective dataset's CDA. However, filenames of all native CAD datasets shall include their Dataset ID or PIN, along with their ODA CAGE code.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Neutral & Viewable CAD Datasets",
+              "content": "Neutral & Viewable CAD Datasets. All neutral and viewable CAD dataset filenames shall match the filename of the native CAD dataset from which they were derived from, excluding extensions. However, in cases where a neutral or viewable CAD dataset is derived from a native 3D model that defines a child in a product family, the PIN shall be used instead of the Dataset ID in that dataset's filename, as shown in the third and fourth examples below. Filenames of all neutral and viewable CAD datasets shall include their applicable REV. For neutral and viewable CAD datasets for which the Government is the CDA, the REV shall be the last value in the dataset's filename, excluding the extension:\n\nDataset ID_ODA CAGE Code_REV.xxx\nDataset ID_ODA CAGE Code_Dataset Type_REV.xxx\nPIN_ODA CAGE Code_ORMDA CAGE Code_Context ID_Instance ID_REV.xxx\n\nExamples:\n201646968_98752_-.dxf\n201646968_98752_PL_A.pdf\n201646968-2_98752_B.prc\n201646968-2_98752_C.stl\nMS20995C20_80205_98752_201646968_AFT_D.stp",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.4.1",
+                  "title": "If filename size restrictions prevent population of all fields",
+                  "content": "If filename size restrictions prevent population of all fields, then the applicable procedures outlined in Section 3.5.1.1 shall be followed until an acceptable filename is achieved. If these actions still result in an invalid filename, a different convention can be used if agreed to by the Government.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.5",
+              "title": "EDDAL Supplement Datasets",
+              "content": "EDDAL Supplement Datasets. The requirements defined above shall apply to EDDAL Supplement Datasets. However, Supplement ID, Supplement CAGE, Supplement Type, and SUPPLEMENT_REV shall be substituted for Dataset ID, ODA CAGE Code, Dataset Type, and REV respectively.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Metadata",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Native CAD Datasets",
+              "content": "Native CAD Datasets. Table 3.6-1 below lists metadata fields that shall be populated within native CAD datasets using the customary tools/procedures corresponding to the respective original authoring CAD software. Metadata fields indicated as \"Not Applicable\" in the \"Required (Native CAD)\" column below can be left unpopulated or omitted from native CAD datasets entirely.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "All Other Datasets",
+              "content": "All Other Datasets. For all other datasets, excluding RADs and IPLs, but including any native CAD datasets specified by the government, the metadata fields shall be populated within a Microsoft Excel spreadsheet. Each row in the spreadsheet shall correspond to a file in the respective delivery via the filename. Metadata field names in Table 3.6-1 below shall be column headers in the first row of the spreadsheet, except for those indicated as \"Not Applicable\" in the \"Required (All Other)\" column.\n\nTable 3.6-1: Metadata Fields (Field Name - Type - Format/Values - Required (Native CAD) - Required (All Other)):\n***_DATE - Date - ISO 8601 extended format - Optional - Not Applicable\n***_NAME - String - - Optional - Not Applicable\nALT_MATERIAL - String - - See Instructions - Not Applicable\nCAD_TEMPLATE_FILENAME - String - - See Instructions - Not Applicable\nCDA_CAGE_CODE - String - Five characters, All uppercase - Required - Required\nCODE_ANN_ATTR_STATE - String - A1/A2/A3 - Required - Not Applicable\nCODE_GEOMETRY_STATE - String - G1/G2/G3 - Required - Not Applicable\nCODE_MATURITY_STATE - String - M1/M2/M3/M4 - Required - Not Applicable\nCONTRACT_NUMBER - String - All uppercase - See Instructions - Not Applicable\nCOPYRIGHT_YEAR - Date - ISO 8601 extended format - See Instructions - Not Applicable\nCREATE_DATE - Date - ISO 8601 extended format - Required - Not Applicable\nCREATE_NAME - String - - Required - Not Applicable\nCRITICAL_SAFETY_CHARACTERISTIC - Boolean - - Required - Required\nCRITICAL_SAFETY_INSPECTION - Boolean - - Required - Required\nCRITICAL_SAFETY_ITEM - Boolean - - Required - Required\nCRITICAL_SAFETY_PROCESS - Boolean - - Required - Required\nCRITICAL_SAFETY_QA - Boolean - - Required - Required\nDATA_SET_IDENTIFIER - String - All uppercase - See Instructions - Required\nDATA_SET_TYPE - String - - Required - Required\nDOD_CLASSIFICATION_LEVEL - String - Confidential/Secret/Top Secret/Unclassified - Required - Required\nDOD_CUI - Boolean - - Required - Required\nDOD_DATA_RIGHTS - String - Commercial (Limited)/Commercial (Unlimited)/Government Purpose Limited/SBIR/Specifically Negotiated/Unlimited - Required - Required\nDOD_DISTRIBUTION_CODE - String - A/B/C/D/E/F - Required - Required\nDOD_EXPORT_CONTROLLED - Boolean - - Required - Required\nDOD_SYSTEM_NAME - String - - Not Applicable - Optional\nDOD_UCNI - Boolean - - Required - Required\nELECTROSTATIC_SENSITIVE_DEVICE - Boolean - - Required - Required\nENVIRONMENTAL_IMPACT - Boolean - - Required - Required\nENVIRONMENTAL_STRESS_SCREENING - Boolean - - Required - Required\nFILENAME - String - Includes extension - Not Applicable - Required\nGEOMETRIC_SCALE - String - - Required - Not Applicable\nHARDNESS_CRITICAL_ITEM - Boolean - - Required - Required\nHARDNESS_CRITICAL_PROCESS - Boolean - - Required - Required\nHAZARDOUS - Boolean - - Required - Required\nINTERFACE_CONTROL - Boolean - - Required - Required\nKEY_CHARACTERISTIC - Boolean - - Required - Required\nMASS - Real - - See Instructions - Not Applicable\nMASS_UNITS - String - - See Instructions - Not Applicable\nMATERIAL - String - - See Instructions - Not Applicable\nMODEL_PRECISION - Integer - - Required - Not Applicable\nMODEL_TYPE_NOTATION - String - - See Instructions - Not Applicable\nMODEL_UNITS - String - - Required - Not Applicable\nOBSERVABLE_CRITICAL_ITEM - Boolean - - Required - Required\nOBSERVABLE_CRITICAL_PROCESS - Boolean - - Required - Required\nODA_CAGE_CODE - String - Five characters, All uppercase - Required - Required\nORMDA_CAGE_CODE - String - Five characters, All uppercase - See Instructions - Not Applicable\nOZONE-DEPLETING_CHEMICAL - Boolean - - Required - Required\nOZONE-DEPLETING_SUBSTANCE - Boolean - - Required - Required\nPIN - String - All Uppercase - See Instructions - See Instructions\nREF_MODEL_CONTEXT_ID - String - All Uppercase - See Instructions - Not Applicable\nREF_MODEL_INSTANCE_ID - String - All Uppercase - See Instructions - Not Applicable\nREFERENCE - String - All Uppercase - See Instructions - See Instructions\nRELEASE_DATE - Date - ISO 8601 extended format - See Instructions - See Instructions\nRELEASE_NAME - String - - See Instructions - Not Applicable\nREV - String - All Uppercase - Required - Required\nREV_APPROVED - String - - Required - Not Applicable\nREV_DATE - Date - ISO 8601 extended format - Required - Required\nREV_DESCRIPTION - String - - Required - Not Applicable\nSUPPLEMENT_DATA_SET_ID - String - All uppercase - Not Applicable - See Instructions\nSUPPLEMENT_DATA_SET_TYPE - String - - Not Applicable - See Instructions\nSUPPLEMENT_ODA_CAGE_CODE - String - Five characters, All uppercase - Not Applicable - See Instructions\nSUPPLEMENT_REV - String - All Uppercase - Not Applicable - See Instructions\nTITLE - String - All Uppercase - Required - Required\nUSAF_TEAMCENTER_ITEM_TYPE - String - AR2_CADTemplate/AR2_MasterPart/AR2_RefModel/AR2_TDP - Required - Not Applicable",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Metadata Definitions & Instructions",
+              "content": "Metadata Definitions & Instructions.  The following definitions apply in the context of this DID.  If a metadata field is required per Table 3.6-1 or the instructions below, it shall be populated with a non-null value.  Unpopulated metadata fields can be omitted from native CAD datasets entirely.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "***_DATE",
+                  "content": "***_DATE:  Date the dataset was reviewed and/or approved by a function and/or role.  (See ASME Y14.47).\nInstructions:  Field shall not exist without a corresponding ***_NAME field. \"***\" is a wildcard and shall be populated with the name of the function or role.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "***_NAME",
+                  "content": "***_NAME:  Name of person for function and/or role that reviewed and/or approved the dataset.  (See ASME Y14.47).\nInstructions:  Field shall not exist without a corresponding ***_DATE field. \"***\" is a wildcard and shall be populated with the name of the function or role.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "ALT_MATERIAL",
+                  "content": "ALT_MATERIAL:  Identification of the alternative material(s) defined for the product. See also MATERIAL.  (See ASME Y14.47).\nInstructions:  Required if dataset identifies more than one material.  If dataset does not identify more than one material or MATERIAL is not populated, this field shall not be populated.  When more than one value is required, the field name shall be appended with \"_*\", and numbers, letters or both shall be substituted for \"*\" (e.g., ALT_MATERIAL_1, ALT_MATERIAL_2, etc.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.4",
+                  "title": "CAD_TEMPLATE_FILENAME",
+                  "content": "CAD_TEMPLATE_FILENAME:  Filename of native CAD template dataset.\nInstructions:  Required for native CAD templates.  If dataset is not a native CAD template, this field shall not be populated.  See Section 3.5 when populating this field.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.5",
+                  "title": "CDA_CAGE_CODE",
+                  "content": "CDA_CAGE_CODE:  CAGE code of the dataset's CDA.  Usually referred to as \"CDA CAGE\".",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.6",
+                  "title": "CODE_ANN_ATTR_STATE",
+                  "content": "CODE_ANN_ATTR_STATE:  Code that represents the annotation and attribute state.  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.7",
+                  "title": "CODE_GEOMETRY_STATE",
+                  "content": "CODE_GEOMETRY_STATE:  Code that represents the geometry state.  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.8",
+                  "title": "CODE_MATURITY_STATE",
+                  "content": "CODE_MATURITY_STATE:  Code that represents the maturity state and is equivalent to TDP level.  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.9",
+                  "title": "CONTRACT_NUMBER",
+                  "content": "CONTRACT_NUMBER:  ID of the contract the dataset revision was created under.\nInstructions:  Required if dataset was created under a contract. If dataset was not created under a contract (e.g., created internally by U.S. Government), this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.10",
+                  "title": "COPYRIGHT_YEAR",
+                  "content": "COPYRIGHT_YEAR:  Year of copyright.  (See ASME Y14.47).\nInstructions:  Required if dataset identifies a copyright.  When more than one value is required, the field name shall be appended with \"_*\", and numbers, letters, or both shall be substituted for \"*\" (e.g., COPYRIGHT_YEAR_1, COPYRIGHT_YEAR_2, etc.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.11",
+                  "title": "CREATE_DATE",
+                  "content": "CREATE_DATE:  Date the dataset was initially created.  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.12",
+                  "title": "CREATE_NAME",
+                  "content": "CREATE_NAME:  Name of author who initially created the dataset.  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.13",
+                  "title": "CRITICAL_SAFETY_CHARACTERISTIC",
+                  "content": "CRITICAL_SAFETY_CHARACTERISTIC:  Indicates whether the dataset identifies a critical safety characteristic.  (See ASME Y14.100 & AFI20-106).\nInstructions: Positive -- Dataset identifies a critical safety characteristic.\nNegative -- Dataset does not identify a critical safety characteristic.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.14",
+                  "title": "CRITICAL_SAFETY_INSPECTION",
+                  "content": "CRITICAL_SAFETY_INSPECTION:  Indicates whether the dataset identifies a critical safety inspection.  (See AFI20-106).\nInstructions: Positive -- Dataset identifies a critical safety inspection.\nNegative -- Dataset does not identify a critical safety inspection.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.15",
+                  "title": "CRITICAL_SAFETY_ITEM",
+                  "content": "CRITICAL_SAFETY_ITEM:  Indicates whether the dataset identifies a critical safety item.  (See ASME Y14.100 & AFI20-106).\nInstructions: Positive -- Dataset identifies a critical safety item.\nNegative -- Dataset does not identify a critical safety item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.16",
+                  "title": "CRITICAL_SAFETY_PROCESS",
+                  "content": "CRITICAL_SAFETY_PROCESS:  Indicates whether the dataset identifies a critical safety process.  (See ASME Y14.100 & AFI20-106).\nInstructions: Positive -- Dataset identifies a critical safety process.\nNegative -- Dataset does not identify a critical safety process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.17",
+                  "title": "CRITICAL_SAFETY_QA",
+                  "content": "CRITICAL_SAFETY_QA:  Indicates whether the dataset identifies a critical safety quality assurance. (See AFI20-106)\nInstructions: Positive -- Dataset identifies a critical safety quality assurance.\nNegative -- Dataset does not identify a critical safety quality assurance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.18",
+                  "title": "DATA_SET_IDENTIFIER",
+                  "content": "DATA_SET_IDENTIFIER:  Primary ID of the dataset that is assigned by the dataset's ODA.  Usually referred to as \"Dataset ID\" and is equivalent to Drawing/Document Number defined in ASME Y14.100.  (See ASME Y14.41).\nInstructions:  Required for all datasets with the exception of native CAD templates.  If a dataset is a native CAD template, this field shall not be populated.  See Section 3.5 when populating this field for reference models.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.19",
+                  "title": "DATA_SET_TYPE",
+                  "content": "DATA_SET_TYPE:  Type of the dataset that shall combine with the Dataset ID, ODA CAGE code, and Revision to uniquely identify a specific revision of a dataset.\nInstructions: Table 3.6-2 below provides a list of values with some descriptions that can be used to populate this metadata field.\n\nTable 3.6-2: DATA_SET_TYPE Values\n2D Drawing; 3D Model; Application List (Application data presented in a separate associated list IAW ASME Y14.34); Artwork (An accurately scaled configuration that is used to produce the artwork master, production master, or master pattern drawing IAW ASME Y14.24.  Generally, this is related to electronic items such as printed circuit boards and integrated circuit devices.); Bill of Materials; Cable List; Data List (A tabulation of all engineering drawings, associated lists, specifications, standards, and subordinate data lists pertaining to the item to which the data list applies and essential documents to meet the technical design disclosure requirements except for those documents referenced parenthetically IAW ASME Y14.34.); Data Package List; Equipment List; Gauge List; Index List (A tabulation of data lists and subordinate index lists pertaining to the item to which the index list applies IAW ASME Y14.34.); Loft Data (Loft data file for un-dimensioned information such as surface contours IAW ASME Y14.24.); Material List; Mylar (Un-dimensioned drawings on stable base material digitized by a precision scanning process.); Notes List (A tabulation of all notes pertaining to a specific drawing.); Numerical Control Data (Data files for controlling equipment used in manufacturing parts.); Parts List (A tabulation of all parts and bulk materials, except those materials that support a process and are not retained, such as cleaning solvents and masking materials, used in the item IAW ASME Y14.34.); Programming Files (Software installation file(s) used to program memory or logic devices or other programmable items or equipment.); Quality Assurance (Supplementary Quality Assurance Provision (SQAP)); Running List; Specification; Standard; Test Data (Data file for direct input into the test setup equipment for the system, sub-system, part, etc.); Test Procedure; Tool List; Un-dimensioned Drawing (An un-dimensioned drawing IAW ASME Y14.24 defines the shape and other design features of an object at a precise scale predominantly without dimensions.  It provides an accurate pattern of the feature or features of an item.); Wire Diagram (A wire diagram showing the relations between the parts.); Wiring Harness; Wiring List (A list of tabular data and instructions to establish wiring connections IAW ASME Y14.34.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.20",
+                  "title": "DOD_CLASSIFICATION_LEVEL",
+                  "content": "DOD_CLASSIFICATION_LEVEL:  Classification level of the dataset.  (See DoDM 5200.01 Volume 1).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.21",
+                  "title": "DOD_CUI",
+                  "content": "DOD_CUI:  Indicates whether the dataset is marked as CUI.  (See DoDI 5200.48).\nInstructions: Positive -- Dataset is marked as CUI.\nNegative -- Dataset is not marked as CUI.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.22",
+                  "title": "DOD_DATA_RIGHTS",
+                  "content": "DOD_DATA_RIGHTS:  Rights the government has to the dataset.  (See DFARS Subparts 227.7102-2, 227.7103-5, 227.7104(b), 252.227-7013(b), 252.227-7015(b), and 252.227-7018(b)).\nInstructions:\nCommercial (Limited) -- Government has rights IAW DFARS Subpart 252.227-7015(b)(2).\nCommercial (Unlimited) -- Government has rights IAW DFARS Subpart 252.227-7015(b)(1).\nGovernment Purpose -- Government has rights IAW DFARS Subpart 252.227-7013(b)(2).\nLimited -- Government has rights IAW DFARS Subpart 252.227-7013(b)(3) or 252.227-7018(b)(2).\nSBIR -- Government has rights IAW DFARS Subpart 252.227-7018(b)(4).\nSpecifically Negotiated -- Government has rights IAW DFARS Subpart 252.227-7013(b)(4) or 252.227-7018(b)(5).\nUnlimited -- Government has rights IAW DFARS Subpart 252.227-7013(b)(1) or 252.227-7018(b)(1).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.23",
+                  "title": "DOD_DISTRIBUTION_CODE",
+                  "content": "DOD_DISTRIBUTION_CODE:  U.S. DoD distribution statement code marked on the dataset.  (See DoDI 5230.24).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.24",
+                  "title": "DOD_EXPORT_CONTROLLED",
+                  "content": "DOD_EXPORT_CONTROLLED:  Indicates whether the dataset is marked with an export control warning.  (See DoDI 5230.24).\nInstructions: Positive -- Dataset is marked with an export control warning.\nNegative -- Dataset is not marked with an export control warning.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.25",
+                  "title": "DOD_System_Name",
+                  "content": "DOD_System_Name:  The identification of the system/platform the dataset is applicable to (e.g., ALE-47, APQ-170, ALM-233, C-130, etc.).\nInstructions:  When more than one value is applicable, all values shall be listed and separated by a semicolon followed by a space \"; \" (e.g. F-15; F-16; F-22).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.26",
+                  "title": "DOD_UCNI",
+                  "content": "DOD_UCNI:  Indicates whether the dataset is marked as UCNI.  (See DoDM 5200.01 Volume 4).\nInstructions: Positive -- Dataset is marked as UCNI.\nNegative -- Dataset is not marked as UCNI.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.27",
+                  "title": "ELECTROSTATIC_SENSITIVE_DEVICE",
+                  "content": "ELECTROSTATIC_SENSITIVE_DEVICE:  Indicates whether the dataset identifies an electrostatic sensitive device.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an electrostatic sensitive device.\nNegative -- Dataset does not identify an electrostatic sensitive device.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.28",
+                  "title": "ENVIRONMENTAL_IMPACT",
+                  "content": "ENVIRONMENTAL_IMPACT:  Indicates whether the dataset identifies an entity with adverse environmental impact.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an entity with adverse environmental impact.\nNegative -- Dataset does not identify an entity with adverse environmental impact.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.29",
+                  "title": "ENVIRONMENTAL_STRESS_SCREENING",
+                  "content": "ENVIRONMENTAL_STRESS_SCREENING:  Indicates whether the dataset identifies an item that requires environmental stress screening.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an item that requires environmental stress screening.\nNegative -- Dataset does not identify an item that requires environmental stress screening.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.30",
+                  "title": "FILENAME",
+                  "content": "FILENAME:  The name (including extension) of the digital file as assigned within a computer operating system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.31",
+                  "title": "GEOMETRIC_SCALE",
+                  "content": "GEOMETRIC_SCALE:  Scale of the model (e.g., 1:1, 1:2).  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.32",
+                  "title": "HARDNESS_CRITICAL_ITEM",
+                  "content": "HARDNESS_CRITICAL_ITEM:  Indicates whether the dataset identifies a hardness critical item.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies a hardness critical item.\nNegative -- Dataset does not identify a hardness critical item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.33",
+                  "title": "HARDNESS_CRITICAL_PROCESS",
+                  "content": "HARDNESS_CRITICAL_PROCESS:  Indicates whether the dataset identifies a hardness critical process.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies a hardness critical process.\nNegative -- Dataset does not identify a hardness critical process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.34",
+                  "title": "HAZARDOUS",
+                  "content": "HAZARDOUS:  Indicates whether the dataset identifies a hazardous entity.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies a hazardous entity.\nNegative -- Dataset does not identify a hazardous entity.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.35",
+                  "title": "INTERFACE_CONTROL",
+                  "content": "INTERFACE_CONTROL:  Indicates whether the dataset defines or controls an interface to a system.  (See ASME Y14.100).\nInstructions: Positive -- Dataset defines or controls an interface to a system.\nNegative -- Dataset does not define or control an interface to a system.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.36",
+                  "title": "KEY_CHARACTERISTIC",
+                  "content": "KEY_CHARACTERISTIC:  Indicates whether the dataset identifies a key characteristic.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies a key characteristic.\nNegative -- Dataset does not identify a key characteristic.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.37",
+                  "title": "MASS",
+                  "content": "MASS:  Intended mass of product defined in the dataset.  (See ASME Y14.47).\nInstructions:  Required if dataset identifies or calculates the mass of the product.  If dataset does not identify or calculate the mass of the product, or MASS_UNITS is not populated, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.38",
+                  "title": "MASS_UNITS",
+                  "content": "MASS_UNITS:  Units of the mass identified in the dataset.  (See ASME Y14.47).\nInstructions:  Required if MASS is populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.39",
+                  "title": "MATERIAL",
+                  "content": "MATERIAL:  Identification of primary material of the product.  (See ASME Y14.47).\nInstructions:  Required if dataset identifies a material.  If dataset does not identify a material, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.40",
+                  "title": "MODEL_PRECISION",
+                  "content": "MODEL_PRECISION:  Value that indicates numeric accuracy (number of significant digits) of model required in production of part for it to fulfill the design intent (See ASME Y14.41 and ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.41",
+                  "title": "MODEL_TYPE_NOTATION",
+                  "content": "MODEL_TYPE_NOTATION:  Notation that identifies the model type.\nInstructions:  Required if dataset is the 3D equivalent of a drawing type defined in ASME Y14.24.  If dataset is a reference model or is not the 3D equivalent of a drawing type defined in ASME Y14.24, then this field shall not be populated.  Populate this field with the 3D equivalent of notation values specified in ASME Y14.24.  See Section 3.5 for examples.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.42",
+                  "title": "MODEL_UNITS",
+                  "content": "MODEL_UNITS:  System of units of measure (SI or U.S. Customary) of the model.  (See ASME Y14.47).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.43",
+                  "title": "OBSERVABLE_CRITICAL_ITEM",
+                  "content": "OBSERVABLE_CRITICAL_ITEM:  Indicates whether the dataset identifies an observable critical item.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an observable critical item.\nNegative -- Dataset does not identify an observable critical item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.44",
+                  "title": "OBSERVABLE_CRITICAL_PROCESS",
+                  "content": "OBSERVABLE_CRITICAL_PROCESS:  Indicates whether the dataset identifies an observable critical process.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an observable critical process.\nNegative -- Dataset does not identify an observable critical process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.45",
+                  "title": "ODA_CAGE_CODE",
+                  "content": "ODA_CAGE_CODE:  CAGE code of the dataset's ODA.  Usually referred to as \"ODA CAGE\".\nInstructions:  See Section 3.5 when populating this field for reference models.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.46",
+                  "title": "ORMDA_CAGE_CODE",
+                  "content": "ORMDA_CAGE_CODE:  CAGE code of the dataset's ORMDA.  Usually referred to as \"ORMDA CAGE\".\nInstructions:  Required for reference models.  If dataset is not a reference model, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.47",
+                  "title": "OZONE-DEPLETING_CHEMICAL",
+                  "content": "OZONE-DEPLETING_CHEMICAL:  Indicates whether the dataset identifies an ozone-depleting chemical.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an ozone-depleting chemical.\nNegative -- Dataset does not identify an ozone-depleting chemical.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.48",
+                  "title": "OZONE-DEPLETING_SUBSTANCE",
+                  "content": "OZONE-DEPLETING_SUBSTANCE:  Indicates whether the dataset identifies an ozone-depleting substance.  (See ASME Y14.100).\nInstructions: Positive -- Dataset identifies an ozone-depleting substance.\nNegative -- Dataset does not identify an ozone-depleting substance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.49",
+                  "title": "PIN",
+                  "content": "PIN:  Primary ID of the product the dataset represents, that is assigned by the product's ODA. Usually referred to as \"Part Number\".  (See ASME Y14.100).\nInstructions:  Required for reference models and datasets that define/establish a PIN for a product. With the exception of reference models, this field shall not be populated for datasets that do not define/establish PINs, including datasets that only reference PINs while not defining/establishing any.\nNative CAD Datasets -- If dataset is a native CAD template, this field shall not be populated. See Section 3.5 when populating this field for reference models.\nAll Other Datasets -- When more than one value is required, all values shall be listed and separated by a semicolon followed by a space \"; \" (e.g. ABCDEF-1; ABCDEF-2; ABCDEF-3).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.50",
+                  "title": "REF_MODEL_CONTEXT_ID",
+                  "content": "REF_MODEL_CONTEXT_ID:  ID of the context the reference model was specifically created for.  Referred to as \"Context ID\".\nInstructions:  Required for reference models specifically created for use in a particular context.  If dataset is not a reference model specifically created for use in a particular context, this field shall not be populated.  If the intended context is an assembly, this field shall be populated with the PIN of the assembly or the Dataset ID of the assembly's product definition dataset.  If the intended context is a contract and not an assembly, this field shall be populated with the contract number of the contract.  See Section 3.5 for examples.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.51",
+                  "title": "REF_MODEL_INSTANCE_ID",
+                  "content": "REF_MODEL_INSTANCE_ID:  ID that will be combined with the PIN, ODA CAGE code, ORMDA CAGE code, and Context ID to uniquely identify the dataset and distinguish it from other reference models with the same PIN, ODA CAGE code, ORMDA CAGE code, and Context ID values.  Referred to as \"Instance ID\".\nInstructions:  Required if dataset is one of multiple reference models of the same product, created for use in the same context.  If dataset is not one of multiple reference models of the same product, created for use in the same context, this field shall not be populated.  If Context ID is not populated, this field shall not be populated.  Populate this field with any value that shall result in the dataset being uniquely identifiable by combining its PIN, ODA CAGE code, ORMDA CAGE code, Context ID, and Instance ID.  Field values usually describe a position but may be numbers, letters, or both.  See Section 3.5. for examples.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.52",
+                  "title": "REFERENCE",
+                  "content": "REFERENCE:  Identification of article referenced in the dataset.  Articles presented for the sole purpose of identifying a subcomponent in an assembly are not considered references.\nInstructions:  Required if dataset references any article (e.g., ICDs, Specifications, Critical Safety Quality, etc.). If dataset does not reference any article(s), this field shall not be populated.  Industry/Military standards and specifications can be identified with only their Dataset ID (e.g., ASTM B308, NASM39086, etc.).  All other articles shall be identified with their Dataset ID/PIN and ODA CAGE code, whenever said values are applicable (e.g., 201646959 CAGE: 98752).\nNative CAD Datasets -- When more than one value is required, the field name shall be appended with \"_*\", and numbers and letters shall be substituted for \"*\" (e.g., REFERENCE_1, REFERENCE_2, etc.).\nAll Other Datasets -- When more than one value is required, all values shall be listed and separated by a semicolon followed by a space \"; \" (e.g. 201646959 CAGE: 98752; ASTM B308; NASM39086).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.53",
+                  "title": "RELEASE_DATE",
+                  "content": "RELEASE_DATE:  Date the current revision of the dataset was approved for release.  (See ASME Y14.47).\nInstructions: Required for released datasets. If dataset is not released, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.54",
+                  "title": "RELEASE_NAME",
+                  "content": "RELEASE_NAME:  Name of the person who approved release of the current revision of the dataset.  (See ASME Y14.47).\nInstructions: Required for released datasets. If dataset is not released, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.55",
+                  "title": "REV",
+                  "content": "REV:  Revision letter of the current revision of the dataset. (See ASME Y14.35).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.56",
+                  "title": "REV_APPROVED",
+                  "content": "REV_APPROVED:  Name of the person who approved the changes implemented by the current revision of the dataset.  (See ASME Y14.35).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.57",
+                  "title": "REV_DATE",
+                  "content": "REV_DATE:  Date the dataset was revised to the current revision. (See ASME Y14.35).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.58",
+                  "title": "REV_DESCRIPTION",
+                  "content": "REV_DESCRIPTION:  Description of what changed in the current revision of the dataset compared to the previous revision. (See ASME Y14.35).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.59",
+                  "title": "SUPPLEMENT_DATA_SET_ID",
+                  "content": "SUPPLEMENT_DATA_SET_ID: Primary ID of the EDDAL supplement dataset that is assigned by the dataset's ODA. Also, could be referred to as \"Supplement ID\". The DATA_SET_IDENTIFIER field corresponds to the supplemented dataset.\nInstructions: Required for EDDAL supplements. If dataset is not an EDDAL supplement, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.60",
+                  "title": "SUPPLEMENT_DATA_SET_TYPE",
+                  "content": "SUPPLEMENT_DATA_SET_TYPE: Type of the EDDAL supplement dataset that shall combine with the Supplement Dataset ID, Supplement ODA CAGE code, and Supplement Revision to uniquely identify a specific revision of an EDDAL supplement dataset. Can also be referred to as \"Supplement Type\". The DATA_SET_TYPE field corresponds to the supplemented dataset.\nInstructions: Required for EDDAL supplements. If dataset is not an EDDAL supplement, this field shall not be populated. Table 3.6-3 below provides a list of values with some descriptions that can be used to populate this metadata field.\n\nTable 3.6-3: SUPPLEMENT_DATA_SET_TYPE Values\n2D Drawing; 3D Model; Addendum; Amendment; Annex; Appendix; Article; Attachment; Exhibit; Notice (Safety, engineering, ECPs, ECOs, etc.); Revision Notice; Specification (Slash sheet or other similar types of associated specifications); Supplement; Version",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.61",
+                  "title": "SUPPLEMENT_ODA_CAGE_CODE",
+                  "content": "SUPPLEMENT_ODA_CAGE_CODE: CAGE code of the EDDAL supplement dataset's ODA.  Can also be referred to as \"Supplement CAGE\". The ODA_CAGE_CODE field corresponds to the supplemented dataset.\nInstructions: Required for EDDAL supplements. If dataset is not an EDDAL supplement, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.62",
+                  "title": "SUPPLEMENT_REV",
+                  "content": "SUPPLEMENT_REV:  Revision letter of the current revision of the EDDAL supplement dataset. The REV field corresponds to the supplemented dataset.\nInstructions: Required for EDDAL supplements. If dataset is not an EDDAL supplement, this field shall not be populated.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.63",
+                  "title": "TITLE",
+                  "content": "TITLE:  Title of the dataset and is equivalent to Drawing Title, Dataset Title, and Nomenclature defined in ASME Y14.100, ASME Y14.41, and ASME Y14.47 respectively.\nInstructions:  Value shall be in accordance with ASME Y14.100.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.64",
+                  "title": "USAF_TEAMCENTER_ITEM_TYPE",
+                  "content": "USAF_TEAMCENTER_ITEM_TYPE: Item type of the dataset in the USAF's Teamcenter system.\nInstructions: AR2_CADTemplate -- Dataset is a native CAD template\nAR2_MasterPart -- PIN is populated, and dataset is not a reference model.\nAR2_RefModel -- Dataset is a reference model.\nAR2_TDP -- Dataset ID is populated, but PIN is not populated.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Additional Information",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Acronyms",
+          "content": "2D - 2-Dimensional; 3D - 3-Dimensional; 3Di - 3-Dimensional Intelligent; ADCN - Advance Drawing Change Notice; AECO - Advanced Engineering Change Orders; AESO - Advanced Engineering Supplement Order; AN - Alteration Notice; ANS - American National Standard; ANSI - American National Standards Institute; API - Application Programming Interface; ASDP - Acquisition and Sustainment Data Package; ASME - American Society of Mechanical Engineers; ATP - Acceptance Test Procedures; CAD - Computer Aided Design; CAGE - Commercial and Government Entity; CDA - Current Design Activity; CD-ROM - Compact Disc Read Only Memory; CID - Cable Interconnect Diagram; CPIN - Computer Program Identification Number; CSCI - Computer Software Configuration Item; CSI - Critical Safety Item; CSP - Critical Safety Process; CUI - Controlled Unclassified Information; DAI - Design Activity Identification; DCN - Drawing Change Notice; DID - Data Item Description; DFARS - Defense Federal Acquisition Regulation Supplement; DoD - Department of Defense; DoDI - Department of Defense Instruction; DoDM - Department of Defense Manual; DRM - Drawing Requirements Manual; ECAD - Electronic Computer Aided Design; ECN - Engineering Change Notice; ECO - Engineering Change Order; EDD - Engineering Design Data; EDDAL - Engineering Design Data and Associated List; EDIF - Electronic Design Interchange Format; EDMO - Engineering Data Management Office; EGSE - Electrical Ground Support Equipment; EIA - Electronic Industries Alliance; EN - Engineering Notice; EO - Engineering Order; GD&T - Geometric Dimensioning and Tolerancing; HCI - Hardness Critical Item; HCP - Hardness Critical Process; HDL - High Level Language; IAW - In Accordance With; IBIS - Input/Output Buffer Information Specification; IC - Integrated Circuit; ID - Identifier; IEEE - Institute of Electrical and Electronics Engineers; IGES - Initial Graphics Exchange Specification; IPC - Institute for Printed Circuits; IPL - Indentured Parts List; IPO - IGES/PDES Organization; ISO - International Organization for Standardization; IUID - Item Unique Identification; JEDMICS - Joint Engineering Data Management Information and Control System; JT - Jupiter Tessellation; LRU - Line Replaceable Unit; MBD - Model Based Definition; MCF - Mission Critical Function; MCI - Mission Critical Item; MIL-HDBK - Military Handbook; MIL-PRF - Military Performance Specification; MIL-STD - Military Standard; MS - Microsoft; NDI - Non-Destructive Inspections; NISP - National Industrial Security Program; NISPOM - National Industrial Security Program Operating Manual; NOFORN - Not Releasable to Foreign Nationals; NOR - Notice Of Revision; ODA - Original Design Activity; ORMDA - Original Reference Model Design Activity; PB - Printed Board; PBA - Printed Board Assembly; PCB - Printed Circuit Board; PCA - Printed Circuit board Assembly; PDES - Product Data Exchange using STEP; PDF - Portable Document Format; PIN - Part or Identifying Number; PL - Parts List; PLD - Programmable Logic Devices; PMI - Product Manufacturing Information; PRC - Product Representation Compact; PWB - Printed Wiring Board; PWA - Printed Wiring board Assembly; QAP - Quality Assurance Provisions; QPA - Quantity Per Assembly; RAD - Revision Authorization Document; REV - Revision; RTL - Register-Transfer Level; SBIR - Small Business Innovation Research; SCF - Safety Critical Functions; SCI - Safety Critical Items; SIE - Special Inspection Equipment; SMR - Source, Maintenance, and Recoverability; STE - Special Test Equipment; STEP - Standard for the Exchange of Product model data; STL - Stereolithography; TDP - Technical Data Package; TIFF - Tag Image File Format; UID - Unique Identifier; UII - Unique Item Identifier; U.S. - United States; UCNI - Unclassified Controlled Nuclear Information; UoM - Unit of Measure; USAF - United States Air Force; US PRO - U.S. Product Data Association; VHDL - VHSIC Hardware Description Language; VHSIC - Very High Speed Integrated Circuit; WAVES - Waveform And Vector Exchange Specification",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Definitions",
+          "content": "3Di Format:  The standard arrangement, organization, and identification of information within a 3Di viewable representation of a product. This includes such features as organization logos/branding, as well as the size, arrangement, and identification (e.g., headers) of information blocks (e.g., title blocks), notes, lists, management data, presentation states, restrictive notices, etc. (See MIL-STD-31000).\n\n3Di PDF:  3Di Technical Data and Viewable CAD Data in ISO 32000 PDF file format.\n\n3Di Technical Data:  A 3D viewable representation of an item provided in a widely available software format (e.g., ISO 32000-1 PDF).  This representation details the complete technical description of the required design configuration to include to geometry, topology, relationships, tolerances, attributes, metadata, and other features necessary to define a component or assembly.  (See MIL-STD-31000).\n\nASDP EDDAL:   The ASDP EDDAL provides engineering data adequate to serve as an authoritative and complete technical description of an item.  This data, when authorized, is adequate to support competitive procurement and maintenance for items, including for substitutability, backward compatibility, and interchangeability with the as-designed and as-delivered assets.  The ASDP EDDAL shall provide the design, engineering, manufacturing, and sustainment information to procure or manufacture an item to be identical to the original item.  The product shall be defined for a competent manufacturer to produce an item that duplicates the physical, interface, and functional characteristics of the original product, as delivered, without additional processing, design engineering effort, or recourse to the design activity.  This data represents the highest level of design disclosure.\n\nAnnotated Model:  A combination of model, annotation, and attributes that describe a product.  (See ASME Y14.47).\n\nAPI:  A set of definitions, functions, procedures, or protocols which facilitate a computer application accessing the features or data within another application.\n\nApplied Item (or Bulk Item):  Items that are applied to products rather than installed.  Such items usually exist in a non-solid form that can cure to a solid after application (e.g., lubricants, adhesives, coatings, etc.).\n\nAssembly Model:  A model in which the product described is an assembly of two or more items.  (See ASME Y14.41).\n\nAssociated List: A tabulation of engineering information pertaining to an item depicted on an engineering drawing or by a set of drawings, e.g., application list, data list, index list, parts list, and wire list. (ASME Y14.34)\n\nAuthoritative Technical Data:  A set of technical data which has been released and validated as adequate and complete for its intended purpose.  (See MIL-STD-31000).\n\nCAGE Code:  A five-character alpha-numeric ID, assigned to commercial and Government activities that manufacture or develop items, or provide services or supplies for the Government.  When used with a Dataset ID or PIN, the CAGE code designates the Design Activity from whose series the Dataset ID or PIN is assigned.  (See MIL-STD-31000).\n\nCommercial Item: An existing product, material, component, subsystem, or system, sold or traded to the general public in the course of normal business operations at prices based on established catalog or market prices. (See ASME Y14.24)\n\nCDA:  The Design Activity currently responsible for the design of an item.  This may be the ODA or a Design Activity to which the design responsibility has been transferred.  (See MIL-STD-31000).\n\nDataset (or Data Set): A digital data file containing a collection of information that can be manipulated by a computer application.\n\nDesign Activity:  An organization that has, or has had, responsibility for the design of an item.  (See MIL-STD-31000).\n\nDAI:  The application of a unique ID that distinguishes an activity or organization from another activity or organization.  Examples of activity identification include activity name, activity name and address, or CAGE Code.  (See ASME Y14.100).\n\nDesign Model:  The portion of the dataset that contains model geometry and supplemental geometry.  (See ASME Y14.41).\n\nDigital Element:  Geometric element, feature, group of features, annotation, associated group, or attribute that exists in a dataset.  (See ASME Y14.41).\n\nDrawing Graphic Sheet:  The 2D geometric elements and annotations that define an item and the product definition elements of the sheet format in accordance with ASME Y14.1 or ASME Y14.1M. (See ASME Y14.100).\n\nEDDAL Supplement: Data related to or in support of a product definition, but not incorporated into the product definition data, which is provided to complete the definition of the product to include physical and performance characteristics. For example, AECO, AESO, Safety Notices, etc.\n\nEDD: Engineering drawings, 3Di viewables, native CAD models, neutral CAD models or a combination of these, which define an item by means of graphic and textual presentations, the physical and/or functional requirements of an item, sufficient to fulfill its TDP element and level requirements. Engineering design data comes in three levels corresponding to its TDP level requirements. (See MIL-STD-31000).\n\nFamily of Products:  Family of Products are all products of the same classification, design, construction, material, type, etc., produced with the same production facilities, processes, and quality of material, under the same management and quality controls, but having the acceptable variety of physical and functional characteristics defined and specified in the applicable engineering documentation.  (See ASME Y14.100).  Family of Products is not the same as \"Product Families\".\n\nFilename:  The name of a file within a computer operating system or database for a given Dataset which includes the file extension (e.g., .pdf,. prt, .stp, etc.).\n\nFully Annotated Model: A 3D CAD dataset, in which all necessary features to fully define the item (i.e., full design disclosure to include dimensions, tolerances, materials, notes, surface finishes, etc.) are included in a readily viewable form.  For example, a 3D CAD dataset with A3 and G3 completeness states in accordance with ASME Y14.47.  (See MIL-STD-31000).\n\nIPL: A spreadsheet table structure (separate from the metadata spreadsheet) representing the indentured level of the parts/assemblies. The IPL shall list all parts related to the contract end item as developed, produced, or modified for this contract.  This is a complete top-down breakdown of the end item.\n\nInseparable Assembly Drawing:  A drawing that delineates two or more parts, subordinate assemblies, or a combination of these items that may be separately fabricated and are permanently joined (e.g., welded, brazed, riveted, sewed, glued, or other processes) to form an integral unit or part not normally capable of being disassembled for replacement or repair of individual pieces.  It establishes item identification for the assembly.  (See ASME Y14.24).\n\nInstallation Model:  A model in which the product described is an installation, showing parts or assemblies and a partial or complete representation of the installation site.  (See ASME Y14.41).\n\nManagement Data:  The data required for the release, control, and storage of Product Definition Data as well as other relevant engineering data.  (See ASME Y14.41).\n\nMaster Technical Data:  A set of technical data which is the controlling source for any subsequent technical data output.  All changes to the technical data must originate on the master technical dataset.  There can be only one instance of the Master Technical Data which is typically in the native CAD format and maintained by the CDA.  (See MIL-STD-31000).\n\nMetadata: Generally defined to be data about data. Metadata is used to identify, ingest, store, index, manage, and control access to data and their associated data object(s) in commonly used digital tools (e.g., Teamcenter, Cameo, CAD, etc.).\n\nModel:  A combination of Design Model, annotation, and attributes that describes a product.  (See ASME Y14.41).\n\nMBD:  An Annotated Model and its associated data elements that define the product in a manner that can be used effectively without a Drawing Graphic Sheet.  (See ASME Y14.47).\n\nModel Tree: A hierarchical list of all Digital Elements within a 3D CAD model.\n\nMonodetail:  Delineating or defining a single product.\n\nMultidetail Drawing:  A drawing that delineates two or more parts in separate views or in separate sets of views.  (See ASME Y14.24).\n\nNative 3D Model:  Native CAD Data in an original authoring software format for modeling 3D geometry (e.g., .prt, .asm, .ipt, .iam, .model, .catpart, .sldprt, .sldasm, etc.).\n\nNative CAD Data:  CAD data as created in its original authoring software format. In general, only the original authoring software format is capable of reading, editing, and interpreting Native CAD Data.  (Examples: CREO, CATIA, Autodesk, SolidWorks, etc.) Generally Native CAD Data is the only format suitable to serve as Master Technical Data.  Native CAD data may also serve as Authoritative Technical Data. (See MIL-STD-31000).\n\nNative CAD Template:  Native CAD Data that contains standard formatting, metadata, and additional settings used to create Native 3D Models of a consistent quality for a particular vendor's CAD tool.\n\nNeutral CAD Data:  CAD data which is derived from the native format and converted into a format which can be imported into other CAD software.  Neutral CAD Data is created to a widely available national or international standard (e.g., STEP, IGES, JT, PRC, STL, etc.). In general, Neutral CAD Data cannot serve as Master Technical Data but may serve as either Reference or Authoritative Technical Data.  (See MIL-STD-31000).\n\nNon-Geometric Native 3D Model:  A Native 3D Model containing no geometric features.\n\nOfficial Model:  A Native 3D model which is Authoritative Technical Data and is controlled by the CDA of the product it defines.\n\nODA:  The Design Activity originally responsible for the design of an item, and whose DAI (e.g., CAGE Code) is associated with the PIN/Dataset ID and is shown in the title block of the engineering design data.  (See MIL-STD-31000).\n\nORMDA:  The ODA of a Reference Model, not to be confused with the ODA of the product a Reference Model represents.\n\nPresentation State:  A retrievable collection or set of model display elements arranged for formal display to the viewer.  (See ASME Y14.47).\n\nPrinted Board:  A composite structure incorporating point-to-point interconnections for electronic circuits.  It may include embedded components.  (This includes single-sided, double-sided, multilayer, rigid, rigid-flex, and flex constructions.)  (See IPC-T-50).\n\nPrinted Board Assembly:  An assembly that uses a printed board for component mounting and interconnecting purposes.  (See IPC-T-50).\n\nPrinted Circuit Board:  See \"Printed Board.\"  (See IPC-T-50).\n\nPrinted Circuit Board Assembly:  See \"Printed Board Assembly.\"  (See IPC-T-50).\n\nPrinted Wiring Board:  See \"Printed Board.\"  (See IPC-T-50).\n\nPrinted Wiring Board Assembly:  See \"Printed Board Assembly.\"  (See IPC-T-50).\n\nProducible Item:  An item for which the design is fully defined and ready for production of a physical part is called a producible item.  An item which defines the generic, higher-level requirements of a product family is an example of an item that is not a producible item.\n\nProduct Definition Data:  Denotes the totality of product definition elements required to completely define a product.  Product Definition Data includes geometry, topology, relationships, tolerances, attributes, and features necessary to completely define a component part or an assembly of parts for the purpose of design, analysis, manufacture, test, and inspection.  (See ASME Y14.41).\n\nProduct Definition Data Set: A collection of one or more data file(s) that discloses, directly or by reference, by means of presentation (e.g., graphic, or textual), representation (e.g., semantics or machine readable), or combinations of both, the physical or functional requirements of an item. (See ASME Y14.41)\n\nProduct Families:  Products with multiple configurations, often called \"part families\" or \"tabulated parts\", are groups of products with common properties and features that differ across variations of a given product.  Examples of common differences between product family members include variations in material, color, size of common geometry, inclusion/omission of simple features, and inclusion/omission of subcomponents.  Product families consist of a parent and children, where the parent serves as the generic, and each child represents a configuration.  All family members share the same ODA CAGE code, Dataset ID, and base PIN.  For example, if a parent part with PIN: ABCDEF has two children: ABCDEF-1 and ABCDEF-2, ABCDEF is the generic, ABCDEF-1 and ABCDEF-2 are the configurations, and \"ABCDEF\" is the base PIN.  Product Families is not the same as \"Family of Products\" defined in ASME Y14.100.\n\nProduct Structure:  The hierarchical composition of a product.\n\nPurchased Item: A term that encompasses both commercial items and vendor-developed items. (See ASME Y14.24)\n\nQuery:  A means of interrogating a digital element or the relationship between digital elements.  (See ASME Y14.41).\n\nRAD: A document recognized as the authority for making a change to a drawing or associated documentation. Revision authorization documents are frequently identified by terms, such as AN, ADCN, change in design, DCN, ECN, ECO, EN, EO, or NOR. (See ASME Y14.35)\n\nReference Model:  A Native 3D model which is Reference Technical Data and does not officially define the product it represents.\n\nReference Technical Data:  A set of technical data, which is provided for information, but is not validated as accurate, adequate, and complete.  (See MIL-STD-31000).\n\nTDP:  The authoritative technical description of an item.  This technical description supports the acquisition, production, inspection, engineering, and logistics support of the item.  The description defines the required design configuration and/or performance requirements, and procedures required to ensure adequacy of item performance.  It consists of applicable technical data, such as models, engineering design data, associated lists, specifications, standards, performance requirements, quality assurance provisions, software documentation, and packaging details.  (See MIL-STD-31000).\n\nTDP Level:  One of three levels of detail that provide for a natural progression of a design from its inception to production:  conceptual level, developmental level, and product level.  (See MIL-STD-31000).\n\nVendor-developed Item: A specialized version of a vendor's general product line that is not normally stocked as an off-the-shelf item but is procurable on order. (See ASME Y14.24)\n\nVendor Item Control Drawing: Formerly called a specification control drawing or vendor item drawing. A vendor item control drawing provides an engineering description and acceptance criteria for commercial items or vendor-developed items that are procurable from a specialized segment of industry. (See ASME Y14.24)\n\nViewable CAD Data:  CAD data which is derived from the native format and converted into a format which can be displayed by a widely available software and for purposes of defining design intent in a human readable format (e.g., 3Di PDF).  In general, Viewable CAD Data cannot serve as Master Technical Data but may serve as either Reference or Authoritative Technical Data.  (See MIL-STD-31000).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82351A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

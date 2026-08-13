@@ -1,0 +1,155 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82381",
+  "slug": "di-sess-82381",
+  "title": "System-of-Systems Hazard Analysis (SOSHA)",
+  "summary": "Documents an analysis of the System-of-Systems (SoS) to identify unique SoS hazards from integrating a Sense and Avoid (SAA) system with the Triton Unmanned Aircraft System (UAS) and to produce requirements to eliminate or mitigate them.",
+  "approval_date": "2022-03-31",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10311",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2022-018",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The purpose of the SOSHA is to perform and document an analysis of the System-of-Systems (SoS) to identify unique SoS hazards associated with the integration and use of a Sense and Avoid (SAA) system with the Triton Unmanned Aircraft System (UAS). This task will produce special requirements to eliminate or mitigate identified unique SoS hazards which otherwise would not exist, and to ultimately incorporate them into appropriate system documentation.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "MIL-STD-882E Task 209, 11 May 2012.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SOSHA shall be submitted using Microsoft Word (and embedded Microsoft Excel files if logistically beneficial) in the Contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Contractor is responsible for conducting an SOSHA on items under their cognizance, including any safety-relevant systems/software the Contractor may have subcontracted.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Preparation Instructions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "General Instructions",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "The SOSHA is meant for unclassified data",
+                  "content": "use only. The Contractor shall ensure that only unclassified data is reported in the SOSHA. If classified data needs to be reported, then the Contractor shall contact the Requiring Office for special processing instruction.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Specific Instruction",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Task description",
+                  "content": "As applicable to this phase of the program, the contractor shall perform and document an analysis of the SoS to identify unique SoS hazards and mitigation requirements. The human shall be considered an element of the SoS, receiving both inputs and initiating outputs within the analysis:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.2.1.1",
+                      "title": "The contractor will provide traceability",
+                      "content": "of all identified unique SoS hazards to architecture locations, interfaces, data, and the stakeholder(s) associated with each hazard.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.1.2",
+                      "title": "The contractor will assess the risk",
+                      "content": "of identified unique SoS hazard(s) and recommend mitigation measures to eliminate the hazards or reduce the associated risks when the hazards cannot be eliminated. The hazard severity, hazard frequency of occurrence, and Risk Assessment Codes (RACs) defined in the Triton IFC-4 contract shall be used.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.1.3",
+                      "title": "The contractor will verify and validate",
+                      "content": "the effectiveness of recommended mitigation measures.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.2.1.4",
+                      "title": "The contractor shall document results of",
+                      "content": "the analysis to include the following:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.2.1.4.1",
+                          "title": "SoS description",
+                          "content": "This summary describes the physical and functional characteristics of the SoS. Reference to more detailed individual system descriptions, including specifications and detailed review documentation, shall be supplied when such documentation is available.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.1.4.2",
+                          "title": "Hazard analysis methods and techniques",
+                          "content": "Provide a description of each method and technique used in conduct of the analysis. Include a description of assumptions made for each analysis and the qualitative or quantitative data used.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.2.1.4.3",
+                          "title": "Hazard analysis results",
+                          "content": "Contents and formats may vary according to the individual requirements of the program and methods and techniques used. As applicable, analysis results should be captured in the Hazard Tracking System (HTS).",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82381.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82357",
+  "slug": "di-sess-82357",
+  "title": "Closed Order History Report",
+  "summary": "Specifies the requirements for a Closed Order History report identifying all completed Target builds for the BQM-177A Target during Full Rate Production (FRP) Lots IV through VII.",
+  "approval_date": "2021-09-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10266",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2021-026",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The report on Closed Order History identifies the requirements for Closed Order History of all completed Target builds for the BQM-177A Target for Full Rate Production (FRP) Lots IV through VII.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract statement of work (SOW).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Closed Order History reports utilize the Contractor's standard \"Closed Order History\" format.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Closed Order History of completed tail numbers",
+          "content": "for current and previous deliveries under the FRP Lots IV through VII contract shall be in MS Excel format.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Closed Order History Report shall consist of the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Actual touch labor hours and touch labor rates by labor category",
+          "content": "material cost; subcontract cost; and material burden by tail number and calendar year. Note: labor rates shall be based on the Contractor's current Forward Pricing Rates as of CDRL submission.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Monthly breakout of support labor hours",
+          "content": "support labor rates, by labor category (GR, QE, PM) and the PO labor category. Note: labor rates shall be based on the Contractor's current Forward Pricing Rates as of CDRL submission.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Monthly breakout of Other Direct Charges (ODCs) and scrap",
+          "content": "if/as applicable.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82357.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

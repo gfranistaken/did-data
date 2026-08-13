@@ -1,0 +1,123 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82431",
+  "slug": "di-sess-82431",
+  "title": "Ground Operation Procedures",
+  "summary": "Specifies the format and content for Ground Operations Procedures documenting contractor procedures that mitigate risk of loss or damage to Government Flight Risk Clause covered aircraft.",
+  "approval_date": "2024-01-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10450",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-004",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Ground and Flight Risk Clause (GFRC) (252.228-7001 MAR 2023) requires the contractor's full compliance with the version of the Combined Regulation/Instruction entitled \"Contractor's Flight and Ground Operations\" in effect from the time of contract award throughout the period of performance of the contract, as it pertains to their operations. Therefore, the requirement to develop and follow procedures that mitigate the risk of loss or damage to contracted aircraft is a contractual requirement and applies independently of the Government's assumption of risk via the GFRC. These procedures apply to contractor personnel whose duties include the operation, production, modification, development, or maintenance of any GFRC covered aircraft, and, if complied with, indemnifies contractors of liability to the extent specified by the clause. The term \"covered aircraft\" applies to aircraft that are covered by the Government's assumption of risk under the GFRC. The term cannot be modified except as provided within the GFRC or as provided at DFARS 201.4.\n\nThis Data Item Description (DID) directs the format, content, and intended use information for the data product resulting from the work task described by the Contract, Performance Work Statement (PWS), and DCMA INST 8210-1D, Chapter 3.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, will be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Use format as specified in DCMA INST 8210-1D, paragraph 3.8.2. If the element does not apply to the platform or project, annotate as Not Applicable for that section or paragraph.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Ground Operations Procedures (GOP) shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Explanatory pages with the following minimum information",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The Contractor and contract number",
+              "content": "(Cover page).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The type of aircraft",
+              "content": "(Cover page).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Date / Revision number",
+              "content": "(Cover page).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Contractor and GGFR approval signatures",
+              "content": "(Signatures may be electronic) (Cover page).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "A continuous Record of Revisions page",
+              "content": "to document required updates and other necessary changes throughout the life of the contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "A Table of Contents",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Procedures Body",
+          "content": "Include procedures for all sections applicable to contracted operations from DCMA INST 8210-1D, Section 3, APPENDIX 3A and any other contract mandated Service guidance, instructions, or regulations. Refer to each applicable section of the Instruction (i.e., sections 3, 4, 5, 6, 7) for specific details and requirements to be addressed. Follow instructions in paragraph 3.8.2 if a Section or paragraph is not applicable to operations.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82431.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

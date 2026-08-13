@@ -1,0 +1,583 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82318B",
+  "slug": "di-sess-82318b",
+  "title": "Design Data and Calculations",
+  "summary": "Specifies the format and content requirements for the Design Data and Calculations package, which documents sonobuoy design, testing, safety, and hazardous materials information to verify equipment complies with contract requirements for cataloging, use, and disposal.",
+  "approval_date": "2024-06-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10481",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-038",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Design Data and Calculations package shall provide information on equipment to be cataloged, tested, used and disposed. The purpose of this data is to enable the Government to verify that the equipment being furnished and represented by this data is in accordance with the requirements of the contract. The data is to be applied to the contract when the Government requires evaluation of the design capabilities of the equipment furnished under the contract. The design data package shall be marked with the contract number.\n\nThis Data Item Description (DID) contains format and content and intended use information for the data deliverable resulting from the work task described in the contract.\n\nThis DID supersedes DI-SESS-82318A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82318A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor determined format for the Design Data and Calculations shall be readable by the Government. The report shall be viewed and searchable with Microsoft Office or Adobe products.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The content for Design Data and Calculations shall be as follows:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Design Data and Calculations Title Page",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Title",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Date of Submission and Revision Number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Contractor's Name and Address",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Contractor's Point of Contact(s), Phone Number(s), and Email(s)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Contract Number and CDRL",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Distribution Statement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Design Data and Calculations Table of Contents",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Theory of Operations",
+          "content": "consisting of a narrative describing the timing of events from setting the unit until the end of the operating life including timing diagrams of the Electronic Function Select (EFS) setting, water entry through deployment, operational life timing, response to commands, modes of operation including description of sensors, and scuttling. An illustration depicting the deployment sequence from water entry though full deployment, with each component of the fully deployed sonobuoy identified/labeled, shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Safety of operation",
+          "content": "consisting of a narrative describing the possible danger to any personnel or property if any device in the unit fails, and any testing or backup device that can identify and/or circumvent this problem.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Timing and programming",
+          "content": "consisting of a narrative describing the software contained in the unit, the names of all programs and subroutines, their commands, i/o, use and timing diagrams.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Complete schematic diagram",
+          "content": "including all interface diagrams and an IC cross reference from the contractor's part numbers to the vendor's part number.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Mechanical drawing package",
+          "content": "mechanical drawing for unit and packaging, including a single top level unit for government cataloging request, all manufacturer's drawings that show devices (and device locations) that are hazardous or contain hazardous material or their interfaces such as: Electrically Initiated Device (EID), Electro Explosive Device (EED), batteries, compressed gas bottles (including weight of compressed gas in grams), or any device that stores energy that will be released within the unit's life. The single top level unit drawing for cataloguing requests, as a minimum, shall include the Sonobuoy Launch Container (SLC) and bare sonobuoy (removed from the SLC) showing all markings and shall include all views necessary to show the marking details and locations. This drawing shall be clearly identified within the submitted Design Data and Calculations as the top level control drawing. Packaging drawings shall include the Sonobuoy Launch Container (SLC) and pallet, including compositions and subcomponents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Proper termination procedures",
+          "content": "including part numbers and part values to terminate the transmitter, lower electronics, acoustic sensor or any potentially hazardous device.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Overall functional block diagram",
+          "content": "with a minimum of 20 to 40 blocks depending on the unit's complexity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Contractor diagnostic downlink commands, conducted tests, and reports",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "A complete list of manufacturer diagnostic downlink commands",
+              "content": "A complete list of manufacturer diagnostic downlink commands with operational descriptions and command/data words in decimal values for each command.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "A complete list of, and reports for, all Contractor testing",
+              "content": "A complete list of, and reports for, all Contractor testing in support of all ECP's submitted since the configuration was qualified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "A complete list of, and reports for, all Contractor conducted tests",
+              "content": "A complete list of, and reports for, all Contractor conducted tests at Government provided facilities or test ranges (i.e. San Clemente Island, Crane Lab/Env, etc.).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Handling and disassembly procedure",
+          "content": "including a listing of all required Personal Protective Equipment (PPE), safety precautions, listing of potentially harmful electrical voltages and currents, materials or devices that contain harmful materials such as EID, EED, batteries, compressed gas (including gas volume and pressure at 70 degrees C), compressed springs, or explosives. Provide the vendor's name, part number and the specification under which the part was procured. The procedure shall include details for the safe inspection, handling, retrieval, and storage of recovered test sonobuoys in support contractor failure analysis efforts. The contractor may provide stand-alone recovery procedures for recovered test units, included as an attachment, and identified within the Design Data and Calculations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Lithium Battery Design Data and Calculations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "For lithium batteries",
+              "content": "the supply the contractor or vendor specifications, and electrical and mechanical drawings of the lithium battery area. Electrical drawings shall show all characteristics of the battery pack including manufacturer of cells, weight of lithium in grams, model of cells, number of cells in pack and method of connection, physical dimensions, open circuit voltage of the battery pack, ampere-hour rating of cells, type and rating of overcurrent protection circuit, simple schematics showing connection of the battery pack to unit electronics, and normal load placed on the battery during operation of the unit.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Mechanical drawings shall show the physical location",
+              "content": "Mechanical drawings shall show the physical location of the battery pack in the sonobuoy. The drawings shall include battery pack container, type of material, dimensions, wall thickness, pressure relief location and size of feed through, and location of overcurrent protection circuit wiring and switches of the battery pack.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "A description shall be provided of the sequence",
+              "content": "A description shall be provided of the sequence of events which will occur if a lithium battery or batteries vent. A detailed procedure for the safe removal of charged or discharged batteries with all safety precautions noted shall also be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.4",
+              "title": "All drawings or data that have changed",
+              "content": "All drawings or data that have changed from the last approved lithium battery Production Configuration Identification (PCI) shall be identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.5",
+              "title": "Provide documented evidence that all cells and batteries",
+              "content": "Provide documented evidence that all cells and batteries contained in the unit meet the requirements of 49 C.F.R. Section 173.185 and sub-section 38.3 of the UN Manual of Tests and Criteria.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Air Descent System Design Data and Calculations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "Supply air descent control system mechanical drawings",
+              "content": "Supply air descent control system mechanical drawings and air descent data. The drawings shall include the decelerator, activator, captivator, retainer, unit outer housing, and parts required to ultimately interconnect the preceding hardware to the unit outer housing. The data shall include unit weight, center of gravity along the major axis, and ballistic coefficient calculation in accordance with the specification. The reported weight and center of gravity shall be provided for the complete sonobuoy including the air descent system (ie. parachute, wind flap, lanyard, retainer, parachute bag, etc.) and the sonobuoy less the air descent system. Other special test data (e.g., static pull test data) shall be required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.2",
+              "title": "The contractor shall provide Finite Element Analysis",
+              "content": "The contractor shall provide Finite Element Analysis (FEA) to verify that the sonobuoy housing with all end caps, middle bulkheads and fasteners (no internal components) is capable of withstanding shear and bending loads corresponding to a sonobuoy becoming jammed in the tube while protruding from the aircraft without degradation of performance. This load case shall be represented by a 120 lb shear force applied to one end of the sonobuoy (resulting in a 4,200 in-lb bending moment at the root end). To fulfill this structural integrity requirement, the housing shall be shown to not develop any cracking or rupture under ultimate load (plastic deformation is acceptable). Alternatively, the contractor may request approval from the Government to perform physical testing of the sonobuoy to demonstrate structural integrity. A formal request shall be submitted to the TPOC for approval and identification of testing requirements. The following conditions and assumptions for the analysis are to be used:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.13.2.1",
+                  "title": "Sonobuoy housings shall be treated as",
+                  "content": "Sonobuoy housings shall be treated as cantilevered beams protruding out normal to the aircraft.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.2",
+                  "title": "Each end of the sonobuoy shall have",
+                  "content": "Each end of the sonobuoy shall have a reference point on the cylinder axis rigidly coupled to the edge of the cylinder (coupling representing the end caps).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.3",
+                  "title": "Clamp boundary conditions",
+                  "content": "\"Clamp\" boundary conditions (fixed in all six degrees of freedom) shall be applied to the reference point at the aircraft end.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.4",
+                  "title": "A point load perpendicular to the cylinder axis",
+                  "content": "A point load perpendicular to the cylinder axis shall be applied to the reference point at the end away from the aircraft.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.5",
+                  "title": "An ultimate load factor of 2.0",
+                  "content": "An ultimate load factor of 2.0 shall be applied to the limit load of 120 lbs (resulting in an applied load of 240 lbs).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.6",
+                  "title": "Housings shall be modeled with linear",
+                  "content": "Housings shall be modeled with linear, quadrilateral shell elements having normal part thicknesses.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.7",
+                  "title": "Housing cut-outs shall be included",
+                  "content": "Housing cut-outs shall be included in the analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.8",
+                  "title": "Load shall be applied in an orientation",
+                  "content": "Load shall be applied in an orientation that produces the worst-case stresses around cut-outs.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.9",
+                  "title": "Translational springs",
+                  "content": "Translational springs (k1,2,3=10E6 lbs/in) shall be used to represent Fasteners and Spot Welds.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.10",
+                  "title": "Frictionless contact shall be assumed",
+                  "content": "Frictionless contact shall be assumed between housings for designs that are constructed of two or more sections.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.11",
+                  "title": "Results shall be presented in the form",
+                  "content": "Results shall be presented in the form of minimum Ultimate Margin of Safety, which in this case is calculated: MS = ( [allowable]/[calculated value] ) - 1",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.2.12",
+                  "title": "Positive Margin of Safety",
+                  "content": "indicates sufficient strength.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.13.3",
+              "title": "Manufacturing processes shall be controlled",
+              "content": "Manufacturing processes shall be controlled using appropriate standards with non-destructive inspection methods and acceptance criteria appropriate for the component functional criticality and loading. Welding, if used, shall be in accordance with American Welding Society (AWS) specification(s) appropriate for the type of weld(s) employed. Type, grade, class and weld spacing requirements shall be listed on the assembly drawing.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.4",
+              "title": "Structural materials shall be procured",
+              "content": "Structural materials shall be procured in accordance with current industry or government material specification(s). As a minimum, material procurement specifications shall include chemical composition, mechanical properties, quality assurance, and dimensional requirements. Material procurement specifications shall be listed on applicable component or assembly drawings. Types, grades, classes, alloys, hardness and supplementary specification requirements shall be listed on the drawings to assure that chemical composition, mechanical properties, quality assurance, and dimensional requirements are recognized as material requirements and provided with material certifications.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.5",
+              "title": "System function critical components",
+              "content": "System function critical components not defined by a contractor drawing shall be procured in accordance with a government or industry standard. Fasteners, pins, rings, and seals are examples of components requiring procurement in accordance with government or industry standards.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.6",
+              "title": "Type, grade, class and weld spacing",
+              "content": "Type, grade, class and weld spacing requirements shall be listed on the assembly drawing.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.7",
+              "title": "All drawings or data that have changed",
+              "content": "All drawings or data that have changed from the last approved air descent control system PCI shall be identified.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "Suspension System Design Data and Calculations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.14.1",
+              "title": "For the suspension system",
+              "content": "supply mechanical drawings and data showing all characteristics of the unit suspension system. The suspension system consists of all components below the water surface.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.2",
+              "title": "The information shall include compliance type",
+              "content": "The information shall include compliance type, length, location, material and construction and drogue type, size, location, material and construction. The mechanical drawings shall locate all sensors and array dimensions complete with tolerances and upstretched lengths. Also, an estimate of the suspension system performance, based on the computer program FF2E shall be provided for each depth of the unit design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.14.3",
+              "title": "All drawings or data that have changed",
+              "content": "All drawings or data that have changed from the last approved suspension system PCI shall be identified.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.15",
+          "title": "Sub-Assembly Performance Design Data and Calculations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "In order to evaluate performance of the system",
+              "content": "provide sub-assembly performance limits prior to production and in accordance with the contract. Any parameters or tolerances provided shall be justified by analysis provided with the data showing the relationship to meeting the overall system performance. The following information shall be provided:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.15.1.1",
+                  "title": "Launch altitude required to achieve",
+                  "content": "Launch altitude required to achieve terminal velocity with contractor calculations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.1.2",
+                  "title": "At the maximum water entry velocity possible",
+                  "content": "the maximum time after water entry at which the unit will never return to the surface if the unit flotation system does not inflate.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.1.3",
+                  "title": "The power output and tolerance of",
+                  "content": "The power output and tolerance of the Very High Frequency (VHF) transmitter, measured when transmitting into a test load having an impedance electrically equivalent to the sonobuoy antenna and transmission line impedance. The test load shall be identified.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.1.4",
+                  "title": "For units equipped with a compass",
+                  "content": "the maximum compass accuracy error in degrees when tested in accordance with the contract identified Standard Operating Procedures (SOP); (General Test Procedure for Compass Tests).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Hazardous Materials Design Data and Calculations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.16.1",
+              "title": "Hazardous Materials Drawing package",
+              "content": "including a single top level unit for Government cataloging request as identified in paragraph 3.7; handling and disassembly safety precautions listing of potentially harmful materials or devices that contain harmful materials; all manufacturer's drawings that show devices (and device locations) that are hazardous or contain hazardous material or their interfaces, such as: EID, EED, batteries, compressed gas bottles (including gas volume and pressure at 70 degrees C); or any device that stores energy that will be released within the unit's life. A single sonobuoy cross-section illustration depicting and clearly identifying the location of all hazardous items (ie. EED/EIDs, CO2, Lithium Batteries, etc.) shall be included. The illustration will be used to support Government documentation required for Demilitarization (DEMIL) procedures, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.2",
+              "title": "Provide Safety Data Sheets (SDS)",
+              "content": "OSHA form 174 or equivalent form containing identical data items communicating to users the chemical, physical, and hazardous properties of their product. Safety Data Sheets are not required for all products used in the manufacture of the final product. Safety Data Sheets shall be provided for any item contained in the final product requires special disposal or handling during operational use or de-militarization operations. This form shall comply with the OSHA Hazard Communication Standard, Title 29 CFR 1910.1200. In addition to the instructions IAW NAVAIR Clause 5252.223-9501. SDS shall not include Contractor Proprietary markings.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.17",
+          "title": "Data list",
+          "content": "supply a complete data list that establishes the baseline configuration of the equipment delivered for test. Initial Engineering Change Proposal (ECP) performance evaluations shall also identify changes from the previous PCI.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "For Hazards of Electromagnetic Radiation to Ordnance (HERO) and Electro-Magnetic Interference (EMI) certification",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.18.1",
+              "title": "An upper unit schematic",
+              "content": "to include the EFS circuitry.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.2",
+              "title": "The contractor or vendor specification and description",
+              "content": "The contractor or vendor specification and description for all EIDs and EEDs, mechanical drawings of the EEDs and EIDs locations and associated electrical drawings. Bruceton Analysis Test Data shall be supplied for each EID and EED device showing the device characterization using the Franklin Research Center Bruceton Analysis Program. Electrical drawings shall show all characteristics of the EEDs and EIDs wiring from the power source. EID and EED characteristics to be provided (as available) shall include: All-Fire current/No-Fire current, ESD qualification test reports, level of ESD testing during manufacturing, EID current and power rating.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.3",
+              "title": "A description shall be provided of the sequence",
+              "content": "A description shall be provided of the sequence of events that occur if an EID or EED activates to include safety concerns and effects.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.4",
+              "title": "Type of shipping container and loading procedures",
+              "content": "Type of shipping container and loading procedures for intended aircraft, if special procedures are required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.5",
+              "title": "All drawings or data that have changed",
+              "content": "All drawings or data that have changed from the last approved HERO SAFE Certification PCI shall be identified. Data shall be provided in accordance with NAVSEAINST 8020.7. For designs which are similar to an existing HERO SAFE approved design, design records of the similar design shall be provided to support an analysis based on commonality.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.19",
+          "title": "For Electro Static Discharge certification",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.19.1",
+              "title": "The contractor or vendor specification and electrical",
+              "content": "The contractor or vendor specification and electrical and mechanical drawings of EIDs, EEDs, detonators, and explosives with a description and composition of each device including potential activation energy and released energy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.2",
+              "title": "Electrical drawings shall provide all characteristics",
+              "content": "Electrical drawings shall provide all characteristics of the EIDs and EEDs and their connections to the power source. EID and EED characteristics to be provided (as available) shall include: All-Fire current/No-Fire current, ESD qualification test reports, level of ESD testing during manufacturing, EID current and power rating.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.3",
+              "title": "A description shall be provided of the sequence",
+              "content": "A description shall be provided of the sequence of events that occur if a device fails for ESD to include safety concerns and effects.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.4",
+              "title": "Mechanical drawings shall show the physical location",
+              "content": "Mechanical drawings shall show the physical location of the EIDs, EEDs, detonators, explosives, the containers that protect these devices and the composition of the containers.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.5",
+              "title": "All drawings or data that has changed",
+              "content": "All drawings or data that has changed from the last approved ESD certification PCI shall be identified. For designs that are the same as, or similar to, an existing ESD approved design, certification correspondence and design records shall be provided to support a certification based on commonality.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82318B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

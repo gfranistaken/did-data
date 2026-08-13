@@ -1,0 +1,179 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82330",
+  "slug": "di-sess-82330",
+  "title": "Computational Aerodynamic Model (CAM)",
+  "summary": "Describes a digital Computational Aerodynamic Model (CAM) of an air vehicle system used for independent computational modeling of external aerodynamics, delivered per digital engineering processes.",
+  "approval_date": "2020-11-05",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10202",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFT)",
+  "project_number": "SESS-2020-049",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Digital engineering processes routinely result in the development of computational models. These models can be in a variety of formats depending on the computational processes used. This Data Item Description (DID) describes a digital model that will be used for computational aerodynamic analysis.\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Computational Aerodynamic Model (CAM) shall be in either native computer-aided design (CAD), Standard for the Exchange of Product (STEP), or Parasolid format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Computational Aerodynamic Model shall include a digital model of the air vehicle system to be used for independent computational modeling of the external aerodynamics. The Computational Aerodynamic Model shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Outer mold line (OML) of the entire air vehicle",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "The wing shall be in jig position",
+          "content": "The wing shall be in jig position accompanied by a wing structural finite element or modal model to define the surface deflection across the flight envelope as a function of aircraft weight and the exterior aerodynamic forces. If a finite element model (FEM) or modal model is not available, the surface deflection definition across the flight envelope as a function of aircraft weight and flight condition (Mach number and altitude) shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "All aerodynamic control surfaces with hinge line locations",
+          "content": "All aerodynamic control surfaces with hinge line locations, minimum and maximum deflections, and optimized control schedules across the flight envelope as a function of aircraft weight and flight conditions (Mach number and altitude).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "All deployable surfaces, such as flaps, slats, and spoilers",
+          "content": "All deployable surfaces, such as flaps, slats, and spoilers, and control schedules across the flight envelope.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Propulsion system installation definition",
+          "content": "which shall include the inlet, from the inlet lip to the first fan or compressor stage or aerodynamic interface plane, the nozzle or exhaust system from the last turbine stage to the nozzle exit, and the bypass duct from fan exit to bypass exit. If a mixed-core or bypass system is used, the model shall include the nozzle from the mixing plane to the nozzle exit. All auxiliary airflow inlets and exits, including internal geometry and mass flow rates across the flight envelope, shall be included. If a propeller is used, the propeller surface geometry and the range of propeller blade pitch and control schedule shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "A propulsion system digital performance model (or cycle deck)",
+          "content": "A propulsion system digital performance model (or cycle deck), including propellers, across the flight envelope as a function of engine speed and flight condition. The digital engine performance model output shall include the net thrust, gross thrust (installed and uninstalled), and installation effects; the mass flow rate at the inlet, aerodynamic interface plane, nozzle entrance (after last turbine stage), nozzle exit, bypass duct entrance and exit, and mixed stream plane (if applicable); total temperature, total pressure, and Mach after last turbine stage, nozzle exit, bypass duct entrance and exit, mixed-stream nozzle entrance; and the original equipment manufacturer (OEM) definition of force and moment accounting between propulsion system and external aerodynamics.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "All doors or bays to be opened in flight",
+          "content": "All doors or bays to be opened in flight, hinge line locations, and internal geometry definition.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Suspension equipment of all external stores",
+          "content": "Suspension equipment of all external stores, external store configuration, and OML definition.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Geometric definition of the landing gear, both compressed and extended",
+          "content": "The dynamics of linkages during retraction and extension shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "All alternate mission equipment",
+          "content": "All alternate mission equipment, such as antennas, pods, etc.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Chaff and flare dispensers",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Reference quantities and coordinate system",
+          "content": "which shall be comprised of:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "The origin of the model coordinate system",
+              "content": "which shall be located at the origin of the modeled air vehicle (i.e., the model origin shall be located at Fuselage Station 0, Buttock Line 0, Water Line 0, as that location is defined for the actual aircraft).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Coordinate system for each geometric component",
+              "content": "Coordinate system for each geometric component, as well as any corresponding Fuselage Station, Water Line, Buttock Line, Wing Station, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "Reference length(s), area(s), and moment reference point location(s)",
+              "content": "Reference length(s), area(s), and moment reference point location(s) for aerodynamic performance coefficients.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.4",
+              "title": "Engineering units for all quantities",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82330.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

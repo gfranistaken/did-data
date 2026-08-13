@@ -1,0 +1,418 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82368",
+  "slug": "di-sess-82368",
+  "title": "Simulated Tactical Environment Algorithm Descriptions (STEAD)",
+  "summary": "This report provides a description of the model algorithms used to generate the performance of entities within a tactical simulated environment.",
+  "approval_date": "2022-01-05",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10287",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2022-002",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This report provides a description of the model algorithms used to generate the performance of entities within a tactical simulated environment.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "This DID contains the format and content preparation instructions for the data product generated.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Record of Changes",
+          "content": "Identify the version, release date, and other relevant management and configuration control information associated with the current version of the document. Include a change history, highlighting changes from version to version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Acronym List",
+          "content": "Present the definitions of acronyms used in the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Purpose",
+          "content": "Explain the overall purpose of the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "System Overview",
+          "content": "Present a general description of the system's operational and functional capability. An example breakdown for a simulated tactical environment may include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "An overview of the environment",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "An overview of the scenario as a whole",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "An overview of the players and their objects",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Organization of Subsections",
+          "content": "Major subsections of this report and the algorithms contained shall be organized as listed below. Each algorithm within the following subsections shall include the information defined in section 3.7 and its subsections.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Player Characteristics",
+              "content": "This section shall describe the descriptive data relevant to player entities. An example breakdown for this section may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Radar cross section",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Infrared (IR) signature",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Target presented area",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Initial player object state vector",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.5",
+                  "title": "Thrust, mass, and aerodynamic coefficients",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Motion Object Functionality",
+              "content": "This section shall describe how the motion model works for each player class. An example breakdown for this section may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Trajectory-based motion modeling",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "Surface and ground motion",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "Dead player motion",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Sensor Objects",
+              "content": "This section shall describe the algorithms required to obtain simulated sensor performance, including the effects of the medium in which the sensor is operating. An example breakdown for this section may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Sensor object overview",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "Sensor control routine",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "Sensor scan routine",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.4",
+                  "title": "Sensor detection routine",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.5",
+                  "title": "Sensor processing routine",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.6",
+                  "title": "Specific sensor detection algorithms",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Weapon Effects",
+              "content": "This section shall describe the interactions of a weapon with a target, how probability of kill is determined based on the weapon, the target and its presented area, and the point of closest approach or miss distance. An example breakdown for this section may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.4.1",
+                  "title": "Miss distance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.2",
+                  "title": "Explosive weapons",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.3",
+                  "title": "Gunfire lethality",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.5",
+              "title": "Countermeasures",
+              "content": "This section shall describe countermeasure functionality and algorithms used to model the effects of countermeasures on seekers. An example breakdown for this section may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.5.1",
+                  "title": "IR jammers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.2",
+                  "title": "Chaffs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.3",
+                  "title": "Flares",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.6",
+              "title": "Behavioral Role Models",
+              "content": "This section shall describe the role models that determine the behavior of player entities that are in motion, controlling assets, or using assets. Examples of assets include sensors, countermeasures, weapons, etc. Each role model description shall include situation assessment, response selection, and command generation for that role model. An example breakdown for this section may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.6.1",
+                  "title": "Air player role model",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.2",
+                  "title": "Surface/ground player role model",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.3",
+                  "title": "Air defense network functionality for ground/surface role model",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.4",
+                  "title": "Early Warning/Electronic Warfare (EW) site role model",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.7",
+              "title": "Other Subsections as Required",
+              "content": "This section shall contain all descriptions and algorithms required for the simulated training environment that are not covered in one of the above subsections.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Model Algorithm Description and Definition",
+          "content": "Each modeling algorithm shall contain the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Name of the Algorithm",
+              "content": "Each algorithm shall have a unique title or name with version control.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Abstract",
+              "content": "Present a brief overview and technical description of the algorithm.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Methodology",
+              "content": "Describe the methodology of the algorithm in detail. Describe and explain the parameters, equations, and coordinate systems used for the computations. Present geometric/graphic illustrations, flow diagrams, force diagrams, and references that help improve understanding of the algorithm. Any equations, symbols, and general nomenclature shall follow the nomenclature standards used in American textbooks and professional journals.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Assumptions",
+              "content": "Describe the assumptions made which the algorithm is based on.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Limitations",
+              "content": "Describe the limitations for the algorithm and the operational impacts of these limitations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Interfaces",
+              "content": "Describe how the algorithm interfaces with other algorithms or users for input and output.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Analysis Results",
+              "content": "Describe the expected results of all quantitative or qualitative analyses that must be performed.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "References",
+          "content": "Identify all the citations for each reference document in the standard format (author(s), year, title, title of journal, volume number, page number, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82368.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82334",
+  "slug": "di-sess-82334",
+  "title": "Built-In-Test Measurement Summary (BMS)",
+  "summary": "Documents the measurement requirements of a system, subsystem, or equipment and the accuracy of the installed BIT equipment and sensors used to assure traceability of all measurements through an unbroken chain of comparisons.",
+  "approval_date": "2020-12-21",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10212",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "SH",
+  "project_number": "SESS-2020-024",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Built-In-Test (BIT) Measurement Summary (BMS) provides the Government the measurement requirements of the system, subsystem, or equipment, as well as the accuracy of the BIT equipment and sensors that are installed to assure traceability of all measurements through an unbroken chain of comparisons.  The summary identifies and validates the adequacy of the selected BIT equipment and sensors.  Where the BIT processing software is used to improve the accuracy of Pass or Fail decisions, the details of that algorithm, as well as its effectiveness, are documented in this summary.\n\na. The BMS Data Item Description (DID) satisfies the requirements of the following instructions:\n\n1. Department of Defense Instruction (DoDI) 5000.02 Operation of the Defense Acquisition System\nhttps://www.esd.whs.mil/DD/\n\n2. Naval Air Systems Command Instruction (NAVAIRINST) 13640.1 Naval Aviation Metrology and Calibration Program\nhttps://myteam.navair.navy.mil/km/71/Directives/Directives_Instructions/\n\nb. This DID contains the format, content, and intended use information for the data deliverable and is applicable to the acquisition of all military systems, subsystems, and equipment.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Department of Defense Instruction (DoDI) 5000.02 Operation of the Defense Acquisition System",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "Naval Air Systems Command Instruction (NAVAIRINST) 13640.1 Naval Aviation Metrology and Calibration Program",
+      "url": "https://myteam.navair.navy.mil/km/71/Directives/Directives_Instructions/"
+    },
+    {
+      "label": "ASME Y14.38, Abbreviations and Acronyms for Use on Drawings and Related Documents",
+      "url": "https://www.asme.org/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.  Sample format BMS template is provided.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The BMS shall be structured as follows",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Cover page",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "Revision status",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "Introduction",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "Table of contents",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.5",
+              "title": "List of abbreviations, symbols, and acronyms",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.6",
+              "title": "Summary Data Table",
+              "content": "The Summary Data Table shall be a single, in-line spreadsheet or, if the data is split into multiple pages as in the sample BMS template, a Content ID column shall be used to correlate the associated data.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The BMS shall detail the measurement requirements of the system, subsystem, or equipment, as well as the accuracy of the BIT equipment and sensors that are installed to assure traceability of all measurements through an unbroken chain of comparisons.  Where the BIT processing software is used to improve the accuracy of Pass or Fail decisions, the details of that algorithm, as well as its effectiveness, shall be documented in the summary.  The BMS shall include the following content:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Identify all operational system, subsystem and equipment",
+          "content": "Identify all operational system, subsystem and equipment BIT measurement requirements and show traceability to the discrete component performing the measurement.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Objective evidence that all supporting BIT equipment",
+          "content": "Objective evidence that all supporting BIT equipment and sensors that are installed in the system, subsystem, or equipment are adequate to support the BIT program.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Objective evidence that the BIT Processing algorithms",
+          "content": "Objective evidence that the BIT Processing algorithms are adequate to support the BIT program.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Administrative information",
+          "content": "Classified information shall not be listed in the BMS.  Classified parameters and information shall be addressed in a classified supplement or appendix.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Cover page",
+          "content": "The cover page shall include descriptive information such as system or program name, contract number, contractor's company name, current revision, date of submittal, Contract Data Requirements List (CDRL) number, etc.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Revision status",
+          "content": "This section shall be included in the BMS.  The initial BMS submittal shall specify \"original\" or \"-\" on the revision status page(s).  Subsequent BMS revision numbers shall be recorded on the cover page.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Introduction",
+          "content": "This section shall contain general information, remarks, or other information about the system that the preparer feels would be beneficial.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Table of contents",
+          "content": "This table shall reflect the contents and page location numbers of each structural part of the BMS identified in 2.1 (above).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "List of abbreviations, symbols, and acronyms",
+          "content": "This list shall include all abbreviations, symbols, and acronyms used in the BMS with their meanings.  Abbreviations shall be in accordance with The American Society of Mechanical Engineers (ASME) Y14.38, Abbreviations and Acronyms for Use on Drawings and Related Documents, where applicable.  https://www.asme.org/",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Summary Data Table",
+          "content": "This section is an inline presentation of system, subsystem, etc., the required measurement, failure mode information, the measurement devices employed, the BIT processing components, and BIT algorithm information used in the implementation of BIT.  The summary data shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Summary Data Table Header",
+              "content": "This shall precede the spreadsheet data and shall list the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.1.1",
+                  "title": "Program Name",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.2",
+                  "title": "System Model and Type Designation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.3",
+                  "title": "Date",
+                  "content": "(If Summary Data Table date differs from overall BMS date.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.1.4",
+                  "title": "Version Number",
+                  "content": "(If a Summary Data Table version number is assigned that differs from overall BMS revision.)",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.10.2",
+              "title": "Content Identification (ID)",
+              "content": "This column is sequentially numbered starting at number \"1\" and shall provide a method of reference to uniquely identify the measurement or test that is being discussed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Operational Equipment",
+              "content": "These columns shall list the system, subsystem, Weapon Replaceable Assembly (WRA), or Line Replaceable Unit (LRU) being tested by BIT, along with the Reference Designation (REF DES) of the item being tested.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Measurement",
+              "content": "These columns shall list the BIT measurement requirements.  When BIT is performing a qualitative check (i.e., no quantitative measurement is taken), \"QUAL\" shall be in the \"Value Range or Value with Tolerance\" column.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "Failure Modes, Effects, and Criticality Analysis (FMECA)",
+              "content": "These columns shall list the FMECA Failure Mode(s) that the measurement or test is attempting to identify.  These columns shall also identify whether the item has been classified as a Critical Safety Item (CSI).  A Critical Safety Item (CSI) is a part, assembly or support equipment whose failure could cause loss of life, permanent disability or major injury, loss of a system or significant equipment damage.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.6",
+              "title": "Measurement Device",
+              "content": "These columns shall uniquely identify the device performing the quantitative measurement and its measurement range and tolerance (accuracy).  For the purposes of this deliverable, Test Accuracy Ratio (TAR) shall be defined as the ratio of the Measurement accuracy tolerance to the Measurement Device tolerance and shall be computed as follows:\n\nTAR = Measurement_Tolerance / Measurement_Device_Tolerance\n\nIn the case of qualitative checks, these columns shall not be populated.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.7",
+              "title": "BIT Processing Component (Level 1)",
+              "content": "These columns shall identify the first logical device in the BIT hardware chain, which analyzes the measured value and provides status up the chain to the BIT Processor in order to facilitate the BIT determination of whether or not the Operational Equipment has passed or failed a given test.  For qualitative tests, this component shall be the lowest level component that is performing the qualitative check.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.8",
+              "title": "BIT Processing Component (Level 2, 3, etc.)",
+              "content": "These columns shall identify the next logical device in the BIT hardware chain, which analyzes the measured value and provides status up the chain to the BIT Processor in order to facilitate the BIT determination of whether or not the Operational Equipment has passed or failed a given test.  For qualitative tests, this component shall be the next level component that is performing the qualitative check.  (Note: There may be more than 2 levels of logical components between the Measurement Device and the BIT Processor.  In these cases, additional columns (Level 2, 3, etc.) shall be added to address subsequent levels and show an unbroken chain of devices or components from the measurement or test performed all the way to the BIT Processor.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.9",
+              "title": "BIT Processing Algorithm",
+              "content": "This section shall uniquely identify the test being performed, the BIT states and modes in which the test is performed (an individual test may be performed in multiple states and modes), if any filtering is applied, and an explanation of the filtering and post processing being performed, to include discussions related to how the algorithm improves pass or fail determinations and the algorithm's effectivity.  Lengthy explanations and discussions that cannot fit into the \"Processing Comments\" column shall be included in an appendix to the BMS. When these explanations and discussion are in an appendix, the \"Processing Comments\" column shall uniquely reference the location of this information.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82334.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,572 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82380",
+  "slug": "di-sess-82380",
+  "title": "Model Based Systems Engineering (MBSE) Development Plan (MDP)",
+  "summary": "Describes the contractor's technical approach and plan for the conduct, management, and control of the integrated Model Based Systems Engineering (MBSE) effort, reflecting scope, purpose, and life cycle phases of the program.",
+  "approval_date": "2022-03-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10309",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19",
+  "project_number": "SESS-2022-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Model Based Systems Engineering (MBSE) Development Plan (MDP) describes the contractor's technical approach and proposed plan for the conduct, management, and control of the integrated MBSE effort.  It reflects the scope, purpose, and life cycle phase(s) of the program.  The MDP provides insight into: the contractor's processes to be followed for model development and maintenance; the tools to be used; the framework and methodology to be used; the approach to be followed for each activity; the reporting and review artifacts; the linkage to lower level designs and design artifacts; and the project schedule, resources, and progress monitoring and tracking.  It supports the system engineering activities; therefore, a program's MDP is expected to be consistent with its Systems Engineering Management Plan (SEMP).  Additional guidance on the content of the MDP is available in Aerospace Technical Report, ATR-2020-02088, Guidance for Model Based Systems Engineering Development Plan (Copies of the report can be obtained from: SSC/ZAE, 483 N. Aviation Blvd, El Segundo, CA 90245-2808 or via e-mail to: SSC/ZAE Workflow (SMC.ZAE.Workflow@us.af.mil).  Distribution is authorized to U.S. Government agencies and their contractors; Administrative or Operational Use.)\n\nThis DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "ISO/IEC/IEEE 42020, Architecture Processes",
+      "url": "https://standards.ieee.org"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The MDP shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The MDP shall address all MBSE modeling topics and topics where modeling can be used for the benefit of the government in the system development.  The MDP shall be consistent with the government Systems Engineering Plan (SEP) and the contractor's SEMP, if available.  (Refer to DI-SESS-81785, Systems Engineering Management Plan (SEMP) for guidance.)  The MDP shall include:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Contractor's MBSE Approach",
+          "content": "This subsection shall describe the contractor's planned engineering approach to meeting the program's contract, objectives, and overall technical and management approach for the model development effort, including new development, modification, reuse, integration, and all other activities resulting in model work products.  The MDP shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Purpose",
+              "content": "This subsection shall describe the purpose of the MDP for conducting an MBSE model development effort.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Scope and Objectives",
+              "content": "This subsection shall describe the high-level scope and objectives for the MDP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Assumptions and Constraints",
+              "content": "This subsection shall describe the assumptions and constraints of the model development, such as: schedule, budget, tools, framework, or technology.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Plan Evolution",
+              "content": "This subsection shall describe the approach to updating the MDP and keeping it current with other program acquisition documents, such as the SEMP.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "MBSE Roles and Responsibilities",
+          "content": "This subsection shall identify and describe the MBSE-specific roles and responsibilities of model stakeholders and model development team members.  The stakeholders shall be shown in three groups: Customer, Organizational, and Internal, as follows:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Customer Stakeholders",
+              "content": "Customers shall include direct customers, customer representatives, and customer support personnel.  Example customer stakeholders are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Program Manager",
+                  "content": "(Responsible for cost, schedule, and technical performance of the program requiring a model to be developed.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Program Chief Engineer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Program Systems Engineering and Technical Assistance (SETA), Program Systems Engineering and Integration (SE&I)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Program Federally Funded Research and Development Center (FFRDC)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Organizational Stakeholders",
+              "content": "Organizational stakeholders shall include those who are not part of the model development team, but who are within the same organization or company (or contractor team).  Example organizational stakeholders are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.2.1",
+                  "title": "Modeling Manager",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.2",
+                  "title": "Chief Engineer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.3",
+                  "title": "Chief Architect",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.4",
+                  "title": "Systems Engineering Manager",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.5",
+                  "title": "Integrated Product Team Leaders",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.6",
+                  "title": "Configuration Manager",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.7",
+                  "title": "Data Manager",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.8",
+                  "title": "Project Manager",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.9",
+                  "title": "Program Manager",
+                  "content": "(Responsible for all aspects of the program requiring a model to be developed. Company interface to the customer program manager.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.10",
+                  "title": "Contracts Representative",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.11",
+                  "title": "Chief Information Officer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.2.12",
+                  "title": "Chief Data Officer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.3",
+              "title": "Internal Stakeholders",
+              "content": "Internal stakeholders shall include members of the model development team.  The model development team shall be identified including their relationship to the organizational stakeholders in 3.2.2 (e.g., Chief Engineer, Chief Architect, Systems Engineering Manager, or Modeling Manager).  Example internal stakeholders are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.3.1",
+                  "title": "Model Developer(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.2",
+                  "title": "Model Architect",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.3",
+                  "title": "Model Tool Developer(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.4",
+                  "title": "Model Tool Administrator(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.3.5",
+                  "title": "Integrated Digital Environment (IDE) Developer(s) and Maintainer(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "MBSE Processes",
+          "content": "This subsection shall describe the modeling framework, methodology, and development process to be used to perform various model development activities, such as: defining requirements, establishing model structure and environment, implementing, integrating, verifying and validating, and releasing the model and model work products.  The MDP shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Technical Baseline",
+              "content": "This subsection shall describe the plan and approach for capturing and establishing the engineering technical baseline of the system as a MBSE model.  It shall identify and describe the technical baseline information that the modeling development effort depends on and a plan for updating and synchronizing the technical baseline information throughout the acquisition lifecycle, including for technical reviews.  Examples of technical baseline information are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Concept of Operations (CONOPs) Document",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Capability Development Document (CDD)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Technical Requirements Document (TRD)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "Interface Control Document (ICD)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "System Segment or Element Requirements Document",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Statement of Work (SOW)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "Statement of Objectives (SOO)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Technical Proposal (negotiated)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Model Objectives and Stakeholder Requirements",
+              "content": "This subsection shall describe the plan and approach for capturing the modeling objectives and stakeholder requirements.  Examples of model objectives and stakeholder requirements are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "The model will address the following concerns",
+                  "content": "1) concern A; 2) concern B; 3) concern C; etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "The model will answer the following questions",
+                  "content": "1) question A; 2) question B; 3) question C; etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "As stakeholder one, I want to see",
+                  "content": "the requirements traceability between the CDD and the TRD for completeness and consistency, where all lower level requirements have a parent system requirement and there are no orphan requirements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "As stakeholder two, I want to know",
+                  "content": "the allocation of system requirements into system and subsystem architecture components for completeness.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.5",
+                  "title": "As stakeholder three, I want to address",
+                  "content": "interface concerns between system A and system B.  The interface concerns to be addressed are: message format, message error handling, and interface pin.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Model Framework and Methodology",
+              "content": "This subsection shall describe the modeling framework and methodology to be used.  Modeling profiles to be used in model construction shall be identified, as well.  Examples of modeling frameworks and methodologies are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Defense Architecture Frameworks",
+                  "content": "such as: United States (US) Department of Defense Architecture Framework (DODAF), United Kingdom (UK) Ministry of Defense Architecture Framework (MODAF), North Atlantic Treaty Organization (NATO) Architecture Framework (NAF)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Unified Architecture Framework (UAF)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Unified Architecture Framework Profile (UAFP) or Unified Architecture Framework Modeling Language (UAFML) for modeling architectures consistent with DoDAF, MODAF, NAF, or UAF",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "Unified Profile for DODAF and MODAF (UPDM) for modeling architectures consistent with DoDAF or MODAF",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "The Open Group Architecture Framework (TOGAF)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.6",
+                  "title": "Object Oriented Systems Engineering Methodology (OOSEM)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.7",
+                  "title": "MagicGrid Framework for Systems Modeling Language (SysML) by NoMagic",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.8",
+                  "title": "Custom Architectural Framework (AF) based on SysML, explicitly or implicitly",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "MBSE Style Guide",
+              "content": "This subsection shall describe the modeling style guide to be followed.  The MBSE style guide shall provide a set of rules for the model developers to follow for standardized definitions and looks of the model elements, model views, and generated documents.  Examples of content to be included in the MBSE style guide are:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.4.1",
+                  "title": "General style guidelines for model organization, naming convention, style and layout, documentation, and use of relationships",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.2",
+                  "title": "Model view specifics guidelines for modeling requirements, structures, behaviors, and interfaces",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.4.3",
+                  "title": "Any modeling patterns to use",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.5",
+              "title": "Model Development Environment",
+              "content": "This subsection shall describe the approach to be followed for establishing, controlling, and maintaining a MBSE model development environment.  A model development environment is a collection of tools to be used by the model developer to build model elements, views, and other work products.  In general, the model development environment includes modeling tool, modeling language, configuration management tool, and other non-MBSE tools used to support the MBSE development effort (e.g., digital collaboration tools, workflows, file management schema, and configuration control processes).  Versions of tools, plug-ins, macros, scripts, and libraries being used shall be included.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Model Development Activities",
+              "content": "This subsection shall describe the plan and approach for performing the MBSE development activities, which shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "Define Model Requirements",
+                  "content": "This subsection shall describe the process, steps, and procedures the contractor follows for analyzing, defining, and capturing the model requirements.  The model requirement activity starts with analyzing and capturing the stakeholders' concerns into stakeholders' objectives and requirements, with acceptance criteria.  This activity defines the process for decomposing the stakeholders' objectives and requirements into the model requirements that are non-compound and verifiable.  This subsection shall also include definition of the fidelity of the models needed to meet the stakeholders' acceptance criteria.  It shall also describe how all model requirements are to be verified, validated, and traced to the model elements, views, and other model work products.  For example, this subsection includes processes, such as: the review and approval of model requirements by the stakeholders who provided their modeling objectives and requirements and, for iterative model development, determination and prioritization of the model requirements incrementally at each iteration or release.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.2",
+                  "title": "Establish Model Structure and Environment",
+                  "content": "This subsection shall describe the process, steps, and procedures the contractor follows for analyzing the modeling needs, organizing the model structure, and establishing model boundaries and constraints.  For example, this subsection includes processes, such as: selection of modeling tools and definition of the model style guides, establishment of the infrastructure and foundation for the model developers, and, for iterative model development, analysis of model needs and requirements, and updates to the model structure and style guide at each iteration or release.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.3",
+                  "title": "Implement Model",
+                  "content": "This subsection shall describe the processes, steps, and procedures the contractor follows to build the model elements, views, and other required model work products to satisfy the model requirements within the constraints identified by the model structure, environment, and style guide.  This subsection shall identify the model work products to be created during this phase of activity and describe the internal verification process to ensure that the implemented models satisfy the model requirements.  For example, the description of internal verification processes includes: peer review, automated scripts, and, for iterative model development, models that are built incrementally at each iteration.  Activities and tasks for implementing models of the architecture are further described in International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC) / Institute of Electrical and Electronics Engineers (IEEE) 42020, Architecture Processes (Copies of ISO/IEC/IEEE 42020 can be obtained at: https://standards.ieee.org).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.4",
+                  "title": "Verify and Validate Model",
+                  "content": "This subsection shall describe the processes, steps, and procedures the contractor follows to formally verify and validate the model requirements.  This subsection shall also identify model work products to be created during this activity to show results of the verification and validation process.  For example, the verification activities ensure that the created model elements, views, and other model work products fulfill the model requirements.  Model verification is often performed by an independent person or team outside of the MBSE development team.  The validation activities ensure that the model views and other model work products meet the stakeholder objectives and requirements and address their concerns.  Model validation is performed by the stakeholders outside of the MBSE development team.  For iterative model development, verification and validation can be executed incrementally at each iteration or release.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.5",
+                  "title": "Release Model",
+                  "content": "This subsection shall describe the plan and approach the contractor follows for configuration management and release of the model project files, model views, and other model work products, including reports and documentation. This subsection shall identify the expected contents of each model release, when the release will occur, and who will perform the release.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.6",
+                  "title": "Update Model",
+                  "content": "This subsection shall describe the plan and approach the contractor follows for updating the model to incorporate changes, including such items as: changes in model requirements, model structure, model environment, model style guide, and technical baseline documents.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.7",
+                  "title": "Model Library",
+                  "content": "This subsection shall identify and describe the plan and approach the contractor follows for reusing the reference model libraries specified in the contract, if any.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.8",
+                  "title": "External Model Integration",
+                  "content": "This subsection shall identify and describe the plan and approach the contractor follows for integrating the model with external models (e.g., government-provided models, models provided by other contractors) and tools.  This subsection shall identify external models and tools for which integration is to be performed and describe the integration approach for each model and tool.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Notes",
+          "content": "This section shall contain any general information that aids in the understanding of the MDP (e.g., background information, glossary, rationale).  This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in the MDP and a list of any terms and definitions needed to understand the MDP.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82380.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

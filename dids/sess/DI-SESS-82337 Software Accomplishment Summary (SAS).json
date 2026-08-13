@@ -1,0 +1,178 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82337",
+  "slug": "di-sess-82337",
+  "title": "Software Accomplishment Summary (SAS)",
+  "summary": "Describes the methodology and evidence used for Government certification of software compliance with civil performance standards under RTCA/DO-178C, summarizing the compliance effort for software.",
+  "approval_date": "2021-03-29",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10228",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2021-007",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Accomplishment Summary (SAS) document describes the methodology used and the evidence created for the Government certification of software compliance within similar civil performance standards for RTCA/DO-178C \"Software Considerations in Airborne Systems and Equipment\". The SAS is intended to provide the Government with a summary of the compliance effort for software.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract statement of work (SOW).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SAS shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The SAS shall be compliant with the guidance in RTCA DO-178C 11.20 as documented in 3.1. The SAS shall identify:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Any deviations from the approved plans and processes",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Configuration of the approved software",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Any open or deferred priority 1, 2, and 3 Problem Trouble Reports (PTR)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "SAS",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "System overview",
+          "content": "This section shall provide an overview of the system, including a description of its functions and their allocation to hardware and software, the architecture, the processor(s) used, the hardware/software interfaces, and safety features. This section shall also describe any differences from the system overview in the Plan for Software Aspects of Certification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Software overview",
+          "content": "This section shall briefly describe the software functions with emphasis on the safety and partitioning concepts used, and shall explain differences from the software overview proposed in the Plan for Software Aspects of Certification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Certification considerations",
+          "content": "This section shall restate the certification considerations described in the Plan for Software Aspects of Certification and describe any differences.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Software life cycle",
+          "content": "This section shall summarize the actual software life cycle(s) and explain differences from the software life cycle and software life cycle processes proposed in the PSAC.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Software life cycle data",
+          "content": "This section shall describe any differences from the proposals made in the Plan for Software Aspects of Certification for the life cycle data produced, the relationship of the data to each other and to other data defining the system, and the means by which the data was made available to the certification authority. This section shall explicitly reference, by configuration identifiers and version, the applicable Software Configuration Index and Software Life Cycle Configuration Index. Detailed information regarding configuration identifiers and specific version of software life cycle data shall be provided in the Software Configuration Index.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Additional considerations",
+          "content": "This section shall summarize any specific considerations that warrant the attention of the certification authority. It explains any differences from the proposals contained in the Plan for Software Aspects of Certification regarding such considerations. Reference should be made to data items applicable to these matters, such as issue papers or special conditions.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Supplier oversight",
+          "content": "This section shall describe how supplier processes and outputs comply with plans and standards.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Software identification",
+          "content": "The section shall identify the software configuration by part number and version.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Software characteristics",
+          "content": "The section shall state the Executable Object Code size, timing margins, including worst-case execution time, memory margins, resource limitations, and the means used for measuring each characteristic.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Change history",
+          "content": "If applicable, this section shall include a summary of software changes with attention to changes made due to failures affecting safety, and identify and changes from and improvements, to the software life cycle processes since the previous certification.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Software status",
+          "content": "This section shall contain a summary of Problem Reports unresolved at the time of certification. The Problem Report summary shall include a description of each problem and any associated errors, functional limitations, operational restrictions, potential adverse effect(s) on safety together with a justification for allowing the Problem Report to remain open, and details of any mitigating action that has been or needs to be carried out.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "Compliance statement",
+          "content": "This section shall include a statement of compliance with the SAS and a summary of the methods used to demonstrate compliance with criteria specified in the software plans. This section shall also address additional rulings made by the certification authority and any deviations from the software plans, standards, and this document not covered elsewhere.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82337.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

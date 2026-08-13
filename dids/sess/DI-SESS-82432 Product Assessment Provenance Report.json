@@ -1,0 +1,282 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82432",
+  "slug": "di-sess-82432",
+  "title": "Product Assessment Provenance Report",
+  "summary": "Documents the vendor's progress toward contract objectives by evaluating hardware and software components of equipment and identifying risks related to obsolescence, vulnerabilities, non-conformances, counterfeits, and foreign adversarial alerts.",
+  "approval_date": "2024-01-19",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10451",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Product Assessment Provenance Report documents the status of the vendor's effort towards achieving contract objectives. It evaluates and illuminates the hardware and software components of specific equipment. The report will provide visibility on potential risks related to granular product components based on obsolescence, vulnerability, non-conformances, counterfeit alerts, and foreign adversarial alerts.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the deliverable resulting from the work task described in the contract.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Product Assessment Provenance Report shall be in Adobe Portable Document Format (PDF).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Product Assessment Provenance Report shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Overall Provenance Score",
+          "content": "that is based on the following categories:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Manufacturer foreign presence",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Hardware component alerts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Software Component alerts (CVE)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Fourth Party Foreign Presence",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Related Entity Discovery Alert (Informational and is not in overall score)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Executive Summary",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Background",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Assessment Results Overview",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Recommendations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Product Description",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Product Image",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Product FIPS Compliance",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "DOD Approved Product List",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "NIAP Compliance",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Manufacturer Description",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "A table that shows information in rows for manufacturer headquarters, manufacturing locations, foreign owners, mergers and acquisition, physical location, corporate families, and cyber presence",
+              "content": "The table shall also show corresponding column information for level of risk.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Bill of Materials",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "HBOM",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "SBOM",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Hardware Component Alerts",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Software Component Alerts (CVE)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Fourth Parties",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Hardware Fourth Parties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Software Fourth Parties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "A table that shows information in rows for company, headquarters, foreign owners, mergers & acquisitions, physical presence, corporate families, cyber presence, manufacturing, and Foreign Presence level",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Related Entity Discovery",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "A table that shows information in rows for manufacturer, banned company, relationship, relationship alerts, evidence details and URL, evidence pictures",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.14",
+          "title": "Appendix",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Scoring Rubric",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82432.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

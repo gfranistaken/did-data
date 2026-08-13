@@ -1,0 +1,129 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82328",
+  "slug": "di-sess-82328",
+  "title": "Computational Aerodynamics Analysis Results",
+  "summary": "Defines the format and content requirements for computational aerodynamics analysis results, including models, methods, and assumptions, to support third-party assessment or verification.",
+  "approval_date": "2020-10-20",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10198",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFT)",
+  "project_number": "SESS-2020-050",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Computational aerodynamics (CA) analyses use digital computers to model airflow about an air vehicle to obtain estimates of overall forces and moments, such as lift and drag, of an air vehicle (or a component of an air vehicle) or a more detailed knowledge of the air flow properties (including pressures, temperatures, velocities, etc.), or both. Computational aerodynamics analyses are complementary to theoretical analyses and experimental tests, such as wind-tunnel and flight tests.\nCA methods include low-fidelity semi-empirical or engineering methods (using resources such as digital DATCOM), potential-flow methods (including panel methods and vortex-lattice methods), and high-fidelity computational fluid dynamics (CFD), which are numerical approximations to the partial-differential equations that describe fluid motion, such as the full-potential equations or Euler and Navier-Stokes equations. Semi-empirical engineering methods typically result in estimates of overall forces and moments, require few computational resources but are the least accurate, and are usually used for conceptual design or trade studies. Potential flow methods, which are limited to inviscid and steady flows, but which may also include some viscous effect approximations through a separate boundary layer analysis, result in surface pressures and integrated forces and moments, and are usually used for more detailed analysis and design. CFD methods may require the use of high-performance computing resources and result in highly detailed flow results, including forces and moments of the air vehicle and all modeled components, as well as all flow variables, such as pressures, temperatures, and velocities throughout the flow field. CFD analyses can be highly accurate. The accuracy of a CA analysis requires an understanding of the assumptions inherent in the different models, as well as potential sources of error, and requires the appropriate use of the computational model and analysis software.\nThis data item description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The CA analysis results shall be either in electronic document format, such as portable document format (PDF), the schema required by the acquirer's digital engineering environment, or the supplier's preferred format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The CA analysis results shall include details of the models, methods, assumptions, and boundary conditions used for a third-party assessment of the accuracy of the analysis results or a third-party verification of the results through additional CA analyses, or both. The details of the CA analysis shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Details of the geometry model, its source",
+          "content": "Details of the geometry model, its source (e.g., laser scanned aircraft), and any simplifying assumptions used to reduce complexity (e.g., removal of engine nacelles) or known limitations of the applicability of the model for the present analysis. Complete details of any changes to configurations, such as wing deflections due to aeroelastic effects, flap and slat deflections, variations in the vehicle geometry, etc., shall be included. The geometry details shall include all coordinate systems and sign conventions used in the analysis.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Details of the air vehicle force and moment accounting system",
+          "content": "Details of the air vehicle force and moment accounting system, including thrust-drag accounting, and reference quantities, such as reference lengths, reference areas, and moment reference point, etc.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Complete details of all flight conditions analyzed",
+          "content": "Complete details of all flight conditions analyzed, including air vehicle attitude (e.g., angle of attack) and freestream conditions (e.g., flight Mach number, Reynolds number, altitude, etc.).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Details of the CA method used",
+          "content": "Details of the CA method used (e.g., potential flow, vortex lattice, Navier-Stokes, etc.), including any simplifying assumptions, calculations, and methodologies, and their effect on the accuracy of the results. The details shall include the name and version of the CA software used to generate the results, as well as any modifications made to the solver that could affect the solution accuracy.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Details of the discretization methodology used",
+          "content": "Details of the discretization methodology used for the computational model. The details shall include the surface mesh sizing for all major surface features of interest, such as air vehicle body, wing and control surface leading edges, wing tips, etc., and the total number of discrete elements used, such as surface panels or volume mesh cells. For methods requiring a volume mesh, the initial cell (or node) spacing in the wall normal direction and growth ratio shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Full details of all boundary conditions",
+          "content": "Full details of all boundary conditions and entrance and exit criteria used, and a demonstration of conservation of momentum and mass, of mass transfer, or both, where applicable (e.g., high Reynolds number systems).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Complete details of the solution strategy",
+          "content": "Complete details of the solution strategy. The spatial and temporal accuracy of the solver and the temporal and spatial convergence criteria shall be included. If viscous effects are modeled, details of the turbulence model shall be included. If the solution is integrated in time, the time step size shall be included.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Details of the post-processing methodology",
+          "content": "Details of the post-processing methodology. These details shall include any equations, averaging methods, filtering methods, etc., that were used to modify the CA analysis results prior to publication.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Engineering units for all quantities included",
+          "content": "Engineering units for all quantities included in the CA analysis results.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82328.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

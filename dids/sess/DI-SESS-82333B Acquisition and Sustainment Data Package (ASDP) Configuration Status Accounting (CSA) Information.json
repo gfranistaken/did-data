@@ -1,0 +1,354 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82333B",
+  "slug": "di-sess-82333b",
+  "title": "Acquisition and Sustainment Data Package (ASDP) Configuration Status Accounting (CSA) Information",
+  "summary": "Specifies the format and content for Configuration Status Accounting (CSA) Information detailing the current configuration, identification, and documentation changes of DoD inventory items, enabling ingestion and traceability of this data in a Product Lifecycle Management (PLM) solution.",
+  "approval_date": "2022-09-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10357",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZSC)",
+  "project_number": "SESS-2022-026",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Acquisition and Sustainment Data Package (ASDP) Configuration Status Accounting (CSA) Information provides details regarding the current configuration of items being developed for, and used in, the Department of Defense (DoD) inventory; documentation and identification numbers relating to these items; changes to the items and their configuration documentation; and allows ingestion and traceability of this information in a Product Lifecycle Management (PLM) solution.  This information is used to manage and provide support during the lifecycle of these items.\n\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in 3.4 of SAE EIA-649-1, Configuration Management Requirements for Defense Contracts; 5.4 of SAE EIA-649, Configuration Management Standard; and 7. of MIL-HDBK-61, Configuration Management Guidance.  (Copies of the SAE documents are available online at www.sae.org and copies of the MIL-HDBK are available online at https://quicksearch.dla.mil.)\n\nb. This DID supersedes DI-SESS-82333A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82333A"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "SAE documents",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "MIL-HDBK-61",
+      "url": "https://quicksearch.dla.mil"
+    },
+    {
+      "label": "DD Form 250 (Material Inspection and Receiving Report)",
+      "url": "https://www.esd.whs.mil/Directives/forms"
+    },
+    {
+      "label": "DoD Instructions/Manuals",
+      "url": "https://www.esd.whs.mil/DD"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The ASDP CSA Information shall be in Microsoft Excel format.  The Data Objects/Attributes and Associated Metadata (DOAM) listing shall be in a Microsoft Excel spreadsheet format in accordance with the template provided in the DOAM Specification attached to the contract.  All data shall be in the English language.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The ASDP CSA Information shall identify and include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "A listing of specifications generated for the project",
+          "content": "which shall include: unique identifier, title, revision, Next Higher Assembly (NHA), change history from initial release, and which shall reflect a \"submitted\" status for each digital file.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A listing of Engineering Design Data and Associated Lists (EDDAL)",
+          "content": "generated for the project, which shall include: unique identifier, title, revision, NHA, change history from initial release, and which shall reflect a \"submitted\" status for each digital file.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "A listing of software and firmware generated for the project",
+          "content": "which shall include: unique identifier, title, revision, NHA, change history from initial release, and which shall reflect a \"submitted\" status for each digital file.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "A listing of all supporting documents",
+          "content": "(such as: test procedures, reports, analyses, etc.) generated as a part of the project, which shall include: unique identifier, CAGE code, title, revision, NHA, part number of the part/system the supporting document references or relates, change history from initial release, and which shall reflect a \"submitted\" status for each digital file.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Listing of special identifiers utilized to tag parts, assemblies",
+          "content": "and software used in each product.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "An Indentured Parts List (IPL)",
+          "content": "shall list all parts installed in each serial-numbered product or end-item as-delivered and as-changed through maintenance and modification activities.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "For each assembly, subassembly, part, or component installed",
+              "content": "in the end item at time of delivery to the Government, shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Part number and revision",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "1",
+                      "title": "Mission Design Series (MDS)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "2",
+                      "title": "Part name",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3",
+                      "title": "Nomenclature",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "4",
+                      "title": "Serial number (SN)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "5",
+                      "title": "Lot number",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "6",
+                      "title": "Associated Work Breakdown Structure (WBS) ID",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "7",
+                      "title": "Manufacturer and manufacture date",
+                      "content": "if the part is a Critical Safety Item (CSI), Safety Critical Item (SCI) (see 3.12 for definition), or both.  In addition, manufacturer and manufacture date shall be included for any age or date managed life limited item.  If not a CSI or age or date managed life limited item, installation date shall be provided, if available.  If the installation date is not available, the Department of Defense (DD) Form 250, Material Inspection and Receiving Report, date shall be provided.  (Copies of this form are available online at https://www.esd.whs.mil/Directives/forms.)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "8",
+                      "title": "Vendor Commercial and Government Entity (CAGE) Code",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "9",
+                      "title": "Manufacturing CAGE Code",
+                      "content": "(if different than Vendor CAGE Code)",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "10",
+                      "title": "NHA part number, CAGE Code, and SN",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "11",
+                      "title": "Airworthiness Directive(s) identifier (ID)",
+                      "content": "if applicable.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "12",
+                      "title": "Service Bulletin(s) ID",
+                      "content": "if applicable.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "13",
+                      "title": "Software part number and revision",
+                      "content": "as applicable, for each SN-controlled unit.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "14",
+                      "title": "Computer Program Identification Number (CPIN)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "15",
+                      "title": "Applicable Technical Manuals and Technical Orders ID and their revisions",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "16",
+                      "title": "Mark any item that has been determined to be a CSI \"Y\"",
+                      "content": "If not, mark \"N\".",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "17",
+                      "title": "National Stock Number (NSN)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "18",
+                      "title": "Identifier of warrantied item",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "19",
+                      "title": "Unique Identifier of drawing/model used to develop, acquire, or purchase the part",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "20",
+                      "title": "Unique Identifier of the direct Specification the PN was derived",
+                      "content": "or equivalent (e.g. Part Spec, Source Control Document (SCD), etc.).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "21",
+                      "title": "Location(s) of part",
+                      "content": "(e.g. water line, buttock line, or station line)",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Listing of engineering changes and their implementation activities",
+          "content": "including: the reason(s) for the changes, Engineering Change Proposal (ECP) ID, justification for the changes or reference thereto, effective date of the change, and the effectivity to which this change is applicable.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "A listing of variance information and status for the item",
+          "content": "to which the CSA applies.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Configuration audit action items and their closeout dates",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "The organizations performing the roles of Current Document Change Authority",
+          "content": "Application Activity, and Document Custodian for each project document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "A listing of an altered (i.e., annotated or redlined) file version number",
+          "content": "from the originally submitted file version number to ensure file integrity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "A listing of any item that is a CSI, SCI, or both",
+          "content": "A CSI is any component, assembly, sub-assembly, or process with one or more critical characteristics that would result in an unsafe condition if not in compliance with the design data or quality requirements.  A SCI is any component, assembly, sub-assembly, or process that is associated with a function resulting in a mishap of either catastrophic or critical severity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Distribution Statement",
+          "content": "The applicable Distribution Statement, as necessary, in accordance with DoD Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4.  (Copies of this document are available online at www.esd.whs.mil/DD.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Classification Marking",
+          "content": "The applicable classification marking, as necessary, in accordance with DoD Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information, or Controlled Unclassified Information (CUI) markings (when applicable) in accordance with DoDI 5200.48, Controlled Unclassified Information (CUI).  (Copies of these documents are available online at www.esd.whs.mil/DD.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "DOAM",
+          "content": "The completed CSA Information template, provided in the DOAM Specification attached to the contract, shall comply with the format requirements in 2. above so that it can be ingestible into a PLM solution to ensure proper tying, tracing, and linking to the lowest component of the end item to which the delivered CSA Information is applicable.  Any field that is not applicable shall be marked \"NA.\"",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82333B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

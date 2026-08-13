@@ -1,0 +1,1096 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82400A",
+  "slug": "di-sess-82400a",
+  "title": "System Architecture Model (SAM)",
+  "summary": "Defines the System Architecture Model (SAM), a SysML-based representation of system architecture capturing structure, behavior, data, and relationships used as the authoritative source for the system design baseline.",
+  "approval_date": "2026-06-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10678",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19",
+  "project_number": "SESS-2026-001",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The System Architecture Model (SAM) is a representation of the system architecture that includes interrelationships between model elements and data and information. The SAM is the authoritative source of structure, behavior, data, and relationships among them (provided that it is consistent with the latest Government approved design baseline or release and changes are made through CM changed control). This Data Item Description (DID) is written for models developed in the Object Management Group (OMG) System Modeling Language (SysML) v1 [1] although many of the content requirements can be adopted to models developed in other languages such as SysML v2 [2], and the Unified Architecture Framework Modeling Language (UAFML) [3] for those views within UAFML that cover the same subject matter as SysML. Further information on rationale, acceptance criteria, tailoring, and additional comments is contained in a separate document [4].\n\nThis DID contains the format, content, and intended use for the data product resulting from the work task described in the contract Statement of Work/Performance Work Statement.\n\nThis DID supersedes DI-SESS-82400.\n\nDefinitions:\n\nAcquiring Organization: The entity funded and responsible for producing the System of Interest (SOI) and that issues one or more contracts for the development of the SOI and the SAM\n\nContractually Required: An action, task, standard, or other requirement stated in the contract between the SOI developer, model developer and the Acquiring Organization.\n\nFunctional Architecture: An architectural model that identifies system function, subfunctions, and their interactions. It defines how the functions will operate together to perform the system mission(s). Functional architecture can be used as a framework to arrange information, processes, or other solution modules in an enterprise system. [5]\n\nLogical Architecture: A set of related technical concepts and principles that support the logical operation of the system. It is traceable to Functional Architecture and the Physical Architecture. [6]\n\nPhysical Architecture: An arrangement of physical elements (system elements and physical interfaces) which provides the design solution for a product, service, or enterprise, and is intended to satisfy logical architecture elements and system requirements. It is implementable through identified technologies. [7]\n\nProfile: A model package that contains definitions of stereotypes, relations, and related model elements that represent a cohesive set of concepts that extend or customize the system modeling language [8].\n\nSystem of Interest (SOI): The system, behavior, process, item, or entity being represented as a whole or in part by the SAM.\n\nView: A representation of an aspect of the SOI architecture from the perspective of specific system concerns [9].",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82400"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "ISO/IEC 19514:2017 Information technology - Object management group systems modeling language (OMG SysML)",
+      "url": "https://www.iso.org/standard/65231.html"
+    },
+    {
+      "label": "OMG System Modeling Language Specification Version 2.0",
+      "url": "https://www.omg.org/spec/SysML/2.0/Language/PDF"
+    },
+    {
+      "label": "Unified Architecture Framework Specification Version 1.2",
+      "url": "https://www.omg.org/spec/UAF/1.2/UAFML/PDF"
+    },
+    {
+      "label": "Functional Architecture",
+      "url": "https://acqnotes.com/acqnote/careerfields/functional-architecture"
+    },
+    {
+      "label": "Systems Engineering Book of Knowledge - Logical Architecture",
+      "url": "https://sebokwiki.org/wiki/Logical_Architecture"
+    },
+    {
+      "label": "Physical Architecture",
+      "url": "https://acqnotes.com/acqnote/careerfields/physical-architecture"
+    },
+    {
+      "label": "ISO/IEC/IEEE 42010, Systems and software engineering - Architecture Description",
+      "url": "https://webstore.ansi.org/standards/ieee/IEEEISOIEC420102007"
+    },
+    {
+      "label": "XML Metadata Interchange (XMI) Specification, Version 2.5",
+      "url": "https://www.omg.org/spec/XMI/2.5/Beta1/PDF"
+    },
+    {
+      "label": "ISO 32000-2:2020, Document management - Portable document format",
+      "url": "https://www.iso.org/standard/75839.html"
+    },
+    {
+      "label": "HTML Living standard",
+      "url": "https://whatwg.org"
+    },
+    {
+      "label": "ISO/IEC 29500, Information technology -- Document description and processing languages - Office Open XML File Formats",
+      "url": "https://www.iso.org/standard/71691.html"
+    },
+    {
+      "label": "LibreOffice",
+      "url": "https://www.libreoffice.org/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified by the Acquiring Organization.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Tool-Independent and Tool-Proprietary Formats. The SAM in its entirety, (i.e., including all profile changes, extensions, and modifications) shall be in the following formats: (a) the proprietary format of the SysML, UAFML, or SysML v2 -compliant modeling tool used to generate the SAM, (b) Extensible Markup Language (XML) Metadata Interchange (XMI) Specification [10] for SysML v1 and UAFML, and (c) ASCII [11] text files for SysML v2 models.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "General Attributes",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Language",
+              "content": "The SAM shall be written in SysML v1, UAFML, or SysML v2 as specified by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Model style guide conformance",
+              "content": "The SAM shall conform to Style Guide or other model syntax standards set forth by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Naming and typing for interoperability",
+              "content": "The SAM shall conform with all model interface, naming, model element typing, stereotyping, profiles, and library specifications set forth by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Verification of internal mathematical models",
+              "content": "All mathematical and analytical models contained within the SAM shall be verified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Internal Documentation for maintainability",
+              "content": "The SAM shall include documentation within the model to describe design concepts, dependencies, naming conventions, model element descriptions, other model attributes, and verification procedures that are necessary to perform and test model updates.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "User Interface",
+              "content": "The SAM shall include diagrams that enable the user to find information, locate elements in the containment tree, and navigate between diagrams.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Model load time",
+              "content": "The SAM shall load within either 5 minutes or the time limit specified by the Acquiring Organization in the computing environment in which it is intended to reside.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Table and diagram generation time",
+              "content": "The SAM shall load any view within the model (e.g. diagram or table) within either 5 minutes or the time limit specified by the Acquiring Organization in the computing environment in which it is intended to reside.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Information Security",
+              "content": "The SAM shall be marked and partitioned in accordance with information and program security requirements applicable to the program for which the model is being developed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Access Control",
+              "content": "The SAM and the environment in which it is executed shall control access to users by classification level, dissemination restrictions, and proprietary restrictions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Logging of Changes",
+              "content": "The SAM shall include a Model Change Log that captures baseline identifiers, what changed, when, why, approval authority, and change request identification. SAM model element or diagram changes shall be labeled with a specific designation (e.g., a change identifier or revision number).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "Development plan",
+              "content": "The SAM shall be developed and deployed in accordance with (1) a development plan such as DI-SESS-82380 (\"MBSE Model Development Plan\") or model management plan that specifies model content by development phase or program milestones, or (2) for Software Pathway programs, by capability drops, program increments, or other agile release events, as agreed upon by both the SAM developer and the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.13",
+              "title": "Model Intended Use",
+              "content": "The SAM shall describe its purpose, i.e., how it is to be used in system development and sustainment",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Views and Exports",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Model Development Artifacts",
+              "content": "The SAM shall describe the model development methodology.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Concept of operations document",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce an SOI concept of operations document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "System Requirements Document",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce an SOI system requirements document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Lower-Level Requirements Documents",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce requirements documents at all SOI architectural levels.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Software Requirements Document",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce an SOI Software Requirements Specification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Interface Requirements Document",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce an SOI Interface Requirements Documents or Specifications.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "System/Subsystem Design Document",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce SOI system/subsystem design documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Software Design Document",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce SOI software design documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Verification, Validation, and Test Plans",
+              "content": "The SAM shall provide views and exports of all necessary model elements required to produce SOI verification, validation, and test plans.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Test Procedures",
+              "content": "The SAM shall generate test procedures.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Test Reports",
+              "content": "The SAM shall either (1) provide a reference to current and authoritative SOI test reports or (2) generate SOI test reports based on current and authoritative data in the model.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "The SAM shall be able to produce",
+              "content": "all views and exports in formats that can be processed by commonly available application software to produce human readable documents such as Portable Document Format (PDF) [12], Hypertext Markup Language (HTML) [13], or Open Office XML (OOXML) [14], used by desktop productivity application suites such as Microsoft Office or LibreOffice [15]",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Modeling of System Requirements",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Traceability to Concept of Operations",
+              "content": "The SAM shall show the relationship (traces or dependencies) between the system concept of operations and the system requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "SOI Security requirements",
+              "content": "The SAM shall include Communications Security (COMSEC), Cybersecurity, and Program Protection (PP) security requirements and identify model elements where they are implemented in accordance with DoD policies.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "SOI Electromagnetic Interference (EMI) and Electromagnetic Compatibility (EMC) Requirements",
+              "content": "The SAM shall include EMI/EMC requirements and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "SOI User interface requirements",
+              "content": "The SAM shall include SOI User interface hardware and software requirements for operators, users, maintainers, and sustainers and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "SOI Contamination Control Requirements",
+              "content": "The SAM shall include Contamination control processes and procedures requirements and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "SOI Hazardous Material requirements",
+              "content": "The SAM shall include hazardous materials management and pollution prevention requirements and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "SOI Reliability, Maintainability, and Availability requirements",
+              "content": "The SAM shall include reliability, maintainability, and availability requirements and allocate them to the appropriate model elements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "SOI Data storage requirements",
+              "content": "The SAM shall include requirements for data storage including communications channel, storage, and processing capacity and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "SOI Access control and data integrity",
+              "content": "The SAM shall include requirements for access control by role or other user characteristics and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.10",
+              "title": "SOI Survivability, vulnerability, and threats",
+              "content": "The SAM shall include requirements for survivability, vulnerability, and threat for all categories of expected threats and threat environments and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.11",
+              "title": "SOI System Safety",
+              "content": "The SAM shall include requirements for System Safety and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.12",
+              "title": "SOI Environmental Safety and Occupational Health (ESOH)",
+              "content": "The SAM shall include requirements for ESOH and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.13",
+              "title": "SOI Environmental qualification",
+              "content": "The SAM shall include environmental qualification requirements and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.14",
+              "title": "SOI Requirements Traceability",
+              "content": "The SAM shall show that the derivation and traceability of requirements from system to segment, subsystem and component levels are complete.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.15",
+              "title": "SOI Quality and product assurance",
+              "content": "The SAM shall include requirements for quality and product assurance and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.16",
+              "title": "SOI Parts, Materials, and Processes",
+              "content": "The SAM shall include requirements for parts, materials, and processes (PM&P) and allocate them to all affected items incorporated in the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.17",
+              "title": "SOI Supportability",
+              "content": "The SAM shall include supportability requirements and allocate them to all affected items incorporated into the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.18",
+              "title": "Inclusion of all levels of SOI requirements",
+              "content": "The SAM shall include all system, subsystem, assembly, and lower requirements within the specification tree.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.19",
+              "title": "SOI Interoperability requirements",
+              "content": "The SAM shall include all requirements for system interoperability and allocate them to all affected items in the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.20",
+              "title": "SOI Functional and Performance requirements",
+              "content": "The SAM shall include all requirements for functional and performance and allocate them to all affected items in the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.21",
+              "title": "SOI Space, weight, and power requirements",
+              "content": "The SAM shall include all requirements for space, weight, and power and allocate them to all affected items in the design.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.22",
+              "title": "To Be Determined (TBD) and To Be Specified (TBS) items",
+              "content": "The SAM shall include attributes for identifying and managing all TBD, TBS, and other incompletely specified requirements",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Functional Architecture",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Level of decomposition",
+              "content": "The SAM shall define the Functional Architecture to the level (1) necessary to show satisfaction of system functional requirements, (2) enable the creation of a Physical Architecture and (3) to be allocated to Components of the Logical or Physical Architecture.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Required Information for Each of the Functions",
+              "content": "The SAM shall describe each of the functions, properties, interfaces, and data exchanges within the Functional Architecture.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Traceability to requirements",
+              "content": "The SAM shall show the satisfaction of all functional requirements traceable to a function.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Descriptive information in the Functional Architecture",
+              "content": "The SAM shall describe or document all model elements in the Functional Architecture.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Logical and Physical Architectures",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Logical Architecture",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Logical Architecture Description",
+                  "content": "The SAM shall capture the Logical Architecture of the SOI.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Descriptive Information in the Logical Architecture",
+                  "content": "The SAM shall describe or document all model elements in the Logical Architecture.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "Traceability to Functional Architecture",
+                  "content": "All model elements in the SAM Logical Architecture model shall be traced to at least one model element in the Functional Architecture model.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "Traceability to Requirements",
+                  "content": "All model elements in the SAM Logical Architecture model shall be traced to at least one requirement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "Labeling model elements of the Logical Architecture",
+                  "content": "Model elements that are part of the Logical Architecture shall be identified as being part of the Logical Architecture.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Physical Architecture",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Physical Architecture Description",
+                  "content": "The SAM shall capture the Physical Architecture of the SOI. This description shall include detailed and specific component, interface, and connection information and behavioral descriptions to the level of detail needed for hardware or software design.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "Descriptive Information in the Physical Architecture",
+                  "content": "All elements in the Physical Architecture representing components, interfaces, connections actions, states, transitions, messages, and signals shall have a description.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "Traceability to Requirements",
+                  "content": "All components in the SAM Physical Architecture model shall be traced to at least one requirement.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.4",
+                  "title": "Relationship to Functional Architecture",
+                  "content": "The SAM shall show the relationship of all applicable elements in the Functional Architecture to the Physical Architecture.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.5",
+                  "title": "Relationship to Logical Architecture",
+                  "content": "The SAM Physical Architecture shall show the relationship of all applicable Logical Architecture model elements to the Physical Architecture.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.6",
+                  "title": "Component Attributes",
+                  "content": "For each block or physical component represented by other model elements, the SAM shall include or reference attributes describing structural attributes necessary for design reviews, contractually required analyses, and any other contractually required purpose.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Modeling of Behaviors",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "General Behavioral Modeling",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Modeling of Internal Behaviors",
+                  "content": "The SAM shall capture all behaviors specified in the SOI requirements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Modeling of External behaviors",
+                  "content": "The SAM shall include behavioral representations of all interactions with the systems, actors, and other entities with which the SOI interacts.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Descriptions of Behavior Diagrams",
+                  "content": "Each behavioral diagram in the SAM shall document or depict on the diagram, assumptions about system behavior, design decisions, preconditions, and postconditions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Modeling of Error Conditions",
+                  "content": "SAM Behavioral diagrams shall depict error conditions and alternative control flows, object flows, state transitions, or execution sequences for all error conditions and contingency responses.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Activity Diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Activity Partitions (\"Swim Lanes\")",
+                  "content": "Activity diagrams in the logical and Physical Architecture shall depict the allocation of behavior to structural elements using activity partitions.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Sequence Diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Capture of Interaction Behavior on Sequence Diagrams",
+                  "content": "Behavioral Interactions of the SOI through internal and external interfaces shall be captured in sequence diagrams.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "State Machine Diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.4.1",
+                  "title": "SOI states",
+                  "content": "The SAM shall represent all significant modes and states of the SOI.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.2",
+                  "title": "State Transitions",
+                  "content": "The SAM shall represent all possible (State) Transitions and events that can trigger transitions between the SOI's states.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.3",
+                  "title": "Actions occurring before, during, and after state transitions",
+                  "content": "The SAM shall capture (1) behaviors to be performed before, during, and after state transitions and (2) actions to be performed upon entry, during, or upon exit of states.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.4",
+                  "title": "Transition inhibits and enablers",
+                  "content": "The SAM shall capture all conditions that enable or inhibit state transitions.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.5",
+              "title": "Use Case Diagrams",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.5.1",
+                  "title": "Actors",
+                  "content": "The SAM shall capture all significant users and external systems with which the SOI interacts using either Actor modeling elements or SysML blocks with an Actor stereotype",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.2",
+                  "title": "System Objectives, Functions, Services, and Operations",
+                  "content": "Use case diagrams shall depict all significant system objectives, functions, services, and operations",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.3",
+                  "title": "Handling of exception conditions",
+                  "content": "Use cases shall include extensions to describe system behaviors and functions during failures, critical variations, and degradations.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.4",
+                  "title": "System objectives",
+                  "content": "The SAM shall contain use cases that capture system and mission objectives",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.5",
+                  "title": "Relations between Use Cases and Requirements",
+                  "content": "The SAM shall show relationships between use cases and requirements",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.5.6",
+                  "title": "Error Conditions",
+                  "content": "The SAM shall capture alternatives and off-normal conditions in use cases.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Modeling of Structure",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Diagrams depicting context and external interfaces",
+              "content": "The SAM shall contain diagrams that describe all external input-outputs exchanged during interactions with systems, organizations, and personnel, and the external interfaces through which they are exchanged (e.g., a SysML internal block diagram in which the system is represented as a block and external interfaces are shown as ports). Such interfaces include but are not limited to those in the capability, operational, technical, and system, UAFML domains.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Interface Descriptions",
+              "content": "The SAM shall include a description of all interfaces (e.g., physical, human, internal, external) including purpose, rationale, items flowing through the interface, and behaviors (if any). The descriptions of the interface shall be to the level needed for design reviews, analyses, and all other uses on the project for which the model is being used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Component Relationships",
+              "content": "The SAM shall represent the relationships (e.g., satisfy, association, containment, dependency, allocate, generalization/specialization) for each block in the Functional, Logical, or Physical Architectures.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Connections",
+              "content": "The SAM shall define and describe the connections between structural elements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Information and Data Flows",
+              "content": "The SAM shall define and describe the data, information, items, or physical flows within the connections.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Constraints and Value Properties",
+              "content": "The SAM shall include all value properties contained in or derived from requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Allocation of software to hardware",
+              "content": "The SAM shall show the allocation (or planned deployment) of software items to the hardware defined on which they will execute.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "SOI Performance",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Key Performance Parameters (KPPs) and Key System Attributes (KSAs)",
+              "content": "The SAM shall include current and authoritative values for all critical performance parameters or essential characteristics such as SOI KPPs KSAs, and ASAs",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Derivation of lower level performance parameters",
+              "content": "The SAM shall include the derivation of all lower level performance parameters derived from KPPs and KSAs, and ASAs or other critical performance parameters or essential characteristics",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Allocated performance parameters in model elements",
+              "content": "The SAM shall show allocated performance requirement parameters as value properties or parameters in subsystems and components.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Performance modeling data content",
+              "content": "The SAM shall include all SOI parameters and data necessary to analyze and calculate response time and throughput capacity at any architectural level.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "Performance analysis data import and export to external performance models",
+              "content": "The SAM shall provide a means for importing and exporting external parameters and data to performance analysis tools and simulations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.6",
+              "title": "References to external performance analysis models",
+              "content": "The SAM shall identify and provide links to external analysis models.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Reliability/Availability",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Model representation of system design",
+              "content": "The SAM shall include a current and authoritative system design model with sufficient detail to enable reliability analyses required by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Representation of Failure Modes, Effects and Criticality Analysis (FMECA)",
+              "content": "The SAM shall (1) include all authoritative program FMECAs and produce FMECA reports as part of the SAM or (2) provide references to external current and authoritative FMECA analyses and reports. DID SESS-82426 may be used as a reference.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Reliability, availability, and maintainability analysis data",
+              "content": "The SAM shall include current and up to date values of all allocation and prediction data necessary for analysis and calculation of SOI reliability and availability attributes required by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.5",
+              "title": "Quantitative Reliability Analyses",
+              "content": "The SAM shall either (1) include profiles, plug-ins, and libraries capable of calculating reliability and availability results and produce suitably formatted reports required by the Acquiring Organization or (2) include references to current and authoritative analyses and associated data for all reliability and availability analyses required by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.6",
+              "title": "Export of reliability, maintainability, and availability data",
+              "content": "The SAM shall export all data necessary to perform reliability analyses to all external reliability and availability analysis tools needed to perform analyses required by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "System Safety",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Safety data and reports",
+              "content": "The SAM shall either (1) reference authoritative and current documents required in the System Safety Plan of the SOI contract or (2) input, store, and export data and produce reports that are acceptably formatted for certification authorities for all system safety tasks specified in the SOI contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Reporting on safety data",
+              "content": "The SAM shall produce reports acceptably formatted for all safety tasks and reports specified and required by the Acquisition Authority.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Safety Views and custom reports",
+              "content": "The SAM shall either produce or reference authoritative and current views and custom reports to display the status of SOI activities required for safety certification or approval at any architectural level where certification or approval is required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Satisfaction of Safety Requirements",
+              "content": "The SAM shall show how system requirements for system safety, hazardous material handling, and Environmental Safety and Occupational Health (ESOH) are satisfied.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Cybersecurity",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Traceability of SSE, COMSEC, cybersecurity, and Program Protection (PP) requirements",
+              "content": "The SAM shall show how SSE, COMSEC, cybersecurity, and PP security requirements are satisfied in the detailed design in accordance with DoD policies, directives, and system specifications.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Access control design",
+              "content": "The SAM shall show how user access control lists, data control, and data protection, incorporated into the SOI detailed design satisfy system requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Import, export and storage of cybersecurity data",
+              "content": "The SAM shall either (1) reference up to date documents for all cybersecurity documents required in the System Security Plan or the SOI contract or (2) input, store, export current and authoritative data and produce acceptably formatted reports for all tasks in all cybersecurity standards or instructions that are required by the Acquiring Organization.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Logistics, Sustainment and Product Support",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Maintainability and product support data",
+              "content": "The SAM shall either (1) reference authoritative and current data, contractually required instructions, and standards related to maintainability; sustainability; storage; staffing; repair; and packaging, shipping, and handling or (2) provide the capability to input, store and export such data, reports, and standards.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Maintenance Instructions",
+              "content": "The SAM shall either (1) reference current and authoritative maintenance instructions or (2) generate maintenance instruction documents from current and authoritative internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "Reports and views on maintainability and product support data",
+              "content": "The SAM shall either (1) reference current and authoritative reports for all tasks in all maintainability; sustainability; storage; repair; and packaging, shipping, and handling required by the Acquiring Organization or (2) produce such reports acceptably formatted based on internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.4",
+              "title": "Long lead time items",
+              "content": "The SAM shall either (1) refer to reports identifying long lead time items with associated production requirements or (2) produce such reports based on current and authoritative data stored as attributes of relevant model elements",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.13",
+          "title": "Specialty Engineering",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "EMC/EMI control processes",
+              "content": "The SAM shall either (1) reference current and authoritative documents showing how EMI control processes and procedures including EMI susceptibility are reflected in the detailed design or (2) produce contractually required reports containing such information based on accurate and up to date internal model data",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.2",
+              "title": "Threat environments",
+              "content": "The SAM shall either (1) reference current and authoritative documents that enumerate the survivability and vulnerability threats, threat environments, and likelihood of occurrence, allocations for categories of expected threats, threat environments and their likelihood of occurrence or (2) produce contractually required reports containing such information based on accurate and up to date internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.3",
+              "title": "Thermal, vibration, shock, and Highly Accelerated Life Test (HALT) requirements",
+              "content": "The SAM shall either (1) reference current and authoritative documents that describe how requirements derived from thermal, vibration, and shock environments are satisfied by the detailed design or (2) produce contractually required reports containing such information based on accurate and up to date internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.4",
+              "title": "Environmental Parameters",
+              "content": "The SAM shall either (1) reference current and authoritative documents that list all environmental parameters impacting parts performance or (2) produce contractually required reports containing such information based on accurate and up to date internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.5",
+              "title": "Contamination control processes",
+              "content": "The SAM shall either (1) reference current and authoritative documents that describe how Contamination control processes and procedures are incorporated into the detailed design to meet production, mission operations, maintenance, and disposal requirements or (2) produce contractually required reports containing such information based on accurate and up to date internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.6",
+              "title": "Critical technologies",
+              "content": "The SAM shall either (1) reference current and authoritative documents that contain critical technologies lists that identify primary and alternate sources for all critical technologies or (2) produce contractually required reports containing such information based on accurate and up to date internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.7",
+              "title": "Form, fit and function attributes",
+              "content": "The SAM shall include all necessary form, fit, and function as attributes for those model elements representing Line Replaceable Units (LRUs), assemblies, and other replaceable items and produce contractually required reports containing such information based on accurate and up to date internal model data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.8",
+              "title": "Production testing and acceptance",
+              "content": "The SAM shall either (1) reference current and authoritative documents that include production testing requirements and production acceptance testing plans or (2) produce contractually required reports containing such information based on accurate and up to date internal model data",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.9",
+              "title": "Human Factors Engineering (HFE)",
+              "content": "The model shall either (1) reference current and authoritative documents that address requirements or standards on HFE. including, as applicable, considerations for the capabilities and limitations of humans; foreseeable human errors under both normal and extreme conditions; and specific areas where the effects of human error are serious or (2) produce contractually required reports containing such information based on accurate and up to date internal model data",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.10",
+              "title": "Integration with Software Architecture Model",
+              "content": "If DI-SESS-82514 (Software Architecture Model, SWAM) is required by the Acquiring Authority, the SAM shall either (1) show the relationship between model elements in the SAM and the SWAM that are not incorporated into the SAM, or (2) satisfy all requirements of the SWAM.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82400A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

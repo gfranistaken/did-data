@@ -1,0 +1,202 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82365",
+  "slug": "di-sess-82365",
+  "title": "Certification Data Package (CDP)",
+  "summary": "Describes the format, content, and intended use of the Certification Data Package (CDP), which provides detailed configuration data for tests.",
+  "approval_date": "2021-11-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10280",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MDA",
+  "project_number": "SESS-2021-037",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The CDP provides detailed configuration data for tests.\n\nThis Data Item Description (DID) contains format, content, and intended use information for the data deliverable resulting from the work described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Text shall be prepared for standard letter size paper",
+          "content": "Text shall be prepared for standard letter size paper (8 1/2 x 11\").",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The package and all attachments shall be",
+          "content": "The package and all attachments shall be in Contractor's native format and in Portable Document Format (PDF) except as noted below.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Acceptance Data Package (ADP) documents",
+              "content": "Acceptance Data Package (ADP) documents are not required to be delivered in native format. PDF or government agreed to format is acceptable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Microsoft Office document shall be delivered",
+              "content": "Microsoft Office document shall be delivered in native format only and are not required to be delivered in PDF format also.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "CDPs shall be digitally signed",
+          "content": "CDPs shall be digitally signed (or printed, signed and scanned with Government approval) by the Contractor's Chief Engineer or equivalent.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.4",
+          "title": "Security classification and distribution markings",
+          "content": "Security classification and distribution markings shall conform to the requirements of the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.5",
+          "title": "The CDP shall be a standalone package",
+          "content": "The CDP shall be a standalone package; it shall not contain hyperlinks to supporting documents. Classified information shall be provided separately via Secure Internet Protocol Router (SIPR), and notated in the appropriate section in the CDP.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title Page and/or text read-me file",
+          "content": "Title Page and/or text read-me file that identifies the data by providing contract number, item name, validity date, version from first package, data files on a particular media (digital Table of Contents), and data format (for computer files).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "A list of all CDP documents",
+          "content": "A list of all CDP documents shall be reviewed and approved by the government prior to all listed documentation being delivered to the government for each test activity. All documentation on the approved list shall be delivered with each CDRL including, but not limited to, all documentation listed below under CDP contents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "CDP contents",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Hardware Configuration",
+              "content": "Documentation defining composition of the asset hardware for the test event shall be listed. This includes top-level drawing numbers, revisions, release dates, and associated parts lists. A full set of drawings and hardware configuration documentation shall be included in each delivery.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Interconnect Diagram",
+              "content": "This section shall include schematics, graphics, or other images that identify interconnectivity of components, communication paths, and connectivity to any other test participants. These shall be added as an attachment to the CDP, or inserted into the body of the document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Software Configuration",
+              "content": "This section shall identify the exact version(s) (to the lowest dot build being tracked by the participant) of the software loaded on the asset, including any interface driver versions; and software version description documents, revisions, and release dates. A full set of software configuration documentation shall be included in each delivery.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "System Settings",
+              "content": "This section shall identify any adjustable parameters and settings used to optimize the system to meet the objective(s) of the test. Included in this section shall be mission profile settings, system adjustable parameters, data parameters, operator input options and selections, script files, search fence databases, sensor resource managers, forwarding tables, and/or other related adjustable setting information. If there is a range for the selectable setting, include the range as well as the planned/used selection. If this information is classified, it shall be provided separately via SIPR, and notated in the appropriate section in the CDP. Reasonable accommodations shall be made to provide the data needed to represent system configuration as agreed between the Quality, Safety, and Mission Assurance Directorate and the participating element. A full set of system setting and adjustable parameter documentation shall be included in each delivery.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Deviations/Waivers/Variances/Departures",
+              "content": "List all deviations, waivers, variances, and departures for the asset. A full set of deviation, waiver, variance, and departure documentation shall be included in each delivery.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Calibration Requirements",
+              "content": "This section shall list all calibration requirements, if which shall occur or did occur during the defined test period following the execution of the CDP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.7",
+              "title": "Security Requirements",
+              "content": "This section shall include all security requirements which may occur following the submission of the final CDP (such as password resets, software patches, crypto key resets, etc.). The section should also state the expiration date of the Interim Authorization to Test and Approved Test Operation. Passwords shall be checked and extended throughout the test event and any backup days.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.8",
+              "title": "Test Documentation",
+              "content": "This section shall list all documents by name/number, version, and date released which can be provided to support the CDP. The document list shall include user manuals, test plans, mission support plans, data management plans, test procedures, operator procedures, and lockdown plans. A full set of test documentation shall be included in each delivery.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.9",
+              "title": "Open Paper/Action Items",
+              "content": "This section shall include all action items from major reviews for the test which have not been dispositioned as of the submittal of the CDP, including any other open paper such as non-conformances, System Test Observations, Q-Notes, Test Incident Reports, Web-based System Trouble Reports, Test Observation Reports, Simulation Trouble or Issue Reports, Software Change Requests or other test incidents currently under review or otherwise open. Estimated closure dates and anticipated dispositions for all items shall be documented.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82365.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -6,12 +6,12 @@ Thanks for helping improve this resource. Here's how to contribute.
 
 1. **Get the source** — Download the original DID PDF from [ASSIST](https://assist.dla.mil)
 2. **Create the JSON** — Follow the schema in `SCHEMA.md`. Name the file after the slug, e.g. `di-sess-81248b.json`
-3. **Place it** — Put the file in the `dids/` directory
+3. **Place it** — Put the file in the type subdirectory matching the DID number's type prefix, lowercase (e.g. `DI-SESS-81248B` goes in `dids/sess/`). Create the directory if it's a new type.
 4. **Open a PR** — Include the document number, title, and a link to the ASSIST entry in your PR description
 
 ## Correcting an Existing DID
 
-1. Edit the relevant JSON file in `dids/`
+1. Edit the relevant JSON file under `dids/<type>/`
 2. Open a PR explaining what was wrong and what the correct text is
 3. Include a reference to the authoritative source (ASSIST URL, page number, etc.)
 

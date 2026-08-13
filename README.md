@@ -4,7 +4,7 @@ Community-maintained, machine-readable repository of DoD Data Item Descriptions 
 
 ## What's Here
 
-- `dids/` — One JSON file per DID, conforming to schema v2.0
+- `dids/<type>/` — One JSON file per DID, conforming to schema v2.0, sharded by DID type prefix (e.g. `dids/sess/` for `DI-SESS-*`)
 - `SCHEMA.md` — Full schema reference
 - `CONTRIBUTING.md` — How to add or correct a DID
 
@@ -14,7 +14,7 @@ This repo is the **data source** for [DIDfinder](https://didfinder.com) ([source
 
 ## Adding a DID
 
-1. Add a new `.json` file to `dids/` following the schema in `SCHEMA.md`
+1. Add a new `.json` file to `dids/<type>/` (the lowercase type prefix from the DID number, e.g. `dids/sess/` for `DI-SESS-81248B`) following the schema in `SCHEMA.md`
 2. Open a pull request with a brief description of the DID and its source
 
 All submissions are validated against the schema before merge.

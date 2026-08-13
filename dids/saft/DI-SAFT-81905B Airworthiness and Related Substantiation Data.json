@@ -1,0 +1,204 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-81905B",
+  "slug": "di-saft-81905b",
+  "title": "Airworthiness and Related Substantiation Data",
+  "summary": "Provides airworthiness-related substantiation data required by the government to support the generation of an Interim Flight Clearance or civil/public aircraft operation determination.",
+  "approval_date": "2021-07-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10258",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SAFT-2021-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Airworthiness-related substantiation data is information required by the government to support the generation of an Interim Flight Clearance or civil/public aircraft operation determination.\n\nThis Data Item Description (DID) contains format and content and intended use information for the data deliverable resulting from the work task described in the contract.\n\nThis DID supersedes DI-SAFT-81905A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SAFT-81905A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Airworthiness and related substantiation data shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Scope of the Interim Flight Clearance (IFC) that is sought",
+          "content": "State whether the IFC is required for an aircraft (i.e., the aircraft cannot perform under the contract as a civil aircraft due to the inability to comply with civil regulations or aircraft operating limitations) or for an aircraft modification (e.g., changes required to install and operate mission equipment that cannot be fully certified by FAA).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "If the required IFC is for an aircraft, provide the following",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "A copy of the FAA registration certificate (AC 8050-3)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "A copy of the Airworthiness Certificate (FAA 8100-2, or 8130-7)",
+              "content": "If this certificate is a Special Airworthiness Certificate (8130-7), also include the Operating Limitations identified in Part E of form 8130-7.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Inspection Program",
+              "content": "If the aircraft is a multi-engine turbine powered airplane, or a turbine powered rotorcraft with a standard airworthiness certificate, provide a copy of the log book page identifying the inspection program applicable to the aircraft. For all turbine powered aircraft with Special Airworthiness Certificates, and for all aircraft with Standard certificates that identified a 14 CFR 91.409 (f) (4) programs, provide a copy of the letter from FAA that approves the current inspection program.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Minimum Equipment List (MEL)",
+              "content": "For all aircraft with Standard certificates for which a MEL exists, provide a copy of the letter from FAA authorizing that aircraft to operate under the provisions of the approved MEL. If no approved MEL exists for the aircraft, then state the aircraft abides by the provisions of 14 CFR 91.213 as it relates to inoperative instruments and equipment.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "If the required IFC is for one or more aircraft modification(s), provide the following for each modification",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "For aircraft that have Standard, Limited or Restricted certificates or that previously held a Standard, Limited or Restricted certificate",
+              "content": "Provide the FAA Form 337's and supporting documentation for all Major alterations performed on the aircraft since it left the factory. Note: A Compliance Matrix may be required for non-Supplemental Type Certificates (STC).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "For all other aircraft, provide sufficient data to determine that the equipment of provisions for the equipment meet the applicable civil or military standards for the type of aircraft concerned",
+              "content": "If this data references FAA regulations as the standard, then provide FAA Form 8110-3 with signature(s) of FAA Designated Engineering Representatives (DERS). If the modification is a Major Change as defined by 14CFR21.93, provide the FAA's determination to whether new operating limitations are required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Identify any portion of the FAA Operating Limitations associated with a Special Airworthiness certification that do not apply while operating as a Public Aircraft",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Specific instructions for the energizing and de-energizing of equipment that is only FAA-approved for captive carry",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Specific instructions for the installation of, operation (energizing), and removal of all mission equipment where the FAA approval is only for the provisions to install the special equipment",
+              "content": "The removal instructions should include all information for securing cables, plumbing, hoses, racks, trays etc. It shall also include instructions on de-energizing all energy sources, electrical, hydraulic, pneumatic, etc. These instructions shall also include any Weight and Balance data necessary for the operation of the aircraft with the equipment installed and removed.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Provide a statement acknowledging the following",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "The owner/operator will \"comply with all provisions of the FAA Federal Aviation Regulations (14CFR)",
+              "content": "with the exception of any regulation that is explicitly waived by the Government IFC when the aircraft operates as a 'public aircraft' (e.g., operations outside an FAA approved configuration or, for aircraft with Experimental certificates, operation for compensation or hire).\"",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "The owner/operator will \"make a maintenance record entry when any mission equipment is installed or removed.\"",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "The owner/operator will \"maintain the configuration of the aircraft to conform to the requirements and limitations imposed by the FAA Airworthiness Certification with the only exceptions being those enumerated in Government IFC.\"",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "The owner/operator will \"retain a copy of the Government IFC on board the aircraft when operated as a public aircraft.\"",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "This statement should be on corporate letterhead of the owner",
+              "content": "and signed by a corporate officer if the owner identified on the registrations certificate is a corporate entity.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Continued Airworthiness Substantiation Data",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-81905B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

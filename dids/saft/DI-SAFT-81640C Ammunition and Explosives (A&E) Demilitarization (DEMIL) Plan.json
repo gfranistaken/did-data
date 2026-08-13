@@ -1,0 +1,1213 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SAFT-81640C",
+  "slug": "di-saft-81640c",
+  "title": "Ammunition and Explosives (A&E) Demilitarization (DEMIL) Plan",
+  "summary": "Specifies the format and content for the Contractor's A&E Demilitarization (DEMIL) Plan detailing strategy, processes, and procedures to demilitarize and dispose of new or modified ammunition items and materiel.",
+  "approval_date": "2023-10-16",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10433",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "170 (AFLCMC)",
+  "project_number": "SAFT-2023-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Ammunition and Explosives (A&E) Demilitarization (DEMIL) Plan details the Contractor's strategy to execute planned demilitarization and disposition tasks, data, and requirements for new or modified ammunition items and materiel, and for eliminating functional capabilities and inherent military design features from both serviceable and unserviceable Department of Defense (DoD) materiel. In the A&E DEMIL Plan, the Contractor identifies and defines, in detail, their processes and procedures to meet Government contract requirements.\n\nThe Data Item description contains the format, content and intended information for the data product resulting from the work task described in the contract SOW.\n\nThis DID will be used by the Government on any contract when delivery of an A&E DEMIL Plan is required.\n\nThis DID supersedes DI-SAFT-81640B",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SAFT-81640B"
+  ],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "MIL-STD-1812",
+      "url": "https://quicksearch.dla.mil/qsSearch.aspx"
+    },
+    {
+      "label": "DoDI 5230.24 and DoDD 5230.25",
+      "url": "https://www.esd.whs.mil/DD/"
+    },
+    {
+      "label": "DoDM 5200.01V3",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "DoDI 5200.48",
+      "url": "https://www.esd.whs.mil/"
+    },
+    {
+      "label": "DoD CUI Registry",
+      "url": "https://www.dodcui.mil/Home/DoD-CUI-Registry/"
+    },
+    {
+      "label": "DoDM 5200.01V2",
+      "url": "https://www.esd.whs.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The A&E DEMIL Plan shall be in Contractor-developed, Government-approved format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The A&E DEMIL Plan shall use the guidelines below and include Standard Format identified in the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Demilitarization and disposition plans are not developed",
+          "content": "for emergency demilitarization.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "All plans should be based on disassembly",
+          "content": "to the lowest level necessary to gain access or remove Propellants, Explosives, and Pyrotechnics (PEP) and hazardous materials or components for demilitarization or disposition.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Because used munitions are Material Potentially Presenting",
+          "content": "an Explosive Hazard (MPPEH) if they are not reused, their explosives safety status must be assessed and documented as safe prior to transfer from DoD control. Provide procedures in order to inspect and certify used munitions as Material Documented as Safe (MDAS) prior to transferring the items to the Defense Logistics Agency Disposition Services (DLADS) for final disposition. These plans are especially important for used munitions items that contain voids or other areas that cannot be 100% visually inspected for residual and explosive material. In these cases, technical or empirical data may be gathered and analyzed to enable the application of \"expert knowledge\" to determine that the used munitions items do not pose an explosive hazard.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Open Burn and Open Detonation are not",
+          "content": "considered the primary demilitarization or disposition options and must be used only when safe and sustainable closed disposal alternatives are not available. EOD and Ocean Dumping are not acceptable alternatives for routine demilitarization and disposition.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Plans for items containing subassemblies should",
+          "content": "be developed in tiers or appendices with a plan for the end item and each subassembly. End item plans must reference all subassembly plans. Disposition guidance should also be provided for used components, such as cans, clips, cartridge cases, wooden boxes, etc.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The use of reference documents (e.g.,",
+          "content": "Technical Manuals (TMs); Technical Orders (TOs); Navy instructions; Depot Maintenance Work Requirements (DMWRs); Standard Operating Procedures (SOPs) or approved demilitarization and disposition plans) to satisfy portions of plan requirements are encouraged. However, reference documents or applicable portions used in this manner must accompany the plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Information on existing and emerging demilitarization",
+          "content": "and disposition technologies and capabilities for families of munitions can be obtained from the Joint Munitions Command (JMC), Demilitarization Capabilities Division or Project Director (PD) Joint Services, Product Manager (PM) Demilitarization.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "The Demilitarization and Disposition Plan must",
+          "content": "address the demilitarization and final disposition of all unused and used munitions items, PEP, inert components and residues in order to prevent unauthorized reuse.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "The Cover page shall include",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Include munitions item name, DoD Identification",
+              "content": "Code (DoDIC) or Naval Ammunition Logistics Code (NALC), National Stock Number (NSN) (if available), preparing activity, distribution statement, revision or change, and date. Demilitarization and disposition plan identification numbers must be placed on the cover page. Plan identification numbers are assigned based on the Federal Stock Class of the item. The Government will officially assign nomenclature in accordance with (IAW) MIL-STD-1812, Aeronautical and Support Equipment Type Designation System, and will identify nomenclature in the production contract. The plan title shall include the assigned nomenclature. For example, the DSU-33 Proximity Sensor's plan cover page, states: \"DSU-33 Proximity Sensor A&E DEMIL Plan\". MIL-STD-1812 is available online at: https://quicksearch.dla.mil/qsSearch.aspx.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Department of Defense (DoD) Identification Code (DoDIC)",
+              "content": "The DoDIC is created during the cataloging process and the Government will identify the DoDIC in the production contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Plan preparer's name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.4",
+              "title": "Scientific and Technical Information (STINFO) markings",
+              "content": "STINFO markings shall be included IAW DoD Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, and DoD Directive (DoDD) 5230.25, Withholding of Unclassified Technical Data from Public Disclosure, (These documents are available online at: https://www.esd.whs.mil/DD/.) and the markings shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.4.1",
+                  "title": "Distribution statement, to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.4.1.1",
+                      "title": "One distribution statement alpha code",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.4.1.2",
+                      "title": "Reason(s) for distribution restriction",
+                      "content": "All applicable reasons shall be listed.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.4.1.3",
+                      "title": "Date of determination",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.4.1.4",
+                      "title": "Controlling DoD Office (CDO) contact information",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.9.4.2",
+                  "title": "Export control warning (when applicable), which",
+                  "content": "shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.4.2.1",
+                      "title": "The following export control warning statement",
+                      "content": "WARNING - This document contains technical data whose export is restricted by the Arms Export Control Act (Section 2751 of Title 22, United States Code) or the Export Control Reform Act of 2018 (Chapter 58 Sections 4801-4852 of Title 50, United States Code). Violations of these export laws are subject to severe criminal penalties. Disseminate in accordance with provisions of DoD Directive 5230.25 and DoD Instruction 2040.02.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.4.2.2",
+                      "title": "\"Export Controlled\" shall be listed as one",
+                      "content": "of the distribution statement reasons for distribution restriction in 3.9.4.1.2 above.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.9.4.3",
+                  "title": "Destruction Notice",
+                  "content": "An unclassified or classified destruction notice shall be included, as applicable.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.4.3.1",
+                      "title": "For unclassified documents refer to DoDI",
+                      "content": "5200.48, para 4.5 IAW DoDI 5230.24.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.4.3.2",
+                      "title": "For classified documents, the following destruction",
+                      "content": "notice shall be included IAW DoD Manual (DoDM) 5200.01V3, enclosure 3, sections 17-19, Information Security Program: Protection of Classified Information: This document is available online at: https://www.esd.whs.mil/. \"DESTRUCTION NOTICE -- Follow the procedures in DoD 5220.22, National Industrial Security Program Operating Manual (NISPOM), Section 5-700, and DoDM 5200.01V3, Enclosure 3, sections 17-19, Information Security Program: Protection of Classified Information.\"",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.9.5",
+              "title": "Controlled Unclassified Information (CUI) markings",
+              "content": "CUI markings shall be included (when applicable) IAW DoDI 5200.48, Controlled Unclassified Information (CUI), and the DoD CUI Registry, (DoDI 5200.48 is available online at: https://www.esd.whs.mil/ and the DoD CUI Registry is available online at: https://www.dodcui.mil/Home/DoD-CUI-Registry/) to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.5.1",
+                  "title": "The CUI control box, which shall follow",
+                  "content": "the STINFO block required by 3.1.4 above. The cover page shall include, for example: Controlled by: (Only if not on letterhead) Controlled by: (e.g., AFLCMC/IP) CUI Category: (e.g., Controlled Technical Information) Distribution Statement Alpha Code/Dissemination Control: Point of Contact (POC): Name, Phone Number, and E-mail Address",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.5.2",
+                  "title": "\"CUI\" shall be either abbreviated or",
+                  "content": "spelled out in the header and footer on the cover page, and on each applicable page of the plan.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.9.6",
+              "title": "Security classification markings",
+              "content": "Security classification markings (when applicable) shall be included IAW DoDM 5200.01V2, DoD Information Security Program: Marking of Information. DoDM 5200.01V2 is available online at: https://www.esd.whs.mil/.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.7",
+              "title": "Revision or change number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.8",
+              "title": "Date the plan was generated",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.9",
+              "title": "Plan identification number (optional)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Table of contents",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "List of tables",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "List of figures",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Purpose, which shall include",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.13.1",
+              "title": "Objective",
+              "content": "This plan identifies requirements necessary to accomplish safe and environmentally acceptable demilitarization and disposition of the item. The Technical Data Packages (TDP) and Safety Data Sheets (SDS), formerly known as Material Safety Data Sheets (MSDS), are critical when planning for demilitarization and disposition. The objective in demilitarization and disposition planning is to provide a complete demilitarization and disposition analysis and procedures when manufacturers and maintenance facilities may no longer exist and technical agents may not be available.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.2",
+              "title": "Scope",
+              "content": "Provide a brief overview of the preferred processes being used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.13.3",
+              "title": "Limitations",
+              "content": "Identify areas not covered by the plan, e.g., transportation, incinerator operations, washout operations, etc. Identify and list all demilitarization and disposition plans for subassemblies. In addition, list all subassembly demilitarization and disposition plans in paragraph 14 as references.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.13.3.1",
+                  "title": "Transportation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.2",
+                  "title": "Incinerator operations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.3",
+                  "title": "Washout operations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.4",
+                  "title": "Demilitarization and disposition of sub-assemblies",
+                  "content": "covered in other plans.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.5",
+                  "title": "Any other identified limitations not already",
+                  "content": "mentioned above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.6",
+                  "title": "Special tools required for the demilitarization",
+                  "content": "and dispositioning procedures.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.7",
+                  "title": "Equipment required for the demilitarization and",
+                  "content": "dispositioning procedures.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.8",
+                  "title": "Validation test, which shall include, as",
+                  "content": "required:",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.13.3.9",
+                  "title": "Quantity of ammunitions items to be",
+                  "content": "demilitarized for the validation test.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.15",
+          "title": "Item Description",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.15.1",
+              "title": "Physical Description",
+              "content": "Provide a detailed description of the item configuration with illustrations. Provide the item NSN and NALC or DODIC. A table may be used if the item has multiple NSNs, or MK and MOD (Mark and Modification) designations incorporated in the plan.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.2",
+              "title": "Functional Description",
+              "content": "Describe how the item functions when used as intended.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.15.3",
+              "title": "Product Baseline Table (Table I)",
+              "content": "Develop a table as outlined in Table I. At a minimum, the table must contain fields or columns for Assembly Levels, Description, Unit Weight (U.W.), Net Explosive Weight (N.E.W.), Quantity, Drawing Numbers, Specification Numbers, Composition and Original Equipment Manufacturer (OEM) contact information. Under composition, provide as much information as possible about the chemical composition of the product. At a minimum, identify the types of metals (e.g., brass, steel, lead), types of plastics (e.g., HDPE, PVC) and chemical compositions of any other items. Provide percentages of constituents in composite items and chemical formulas when available. This table should list the complete drawing package for the munitions item, excluding schematic drawings. Proprietary information should be included, and as a minimum should identify basic constituents, if not exact formulas (e.g., brass, steel, high-density polyethylene, ammonium perchlorate, etc.). PEP and hazardous materials should be listed by name only (e.g., HNS, PBXN-5, Lithium, etc.). Table II, as described in paragraph 7.c., should be referenced for specific compositions of PEP and hazardous materials.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.15.3.1",
+                  "title": "Assembly levels",
+                  "content": "Description or Nomenclature.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.3.2",
+                  "title": "Unit Weight (U.W.) in pounds (lbs)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.3.3",
+                  "title": "Net Explosive Weight (N.E.W.) (lbs)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.3.4",
+                  "title": "Quantity (Qty)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.3.5",
+                  "title": "Drawing number (Drwg No.)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.3.6",
+                  "title": "Specification or reference number, which shall",
+                  "content": "include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.15.3.6.1",
+                      "title": "Current, not inactive or cancelled, reference",
+                      "content": "documents.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.15.3.6.2",
+                      "title": "Location where information is available",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.15.3.7",
+                  "title": "Safety Data Sheet (SDS) for the",
+                  "content": "ammunition item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.15.3.8",
+                  "title": "Composition, which shall include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.15.3.8.1",
+                      "title": "Materiel composition",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.15.3.8.2",
+                      "title": "Component composition",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.15.3.8.3",
+                      "title": "Basic constituents",
+                      "content": "If the Contractor cannot provide the exact formula of a composition due to proprietary reasons, the basic constituents or components of the composition or materiel to meet the characterization requirements shall be provided.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.15.3.9",
+                  "title": "Proprietary information (when applicable)",
+                  "content": "A list of pertinent details describing Contractor asserted limited rights on data shall include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.15.3.9.1",
+                      "title": "Name of owning Contractor",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.15.3.9.2",
+                      "title": "Contact information of owning Contractor",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.15.3.9.3",
+                      "title": "Identified Government use rights",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.15.3.9.4",
+                      "title": "Associated Government contract number",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.15.3.10",
+                  "title": "Classification",
+                  "content": "Identify the source of classification for all classified items and components and provide minimum declassification requirements for each.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.15.3.10.1",
+                      "title": "Hazard Classification (HAZCLASS) for the end",
+                      "content": "item (either final or interim).",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.16",
+          "title": "Safety Summary",
+          "content": "This section will summarize hazards that are unique to the unused item and precautions and procedures that must be employed during demilitarization and disposition operations.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.16.1",
+              "title": "General",
+              "content": "Provide an overview of the safety requirements for storage and handling of the unused item.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.2",
+              "title": "Specific",
+              "content": "Identify the safety requirements directly related to the demilitarization process being used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.3",
+              "title": "PEP and Hazardous Materials Table (Table II)",
+              "content": "Develop a table listing all PEP and hazardous materials in the unused munitions item, including the chemical composition of each material. At a minimum, the table must contain fields or columns for Item, Composition, Drawing Numbers, Specification Numbers, U.W., N.E.W., and HAZCLASS. Provide SDS as an attachment to the demilitarization and disposition plan for each PEP and hazardous material identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.4",
+              "title": "Ammunitions item or materiel storage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.5",
+              "title": "Ammunitions item or materiel handling",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.6",
+              "title": "The identification of safety requirements directly",
+              "content": "related to the demilitarization process used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.7",
+              "title": "Energetic and Hazardous Materiel's Table",
+              "content": "A table developed similarly to Table II below, which shall include all of the energetic and hazardous materials in the ammunitions item or materiel:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.16.7.1",
+                  "title": "Ammunitions item or materiel name (e.g.,",
+                  "content": "Hexanitrostilbene (HNS), Polymer-bonded Explosive (PBX) N-5, Lithium, etc.), which shall follow the same format as 3.1.1 above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.7.2",
+                  "title": "Chemical composition of each energetic and",
+                  "content": "hazardous materiel.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.7.3",
+                  "title": "Drawing number (Drwg No.) associated with",
+                  "content": "each ammunition item or materiel.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.7.4",
+                  "title": "Specification (Spec) or reference number (No.),",
+                  "content": "to include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.16.7.4.1",
+                      "title": "Current, not inactive or cancelled, reference",
+                      "content": "documents (Docs).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.16.7.4.2",
+                      "title": "Location where information is available",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.16.7.5",
+                  "title": "Net Explosive Weight (N.E.W.) [grains]",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.7.6",
+                  "title": "SDS for each energetic and hazardous",
+                  "content": "materiel in the ammunitions item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.7.7",
+                  "title": "Products of combustion",
+                  "content": "All information resulting from existing Propellant, Explosive, and Pyrotechnics (PEP) materiel (e.g., Boron Oxide, Chromium Metal, etc.).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.7.8",
+                  "title": "Classification",
+                  "content": "Identify and list the classification source for all classified ammunitions items, materiel, or components, and provide the minimum declassification requirements for each, or interim declassification requirements (as appropriate).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.16.5",
+              "title": "Propellants Composition's Table",
+              "content": "A table developed similarly to Table III below, which shall include all the propellants in the ammunitions item or materiel.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.16.5.1",
+                  "title": "Ammunitions item name for each propellant,",
+                  "content": "which shall follow the same format as 3.1.1 above.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.5.2",
+                  "title": "Chemical composition of each propellant in",
+                  "content": "the ammunitions item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.5.3",
+                  "title": "Drawing number (Drwg No.) associated with",
+                  "content": "each ammunitions item or materiel.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.5.4",
+                  "title": "Specification (Spec) number (no.) or reference",
+                  "content": "documents (docs) for each ammunitions item or materiel, to include:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.16.5.4.1",
+                      "title": "Current, not inactive or cancelled, reference",
+                      "content": "docs.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.16.5.4.2",
+                      "title": "Location where information is available",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.16.5.5",
+                  "title": "Net Explosive Weight (N.E.W.) [grains]",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.5.6",
+                  "title": "SDS for each propellant in the",
+                  "content": "ammunitions item.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.5.7",
+                  "title": "Products of Combustion Table (Table III)",
+                  "content": "Develop a table listing all products of combustion produced as a result of the preferred demilitarization alternative or functioning of the munitions item. At a minimum, the table must contain fields or columns for the Chemical Composition and Mass Fraction of the products of combustion. Additionally, identify the item or component producing the combustion products and describe the test method used to determine the combustion products as well as the conditions of the test method, e.g., temperature, pressure, etc. Provide separate tables for all items and components that produce combustion products if applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.5.8",
+                  "title": "Material Potentially Presenting an Explosive Hazard (MPPEH) Table (Table IV)",
+                  "content": "Develop a table identifying all MPPEH generated by the functioning of the munitions item including the used munitions item and all associated munitions debris. MPPEH includes all materiel known or suspected to pose an explosive hazard including expended rocket motors, fired mortars, CADs/PADs, etc. At a minimum, the table must contain fields and columns for MPPEH Item, Uninspectable Areas or Internal Voids, and Use of Expert Knowledge for MDAS Cert (Y/N).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.16.6",
+              "title": "Environmental Significance",
+              "content": "This section will include an analysis describing the environmental significance of each demilitarization and disposition process.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.16.6.1",
+                  "title": "General",
+                  "content": "Provide a brief overview of the regulations applicable to the preferred demilitarization and disposition process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.6.2",
+                  "title": "Specific",
+                  "content": "Identify the specific impact of all identified demilitarization and disposition processes. Identify the output products of all neutralization processes and the method used to determine the products (e.g., computer models, bang box data, other empirical techniques).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.6.3",
+                  "title": "A list of all regulations applicable to",
+                  "content": "the preferred demilitarization and disposition process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.6.4",
+                  "title": "A list of all impacts of all",
+                  "content": "identified demilitarization and disposition processes.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.6.5",
+                  "title": "A list of all identified output products",
+                  "content": "of all treatment neutralization processes.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.16.6.6",
+                  "title": "Methods used to determine the output",
+                  "content": "products, such as: computer models bang box data, other empirical techniques, etc.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.16.7",
+              "title": "Recyclable Materials",
+              "content": "List all of the recyclable materials generated by the preferred demilitarization and disposition process for unused and used munitions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.18",
+              "title": "Waste Streams",
+              "content": "Identify the hazardous and solid waste streams produced by the preferred demilitarization disposition process for unused munitions. This will include the PEP and hazardous materials from Table II and products of combustion from Table III.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.16.9",
+              "title": "Residual Analysis",
+              "content": "Provide an analysis of residual material (explosive and non-explosive) remaining in or on retrievable hardware items, such as Cartridge Actuated Devices and JATO rocket motor cases, after the item has functioned as intended. See Table IV for potential residual material.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.17",
+          "title": "Demilitarization and Disposition Alternatives for Unused Munitions",
+          "content": "This section will list alternative methods of demilitarization and disposition of unused munitions items addressed by the demilitarization and disposition plan, identifying the preferred method. (The Government must provide information on available technology and equipment capability to the developer.) The developer must utilize this data in developing the demilitarization and disposition plan. Give a summary of the demilitarization options available for each unused item requiring demilitarization (e.g., incineration, mutilation of inert hardware by shredding or crushing, neutralization, hydrolysis or contained burn demilitarization approaches). NOTE: Alternatives are not required if the demilitarization and disposition process is based on disassembly.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.18",
+          "title": "Demilitarization and Disposition Procedures for Unused Munitions",
+          "content": "This section will describe each alternative method in detail, including step-by-step procedures detailing safety precautions, disassembly diagrams, declassification procedures, and component and piece part tables. Provide a block-flow diagram showing movement of munitions components through the demilitarization and disposition process. NOTE: Detailed operating procedures for equipment or processes covered by references are not required for the processes described here.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.18.1",
+              "title": "Disassembly",
+              "content": "Provide step-by-step procedures for disassembling the unused munitions item to the point necessary to gain access and remove the PEP and hazardous materials (e.g., fuse removal, pull apart, explosive washout, melt-out or water-jet cutting). Illustrations of disassembly process should be included within this section or referenced to an appendix.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.2",
+              "title": "Demilitarization",
+              "content": "This section will describe the processes used to remove or otherwise neutralize the military potential of unused munitions per reference (a). Such neutralization is to be carried out in a safe, cost effective, practicable and environmentally responsible manner. Demilitarization is a necessary step for military items prior to their release to a non-military setting.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.3",
+              "title": "Disposition",
+              "content": "List the available disposition options, including treatment options for the demilitarized munitions items' parts and residuals waste streams (e.g., incinerator ash to hazardous waste landfill, inert hardware for sale or recycling, explosives for re-use or alternate use). List the available treatment options for the waste stream generated by processes (e.g., hydrolysis of wastewater from explosive washout or wet scrubbing of incinerator off-gases).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.18.4",
+              "title": "Declassification",
+              "content": "Provide declassification guidance and procedures on all classified components that will require demilitarization and final disposition by SMCA.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.19",
+          "title": "Demilitarization and Disposition Procedures for Used Munitions",
+          "content": "This section will describe the proper management and disposition of MPPEH expected to be generated by the use of the munitions item.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.19.1",
+              "title": "Disassembly",
+              "content": "Provide step-by-step procedures for any required disassembly, venting or mechanical opening of the used munitions item to enable inspection or voids or other internal area. Provide illustrations of this process within this section, if possible.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.2",
+              "title": "Demilitarization",
+              "content": "Describe the process necessary to remove or otherwise neutralize any military potential characteristic remaining after the use of the munitions item. Demilitarization is a necessary step for military items prior to their release from DoD control.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.3",
+              "title": "Disposition",
+              "content": "Provide detailed visual inspection procedures to ensure that explosive hazards are not present in the used munitions item and any associated munitions debris listed in Table IV. If the expected MPPEH contains voids or other areas that cannot be opened to enable 100% visual inspections to assess and document the materiel as safe (i.e., MDAS), provide technical or empirical data to justify the application of \"expert knowledge\". To the extent practicable, all metallic items remaining after the use of the munitions item should be demilitarized, assessed, and documented as MDAS and recycled to ensure compliance with hazardous waste regulations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.19.4",
+              "title": "Declassification",
+              "content": "Provide declassification guidance and procedures for any remaining classified components that will require demilitarization and final disposition.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.20",
+          "title": "Demilitarization and Disposition Special Tools and Equipment",
+          "content": "This section will describe special tools and equipment required to accomplish the procedures described.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.21",
+          "title": "Validation Test (when required)",
+          "content": "This section will address the validation test when required. The validation plan will identify the quantity of items to be demilitarized, the tools and equipment required, the proposed location for the test, and any other pertinent information required to validate the planned demilitarization or disposition process. Satisfactory completion of the validation test, when required, must be accomplished prior to approval of the demilitarization or disposition plan.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "Reference Documents",
+          "content": "List all technical references, including any TMs, TOs, DMWRs, demilitarization and disposition Plans, SDSs, and DoD and non-DoD regulations applicable to the preferred demilitarization process.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Terms and Definitions (as required)",
+          "content": "Self-explanatory.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.24",
+          "title": "Demilitarization",
+          "content": "The act of destroying the military offensive or defensive advantage inherent in munitions. This process may be applied to serviceable, unserviceable, used or unused items that are excess, obsolete or uneconomically repairable, as well as items determined to be hazardous for continued storage. Examples of munitions demilitarization methods are disassembly, washout, melt-out, incineration, deactivation, mutilation, chemical neutralization, open burning, open detonation or static firing. The environmentally acceptable and safety-approved methods will render the item safe from an explosives safety perspective and no longer usable for military applications. In some instances, the act of demilitarization accomplishes disposal as well.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.25",
+          "title": "Disposition",
+          "content": "The process of redistributing, transferring, donating, selling, demilitarizing, treating, destroying or other end of lifecycle guidance for Department of Defense (DoD) personal property. Disposition is the final stage of an asset's lifecycle prior to exiting the DoD system. The item must pass through a specific system or set of guidance and controls to ensure that NALC exhausts reutilization, transfer or sale options. Examples of authorized means are re-use, recycling, conversion, or sale to an authorized buyer.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.25.1",
+              "title": "Treatment options for the demilitarized ammunitions",
+              "content": "items or materiel parts and residuals waste stream, such as: incinerator ash to hazardous waste landfill, inert hardware for sale or recycling, explosives for reuse or alternate use, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.25.1.2",
+              "title": "Treatment options for the waste stream",
+              "content": "generated by processes, such as: hydrolysis of wastewater from explosive washout, wet scrub of incinerator off gases, etc. NOTE: Detailed operating procedures for equipment or processes covered by references are not required in this section.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.26",
+          "title": "Disposal",
+          "content": "End of life tasks and actions for residual materials resulting from demilitarization or disposition operations. Ocean dumping or land burial of items containing PEP are not to be considered alternative disposal methods.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.27",
+          "title": "Demilitarization and Disposition Plan",
+          "content": "A written document that describes the item and identifies processes, procedures and equipment necessary to affect the safe and environmentally acceptable demilitarization or disposition and disposal of the new or modified munitions item.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.27.1",
+              "title": "Special tools required for the demilitarization",
+              "content": "and dispositioning procedures.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.27.2",
+              "title": "Equipment required for the demilitarization and",
+              "content": "dispositioning procedures.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.28",
+          "title": "Validation test, which shall include, as",
+          "content": "required:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.28.1",
+              "title": "Quantity of ammunitions items to be",
+              "content": "demilitarized for the validation test.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.28.2",
+              "title": "Tools required for the validation test",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.28.3",
+              "title": "Equipment required for the validation test",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.28.4",
+              "title": "Proposed location for the validation test",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.28.5",
+              "title": "Any other pertinent information required for",
+              "content": "the validation test.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.29",
+          "title": "Technical reference documents, which shall include",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.29.1",
+              "title": "A list of current, not inactive or",
+              "content": "cancelled, reference documents, including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.29.1.1",
+                  "title": "Technical Manuals (TM)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.29.1.2",
+                  "title": "Technical Orders (TO)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.29.1.3",
+                  "title": "Depot Maintenance Work Requirement (DMWR)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.29.1.4",
+                  "title": "DoD regulations, when applicable to the",
+                  "content": "preferred demilitarization process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.29.1.5",
+                  "title": "Non-DoD regulations, when applicable to the",
+                  "content": "preferred demilitarization process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.29.1.6",
+                  "title": "Any other applicable technical references",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.29.7",
+              "title": "Location where the information is available",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.30",
+          "title": "Expert Knowledge",
+          "content": "Technical information, knowledge, or expertise associated with a specific munition or assembly to support a justification that an explosive hazard does not remain in the munition or assembly after functioning. This technical data may be analytical or empirical in nature and must be approved by the respective DoD Component.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.31",
+          "title": "Material Potentially Presenting an Explosive Hazard (MPPEH)",
+          "content": "Materiel owned or controlled by the DoD that, before determination of its explosives safety status, potentially contains explosives or munitions (e.g., munitions containers and packaging materials; munitions debris remaining after munitions use, demilitarization, or disposal; and range-related debris) or potentially contains a high enough concentration of explosives that the materiel presents an explosive hazard (e.g., equipment, drainage systems, holding tanks, piping, or ventilation ducts that were associated with munitions production, demilitarization, or disposal operations). Excluded from MPPEH are:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.31.1",
+              "title": "Military munitions and military munitions-related materiel,",
+              "content": "including wholly inert components (e.g., fins, launch tubes, containers, packaging materials), that are to be used or reused for their intended purpose and are within a DoD Component-established munitions management system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.31.2",
+              "title": "Other items (e.g., gasoline cans, compressed",
+              "content": "gas cylinders) that are not munitions or munitions-related materiel but may present an explosion hazard.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.33",
+          "title": "Military Munitions",
+          "content": "Per Sec 101(e)(4) of Title 10 U.S.C., all ammunition products and components produced or used by or for the DoD or the U.S. Armed Services for national defense and security, including military munitions under the control of the DoD, the U.S. Coast Guard, the U.S. Department of Energy (DOE), and National Guard personnel. The term military munitions includes: confined gaseous, liquid, and solid propellants; explosives; pyrotechnics; chemical and riot control agents; smokes, and incendiaries used by DoD components, including bulk explosives and chemical warfare agents; chemical munitions; rockets; guided and ballistic missiles; bombs; warheads; mortar rounds; artillery ammunition; small arms ammunition; grenades; mines; torpedoes; depth charges; cluster munitions and dispensers; demolition charges; and devices and components thereof. Military munitions do not include wholly inert items, improvised explosive devices, and nuclear weapons, nuclear devices, and nuclear components thereof. The term does include non-nuclear components of nuclear devices managed under DOE's nuclear weapons program after all required sanitizing operations under the Atomic Energy Act of 1954, as amended, have been completed per 40 CFR, part 260.10.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.34",
+          "title": "Resource Recovery and Recycling (R3)",
+          "content": "A term used to describe a family of processes and technologies for demilitarization of munitions using processes other than open burning and open detonation that result in all or part of the munitions components being recovered for recycle and re-use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.35",
+          "title": "Unused Military Munitions",
+          "content": "Military munitions that have not been fired, dropped, launched, projected, placed, or otherwise used and functioned as intended. Examples include military munitions that are stored in the active inventory or war reserve and military munitions issued to a DOD Component unit but were not used and will be returned to storage.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.36",
+          "title": "Used Military Munitions",
+          "content": "Military munitions that have been fired, dropped, launched, projected, placed, or otherwise used and functioned as intended to include Material Potentially Presenting an Explosive Hazard.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SAFT-81640C.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

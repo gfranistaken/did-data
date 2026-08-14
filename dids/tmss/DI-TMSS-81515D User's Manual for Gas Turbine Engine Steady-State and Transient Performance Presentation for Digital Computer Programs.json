@@ -1,0 +1,122 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-81515D",
+  "slug": "di-tmss-81515d",
+  "title": "User's Manual for Gas Turbine Engine Steady-State and Transient Performance Presentation for Digital Computer Programs",
+  "summary": "Provides the method for presentation of gas turbine engine calculated steady-state and transient performance using computer programs, including parametric gas turbine performance, weight, and dimensions data.",
+  "approval_date": "2026-06-30",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10681",
+  "limitation": "No",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFP)",
+  "project_number": "TMSS-2026-006",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) provides the method for presentation of gas turbine engine calculated steady-state and transient performance using computer programs. It also provides for the presentation of parametric gas turbine data including performance, weight and dimensions computed by digital computer programs. The information in this DID is intended to standardize, insofar as practical, the output from digital performance programs and to facilitate the clear, concise, unambiguous presentation of that output.\n\na. This DID contains the format, content and intended use of information for the data resulting from the technical content described in the Society of Automotive Engineers (SAE) Aerospace Standards AS681, \"Gas Turbine Engine Performance Presentation for Computer Programs\" and AS755, \"Aircraft Propulsion System Performance Station Designation and Nomenclature\".  (SAE documents can be obtained at https://www.sae.org).\n\nb. This DID is related to DI-MSSM-81966, \"Gas Turbine Engine Steady State and Transient Performance Presentations for Computer Programs\" (DI-MSSM-81966 can be obtained at https://quicksearch.dla.mil).\n\nc. DI-TMSS-81515D supersedes DI-TMSS-81515C and DI-IPSC-81490.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-TMSS-81515C",
+    "DI-IPSC-81490"
+  ],
+  "related_dids": [
+    "DI-MSSM-81966"
+  ],
+  "references": [
+    {
+      "label": "SAE",
+      "url": "https://www.sae.org"
+    },
+    {
+      "label": "DI-MSSM-81966",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The User's Manual shall contain the information required by SAE Aerospace Standard AS681.  In addition, the User's Manual shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "A clear, concise, and comprehensive narrative",
+          "content": "discussing program philosophy, a history of the model including any relevant historical data or programs from which it was derived, a revision history or changelog of both the model and all applicable documentation, and a plain-language discussion of both acceptable and unacceptable use cases for the model. Additionally, the changelog must detail all model changes, updates and any resulting impacts on system performance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "An enumeration of every assumption in the models",
+          "content": "the range of applicability (estimated, if necessary), and justification.  A detailed explanation of the performance calculation process for each engine component, including governing equations, an index of all subroutines in the model with explanations of their purpose, and identification of the function of each programming variable.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Detailed explanations, both schematic and narrative",
+          "content": "of the derivations of all empirical functions used in the model, and the rationale for all reference values used for normalized parameters.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "When introducing a new methodology",
+          "content": "a clear explanation of derivation and validation shall be provided, including detailed rationale behind its creation and the specifics of its implementation and comprehensive documentation that clearly outlines the method's limitations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "An identification of any limits",
+          "content": "on the values of input parameters.  Tabular and graphical output of every component performance map in the model.  A detailed description, both in graphical (flow-chart) form and plain-language narrative, of the major engine control loops, the hierarchy of the loops, the control limits, and graphs of all engine control schedules represented in the model.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "A contract number, model distribution statement",
+          "content": "and highlights of any Data Rights assertions associated with the model and model data.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-81515D.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

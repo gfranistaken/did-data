@@ -1,0 +1,2521 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TCSP-82040",
+  "slug": "di-tcsp-82040",
+  "title": "Research and Development of Medical Products Regulated by the U.S. Food and Drug Administration (FDA)",
+  "summary": "Specifies the format, content, and intended use of technical data deliverables supporting the research and development of drugs, biologics, and medical devices regulated by the U.S. Food and Drug Administration.",
+  "approval_date": "2016-05-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "9651",
+  "limitation": "n/a",
+  "dtic_applicable": "Yes",
+  "gidep_applicable": "n/a",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "MD3",
+  "project_number": "TCSP-2016-001",
+  "applicable_forms": "All forms required to be completed by the contractor in preparation of the data product are identified below.",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) is published by the U.S Army Medical Research & Materiel Command (USAMRMC) to facilitate the acquisition of technical data to support the research and development of drugs, biologics, medical devices, or some component thereof regulated by the U.S. Food and Drug Administration (FDA).  This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nRequirements:  See table of contents and description of the requirements below.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "FYI - Link to Pre-sub guidance document",
+      "url": "http://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/guidancedocuments/ucm311176.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Administrative",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Purpose",
+          "content": "This Data Item Description (DID) is published by the US Army Medical Research and Materiel Command to facilitate the acquisition of technical data to support the research and development of drugs, biologics, medical devices, or some component thereof regulated by the US Food and Drug Administration (FDA).  This DID is to be used in conjunction with Department of Defense (DoD) Form 1423, \"Contract Data Requirements List (CDRL),\" to articulate the data deliverables required by the solicitation or contract.  Wherever there appears to be a conflict between this DID and a given CDRL, statement of work, or standard clause in the contract, the contract provision (CDRL, statement of work, or standard clause) will control.  The CDRL will cite and, where necessary, articulate the applicability of this DID to each data deliverable under the contract.  The DID describes the data item, content, format, intended use, and other special requirements that apply to the data listed on the CDRL.  This DID may be cited in whole or in part.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "Classification",
+          "content": "Document content shall be marked consistent with the marking requirements specified by the technical data rights clauses in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.3",
+          "title": "Format",
+          "content": "Document content shall be received as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.4",
+          "title": "All electronic deliverables and copies of appropriate attachments received from the Contractor shall be without restrictions that would prevent the Government from reproducing the information",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.5",
+          "title": "Documents shall be submitted as specified in the contract and be compatible with Microsoft (MS) Office Suite 2010, MS Project 2010, and Adobe Acrobat Reader 2010 and higher versions",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.6",
+          "title": "Font size shall be in Times New Roman",
+          "content": "Font size shall be in Times New Roman and the font size shall not be smaller than font size 12 and all documents shall be double-spaced, numbered appropriately, and clearly labeled.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.7",
+          "title": "Languages",
+          "content": "Document content shall be clearly written, describe information with no technical errors, and acceptable for release.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.8",
+          "title": "All acronyms spelled out when first used and a list of acronyms shall be included with every document",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.9",
+          "title": "Complete appendices are to be included that are referenced in the document unless publically available, cited, and accessible at no cost to the government",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.10",
+          "title": "Page numbers",
+          "content": "Each page of the document shall indicate the name of the document, the version of the document, and the date of the document version.  Unique page numbers shall be included on all content pages of the document including appendices and supporting materials.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.11",
+          "title": "Any information that contains personally identifiable information must be transmitted in a secure method",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.12",
+          "title": "All electronic records in support of an FDA application should be created, maintained, submitted, and transmitted in accordance with 21 Code of Federal Regulations (CFR) Section 11",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Drugs and Biologics",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Product Development Planning Documents",
+          "content": "Describe the product development planning documents that will outline the product development strategy, including regulatory pathway risks and timelines across the phases of the product development cycle.  These documents assist in identifying risks to the program (e.g., regulatory concerns).  These documents may include, but are not limited to, the regulatory strategy, regulatory development plan (RDP), pre-clinical development plan (CDP), CDP, and manufacturing development plan.  Describe how the documents will be updated as specified in the solicitation, proposal, and/or contract.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "Regulatory Strategy",
+              "content": "Describe the regulatory pathway for FDA regulatory approval/licensure and any possible post-marketing commitments.  Describe the target product profile or equivalent that can be used throughout the development process that will describe how a product will be utilized by the end user.  This product profile shall include, but is not limited to:  indication and usage; dosage and administration; dose forms and strengths; contraindications; warning and precautions; safety adverse reactions, drug interactions; use in specific populations; drug abuse and dependence/overdose; description of drug; clinical/pharmaceutical; pre-clinical toxicology; clinical studies; references; storage and handling; patient counseling; risk evaluation mitigation strategy; and supporting documentation and/or templates as appropriate.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "RDP",
+              "content": "Describe the specific steps and actions required to meet the regulatory objectives defined in the target product profile or equivalent that include, but are not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.2.1",
+                  "title": "Regulatory timeline that includes sequence and timing of key regulatory activities",
+                  "content": "Regulatory timeline that includes sequence and timing of key regulatory activities, tasks, and decision points (meetings/communications with regulatory agencies, submissions including authoring and publishing, and marketing application submission).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.2.2",
+                  "title": "Regulatory communication plan that includes plans for meetings and other key discussions",
+                  "content": "Regulatory communication plan that includes plans for meetings and other key discussions with regulatory agencies; key questions/assumptions; and how the contractor shall ensure maximum government participation at these meetings (e.g., notification of meetings, invites, minutes, agendas, application, etc.).  These documents shall describe how the contractor will address FDA meeting request submissions and meeting minutes (e.g., Type A, B, or C meetings); communications such as sponsor FDA contact reports, informal and email communications, official communication letters; and any and all submissions related to the product review and approval (21 CFR Sections 312, 314).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.2.3",
+                  "title": "Previous Regulatory Communication Information",
+                  "content": "Describe information or commitments from previous meetings with regulatory agencies (e.g., tracking table of previous communications, interactions, and submissions with submission numbers where applicable).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.2.4",
+                  "title": "Specific facility or pre-inspection requirements such as prior approval inspections (PAI)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.1.3",
+              "title": "Pre-CDP",
+              "content": "Describe the goals and objectives of the pre-clinical program for the drug/biologic.  This plan shall include, but is not limited to:  background, scientific summary of the drug; pharmacokinetic and pharmacodynamics (PK/PD); mechanism of action; side-effects; a list of any/all:  in-vitro and/or in-vivo pre-clinical safety toxicology or animal qualification and efficacy studies planned or completed including a summary of safety and/or efficacy; rights of reference; Good Laboratory Practices (GLP) compliance; schedule of deadlines for milestones and decision making (go/no go); and any associated risks.  Describe how the pre-clinical plan will support the regulatory strategy and/or RDP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.4",
+              "title": "CDP",
+              "content": "Describe the goals and objectives of the clinical program for the drug/biologic.  This plan shall include, but is not limited to:   background; scientific summary; target population; PK/PD; mechanism of action; side-effects; a list of any/all clinical studies planned or completed including any objectives/endpoints; letters of reference; rights of reference; and a schedule of deadlines for milestones and decision making (go/no go); and any associated risks.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.1.4.1",
+                  "title": "Describe how the clinical plan will support the regulatory strategy and/or RDP",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.1.4.2",
+                  "title": "Describe the clinical trial agreement and approval process",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.1.5",
+              "title": "Manufacturing Development Plan",
+              "content": "Describe the manufacturing process for the drug/biologic product to ensure conformity with Section 501(a)(2)(B) of the Food, Drug, and Cosmetics Act (FD&C Act, Title 21 United States Code (USC) Section 351 (a)(2)(B)), regarding good manufacturing practices (GMP).  This plan shall describe, but is not limited to planned or completed drug substance studies; list of excipients and information to support the safety of excipients that, when appropriate, shall be cross-referenced; drug product and formulation development summary from initial concept through final design; physicochemical and biological properties; manufacturing process development and validation program documents; container closure system documents [description, choice, rationale]; microbiological attributes documents and plans; compatibility documents (e.g., precipitation); assay development and validation, stability plan; and any associated risks.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "FDA Interactions",
+          "content": "Provide copies of the plan and processes that will ensure the government has visibility and input on all FDA communications regarding the drugs and biologics for the following, but not limited to:  FDA interactions, FDA meetings, communications, submissions, inspections, and enforcement documentation.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.2.1",
+              "title": "Meetings",
+              "content": "Provide FDA meeting documentation that includes, but is not limited to the copies of all meeting request letters, meeting briefing package submissions, meeting communications, and formal meeting minutes prepared by FDA and/or the contractor, and any other meeting correspondence (formal or informal).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.2",
+              "title": "Communications",
+              "content": "FDA Communications documentation shall include, but is not limited to copies of sponsor FDA contact reports, informal and email communications, official communication letters; all communications during the review of drug/biologic submissions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.3",
+              "title": "Submission Packets",
+              "content": "FDA regulatory submission packages (including cover letters and required forms) shall include, but are not limited to applications such as Investigation New Drugs  (21 CFR Section 312), New Drug Applications  (21 CFR Section 314), Biologics License Applications (BLAs) (21 CFR Sections 600-680), and Emergency Use Authorization  (21 USC 360bbb-3)) along with any applicable product master files.  Provide an electronic copy of submissions to the FDA; supporting documentation, including submissions provided in electronic (in compliance with FDA's guidance regarding electronic common technical document format) and paper format as applicable.  Provide copy of submission date, acknowledgement letters, communications related to the application, filing letters, decision letters, post-marketing commitments, and any applicable approval letters.  Provide submission tracking list as applicable for the product development effort/project.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.2.4",
+              "title": "Inspections and Enforcement",
+              "content": "Provided information on inspections and enforcement including, but not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.2.4.1",
+                  "title": "Notification of FDA Inspections",
+                  "content": "Pre-announced inspections, PAI, quality systems (QS) inspections (International Conference of Harmonisation (ICH)-Quality), team inspections, foreign inspections, and third-party inspections.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.4.2",
+                  "title": "Notices of Violations",
+                  "content": "FDA Form 483s (list of inspectional observations), untitled letters, warning letters or other communications, other civil or criminal compliance actions, and meetings.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.4.3",
+                  "title": "Disqualification of clinical investigators by the FDA, clinical research organization (CRO), or Institutional Review Boards (IRBs)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.4.4",
+                  "title": "Inspection responses and correction plans",
+                  "content": "Notification of outstanding actions as result of inspections.  Prior FDA Form 483s, as applicable to the project, may be redacted if necessary if this doesn't impact readability.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.2.4.5",
+                  "title": "Establishment Inspection Report (EIR), prior EIRs as applicable",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.2.5",
+              "title": "Registration and Listing",
+              "content": "The contractor shall provide a copy of the establishment registration and listing documentation.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Pre-clinical Testing and Trials",
+          "content": "Provide pre-clinical to include pre-clinical GLP study documentation for review and approval that includes, but is not limited to the following.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "For all non-GLP pre-clinical testing, provide protocols and reports, raw data, and reports",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.2",
+              "title": "For all GLP pre-clinical testing, provide protocols, raw data, and reports as follows",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.3.2.1",
+                  "title": "Pre-clinical (in-vitro) assay development procedures, protocols and reports",
+                  "content": "Pre-clinical (in-vitro) assay development procedures, protocols and reports; validation procedures, protocols and reports; and methods in accordance with GLP 21 CFR Part Section 58.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.2.2",
+                  "title": "Pre-clinical (in-vivo) toxicology study protocols and reports",
+                  "content": "Pre-clinical (in-vivo) toxicology study protocols and reports; and PK/PD study protocols and reports in accordance with GLP 21 CFR Part Section 58.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.3.2.3",
+                  "title": "Pre-clinical animal efficacy study protocols and reports",
+                  "content": "Pre-clinical animal efficacy study protocols and reports in accordance with GLP 21 CFR Part 58 or otherwise required by 21 CFR 314.600 or 21 CFR 601.90 (\"the Animal Rule\").",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.3.3",
+              "title": "Provide protocols, reports, and data for bioavailability/equivalence testing",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.4",
+              "title": "Provide any applicable documentation on compliance to demonstrate how the care and use of laboratory animals meet the DoD requirements",
+              "content": "Provide any applicable documentation on compliance to demonstrate how the care and use of laboratory animals meet the DoD requirements (Army Regulation (AR) 40-33) for DoD-funded pre-clinical studies.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.4",
+          "title": "Clinical Trials",
+          "content": "Provide documents related to clinical studies performed for phase 1, 2, or 3; post-market, or any other studies for the clinical development of drugs and biologics products; including but not limited to the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.4.1",
+              "title": "Clinical study protocol(s) and related documents",
+              "content": "Clinical study protocol(s) and related documents including, but not limited to the informed consent, Investigators Brochure, source documents, study procedures manual, study specific procedures (SSPs), pharmacy manual, FDA Form 1572, clinical trial agreement(s), transfer of regulatory obligations documentation (FDA Form 1571 listing the obligations transferred).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.2",
+              "title": "Provide Federal Wide Assurance (FWA) compliance number(s), documentation, and any approvals",
+              "content": "Provide Federal Wide Assurance (FWA) compliance number(s), documentation, and any approvals to meet Army Human Subjects Research Protection Office (HRPO) requirements for DoD Instruction 3216.02 Protection of Human Subjects and Adherence to Ethical Standards in DoD-Supported Research and 32 CFR Section 219 for protection of human subjects.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.3",
+              "title": "Completed trial master file per ICH E6",
+              "content": "Completed trial master file per ICH E6 including, but not limited to:  the clinical trial monitoring records, all clinical monitoring reports, clinical monitoring plan, corrective action & preventative actions (CAPA), copies of all informed consents, all correspondence and submissions to/from study-related IRBs and other regulatory authorities, serious adverse event (SAE) reconciliation completion records, completed case report forms (CRF), and test article/investigational product (IP) management records (e.g., disposition records, temperature excursion records, etc.), and final clinical study report.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.4",
+              "title": "Clinical data management documents",
+              "content": "Clinical data management documents including, but not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.4.4.1",
+                  "title": "Approved data management plan and its supporting appendices, all versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.2",
+                  "title": "Study database design specifications",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.3",
+                  "title": "Approved electronic CRF (eCRF) annotation/specifications, all versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.4",
+                  "title": "Approved edit check specifications, all versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.5",
+                  "title": "Approved ad hoc data listing/report specifications",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.6",
+                  "title": "Approved study database validation plan (DBVP) and the study database testing and validation supporting documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.7",
+                  "title": "Study database release for production approval documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.8",
+                  "title": "Approved CRF completion and data entry guidelines",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.9",
+                  "title": "End user training completion records",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.10",
+                  "title": "Approved data transfer validation plan and its supporting documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.11",
+                  "title": "Approved completion of Medical Dictionary for Regulatory Activities (MedDRA) and World Health Organization (WHO) drug coded data or analogous standard",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.12",
+                  "title": "Data quality assessment completion record(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.13",
+                  "title": "Study database lock approval(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.14",
+                  "title": "Copy of clinical database, clinical study data conforming to Clinical Data Acquisition Standards Harmonization (CDASH) standards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.4.4.15",
+                  "title": "All documentation related to change control",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.4.5",
+              "title": "Biostatistics deliverables",
+              "content": "Biostatistics deliverables that include, but not limited to the statistical analysis plan (SAP); statistical programming validation plan; data display shells (mock table, listing, and figures [TLFs]); populated draft TLFs and final TLFs; all components for the submission of data to the FDA in the FDA-required format and in accordance with the current Clinical Data Interchange Standards Consortium data deliverable requirements, statistical products for FDA requests/queries, statistical analysis software, transport files, randomization list,  and statistical programming specifications; data sets; programs (scripts); formats, labels and coding conventions; and output; in the data submission format acceptable to the FDA.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.6",
+              "title": "Safety and pharmacovigilance documents",
+              "content": "Safety and pharmacovigilance documents that include, but are not limited to SAE reports and complete case file(s); safety management and surveillance plan(s); Data and Safety Monitoring Board (DSMB) charters; meeting minutes and recommendations, safety surveillance plans, and copy of safety database records.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.7",
+              "title": "Notification of clinical holds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.8",
+              "title": "Notification of FDA inspections of clinical sites",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.9",
+              "title": "The CRO selection and vendor qualification",
+              "content": "The CRO selection and vendor qualification including quality agreements, quality management (QM) plans, and transfer of sponsor obligations.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.5",
+          "title": "Manufacturing",
+          "content": "Provide documentation related to the manufacture, quality control testing, and cold chain management of the product including, but not limited to the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.5.1",
+              "title": "Copy of product master files",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.2",
+              "title": "List of standard operating procedures",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.3",
+              "title": "Copies of product specific processes and procedures",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.4",
+              "title": "Recorded formulation development work that is outside other listed document types",
+              "content": "Recorded formulation development work that is outside other listed document types, including by not limited to notebooks or formulation development reports, as required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.5",
+              "title": "Assay development and validation procedures, protocol and report",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.6",
+              "title": "Quality Control laboratory records and documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.7",
+              "title": "Master and Production Records",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.8",
+              "title": "Investigational Drug testing or full compendia testing results on excipients and active pharmaceutical ingredients",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.9",
+              "title": "In-process testing processes, procedures, and results",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.10",
+              "title": "Any product-related testing, processes, procedures, and results",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.11",
+              "title": "Leachables/extractables data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.12",
+              "title": "Out of specification and out of trend investigation documentation, reports, data",
+              "content": "Out of specification and out of trend investigation documentation, reports, data including identification and characterization of impurities (drugs).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.13",
+              "title": "Cold-chain management and storage documentation",
+              "content": "Cold-chain management and storage documentation [United States Pharmacopeia (USP) 33 <1079>], including reports of temperature excursions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.14",
+              "title": "Certificate of analyses for bulk drug substance and final drug products",
+              "content": "Certificate of analyses for bulk drug substance and final drug products (placebo and challenge material, as applicable).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.15",
+              "title": "Shipping validation protocols, reports, and raw data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.16",
+              "title": "Stability protocols, reports, and raw data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.17",
+              "title": "Equipment list",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.18",
+              "title": "Installation qualification, operational qualification, performance qualification protocols, and reports",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.19",
+              "title": "Equipment cleaning validation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.20",
+              "title": "Process validation procedures, protocols, and reports",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.21",
+              "title": "Vendor qualification records",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.22",
+              "title": "Raw material records",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.23",
+              "title": "Environmental monitoring records applicable to manufacturing runs of the product",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.24",
+              "title": "Cell banking documentation to include characterization and release testing (biologics)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.25",
+              "title": "Documentation supporting manufacturing process development including any engineering runs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.26",
+              "title": "Certificate of current GMP (cGMP) (21 CFR Sections 210 and 211) conformance as applicable",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.5.27",
+              "title": "Bioavailability/equivalence procedures, protocols, and reports",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.6",
+          "title": "Quality Assurance (QA)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.6.1",
+              "title": "Quality Agreements",
+              "content": "Describe the materials or service, quality specification responsibilities, and communication mechanisms including, but not limited to the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "2.6.1.1",
+                  "title": "Describe the obligations and responsibilities of the quality units of each of the parties involved",
+                  "content": "Describe the obligations and responsibilities of the quality units of each of the parties involved in the contract manufacturing or pre-clinical testing subject to cGMP, GLP, respectively.  In general, these agreements should clarify which of the cGMP/GLP activities are to be carried out by each party per the applicable regulations under 21 CFR Part Section 211 and 21 CFR Section 58 and other regulations that may apply.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2.6.1.2",
+                  "title": "Describing the roles and responsibilities of the Government and the contracted facility",
+                  "content": "Describing the roles and responsibilities of the Government and the contracted facility in accordance with all applicable cGMP responsibilities.  This agreement may contain key quality roles and responsibilities; communication expectations; key points of contact for both parties; specify what products and/or services the contracted facility will provide to or for the Government; and establish who has final approval for various activities (quality units and other stakeholders).  Most quality agreements contain purpose/scope, terms (including effective date and termination clause), dispute resolution, responsibilities (including communication mechanisms and contacts), and change control and revisions plan.  The plan should describe how the government will be notified and the approval processes (both contractor and government) for changes in facility location, equipment, or cold chain management practices that deviate from the quality agreement.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "2.6.2",
+              "title": "Quality Management Plan",
+              "content": "The quality management plan may include, but is not limited to the quality policy and objectives, management review, competencies and training, process document control, feedback, evaluation, corrective action and preventive action, process improvement, measurement, and data analysis processes.  The framework is normally divided into infrastructure, senior management responsibility, resource management, lifecycle management, and quality management system evaluation.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Medical Devices",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Product Development Planning Documents",
+          "content": "Describe the product development planning documents that will outline the product development strategy, including regulatory pathway risks and timelines across the phases of the product development cycle.  These documents assist in identifying risks to the program (e.g., regulatory concerns).  These documents may include, but are not limited to the regulatory strategy, RDP, pre-CDP, CDP, and manufacturing development plan.  Describe how the documents will be updated as specified in the solicitation, proposal, and/or contract.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Regulatory Strategy",
+              "content": "Describe the regulatory pathway for FDA regulatory approval/licensure and any possible post-marketing commitments that include, but are not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Product Nomenclature and Classification",
+                  "content": "Describe product name; proposed trade name; device panel (FDA review center and review division); classification (Class I, II, III).  If not yet classified, details regarding the 513(g) Request for Information submission to the FDA to obtain FDA evaluation and ruling on how device should be classified, regulation number, and product code.  (References:  Classification Regulations 21 CFR Parts 862-892; section 513(g) of the FD&C Act, 21 USC 360c(g)).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Device Description",
+                  "content": "Concise summary and explanation of the medical device that may include:  Key design features such as new technology or is the technology similar to an identified predicate; number of component parts the device will have and descriptions; device included software; technical features of the device which restricts user environment; or any other descriptive elements that describes what the medical device is and does (e.g., engineering diagrams, pictures of the finished device, physical properties, chemical composition, labeling instructions).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Intended use/indications for use statement",
+                  "content": "Intended use/indications for use statement (i.e., how it will be used) such as target patient population(s); use environment (e.g., home, hospital, military, field use, etc.); target user(s) (e.g., military users, trained laboratory or medical professional, untrained lay person, etc.; description of use environment (e.g., combat support hospital, hospital, ambulance, home, etc.); and target user (specific requirements for proposed military use of the device).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Regulatory Pathway",
+                  "content": "Describe how the device will be regulated; proposed type of marketing applications (e.g., Class I Exempt, Class I or II requiring Premarket Notification (Section 510k), de novo submission, or Class III Pre-market Approval Application [PMA]); key data considerations to extent known; list of key risks/barriers to proposed pathways; and discussion of relevant FDA guidance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Current development status and regulatory status of the product and previous FDA interactions or submissions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.6",
+                  "title": "For those devices that will potentially require a 510(k), provide information about the proposed predicate",
+                  "content": "For those devices that will potentially require a 510(k), provide information about the proposed predicate and approach to substantial equivalence (predicate analysis) identifying relevant similarities or differences in areas such as intended use; indications for use; target population; anatomical site; use environment; human factors; energy used/delivered; design; materials; performance; chemical composition; chemical characteristics etc. as applicable to the type of device or in vitro diagnostic being developed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.7",
+                  "title": "Life Cycle Considerations",
+                  "content": "Describe future device generations, modifications, indications, or claims that will build on prior/initial/subsequent approvals or clearances.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "RDP",
+              "content": "Describe specific steps, elements, and project deliverables to meet the objectives defined in the regulatory strategy (e.g., specific country regulatory references; lists of guidance and standards to be used; predicate devices and comparisons; matrix of product claims and the supporting data to support the claims; labeling; specific pre-clinical and clinical reports; literature references; information or commitments from pre-submission meetings with regulatory agencies).  Describe regulatory-specific deliverables that include, but are not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Regulatory timeline that includes sequence and timing of key regulatory activities",
+                  "content": "Regulatory timeline that includes sequence and timing of key regulatory activities, tasks, and decision points (meetings/communications with regulatory agencies, submissions including authoring and publishing, and marketing application submission).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Regulatory communication plan that includes plans for meetings and other key discussions",
+                  "content": "Regulatory communication plan that includes plans for meetings and other key discussions with regulatory agencies; key questions/assumptions; and how the contractor shall ensure maximum government participation at these meetings (e.g., notification of meetings, invites, minutes, agendas, application, etc.).  These documents shall describe how the contractor will address FDA meetings; communications such as sponsor FDA contact reports, informal and email communications, official communication letters; and any and all submissions related to the product review and approval.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "Previous regulatory communication information",
+                  "content": "Describe information or commitments from previous meetings with regulatory agencies (e.g., tracking table of previous communications, interactions, and submissions with submission numbers where applicable).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Matrix of product claims and plan for studies to support claims",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "Analysis of testing requirements based on established standards and guidance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.6",
+                  "title": "Specific facility or pre-Inspection requirements such as PAIs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Pre-CDP",
+              "content": "Describe the goals and objectives of the pre-clinical program for the medical device or diagnostic.  This plan shall include, but is not limited to:  animal study data; pre-clinical tests for safety; efficacy or performance in in vitro and animal systems; animal model rationale; animal study protocols, methods, data; and reports.  Provide description of how pre-clinical testing will be performed in compliance with 21 CFR Part Section 58, GLPs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "CDP",
+              "content": "Describe the goals and objectives of the clinical program for the medical device or assay (e.g., first in human, early feasibility, and pivotal studies).  This plan shall include, but is not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.4.1",
+                  "title": "Device Concept",
+                  "content": "Describe initial clinical input on necessary claims for development; as well as, clinical input on claims that may be difficult to substantiate.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.2",
+                  "title": "Describe the clinical trial agreement and approval process",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.3",
+                  "title": "Device Prototype/Feasibility",
+                  "content": "Describe the clinical risk analysis plan regarding use of prototype devices in clinical trial(s) and describe how the device will be verified to be as safe and confirmed with FDA.  The plan should outline the Sponsor's initial risk determination (Significant Risk (SR), Non-significant Risk , or exempt).  Detail if device under investigation requires compliance with Investigational Drug Exemptions (IDE) or additional regulations due to use in combination product use or compliance with regulations from other countries.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.4",
+                  "title": "Describe how the clinical plan will support the regulatory strategy and/or RDP",
+                  "content": "Describe how the clinical plan will support the regulatory strategy and/or RDP such as design verification and prototype device evaluation in humans, pivotal studies, and/or proposed post-market surveillance studies, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.5",
+              "title": "Manufacturing Development Plan",
+              "content": "Describe the device development plan that describes the design and development activities and allocates the individual responsibilities for each activity.   Explain the review, update, and approval processes to be used until the device design is completed, verified, and validated.  Plan should describe device quality objectives and design control requirements.  Design activities should be specified at the level of detail necessary for carrying out the design process.  The plan can reflect the size of the organization and complexity of the product under development, but at a minimum should contain an appropriate level of detail to successfully carry out the design process.  Manufacturers may develop a plan which spells out the project-dependent elements in detail and incorporates the general policies and procedures by reference or may develop a more comprehensive plan that is tailored to a specific, individual project.  Minimum elements expected to be addressed in the plan include, but are not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.5.1",
+                  "title": "Description of the goals and objectives of the design and development program",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.2",
+                  "title": "Outline of organizational responsibilities with respect to assuring quality during the design and development phase",
+                  "content": "Outline of organizational responsibilities with respect to assuring quality during the design and development phase including interface with any contractors.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.3",
+                  "title": "Identification of the major tasks in design and development with deliverables for each task",
+                  "content": "Identification of the major tasks in design and development with deliverables for each task.  Include resourcing and the individual or organizational responsibilities) for completing each task.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.4",
+                  "title": "Schedule of major tasks",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.5",
+                  "title": "Identify the points of major design reviews and design/development decision points",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.6",
+                  "title": "Identify review teams",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.7",
+                  "title": "Provide procedures to be followed by reviewers",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.8",
+                  "title": "Provide process of controls for design documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.9",
+                  "title": "Outline of communication policies, procedures, and notification activities",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "FDA Interactions",
+          "content": "Provide copies of the plan and processes that will ensure the government has visibility and input on all FDA communications regarding the medical device for the following, but not limited to:  FDA interactions, FDA meetings, communications, submissions, inspections, and enforcement documentation.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Meetings",
+              "content": "FDA meeting documentation shall include, but is not limited to:  copies of all meeting request letters, meeting briefing package submissions, meeting communications, and formal meeting minutes prepared by FDA and/or the contractor, and any other meeting correspondence (formal or informal).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Communications",
+              "content": "FDA Communications documentation shall include, but is not limited to, the following:  copies of sponsor FDA contact reports, informal and email communications, official communication letters; all communications during the review of medical device pre-submissions and submissions.  Any IDE disapproval letters or FDA requests for additional information about the IDE and documentation related to the Sponsor's requests for FDA hearing related to IDE disapproval (requests for hearing in accordance with 21 CFR 16).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Submission Packets",
+              "content": "FDA Regulatory Pre-submission and Submission Packages (including cover letters, supporting documentation, and required forms) shall include, but are not limited to:  applications such as the traditional 510(k), Special 510(k), Abbreviated 510(k), de novo application, PMA and PMA supplements; Section 513(g) Request; IDEs; Emergency Use; or Exempt device studies under 21 CFR Section 812.2(c).  Provide an electronic copy of all final submissions to FDA, all supporting documentation including all submissions provided in electronic and paper format.   Provide copy of submission date, acknowledgement letters, and action indicated letters; communications related to the application; and any applicable approval/rejection letters.  Provide submission tracking list as applicable for the product development effort/project.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Inspections and Enforcement",
+              "content": "Describe documents that will be provided for information on inspections and enforcement including, but not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.4.1",
+                  "title": "Notification of FDA Inspections",
+                  "content": "Pre-announced inspections, PAIs, QS inspections (ICH Q10), team inspections, foreign inspections, and third-party inspections.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.2",
+                  "title": "Notices of Violations",
+                  "content": "FDA Form 483s (list of inspectional observations), untitled letters, warning letters or other communications, and meetings.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.3",
+                  "title": "Disqualification of clinical investigators by the FDA, CRO, or IRBs",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.4",
+                  "title": "Inspection responses and correction plans",
+                  "content": "Notification of outstanding actions as result of inspections.  Prior FDA Form 483s, as applicable to the project, may be redacted if necessary if that doesn't impact readability.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.4.5",
+                  "title": "EIRs, prior EIRs as applicable, and classification of the inspection",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.5",
+              "title": "Registration and Listing",
+              "content": "The contractor shall provide a copy of the establishment registration and listing documentation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Post-Marketing Commitments",
+              "content": "Describe studies mandated as a condition of approval of a PMA application, protocol development product application or humanitarian device exemption  application; list of commitments; and copies of FDA communications and submissions related to commitments.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Clinical Laboratory Improvement Amendments waivers and supporting documentation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Pre-Clinical Testing and Trials",
+          "content": "Provide information and testing required to market the device that is determined by device classification, mechanisms of cooperation, technological characteristics, and labeling.  Documentation can include, but is not limited to:  Results and reports of preclinical tests for safety, efficacy, or performance in in vitro and animal systems including biocompatibility tests designed to ensure biological safety of the materials and animal efficacy tests designed to evaluate effectiveness of the design in nonhuman systems; animal model rationale; animal study protocols, methods, data; and final report versions provided in regulatory submissions to demonstrate safety and performance of the device under study.  Describe how pre-clinical testing performed in support of a premarket submission of a medical device will comply with 21 CFR Part 58, GLPs, and provide evidence of GLP compliance.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Clinical Trials",
+          "content": "Provide documents related to clinical studies performed development of medical devices; including, but not limited to:  clinical study protocol(s) and related documents such as, but not limited to, the informed consent; Instructions for Use; source documents; study procedures; SSPs; FDA forms; and clinical trial agreement(s).",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Provide FWA compliance number(s), documentation, and any approvals",
+              "content": "Provide FWA compliance number(s), documentation, and any approvals to meet Army HRPO requirements for DoD Instruction 3216.02 Protection of Human Subjects and Adherence to Ethical Standards in DoD-Supported Research and 32 CRF Part 219 for protection of human subjects.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Investigational plan approved by an IRB",
+              "content": "Investigational plan approved by an IRB, 21 CFR 56 IRBs; IDE approval by FDA for SR device, 21 CFR 812 - IDE; 21 CFR 50 Protection of Human Subjects; investigational device labeling; monitoring of the study, and required records and reports; and source documents that adherence to GCP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Human Subject Protections per FDA Regulation - 21 CFR Part Section 50",
+              "content": "Describe plan to provide evidence of compliance as required, including, but not limited to:  documentation/copy of Informed Consent and additional protection information if children or other special populations are involved in the study.  The plan should describe how the contractor will meet HRPO requirements:  DoD Instruction 3216.02 Protection of Human Subjects and Adherence to Ethical Standards in DoD-Supported Research and 32 CRF Part 219 for protection of human subjects including timelines for review and documentation of conduct of the review.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Clinical Validation Plan",
+              "content": "Describe plan to ensure the quality and integrity of data and information submitted in support of research and marketing permits that include IDE, PMA, and 510(k) submissions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Completed trial master file per ICH E6",
+              "content": "Completed trial master file per ICH E6, with the following document such as the clinical trial monitoring records, all clinical monitoring reports, clinical monitoring plan, CAPAs, copies of all informed consents, all correspondence and submissions to/from study-related IRBs and other regulatory authorities, SAE reconciliation completion records, completed CRFs, and test article/IP management records and final clinical study report.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Clinical Quality Management Plan (CQMP)",
+              "content": "Describe the plan for clinical trials conducted under the device development effort.  The CQMP should include, but is not limited to description of individual(s) responsible for the development, implementation of the CQMP; key quality control (QC) and QA staff; description of QM activities and tools to include activities and tools will be utilized in the QC process and the QA process; review schedule and outline of review priorities; corrective action processes for QA or QC findings; QM results reporting processes; staff training processes; and process for annual evaluation of the CQMP and activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "Clinical data management documents",
+              "content": "Clinical data management documents including, but not limited to the following.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.7.1",
+                  "title": "Approved data management plan and its supporting appendices, all versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.2",
+                  "title": "Study database design specifications",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.3",
+                  "title": "Approved eCRF annotation/specifications, all versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.4",
+                  "title": "Approved edit check specifications, all versions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.5",
+                  "title": "Approved ad hoc data listing/report specifications",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.6",
+                  "title": "Approved study DBVP and the study database testing and validation supporting documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.7",
+                  "title": "Study database release for production approval documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.8",
+                  "title": "Approved CRF completion and data entry guidelines",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.9",
+                  "title": "End user training completion records",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.10",
+                  "title": "Approved data transfer validation plan and its supporting documentation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.11",
+                  "title": "Approved completion of MedDRA and WHO drug coded data or analogous standard",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.12",
+                  "title": "Data quality assessment completion record(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.13",
+                  "title": "Study database lock approval(s)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.14",
+                  "title": "Copy of clinical database, clinical study data conforming to CDASH standards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.7.15",
+                  "title": "All documentation related to change control",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.8",
+              "title": "Protocol review and approval such as IRB reviews, copies of informed consent forms, and copies of CRFs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "Notification of clinical holds",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "Notification of FDA inspections of clinical sites",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.11",
+              "title": "Notification of unanticipated adverse device events reports (UADE)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.12",
+              "title": "The CRO selection and vendor qualification",
+              "content": "The CRO selection and vendor qualification including quality agreements, quality management plans, and transfer of sponsor obligations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.13",
+              "title": "Provide copy of FWA application with descriptions of the qualifications of IRB membership and the FWA number",
+              "content": "Provide copy of FWA application with descriptions of the qualifications of IRB membership and the FWA number.  Describe plan to submit documentation and develop timeline for any Government Human Research Protection required for government-funded human research.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.14",
+              "title": "Biostatistics deliverables",
+              "content": "Biostatistics deliverables that include, but not limited to:  the SAP; statistical programming validation plan; all components for the submission of data to the FDA for FDA requests/queries including randomization list  and statistical programming specifications; data sets; programs (scripts); formats, labels, and coding conventions; and output in the data submission format acceptable to FDA.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.15",
+              "title": "Safety documents",
+              "content": "Safety documents that include, but are not limited to UADE reports and complete case file(s), safety management and surveillance plan(s), DSMB charters, meeting minutes and recommendations, safety surveillance plans, and copy of safety database records.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Manufacturing",
+          "content": "Provide documentation, protocols, and reports of the methods used in and the facilities and controls used for the manufacture, processing, and when relevant, packing and installation of the device.  Activities include, but are not limited to, the following (IAW 21 CFR Part 820):",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Quality system requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Design controls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Document controls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Purchasing controls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Identification and traceability",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Production and process controls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Acceptance activities",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Nonconforming product",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Corrective and preventative actions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.10",
+              "title": "Labeling and packaging control",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.11",
+              "title": "Handling, storage, distribution, and installation records",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.12",
+              "title": "Servicing",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.13",
+              "title": "Statistical controls",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.14",
+              "title": "Types of documentation may include, but are not limited to",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.14.1",
+                  "title": "Design History File (DHF)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.2",
+                  "title": "Design Control",
+                  "content": "Relevant procedures and records related to design control process to control and monitor design activities.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.3",
+                  "title": "Device Master Record",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.4",
+                  "title": "Device History Record",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.5",
+                  "title": "Product design inputs, specifications, and requirements",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.6",
+                  "title": "Traceability Matrix",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.7",
+                  "title": "Design verification plan, protocols, and reports",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.8",
+                  "title": "Design validation plan, protocols, and reports",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.9",
+                  "title": "Product Validation Plan",
+                  "content": "E.g., plan for product validation and the associated manufacturing process, production equipment, and test equipment verification and validation (V&V) requirements to include as applicable calibration, preventive maintenance, spare parts, documentation, installation qualifications (IQ), design of experiments and/or operational qualifications (OQ), and process qualification (PQ).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.10",
+                  "title": "Product and Process validation reports",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.11",
+                  "title": "Hazard analysis",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.12",
+                  "title": "Product-failure mode and effects analysis (FMEA)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.13",
+                  "title": "Product V&V test data reports as applicable to specific device",
+                  "content": "Product V&V test data reports as applicable to specific device  (e.g., product biocompatibility, particulate, bioburden, product sterility, sterilization process, electromagnetic compatibility or other electrical data as applicable to the specific product, human factors, environmental, software, accelerated aging, shipping, shake/drop).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.14",
+                  "title": "Test plan, test procedures, test fixture documentation, and test procedure validation records",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.15",
+                  "title": "Final acceptance test procedures and reports",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.16",
+                  "title": "Bill of Materials (BOM)",
+                  "content": "Evolution of BOM during development and final complete and fully costed BOM for finished device.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.17",
+                  "title": "List of off-the-shelf parts in the device and list of standard components specifications for all off-the-shelf parts",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.18",
+                  "title": "List of custom parts used in the device and specifications and drawings for all custom parts",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.19",
+                  "title": "List of assigned parts numbers for all parts",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.20",
+                  "title": "Approved-vendor list and vendor requirements that must be met",
+                  "content": "Approved-vendor list and vendor requirements that must be met (e.g., audits, first-article inspection, supplier survey).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.21",
+                  "title": "All part drawings and schematics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.22",
+                  "title": "Assembly procedures and any requirements for assembly fixtures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.23",
+                  "title": "Incoming materials inspection plan and parts that will require first-article inspection",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.24",
+                  "title": "In-process and final inspection plans, reports, and validation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.14.25",
+                  "title": "Safety, compliance, and packaging testing",
+                  "content": "Safety, compliance, and packaging testing - protocols, reports, and testing results.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "System Engineering",
+          "content": "Provide documents including, but not limited to:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "System engineering plan that documents that will describe the how system engineering deliverables will meet FDA requirements",
+              "content": "System engineering plan that documents that will describe the how system engineering deliverables will meet FDA requirements described for design and manufacturing documentation described under the QS Regulation (QSR, 21 CFR Part Section 820).",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "For commercial \"off-the-shelf'' purchased software, describe a plan to evaluate and validate",
+                  "content": "For commercial \"off-the-shelf'' purchased software, describe a plan to evaluate and validate that the software will perform as intended in the chosen application following FDA guidance for off-the-shelf software used in medical devices.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Software Lifecycle Processes following FDA regulations for development under design controls",
+                  "content": "Software Lifecycle Processes following FDA regulations for development under design controls per the QSR, 21 CFR Part 820.30.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Provide system engineering document including, but not limited to",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Technical data packages (TDP) in accordance to Military Standard (MIL-STD)-31000 (latest revision)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "Appropriate formats for drawings, 3-dimensional models, etc.",
+                  "content": "Appropriate formats for drawings, 3-dimensional models, etc., are described in the applicable document section.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.3",
+                  "title": "Software processes are described as International Organization for Standardization/ International Electrotechnical Commission (ISO/IEC) 12207",
+                  "content": "Software processes are described as International Organization for Standardization/ International Electrotechnical Commission (ISO/IEC) 12207 System and Software Engineering.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.4",
+                  "title": "List items and equipment specifically required for training and repair",
+                  "content": "List items and equipment specifically required for training and repair (unique, non-commercial equipment) that will be provided with the solution, along with any manual and instructions to operate and use this device, including software.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Additional software documents of relevance include ISO/IEC 26514",
+              "content": "Additional software documents of relevance include ISO/IEC 26514 Systems and software engineering describing the requirements for designers and developers of user documentation.  The primary sources for this international standard are previous standards are listed below.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Institute of Electrical and Electronics Engineers (IEEE) Standard 1063-2001",
+                  "content": "Institute of Electrical and Electronics Engineers (IEEE) Standard 1063-2001, IEEE standard for software user documentation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "ISO/IEC 18019:2004",
+                  "content": "ISO/IEC 18019:2004, Software and system engineering, guidelines for the design and preparation of user documentation for application software.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "ISO/IEC/IEEE 15289:2015 Systems and software engineering, content of life-cycle information items (documentation)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Provide a list of the verification and validation tests that will verify the ability of the solution",
+              "content": "Provide a list of the verification and validation tests that will verify the ability of the solution to withstand the appropriate operational modes and mission profiles (OMS/MP) using tailored tests in accordance with MIL-STD-810.  This list should include, but is not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.4.1",
+                  "title": "The OMS/MPs listed in the appropriate capability or requirements document",
+                  "content": "The OMS/MPs listed in the appropriate capability or requirements document (e.g., solutions must be able to be shipped and stored without special conditions for protection from adverse temperature, humidity, and pressure conditions).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.2",
+                  "title": "Test Procedures and Reports",
+                  "content": "Describe how documentation will delineate what tests are to be performed, the characteristics of the system the test verifies (or validates), and how the test conductor will validate that the system is operating normally after the test has concluded to a level of confidence that the procedure(s) can proceed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.3",
+                  "title": "Functional procedures used to insure proper function shall be delivered in vendor format",
+                  "content": "Functional procedures used to insure proper function shall be delivered in vendor format.  The procedure should include all the necessary steps and conditions required to insure the item(s) is functioning properly along with any and all test equipment and facilities that must be utilized to perform the procedure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.4",
+                  "title": "Laboratory accreditation(s), such as ISO 17025, shall be listed in test reports",
+                  "content": "Laboratory accreditation(s), such as ISO 17025, shall be listed in test reports or if third party inspection is planned for formal test deliverables.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.6.4.4.1",
+                      "title": "All special test equipment, software, jigs, etc. developed to support the test and evaluation master plan",
+                      "content": "All special test equipment, software, jigs, etc. developed to support the test and evaluation master plan shall be listed and designs of each shall be included in the TDP.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.6.4.4.2",
+                      "title": "All calibration information with list commercial equipment used to support testing",
+                      "content": "All calibration information with list commercial equipment used to support testing shall be part of the test report.  Metrology numbers, date of calibration, and model and serial numbers of equipment shall be listed in a table as part of the test report.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.6.4.5",
+                  "title": "All \"carry-on\" electromechanical equipment, including medical devices, must have an Airworthiness release",
+                  "content": "All \"carry-on\" electromechanical equipment, including medical devices, must have an Airworthiness release prior to use on any aircraft.  Describe plan to obtain appropriate Airworthiness (Army) Release and/or Safe-to-Fly certifications as required in the contact.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.6",
+                  "title": "Additional relevant system and software verification and validation processes include IEEE Standard 1020-2012",
+                  "content": "Additional relevant system and software verification and validation processes include IEEE Standard 1020-2012, IEEE Standard for System and Software Verification and Validation.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.5",
+              "title": "Reliability, Availability, Maintainability, and Cost (RAM-C) Report",
+              "content": "RAM-C Report using the instruction in DoD Reliability, Availability, Maintainability, and Cost Rationale Report Manual (June 1, 2009).  Updates shall be provided and/or to support major acquisition milestones (B, C, Full Rate Production (FRP), etc.) as required in the solicitation, proposal, and/or contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "System Safety",
+              "content": "List safety, health, environmental, fire, software controlled hazards, and ergonomic hazards associated with the use, maintenance, transportation, storage, handling, and demilitarization of the solution.  These parameters should be evaluated/assessed and mitigated or controlled to an acceptable level in the safety assessment report (SAR).  The SAR should be prepared in accordance with MIL-STD-882, DoD Standard Practice for System Safety, and AR 40-10, Health Hazard Assessment Program in support of the Army Acquisition Process.  Updates shall be provided and/or to support major acquisition milestones (B, C, FRP, etc.) as required in the contract.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.6.1",
+                  "title": "The definitions in Tables I and II, and the risk assessment codes in Table III of MIL-STD-882 shall be used to classify hazards",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.6.2",
+                  "title": "Notify the government of modifications or changes to the system or user scenario any time during the acquisition life cycle of the system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.7",
+              "title": "Human Factors Engineering",
+              "content": "List and explain the design principles that will take into account how human capabilities and limitations shall be incorporated into system definition, design, development, and evaluation.  Analysis, inspection and validation reports will include how the solution complies with MIL-STD 1472, DoD Design Criteria Standard:  Human Engineering.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "QA",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Quality Agreements",
+              "content": "Describe the materials or service, quality specification responsibilities, and communication mechanisms including, but not limited to, the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.1.1",
+                  "title": "Describe the obligations and responsibilities of the quality units of each of the parties involved",
+                  "content": "Describe the obligations and responsibilities of the quality units of each of the parties involved in the contract manufacturing or pre-clinical testing subject to CGMP, GLP, respectively.  In general, these agreements should clarify which of the CGMP/GLP activities are to be carried out by each party per the applicable regulations under 21 CFR Part 211 and 21 CFR 58 and other regulations that may apply.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.1.2",
+                  "title": "Describe the roles and responsibilities of the Government and the contracted facility",
+                  "content": "Describe the roles and responsibilities of the Government and the contracted facility in accordance with all applicable cGMP responsibilities.  This agreement may contain key quality roles and responsibilities; communication expectations; key points of contact for both parties; specify what products and/or services the contracted facility will provide to or for the Government; and establish who has final approval for various activities (quality units and other stakeholders).  Most quality agreements contain purpose/scope, terms (including effective date and termination clause), dispute resolution, responsibilities (including communication mechanisms and contacts), and change control and revisions plan.  The plan should describe how the government will be notified and the approval processes (both contractor and government) for changes in facility location, equipment, or cold chain management practices that deviate from the quality agreement.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.2",
+              "title": "Quality Management Plan",
+              "content": "Describe the quality policy and objectives, management review, competencies and training, process document control, feedback, evaluation, corrective action and preventive action, process improvement, measurement, and data analysis processes.  The framework is normally divided into infrastructure, senior management responsibility, resource management, lifecycle management, and quality management system evaluation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "The QSR Plan",
+              "content": "Describe plan for compliance with evidence of appropriate QSs to support compliance for devices subject to 21 CFR Part 820 QSR.  Describe plans related to the methods used in and the facilities and controls used for designing, purchasing, manufacturing, packaging, labeling, storing, installing, and servicing of medical devices.  The plan should include activities relative to, but not limited to the following (IAW 21 CFR Part 820).",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.3.1",
+                  "title": "Describe devices that FDA has determined are exempt from GMP requirements",
+                  "content": "Describe devices that FDA has determined are exempt from GMP requirements by FDA classification regulations published in the Federal Register and codified in 21 CFR 862 to 892.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.2",
+                  "title": "Medical devices manufactured under IDEs are not exempt from design control requirements under 21 CFR 820.30 of the QSR",
+                  "content": "Medical devices manufactured under IDEs are not exempt from design control requirements under 21 CFR 820.30 of the QSR and must provide evidence of compliance to design controls.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.3",
+                  "title": "Describe design controls procedures and documentation and plan to meet requirements of design control",
+                  "content": "Describe design controls procedures and documentation and plan to meet requirements of design control - in accordance with 21 CFR Part 820.30 (if applicable), e.g.,:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.7.3.3.1",
+                      "title": "Design and Development Planning",
+                      "content": "Describe manufacturer plan that references the design and development activities and define responsibility for implementation.  Include processes for reviewing, updating, approving plans as design evolves that identifies/describes the interfaces with different groups or activities that provide, or result in, input to the design and development process.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.2",
+                      "title": "Design Input",
+                      "content": "Describe how design input procedures will be documented, reviewed, approved (e.g., date/signature, designated individual), and released  to ensure that the design requirements relating to a device are appropriate and address the intended use of the device, including the needs of the user and patient.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.3",
+                      "title": "Design Output",
+                      "content": "Describe the format, content, and how design output will be documented, reviewed, and approved for defining and documenting design output.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.4",
+                      "title": "Design Review",
+                      "content": "Describe manufacturer procedures for formal documented reviews of the design results for each stage of the device's design development.  This may include descriptions of the participants from functions concerned with the design stage, specialists, and individual(s) not having direct responsibility for the design stage being reviewed.  This should include, but is not limited to the design history file (DHF) documentation of result.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.5",
+                      "title": "Design Verification",
+                      "content": "Describe manufacturer procedures for verifying the device design to confirm that the design output meets the design input requirements (e.g., report of results of the design verification, identification of the design, method(s), dates, personnel performing the verification).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.6",
+                      "title": "Design Validation",
+                      "content": "Describe manufacturer procedures for validating the device design performed under defined operating conditions on initial production units, lots, or batches, or their equivalents (e.g., validation results, software validation and risk analysis, identification of the design, dates, personnel performing the validation, etc.).  Should include, but is not limited to report of validation results to ensure devices conform to defined user needs and intended uses and includes testing of production units under actual or simulated use conditions.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.7",
+                      "title": "Design Transfer",
+                      "content": "Describe manufacturer procedures for correct translation of device design into production specifications.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.8",
+                      "title": "Design Changes",
+                      "content": "Describe manufacturer procedures for the identification, documentation, and validation or where appropriate verification, review, and approval of design changes before their implementation.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.9",
+                      "title": "Design History File",
+                      "content": "Describe manufacturer established and appropriately maintained a DHF for each type of device that contains or references the records necessary to demonstrate that the design was developed in accordance with the approved design plan and the requirements 21 CFR Part 820.30, Design Controls.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.10",
+                      "title": "Design control documentation and DHF audits assurance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.7.3.3.11",
+                      "title": "Quality audits schedule and log of completion; certificates of compliance",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.7.3.4",
+                  "title": "Design and Development Planning",
+                  "content": "Describe manufacturer plan that references the design and development activities and define responsibility for implementation.  Include processes for reviewing, updating, approving plans as design evolves that identifies/describes the interfaces with different groups or activities that provide, or result in, input to the design and development process.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.5",
+                  "title": "Design Input",
+                  "content": "Describe how design input procedures will be documented, reviewed, approved (e.g., date/signature, designated individual), and released  to ensure that the design requirements relating to a device are appropriate and address the intended use of the device, including the needs of the user and patient.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.6",
+                  "title": "Design Output",
+                  "content": "Describe the format, content, and how design output will be documented, reviewed, and approved for defining and documenting design output.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.7",
+                  "title": "Design Review",
+                  "content": "Describe manufacturer procedures for formal documented reviews of the design results for each stage of the device's design development. This may include descriptions of the participants from functions concerned with the design stage, specialists, and individual(s) not having direct responsibility for the design stage being reviewed.  This should include, but is not limited to, the DHF documentation of results.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.8",
+                  "title": "Design Verification",
+                  "content": "Describe manufacturer procedures for verifying the device design to confirm that the design output meets the design input requirements (e.g., report of results of the design verification, identification of the design, method(s), dates, personnel performing the verification).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.9",
+                  "title": "Design Validation",
+                  "content": "Describe manufacturer procedures for validating the device design performed under defined operating conditions on initial production units, lots, or batches, or their equivalents (e.g., validation results; software validation and risk analysis; identification of the design, dates, personnel performing the validation; etc.).  Should include, but is not limited to:  report of validation results to ensure devices conform to defined user needs and intended uses and includes testing of production units under actual or simulated use conditions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.10",
+                  "title": "Design Transfer",
+                  "content": "Describe manufacturer procedures for correct translation of device design into production specifications.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.11",
+                  "title": "Design Changes",
+                  "content": "Describe manufacturer procedures for the identification, documentation, and validation or where appropriate verification, review, and approval of design changes before their implementation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.12",
+                  "title": "Design History File (DHF)",
+                  "content": "Describe manufacturer established and appropriately maintained a DHF for each type of device that contains or references the records necessary to demonstrate that the design was developed in accordance with the approved design plan and the requirements 21 CFR Part Section 820.30, Design Controls.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.13",
+                  "title": "Device Master Record (DMR)",
+                  "content": "Describe manufacturer maintained DMRs prepared and approved in accordance with 21 CFR Section 820.40 for each type of device to include or refer to the location of device specifications; process specifications; quality assurance procedures/specifications; packaging and labeling specifications; and installation, maintenance, servicing procedures/methods.  Device specifications include appropriate drawings, composition, formulation, component specifications, and software specifications.  Process specifications include the appropriate equipment specifications, production methods, production procedures, and production environment specifications.  Quality assurance procedures/specifications include acceptance criteria and the quality assurance equipment to be used.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.14",
+                  "title": "IQ/OQ/PQ; design and development/verification and validation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.15",
+                  "title": "Full process qualification plans",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.16",
+                  "title": "Final process validation plans",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.17",
+                  "title": "Design control documentation and DHF audits assurance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.18",
+                  "title": "Design Inputs = Design Outputs - Traceability Matrix",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.3.19",
+                  "title": "Quality audits schedule and log of completion; certificates of compliance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.4",
+              "title": "Risk management plan",
+              "content": "Describe how the contractor will identify and describe potential hazards to include, but not limited to:  how the risks may occur, expected consequences of risks, and estimations or assessments of relative likelihood of risks.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.4.1",
+                  "title": "The plan should address medical device safety and medical device use safety",
+                  "content": "The plan should address medical device safety and medical device use safety with procedures to be used for identifying, understanding, addressing device hazards as required per the QSR.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.4.2",
+                  "title": "The plan should include design risk analysis (FMEA or other FDA accepted method)",
+                  "content": "The plan should include design risk analysis (FMEA or other FDA accepted method), design or process failure modes, and effects analysis of risk factors associated with the device.  Describe detailed task analysis of user interaction with a device to identify failure modes and rate the severity, probability of occurrence, and the likelihood of detection of each failure mode.  Describe how report of results will identify areas of weakness in the device design and/or training program and materials.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.7.4.3",
+                  "title": "Describe how human factors engineering will be incorporated as part of the risk management approach and plan",
+                  "content": "Describe how human factors engineering will be incorporated as part of the risk management Human approach and plan:  Potential use-related hazards are best identified and addressed using human factors engineering  according to and in consideration of appropriate FDA guidance.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "References",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "List of Federal Statues (USC) that may be applicable",
+          "content": "List and describe the Federal statues being referenced in all documents as applicable.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.1.1",
+              "title": "Federal FD&C Act as amended",
+              "content": "Federal FD&C Act as amended (Section 501 (a)(2)(B)); (21 USC 351 Section (a)(2)(B)).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.2",
+              "title": "Public Health Service Act",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.3",
+              "title": "Notice of use of an investigational new drug or a drug unapproved for its applied use",
+              "content": "Notice of use of an investigational new drug or a drug unapproved for its applied use (10 USC, Section 1107).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.4",
+              "title": "Limitation on use of humans as experimental subjects",
+              "content": "Limitation on use of humans as experimental subjects (USC Title 10, Section 980).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.5",
+              "title": "Emergency use authorization",
+              "content": "Emergency use authorization (21 USC 360 Section (b)(b)(3)).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.6",
+              "title": "Cold chain management",
+              "content": "Cold chain management (USP 33 1079).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "List of DoD and AR or Instructions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.2.1",
+              "title": "Protection of Human Subjects (32 CFR Section 219)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.2",
+              "title": "Protection of Human Subjects and Adherence to Ethical Standards in Department of Defense (DOD)-Supported Research",
+              "content": "Protection of Human Subjects and Adherence to Ethical Standards in Department of Defense (DOD)-Supported Research (DoD Instruction Section 3216.02).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.3",
+              "title": "Use of Volunteers as Subjects of Research (AR 70-25)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.4",
+              "title": "Clinical Investigation Program (AR 40-38)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.5",
+              "title": "Use of Investigational Drugs and Devices in Humans and the Use of Schedule I Controlled Drug Substances (AR 40-7)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.6",
+              "title": "Application of FDA Rules to DoD Force Health Protection Programs (DoD Instruction 6200.02)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.7",
+              "title": "Research Integrity and Misconduct (DoDI 2210.7)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.8",
+              "title": "Defense Federal Acquisition Regulations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.9",
+              "title": "Defense Acquisition DoD 5000 series",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.2.10",
+              "title": "Nuclear and Chemical Weapons and Materiel Biological Surety (AR 50-1)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "List of FDA Regulations",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "Electronic Records; Electronic Signatures (21 CFR Section 11)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.2",
+              "title": "Protection of Human Subjects (Informed Consent) (21 CFR Section 50)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.3",
+              "title": "Additional Safeguards for Children in Clinical Investigations of Food and Drug Administration - Regulated Products",
+              "content": "Additional Safeguards for Children in Clinical Investigations of Food and Drug Administration - Regulated Products (21 CFR Parts 50 and 56).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.4",
+              "title": "Informed Consent Elements (21 CFR 50.25(c)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.5",
+              "title": "Exception from General Requirements for Informed Consent (21 CFR Section 50.22(e))",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.6",
+              "title": "Financial Disclosure by Clinical Investigators (21 CFR Part 54)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.7",
+              "title": "Institutional Review Boards (21 CFR Part 56)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.8",
+              "title": "FDA IRB Registration Rule (21 CFR Section 56.106)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.9",
+              "title": "FDA IRB Registration Rule (21 CFR Section 56.106) (printable PDF version)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.10",
+              "title": "Good Laboratory Practice for Nonclinical Laboratory Studies (21 CFR Section 58)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.11",
+              "title": "Investigational New Drug Application (21 CFR Section 312)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.12",
+              "title": "Human Drugs and Biologics; Determination That Informed Consent Is NOT Feasible or Is Contrary to the Best Interests of Recipients",
+              "content": "Human Drugs and Biologics; Determination That Informed Consent Is NOT Feasible or Is Contrary to the Best Interests of Recipients (21 CFR Parts 50 and 312).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.13",
+              "title": "Good Manufacturing Practices (GMP) (21 CFR Sections 210, 211, 600, 820)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.14",
+              "title": "Foreign Clinical Trials not conducted under an Investigation New Drug (IND) application (21 CFR Section 312.120)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.15",
+              "title": "Expanded Access to Investigational Drugs for Treatment Use (21 CFR Sections 212 and 216)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.16",
+              "title": "Applications for FDA Approval to Market a New Drug (21 CFR Section 314)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.17",
+              "title": "Bioavailability and Bioequivalence Requirements (21 CFR Section 320)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.18",
+              "title": "New Animal Drugs for Investigational Use (21 CFR Section 511)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.19",
+              "title": "New Animal Drug Applications (21 CFR Section 514)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.20",
+              "title": "Applications for FDA Approval of a Biologic License (21 CFR Sections 600-680)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.21",
+              "title": "Investigational Device Exemptions (21 CFR Section 812)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.22",
+              "title": "Premarket Approval of Medical Devices (21 CFR Section 814)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.23",
+              "title": "Premarket notification 510 (k) (21 CFR Section 807 Subpart E)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.24",
+              "title": "Nonclinical testing performed in support of a premarket submission of a medical device must comply with 21 CFR Section 58, GLPs",
+              "content": "Nonclinical testing performed in support of a premarket submission of a medical device must comply with 21 CFR Section 58, GLPs, provide evidence of GLP compliance.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.25",
+              "title": "Medical device (21 CFR Sections 800-1299)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.26",
+              "title": "FYI - Link to Pre-sub guidance document",
+              "content": "FYI - Link to Pre-sub guidance document http://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/guidancedocuments/ucm311176.pdf",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.27",
+              "title": "Quality system regulation (cGMP) (21 CFR 820)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.28",
+              "title": "Biologics (21 CFR Section 600)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.29",
+              "title": "Blood Products (21 CFR Sections 606/640)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.30",
+              "title": "Human Cell and Tissue Products (21 CFR Sections 1270/1271)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "List of ICH Guidance Documents",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.4.1",
+              "title": "ICH - Efficacy",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.2",
+              "title": "Guideline for Industry Structure and Content of Clinical Study Reports (ICH E3)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.3",
+              "title": "Good Clinical Practice: Consolidated Guidance (ICH E6)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.4",
+              "title": "ICH - Joint Safety/Efficacy (Multidisciplinary)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.5",
+              "title": "ICH - Quality",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.6",
+              "title": "ICH - Safety",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.5",
+          "title": "List of Health and Human Services Regulations: Protection of Human Subjects (45 CFR 46)",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Acronyms",
+      "content": "AR - Army Regulation\nBOM - Bill of Materials\nCAPA - Corrective Action & Preventative Action\nCDASH - Clinical Data Acquisition Standards Harmonization\nCDP - Clinical Development Plan\nCDRL - Contract Data Requirements List\nCFR - Code of Federal Regulations\ncGMP - Current Good Manufacturing Practice\ncQMP - Clinical Quality Management Plan\nCRF - Case Report Form\nCRO - Clinical Research Organization\nDBVP - Database Validation Plan\nDHF - Design History File\nDID - Data Item Description\nDMR - Device Master Record\nDoD - Department of Defense\nDSMB - Data and Safety Monitoring Board\neCRF - Electronic Case Report Form\nEIR - Establishment Inspection Reports\nFD&C - Federal Food, Drug and Cosmetic Act\nFDA - US Food and Drug Administration\nFRP - Full Rate Production\nFMEA - Failure Mode and Effects Analysis\nFWA - Federal Wide Assurance\nGCP - Good Clinical Practices\nGLP - Good Laboratory Practices\nGMP - Good Manufacturing Practices\nHRPO - Human Subject Research Protection Office\nICH - International Conference on Harmonisation\nIDE - Investigational Device Exemption\nIEC - International Electrotechnical Commission\nIEEE - Institute of Electrical and Electronics Engineers\nIP - Investigational Product\nIQ - Institution Qualification\nIRB - Institutional Review Board\nISO - International Organization for Standardization\nMedDRA - Medical Dictionary for Regulatory Activities\nMIL-STD - Military Standard\nMS - Microsoft\nOMS/MP - Operational Modes and Mission Profiles\nOQ - Operational Qualification\nPAI - Prior Approval Inspections\nPK/PD - Pharmacokinetic and Pharmacodynamic\nPMA - Premarket Application\nPQ - Process Qualification\nQA - Quality Assurance\nQC - Quality Control\nQM - Quality Management\nQSR - Quality System Regulation\nRAM-C - Reliability, Availability, Maintainability, and Cost\nRDP - Regulatory Development Plan\nSAE - Serious Adverse Event\nSAP - Statistical Analysis Plan\nSAR - Safety Assessment Report\nSR - Significant Risk\nSSP - Study Specific Procedure\nTDP - Technical Data Packages\nTLFs - Table, Listing, and Figures\nUADE - Unanticipated Adverse Device Events\nUSC - United States Code\nUSP - United States Pharmacopeia\nV&V - Verification and validation\nWHO - World Health Organization",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TCSP-82040.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

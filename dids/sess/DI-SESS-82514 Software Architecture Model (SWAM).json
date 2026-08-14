@@ -1,0 +1,740 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82514",
+  "slug": "di-sess-82514",
+  "title": "Software Architecture Model (SWAM)",
+  "summary": "Specifies the requirements, delivery, and format methods for a Model Based Systems Engineering Computer Software Configuration Item architecture model to define expected capabilities, constraints, and characteristics of a software deliverable.",
+  "approval_date": "2026-04-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10626",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/ENS)",
+  "project_number": "SESS-2024-022",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Architecture Model (SWAM) specifies the requirements for a Computer Software Configuration Item (CSCI), and the delivery and format methods to be used to ensure that each requirement has been met and can be verified. Its purpose is to define the expected capabilities, constraints, and characteristics of a software deliverable.\n\nThis Data Item Description (DID) contains the format, content, and intended use of information for the data deliverable resulting from the work task described in the solicitation. The model is intended to be developed using Model Based Systems Engineering (MBSE) principles and be compatible with System Modeling Language (SysML).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference document",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The specification format shall be a Model Based Systems Engineering (MBSE) CSCI Model to be delivered in Native Tool File Format, and HyperText Markup Language (HTML), and Extensible Markup Language (XML) Metadata Interchange (XMI) format, and Web-report format. The completed SWAM shall incorporate metadata using Data Objects/Attributes and Associated Metadata (DOAM) Specification attached to the contract so that it can be obtained and imported into a Product Lifecycle Management (PLM) solution to ensure proper tying, tracing, and linking to the lowest component of the end item. The CSCI model shall be compatible with System Modeling Language (SysML) modeling tools. Any field not applicable shall be marked \"NA\".",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The specification shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Title page or identifier",
+          "content": "The MBSE System Model shall include a title package containing, as applicable: model number; volume number; version/revision indicator; security markings or other restriction on the handling of the model; data; title; name, abbreviation, and any other identifier for the system, Subsystem, or item to which the model applies; contract number; CDRL item number; organization for which the system model has been prepared; name and address of the preparing organization; and distribution statement. For data in a database or other alternative form, this information shall be included on external and internal labels or by equivalent identification methods.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Table of contents",
+          "content": "The MBSE models shall contain a table of contents providing the number, title, and page number of each title model, figure, and appendix. For the data in a database or other alternative form, this information shall consist of an internal or external table of contents containing pointers to, or instructions for accessing, each model, figure, table, and appendix or their equivalents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "Package numbering/labeling",
+          "content": "Each package shall contain a unique package number and display the MBSE System Model number, including version, volume, and date, as applicable. For data in a database or other alternative form, files, screens, or other entities shall be assigned names or numbers in such a way that desired data can be indexed and accessed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Response to tailoring instructions",
+          "content": "If a MBSE System Model is tailored out of this DID, the resulting model shall contain the corresponding model number and title, followed by \"This system model has been tailored out.\" For data in a database or other alternative form, this representation needs occur only in the table of contents or equivalent.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Multiple MBSE CSCI model packages",
+          "content": "Any section or package in this DID may be written as multiple packages to enhance readability.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "Standard data descriptions",
+          "content": "If a data description required by this DID has been published in a standard data element dictionary, reference to an entry in that dictionary is preferred over including the description itself.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "Substitution of existing documents",
+          "content": "Commercial or other existing documents may be substituted for all or part of the MBSE System Model if they contain the required data.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Scope",
+      "content": "This section shall be divided into the following packages.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Identification",
+          "content": "This MBSE CSCI model package shall contain a full identification of the system and the software to which this MBSE system model applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "System overview",
+          "content": "This MBSE CSCI model package shall briefly state the purpose of the system and the software to which this MBSE system model applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, and developer; identify current and planned operating sites; and list other relevant models (e.g., capability, operational, technical, system, human, SysML, and Unified Modeling Langue (UML)).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "MBSE CSCI model overview",
+          "content": "This package shall summarize the purpose and contents of this model and shall describe any security or privacy considerations associated with its use.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "Referenced documents",
+              "content": "This MBSE CSCI model package shall list the number, title, revision, and data of all documents reference in this model. This package shall also identify the source for all documents not available through normal Government stocking activities.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "Requirements",
+          "content": "This MBSE CSCI model shall be divided into the following package to specify the CSCI requirements, that is, those characteristics of the CSCI that are conditions for its acceptance. Each requirement shall be assigned a project-unique identifier to support testing and traceability and shall be stated in such a way that an objective test can be defined for it. Each requirement shall be annotated with associated qualification method(s) (see section 4) and traceable to system (or subsystem, if applicable) requirements (see section 5.a) if not provided in those sections. The degree of detail to be provided shall be guided by the following rule: Include those characteristics of the CSCI that are conditions for CSCI acceptance; defer to design description those characteristics that the acquirer is willing to leave up to the developer. If there are no requirements in each package, the package shall state so. If a given requirement fits into more than one package, it shall be stated once and referenced from the other packages.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.4.1",
+              "title": "Required states and modes",
+              "content": "If the CSCI is required to operate in more than one state or mode having requirements distinct from other states or modes, this package shall identify and define each state and mode. Examples of states and modes include idle, ready, active, post-use analysis, training, degraded, emergency, backup, wartime, peacetime. The distinction between states and modes can be arbitrary. A CSCI may be described in terms of states only, modes only, states within modes, modes within states, or any other scheme that is useful. If no states or modes are required, each requirement or group of requirements in this specification shall be correlated to the states and modes. The correlation may be indicated by a table or other method in this paragraph, in an appendix reference from this package or by annotation of the requirements in the paragraphs where they appear.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.2",
+              "title": "CSCI capability requirements",
+              "content": "This MBSE CSCI model package shall be divided into subparagraphs to itemize the requirements associated with each capability of the CSCI. A \"capability\" is defined as a group of related requirements. The word \"capability\" may be replaced with \"function,\" \"subject,\" \"object,\" or other term useful for presenting the requirements.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.4.2.1",
+                  "title": "(CSCI capability)",
+                  "content": "This MBSE CSCI model package shall identify a required CSCI capability and shall itemize the requirements associated with the capability. If the capability can be more clearly specified by dividing it into constituent capabilities, the constituent capabilities shall be specified in separate packages. The requirements shall specify required behavior of the CSCI and shall include applicable parameters, such as response times, throughput times, other timing constraints, sequencing, accuracy, capacities (how much/how many), priorities, continuous operation requirements, and allowable deviations based on operating conditions. The requirements shall include, as applicable, required behavior under unexpected, unallowed, or \"out of bounds\" conditions, requirements for error handling, and any provisions to be incorporated into the CSCI to provide continuity of operations in the event of emergencies. Section 3.1.4.3.2 of this DID provides a list of topics to be considered when specifying requirements regarding inputs the CSCI must accept and outputs it must produce.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.4.3",
+              "title": "CSCI external interface requirements",
+              "content": "This package shall be divided into separate packages to specify the requirements, if any, for the CSCI's external interface. This package may reference one or more Interface Requirements Specifications (IRSs) or other system models containing these requirements.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.4.3.1",
+                  "title": "Interface identification and diagrams",
+                  "content": "This package shall identify the required external interface of the CSCI (that is, relationships with other entities that involve sharing, providing or exchanging data). The identification of each interface shall include a project-unique identifier and shall designate the interfacing entities (system, configuration items, users, etc.) by name, number, version, and documentation references, as applicable. The identification shall state which entities have fixed interface characteristics (and therefore impose interface requirements on interfacing entities) and which are being developed or modified (thus having interface requirements imposed on them). One or more interface diagrams shall be provided to depict the interface.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.4.3.2",
+                  "title": "(Project-unique identifier of interface)",
+                  "content": "This MBSE CSCI model package shall identify a CSCI external interface by project-unique identifier, shall identify the interfacing entities, and shall be divided into separate packages as needed to state the requirements imposed on the CSCI to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumption or as \"When [the entity not covered] does this, the CSCI shall....,\" not as requirements on the other entities. This package may reference other system models (such as data dictionaries, standards for communication protocols, and standards for user interfaces) in place of stating the information here. The requirements shall include the following, as applicable, presented in any order suited to the requirements, and shall note any differences in these characteristics from the point of view of the interfacing entities (such as different expectations about the size, frequency, or other characteristics of data elements):",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "a",
+                      "title": "Priority that the CSCI must assign the interface",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "b",
+                      "title": "Requirements on the type of interface",
+                      "content": "Requirements on the type of interface (such as real-time data transfer, storage-and-retrieval of data, etc.) to be implemented.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "c",
+                      "title": "Required characteristics of individual data elements",
+                      "content": "Required characteristics of individual data elements that the CSCI must provide, store, send, access, receive, etc., such as:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Names/identifiers",
+                          "content": "",
+                          "asterisk": false,
+                          "children": [
+                            {
+                              "number": "a",
+                              "title": "Project-unique identifier",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "b",
+                              "title": "Non-technical (natural-language) name",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "c",
+                              "title": "DOD standard data element name",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "d",
+                              "title": "Technical name (e.g., variable or field name in code or database)",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "e",
+                              "title": "Abbreviation or synonymous names",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "number": "2",
+                          "title": "Data type (alphanumeric, integer, etc.)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Size and format (such as length and punctuation of a character string)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Units of measurement (such as meters, dollars, nanoseconds)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Range or enumeration of possible values (such as 0-99)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Accuracy (how correct) and precision (number of significant digits)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Priority, timing, frequency, volume, sequencing, and other constraints",
+                          "content": "Priority, timing, frequency, volume, sequencing, and other constraints, such as whether the data element may be updated and whether business rules apply.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Security and privacy constraints",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "9",
+                          "title": "Sources (setting/sending entities) and recipients (using/receiving entities)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "d",
+                      "title": "Required characteristics of data element assemblies",
+                      "content": "Required characteristics of data element assemblies (records, messages, files, arrays, displays, reports, etc.) that the CSCI must provide, store, send, access, receive, etc., such as:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Names/identifiers",
+                          "content": "",
+                          "asterisk": false,
+                          "children": [
+                            {
+                              "number": "a",
+                              "title": "Project-unique identifier",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "b",
+                              "title": "Non-technical (natural language) name",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "c",
+                              "title": "Technical name (e.g., record or data structure name in code or database)",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            },
+                            {
+                              "number": "d",
+                              "title": "Abbreviations or synonymous names",
+                              "content": "",
+                              "asterisk": false,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "number": "2",
+                          "title": "Data elements in the assembly and their structure (number, order, grouping)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Visual and auditory characteristics of displays and other outputs",
+                          "content": "Visual and auditory characteristics of displays and other outputs (such as colors, layouts, fonts, icons and other display elements, beeps, lights).",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Relationships among assemblies, such as sorting/access characteristics",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Priority, timing, frequency, volume, sequencing, and other constraints",
+                          "content": "Priority, timing, frequency, volume, sequencing, and other constraints, such as whether the assembly may be updated and whether business rules apply.",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Security and privacy constraints",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Sources (setting/sending entities) and recipients (using/receiving entities)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "e",
+                      "title": "Required characteristics of communication methods",
+                      "content": "Required characteristics of communication methods that the CSCI must use for the interface, such as:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Project-unique identifier(s)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Communication links/bands/frequencies/media and their characteristics",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Message Formatting",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Flow control (such as sequence numbering and buffer allocation)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Data transfer rate, whether periodic/aperiodic, and interval between transfers",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Routing, addressing, and naming conventions",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "7",
+                          "title": "Transmission services, including priority and grade",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "8",
+                          "title": "Safety/security/privacy considerations",
+                          "content": "Safety/security/privacy considerations, such as encryption, user authentication, compartmentalization, and auditing.",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "f",
+                      "title": "Required characteristics of protocols",
+                      "content": "Required characteristics of protocols the CSCI must use for the interface, such as:",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "1",
+                          "title": "Project-unique identifier(s)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "2",
+                          "title": "Priority/layer of the protocol",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3",
+                          "title": "Packeting, including fragmentation and reassembly, routing, and addressing",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "4",
+                          "title": "Legality checks, error control, and recovery procedures",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "5",
+                          "title": "Synchronization, including connection establishment, maintenance, termination",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "6",
+                          "title": "Status, identification, and any other reporting features",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "g",
+                      "title": "Other required characteristics",
+                      "content": "Other required characteristics, such as physical compatibility of the interfacing entities (dimensions, tolerances, loads, plug compatibility, etc.), voltages, etc.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "4.4.4",
+              "title": "CSCI internal interface requirements",
+              "content": "This MBSE CSCI model package shall specify the requirements, if any, imposed on the interfaces internal to the CSCI. If all internal interfaces are left to the design, this fact shall be so stated. If such requirements are to be imposed, section 3.3 of this DID provides a list of topics to be considered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.5",
+              "title": "CSCI internal data requirements",
+              "content": "This MBSE CSCI model package shall specify the requirements, if any, imposed on data internal to the CSCI. Included shall be requirements, if any, on databases and data files to be included in the CSCI. If all decisions about internal data are left to the design, this fact shall be stated as such. If such requirements are to be imposed, sections 3.3.2 of this DID provide a list of topics to be considered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.6",
+              "title": "Adaptation requirements",
+              "content": "This MBSE CSCI model package shall specify the requirements, if any, concerning installation-dependent data to be provided by the CSCI (such as site-dependent latitude and longitude or site-dependent state tax codes) and operational parameters that the CSCI is required to use that may vary according to operational needs (such as parameters indicating operation-dependent targeting constants or data recording).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.7",
+              "title": "System Safety requirements",
+              "content": "This MBSE CSCI model package shall specify the CSCI requirements, if any, concerned with protecting personnel from accidental death, injury, or occupational illness; mitigating risk of civilian harm; and safeguarding defense systems, infrastructure, and property from accidental destruction, or damage while executing its mission requirements of national defense in accordance with Mil-STD-882E, w/Change 1, DoD Standard Practice, System Safety. The package shall label the safety criticality and software control category of each CSCI within the software accordance with 882E.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.8",
+              "title": "Security and privacy requirements",
+              "content": "This MBSE CSCI model package shall specify the CSCI requirements, if any, concerned with maintaining security and privacy. These requirements shall include, as applicable, the security/privacy environment in which the CSCI must operate, the type and degree of security or privacy to be provided, the security/privacy risks the CSCI must withstand, required safeguards to reduce those risks, the security/privacy policy that must be met, the security/privacy accountability the CSCI must provide, any automated tools to be used for testing and evaluation to assure protection against weaknesses (i.e. Common Vulnerabilities and Exposures (CVE), Common Attack Pattern Enumeration and Classification (CAPEC), Common Weakness Enumeration (CWE), and Known Exploited Vulnerabilities Catalog (CISA)), and the criteria that must be met for security/privacy certification/accreditation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.9",
+              "title": "CSCI environment requirements",
+              "content": "This MBSE CSCI model package shall specify the requirements, if any, regarding the environment in which the CSCI must operate. Examples include the computer hardware and operating system on which the CSCI must run. (Additional requirements concerning computer resources are given in the next paragraph.)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.10",
+              "title": "Computer resource requirements",
+              "content": "This MBSE CSCI model package shall be divided into the following separate packages.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "4.4.10.1",
+                  "title": "Computer hardware requirements",
+                  "content": "This MBSE CSCI model package shall specify the requirements, if any, on the CSCI's computer hardware resource utilization, such as maximum allowable use of processor capacity, memory capacity, input/output device capacity, auxiliary storage device capacity, and communications/network equipment capacity. The requirements (stated, for example, as percentages of the capacity of each computer hardware resource) shall include the conditions, if any, under which the resource utilization is to be measured.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.4.10.2",
+                  "title": "Computer software requirements",
+                  "content": "This MBSE CSCI model package shall specify the requirements, if any, regarding computer software that must be used by, or incorporated into, the CSCI. Examples include operating systems, database management systems, communications/network software, utility software, input and equipment simulators, test software, and manufacturing software. The correct nomenclature, version, and documentation references of each such software item shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4.4.10.3",
+                  "title": "Computer communications requirements",
+                  "content": "This MBSE CSCI model package shall specify the additional requirements, if any, concerning the computer communications that must be used by the CSCI. Examples include geographic locations to be linked; configuration and network topology; transmission techniques; data transfer rates; gateways; required system use times; type and volume of data to be transmitted/received; time boundaries for transmission/reception/response; peak volumes of data; and diagnostic features.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.4.11",
+              "title": "Software quality and human factors",
+              "content": "This MBSE CSCI model package shall specify the CSCI requirements, if any, concerned with software quality factors identified in the contract or derived from a higher-level specification. Examples include quantitative requirements regarding CSCI functionality (the ability to perform all required functions), reliability (the ability to perform with correct, consistent results), maintainability (the ability to be easily corrected), availability (the ability to be accessed and operated when needed), flexibility (the ability to be easily adapted to changing requirements), portability (the ability to be easily modified for a new environment), reusability (the ability to be used in multiple applications), testability (the ability to be easily and thoroughly tested, usability (the ability to be easily learned and used), and other attributes. Also, included shall be the human factors engineering (HFE) domain requirements, if any, imposed on the CSCI. These requirements shall include, as applicable, considerations for the capabilities and limitations of humans; foreseeable human errors under both normal and extreme conditions; and specific areas where the effects of human error would be particularly serious. Examples include requirements for color and duration of error messages physical placement of critical indicators or keys, and use of auditory signals.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.12",
+              "title": "Design and implementation constraints",
+              "content": "This MBSE CSCI model package shall specify the requirements, if any, that constrain the design and implementation of the CSCI. These requirements may be specified by reference to appropriate commercial or military standards and specifications. Examples include requirements concerning:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Use of a particular CSCI architecture or requirements on the architecture",
+                  "content": "Use of a particular CSCI architecture or requirements on the architecture, such as required databases or other software units; use of standard, military, or existing components; or use of Government/acquirer-furnished property (equipment, information, or software).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Use of a particular design or implementation standards",
+                  "content": "Use of a particular design or implementation standards; use of particular data standards; use of a particular programming language.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Flexibility and expandability that must be provided",
+                  "content": "Flexibility and expandability that must be provided to support anticipated areas of growth or changes in technology, threat, or mission.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.4.13",
+              "title": "Logistics-related requirements",
+              "content": "This MBSE CSCI model package shall specify the CSCI requirements, if any, concerned with logistics considerations. These considerations may include system maintenance, software support, system transportation modes, supply-system requirements, impact on existing facilities, and impact on existing equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.14",
+              "title": "Other requirements",
+              "content": "This MBSE CSCI model package shall specify additional CSCI requirements, if any, not covered in the previous packages.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.4.16",
+              "title": "Precedence and criticality of requirements",
+              "content": "This MBSE CSCI model package shall specify, if applicable, the order precedence, criticality, or assigned weights indicating the relative importance of the requirements in this specification. Examples include identifying those requirements deemed critical to safety, to security, or to privacy for purposes of singling them out for special treatment. If all requirements have equal weight, this paragraph shall state so.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.1.5",
+              "title": "Qualification provisions",
+              "content": "This MBSE CSCI model package shall define a set of qualification methods and shall specify for each requirement in Section 3 the method(s) to be used to ensure that the requirement has been met, A table may be used to present this information, or each requirement in Section 3 may be annotated with the method(s) to be used. Qualification methods may include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Demonstration",
+                  "content": "The operation of the CSCI, or a part of the CSCI that relies on observable functional operation did not require the use of instrumentation, special test equipment, or subsequent analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Test",
+                  "content": "The operation of the CSCI, or a part of the CSCI, using instrumentation or other special test equipment to collect data for later analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Analysis",
+                  "content": "The processing of accumulated data obtained from other qualification methods. Examples are reduction, interpretation, or extrapolation of test results.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "d",
+                  "title": "Inspection",
+                  "content": "The visual examination of CSCI code, documentation, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "e",
+                  "title": "Special qualification methods",
+                  "content": "Any special qualification methods for the CSCI, such as special tools, technique, procedures, facilities, and acceptance limits.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "4.1.6",
+              "title": "Requirements traceability",
+              "content": "This MBSE CSCI model package shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "a",
+                  "title": "Traceability from each CSCI requirement in this specification",
+                  "content": "Traceability from each CSCI requirement in this specification to the system (or subsystem) requirements it addresses shall be documented in a MBSE System Model requirements traceability diagram.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "b",
+                  "title": "Traceability from each system (or subsystem) requirements allocated to this CSCI",
+                  "content": "Traceability from each system (or subsystem) requirements allocated to this CSCI shall be documented in a MBSE System Model requirements traceability diagram.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "c",
+                  "title": "Traceability from each human performance requirement allocated to a system",
+                  "content": "Traceability from each human performance requirement allocated to a system (or subsystem requirement) shall be documented in a MBSE System Model requirements diagram.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Notes",
+      "content": "This MBSE CSCI model package shall contain any general information that aids in understanding this system model (e.g., background information, glossary, rationale). This package shall include an alphabetical listing of all acronyms, abbreviations, and their meaning as used in the system models and a list of any terms and definitions needed for this model.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82514.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

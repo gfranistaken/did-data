@@ -1,0 +1,139 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82465",
+  "slug": "di-sess-82465",
+  "title": "Required Manufacturing Process Description (For Additive Mfg.)",
+  "summary": "Provides manufacturing criteria necessary to properly manufacture an item using an additive manufacturing process and equipment as an element of a Technical Data Package.",
+  "approval_date": "2025-01-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10524",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AR",
+  "project_number": "SESS-2025-002",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Required Manufacturing Process Description for Additive Mfg. (RMPD-AM) provides manufacturing criteria necessary to properly manufacture an item using an additive manufacturing process and equipment. The RMPD-AM is created as an element of the Technical Data Package (TDP) when it is determined that the additive manufacturing process must be defined and controlled to the extent necessary that it is considered a required manufacturing process. RMPD-AM will typically be ordered only when a Product Level TDP is required and the TDP is a Type 3D per MIL-STD-31000. (Note: The Required Manufacturing Process Description described in MIL-STD-31000C was previously known as the Critical Manufacturing Process Description.)\n\nThis Data Item Description (DID) contains the format and content preparation instructions for RMPD-AM resulting from the work task described in 5.4.8 of MIL-STD-31000. The RMPD-AM will comply with this DID and the requirements of ASME Y14.46 Product Definition for Additive Manufacturing.\n\nThis DID is related to DI-SESS-81012 Proposed Required Manufacturing Process Description, DI-SESS-81000 Product Design Data and Associated Lists",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-81012",
+    "DI-SESS-81000"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General",
+      "content": "The RMPD-AM, when required, shall meet the requirements of MIL-STD-31000 and form an element of the TDP. The RMPD-AM is used in conjunction with the other portions of the TDP, to include the Additive Manufacturing Engineering Design Data File (AM Data File) in the manufacturing process.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "RMPD-AM shall be in the contractor's format, or as specified on the contract and the TDP Option Selection Worksheet. The header of the RMPD-AM shall contain as a minimum the following: Title, CAGE Code and RMPD number, specification number (if applicable), RMPD Revision and date, Item Nomenclature, Item Part Number to which the RMPD-AM applies. Example below:\n\nRequired Manufacturing Process Description (For Additive Mfg.)\n19200-RMPD12354329\nRev - / 30-JAN-2022 BRACKET P/N 12354329",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content",
+      "content": "The RMPD-AM shall contain the following sections as applicable. (Each section will only be mandated when necessary to ensure the required performance.):",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Material",
+          "content": "Identification and description of material, material composition, material pre-processing, material re-use, material standards, material properties, and/or material certification to be used in the AM process.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Machine",
+          "content": "Identification and description of allowable AM machine(s) or class of machine, equipment calibration requirements, machine parameters, environmental conditions during manufacture, machine critical Bottom of Build (BOB) configuration, and/or other machine requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "Machine software",
+          "content": "Identification and description of the AM machine software and/or Programmable Logic Controller (PLC) firmware requirements and/or revision to be used",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Part orientation and setup",
+          "content": "Identification and description of the part orientation and location, build surface, part spacing, build specification, support structures, test coupons or other part setup requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Build parameters",
+          "content": "Identification and description of the machine build parameters during manufacture.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "AM Data File requirements",
+          "content": "Identification and description of the AM Engineering Design Data File to be used, identification and description of other AM files (e.g. .stl file, slice file) or other AM File requirements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "Post processing",
+          "content": "Identification and description of any post processing requirements (to include requirements for test coupons if applicable).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "h",
+          "title": "Part/Process validation",
+          "content": "Identification and description of inspection, tests, quality and evaluation criteria.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "i",
+          "title": "Other requirements",
+          "content": "Identification and description of other requirements as necessary.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82465.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

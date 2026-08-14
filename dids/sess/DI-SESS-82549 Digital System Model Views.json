@@ -1,0 +1,743 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82549",
+  "slug": "di-sess-82549",
+  "title": "Digital System Model Views",
+  "summary": "Defines the content and format requirements for a Digital Systems Model (DSM), an authoritative, structured, computer-interpretable representation of a system used to support engineering analysis, traceability, and lifecycle management.",
+  "approval_date": "2026-07-07",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10682",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AVN",
+  "project_number": "SESS-2026-028",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) was adapted from DI-SESS-82364.  While the two DIDs appear similar in nature, they differ in a few key areas.  The purpose of adaptation was to make a DID that is more flexible and easier to tailor.  The focus areas were: removing definition of model structure, removing reference to specific model languages, removing references to specific metamodel concepts, structuring to enable tailoring, removing planning material, and moving the focus from data content to data views.\n\nThis (DID) will be used by the Department of Defense to define the content and format of digital engineering artifacts delivered by a contractor in the form of a Digital Systems Model (DSM). A DSM is an authoritative, structured, computer-interpretable representation of a system, its behaviors, constraints, interfaces, requirements, and lifecycle data. It captures system information in a way that enables analysis, simulation, traceability, automation, and configuration management. This DID enables programs to receive authoritative digital models and associated data that support system understanding, decision-making, analysis, and lifecycle management.\n\nThis DID applies to any digital systems model, regardless of modeling language or tool. Information to be acquired will include data typically associated with a DSM including: structure (e.g., system architecture, components, allocations), behavior (e.g., sequences, state machines, activities), requirements and traceability, interfaces and data flows, parametrics and constraints, verification and validation relationships, associated properties, and configuration information.\n\nThis DID was created to clearly specify data item delivery requirements for system models while not being prescriptive as to modeling tools, modeling language, model organization, and modeling methodology/style. Specific model constructs are not enforced, though they are referenced as examples. This DID contains requirements for all possible DSM data views for any stage in the development lifecycle. Sections or views may be tailored (removed or clarified) for expected levels of detail for the appropriate lifecycle stage. 'View' as used in this document refers to the exposure of model data (e.g. diagrams, tables). Multiple view requirements may be satisfied by a singular view. Also, the format of this document does not dictate the format of the model structure.\n\nThis Data Item Description (DID) contains the format and content for the data product resulting from the work task described in the contract Statement of Work/Performance Work Statement.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-82364"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The DSM shall be delivered in the file",
+          "content": "or server format(s) as specified by contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "The DSM shall comply with the management and",
+          "content": "modeling structure defined by the program in contractual documentation (e.g. Model Management Plans, system modeling templates, style guides, etc.).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The DSM shall contain the following views:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Identification",
+          "content": "This view shall fully identify the system and elements covered by the DSM, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "DSM Overview",
+          "content": "This view shall state the purpose of the system to which this document applies. It shall:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Describe the general nature of the system (e.g. CONOPs)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Summarize the history of system development, operation, and maintenance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Identify the project sponsor, acquirer, user, developer, and support agencies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Identify current and planned operating sites",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "List other related documents (e.g. table)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Data Rights and Security Overview",
+          "content": "This view shall summarize the purpose and contents of the DSM and shall describe any security or privacy considerations associated with its use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Referenced documents",
+          "content": "The DSM shall provide views containing the following as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Document identifier",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Versions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Assumptions and Decisions",
+          "content": "The DSM shall provide views containing the following as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Design assumptions and decisions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Assumptions and decisions about requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Assumptions and decisions about verification and validation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Assumptions and decisions about architecture",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Assumptions and decisions about use cases",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Assumptions and decisions about structural aspects",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Assumptions and decisions about behavioral aspects",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Assumptions and decisions about the model infrastructure including tool interfaces and data flows",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "Assumptions and decisions about model integration requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.10",
+              "title": "Assumptions and decisions about baseline deliverables (e.g. functional, allocated, and product baselines)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Model Infrastructure",
+          "content": "The DSM shall provide views containing the following as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Modeling language(s) and version(s)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "External dependencies (e.g. used projects)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Data integration and digital thread with external",
+              "content": "tools, data flows, data dictionaries, databases, and other repositories to maintain data consistency.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Interfaces (internally or externally) with external software",
+              "content": "such as Requirements Management Tools; Product Lifecycle Management tools; reliability, availability, maintainability, and testability tools and databases; risk, issue, and opportunity tools and databases; Model Based Simulation & Analysis (MBS&A) tools.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Description of model navigation and views that",
+              "content": "depict model organization.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Dashboards or visualizations to navigate or visualize",
+              "content": "the model.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Metamodels, profiles, and process diagrams supporting the",
+              "content": "development and connection of DSM content.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Requirements",
+          "content": "Views of Requirements shall be provided and contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Requirements Documentation",
+              "content": "Applicable descriptions and rationale for requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Requirements Objects",
+              "content": "Identification of requirements objects that include all applicable properties and types.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Requirements Relationships",
+              "content": "Relationships between requirements and between requirements and other elements (e.g. refine, derive, copy) as defined by the program metamodel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Requirements References",
+              "content": "Relationships to reference architectures and external libraries.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Use Cases",
+          "content": "Views of Use Cases shall be provided and contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Use Case Documentation",
+              "content": "Applicable descriptions and rationale for use cases.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Use Case Objects",
+              "content": "Identification of use cases, their properties, and relationships between use cases (e.g. Include, Generalize) as defined by the program metamodel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Use Case Relationships",
+              "content": "Relationships between use cases and other model elements (e.g. between use cases and requirements) as defined by the program metamodel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Use Case Actors",
+              "content": "Identification and tracing of actors, including inanimate systems, to other model elements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.5",
+              "title": "Use Case Behaviors",
+              "content": "Identification of behavioral views which further expand on each use case (e.g. relations to sequence diagrams).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Structural Views",
+          "content": "The following views shall be provided:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Interfaces",
+              "content": "Views of interfaces shall contain the following information:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.1.1",
+                  "title": "Interface Documentation",
+                  "content": "Applicable descriptions, purpose, and rationale for interfaces.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.2",
+                  "title": "Interface Objects",
+                  "content": "Identification of interfaces, as well as their types and properties, as defined by the program metamodel.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.3",
+                  "title": "Interface Relationships",
+                  "content": "Relationships between interfaces (e.g. Connectors) and relations to other model elements (e.g. Dependency) as defined by the program metamodel. This includes relations to any parts of reference architecture or a library of standardized elements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.4",
+                  "title": "Interface Owner",
+                  "content": "Interfaces provided by the System, Subsystem, Component, or Subcomponent.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.5",
+                  "title": "Interface Consumers",
+                  "content": "Interfaces used by the System, Subsystem, Component, or Subcomponent but provided by an external entity.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.6",
+                  "title": "Interface Information",
+                  "content": "Description of all applicable parameters (e.g. information, energy, or material) being exchanged through the interface.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.1.7",
+                  "title": "Interface Behaviors",
+                  "content": "Description of any methods or behaviors being invoked through the interface.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.9.2",
+              "title": "Systems, Subsystems, Components, or Subcomponent Representations",
+              "content": "Views of Systems, Subsystems, Components, or Subcomponent Representations shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.2.1",
+                  "title": "Systems, Subsystems, Components, or Subcomponent Representations Documentation",
+                  "content": "Applicable descriptions, purpose, and rationale.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.2",
+                  "title": "Systems, Subsystems, Components, or Subcomponent Representations Objects",
+                  "content": "Identification of applicable Systems, Subsystems, Components, or Subcomponents, as well as the description of all properties and types.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.3",
+                  "title": "Structural Representation",
+                  "content": "Structural diagram showing compositional or aggregational relationships to other systems, subsystems, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.4",
+                  "title": "Systems, Subsystems, Components, or Subcomponent Relationships",
+                  "content": "Relations to other applicable model elements (e.g. Dependency, Allocate) as defined by the program metamodel. This includes relations to any parts of reference architecture or a library of standardized elements.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.5",
+                  "title": "Owned Interfaces",
+                  "content": "Interfaces provided by the System, Subsystem, Component, or Subcomponent.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.2.6",
+                  "title": "Required Interfaces",
+                  "content": "Interfaces used by the System, Subsystem, Component, or Subcomponent but provided by an external entity.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.9.3",
+              "title": "Data Model Content",
+              "content": "Views of Data Model Content shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.3.1",
+                  "title": "Data Model Entities (external data model elements)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.3.1.1",
+                      "title": "Data Entities Documentation",
+                      "content": "Applicable descriptions and rationale for entities.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.1.2",
+                      "title": "Data Entities Objects",
+                      "content": "Identification of entities, as well as their types and properties, as defined by the program metamodel.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.1.3",
+                      "title": "Data Entities Relationships",
+                      "content": "Relationships between entities (e.g. Generalization) and relations to other model elements (e.g. Dependency) as defined by the program metamodel. This includes relations to any parts of reference architecture or a library of standardized elements.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.9.3.2",
+                  "title": "Data Model Associations (defined relationships between two external data model elements)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.9.3.2.1",
+                      "title": "Data Associations Documentation",
+                      "content": "Applicable descriptions and rationale for associations.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.2.2",
+                      "title": "Data Associations Objects",
+                      "content": "Identification of associations, as well as their types and properties, as defined by the program metamodel.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.2.3",
+                      "title": "Data Associations Relationships",
+                      "content": "Relationships between associations (e.g. Generalization) and relations to other model elements (e.g. Dependency) as defined by the program metamodel. This includes relations to any parts of reference architecture or a library of standardized elements.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.2.4",
+                      "title": "Data Associations Participants",
+                      "content": "Identification of all entities that participate in the association.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.2.5",
+                      "title": "Data Model Relations",
+                      "content": "Relations of data model content back to program specified data models (e.g. FACE SDM, a DSDM, or similar).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.9.3.2.6",
+                      "title": "Data Model Supporting Content",
+                      "content": "Identification of all supporting data model content such as modeled measurement, axis, enumerations, etc.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.9.4",
+              "title": "Data Model Views",
+              "content": "Views of Data Model Views shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.9.4.1",
+                  "title": "Data View Description",
+                  "content": "Description of the data view (e.g. textual description of FACE query specification).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.2",
+                  "title": "Data View Specification",
+                  "content": "Specification of the data view to include selection of data and joining of data model entities and associations to expose the selected data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.9.4.3",
+                  "title": "Data View Relationships",
+                  "content": "Relationships to other data model views.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Behavioral Content",
+          "content": "Views of Behavioral Content shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Behavior Documentation",
+              "content": "Applicable descriptions, purpose, and rationale for behaviors. Includes pre-conditions, post-conditions, alternatives, and error conditions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Behavior Objects",
+              "content": "Identification of behaviors, as well as their types and properties, as defined by the program metamodel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Behavior Structure",
+              "content": "Relations between functions to show hierarchy (e.g. functional decomposition).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Behavior Relationships",
+              "content": "Relationships between behaviors (e.g. Dependency) and relations to other model elements (e.g. Allocate) as defined by the program metamodel. This includes relations to any parts of reference architecture or a library of standardized elements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.5",
+              "title": "Behavior Interactions",
+              "content": "Description of interactions at each applicable level of the system hierarchy. Interactions include within the system and inputs/outputs to the system including external interfaces and human interactions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.6",
+              "title": "Behavior Alternatives",
+              "content": "Description of interactions involved in error conditions and alternative paths in scenarios. Interactions include within the system and inputs/outputs to the system such as external interfaces and human interactions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.7",
+              "title": "Behavior States",
+              "content": "Identification of state-based behavior for structural elements (e.g. control classes) including transitions between states.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.8",
+              "title": "Behavior Messages",
+              "content": "Identification of message flows and the data, data type, format, and communication type (e.g. synchronous, asynchronous) for each message.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.9",
+              "title": "Behavior Participants",
+              "content": "Mapping of structures to participants (e.g. Lifelines, Allocations, Swimlanes).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Analysis Modeling",
+          "content": "Views of Analysis Modeling shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Analysis Modeling Parameters",
+              "content": "Identification of all necessary parameters and data, including environmental factors, to accomplish analyses and calculations (e.g. response time, capacity, and schedulability) at any architectural level.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Analysis Modeling Relations",
+              "content": "Relations between all analysis parameters, to include outputs, and any elements within the model (e.g. relations from parameters to elements representing external analyses) as defined by the program metamodel.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "All Views",
+          "content": "All Views (Diagrams, Tables, Matrices, etc.) shall contain the following information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "View Documentation",
+              "content": "Name, purpose, view relationships to other elements, and any other applicable information for each view.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "View Data Rights and Security",
+              "content": "Description of the data protection and access control requirements for the diagram.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "View Deviations and Waivers",
+              "content": "Description of how view or view elements deviate from requirements, as well as rationale for noncompliance including waivers.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82549.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

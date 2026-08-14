@@ -1,0 +1,109 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-80527D",
+  "slug": "di-tmss-80527d",
+  "title": "Commercial Off-the-Shelf (COTS) Manuals and Associated Supplemental Data",
+  "summary": "Specifies format, content, and intended use requirements for Commercial Off-the-Shelf manuals and associated supplemental data acquired to support COTS equipment used by DOD.",
+  "approval_date": "2021-12-03",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10283",
+  "limitation": "No",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "TM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "Commercial Off-the-Shelf Manuals may be used as-is or with supplementation to support COTS equipment used by DOD.  This DID is used to:\n\na. Acquire sample COTS manuals for evaluation.\nb. Acquire COTS manuals that have been evaluated and found to be acceptable.\nc. Acquire associated supplemental data, if required.\n\nThis DID contains format, content, and intended use information for the data deliverable(s) resulting from the work described in MIL-PRF-32216.\n\nThis DID supersedes DI-TMSS-80527C, dated 12 Aug 2011.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-TMSS-80527C"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Content",
+      "content": "The manual shall contain all technical information on the assembly, installation, operation, parts, and maintenance of commercial equipment.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Evaluation",
+      "content": "The manual shall be evaluated using the criteria found in MIL-PRF-32216.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Supplementation",
+      "content": "The manual may be supplemented with additional data to comply with contract. Supplemental data shall be prepared in accordance with MIL-PRF-32216.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Format",
+      "content": "The basic manual shall be presented in the contractor's format. Supplemental data shall be presented in the format specified by the acquiring activity.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "5",
+      "title": "Digital files",
+      "content": "Interactive Electronic Technical Manuals (IETMs) or PDFs are preferred for electronic COTS manuals.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "6",
+      "title": "PDF Files",
+      "content": "PDF files shall be searchable, capable of having links added, and have fonts embedded.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "7",
+      "title": "IETMs",
+      "content": "IETMs shall meet the general style and format and user interface requirements in MIL-STD-40051-1 (Army only) or MIL-STD-3031 (Army only).",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "8",
+      "title": "Paper manuals",
+      "content": "If paper manuals are acquired, the data shall be clearly legible and on paper of sufficient quality for long term use.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "9",
+      "title": "Quick Reference Guides (QRGs)",
+      "content": "QRGs shall meet the requirements of MIL-PRF-32614.",
+      "asterisk": false,
+      "children": []
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-80527D.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

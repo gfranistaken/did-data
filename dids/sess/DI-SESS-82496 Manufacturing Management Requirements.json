@@ -1,0 +1,333 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82496",
+  "slug": "di-sess-82496",
+  "title": "Manufacturing Management Requirements",
+  "summary": "Describes how the contractor will implement AS6500 across the program by managing all aspects of manufacturing, for use in production planning and risk management.",
+  "approval_date": "2025-07-23",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10590",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2025-032",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Manufacturing Management Requirements plan describes how the contractor intends to implement AS6500 across the program by managing all aspects of manufacturing. MIL-HDBK-896 can also be used as a guide. This plan will be used for production planning and risk management.\n\nThis DID contains format, content, and intended use information for the data product resulting from the work task described in the contract Statement of Work (SOW).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "SAE AS6500 - Manufacturing Management Program",
+      "url": "https://sae.org"
+    },
+    {
+      "label": "MIL-HDBK-896 Manufacturing Management Program Guide",
+      "url": "https://quicksearch.dla.mil"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Referenced Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "SAE AS6500 - Manufacturing Management Program",
+          "content": "(available at https://sae.org.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "MIL-HDBK-896 Manufacturing Management Program Guide",
+          "content": "(available at https://quicksearch.dla.mil.)",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor's format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Manufacturing Management Requirements shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Table of Contents",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Glossary/Acronyms",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Scope",
+          "content": "Identify tailoring and conformance of AS6500 requirements. Requirements are applicable for all phases of the acquisition life cycle as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Reference Documents",
+          "content": "A complete list of compliance and reference documents used to develop this data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Requirements",
+          "content": "For the following sub-sections, specify implementation or plans to implement each requirement. If tailoring a section out, provide justification. If tailoring out or reserving for a future program phase, include which program phase the section would be applicable.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Manufacturing Management System",
+              "content": "This section describes the manufacturing management system which complies with AS6500. This includes an organization chart (depicting function) to meet AS6500 requirements as well as manufacturing management system and all updates and changes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Design Analysis for Manufacturing",
+              "content": "This section describes the integration of manufacturing into the product design and development process.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Producibility Analysis",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "Key and Critical Characteristics",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "Process Failure Modes Effects Analyses (PFMEA)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.3",
+              "title": "Manufacturing Risk Identification",
+              "content": "This section describes manufacturing risk management.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.3.1",
+                  "title": "Manufacturing Feasibility Assessments",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.2",
+                  "title": "Manufacturing Readiness Level (MRL) Assessments",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.3.3",
+                  "title": "Production Readiness Reviews (PRRs)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.4",
+              "title": "Manufacturing Planning",
+              "content": "This section describes the manufacturing planning.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.4.1",
+                  "title": "Manufacturing Plan",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.2",
+                  "title": "Materials Management",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.3",
+                  "title": "Manufacturing Technology Development",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.4",
+                  "title": "Cost",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.5",
+                  "title": "Manufacturing Modeling and Simulation",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.6",
+                  "title": "Manufacturing System Verification",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.7",
+                  "title": "Manufacturing Workforce",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.8",
+                  "title": "Tooling/Test Equipment/Facilities",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.4.9",
+                  "title": "Measurement System Analysis (MSA)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.5",
+              "title": "Manufacturing Operations Management",
+              "content": "This section describes the implementation of manufacturing operations management.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.5.1",
+                  "title": "Production Scheduling and Control",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.2",
+                  "title": "Manufacturing Surveillance",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.3",
+                  "title": "Continuous Improvement",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.4",
+                  "title": "Variability Reduction (VR)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.5",
+                  "title": "Process Capabilities",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.6",
+                  "title": "Production Process Verification (PPV)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.7",
+                  "title": "First Article Inspections (FAIs) / First Article Tests (FATs)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.8",
+                  "title": "Supplier Management",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.5.9",
+                  "title": "Supplier Quality",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82496.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

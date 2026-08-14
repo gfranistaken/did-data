@@ -1,0 +1,239 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-STDZ-81993A",
+  "slug": "di-stdz-81993a",
+  "title": "Parts, Materials, and Processes (PM&P) Management Plan",
+  "summary": "The Parts, Materials, and Processes (PM&P) Management Plan documents the processes a contractor will utilize to address the requirements of MIL-STD-11991 and provides essential information requested in the solicitation.",
+  "approval_date": "2026-03-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10627",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "OSD-SO",
+  "project_number": "STDZ-2026-002",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Parts, Materials, and Processes (PM&P) Management Plan will be used to obtain essential information from contractors resulting from the work task described in the solicitation. The PM&P Plan will document the processes that the contractor will utilize to address the requirements of the current version of MIL-STD-11991.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates, and dates of any applicable amendments, notices, and revisions shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The PM&P Plan shall be submitted electronically in contractor format. In addition, the PM&P List shall be in a spreadsheet or database format that will enable the government to sort and analyze the content.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The PM&P Plan shall include provisions for optimizing reliability and standardization through all phases of the system life cycle to the lowest indenture level. In addition, the plan shall address all requirements in Sections 4 and 5 of MIL-STD-11991, General Standard for Parts, Materials, and Processes. The plan shall contain a PM&P List containing the following information for each section below.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Heading",
+          "content": "The Heading Section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "CAGE code of the contractor",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "PM&P List control number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "PM&P List revision number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Electronic Parts",
+          "content": "The Electronic Parts (as defined in Section 3 of MIL-STD-11991) Section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Manufacturer part number, with no wildcards",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "CAGE code of the manufacturer",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Part description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Next higher assembly drawing number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Mechanical Parts",
+          "content": "The Mechanical Parts (as defined in Section 3 of MIL-STD-11991) Section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Manufacturer or Military (MIL) part number, with no wildcards",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "CAGE code of the manufacturer",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Part description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Next higher assembly drawing number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Materials",
+          "content": "The Materials Section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Supplier/Manufacturer part number, with no wildcards, or Trade Name",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "CAGE code of the manufacturer",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Material description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Next higher assembly drawing number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Processes",
+          "content": "The Processes Section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Process title",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Process document number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Process description",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-STDZ-81993A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

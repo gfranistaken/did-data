@@ -1,0 +1,424 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-82369",
+  "slug": "di-tmss-82369",
+  "title": "Training System Operator Manual (TSOM)",
+  "summary": "Provides step-by-step operator procedures for a training system, covering pre-operational through post-operational use, safety precautions, and instructor procedures for conducting training exercises.",
+  "approval_date": "2022-01-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10288",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "TMSS-2022-001",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training System Operator Manual (TSOM) provides step-by-step operation instructions for the equipment, including all safety precautions, covering the complete pre-operational to post-operational cycle. This document also provides operating procedures to aid operators and instructors in the use of the training system during training exercises.\n\na. Commercial off-the-shelf (COTS) manuals used to supplement the instructions in the TSOM shall be included as an attachment. COTS manual shall be in accordance with DI-TMSS-80527C. Data rights requirements for the TSOM (excluding COTS manuals) shall comply with DFARS 252.227-7013.\n\nb. Data rights and data rights marking requirements for the TSOM (excluding COTS manuals) shall comply with DFARS 252.227-7013.\n\nc. This DID contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nd. It is not intended that all the requirements contained herein be applied to every program. Any data requirement contained in this DID is subject to deletion in tailoring.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including the approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The TSOM shall be in the contractor's format.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The level of writing in the manual",
+          "content": "shall be to that of a Department of Labor Aircrew Training Device Instructor, non-rated (15010), rated (15020), and pilot (15030); and, Computer Operator I, II, III, IV, and V (14041, 14042, 14043, 14044, and 14045).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The TSOM shall contain the following content organized in the order below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter",
+          "content": "shall contain a cover, record of changes, and table of contents.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The cover",
+              "content": "shall include security classification or Controlled Unclassified Information (CUI) marking, document number, revision number, destruction notice, disclosure statement, export control warning statement, CUI designation indicator block, and authority notice. Front matter shall be in accordance with MIL-STD-38784B.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Warnings, cautions, and notes",
+          "content": "shall be in accordance with MIL-STD-38784B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Introduction",
+          "content": "The Introduction shall explain the purpose of the TSOM. Coverage in the manual shall be limited to operator and instructor user personnel and the procedures required to operate the training system during a course of instruction. The Introduction shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "An explanation",
+              "content": "on how the TSOM will aid training system operators and instructors in the operation of the training system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "A safety summary",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "A list of referenced documents",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "A list of acronyms and abbreviations",
+              "content": "used throughout the manual.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Technical publication discrepancy reporting instructions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Description of the training system",
+          "content": "The training system overview provides user personnel with a description of the simulation equipment to aid them in the use of the training system when conducting training exercises. The description shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Training system equipment",
+              "content": "This section shall provide a basic description of the training system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Training system capabilities",
+              "content": "This section shall provide a description of the training system capabilities that will assist the instructor during a course of instruction.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Training system operating parameters",
+              "content": "This section shall provide a description of the operating parameters (e.g., environment, facilities, safety).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Training system malfunctions",
+              "content": "This section shall provide a list of malfunctions that can be introduced into the training scenario.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Training system limitations",
+              "content": "This section shall provide a list of training system limitations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "Training system maintenance controls",
+              "content": "This section shall provide a list of controls and maintenance cabinets that are not to be disturbed by personnel other than authorized maintenance personnel.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Operator procedures",
+          "content": "The training system operator procedures are designed to aid training system operator personnel in achieving full use of the training system during training exercises. The contents of this section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Pre-operational setup/configuration procedures",
+              "content": "including initial switch settings to prepare the equipment for operation and equipment configuration.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Start-up/power on procedures",
+              "content": "in sequential order.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Procedures for checking the simulation equipment",
+              "content": "to ensure that it is operating properly.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Procedures for loading computer programs and files",
+              "content": "into the simulation equipment, including the use of all software, computers, and peripherals.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.5",
+              "title": "Procedures for operating the training system",
+              "content": "during exercises.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.6",
+              "title": "Procedures for placing the training system",
+              "content": "in a power-off condition.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.7",
+              "title": "Procedures for recovering from a power-failure or casualty condition",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.8",
+              "title": "Procedures for integrating (coupling) the simulation equipment",
+              "content": "with other simulation equipment, if applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.9",
+              "title": "A description of each daily readiness test",
+              "content": "provided with the training system that shall:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.9.1",
+                  "title": "Delineate tests",
+                  "content": "that the instructor may use and enter to assure the proper functioning of the training system in its complete operational modes and environment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.9.2",
+                  "title": "Provide the procedures necessary",
+                  "content": "to set up, run, and diagnose the results and readouts of the daily readiness tests.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.10",
+              "title": "Emergency shutdown procedures",
+              "content": "with cautions to be observed, including warnings as to safety of operations or to prevent injury to operating personnel, and a graphical depiction of EPO locations.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.11",
+              "title": "Post-operational shutdown procedures",
+              "content": "to return the equipment to its normal configuration, prior to pre-operational setup, if required.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Instructor procedures",
+          "content": "The training system instructor procedures will assist instructors in the setup, conduct, monitoring, recording, and in the debriefing of a course of instruction. The contents of this section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "A functional description and graphical depiction",
+              "content": "of the instructor controls and displays and student station controls used in the conduct of training. Each functional description of the simulation equipment control and display shall depict the status or malfunction of a particular system or equipment, and a detailed description provided beside each indicator as to what is and what is not being depicted, affected, displayed, or is exclusive of other indicators and controls.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Procedures for launching applications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Descriptions for modes of operation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Procedures for setting up and modifying initial conditions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Procedures for inserting malfunctions and generating training problems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Procedures for developing and modifying training exercises",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "Procedures for formulating new detailed training exercises",
+              "content": "to include instructions on how to enter, modify, and specify new parameters and characteristics of each new item in the exercise.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.8",
+              "title": "Procedures for conducting mission briefs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.9",
+              "title": "Procedures for training execution",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.10",
+              "title": "Procedures for monitoring student performance",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.11",
+              "title": "Procedures for recording and the playback of exercises",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.12",
+              "title": "Procedures for conducting mission debriefs",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Emergency procedures",
+          "content": "These procedures shall provide the step-by-step instructions for safely removing a trainee or trainees from the training device in the event of a mishap. The procedures shall:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Address the use of all emergency release mechanisms/devices",
+              "content": "built into the training system, the conditions under which they will be used, and the personnel who will use them.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Include diagrams or pictures of the emergency release mechanisms and their operation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Provide a description of emergency conditions",
+              "content": "detailing the operating procedures with proper warnings or cautions that can be performed without injury or death and avoiding further damage to the equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Identify any different indications or observations",
+              "content": "with appropriate actions to be taken. When the equipment should not be operated with a specific emergency condition, this requirement shall be clearly identified with appropriate warning or caution.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Reference and text materials",
+          "content": "This section shall provide a complete bibliography of materials, handbooks, and other documentation that can be used as reference material to assist in the understanding and application of the training system. Text material shall include, as applicable, the training system maintenance manual, COTS documentation, and other publications that contain information that may be helpful to the training system operator, instructor, and the student.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-82369.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

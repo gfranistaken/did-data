@@ -1,0 +1,1619 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82483A",
+  "slug": "di-sess-82483a",
+  "title": "Digital Twin Description (DTD)",
+  "summary": "Describes the design, function, interfaces, context, and lifecycle of a Digital Twin (DTw) in a descriptive model, standardizing how contractors document a DTw to support acquisition, engineering, logistics, and lifecycle management activities.",
+  "approval_date": "2026-04-24",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10654",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19 (SSC)",
+  "project_number": "SESS-2026-010",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "A Digital Twin Description (DTD) describes the design, function, interfaces, context, and lifecycle of a Digital Twin (DTw) in a model written in a descriptive modeling language (e.g., SysML, UAF, or other modeling language acceptable to the acquiring organization). The data requirements contained within this Data Item Description (DID) standardizes the way contractors describe a DTw. The intention is to support program offices in their acquisition, production, inspection, engineering, logistics, maintenance, integration, and upgrade activities of a DTw.\n\nA DTw is a computerized representation (integrated set of models) that serves as a real-time1 digital counterpart of a physical object or process2, 3.\n\nA DTw is also a virtual representation of a physical asset, system, or service that mirrors a real-world counterpart4.\n\nFor the purposes of this DID, a DTw is a Non-Physical Representation of a Real-World Counterpart that should have a Feedback Loop. If the requirements of the DTw do not account for all three aspects of the DTw, this description shall clearly state what aspects are removed (i.e., a partial DTw).\n\nIn addition to the above definitions, how a DTw is integrated (i.e., the act of combining disparate pieces) and federated (i.e., the act of managing disparate pieces) with other DTw's across the lifecycle will impact what constitutes 'a delivered DTw'. Thus, this DID is written to consider a DTw in any of the following three ways where the System(s)-of-Interest (SOI) is the system a DTw is intended to represent:\n\n1) How the delivered DTw interacts with another DTw that supports the same lifecycle functions and the same System-of-Interest (e.g., DTw at 'Facility A' interacts with DTw at 'Facility B').\n2) How the delivered DTw interacts with another DTw that supports different lifecycle functions for the same System-of-Interest (e.g., DTw for 'System A Design' interacts with DTw for 'System A Operations').\n3) How the delivered DTw interacts with another DTw that supports the same lifecycle functions for different Systems-of-Interest (e.g., DTw for 'System A manufactured at Time A' interacts with DTw for 'System A manufactured at Time B').\n\nThe following are additional points of consideration for this DID:\n\na) Consider the use of DI-SESS-82400: DID for a System Architecture Model (SAM) to standardize the user-views of the DTD in support of section 2.1.\nb) The acquiring organization will provide Use Cases for the DTw whether they are 1) provided by the government, or 2) proposed by the contractor and agreed to by the government to support section 3.1.6.\nc) The acquiring organization will specify the descriptive model's level of detail.\nd) Consider the use of DI-SESS-82426: DID for Model-Based Engineering Failure Modes, Effects, and Criticality Analysis Profile (SysML Version) to standardize documentation in support of section 3.1.6.5.\ne) Consider the use of DI-SESS-82433 and DI-SESS-82434: DID for Cybersecurity Supply Chain Risk Management (C-SCRM) Software / Hardware Bill of Materials (S/HBOM) to standardize documentation of the DTw's supply chain in support of section 3.1.10.6.\nf) Consider the use of DI-SESS-82380: DID for Model Based Systems Engineering Development Plan (MDP) to standardize a development plan for the DTD in support of section 3.1.11.\ng) If the DTw, described by this DTD, requires a Technical Data Package (TDP), consider referencing MIL-STD-31000: DoD Standard Practice: Technical Data Packages to understand whether the resulting deliverable constitutes a complete TDP or a partial TDP (i.e., TDP Element).\nh) This DID assumes the government has not identified an existing integrated environment (i.e., an environment to fully utilize a set of integrated or federated DTw's and its components) and, therefore, includes data requirements to describe any multi-organizational integrated environment whether it is contractor-developed, contractor-proposed, government-specified, or government-owned for test, training, exercises, and mission planning.\ni) This DID contains data requirements spanning a number of DTw use cases. Standard use of a DID allows for removal of statements to tailor for specific program needs.\nj) Consider the types of requirements (in section 3.2) to standardize the DTw Statements of Work (SOW) or DTw System Requirements.\n\nFootnotes:\n1 'Real-Time' to be taken as relative to the need and use cases.\n2 Definition taken from DoD Instruction 5000.97: Digital Engineering - dated December 21, 2023.\n3 In the context of this DID, a Digital Twin (bidirectional interactions between an SOI and a DTw) can be rudimentarily achieved when a Digital Shadow (unidirectional interaction from SOI-to-DTw) is paired with a human or user who manually supports the data transport and data transformation functions from the DTw to the SOI.\n4 Definition taken from MIL-HDBK-539A: Digital Engineering and Modeling Practices - dated March 12, 2026.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Description Format",
+          "content": "The term \"description\" in this DID means a collection of data, regardless of its medium. The term \"model\" in this DID means a medium that follows a semi-formal language (e.g., SysML, UAF, or other modeling language acceptable to the acquiring organization) where there are strict and repeatable rules on syntax. Therefore, the deliverable shall be a description model (colloquially known as a descriptive model) so that data required by this DID can be made individually available to stakeholders and their tools using automated techniques (such as Application Programming Interfaces (APIs)). The descriptive model's level of detail shall conform to the acquiring organization's specifications. In some cases, multiple DTw's could be delivered, so the description(s) shall be organized such that the SOI and the lifecycle functions the DTw will support are evident. If requirements are tailored out of this DID, the descriptive model shall contain a corresponding placeholder appended with \"This content has been tailored out.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.2",
+          "title": "Additional Description Format",
+          "content": "The term \"document\" in this DID is in contrast with \"model\" to mean a medium where portions of its content cannot be made individually available to stakeholders and their tools using automated techniques (such as APIs). Therefore, a description document in the contractor's preferred format shall be an acceptable appendix so that data required by this DID can be made accessible to stakeholders when tools using automated techniques are not available. Should conflicts arise between the descriptive model and the description document from the same delivery, the descriptive model will hold precedence.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The deliverable shall include content to address both description and implementation needs. If portions of the required content have already been provided by the government, the DTD shall indicate what information has been provided and show any traceability where government-provided information differs from what the contractor is using internally.\n\nNote 1: For brevity, this DID uses the term \"component\" to refer to Hardware Configuration Items (HWCIs) and Computer Software Configuration Items (CSCIs). Components-including HWCIs and CSCIs classified as \"Major System Components\" and \"Modular Systems\"-may occur at different levels of a hierarchy and may consist of other Components. The DTD shall identify which components are designated as \"Major System Components\" and \"Modular Systems\".\n\nNote 2: For brevity, this DID uses the term \"interfaces\" to include \"Modular System Interfaces\". The DTD shall identify which interfaces are designated as Modular System Interfaces that describe the shared boundary between \"Major System Components\" and \"Modular Systems\".",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Description Content",
+          "content": "The description shall include all data items that can allow an independent party to verify the definition, development, operation, and decommission of a delivered DTw on a continuing basis. Sections 3.1.1 through 3.1.8 require descriptions about the DTw system. Sections 3.1.9 through 3.1.16 require descriptions for its lifecycle context. While a description model is the preferred format, a narrative document may be appended to more strongly focus the narrative content and allow comprehension of the DTw when a compatible software application is not available.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Scope",
+              "content": "The scope shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Identification",
+                  "content": "A full identification of the SOI, its components, and its interfaces, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Digital Twin Overview",
+                  "content": "A summary of the purpose of the DTw to which this DTD applies. It describes the general nature of the DTw and its key use cases defined within the Statement of Work (SOW) such as development or operational testing; summarizes the history of DTw development, deployment, operation, maintenance, and decommissioning; identifies the project sponsor, acquirer, user, developer, and support agencies; and identifies current and planned operating sites.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Description Model Overview",
+                  "content": "A summary of the purpose and contents of the model-based description, including the security, privacy, or intellectual property rights considerations associated with its use.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Description Document Overview",
+                  "content": "A summary of the purpose and contents of the document-based description, including the security, privacy, or intellectual property rights considerations associated with its use.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Description Model Fidelity",
+                  "content": "A definition of the degree to which the DTD describes the DTw at government-defined levels of abstraction.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Digital Twin Architecture Design Decisions and Principles",
+              "content": "The description shall include the design decisions and principles that govern the DTw Architecture.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Digital Twin Components",
+              "content": "The description shall include the following. If part (or all) of the design depends upon the maturity, state, or condition of the represented system, this dependency shall be indicated. Design conventions needed to understand the design shall be presented or referenced.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.3.1",
+                  "title": "Components of the DTw",
+                  "content": "Identification of the CSCIs, HWCIs, data and their repositories, and Human-Machine Interfaces (HMI) for operator decision points, the type of component it is (Software Modeling, Sensing, or Infrastructure Component) and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.2",
+                  "title": "Relationships of the DTw Components",
+                  "content": "Identification, including a diagram of the static (such as \"consists of\") relationship(s) of the DTw components. Multiple relationships may be presented, depending on the design methodology.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.3",
+                  "title": "Purpose of Each DTw Component",
+                  "content": "Identification of the DTw requirements allocated to each DTw component.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.4",
+                  "title": "Development Type of Each DTw Component",
+                  "content": "Identification of each DTw component's development type (e.g., new, existing used as-is, existing to be reengineered) and status (e.g., being designed, testing, fit-for-use, accreditation). All development types and statuses are identified and defined with a unique identifier. Additionally identify when HWCI's are used due to cost or performance limitations of a CSCI.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.5",
+                  "title": "Modularity of Each DTw Component",
+                  "content": "Descriptions for the following Technical Areas for each DTw component:\n\nNote: Taken from Office of the Under Secretary of Defense for Research and Engineering's \"Implementing a Modular Open System Approach in Department of Defense Programs (February 2025)\" Appendix A (pg. 31)",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.3.5.1",
+                      "title": "Interoperability",
+                      "content": "Descriptions of how quickly modular components will be able to exchange information between themselves and appropriately use each other's functional capabilities.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.3.5.2",
+                      "title": "Maintainability",
+                      "content": "Descriptions of what architectural characteristics address obsolescence and provide for timely technology refresh, fixes, and upgrades, and the proposed system's ability to be retained in, or restored to, a specified condition by appropriately skilled personnel.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.3.5.3",
+                      "title": "Extensibility",
+                      "content": "Descriptions of the well-defined system engineering processes the contractor will follow to expand the DTw's capability during contract performance.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.3.5.4",
+                      "title": "Composability",
+                      "content": "Descriptions of the extent to which the Contractor's DTw is composed of well-defined components whose functionality is partitioned into discrete, cohesive, and self-contained units so that functionality is not spread over more than one component and updates to, or replacement of one component will not affect functionality featured by other components in the DTw's architecture.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.3.5.5",
+                      "title": "Reusability",
+                      "content": "Descriptions of the ability of all components residing within the architecture of the DTw to be readily available and maintain certification, reliability, and performance when installed in other DTw's.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.3.6",
+                  "title": "Certifications Needed",
+                  "content": "Identification of the certification(s) that were needed to accredit each component, as applicable.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.3.7",
+                  "title": "System or Aggregate Component",
+                  "content": "For each system or other aggregate of components identified for use in the DTw (e.g., computer system, simulators, emulators), include a description of its resources (e.g., power, processor capability, memory). Each description, as applicable, identifies the configuration items that will use the resource, the allocation per system, conditions under which utilization will be measured, and the characteristics of the resource (e.g., manufacturer name and model number, type of resource, growth capabilities).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.4",
+              "title": "Digital Twin Behavior",
+              "content": "The description shall include descriptions of the concept of operations, behavior, states, and processes through DTw Components, including diagrams showing the dynamic relationship of the DTw components. That is, how they will interact during DTw assembly, storage, deployment, and operations.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.4.1",
+                  "title": "Workflows of the DTw",
+                  "content": "The specific sequence of steps, tasks, or actions to accomplish a goal or use case of the DTw (including verification and testing workflows) and each unique sequence assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.2",
+                  "title": "States or Modes of the DTw",
+                  "content": "The states or modes are identified as the specific sets of inputs the DTw responds to, the sets of outputs it produces, and the triggers the DTw can transition states or modes with. Each unique set assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.3",
+                  "title": "Purpose of Each Workflow, State, or Mode",
+                  "content": "Identification of the DTw Use Cases allocated to it and whether it supports the physical-to-digital interaction (or vice versa).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.4",
+                  "title": "States or Modes of the DTw Components for each DTw State or Mode",
+                  "content": "For each state or mode of the DTw, include an identification of the state or mode of each DTw component (identified in section 3.1.3.1: Digital Twin Components) and what workflows are involved during that state or mode.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.5",
+                  "title": "Flow Through DTw Components for each DTw Workflow",
+                  "content": "For each workflow of the DTw, include a description and diagram of the flow sequence through the DTw components (identified in section 3.1.3.1: Components of the DTw), what states or modes are involved, and what input data initiates the workflow.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.5",
+              "title": "Digital Twin Interface Design",
+              "content": "The description shall include the following to describe and characterize the interfaces of the DTw. Including both the interfaces among DTw components and their interfaces with external entities such as other systems, other system DTw, configuration items, and users.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.5.1",
+                  "title": "Interface Criteria",
+                  "content": "Identification of the criteria used to separate the DTw into its components, the DTw from external entities, and how the criteria impacted interface design decisions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.2",
+                  "title": "Interface Data Definition",
+                  "content": "Identification of the individual data elements and data element assemblies (e.g., records, files, reports) that interfacing entity(ies) will provide, store, send, access, etc. and their characteristics as follows:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.5.2.1",
+                      "title": "Unique Identifier",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.2.2",
+                      "title": "Non-technical (natural language) name",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.2.3",
+                      "title": "Technical Name (e.g., field or data structure name in code or database)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.2.4",
+                      "title": "Abbreviation or synonymous name(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.2.5",
+                      "title": "Characteristics unique to Data Elements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.5.2.5.1",
+                          "title": "Data Type (e.g., alphanumeric, integer)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.5.2",
+                          "title": "Size and format (such as length and punctuation of a char string)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.5.3",
+                          "title": "Unit of measurement (such as meters, dollars, nano seconds)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.5.4",
+                          "title": "Range or enumeration of possible values (such as 0-99)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.5.5",
+                          "title": "Accuracy (how correct), precision (number of significant digits)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.5.2.6",
+                      "title": "Characteristics unique to Data Assemblies",
+                      "content": "",
+                      "asterisk": false,
+                      "children": [
+                        {
+                          "number": "3.1.5.2.6.1",
+                          "title": "Data Elements in the assembly and their structure (e.g., order)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.6.2",
+                          "title": "Medium (e.g., disk) and structure of data elements on the medium",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.6.3",
+                          "title": "Visual and auditory characteristics of displays and other outputs (e.g., colors, layouts, fonts, icons)",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        },
+                        {
+                          "number": "3.1.5.2.6.4",
+                          "title": "Relationships among assemblies, such as sorting/access characteristics",
+                          "content": "",
+                          "asterisk": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "number": "3.1.5.2.7",
+                      "title": "Minimum maturity of data element or assembly (i.e., application to the DTw's life cycle phase)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.2.8",
+                      "title": "Priority, timing, frequency, volume, sequencing, and other constraints",
+                      "content": "Priority, timing, frequency, volume, sequencing, and other constraints, such as whether the data element or assembly may be updated and whether business rules apply",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.2.9",
+                      "title": "Sources (setting/sending entities) and recipients (using/receiving entities)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.5.3",
+                  "title": "Interface Communication Method Definition",
+                  "content": "Identification of the communication methods that interfacing entity(ies) use for interfaces.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.5.3.1",
+                      "title": "Unique identifier(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.2",
+                      "title": "Communication links, bands, frequencies, media and their characteristics",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.3",
+                      "title": "Message formatting",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.4",
+                      "title": "Flow control (such as sequence numbering and buffer allocation)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.5",
+                      "title": "Data transfer rate, whether it is periodic or aperiodic, and interval between transfers",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.6",
+                      "title": "Routing, addressing, and naming conventions",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.7",
+                      "title": "Transmission services, including priority and grade",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.3.8",
+                      "title": "Safety, security, and privacy considerations such as encryption",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.5.4",
+                  "title": "Interface Protocol Definition",
+                  "content": "Identification of the protocols that the interfacing entity(ies) use for the interface.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.5.4.1",
+                      "title": "Unique identifier(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.4.2",
+                      "title": "Priority and layer of the protocol",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.4.3",
+                      "title": "Packeting, fragmentation and reassembly, routing, and addressing",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.4.4",
+                      "title": "Legality checks, error control, and recovery procedures",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.4.5",
+                      "title": "Synchronization, including: connection establishment, maintenance, termination status, identification, and any other reporting features",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.5.5",
+                  "title": "Interface Identification and Diagrams",
+                  "content": "Identification of the interfacing entities by name, number, version, and documentation references, as applicable, and each assigned a project-unique identifier. The identification includes which entities have fixed interface characteristics (and therefore impose interface requirements on interfacing entities) and which are being developed or modified (thus having interface requirements imposed on them). If needed, one or more interface diagrams shall be provided, as appropriate, to depict the interfaces. Include a revision record for all released/approved interface information, including release dates.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.5.6",
+                  "title": "(Unique Interface Identifier)",
+                  "content": "For each unique interface, include identification of the interfacing entities and descriptions for the interface characteristics of one or both of the interfacing entities.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.5.6.1",
+                      "title": "Priority assigned to the interface by the interfacing entity(ies)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.6.2",
+                      "title": "Purpose of interface to be implemented",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.6.3",
+                      "title": "List of individual data elements involved at interface",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.6.4",
+                      "title": "List of data element assemblies involved at interface",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.6.5",
+                      "title": "List of communication methods involved at interface",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.6.6",
+                      "title": "List of protocols involved at interface",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.5.6.7",
+                      "title": "Other characteristics, such as physical compatibility of the interfacing entity(ies)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.1.6",
+              "title": "Digital Twin User Stories, Use Cases, and Digital Threads",
+              "content": "The description shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.6.1",
+                  "title": "Derived User Stories and Use Cases of the DTw",
+                  "content": "List that includes a unique identifier and description of each derived assumption, clarification, or extension from the government provided:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.6.1.1",
+                      "title": "Users (entities that interact with the DTw)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.6.1.2",
+                      "title": "User Stories (desired interactions with the DTw by one or more User)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.6.1.3",
+                      "title": "Use Cases (specific interaction implementations between the DTw and Users)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.6.2",
+                  "title": "Static Relationships of the Derived Use Cases",
+                  "content": "Identification, including a diagram of the static (such as \"consists of\") relationship(s) of the derived Use Cases.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.3",
+                  "title": "Purpose of Each Derived User Story and Use Case",
+                  "content": "Identification of the DTw requirements allocated to each Derived User Story and Use Case, the objectives, and intended users.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.4",
+                  "title": "Digital Threads for each Derived Use Case",
+                  "content": "For each derived Use Case, include identification of the layers of separation between the DTw and the SOI and each sequence of layers with a unique identifier. This can be understood as the communication or analytic framework that any piece of information or data must be transformed through to produce actionable information. The accuracy of the data retrieved through the derived use case shall also be documented.\n\nNote: Digital Threads are defined in DoDI 5000.97 as an extensible and configurable analytical framework that seamlessly expedites the controlled interplay of technical data, software, information, and knowledge in the digital engineering ecosystem, based on the established requirements, architectures, formats, and rules for building digital models. It is used to inform decision makers throughout a system's life cycle by providing the capability to access, integrate, and transform data into actionable information.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.6.5",
+                  "title": "Failure Modes, Effects, and Criticality",
+                  "content": "Identification of Failure Modes, their effects, and criticality and each provided a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.7",
+              "title": "Digital Twin Requirements and Requirements Traceability",
+              "content": "The description shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.7.1",
+                  "title": "Stakeholder Needs and Requirements",
+                  "content": "Identification and descriptions of the derived assumptions, clarifications, or extensions from the government provided Requirements or Source Documents.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.2",
+                  "title": "Requirements of the DTw",
+                  "content": "Identification of all DTw functional and performance requirements and the unique requirements needed to integrate components of the DTw, to federate unique DTw, and to integrate with other pre-existing DTw components to perform as a stand-alone DTw and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.3",
+                  "title": "Non-Functional Requirements of the DTw",
+                  "content": "Identification of the programmatic and resilience (i.e., interoperability, maintainability, extensibility, composability, and reusability) requirements derived during the requirement definition and decomposition process, and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.4",
+                  "title": "Traceability to Requirements",
+                  "content": "The list of traces from each DTw Component, DTw Behavior, and DTw Interface identified within this deliverable to the DTw requirements allocated to it.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.7.5",
+                  "title": "Traceability from Requirements",
+                  "content": "The list of traces from each DTw requirement to the DTw components, DTw Behavior, DTw Interface, DTw Use Cases, and Digital Threads to which it is allocated.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.8",
+              "title": "Digital Twin Verification, Validation, and Accreditation",
+              "content": "The description shall include the verification, validation, and accreditation (VV&A) information for the DTw. Where verification information identifies whether the DTw is built to DTw Requirements, validation information identifies whether the DTw satisfies government-provided DTw Use Cases and Needs, and accreditation information identifies whether the DTw meets a standardized level of capability and performance. The information provided may be documented in a Test and Evaluation Master Plan (TEMP), but shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.8.1",
+                  "title": "Verification Plans for the DTw",
+                  "content": "Identification of the plans that will be used to verify how the implemented DTw meets DTw requirements, and each assigned a project-unique identifier. A plan includes the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.8.1.1",
+                      "title": "Type of Verification (e.g., live, predicted, simulated, scenarios)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.1.2",
+                      "title": "Quality of Required Data (e.g., level of fidelity, significant figures, or simplifying assumptions)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.1.3",
+                      "title": "Range of conditions necessary to perform verification test",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.1.4",
+                      "title": "Criteria for an acceptable result",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.1.5",
+                      "title": "The list of traces from each Plan to the set of DTw Components, DTw Behaviors, or DTw Interfaces being verified",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.1.6",
+                      "title": "The list of traces from each Plan to a User Story, Use Case, or Digital Thread",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.1.7",
+                      "title": "The list of traces from each Criteria to a performance condition stated in a requirement",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.8.2",
+                  "title": "Verification Results",
+                  "content": "For each implementation of a Verification Plan, identification of whether the DTw met the criteria for an acceptable result and to what degree the criteria was or was not met. If the criteria was not met, include a description of the root cause with the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.8.2.1",
+                      "title": "Component (identified in section 3.1.3)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.2.2",
+                      "title": "Failure mode",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.2.3",
+                      "title": "DTw operational state at time of failure",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.8.2.4",
+                      "title": "Immediate effects on the DTw",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.8.3",
+                  "title": "Validation Roadmap",
+                  "content": "Identify the traceability between contractor verification plans to government-required validation events to support a government-led digital verification campaign.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.4",
+                  "title": "Accreditation Information",
+                  "content": "Identification of the information, information type (e.g., model, data, documentation, and the IP rights necessary to use or access the information), and Subject Matter Expertise (SME) support necessary to ensure the consistent accreditation of each DTw (and instances thereof) across the lifecycle of the System-of-Interest.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.5",
+                  "title": "DTw Measures of Performance",
+                  "content": "Identification of the measures or attributes (Measure of Performance) necessary to assess and verify the accuracy of DTw generated content, including the objective thresholds for acceptable performance for each measure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.6",
+                  "title": "Approach to Representing Phenomena",
+                  "content": "Identification and description of the approach for credibility (or statistical confidence) thresholds that a DTw (or instances thereof) must meet while representing the modeled phenomena (e.g., physical, behavioral) of the System-of-Interest under relevant environmental conditions and each provided a project-unique identifier. Including known limitations of the representation and the risk of uncertainty to model performance compared to the represented phenomena and identify what DTw Measures of Performance were used to make that assessment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.7",
+                  "title": "Approach to Representing System-of-Interest",
+                  "content": "Identification and description of the approach for credibility (or statistical confidence) thresholds that a DTw (or instances thereof) must meet while representing the System-of-Interest and each provided a project-unique identifier. Including known limitations of the representation and the risk of uncertainty to DTw performance compared to the physical system and identify what DTw Measures of Performance were used to make that assessment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.8",
+                  "title": "Approach to Representing Build-Up",
+                  "content": "Identification and description of the approach for credibility (or statistical confidence) thresholds that a DTw (or instance thereof) must meet while representing the build-up (e.g., manufacturing, supply chain) of the System-of-Interest and each provided a project-unique identifier. Including known limitations of the representation and the risk of uncertainty to model performance compared to the represented context and identify what DTw Measures of Performance were used to make that assessment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.9",
+                  "title": "Approach to ASOT Confidence",
+                  "content": "Identification and description of how the DTw asserts its statistical confidence as an Authoritative Source of Truth (ASOT) throughout its life, including what specific, recurring test plans, maintenance, and events will be used to validate those assertions on a continuing basis. List the classes of telemetry and performance data that contribute to ongoing confidence.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.8.10",
+                  "title": "Approach to Documentation Within the Digital Engineering Ecosystem (DEE)",
+                  "content": "Identification and description of how the DEE (such as an Integrated Development Environment for Software Development) documents VV&A evaluations of the DTw and descriptions for how it is linked to inform program decisions.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.9",
+              "title": "Information Technology Infrastructure",
+              "content": "If the government does not identify an integrated environment to support DTw infrastructure needs, the description shall identify the IT Infrastructure necessary to support the deployment, operation, maintenance, evaluation, protection, and functions of other components of the DTw, its interfaces, and, as applicable, interfacing components. The infrastructure described supplements Section 3.1.3: Digital Twin Components, thus supplementing Sections 3.1.4: Digital Twin Behavior and 3.1.5: Digital Twin Interface Design.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.9.1",
+                  "title": "Components of the Requisite IT Infrastructure",
+                  "content": "Identification of the HWCIs, CSCIs, data repositories, and networks and each assigned a project-unique identifier. Include resource requirements and constraints such as power and memory. List Contract Data Requirements Lists (CDRLs) and DIDs as applicable to each IT Component.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.2",
+                  "title": "Initial Storage Requirements for the DTw",
+                  "content": "Both non-recurring and recurring. Non-recurring storage requirements are expected to define the storage necessary to host and operate the DTw. Recurring storage requirements are expected to define the storage necessary to retain the data created or collected over the course of DTw operations. Including identification of redundancy and backup requirements to ensure availability of the DTw.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.3",
+                  "title": "Resource Growth Projections",
+                  "content": "Identification of the Storage Requirements that have the capacity to change over the life of the DTw, the specific metrics that inform that change, and the extent of that change. Identify similar technologies that were used to create projections based on their historical trends. If historical trends are not available, list the specific data and models by which any resource growth projections were made.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.4",
+                  "title": "Static Relationships of the IT Components",
+                  "content": "Identification, including a diagram of the static (such as \"consists of\") relationship(s) of the IT components. Multiple relationships may be present.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.5",
+                  "title": "Data Handled by the IT Infrastructure",
+                  "content": "Identification of the data that will be shared across the IT Infrastructure between components of the DTw and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.6",
+                  "title": "Data Lifecycle",
+                  "content": "Identification and description, including a diagram, of the lifecycle of each identified data and its flow through the infrastructure. Multiple flows may be present, and the flow may change as the DTw matures through the represented system's lifecycle. Include resource requirements and constraints to sustain the end-to-end flow and its scalability.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.7",
+                  "title": "Purpose of Each IT Component and Data Handled",
+                  "content": "Identification of the DTw requirements allocated to it.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.8",
+                  "title": "Identification of Licenses",
+                  "content": "Identification of the license(s) to the IP that describes or is each IT Component, as applicable, as stated within the contract.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.9.9",
+                  "title": "Lifecycle Needs for each Data Repository Component within the IT Infrastructure",
+                  "content": "For each data repository component within the IT Infrastructure supporting DTw needs, include descriptions for development, deployment, maintenance, and access needs.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.10",
+              "title": "Security and Protections",
+              "content": "The description shall describe the risks, threats, and controls unique to the DTw context. The information provided may be documented in a Security Plan, Security Classification Guide (SCG), or System Engineering Management Plan (SEMP), but shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.10.1",
+                  "title": "Risks and Threats to DTw Confidence",
+                  "content": "Identification of the risks or threats that could compromise the confidence in or operations of the DTw throughout its life (e.g., conflicting data, acquired or faulty components, incomplete model), particularly in its capacity as an ASOT. Including the likelihood of occurrence over the DTw's life and the severity of the impact to DTw confidence or operations. Assign each a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.2",
+                  "title": "Mitigations of Risks and Threats to DTw",
+                  "content": "For each identified risk or threat, describe the mitigation strategy proposed or used to limit impacts to DTw Confidence. Assign each a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.3",
+                  "title": "Controls on the DTw",
+                  "content": "Identification of the mechanisms, techniques, technologies, or various solutions implemented to secure and protect the DTw against risks and threats throughout its life (called Controls) (e.g., physical controls, cybersecurity, data protections, operational controls), including its purpose, where it is implemented within the DTw or IT Infrastructure context, and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.4",
+                  "title": "Controls Traceability",
+                  "content": "The list of traces from each Control to the risks or threats the Control intends to protect against, the confidence to which the Control will sustain its protection over time (or over discrete events), how that protection can be tested and validated over the DTw's life, and who will be validating that protection.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.5",
+                  "title": "Risk and Threat Growth Projections",
+                  "content": "Identification of the risks and threats that have the capacity to change over the life of the DTw, the specific metrics that inform that change, and the extent of that change. Identify similar technologies that were used to create projections based on their historical trends. If historical trends are not available, list the specific data and models by which any risk and threat growth projections were made. Include when those risks and threats exceed the capabilities of implemented Controls.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.10.6",
+                  "title": "Software and Hardware Bill of Materials (S/HBOM)",
+                  "content": "Identification of the supply chain and heritage of all DTw Components, in particular, the third-party or open-source software or hardware used within or in the development of the DTw.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.11",
+              "title": "Development Methodology",
+              "content": "The description shall include a summarization of the unique methodologies used in developing the DTw. The information provided may already be documented in some development plan, but shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.11.1",
+                  "title": "DTw and ASOT Development Methodology",
+                  "content": "Identification of the approach, practices, and processes used during the development lifecycle of the DTw (e.g., scope, define, design, build, certify) and the ASOTs required of the government.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.11.2",
+                  "title": "DTw Refinement Methodologies",
+                  "content": "Identification of the approach, practices, and processes used during the refinement lifecycle (e.g., define, decompose, manage) of the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.11.2.1",
+                      "title": "DTw Requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.2.2",
+                      "title": "DTw User Stories, Use Cases, and Digital Threads",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.2.3",
+                      "title": "DTw User Experience(s)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.11.3",
+                  "title": "DTw Monitoring Methodology",
+                  "content": "Identification of the approach, practices, and processes used during the monitoring lifecycle (e.g., track, report) of the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.11.3.1",
+                      "title": "Development of the DTw (and auxiliary resources) system and its alignment with the physical system",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.3.2",
+                      "title": "Discrepancies between instances, versions, or branches of the DTw",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.3.3",
+                      "title": "Schedule of the DTw development, deployment, maintenance, and decommissioning (and its instances)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.11.4",
+                  "title": "DTw Verification & Validation Methodologies",
+                  "content": "Identification of the approach, practices, and processes used during the verification and validation lifecycle (e.g., verification, validation, testing) of the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.11.4.1",
+                      "title": "Digital Engineering Ecosystem (DEE) so the government may independently reproduce, test, and evaluate the DEE (such as an Integrated Development Environment for Software Development)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.4.2",
+                      "title": "Metrics to verify, validate, and test DTw functionality over time",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.4.3",
+                      "title": "Metrics to verify, validate, and test DTw ASOTs",
+                      "content": "Include areas of known limitations of the ASOT and whether other ASOTs must be developed.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.11.5",
+                  "title": "Assurance Methodologies",
+                  "content": "Identification of the approach, practices, and processes used to ensure the following:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.11.5.1",
+                      "title": "Incorporation of standards, guidelines, policies, and regulations into the development process",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.5.2",
+                      "title": "Conformance of the DTw to cybersecurity and classified system requirements",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.5.3",
+                      "title": "Configuration Management of the DTw, evolution of its components over time, and any alignment to open systems architecture approaches",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.5.4",
+                      "title": "Management of the DTw Program (e.g., cost, schedule, risk)",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.5.5",
+                      "title": "Data storage and backups of exchanged data between DTw and system, to include periodicity of backup, redundancy, and frequency of data overwrite",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.5.6",
+                      "title": "Interactions with intellectual property content are controlled and intentional",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.11.5.7",
+                      "title": "Evaluation (and optimization) of the DTw for modularity, extensibility, and resource use",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.1.12",
+              "title": "Digital Twin Deployment",
+              "content": "The description shall include the following where deployment is defined as all the activities that make a version of the described Digital Twin available for operational use in the relevant environment:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.12.1",
+                  "title": "Use Case Deployment Tiers",
+                  "content": "For each Use Case (provided by the government and defined while satisfying requirements from section 3.1.6: User Stories, Use Cases, and Digital Threads), define the criteria to deploy an initial operational capability with additional criteria and milestones (called Use Case Deployment Tiers) as functionality or technology evolves through the life of the DTw; each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.2",
+                  "title": "Levels of DTw Capability",
+                  "content": "Considering the DTw as the sum of all its Use Cases, define key Levels of DTw Capability, where each level is a unique configuration of Use Case Deployment Tiers of increasing operational capability, and provide a rationale for why that level is being defined (e.g., all Use Cases have achieved an initial operational capability, a new database is being integrated and will affect Use Cases x-z). Assign a project-unique identifier for each Level of Deployment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.3",
+                  "title": "Deployment Locations",
+                  "content": "Identify all locations the DTw will be deployed, instantiated, or otherwise where computer or network resources must be allocated for the DTw to perform to a stated Level of DTw Capability. Each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.4",
+                  "title": "Deployment Capabilities",
+                  "content": "Identification of the tools, infrastructure, and expertise necessary to deploy the DTw (or instances thereof) (called Deployment Capabilities) and state its purpose. Each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.5",
+                  "title": "Deployment Methodology",
+                  "content": "Identification and description of the approaches, practices, and processes used during the deployment lifecycle (e.g., when, where, and how a DTw shifts from a development environment to a production environment specified by the government.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.6",
+                  "title": "Deployment Schedule",
+                  "content": "Identification and description of the sequence of activities and milestones with dates (called Deployment Schedule) of each instance (and incremental delivery) of the Digital Twin through its life and potential evolutions. For each instance or increment to be deployed through the life of the DTw, describe a Deployment Schedule for each portion of the DTw that needs to be separately deployed. If absolute dates are not possible, the Deployment Schedule shall define relative dates that are explicitly anchored to verifiable government program milestones.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.7",
+                  "title": "Entities Responsible for Deployment",
+                  "content": "For each Deployment Schedule, identify the entity responsible for performing that portion of deployment.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.8",
+                  "title": "Deployment Limitations",
+                  "content": "Identification of the limitations on when and where DTw may be deployed (called Deployment Limitations) and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.9",
+                  "title": "Deployment Uncertainty",
+                  "content": "For each DTw that will be deployed, include a quantifiable estimate of the uncertainty and risk to deployment criteria and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.12.10",
+                  "title": "Technology Impacts on Future Deployments",
+                  "content": "Identification of the impact that technology development will have on future Deployment Tiers, Levels, Schedules, and Limitations using historical trends.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.13",
+              "title": "Digital Twin Maintenance",
+              "content": "The description shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.13.1",
+                  "title": "Types of Maintenance Activities",
+                  "content": "Identification and description of the types of maintenance activities that would be performed over the lifecycle of the DTw (and its infrastructure), and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.2",
+                  "title": "Maintenance Capabilities",
+                  "content": "Identification of the tools, infrastructure, expertise, resources, and dependencies necessary to maintain the DTw (or instances thereof) (called Maintenance Capabilities) and state its purpose. Each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.3",
+                  "title": "Maintenance Methodology",
+                  "content": "Identification and description of the approaches, practices, and processes used during the maintenance lifecycle (e.g., personnel training).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.4",
+                  "title": "Maintenance Schedule",
+                  "content": "Identification and description of the sequence of activities and milestones with dates (called Maintenance Schedule) of each instance of the DTw through its life and potential evolutions. For each instance to be maintained through the life of the DTw, describe a Maintenance Schedule for each portion of the DTw that needs to be separately maintained. If absolute dates are not possible, the Maintenance Schedule shall define relative dates that are explicitly anchored to verifiable government program milestones.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.5",
+                  "title": "Entities Responsible for Maintenance",
+                  "content": "For each Maintenance Schedule, identify the entity responsible for performing that portion of maintenance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.6",
+                  "title": "Impacts from Operational and Maintenance Need Changes",
+                  "content": "Identification of each change to the operation and maintenance needs of the DTw with a project-unique identifier and a listing of the impacts to DTw Use Cases, DTw Components, and DTw Behavior. Including impacts to data quality, data flows, and data structure.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.7",
+                  "title": "Maintenance Limitations",
+                  "content": "Identification of the limitations on when and how the DTw may be maintained and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.13.8",
+                  "title": "Maintenance Uncertainty",
+                  "content": "For each DTw that is to be maintained, include a quantifiable estimate of the uncertainty and risk to maintenance criteria and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.14",
+              "title": "Digital Twin Decommissioning",
+              "content": "The description shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.14.1",
+                  "title": "Decommissioning Criteria",
+                  "content": "Identification and description of the conditions when instances of or every instance of a DTw will be considered for decommission and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.14.2",
+                  "title": "Decommissioning Plans",
+                  "content": "Identification of the plans that will be used to decommission the implementation of the DTw and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.14.3",
+                  "title": "Decommissioning States",
+                  "content": "Identification of the various states of decommissioning the DTw can be in and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.14.4",
+                  "title": "Archival Standards of the DTw",
+                  "content": "For each state of decommissioning, list (as applicable) the archival standards the state conforms to, the minimum and maximum time a DTw shall stay in that state, the conditions that shall transition a DTw between states, the conditions that shall transition a DTw back to full operational capability, and the defined access controls, rights, and methods for various user roles to the archived features and data.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.15",
+              "title": "Interoperability",
+              "content": "The description shall include the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.15.1",
+                  "title": "Methodologies for Interoperability Assurance",
+                  "content": "Identification of the approach, practices, and processes that ensure metadata, data, and component interoperability and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.2",
+                  "title": "Instances of Interoperability",
+                  "content": "Identification of interoperability between uniquely deployed DTw of the System-of-Interest (or parts thereof), uniquely deployed DTw of other systems, (or parts thereof), and other virtual or physical assets (e.g., government-furnished threat models, other contractor-provided system models, or live-data feeds from operational systems). Each instance of interoperability is assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.15.2.1",
+                      "title": "Federation within Government Environments",
+                      "content": "Identification of interoperability with, and ability to execute within, a government-provided reference environment. This includes government-provided interface standards and government-defined open data standards.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.15.3",
+                  "title": "Characteristics of the Interoperability",
+                  "content": "For each instance of interoperability, describe what is needed to enable the interoperation, the limitations of the interoperability, and the protections that support the protection of constituent components. This includes how well the interoperability addresses Visible, Accessible, Understandable, Linked, Trustworthy, Interoperable, and Secure (VAULTIS) goals.\n\nNote: Goals taken from DoD Data Strategy's Section 4: Goals and Enabling Objectives (September 2020)",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.1.15.3.1",
+                      "title": "Visible",
+                      "content": "The ability for authorized government users and systems to discover DTw's, its data, its interfaces, and its services through enterprise catalogs and registries.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.15.3.2",
+                      "title": "Accessible",
+                      "content": "The ability for authorized government users and systems to retrieve DTw's and its data through documented, standardized, and reusable APIs specified within governing Interface Control Documents (ICDs).",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.15.3.3",
+                      "title": "Understandable",
+                      "content": "The ability for government tools to correctly interpret and use DTw's and its data without manual intervention.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.15.3.4",
+                      "title": "Linked",
+                      "content": "The ability for DTw's and its data elements to be related to other elements that exist within the government environment.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.15.3.5",
+                      "title": "Trustworthy",
+                      "content": "The ability for authorized government users and systems to understand the pedigree, lineage, and VV&A status of each DTw and its data elements.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.15.3.6",
+                      "title": "Interoperable",
+                      "content": "The ability to exchange and use data from other system models, other data models, and other DTw's.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.1.15.3.7",
+                      "title": "Secure",
+                      "content": "The ability to protect DTw from unauthorized use or manipulation.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.1.15.4",
+                  "title": "A list of all incoming data from the system-of-interest",
+                  "content": "to the DTw, the system component that created the data, and what information (if any) was used to create that data. Each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.5",
+                  "title": "Programmatic Traceability of Incoming Data",
+                  "content": "A list of how the incoming data to (or usage of) the DTw is in accordance with the identified use cases, cybersecurity protections, and model development plan.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.6",
+                  "title": "A list of all the outgoing data to the system-of-interest",
+                  "content": "from the DTw, the DTw component that created the data, and what information (if any) was used to create that data. Each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.7",
+                  "title": "Programmatic Traceability of Outgoing Data",
+                  "content": "A list of how the outgoing data from (or usage of) the DTw is in accordance with the identified use cases, cybersecurity protections, and model development plan.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.8",
+                  "title": "Resources Involved During Interoperability",
+                  "content": "Identification of the information, data, or power used or processed through the DTw, and each assigned a project-unique identifier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.9",
+                  "title": "Lifecycle for Each Resource",
+                  "content": "Including a description and diagram of the lifecycle(s) of that resource. Multiple lifecycles may be represented as the DTw matures.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.15.10",
+                  "title": "Interfaces Necessary for Interoperability",
+                  "content": "List of all governing ICDs with rationale as to why the interface is necessary for interoperability.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.16",
+              "title": "User Experience",
+              "content": "The description shall include the user experience information unique to the DTw context. The information provided may be documented in a dedicated Instruction or Manual, but shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.16.1",
+                  "title": "User Accessibility",
+                  "content": "Identification of the standards that ensure the DTw and auxiliary resources (e.g., User Manual, User Interface(s), and User Training) are accessible to identified Users.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.16.2",
+                  "title": "User Manual",
+                  "content": "Includes detailed descriptions and its intended audience (e.g., operator, analyst, maintainer) of the computer operational environment, connectivity needed to external environments (including connections to external ASOTs for use cases where up-to-date system status and configuration will be needed), and any third-party commercial software and tools (e.g., with any needed plug-ins) needed to operate the DTw.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.16.3",
+                  "title": "User Interface(s)",
+                  "content": "Descriptions of the User Interface(s) used in the development, deployment, operation, and maintenance of the DTw including dashboards and visualizations to interrogate, visualize, and interact with the DTw and associated data.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.16.4",
+                  "title": "User Training",
+                  "content": "Descriptions of the learning materials, instructor led classes, or practical simulations on how to use DTw.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Implementation Content",
+          "content": "This content describes the types of requirements that will be imposed on a specific DTw to enable its functional capability. To the extent that the following functions are required for the DTw, this shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "System Component Status",
+              "content": "How the DTw incorporates the known operational and maintenance status of applicable system components throughout their life cycles, when authorized and connected to authoritative sources of such operational and maintenance status.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Analysis Support - Interface & Integration Trades",
+              "content": "How the DTw provides integration and interface analysis/test with systems and system components outside of the program on contract.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Analysis Support - Operator Decision Trades",
+              "content": "How the DTw provides system operations trades and operator decision support.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Analysis Support - Sustainment, Maintenance, and Logistics Trades",
+              "content": "How the DTw provides sustainment trades, sustainment design, maintenance decision support (including predictive maintenance), and informs product support (supportability) analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Analysis Support - Enterprise Trades",
+              "content": "How the DTw provides enterprise operations trades and decision support conducted by external organizations that use models for real-time operations. Note: this shall include system modeling supporting activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Analysis Support - As-Is Model for the Future Enterprise",
+              "content": "How the DTw provides \"as is\" models supporting future enterprise architecture and enterprise operational planning and analysis that use or potentially use the System-of-Interest (SOI).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Analysis Support - Could-Be Systems",
+              "content": "How the DTw provides a foundation for future system iterations, versions, or evolutions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Deployment Threshold",
+              "content": "How the DTw meets deployment thresholds over the System-of-Interest's designated design life, by deployer personnel having the Deployment Capabilities indicated in Section 3.1.12.3.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Deployer Training",
+              "content": "How the DTw provides initial and sustained deployer training.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Operation Threshold",
+              "content": "How the DTw meets operation threshold over the System-of-Interest's designated design life.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Operator Training",
+              "content": "How the DTw provides initial and sustained training to operator personnel. These include training scenarios that are impractical or unsafe to replicate in live training events.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Maintenance Threshold",
+              "content": "How the DTw meets maintenance thresholds over the System-of-Interest's designated design life, by deployers having the Maintenance Capabilities indicated in Section 3.1.13.2.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "Maintainer Training",
+              "content": "How the DTw provides initial and sustained training to maintenance personnel.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "Model Credibility - Initial Accreditation",
+              "content": "How (and to what specified fidelity) the DTw represents the System-of-Interest at the moment of System accreditation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "Model Credibility - Fitness",
+              "content": "How (and to what specified fidelity) the DTw represents the System-of-Interest at regular intervals and over a specified (discrete or continuous) range of stakeholder events. Where \"regular intervals\" is a practical definition of \"real-time\" or \"continuous\".",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.16",
+              "title": "Model Credibility - External",
+              "content": "How (and to what specified fidelity) the DTw represents the System-of-Interest at regular intervals and over a specified (discrete or continuous) range of external environmental interactions. Where \"regular intervals\" is a practical definition of \"real-time\" or \"continuous\".",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.17",
+              "title": "Model Interoperability",
+              "content": "What government-specified open standards the DTw must be compatible with to interoperate with government capabilities and other contractor solutions.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82483A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

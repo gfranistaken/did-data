@@ -1,0 +1,172 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82538",
+  "slug": "di-sess-82538",
+  "title": "Digital Engineering Management Plan (DEMP)",
+  "summary": "Describes the contractor's technical approach and plan for the conduct, management, and control of the integrated Digital Engineering effort across the program's life cycle.",
+  "approval_date": "2026-05-04",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "10659",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "19 (SSC)",
+  "project_number": "SESS-2025-039",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Digital Engineering Management Plan (DEMP) describes the contractor's technical approach and proposed plan for the conduct, management, and control of the integrated Digital Engineering (DE) effort. It reflects the scope, purpose, and life cycle phase(s) of the program.\n\nThe DEMP provides insight into the contractor's processes for the implementation of the DE Strategy to include descriptions of the tools; the framework and methodology; the approach for each activity; the integration with internal and external interfaces; stakeholder access; artifacts and data, the reporting and review of products and artifacts; the linkage to lower-level designs and design artifacts; and the program's schedule, resource allocation, progress monitoring, and tracking.\n\nThe DEMP shall align with the goals outlined in the Department of Defense (DoD) DE Strategy and adhere to the Descriptions, Implementation, and Procedures in DoD Instruction (DoDI) 5000.97.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the DEMP.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "Digital Engineering Strategy, Department of Defense, June 2018. Section V.",
+      "url": "https://apps.dtic.mil/sti/citations/AD1068564"
+    },
+    {
+      "label": "Instruction 5000.97 Digital Engineering, Department of Defense, December 21, 2023. Section 3.",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500097p.PDF"
+    },
+    {
+      "label": "Digital Maturity Guide, Department of the Air Force, 2023.",
+      "url": "https://guide.dafdto.com/wp-content/uploads/2023/03/DAF-Digital-Maturity-Guide_v2.0_PA.pdf"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The delivered DEMP shall include a document and model in a format mutually agreed upon by the government and contractor to ensure government access and review. The term \"document\" in this DID means a medium that follows a natural language. The term \"model\" in this DID means a medium that follows a formal language such as SysML. If requirements are tailored out of this DID, the resulting description shall contain a corresponding placeholder appended with \"This content has been tailored out.\"",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The DEMP shall address the program's DE topics to include goals, focus areas, means, methods, processes, tools, stakeholder access, technology stack, data management, modeling strategy, modeling governance structure, and workforce development to be used for the benefit of the government in the system development. The DEMP shall include the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Introduction",
+          "content": "This section shall describe the purpose of the DEMP and the application of the DEMP across all acquisition and sustainment phases. This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Scope",
+              "content": "This subsection shall define and describe the scope and objectives for the contractor's DEMP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Configuration Management",
+              "content": "This subsection shall define and describe the approach to maintaining and updating the DEMP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Assumptions and Constraints",
+              "content": "This subsection shall define and describe the assumptions and constraints for DE implementation, such as budget, resources, tools, stakeholder access, framework, and technology.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "DE Goals",
+              "content": "This subsection shall specify the contractor's DE goals; detailing how they align with the DoD DE Strategy Goals and DoDI 5000.97 Descriptions, Implementation, and Procedures.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Approach",
+          "content": "This section shall describe the contractor's planned digital engineering approach. This section shall include the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Artifacts",
+              "content": "This subsection shall list the DE artifacts included in the DI-SESS-80776B Technical Data Package (TDP) and DI-SESS-82361 Acquisition and Sustainment Data Package (ASDP) Technical Report.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Implementation",
+              "content": "This subsection shall define and describe DE implementation plans for each phase of the program's lifecycle. This section shall include acquisition, development, manufacturing, operations and sustainment phases. This subsection shall define and describe the data flow through the Integrated Digital Environment (IDE) and Digital Engineering Environment (DEE) across each phase of the program's lifecycle. This section shall include integration efforts, milestones, requirements, and roadmaps incorporated in the program Integrated Master Plan and program Integrated Master Schedule. This subsection shall also define how the contractor will incorporate digital engineering management throughout subcontractor and vendor activities. This shall include pathways for data transfer to the government stakeholders of subcontractor/vendor proprietary data.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Training",
+          "content": "This subsection shall define and describe the comprehensive plan to develop and provide training for all stakeholders, including training on all tools, methods, procedures, use cases, and management processes.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Digital Maturity",
+          "content": "This section shall define and describe the contractor's DE capabilities, maturity, assessments, and metrics using an appropriate digital maturity framework. The Department of the Air Force (DAF) Digital Maturity Guide may be used as reference guidance. This section shall detail the frequency, processes, and metrics for performing assessments to evaluate these capabilities and maturity. Additionally, this section shall establish an initial baseline as well as target capabilities and maturity levels.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Digital Environment/Ecosystem",
+          "content": "This section shall define and describe the contractor's IDE or DEE infrastructure and architecture necessary to support automated approaches for system development, design, testing, evaluation, production, operation, training, and sustainment. This section shall describe the hardware, software, networks (including cloud services), tools and workforce. This section shall define and describe the contractor-to-government, and contractor-to-supplier digital collaboration environment.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Roles and Responsibilities",
+          "content": "This section shall identify and describe the DE-specific roles and responsibilities of internal and external stakeholders and team members using a Responsible, Accountable, Consulted, Informed (RACI) matrix. These roles shall be included in the program's organization chart and allocated resources in the program's Integrated Master Schedule (IMS).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Terms and Definitions",
+          "content": "This section shall define and describe the DE terms, definitions, and acronyms.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82538.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

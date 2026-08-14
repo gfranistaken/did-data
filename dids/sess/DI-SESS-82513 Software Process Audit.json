@@ -1,0 +1,151 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82513",
+  "slug": "di-sess-82513",
+  "title": "Software Process Audit",
+  "summary": "Specifies the format, content, and intended use for a Software Process Audit report documenting the contractor's software maintenance and development process under AS9115.",
+  "approval_date": "2026-02-25",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10618",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2026-005",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Software Process Audit provides information about the software maintenance/development process as defined by AS9115 and associated documentation. This DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract Contractual Engineering Task (CET).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor's format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The following shall be included in the Software Audit Report:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "The Software Audit Report shall review/include the following",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Software Planning",
+              "content": "Maintain a documented Software Development Plan (SDP) defining lifecycle processes, roles and responsibilities, risk management, and project deliverables.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Requirements Management",
+              "content": "Implement a process for capturing, validating, and maintaining bidirectional traceability of software requirements through design, implementation, and test.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Software Design and Development",
+              "content": "Apply formal design methods and coding standards. Conduct peer reviews and maintain detailed design documentation for traceability and verification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Verification and Validation",
+              "content": "Develop and execute documented test plans and procedures. Ensure full traceability between requirements and verification results.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Configuration Management",
+              "content": "Establish a configuration management system to control software versions, tools, build environments, and baselines. Implement formal change control.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Supplier Management",
+              "content": "If subcontracting software development, flow down AS9115 requirements to suppliers and ensure appropriate oversight and verification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "Software Quality Assurance",
+              "content": "Maintain an independent software quality assurance function responsible for audits, compliance monitoring, and corrective action verification.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "Delivery and Post-Delivery",
+              "content": "Ensure software deliveries are fully verified and compliant with contractual acceptance criteria. Provide plans for maintenance and support as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "Documentation and Records",
+              "content": "Maintain controlled documentation and records demonstrating compliance with AS9115 and project-specific software quality requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "Integration with AS9100",
+              "content": "Ensure the software quality system aligns with and supports the Contractor's AS9100-certified quality management system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "Include current audit/surveillance results, other related",
+              "content": "audit/surveillance reports, corrective actions, and the upcoming surveillance audit/surveillance.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82513.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

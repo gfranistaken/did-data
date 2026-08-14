@@ -1,0 +1,582 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82544",
+  "slug": "di-sess-82544",
+  "title": "Hardware Design Description (HDD)",
+  "summary": "Describes the design of a hardware Configuration Item (CI), including CI-wide design decisions and detailed hardware unit design, serving as the basis for implementing and supporting the hardware design.",
+  "approval_date": "2026-05-21",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10667",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2026-031",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Hardware Design Description (HDD) describes the design of a hardware Configuration Item (CI). It describes the CI-wide design decisions and the detailed design of the hardware. The HDD may be supplemented by Interface Design Descriptions (IDDs) (DI-IPSC-81436) and System/Subsystem Design Descriptions (SSDDs) (DI-IPSC-81432), as described below.\n\nThe HDD, with its associated IDDs and SSDDs, is used as the basis for implementing the hardware design. It provides the acquirer visibility into the design and provides information needed for design support.\n\nThis DID is used when the designer is tasked to define and record the design of a hardware CI. Design pertaining to interfaces may be presented in the HDD or in IDDs.  Design pertaining to systems may be presented in the HDD or SSDDs.\n\nThis DID contains the format, content, and intended use information for the data product resulting in specific and discrete tasks and requirements described in the contract Statement of Work (SOW).",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-IPSC-81436",
+    "DI-IPSC-81432"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.2",
+          "title": "General instructions",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.3",
+          "title": "Automated techniques",
+          "content": "Use of automated techniques is encouraged. The term \"document\" in this DID means a collection of data, regardless of its medium.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.4",
+          "title": "Alternate presentation styles",
+          "content": "Diagrams, table, matrices, and other presentation styles are acceptable substitutes for text when data required by this DID can be made more readable by using these styles.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The contractor's format is acceptable. Format shall be machine-readable by the government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The HDD shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title page or identifier",
+          "content": "The document shall include a title page that contains the following information, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "document number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "volume number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "version/revision number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "security markings or other restrictions to document handling",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "date",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "title",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "hardware item name, abbreviation, and any other identifier for the system, subsystem, or item to which the document applies",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "contract number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.9",
+              "title": "CDRL item number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.10",
+              "title": "organization for which the document has been prepared",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.11",
+              "title": "name and address of the preparing organization",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.12",
+              "title": "distribution statement",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "For data in a database or other",
+          "content": "For data in a database or other alternative form, this information shall be included on external and internal labels or by equivalent identification methods.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Table of contents",
+              "content": "The document shall contain a table of contents with the number, title, and page number of each, titled paragraph, figure, table, and appendix. For data in the database or other alternative form, this information shall consist of an internal or external table of contents containing pointers to, or instructions for accessing, each paragraph, figure, table, and appendix or their equivalents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Page numbering/labeling",
+              "content": "Each page shall contain a unique page number and display the document number, including version, volume, and date, as applicable. For data in a database or other alternative form, files, screens, or other entities, shall be assigned names or numbers in such a way that desired data can be indexed and accessed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Response to tailoring instructions",
+              "content": "If a paragraph is tailored out of this DID, the resulting document shall contain the corresponding paragraph number and title, followed by \"This paragraph has been tailored out.\" For data in a database or other alternative form, the representation need occur only in the table of contents or equivalent.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Multiple paragraphs and subparagraphs",
+              "content": "Any section, paragraph, or subparagraph in this DID may be written as multiple paragraphs or subparagraphs to enhance readability.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Standard data descriptions",
+              "content": "If the contract has a data description that will be published in a standard, data-element dictionary, then tailor down this requirement in the CDRL to address receiving the information through the dictionary's entry instead of providing the description through this DID.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Substitution of existing documents",
+              "content": "Commercial or other existing documents may be substituted for all or part of this DID's content requirements if they contain the required data.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "The HDD shall contain the following",
+          "content": "The HDD shall contain the following document sections:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Scope",
+              "content": "This section shall contain the following paragraphs.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Identification",
+              "content": "This paragraph shall contain a full identification of the system and the hardware to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "System overview",
+              "content": "This paragraph shall briefly state the purpose of the system and the hardware to which this document applies, it shall describe the general nature of the system and hardware; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, designer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Document overview",
+              "content": "This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Referenced documents",
+              "content": "This section shall list the number, title, revision, and date of all documents referenced in this document. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Hardware characteristics",
+              "content": "The HDD shall contain design architecture, key component characteristics, design verification methods and results of the following key characteristics:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "Predicted Continuous Wave (CW) EIRP performance over bandwidth",
+                  "content": "Predicted Continuous Wave (CW) EIRP performance over bandwidth, polarization and field of regard vs. specification for each required assignment case under installed pod environmental constraints, with the supporting RF chain analysis and load-pull analysis and antenna performance",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.2",
+                  "title": "Spectral purity including frequency lockout, linear mode",
+                  "content": "Spectral purity including frequency lockout, linear mode, and any amplifier linearization used",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.3",
+                  "title": "RF level control for required EIRP and",
+                  "content": "RF level control for required EIRP and flatness within Instantaneous Bandwidth (IBW), including input interface allocations",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.4",
+                  "title": "Amplifier output power, port impedance, load",
+                  "content": "Amplifier output power, port impedance, load Voltage Standing Wave Ratio (VSWR), load pull test results/parameters, linearity, linearity control, output power flatness and its control, and noise floor output during stand-by mode and radiate mode, including spurious emissions",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.5",
+                  "title": "Out-of-band rejection",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.6",
+                  "title": "Transmitter self-protection methods and validation results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.7",
+                  "title": "MMIC die packaging materials, processes and techniques",
+                  "content": "MMIC die packaging materials, processes and techniques used, material properties, stack-up, as well as overall thermal performance and junction temperatures",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.8",
+                  "title": "Transmitter weight relative to budget, including chassis",
+                  "content": "Transmitter weight relative to budget, including chassis, power distribution, and cooling components",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.9",
+                  "title": "Power handling approaches and reliability including receive",
+                  "content": "Power handling approaches and reliability including receive power protection. Power handling and cooling evaluations relative to average power, peak power, instantaneous peak power",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.10",
+                  "title": "Power subsystem interface allocations, including support of",
+                  "content": "Power subsystem interface allocations, including support of frequency/state transitions and blanking",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.11",
+                  "title": "Cooling subsystem interface allocations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.12",
+                  "title": "A description of DC bias and RF",
+                  "content": "A description of DC bias and RF characteristics (e.g. S-parameters) of component",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.13",
+                  "title": "Antenna electrical and mechanical design (including radiating",
+                  "content": "Antenna electrical and mechanical design (including radiating element design for arrays)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.14",
+                  "title": "Random and systematic radiating element amplitude and",
+                  "content": "Random and systematic radiating element amplitude and phase error budget/analysis",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.15",
+                  "title": "Active VSWR (as applicable) and its performance",
+                  "content": "Active VSWR (as applicable) and its performance impact over frequency, polarization and FOR",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.16",
+                  "title": "Installed antenna realized gain over frequency, polarization",
+                  "content": "Installed antenna realized gain over frequency, polarization and FOR",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.17",
+                  "title": "Antenna feed network design and performance",
+                  "content": "Transmission lines, transitions, connectors, etc.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.18",
+                  "title": "Detailed description and analysis results for design",
+                  "content": "Detailed description and analysis results for design techniques such as antenna amplitude tapering and phase distribution, impedance matching approach (i.e. circulator, tapered, etc.)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.19",
+                  "title": "Beam former, beam steering designs, including beam",
+                  "content": "Beam former, beam steering designs, including beam characteristics and beam transition time, group delay",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.20",
+                  "title": "Design tolerances",
+                  "content": "element-to-element pattern variation and its effects on array performance (especially at higher frequencies)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.21",
+                  "title": "Antenna test planning, including measurement error budgets",
+                  "content": "Antenna test planning, including measurement error budgets, test methodologies and assumptions",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.22",
+                  "title": "Radome cross sectional dimensions in key regions",
+                  "content": "Radome cross sectional dimensions in key regions as pertains to RF performance",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.23",
+                  "title": "Radome boresight error and transmission loss evaluation",
+                  "content": "Radome boresight error and transmission loss evaluation as pertains to RF performance",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.24",
+                  "title": "Dielectric constant and loss tangent of materials",
+                  "content": "Dielectric constant and loss tangent of materials (including radome, as pertains to RF performance)",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.25",
+                  "title": "RF switch characteristics (if applicable)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.26",
+                  "title": "Lightning protection approach",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.7",
+              "title": "CI-wide design decisions",
+              "content": "This section shall be divided into paragraphs that are needed to present CI-wide design decisions, that is, decisions about the CI's behavioral design (how it will behave, from a user's point of view, in meeting its requirements, ignoring internal implementation) and other decisions affecting the selection and design of the hardware units that make up the CI. This section shall state when decisions are explicit in the CI requirements or are deferred to the design of the CI's hardware units. Design decisions that respond to requirements designated critical, such as those for safety, security, or privacy, shall be placed in separate paragraphs. If a design decision depends upon system states or modes, this dependency shall be indicated. Design conventions needed to understand the design shall be presented or referenced. Examples of CI-wide design decisions are the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.7.1",
+                  "title": "Design decisions regarding inputs the CI will",
+                  "content": "Design decisions regarding inputs the CI will accept and outputs it will produce, including interfaces with other systems. If part or all of this information is given in Interface Design Descriptions (IDDs), they may be referenced.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.2",
+                  "title": "Design decisions on CI behavior in response",
+                  "content": "Design decisions on CI behavior in response to each input or condition, including actions the CI will perform, response times and other performance characteristics, description of physical systems modeled, selected equations, and handling of inputs or conditions exceeding design thresholds.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.3",
+                  "title": "Selected approach to meeting safety, security, and privacy requirements.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.7.4",
+                  "title": "Other CI-wide design decisions made in response",
+                  "content": "Other CI-wide design decisions made in response to requirements, such as selected approach to providing required flexibility, availability, and maintainability.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.8",
+              "title": "CI detailed design",
+              "content": "This section shall be divided into the following paragraphs to describe each hardware unit of the CI. If part or all of the design depends on system states or modes, this dependency shall be indicated. If design information falls into more than one paragraph, it may be presented once and referenced from other paragraphs. Design conventions needed to understand the design shall be presented or referenced. Interface characteristics of hardware units may be described here, in Section 3, or in Interface Design Descriptions (IDDs).",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.8.1",
+                  "title": "(Project-unique identifier of a hardware unit, or designator of a group of hardware units)",
+                  "content": "This paragraph shall identify a hardware unit by project-unique identifier and shall describe the unit. The description shall include the following information, as applicable:",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.8.1.1",
+                      "title": "Unit design decisions, if any, if not previously indicated.",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.8.1.2",
+                      "title": "Any constraints, limitations, or unusual features in",
+                      "content": "Any constraints, limitations, or unusual features in the design of the hardware unit.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.8.1.3",
+                      "title": "The software packages are used to model",
+                      "content": "The software packages are used to model and generate detailed engineering drawings of the hardware unit.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.9",
+              "title": "Alternatively, this paragraph may designate a group",
+              "content": "Alternatively, this paragraph may designate a group of hardware units and identify and describe the hardware units and identify and describe the hardware units in subparagraphs. Hardware units that contain other hardware units may reference the descriptions of those units rather than repeat information. Requirements traceability. This section shall contain:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.9.1",
+                  "title": "Traceability from each hardware unit identified in",
+                  "content": "Traceability from each hardware unit identified in this HDD to the CI requirements allocated to it.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.9.2",
+                  "title": "Traceability from each CI requirement to the",
+                  "content": "Traceability from each CI requirement to the hardware units to which it is allocated.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Notes",
+          "content": "This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "A. Appendices",
+          "content": "Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts, classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendixes shall be lettered alphabetically (A, B, etc.).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The applicable issue of the documents cited",
+          "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82544.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

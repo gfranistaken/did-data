@@ -1,0 +1,152 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TCSP-80235B",
+  "slug": "di-tcsp-80235b",
+  "title": "Request for Engineering or Technical Assistance",
+  "summary": "Establishes the format and content for a contractor request for engineering or technical assistance to resolve equipment deficiencies or support installation, operation, and maintenance.",
+  "approval_date": "2018-02-27",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "F9889",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/WWM)",
+  "project_number": "TCSP-2015-001",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "To request engineering assistance required to resolve structural, component, or system deficiencies; or technical assistance pertaining to the installation, operation and maintenance of equipment.\n\na. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nb. This DID is applicable to Operations and Maintenance (O&M) contracts wherein the contractor is responsible for the O&M of Communications-Electronics systems.\n\nc. This DID supersedes DI-TCSP-80235A.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-TCSP-80235A"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "None.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The request shall be in a contractor prepared message format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The request shall identify and contain the following data:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Subject",
+          "content": "\"Request for Engineering or Technical Assistance.\" Include both the equipment and its location.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Para 1",
+          "content": "Name of maintaining Command requesting support.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Para 2",
+          "content": "Identify the equipment by name, designated type number, National Stock Number (NSN), Serial Number (SN), or manufacturer's name and part number (if not type numbered).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.4",
+          "title": "Para 3",
+          "content": "Name of Base and location (state/country) where equipment is located.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Para 4",
+          "content": "Nature of the problem.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Para 5",
+          "content": "Actions taken by the maintaining activity and results.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.7",
+          "title": "Para 6",
+          "content": "Actual or estimate of assistance required.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Para 7",
+          "content": "Date assistance is required.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Para 8",
+          "content": "Statement that the \"Requirement exceeds the capability of the maintaining Command.\"",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Para 9",
+          "content": "Date and time the initial telephone request for technical assistance was made. (If emergency request.)",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Para 10",
+          "content": "Name, duty position, organization, and telephone number (DSN or commercial number and extension, if applicable) of individual making the initial telephone request.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Para 11",
+          "content": "Name, grade, organization and telephone number (DSN or commercial number and extension, if applicable) of individual accepting the initial telephone request.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TCSP-80235B.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

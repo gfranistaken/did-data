@@ -1,0 +1,529 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82501",
+  "slug": "di-sess-82501",
+  "title": "First Article Inspection and Test Requirements",
+  "summary": "Defines First Article Inspection and Test Requirements for Additive Manufacturing processes such as Laser Powder Bed Fusion and Directed Energy Deposition, ensuring first articles conform to contract, technical data package, and industry standards.",
+  "approval_date": "2025-08-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10597",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AF-11 (AFLCMC/ROD)",
+  "project_number": "SESS-2025-033",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) defines the First Article Inspection and Test Requirements (FAI/TR) for Additive Manufacturing (AM) processes, such as Laser Powder Bed Fusion (LPBF) and Directed Energy Deposition (DED). The First Article Inspection (FAI) is critical for verifying that the initial production part (the First Article) conforms to the contract's technical specifications, the Technical Data Package (TDP), and relevant industry standards. This document details inspection and testing requirements to be met during the production of a first article, supporting process qualification and compliance with quality standards.\n\na. This DID outlines documentation, testing, inspection points, and associated activities required to confirm that the AM process can produce parts that meet the specified requirements for aerospace, defense, or other critical applications.\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "ASTM",
+      "url": "https://www.astm.org"
+    },
+    {
+      "label": "SAE",
+      "url": "https://www.sae.org/standards/"
+    },
+    {
+      "label": "NASA",
+      "url": "https://standards.nasa.gov"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.\n\nISO/ASTM 52926-1: Additive Manufacturing of Metals - Qualification principles - Part 1: General Qualification of Operators\nISO/ASTM 52926-2: Additive Manufacturing of Metals - Qualification principles - Part 2: General Qualification of Operators for Powder Bed Fusion Laser (PBF-LB)\nISO/ASTM 52926-4: Additive Manufacturing of Metals - Qualification principles - Part 4: General Qualification of Operators for Directed Energy Deposition Laser (DED-LB)\nISO/ASTM 52943-2: Additive Manufacturing for Aerospace - Process characteristics and performance - Part 2: Directed Energy Deposition using Wire and Arc\nASTM F3592: Standard Guide for Additive Manufacturing of Metals - Powder Bed Fusion - Guidelines for Feedstock Re-use and Sampling Strategies\nASTM F3572: Standard Practice for Additive Manufacturing - General Principles - Part Classifications for Additive Manufactured Parts Used in Aviation\nASTM F3624: Standard Guide for Additive Manufacturing of Metals - Powder Bed Fusion - Measurement and Characterization of Surface Texture\n(Copies of these documents are available from https://www.astm.org)\n\nMIL-STD-1587: Materials and Processes for Aerospace Systems\n(Copies of this document are available from https://assist.dla.mil)\n\nSAE AS9102: Aerospace First Article Inspection Requirement\nSAE AS9131: Aerospace Series - Quality Management Systems - Nonconformity Data Definition and Documentation\n(Copies of these documents are available from https://www.sae.org/standards/)\n\nNASA 6030: Additive Manufacturing Requirements for Spaceflight Systems\n(Copies of these documents are available from https://standards.nasa.gov)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "FAI/TR shall be formatted according to the following guidelines:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Revisions",
+          "content": "A Table of Revisions shall follow the Table of Contents, listing changes made and the date of each revision.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The FAI/TR shall include the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page",
+          "content": "The Cover Page shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contractor's company name, logo, address, and phone number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The part name, number, and revision according to the contract and engineering drawing",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "A statement identifying the document as the \"First Article Inspection and Test Requirements\" for AM",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "A \"Submitted For\" section with the following details",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.4.1",
+                  "title": "National Stock Number (NSN) for the part",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.2",
+                  "title": "Contract number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.3",
+                  "title": "FA part number, with the revision of the engineering drawing",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.4",
+                  "title": "Serial Number (SN), if applicable",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.4.5",
+                  "title": "Date of submission and document revision letter",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.5",
+              "title": "A \"Submitted To\" section listing the name and address of the contracting officer and procurement office",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Signatures of the document preparer, Quality Assurance (QA) representative, and Defense Contract Management Agency (DCMA) representative",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents",
+          "content": "The Table of Contents shall identify all sections, subsections, appendices, and illustrations, with corresponding page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Revision History Table",
+          "content": "The Revision History Table shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Base designation of the FAI/TR document (initial revision \"-\")",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Subsequent revisions (e.g., \"A,\" \"B\") with descriptions of changes made and dates of revision",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Purpose of the First Article Inspection and Test",
+          "content": "This section shall describe the purpose of the FAI/TR, including:\n\nThis section shall also highlight the importance of:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Verifying that the AM process produces parts that meet the contractual requirements, the TDP, and relevant industry standards",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Ensuring that the AM process and associated operators are qualified to produce parts to the specified tolerances and material properties",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Establishing confidence that the AM process is capable of consistently producing conforming parts",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Documenting the testing and inspection procedures to ensure repeatability and reliability",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Applicable Documents",
+          "content": "This section shall list all reference documents that govern the FAI/TR requirements, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Applicable industry process and materials standards",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "SAE AS9102 for aerospace FAI requirements",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Any relevant contract-specific standards or Technical Data Package (TDP) guidelines",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Inspection and Test Plan",
+          "content": "This section shall provide a detailed Inspection and Test Plan that outlines all tests, inspections, and verification points required for the First Article. It shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Test Requirements",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Mechanical tests",
+                  "content": "such as tensile strength, hardness, fatigue resistance, and other testing as specified in the TDP.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Dimensional inspections",
+                  "content": "to verify compliance with the design tolerances (e.g., surface finish, build accuracy).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Visual inspections",
+                  "content": "for surface defects, porosity, microstructural evaluation, and other quality-related characteristics.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.4",
+                  "title": "Non-destructive testing (NDT)",
+                  "content": "such as ultrasonic testing (UT), X-ray inspection, or CT scanning to detect internal defects or inconsistencies.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Inspection Points",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.2.1",
+                  "title": "Material certification",
+                  "content": "Verify that all materials (e.g., powders, wire) meet the required specifications and have traceability to the original mill or supplier.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.2.2",
+                  "title": "Post-processing inspection",
+                  "content": "Ensure that all post-processing steps (e.g., heat treatment, machining) are completed as required and conform to TDP specifications.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.3",
+              "title": "Test Equipment and Tools",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Identification and description",
+                  "content": "of the test equipment and tools to be used in inspections.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "Calibration status",
+                  "content": "of test equipment to ensure compliance with industry standards.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.4",
+              "title": "Acceptance Criteria",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.4.1",
+                  "title": "Specific pass/fail criteria",
+                  "content": "for each inspection and test.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.4.2",
+                  "title": "The acceptance threshold",
+                  "content": "for each measurement or test, such as allowable deviation in dimensional tolerance or mechanical property limits.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Test Data Documentation",
+          "content": "This section shall describe the methodology for documenting and reporting test results, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Test result forms",
+              "content": "SAE AS9102 or equivalent forms used to record the outcomes of all first article tests.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Mathematical analysis and comparison",
+              "content": "of actual results against the specified requirements in the TDP.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Pass/fail determination",
+              "content": "Documentation on how test results are assessed and recorded.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Nonconformance and Corrective Action",
+          "content": "This section shall outline the process for addressing nonconformances during the First Article inspection and testing:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Identification and documentation",
+              "content": "of non-conformities using SAE AS9131 or equivalent forms.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Root cause analysis and corrective actions",
+              "content": "to resolve issues identified during FAI.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Preventive actions",
+              "content": "to avoid recurrence of nonconformities during production.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "First Article Photos and Documentation",
+          "content": "This section shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Photographic documentation",
+              "content": "of the First Article part, showing the entire part and close-ups of critical features or inspection points.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Photographs of all exposed permanent markings (e.g., identification plates, serial numbers, barcodes)",
+              "content": "confirming conformance to contract and Item Unique Identification (IUID) requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Photographs of test setups, inspection fixtures, and any post-processing operations",
+              "content": "depicting how the inspections and tests were conducted.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Traceability",
+          "content": "This section shall ensure traceability of all materials and equipment used in the First Article production:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Material certification",
+              "content": "showing conformance to TDP requirements.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Manufacturer's certification",
+              "content": "for AM machine and post-processing equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Operator qualification records",
+              "content": "for personnel conducting the tests and inspections.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Appendices",
+          "content": "The FAI/TR shall include the following appendices:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "Appendix A",
+              "content": "Test Forms (SAE AS9102 or equivalent) for all FAI tests and inspections.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Appendix B",
+              "content": "Calibration Certificates for all inspection and test equipment used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Appendix C",
+              "content": "Nonconformance Records (including root cause analysis and corrective actions).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.4",
+              "title": "Appendix D",
+              "content": "Material Traceability Records from suppliers to the contractor.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82501.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

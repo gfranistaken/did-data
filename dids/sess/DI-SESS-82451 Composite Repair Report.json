@@ -1,0 +1,572 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82451",
+  "slug": "di-sess-82451",
+  "title": "Composite Repair Report",
+  "summary": "Describes the format, content, and use of the report documenting, monitoring, and approving individual item composite repairs at each stage of the repair process.",
+  "approval_date": "2024-07-09",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10493",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-048",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The report will be used to document, monitor and approve individual item composite repairs at each stage of the repair process.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Government Furnished Equipment Inventory",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Government Furnished Equipment Inventory (General)",
+              "content": "This section shall identify the following for each repairable item received:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Contract Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Contractor's Cage Code",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Contractor Point of Contact",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Location of GFE",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Date Inventory Completed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Government Furnished Equipment Inventory (Items)",
+              "content": "This section shall identify the following for each item that comprise the repairable item:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Asset Identification Number (Asset ID#)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Unique Item Identifier (UII) or DoD recognized Item Unique Identifier (IUID)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "National Stock Number (NSN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Unit or Item Cage Code",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "Part Number (P/N)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.6",
+                  "title": "Nomenclature (NOMEN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.7",
+                  "title": "Serial Number (S/N)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.8",
+                  "title": "Model Number (M/N), if applicable",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.9",
+                  "title": "Manufacturer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.10",
+                  "title": "Quantity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.11",
+                  "title": "Delineation whether the item is the subject of this composite repair report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.12",
+                  "title": "Visual condition if the item is not the subject of this composite repair report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Beyond Economical Repair (BER) Determination",
+          "content": "This section documents the assessment of whether the item is BER. This shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Government Furnished Information (GFI) regarding how the item was damaged",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "GFI provided description of the damage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "GFI photos of the damage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Contractor's summary of how the BER determination was made, and the Contractor's final recommendation",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Repair Concept",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Preliminary Damage Determination",
+              "content": "This section documents the extent of the damage to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Description of the type and nature of damage that has occurred",
+                  "content": "Examples include bond failure, crushed laminate, or oversized holes.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Photographic documentation of the damaged area to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.2.1",
+                      "title": "Location in inches from recognizable or geometric features",
+                      "content": "(i.e. super-seam, bonded joints, or build-up regions) features and dimensions (length and width) of the damage shall be included.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.2.2",
+                      "title": "Photos should show close up, as well as",
+                      "content": "large-scale views of the air vehicle so the damage location is apparent.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Procedures and results of Nondestructive Inspection (NDI)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "A description of what NDI technique(s)/method(s) were used",
+                  "content": "to determine extent of damage, the input parameters used (as applicable), what reference standard was used (if applicable), and a test set-up summary (including orientation of item, test equipment/instrumentation and drawings, and illustrations or photographs for clarification). NDI procedures should be provided if available.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.1.4.1",
+                      "title": "Identification of each item of test equipment/instrumentation used",
+                      "content": "in the inspection as applicable. Include the nomenclature, model number, serial number, manufacturer, calibration status, and vendor provided accuracy if available.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.2",
+                      "title": "Identification of all documents used",
+                      "content": "Examples include prior test/inspection reports on the same item, test/inspection plans or procedure documents.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.1.4.3",
+                      "title": "Description of results",
+                      "content": "Show results through tables, charts, and graphs as appropriate.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "Damage Assessment",
+              "content": "This section shall include the analysis and discussion of how the damaged area was assessed to include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "A summary of the results for analysis of the damaged item",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Description of the assessment and why the methods used are sufficient for the given type of damage",
+                  "content": "Include the assumptions used to complete the analysis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Descriptions of the load cases and the determination",
+                  "content": "of how those load case(s) are worst case (i.e. critical) with respect to the damaged area.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "The new margins determined when taking the damage into account",
+                  "content": "If the damage does not affect the margins this should be stated.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.3",
+              "title": "Repair Concept, Analysis, and Validation Plan",
+              "content": "This section shall describe the process used to determine the repair, details how the repair will be completed, and how the repair will be validated. This shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Details of the proposed repair to include",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.3.1.1",
+                      "title": "Material that will be used for repair",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.1.2",
+                      "title": "Material properties assumed for the repair, and how they were determined",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.1.3",
+                      "title": "Material removal and patch preparation process",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.3.1.4",
+                      "title": "Bonding, lamination, debulk and curing processes as appropriate",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Repair analysis that addresses the repair sufficiency for",
+                  "content": "the critical load case(s), and why the stiffness of the repair will not have a detrimental impact.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Post-repair validation plan",
+                  "content": "If proof load testing is proposed, address how the proof load test will stress the damaged area of concern, and provide any supporting analysis for the critical load cases(s).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "Other repair related data as needed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Repair and Post Repair Validation",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Repair",
+              "content": "This section shall document the steps of the actual repair. This shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.1.1",
+                  "title": "Description and photographs of all repair steps",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.2",
+                  "title": "Explanation of deviations from the previously generated Repair",
+                  "content": "Concept, Analysis, and Validation Plan in paragraph 0.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.3",
+                  "title": "Damage mapping to illustrate the extent of the damage and the repair both before and after surface preparation",
+                  "content": "Location and dimensional references shall be included in all illustrations. Information on the number of remaining good plies and unaffected thickness shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.1.4",
+                  "title": "Repair processes utilized and the standards, equipment, tools, calibrations used to complete the repair process",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.1.4.1",
+                      "title": "Material removal and patch preparation process",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.4.2",
+                      "title": "Bonding, lamination, debulk, and curing processes as appropriate",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.1.4.3",
+                      "title": "Repair material lot and shelf life",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.4.1.5",
+                  "title": "Repair Technician Certification or documentation of training",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.2",
+              "title": "Post Repair Validation",
+              "content": "This shall address the post repair validation per the planning discussed in paragraph 0. The purpose of this section is to show the item has been repaired properly. The information in this section shall include:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.4.2.1",
+                  "title": "NDI results of the area of repair demonstrating it was repaired properly",
+                  "content": "",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.4.2.1.1",
+                      "title": "A description of what NDI technique(s)/method(s) were used",
+                      "content": "to evaluate the repair, of input parameters used (as applicable), what reference standard was used (if applicable), test set-up summary (orientation of item, test equipment/instrumentation and drawings, illustrations or photographs for clarification). NDI procedures should be provided if available.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.2",
+                      "title": "Identification of each item of test equipment/instrumentation used in",
+                      "content": "the inspection as applicable: nomenclature, model number, serial number, manufacturer, calibration status, and vendor provided accuracy if available.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.3",
+                      "title": "Identification of all documents used",
+                      "content": "Examples include prior test/inspection reports on the same item, test/inspection plans or procedure documents.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.4",
+                      "title": "Description of results",
+                      "content": "Show results through tables, charts, and graphs as appropriate.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.4.2.1.5",
+                      "title": "Acceptability of any identified voids or porosity",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.4.2.2",
+                  "title": "If proof load testing is needed, provide test procedures and results",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.4.2.3",
+                  "title": "Discussion of any repairs that failed validation via NDI and/or proof load test",
+                  "content": "Address the need for improved repair process/procedures and/or inspections, or test procedures.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.4.3",
+              "title": "Airworthiness Recommendation",
+              "content": "This section shall provide the Contractors airworthiness recommendation for the repaired item, and document any residual risks from an airworthiness perspective.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82451.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

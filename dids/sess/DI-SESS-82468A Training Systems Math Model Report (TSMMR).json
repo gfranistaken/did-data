@@ -1,0 +1,139 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82468A",
+  "slug": "di-sess-82468a",
+  "title": "Training Systems Math Model Report (TSMMR)",
+  "summary": "Presents the mathematical description of the training situation, providing sufficient detail to validate the design approach and support future trainer modifications.",
+  "approval_date": "2025-04-22",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10552",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2025-020",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Trainer Math Model Report presents the mathematical description of the training situation.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\nThis DID supersedes DI-SESS-82468.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-SESS-82468"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "General",
+      "content": "The Math Model report shall provide a mathematical description of the training situation in engineering technology. The Math model report shall provide sufficient in depth information to validate the design approach and to facilitate an understanding of the simulation math model for future trainer modifications. This report shall be subject to continuous review and update. The final submittal shall accurately reflect the mathematical model of the system as delivered to the government.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Format",
+      "content": "This DID contains the format and content preparation instructions for the data product generated.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Introduction",
+          "content": "An introductory description of the overall simulation problem shall be provided summarizing the intended mission for the training system and outlining the organization of the Math Model Report. The report shall be divided into logical subdivisions which may parallel those used for software design to enhance document correlation.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.2",
+          "title": "Mathematical description",
+          "content": "Each subdivision shall describe the mathematical model utilizing a verbal discussion, geometric/graphic illustrations, flow diagrams, engineering equations and references. Each area of item to be simulated shall include a description and illustration of the axis systems used for reference. The flow diagrams shall show major function blocks and inputs and outputs for each block. Each subdivision shall include a table defining all symbols introduced in this subdivision. The use of standard symbology as typically used in current American textbooks and professional journals is encouraged. The flow diagram blocks shall be correlated to the description and equations in the text of the report. The text shall describe the purpose of each equation required to model a system. Design data sources shall be listed as references.\n\nIn addition to the functional description required above, the math model development shall be presented for each area. If the development of the modeling equations is documented in documents that can be referenced, a list of suitable references shall be provided. Also, the simplifications and assumptions that were necessary to develop the model equations shall be presented. For model designs that had to be developed for this particular training system and are not documented elsewhere, enough detail of model development shall be presented to provide model development understanding and traceability. All of the equations developed for each subsystem model shall be presented as a group to clearly describe the scope and content of the model. These equations may be differential equations, algebraic equations, logic equations, etc. From this set of equations, the model form to be processed digitally shall be developed, and any numerical integration schemes necessary shall be presented and their accuracy justified for this application. Computational iteration rates required for each area of the model shall be addressed and justified. Any reduction in the degrees of freedom of the general equations of motion shall be justified. Combinations or eliminations of standard coefficients shall be justified. Any differences between the operational equipment and the manufacturer's presentation of dynamic functions required and the trainer contractor's presentation shall be indicated with justification for deviation.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "4.3",
+          "title": "Organization of subdivisions",
+          "content": "Major subdivision of the math model report shall be organized as listed below:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "4.3.1",
+              "title": "Ownship dynamic performance",
+              "content": "This section shall discuss the equations which model the dynamic and kinematic performance of ownship with respect to its environment. These equations shall present a theoretical description of all the forces acting on the vehicle. An example math model breakdown in this area for a flight trainer might include:\n\nX.1 Equations of motion: ownship equations of motion\nX.2 Lat/long model\nX.3 Aerodynamics\nX.4 Weight and balance inertias\nX.5 Flight controls\nX.6 Control loading model\nX.7 Relative kinematics: equations of motion for target models, other aircraft, missile trajectories, landing platform models, etc.\nX.8 Environment models: Atmospheric modeling to include winds, turbulence, local disturbances, magnetic variation, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.2",
+              "title": "Ownship systems and instrumentation",
+              "content": "This section shall discuss the equations that simulate the characteristics of systems and instrumentation aboard ownship. Instrumentation refers to ownship operator station displays (e.g., cockpit instrument displays for flight simulators). This section may be subdivided into operational systems, communication/navigation systems, and associated instrument indications. An example breakdown for a flight trainer might include the following:\n\nY.1 Aircraft Systems\nY.2 Powerplant or propulsion systems\nY.3 Hydraulic systems\nY.4 Electrical systems\nY.5 Flight instruments and displays\nY.6 System instruments and displays\nY.7 Comm/nav systems\nY.8 Comm/nav data base",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.3",
+              "title": "Tactical systems",
+              "content": "This section shall include simulation of weapon systems, weapons scoring, countermeasures, etc. Dynamics of projectiles should be described under Relative Kinematics.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.4",
+              "title": "Sensor equations and performance",
+              "content": "This section shall describe in mathematical terms the parameters required to obtain the simulated sensor performance, including the effects of the media in which the sensor is operating. The equations of the simulated sensors shall be compared with the theoretical equations or empirical data for their performance to demonstrate the changes necessitated for hardware or software implementation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.5",
+              "title": "Other equations as required",
+              "content": "This section shall contain all equations required for the math model which are not covered in one of the above sections such as motion cueing system drive algorithms.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "4.3.6",
+              "title": "Data and data files",
+              "content": "For functional relationships which are not expressed in equation form, but as data tables or graphical relationships, these data shall be presented within the appropriate section or subdivision where referenced. Those data shall be presented in both graphical and tabular form. The data shall clearly address range of the independent variables and breakpoints. If the functional relationship was determined empirically from experimental data, then accuracy and resolution shall be described.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82468A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

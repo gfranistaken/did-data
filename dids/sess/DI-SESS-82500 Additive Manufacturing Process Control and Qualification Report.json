@@ -1,0 +1,479 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82500",
+  "slug": "di-sess-82500",
+  "title": "Additive Manufacturing Process Control and Qualification Report",
+  "summary": "Documents the qualification and ongoing process control of additive manufacturing systems, including machine calibration, material certifications, process parameter validation, and operator qualifications for metal-based AM processes.",
+  "approval_date": "2025-08-18",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10596",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AF-11 (AFLCMC/ROD)",
+  "project_number": "SESS-2025-034",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Additive Manufacturing Process Control and Qualification Report (AM-PCQR) is a comprehensive technical report used to document the qualification and ongoing process control of additive manufacturing (AM) systems, specifically for metal-based AM processes such as Laser Powder Bed Fusion (LPBF) and Directed Energy Deposition (DED). This report serves to document that the contractor's AM process has been thoroughly validated, that process control measures are in place, and that operators are adequately qualified in accordance with relevant industry standards and applicable contractual requirements.\n\na. This DID identifies documentation of the necessary elements of AM process control, including machine calibration, material certifications, process parameter validation, equipment qualifications, and operator qualifications. Process control is especially critical for aerospace and defense applications where high reliability, precision, and conformance to specifications are essential.\n\nb. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "ASTM International",
+      "url": "https://www.astm.org"
+    },
+    {
+      "label": "SAE Standards",
+      "url": "https://www.sae.org/standards/"
+    },
+    {
+      "label": "AWS",
+      "url": "https://www.aws.org"
+    },
+    {
+      "label": "NASA Technical Standards",
+      "url": "https://standards.nasa.gov"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.\n\nISO/ASTM 52920: Additive manufacturing - Qualification principles - Requirements for industrial additive manufacturing processes and production sites\nISO/ASTM 52926-1: Additive Manufacturing of Metals - Qualification principles - Part 1: General Qualification of Operators\nISO/ASTM 52926-2: Additive Manufacturing of Metals - Qualification principles - Part 2: General Qualification of Operators for Powder Bed Fusion Laser (PBF-LB)\nISO/ASTM 52926-4: Additive Manufacturing of Metals - Qualification principles - Part 4: General Qualification of Operators for Directed Energy Deposition Laser (DED-LB)\nISO/ASTM 52930-2021: Additive manufacturing - Qualification principles - Installation, operation and performance (IQ/OQ/PQ) of PBF-LB equipment\nISO/ASTM 52943-2: Additive Manufacturing for Aerospace - Process characteristics and performance - Part 2: Directed Energy Deposition using Wire and Arc\n(Copies of these documents are available from https://www.astm.org)\n\nMIL-STD-1587: Materials and Processes for Aerospace Systems\n(Copies of this document are available from https://assist.dla.mil)\n\nSAE AMS7003A: Laser Powder Bed Fusion Process\nSAE AMS7032: Machine Qualification for Fusion-Based Metal Additive Manufacturing\nSAE AS9131: Aerospace Series - Quality Management Systems - Nonconformity Data Definition and Documentation\n(Copies of these documents are available from https://www.sae.org/standards/)\n\nAWS D20.1/D20.1M: Specification for Fabrication of Metal Components using Additive Manufacturing\n(Copies of these documents are available from https://www.aws.org)\n\nNASA 6030: Additive Manufacturing Requirements for Spaceflight Systems\nNASA 6033: Additive Manufacturing Requirements for Equipment and Facility Control\n(Copies of these documents are available from https://standards.nasa.gov)",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The AM-PCQR shall be submitted in the contractor's format with the following exceptions:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Revisions",
+          "content": "A Table of Revisions shall follow the Table of Contents, with details of changes and the date of revision.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The AM-PCQR shall include the following sections:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover Page",
+          "content": "The Cover Page shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Contractor's company name, logo, address, phone number and author(s)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "The AM system or process name under contract",
+              "content": "including the part number(s) and revision number as defined in the contract and on the engineering drawings.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Location of AM systems or process under contract",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Title indicating that this is an \"Additive Manufacturing Process Control and Qualification Report.\"",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "A \"Submitted For\" section",
+              "content": "containing the National Stock Number (NSN) for the part, the contract number, the part number, and the serial number (SN) as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Date of submission and document number",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "A \"Submitted To\" section",
+              "content": "with the name and address of the procurement office or contracting officer.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "A section with the signatures of the document preparer, Quality Assurance (QA) representative, and Defense Contract Management Agency (DCMA) representative",
+              "content": "with dates indicating the test/inspection completion.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Table of Contents",
+          "content": "The Table of Contents shall clearly list all major sections, subsections, appendices, and illustrations (e.g., tables, photos, graphs) with their corresponding page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Revision History Table",
+          "content": "This section shall include the following details:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "The base designation of the AM-PCQR (initial revision \"-\")",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Subsequent revision designations (e.g., \"A,\" \"B,\")",
+              "content": "describing the specific changes made in each revision and the date they were implemented.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Purpose of the Report",
+          "content": "This section shall clearly outline the purpose of the AM-PCQR, specifying how the document demonstrates the contractor's compliance with the AM process control requirements. This includes identifying the relevant standards that the contractor is using for their AM process(es), as well as any specific contractual requirements. It should also describe the key objectives, such as:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Demonstrating that the AM system is qualified to meet the technical specifications of the contract",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Validating that all facilities, AM equipment, and operators are properly qualified, and the AM material created meets the performance requirements specified",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Outlining ongoing process control measures to ensure consistent quality in production",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Applicable Documents",
+          "content": "This reference section lists the documents and standards that can be used to prepare the report. Any specific contract or TDP requirements related to the AM process shall also be addressed.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Process Control System Description",
+          "content": "A detailed description of the Additive Manufacturing Process Control System, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "The AM system (e.g., LPBF, DED-LB) and its specific configuration",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "The key process parameters (e.g., laser power, scan speed, layer thickness)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Machine calibration methods and results, including any relevant certification or verification of the machine's capabilities",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "In-process monitoring and control techniques (e.g., build environmental control [temperature, atmosphere], powder flow monitoring, laser scanning system diagnostics)",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "Process stability and repeatability data",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Software or process control systems used for monitoring and controlling the AM process",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Material Certification and Traceability",
+          "content": "This section should include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Material certification for all powders, wire stock, or other consumables used in the AM process",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Material traceability documentation, showing compliance with TDP feedstock and consolidated material specifications",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Details of the material supplier's certification, including batch numbers, lot numbers, and test reports",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Compliance with the material standards set forth in the contract",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Operator Qualification and Training",
+          "content": "This section should include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Proof of operator training and qualification under ISO/ASTM 52926-2 (for PBF-LB) or ISO/ASTM 52926-4 (for DED-LB) or AWS D20.1 or NASA 6033",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Training logs and certifications for each operator",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Documentation of operator qualifications to handle specific AM equipment, materials, and processes",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.4",
+              "title": "Documentation that operators are familiar with all required safety standards, procedures, and regulations",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Test and Qualification Data",
+          "content": "This section shall present the results from qualification tests conducted on the AM system, including:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Test build results",
+              "content": "Performance data from qualification test builds, such as mechanical testing data (e.g. tension, compression, shear), microstructure analysis, part dimensional accuracy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Test data comparison",
+              "content": "A comparison of the actual results against the specifications or performance criteria outlined in the TDP or relevant industry standards.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Failure analysis (if applicable)",
+              "content": "Identification of any non-conformances, failure modes, or issues that arose during the qualification process and the corrective actions taken.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Process Control Monitoring and Performance",
+          "content": "This section shall document the:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "In-process monitoring results",
+              "content": "Continuous or periodic monitoring of the AM process during production.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Control charts and metrics",
+              "content": "Graphical representations of key process data, such as laser power, scan speed, and build temperature; and correlation with process stability or material performance.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Performance metrics",
+              "content": "Key performance indicators (KPIs) related to build quality, cycle time, and material efficiency.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.4",
+              "title": "Process improvement efforts",
+              "content": "Any ongoing efforts to improve process control, such as the implementation of advanced sensors, software upgrades, or modified build strategies.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.11",
+          "title": "Nonconformities and Corrective Actions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.11.1",
+              "title": "A detailed account of any nonconformities encountered during the qualification or process control phases",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.2",
+              "title": "Use of the SAE AS9131 Nonconformity Form (or equivalent) to document the root cause analysis, corrective actions, and preventive actions taken to mitigate future issues",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.11.3",
+              "title": "Documentation of corrective actions, including requalification if necessary",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.12",
+          "title": "Appendices",
+          "content": "The AM-PCQR shall include the following appendices:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.12.1",
+              "title": "Appendix A: Machine Calibration Reports",
+              "content": "including calibration certificates and procedures used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.2",
+              "title": "Appendix B: Operator Qualification Certificates",
+              "content": "for all personnel involved in the AM process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.3",
+              "title": "Appendix C: Material Certification Documentation",
+              "content": "provide a summary documentation that includes batch certificates and supplier test reports.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.4",
+              "title": "Appendix D: Qualification Test Data",
+              "content": "including test results, graphs, and performance analysis.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.12.5",
+              "title": "Appendix E: Nonconformity and Corrective Action Records",
+              "content": "documenting any deviations and resolutions.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82500.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-81352",
+  "slug": "di-tmss-81352",
+  "title": "Trusted Facility Manual",
+  "summary": "Explains how the security administrator, system administrator, and operator establish, operate, and maintain a secure computer environment, including their respective security responsibilities.",
+  "approval_date": "1993-07-02",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G6942",
+  "limitation": "",
+  "dtic_applicable": "",
+  "gidep_applicable": "",
+  "office_of_primary_responsibility": "G/C71",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "APR 89",
+  "use_relationship": "",
+  "description_purpose": "The Trusted Facility Manual (TFM) explains how the security administrator, system administrator, or operator establish, operate, and maintain a secure environment. The security administrator is responsible for the secure administration of the environment. The system administrator is responsible for the overall functioning of the environment. Finally, the operator is responsible for the day-to-day operation of the environment.",
+  "application_interrelationship": "This Data Item Description (DID) contains the format and content preparation instructions for the data product generated under the work task described by 2.1.3.1.2, 2.1.4.2, 2.2.4.2, 3.1.2.2, 3.1.4.2, 3.2.2.1.1, 3.2.3.1.4, 3.2.4.2, 3.3.2.1.1, 3.3.2.2, 3.3.3.1.4, 3.3.3.1.5, 3.3.4.2 and 4.1.3.2.4 of DOD-5200.28 STD, Department of Defense Trusted Computer System Evaluation Criteria.\n\nThis DID is applicable to any computer acquisition that requires administrator-oriented documentation as prescribed by DOD-5200.28-STD, Department of Defense Trusted Computer System Evaluation Criteria, Classes C1 (Discretionary Security Protection), and above, products or their equivalent systems.\n\nThe information required for all class products and their equivalent systems applicable to the DID as a whole. In addition, the information required in 10.3.1, 10.3.2, 10.3.3, 10.3.4, and 10.3.5 is necessary for various classes of products and their equivalent systems.",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "10.1",
+      "title": "Source Document",
+      "content": "The applicable issue of the documents cited herein, including their approval date, and dates of any applicable amendments and revisions shall be reflected in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "10.2",
+      "title": "Format",
+      "content": "The TFM shall contain:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Cover Sheet",
+          "content": "Include Title, Contract Number, Procuring Activity, Contractor Identification, Acquisition Program Name, disclaimers (as provided by the procuring activity contracting officer), date, version, number, security classification, and any other appropriate descriptive data.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Errata Sheet",
+          "content": "Provide sheet delimiting cumulative page changes from previous version(s).",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "Table of Contents",
+          "content": "Include paragraph numbers, paragraph names, and page numbers.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "List of illustrations, diagrams, charts, and figures",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Glossary of abbreviations, acronyms, terms, symbols, and notation used, and their definitions",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "f",
+          "title": "Executive Summary",
+          "content": "Not to exceed two pages, that briefly summarizes the Trusted Facility Manual.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "g",
+          "title": "Introduction",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "h",
+          "title": "Body of the Manual",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "i",
+          "title": "Attachments",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "j",
+          "title": "Appendices",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "k",
+          "title": "Bibliography",
+          "content": "List reference sources and applicable documents.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "l",
+          "title": "Subjective Index",
+          "content": "An exhaustive index of the key word or theme in each paragraph shall be provided.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.2.1",
+          "title": "Specific format instructions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Abbreviations and acronyms",
+              "content": "Shall be defined when first used in the text and shall be placed in the glossary.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Page numbering",
+              "content": "Pages shall be numbered separately and consecutively using Arabic numerals. Blank pages shall be numbered.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Paragraph titling and numbering",
+              "content": "Paragraphs shall have a short descriptive title and shall be numbered consecutively using Arabic numerals. Numbering schemes beyond the fourth level (e.g., 4.1.2.5.8) are not permitted.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Chapters shall begin on an odd-numbered (right hand) page",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Column headings",
+              "content": "Shall be repeated on subsequent pages if tabular material exceeds one page.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Fold out pages shall be kept to a minimum",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "g",
+              "title": "Paper and type font requirements",
+              "content": "Paper shall be standard 8 1/2 x 11 inches, white, with black type. The type font shall be standard 10 pitch pica or courier, 12 pitch elite, or equivalent font. Either blocked text (left and right justified) or jagged right (left justified only) shall be used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "h",
+              "title": "Margins",
+              "content": "At least one inch margins shall be provided all around to allow for drilling and binding.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "i",
+              "title": "Printing",
+              "content": "Either single- or double-sided printing shall be used. If double-sided, the document shall be printed or typed head-to-head, front-to-back.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "j",
+              "title": "Binding",
+              "content": "The manual shall be provided in standard three-ring notebook binders for ease of maintenance.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.3",
+      "title": "Content",
+      "content": "The Trusted Facility Manual (TFM) shall describe procedures for selecting security options that are needed to meet operational requirements in a secure manner. The level of detail should span the gap between the user-oriented Security Features User's Guide and the security engineer-oriented design documentation. The TFM shall be addressed to the system administrator, security administrator, or operator and provide the following information:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "a",
+          "title": "Identification of the computer acquisition",
+          "content": "The TFM shall briefly identify and describe the computer acquisition for which the TFM applies. It shall identify and describe any peripheral equipment necessary for either a secure or functional application. The TFM shall also discuss, if appropriate, use in all possible different environments.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "b",
+          "title": "Security mechanisms for the computer environment",
+          "content": "The TFM shall describe all of the security mechanisms for the computer environment as these features involve the administrator: the communication (e.g., communications links and network connections); TEMPEST; hardware; software; and storage media.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "c",
+          "title": "Cautions about functions and privileges",
+          "content": "The TFM shall describe the cautions about functions and privileges that should be controlled when running a secure facility.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "d",
+          "title": "Procedures for validating on-site TCB hardware and firmware",
+          "content": "The TFM shall describe the procedures (for hardware and software features) that must be used to periodically validate the correct operation of the on-site operational TCB hardware and firmware elements.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "e",
+          "title": "Guidelines on the consistent and effective use of the protection features",
+          "content": "The guidelines on the consistent and effective use of the protection features (e.g., change of terminal user security level during interactive session, assignment of security levels to attached devices, identification of covert storage channels in audit data, and safeguards to ensure least privilege). This shall include how the protection features interact.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "10.3.1",
+          "title": "Classes C2 and above products and their equivalent systems",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Identification of the audit files",
+              "content": "It shall describe the procedures for examining and maintaining the audit files.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Identification of the audited events",
+              "content": "It shall describe the detailed audit record structure for each type of audit event.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.2",
+          "title": "Classes B1 and above products and their equivalent systems",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Duties, responsibilities, functions, privileges, and interrelationships",
+              "content": "A description of the duties, responsibilities, functions, privileges, and interrelationships of the system user, operator, and administrator related to security. This shall include the actions required to change the security characteristics of a user/administrator.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Guidelines on the consistent and effective use of the facility procedures",
+              "content": "The guidelines on the consistent and effective use of the facility procedures, warnings, and privileges that need to be controlled in order to operate the facility in a secure manner.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Guidelines on the consistent and effective use of the protection features",
+              "content": "The guidelines on the consistent and effective use of the protection features (e.g., controlling access, initialization of storage objects, importation of data without labels, label designation of communications channels, exportation of labels, labeling of human-readable output, identification and authentication of users). This shall include how the protection features interact.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Procedures used to generate a new TCB",
+              "content": "A description of the procedures used to generate a new TCB. The steps necessary to validate and ensure that all changes which are incorporated conform to the requirements for the TCB class shall be described in the TFM.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Audit mechanism override of human readable output markings",
+              "content": "A description of how the audit mechanism audits the override of human readable output markings.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.3",
+          "title": "Classes B2 and above products and their equivalent systems",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "TCB modules that contain the reference validation mechanism",
+              "content": "The TCB modules that contain the reference validation mechanism shall be identified in the TFM.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Procedures for secure generation of a new TCB",
+              "content": "The procedures for secure generation of a new TCB from source after modification of any modules in the TCB shall be described in the TFM.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Separation of operator and administrator functions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Procedures that the administrator/user must follow to reach the trusted communication path",
+              "content": "The procedures that the administrator/user must follow to reach the trusted communication path between the administrator/user and the TCB.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "10.3.4",
+          "title": "Classes B3 and above products and their equivalent systems",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Operational procedures necessary to achieve the initial secure processing state",
+              "content": "Include any instructions necessary to maintain the secure state.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Functions performed in the role of a security administrator",
+              "content": "The functions performed in the role of a security administrator shall be identified in the TFM. The TFM shall describe the procedure (a distinct auditable action) that allows a user to access the security administrator role. The TFM shall identify the means by which non-security functions (e.g., those essential to performing the security role effectively) can be performed in the security administration role.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "c",
+              "title": "Mechanism that monitors the occurrence or accumulation of security auditable events",
+              "content": "The mechanism that monitors the occurrence or accumulation of security auditable events that may indicate an imminent violation of security policy. The TFM shall describe how the security administrator will be notified when thresholds are exceeded. The TFM shall also identify the security administrator's role in the action which will occur to terminate the events, if the occurrence or accumulation of these security relevant events continues.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "d",
+              "title": "Procedures for the administrator/user to utilize the trusted communication path",
+              "content": "The procedures for the administrator/user to utilize the trusted communication path between the TCB and the administrator/user, for use when a positive TCB-to-user connection is required (e.g., login, change subject security level), shall be explicitly defined in the TFM. The TFM shall describe how the communications via this trusted path is activated exclusively by the administrator/user or the TCB. The TFM shall describe how the trusted path is logically isolated and unmistakably distinguishable by the administrator/user from other paths.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "e",
+              "title": "Guidelines on the consistent and effective use of the protection features",
+              "content": "The guidelines on the consistent and effective use of the protection features (e.g., listing individuals or groups with access to specific objects, and identification of covert channels in audit data). This shall include how the protection features interact.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "f",
+              "title": "Description of procedures necessary to resume secure operation",
+              "content": "The TFM shall include the description of procedures necessary to resume secure operation after any lapse of operation. The following items shall be included in the TFM to be assigned exclusively to administrative personnel with security-relevant responsibility.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "1)",
+                  "title": "Procedures for analysis of dumps",
+                  "content": "Procedures for analysis of dumps, for consistency checking of TCB objects, and for cold start and emergency restart.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "2)",
+                  "title": "Description of the types of tolerated failures",
+                  "content": "A description of the types of tolerated failures and examples of the recommended procedures for responding to such failures.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3)",
+                  "title": "Procedures for running periodic integrity checks on the TCB database",
+                  "content": "Procedures for running periodic integrity checks on the TCB database and for repairing damaged security labels.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "4)",
+                  "title": "Procedures for handling inconsistencies of the objects",
+                  "content": "Procedures for handling inconsistencies of the objects (e.g., duplicate allocation of disk blocks to objects, inconsistent object links).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "5)",
+                  "title": "Lists of commands, TCB calls, and function definitions for trusted recovery",
+                  "content": "Lists of commands, TCB calls, and function definitions for trusted recovery (whenever these aren't documented in the DTLS).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "6)",
+                  "title": "Examples of, and warnings about, potential misuse of trusted recovery procedures",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "10.3.5",
+          "title": "Classes A1 products and their equivalent systems",
+          "content": "The following shall be included:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "a",
+              "title": "Description of the distribution facility procedures",
+              "content": "A description of the distribution facility procedures provided for maintaining the integrity of the on-site operational TCB master copy.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "b",
+              "title": "Description of the procedures that ensure that the TCB software, firmware, and hardware updates",
+              "content": "A description of the procedures that ensure that the TCB software, firmware, and hardware updates distributed are exactly as specified by the master copies.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-81352.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

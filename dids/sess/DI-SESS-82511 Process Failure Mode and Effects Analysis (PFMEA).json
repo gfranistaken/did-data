@@ -1,0 +1,415 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82511",
+  "slug": "di-sess-82511",
+  "title": "Process Failure Mode and Effects Analysis (PFMEA)",
+  "summary": "Describes the Process Failure Mode and Effects Analysis (PFMEA) report used as a proactive risk management tool to identify failure modes, rank their risk, and develop mitigation actions for manufacturing and assembly processes.",
+  "approval_date": "2026-01-08",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10613",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2026-004",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This report leverages Process Failure Mode and Effects Analysis (PFMEA) as a structured, proactive risk management tool used continuously from conceptual design onward to document, monitor, and approve manufacturing and assembly processes by identifying potential failure modes, ranking their risk based on probability and consequence, and developing mitigation actions, ultimately aiming to prevent failures, reduce costs, enhance quality, improve customer satisfaction, and optimize production performance, particularly in critical processes where safety and mission performance are paramount.\n\nThis DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "N/A",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The report shall be in contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall systematically address the following components:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Process Function",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Description",
+              "content": "Include a clear and concise statement of what the manufacturing process does (e.g., \"Drilling holes for fastener insertion,\" \"Applying protective coating,\" \"Assembling two components\").",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Context",
+              "content": "Provide supporting details to understand the process's role within the overall manufacturing flow. Explain its purpose and how it contributes to the final product.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Performance Metrics",
+              "content": "Include relevant metrics to measure the process's effectiveness and efficiency. This could be cycle time, defect rate, throughput, etc.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Potential Failure Mode",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Description",
+              "content": "Define how the process or part can fail to meet requirements or cause customer dissatisfaction. Focus on the physical manifestation of the failure (e.g., \"Hole drilled off-center,\" \"Surface coating uneven,\" \"Component not properly seated,\" \"Part bent during handling\").",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "Completeness",
+              "content": "Identify and describe all predictable failure modes for each component, subsystem, and process characteristic.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Failure Effects",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Description",
+              "content": "Detail the consequences of each failure mode on different levels:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Local Effect",
+                  "content": "Include the immediate impact of the failure on the process itself (e.g., \"Cannot assemble next component,\" \"Damages drill bit,\" \"Causes excessive vibration\").",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Next Higher-Level Effect",
+                  "content": "Describe the impact on the subsequent manufacturing steps or systems (e.g., \"Downstream process delayed,\" \"Part doesn't fit in next assembly\"). For downstream manufacturing, this is stated in terms of process performance.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "End Effect",
+                  "content": "Address the ultimate impact on the end user or the overall manufacturing process (e.g., \"Product fails to function correctly,\" \"Premature wear,\" \"Rework required,\" \"Increased scrap rate,\" \"Intermittent operation,\" \"Unacceptable noise\"). These effects should be stated in terms of product or system performance.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Severity",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Description",
+              "content": "Include a numerical ranking assigned to each failure effect, reflecting the worst potential consequence of the failure.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "Ranking Criteria",
+              "content": "Establish clear, objective criteria for severity levels (e.g., Minor, Marginal, Critical, Catastrophic) and assign numerical values to each. The PFMEA team must agree on these criteria.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Considerations",
+              "content": "Factors to consider include potential for injury, disruption to the manufacturing process, and damage to equipment or the final product.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Causes",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Description",
+              "content": "Identify the potential root causes of each failure mode. These should be stated in terms that are controllable or preventable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.2",
+              "title": "Examples",
+              "content": "\"Inaccurate tooling calibration,\" \"Worn guide rails,\" \"Improper material composition,\" \"Insufficient lubrication,\" \"Incorrect process parameters.\"",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.3",
+              "title": "Avoid Ambiguity",
+              "content": "Do not use vague causes like \"Operator error\" or \"Machine malfunction.\" These need to be broken down into specific, actionable items.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.5.4",
+              "title": "Investigation",
+              "content": "Recognize that causes can be complex and interrelated. Design of experiments or other methods may be necessary to identify the most significant controllable factors.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Occurrence",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Description",
+              "content": "The probability that a specific failure mode will occur.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "Numerical Ranking",
+              "content": "Assigned a numerical rank based on established criteria.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Data Sources",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.3.1",
+                  "title": "Historical Data",
+                  "content": "Use historical failure rate data whenever available.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.2",
+                  "title": "Similar Processes",
+                  "content": "If historical data is lacking, use statistical data from similar processes as a benchmark.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.3.3",
+                  "title": "Subjective Assessment",
+                  "content": "If data is unavailable, the team may need to make a subjective assessment based on experience and knowledge.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Current Process Controls",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "Description",
+              "content": "Identify existing controls that are in place to either prevent or detect potential failure modes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Prevention Controls (Preferred)",
+              "content": "Controls that aim to stop the failure from happening in the first place (e.g., Statistical Process Control (SPC), error-proofing, robust design).",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.3",
+              "title": "Detection Controls",
+              "content": "Controls that are used to identify the failure after it has occurred (e.g., Gauging, manual inspection, automated testing, inability to pass a bad part to the next stage).",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.8",
+          "title": "Detection",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.8.1",
+              "title": "Description",
+              "content": "The probability that a failure will not be detected by the existing controls.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.2",
+              "title": "Numerical Ranking",
+              "content": "Assigned a numerical rank based on established criteria.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.8.3",
+              "title": "Assessment",
+              "content": "Evaluate the effectiveness of the detection controls. Consider factors like the reliability of the inspection process, the sensitivity of the measuring equipment, and the frequency of inspections.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.9",
+          "title": "Risk Priority Number (RPN)",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.9.1",
+              "title": "Calculation",
+              "content": "RPN = Severity (S) x Occurrence (O) x Detection (D)",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.2",
+              "title": "Interpretation",
+              "content": "The RPN provides a relative measure of criticality for each failure mode. Higher RPNs indicate more critical failures that require immediate attention.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.9.3",
+              "title": "Prioritization",
+              "content": "Focus efforts on addressing failure modes with the highest RPNs. Items with very low RPNs may not warrant action.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.10",
+          "title": "Recommended Actions",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.10.1",
+              "title": "Purpose",
+              "content": "Develop actions to reduce the RPNs by addressing the underlying causes of the failure modes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.2",
+              "title": "Prioritization",
+              "content": "Start with the failure modes with the highest RPNs and work down the list.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.10.3",
+              "title": "Reduction Hierarchy",
+              "content": "Prioritize actions that reduce:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.10.3.1",
+                  "title": "Severity",
+                  "content": "Eliminate or minimize the potential consequences of the failure. This is often the most difficult to change.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.2",
+                  "title": "Occurrence",
+                  "content": "Reduce the probability of the failure occurring.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.10.3.3",
+                  "title": "Detection",
+                  "content": "Improve the ability to detect the failure before it reaches the customer.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.10.4",
+              "title": "Emphasis on Prevention",
+              "content": "Focus on preventing failures rather than simply detecting them.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82511.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

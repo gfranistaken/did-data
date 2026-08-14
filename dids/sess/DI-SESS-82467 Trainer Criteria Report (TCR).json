@@ -1,0 +1,123 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82467",
+  "slug": "di-sess-82467",
+  "title": "Trainer Criteria Report (TCR)",
+  "summary": "Provides criteria and criteria sources to verify the fidelity of the modeling and simulation used by the trainer to simulate the physical systems and characteristics of the aircraft and its environment.",
+  "approval_date": "2025-01-27",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10527",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2025-010",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Trainer Criteria Report (TCR) provides criteria and criteria sources to verify the fidelity of the modeling and simulation used by the trainer to simulate the physical systems and characteristics of the aircraft and its environment.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "This DID contains the format and content preparation instructions for the data product generated.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Section 1.0 Scope",
+          "content": "This section shall include a purpose and introduction. The introduction shall summarize the contents of the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Section 2.0 Applicable Documents",
+          "content": "This section shall identify all documents that are cited in the TCR but not specifically referenced as a criteria data source.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Section 3.0 Requirements",
+          "content": "This section shall contain the criteria data organized into the following sections:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Aircraft Performance and Flying Qualities",
+              "content": "This section shall contain specific test categories which describe the performance and flying qualities characteristics of the aircraft in terms of the quantities to be measured during the test program. Included in each category shall be a list of the specific tests, description of test techniques, test criteria data, data sources, and applicable tolerances.\n\nTest criteria data should include a summary of flight conditions, data plots, tables and charts. Data plots and tables may be placed in an appendix if numerous, but data summaries shall be included in the body of the report.\n\nSources of all criteria data shall be listed including airframe, engine, and equipment manufacturers, and whether Government furnished or otherwise. The data transmittal documents or publications shall be cited. Sources of input data such as aerodynamic coefficients, engine characteristics and the like from airframe and engine manufacturers and other organizations shall be provided. In cases of conflicting data, an explanation shall be provided for the selection and use of one set of data rather than another.\n\nTolerances shall be listed in accordance with those cited in the contract specifications. The report shall include a description of how the tolerances are to be applied to the trainer criteria data.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Aircraft Systems Criteria",
+              "content": "This section shall describe the specific system function to be simulated for each onboard aircraft system (i.e., airframe systems, propulsion systems, navigation). The description shall include associated crewstation controls and indicators, sources of design criteria, and malfunction chart(s). A malfunction chart shall list each required malfunction to be simulated, describe how it is to be initiated, describe aircraft indications to the extent observable by the trainee, and corrective action. This section shall contain a list of approved Engineering Change Proposals affecting the aircraft systems included in the simulation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Tactics Systems and Ownship Weapons Criteria",
+              "content": "This section shall contain a description of specific system functions to be simulated in the device for each onboard tactics system (i.e., sensor systems, electronic warfare, weapons flyout). These descriptions shall include associated crew station controls and indicators, sources of design criteria, and malfunction chart(s). Ownship weapons description shall include specific fidelity verification tests, description of test techniques used to obtain the data, test criteria data and data sources, and applicable tolerances.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Simulated Environment",
+              "content": "This section shall describe associated test and design criteria for all models to simulate the environment in which the aircraft operates. These include atmospheric effects, floating platforms, surface facilities, tactical environment (include both computer driven and crew/instructor operated threats, if applicable), G-cueing, aural cues, visual cues, etc.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Acronyms",
+          "content": "This section shall list acronyms used in the report.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82467.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

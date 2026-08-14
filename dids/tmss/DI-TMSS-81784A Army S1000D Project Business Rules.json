@@ -1,0 +1,209 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-81784A",
+  "slug": "di-tmss-81784a",
+  "title": "Army S1000D Project Business Rules",
+  "summary": "Documents project-specific business rules for the preparation of technical publications in conformance with S1000D, per MIL-STD-3031, for the acquisition of military technical data.",
+  "approval_date": "2011-04-19",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "9189",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "TM",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID) and MIL-STD-3031 shall be used to document project-specific business rules for the preparation of technical publications in conformance with S1000D. This DID and Appendix C of MIL-STD-3031 contain the format, content, and intended use information for the data product resulting from the work task described, and is applicable to the acquisition of military technical data.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as cited in accordance with the Acquisition Streamlining and Standardization Information System (ASSIST) database (at http://assist.daps.dla.mil/) at the time of the solicitation; or, for unlisted documents, as stated herein.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Army S1000D Project Business Rules shall be in the contractor's format of choice, with the exception of Appendix A which shall be consistent with the table provided in Appendix C of MIL-STD-3031.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The Army S1000D Project Business Rules shall include:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Cover",
+          "content": "A front cover sheet shall include the contract's name and address, the contract number, the nomenclature of the system or program, the date of the project business rules document, the security classification, and the name of the issuing Government activity.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Introduction",
+          "content": "The introduction shall be a brief description of the program that includes estimated milestone dates related to technical data, high-level technical data functionality (paper or Interactive Electronic Technical Publication (IETP), the use of the process data module, etc.), and any other significant information helpful in describing the product and its technical data and use.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Paragraphs 1 through 7 shall include additional narrative",
+          "content": "Paragraphs 1 through 7 shall include additional narrative descriptions for the project decisions provided below. These project decisions require narrative descriptions that are typically not suitable for Appendix A.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Definitions of information sets",
+              "content": "The project shall decide which information sets are to be used and the definition of their content (from S1000D Chapter 3.3 - Information generation - Information sets). This shall include a list of those information sets from Appendix A of MIL-STD-3031, the completed functionality matrix, and the corresponding completed content selection matrices that have been selected for development by the project.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Project-specific information sets",
+              "content": "The project shall define all project-specific information sets (from S1000D Chapter 3.3 - Information generation - Information sets). All project-unique information sets not described in Appendix A of MIL-STD-3031 shall be described here.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "General identification of access points",
+              "content": "The project shall determine the identification system for those access points that do not have identifiers (from S1000D Chapter 3.4 - Information generation - Zoning and access). This shall include a description of how zoning and access is defined for the product, including any exceptions resulting from peculiarities of the product. The description shall refer to drawings that specifically map out zones and access points.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "Checklist categories",
+              "content": "The project shall decide if business rules need to be created for which Extensible Markup Language (XML) elements to use and how to markup checklists for each category type (from S1000D Chapter 3.9.5.2.14 - Maintenance Checklists and Inspections). This shall list the project-unique checklists and the necessary business rules that define how to produce those checklists.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Applicability",
+              "content": "This shall include whether and how data module and content applicability will be used, definitions of filtering criteria, and methods for determining correct filtered data to display. This scope of this paragraph shall include but not be limited by the following project decisions:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.5.1",
+                  "title": "Applicability (general)",
+                  "content": "The project shall determine the use of applicability and describe that desired approach in the business rules (from S1000D Chapter 3.9.5.3 - Data modules - Applicability).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.2",
+                  "title": "Applicability (Quality Assurance)",
+                  "content": "The project shall decide if it is permitted to differentiate quality assurance information depending on product configuration (from S1000D Chapter 3.7 - Information generation - Quality assurance).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.3",
+                  "title": "Applicability (Identification and status section)",
+                  "content": "The project shall decide on how applicability is to be used. The project shall decide on the population of the elements and attributes of applicability and shall then enforce its consistency (from S1000D Chapter 3.9.5.1 - Data modules - Identification and status section).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.5.4",
+                  "title": "Applicability (Descriptive information)",
+                  "content": "The project shall decide how to use the element <applic> in the content section of the description (from S1000D Chapter 3.9.5.2.2 - Content section - Descriptive information).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.6",
+              "title": "Documentation of Standard Numbering System (SNS)",
+              "content": "This shall include complete documentation defining the project SNS. If the S1000D-maintained SNS is used, list each required table (e.g., System L - Electronic system - General). The scope of this paragraph shall include but not be limited to the following project decisions:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.6.1",
+                  "title": "The SNS shall be documented in the",
+                  "content": "The SNS shall be documented in the project business rules and included in the Business Rules Exchange (BREX) data module to the extent possible (from S1000D Chapter 4.3.3 - Data module code - Standard numbering system).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.2",
+                  "title": "Documentation of SNS and technical names",
+                  "content": "The project shall compile a list which defines the SNS and all technical names (from S1000D Chapter 4.3.3 - Data module code - Standard numbering system).",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.6.3",
+                  "title": "Sub-subsystem SNS allocations",
+                  "content": "The project shall determine the sub-subsystem SNS allocations (from S1000D Chapter 4.3.3 - Data module code - Standard numbering system).",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.7",
+              "title": "Process data module",
+              "content": "The project shall determine the use of the process data module and describe that desired approach in the business rules (from S1000D Chapter 4.11 - Information management - Process data module). It shall describe whether and how the process data module will be used, including interactive strategy and all necessary rules governing the production, display, and use of interactive data.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Paragraphs 8 through X",
+          "content": "Additional project business rules requiring narrative description. These shall include, in S1000D-chapter order, all narrative descriptions related to the project business rules not included in paragraphs 1 through 7 above.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Appendix A",
+          "content": "The project decision matrix. The matrix shall include project-specific business rules for all project decision points identified in Appendix C of MIL-STD-3031.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "The Army S1000D Project Business Rules shall not",
+          "content": "The Army S1000D Project Business Rules shall not include guidance, tutorials, training, or repetition of business rules that are provided in S1000D or MIL-STD-3031.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-81784A.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

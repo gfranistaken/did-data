@@ -1,0 +1,531 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82548",
+  "slug": "di-sess-82548",
+  "title": "Report Template for Documentation of Uncertainty Quantification Analyses of Computational Engineering Models",
+  "summary": "This document provides a template for reporting the results of Uncertainty Quantification (UQ) analyses conducted on Computational Engineering Models (CEM) for Department of Navy contract deliverables.",
+  "approval_date": "2026-06-25",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10680",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2026-035",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This document provides a template for reporting the results of Uncertainty Quantification (UQ) analyses conducted on Computational Engineering Models (CEM) for Department of Navy contract deliverables.  Contractor formatting is considered acceptable for the UQ Report but must follow the outline documented in this template and include the content described herein.\n\nThe DID contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference document",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract. The Contractor shall ensure compliance with FAR and DFAR property clauses applicable to the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor's format is acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The report shall contain the following:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Title page",
+          "content": "The arrangement of the information on the title page of the Report shall comply with organizational guidelines and include appropriate distribution statements for dissemination of the material included in the report.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.2",
+          "title": "Record of changes",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "UQ Report outline",
+          "content": "The report shall contain the following sections with supporting information:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "UQ Report executive summary",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Problem statement",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Intended use",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Model assumptions & limitations",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Model verification status",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "UQ scope",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Uncertainty source identification",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.5",
+          "title": "Model input uncertainty characterization",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.6",
+          "title": "Numerical solution uncertainty",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "Model input to output uncertainty propagation",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.6.1.1",
+                  "title": "Sampling of aleatory input uncertainties",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.2",
+                  "title": "Sampling of epistemic input uncertainties",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.6.1.3",
+                  "title": "Sampling of combined aleatory and epistemic input uncertainties",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.6.2",
+              "title": "Iterative error",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "Discretization error",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Total numerical solution uncertainty",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Model form uncertainty",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.8",
+          "title": "Total uncertainty in predicted system response",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.9",
+          "title": "Model parameter updates",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.10",
+          "title": "Sensitivity analysis results",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.11",
+          "title": "Conclusions & recommendations",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.12",
+          "title": "Appendix A references",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.13",
+          "title": "Appendix B acronyms",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.14",
+          "title": "Appendix C glossary",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.15",
+          "title": "Appendix D distribution list",
+          "content": "",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.16",
+          "title": "UQ Report executive summary",
+          "content": "The executive summary provides an overview of the UQ Report. It should be a synopsis, two to four pages in length, of the major elements from all sections of the document, with emphasis on UQ scope, UQ requirements and acceptability criteria, UQ task analysis, UQ applications and usability, and recommendations.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.17",
+          "title": "Problem statement",
+          "content": "This section describes the problem the Computational Engineering Model (CEM) is expected to address. The problem statement serves as the foundation for the definition of requirements, bounding assumptions, and level of predictive capability delivered by the CEM. It documents (1) the question(s) to be answered and the particular aspects of the problem that the CEM will be used to help address; (2) the decisions that will be made based on the CEM results; and (3) the consequences resulting from erroneous CEM outputs.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.17.1",
+              "title": "Intended use",
+              "content": "This subsection describes the problem to be addressed by the CEM, including the system or process being represented and the role it plays in the overall capability being provided by the higher-level system that the CEM interfaces with.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.17.2",
+              "title": "Quantities of interest",
+              "content": "This subsection lists the System Response Quantities (SRQ) that are the computational outputs of the CEM, and Quantities of Interest (QOI) for the UQ analysis of the CEM.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.17.3",
+              "title": "Model assumptions & limitations",
+              "content": "This subsection lists the physical, engineering and computational assumptions used to develop the CEM, and the limitations in model usage, precision and accuracy that flow from those simplifying assumptions.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.17.3.1",
+                  "title": "Physics assumptions",
+                  "content": "This subsection describes the assumptions made to simplify the governing physics of the problem for the formulation of the CEM.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.17.3.2",
+                  "title": "Engineering assumptions",
+                  "content": "This subsection describes the assumptions made to simplify the formulation of the CEM based on engineering judgement and/or historical precedence.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.17.3.3",
+                  "title": "Computational assumptions",
+                  "content": "This subsection describes the assumptions made to simplify analytical and numerical computation of the CEM solutions.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.17.4",
+              "title": "Model verification status",
+              "content": "This subsection describes the extent of Computational Code and Solution Verification that the CEM has undergone prior to the start of the UQ process.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.17.5",
+              "title": "UQ scope",
+              "content": "This subsection describes the scope of the UQ effort based on the assessment of the modeling requirements, bounding assumptions & limitations, level of predictive capability, criteria for UQ Analysis acceptance by the government and the availability of relevant engineering data & resources.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.18",
+          "title": "Uncertainty source identification",
+          "content": "This section describes the process used to identify all relevant sources of uncertainty in the CEM for the categories of Model Input, Numerical Solution and Model Form uncertainties. A list of all sources of uncertainties considered in the UQ analysis, and their final dispositions, shall be provided in this section, for each uncertainty category.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.19",
+          "title": "Model input uncertainty characterization",
+          "content": "This section describes the methods of characterization used to numerically define the CEM input uncertainties carried through the UQ analysis. Descriptions of the source data, engineering judgement and/or inference from similar CEMs of other systems that were used to define the input uncertainty parameter characterizations shall be provided here. Values of the numerical characterization of all the relevant model input parameters shall be listed as deterministic, probabilistic or interval-valued estimates.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.20",
+          "title": "Numerical solution uncertainty",
+          "content": "This section describes the process used to define the uncertainties in the numerical solution of the CEM.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.20.1",
+              "title": "Model input to output uncertainty propagation",
+              "content": "This subsection describes the process used to propagate the model input uncertainties through the CEM to obtain uncertainty estimates of the output System Response Quantities (SRQs) from the model. If pseudo-random number generators are used to generate sample sets, the description of the random number generator and seed numbers used for the UQ analysis shall be provided. Convergence metrics, or the results of convergence studies shall be listed for any sampling-based methods used.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.20.1.1",
+                  "title": "Sampling of aleatory input uncertainties",
+                  "content": "This subsection describes the process used to propagate the Aleatory input uncertainties through the CEM.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.20.1.2",
+                  "title": "Sampling of epistemic input uncertainties",
+                  "content": "This subsection describes the process used to propagate the Epistemic input uncertainties through the CEM.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.20.1.3",
+                  "title": "Sampling of combined aleatory and epistemic uncertainties",
+                  "content": "This subsection describes the process used to propagate the combined Aleatory and Epistemic input uncertainties through the CEM.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.21",
+          "title": "Iterative error",
+          "content": "This subsection describes the process used to estimate the Iterative Error in the CEM, for models that use iterative methods to calculate solutions to the governing equations of the CEM, and/or for any surrogate models used to approximate the solutions from the full-fidelity CEM. Convergence metrics, or the results of convergence studies shall be listed for any iterative methods used.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.22",
+          "title": "Discretization error",
+          "content": "This subsection describes the process used to estimate the Discretization Error in the CEM, for models that use discretized approximation methods to calculate solutions to the governing equations of the CEM, and/or for any surrogate models used to approximate the solutions from the full-fidelity CEM. Convergence metrics, or the results of convergence studies shall be listed for any discretization methods used.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.23",
+          "title": "Total numerical solution uncertainty",
+          "content": "This subsection describes the process used to combine all sources of numerical error present in the CEM solutions, and how those errors are propagated through the SRQs from the model.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.24",
+          "title": "Model form uncertainty",
+          "content": "This section describes the process used to quantify the Model Form Uncertainty in the CEM.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.25",
+          "title": "Total uncertainty in predicted system response",
+          "content": "This section describes the process used to combine all sources of uncertainty present in the CEM solutions, and how that uncertainty is propagated through the model to the SRQs of interest.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.26",
+          "title": "Model parameter updates",
+          "content": "This section describes the process used to update the parameters of the CEM when new data is available to refine the model. Justification for which parameter(s) are being updated, and which are not, shall be provided. If prior calibration or validation data sets were used to update the model parameter estimates, a description of the data sources and data sets shall be documented here.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.27",
+          "title": "Sensitivity analysis results",
+          "content": "This section describes the process used to conduct the Sensitivity Analysis performed on the CEM and its associated uncertainty parameters. Results of the Sensitivity Analysis will also be listed in this section. The results of interim sensitivity analyses that were used to refine the CEM formulation may be cataloged here, along with the sensitivity results from the final version of the CEM.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.28",
+          "title": "Conclusions & recommendations",
+          "content": "This section describes the conclusions drawn from the UQ Analysis process defined in this document, summarizes the predictive capability of the CEM, assesses the suitability of the model to address the engineering problem(s) the model was developed for, and provides recommendations for future model use, validation or model improvement efforts.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.29",
+          "title": "Appendices",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.29.1",
+              "title": "Appendix A references",
+              "content": "This appendix identifies all of the references used in the development of this document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.29.2",
+              "title": "Appendix B acronyms",
+              "content": "This appendix identifies all acronyms used in this document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.29.3",
+              "title": "Appendix C glossary",
+              "content": "This appendix contains definitions that aid in the understanding of this document.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.29.4",
+              "title": "Appendix D distribution list",
+              "content": "This appendix provides the distribution list for hardcopies or digital copies of the approved document.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.30",
+          "title": "UQ Report template references",
+          "content": "Details and guidance on the conduct of a UQ analysis for CEM can be found in:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.30.1",
+              "title": "Oberkampf, W.M. and Roy, C.J",
+              "content": "\"Verification, Validation and Uncertainty Quantification in Scientific Computing, Second Ed.,\" Cambridge University Press, New York, NY, 2025.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.30.2",
+              "title": "ASME VVUQ 1",
+              "content": "Verification, Validation, and Uncertainty Quantification Terminology in Computational Modeling and Simulation, American Society of Mechanical Engineers, 2022.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.30.3",
+              "title": "ASME VV 10",
+              "content": "Standard for Verification and Validation in Computational Solid Mechanics, American Society of Mechanical Engineers, 2019.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.30.4",
+              "title": "ASME VVUQ 10.2",
+              "content": "The Role of Uncertainty Quantification in Verification and Validation of Computational Solid Mechanics Models, American Society of Mechanical Engineers, 2021.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.30.5",
+              "title": "ASME VV 20",
+              "content": "Standard for Verification and Validation in Computational Fluid Dynamics and Heat Transfer, American Society of Mechanical Engineers, 2009.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.30.6",
+              "title": "AIAA Guide",
+              "content": "Guide for the Verification and Validation of Computational Fluid Dynamics Simulations (AIAA G-077-1998(2002)), American Institute of Aeronautics & Astronautics.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82548.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

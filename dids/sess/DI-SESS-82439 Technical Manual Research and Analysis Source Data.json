@@ -1,0 +1,124 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82439",
+  "slug": "di-sess-82439",
+  "title": "Technical Manual Research and Analysis Source Data",
+  "summary": "Provides technical manual research and analysis source data used by contractors to give Government publications personnel information needed to accomplish required technical manual changes.",
+  "approval_date": "2024-04-02",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10463",
+  "limitation": "N/A",
+  "dtic_applicable": "N/A",
+  "gidep_applicable": "N/A",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-007",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Technical Manual Research and Analysis Source Data will be used to obtain essential information from the contractors for accomplishing required technical manual changes by Government publications personnel or through contractor technical writing concerns. Information to be acquired through these data will include engineering change records, hardware modification records, engineering judgement records (EJR), service experience records, and other related data.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract SOW.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "Contractor format acceptable.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Format Content",
+          "content": "The Research and Analysis Source Data shall be presented in the format and style as the technical manual for which the changes are recommended specified in the contract. Pages shall be typewritten, double-spaced using the most economical means possible. Illustration changes may be presented in textual descriptive form, marked-up illustrations from technical manuals, or by free-hand pencil sketches to illustrate required changes.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Introduction Section",
+              "content": "This section shall contain a brief description of the changes, reason for changes, and a recapitulation of the requirements; also a listing of the technical manuals affected and any relevant information pertaining to related changes.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Required Change Section",
+              "content": "This section shall contain a separate section for each technical manual for which changes are required. The sections shall be titled: \"Changes Required in Technical Manual Number, Book Dated, Changes Dated\" Each page of each section shall be identified in the upper right corner with the applicable technical manual number. An introductory statement in each section shall identify any modifications for technical manuals that are incorporated in accordance with MIL-DTL-24784.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "The source data shall contain essential information",
+                  "content": "that will enable publications personnel to accomplish all required technical manual changes. When an illustration which is used in more than one technical manual has been changed, the change shall be included from past publication records.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.3",
+              "title": "Research and Analysis",
+              "content": "Engineering change records, modification records, service experience records, and all change information not yet incorporated in the technical manual(s) shall be included from past publication records.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "Text Changes",
+              "content": "Each recommended technical manual text change shall be identified by the paragraph number listed in the outstanding issue of the technical manual to be changed. New paragraphs to be added shall be identified by paragraph numbers in accordance with MIL-DTL-24784.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "Illustration Changes",
+              "content": "Figure numbers in the outstanding issue of the technical manual to be changed shall identify illustration changes. New illustrations shall be identified by new figure numbers assigned in accordance with MIL-DTL-24784. When illustration changes consist of only nomenclature changes, these changes may be identified by a textual description of the change(s) to be made.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "Change Listings",
+              "content": "Change listings shall include only part numbers to be added, part numbers to be changed and part numbers to be deleted, as applicable.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82439.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

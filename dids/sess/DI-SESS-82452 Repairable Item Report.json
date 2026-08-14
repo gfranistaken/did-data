@@ -1,0 +1,281 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82452",
+  "slug": "di-sess-82452",
+  "title": "Repairable Item Report",
+  "summary": "Documents the contractor's inspection of a malfunctioning repairable unit and the extent of repair performed on it.",
+  "approval_date": "2024-08-12",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10497",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "SESS-2024-049",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Repairable Item Report documents the contractor's inspection of the malfunctioning unit for repair, and the extent of repair performed on the unit.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The Repairable Item Report shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The content of the report shall include the following data elements:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Government Furnished Equipment Inventory",
+          "content": "",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Government Furnished Equipment Inventory (General)",
+              "content": "This section shall identify the following for each repairable item received:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.1.1",
+                  "title": "Contract Number",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.2",
+                  "title": "Contractor's Cage Code",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.3",
+                  "title": "Contractor Point of Contact",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.4",
+                  "title": "Location of GFE",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.1.5",
+                  "title": "Date Inventory Completed",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.1.2",
+              "title": "Government Furnished Equipment Inventory (Items)",
+              "content": "This section shall identify the following for each item that comprise the repairable item:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.1.2.1",
+                  "title": "Asset Identification Number (Asset ID#)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.2",
+                  "title": "Item Identifier (UII) or DoD recognized Item Unique Identifier (IUID)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.3",
+                  "title": "National Stock Number (NSN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.4",
+                  "title": "Unit or Item Cage Code",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.5",
+                  "title": "Part Number (P/N)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.6",
+                  "title": "Nomenclature (NOMEN)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.7",
+                  "title": "Serial Number (S/N)",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.8",
+                  "title": "Model Number (M/N), if applicable",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.9",
+                  "title": "Manufacturer",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.10",
+                  "title": "Quantity",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.11",
+                  "title": "Delineation whether the item is the subject of this repairable item report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.1.2.12",
+                  "title": "Visual condition if the item is not the subject of this repairable item report",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Beyond Economical Repair (BER) Determination",
+          "content": "This section documents the assessment of whether the repairable item is BER. This shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Government Furnished Information (GFI) regarding how the item was damaged",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.2",
+              "title": "GFI provided description of the damage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "GFI photos of the damage",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Contractors' summary of how the BER determination was made",
+              "content": "and the Contractors final recommendation.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Repair",
+          "content": "This section shall describe the details of the inspection and repair effort, and provide an airworthiness recommendation if appropriate.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Quantitative details",
+              "content": "stating the electrical and physical test requirements and parameters, which the part does not meet.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "A concise description",
+              "content": "of the extent of repair actions required to restore the malfunctioning unit to proper operation, including a list of all parts replaced and a description of all alignments or adjustments made.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Indicate cause of item malfunction",
+              "content": "with all quantitative details.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.4",
+              "title": "For airworthiness related items",
+              "content": "an airworthiness recommendation to include the assessment of airworthiness and safety of flight, and documentation of any residual risks from an airworthiness perspective.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82452.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

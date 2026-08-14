@@ -1,0 +1,184 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-81584",
+  "slug": "di-tmss-81584",
+  "title": "Guidelines for Use and Operation of INFOSEC Equipment/Systems (TYPE IV)",
+  "summary": "Provides the format, content, and intended use for a DID deliverable that describes general information, physical/cryptosecurity guidelines, step-by-step operating instructions, and problem-solving guidance for INFOSEC equipment or systems.",
+  "approval_date": "2000-10-05",
+  "did_format": "dd_form_1664",
+  "963c_compliant": false,
+  "amsc_number": "G7399",
+  "limitation": "",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "G/Y242",
+  "preparing_activity": "",
+  "project_number": "",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The DID contains the format, content and intended use information for the data deliverable called for in the Contract Data Requirements List.\n\nA. It provides the user with the general description of the equipment/system; physical and cryptosecurity guidelines; detailed, step-by-step operating instructions, including rationale; and operator's problem solving guide; and TEMPEST considerations, if required.\n\nB. It is used by instructors to develop courses of instruction, self-study and classroom oriented; by Service documentation developers who will extract those appropriate portions for inclusion in the individual Service's manual and will extract information required to publish abbreviated operation instructions; by system planners who are responsible for developing implementation plans, keying concepts and keying requirements; and, where applicable and appropriate, by operators to operate the INFOSEC equipment/system.\n\nThis Data Item Description replaces DI-M-5565, which was previously canceled.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [
+    "DI-M-5565"
+  ],
+  "related_dids": [],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "General Information",
+      "content": "The document shall describe the guidelines for use and operation of INFOSEC equipment/system as described herein.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "1.1",
+          "title": "Applicable Document",
+          "content": "NSA Data Standard for the Preparation of INFOSEC Technical Manuals (DS-56), of the issue in effect on the date of request for proposal, forms a part of this DID to the extent specified herein.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "1.2",
+          "title": "Style and Format",
+          "content": "The style and format shall be as specified in the NSA DS-56, with the reading level as specified for Type I Manuals.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Organization and Content",
+      "content": "Chapter No.  Title\n\n1 General Information\n\n2 Security (to be prepared by the Government)\n\n3 Operating Instructions\n\n4 Operator's Indicators and Problem-Solving Guide\n\n5 TEMPEST Considerations (to be prepared by the Government, if required)",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "Chapter 1, General Information",
+          "content": "Chapter 1 shall specify the purpose of the document.  It shall contain a description of the system/equipment explaining its use, capabilities, and physical and technical characteristics.  It shall include, but not necessarily be limited to, the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.1.1",
+              "title": "A brief narrative that explains what the equipment is",
+              "content": "its capabilities, and how in general the equipment accomplishes its purpose.  Where the system is comprised of more than one basic equipment, a separate narrative shall be provided for each equipment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.2",
+              "title": "An illustration of the equipment (front-oblique view)",
+              "content": "indicating the height, depth, and width measurements.  Include primary power requirements in volts and amperes, AC and DC, and total power consumption in watts.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.1.3",
+              "title": "A separate description and illustration of each ancillary equipment",
+              "content": "and/or supporting devices.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Chapter 2, Security",
+          "content": "Chapter 2 will be provided by the Government to the contractor at the time of final publication.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "2.3",
+          "title": "Chapter 3, Operating Instructions",
+          "content": "Chapter 3 shall provide step-by step instructions for operating the equipment/system.  It shall include, but not necessarily be limited to, the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.3.1",
+              "title": "Any rules, including rationale, unique to the equipment/system",
+              "content": "which will affect security or normal operations if not adhered to.  For example, \"Use the lower numbered position for _____ and the higher numbered position for ____ because _____\".",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.2",
+              "title": "A line drawing of the equipment/device discussed in the procedure",
+              "content": "shall precede the set of instructions and shall identify the operating controls and indicators called out in the instructions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.3",
+              "title": "A tabular listing of front panel controls, where applicable",
+              "content": "showing the exact markings appearing on the front panel and the associated functions.  For Example:\n\nPT - Plain Text\n\nCT - Cipher Text",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.4",
+              "title": "Preoperational tests and adjustments which would normally be performed",
+              "content": "by the equipment operator as part of normal equipment operation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.3.5",
+              "title": "Step-by-step instructions for: turn-on, loading key, normal operations",
+              "content": "(in each mode or configuration), zeroizing, changing batteries (if applicable), and checking procedures.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.4",
+          "title": "Chapter 4, Operator's Indicators and Problem-Solving Guide",
+          "content": "Chapter 4 shall provide a tabular listing of all indicators which may be heard or seen by the operator and shall identify the problems an operator will most likely encounter.  The Chapter shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "2.4.1",
+              "title": "A tabular listing identifying each indicator an operator may hear or see",
+              "content": "when it will occur, what it means, and what actions the operator should take.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "2.4.2",
+              "title": "A tabular listing which identifies a problem, states what is likely",
+              "content": "to be wrong with the equipment, and lists the steps an operator should take to correct the problem.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "2.5",
+          "title": "Chapter 5, TEMPEST Considerations",
+          "content": "Chapter 5 will be provided by the Government to the contractor at the time of final publication.",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-81584.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

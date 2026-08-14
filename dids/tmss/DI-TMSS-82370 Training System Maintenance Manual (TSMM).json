@@ -1,0 +1,563 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-TMSS-82370",
+  "slug": "di-tmss-82370",
+  "title": "Training System Maintenance Manual (TSMM)",
+  "summary": "Specifies the format and content for the Training System Maintenance Manual (TSMM), covering testing, fault isolation, adjustment, assembly/disassembly, cleaning, calibration, lubrication, removal/installation, and repair procedures for Trainer Unique Equipment (TUE).",
+  "approval_date": "2022-01-11",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "N10289",
+  "limitation": "None",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "AS",
+  "project_number": "TMSS-2022-002",
+  "applicable_forms": "None",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "The Training System Maintenance Manual (TSMM) shall provide complete procedures for performing testing, fault isolation/troubleshooting, adjustment/alignment, assembly/disassembly, cleaning and corrosion control, calibration, lubrication, removal/installation, repair, and servicing for Trainer Unique Equipment (TUE) that would permit maintenance to be performed on-equipment and off-equipment in accordance with the Government's training system maintenance concept.\n\na. Maintenance task analysis (MTA) shall be the primary method of determining both scheduled and unscheduled maintenance tasks for the training system. The MTA is the identification of the steps, spares, and materials, tools, support equipment, and personnel that must be considered for a given repair task. MTAs cover both scheduled (preventive) and unscheduled (corrective) maintenance tasks and, when complete, identifies all physical resources required to support a training system in accordance with the Government's maintenance concept. MTA results will be analyzed during the program technical reviews. The MTA shall be in accordance with DI-SESS-82371.\n\nb. Data rights and data rights marking requirements for the TSMM (excluding COTS manuals) shall comply with DFARS 252.227-7013.\n\nc. Commercial off-the-shelf (COTS) service manuals that provide the on-equipment and off-equipment fault isolation, module repair and removal, installation, and alignment procedures shall be referenced in the TSMM and included as an attachment. COTS manual shall be in accordance with DI-TMSS-80527C.\n\nd. This Data Item Description (DID) contains the format, content, and intended use information for the data deliverable resulting from the work task described in the solicitation.\n\ne. It is not intended that all the requirements contained herein be applied to every program. Any data requirement contained in this DID is subject to deletion in tailoring by the acquiring activity.\n\nDefinitions:\n\na. Units/Assembly/Subassembly/part - As defined by ASME Y14.100-2017 Engineering Drawing Practices, Section 3:\n\n1. Unit - An assembly or any combination of parts, subassemblies, and assemblies mounted together normally capable of independent operation in a variety of situations.\n\n2. Assembly - A number of parts, or combination thereof, that are joined together to perform a specific function and subject to disassembly without degradation of any of the parts.\n\n3. Subassembly - Two or more parts that form a portion of an assembly or a unit replaceable as a whole but having a part or parts that are individually replaceable.\n\n4. Part - One item, or two or more items joined, that is not normally subject to disassembly without destruction or impairment of designed use.\n\nb. Trainer-Unique Equipment (TUE). The following types of equipment are defined as TUE:\n\n1. Trainer equipment which has not been classified by the Government as a Commercial Item, Government-Furnished Equipment (GFE), Non-developmental Item (NDI), or Contractor Acquired Operational Equipment (CAOE).\n\n2. Commercial Item, NDI, GFE, or CAOE, that:\n\n(i) Needs other than Minor Modifications or modifications which are not of a type customarily available in the commercial marketplace to meet the requirements of the contract, or:\n\n(ii) Does not have sufficient existing product documentation for Government logistics support.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [
+    "DI-SESS-82371",
+    "DI-TMSS-80527C"
+  ],
+  "references": [],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference Documents",
+      "content": "The applicable issue of the documents cited herein, including the approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The TSMM shall be in the contractor's format.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "2.1",
+          "title": "The level of writing in the manual",
+          "content": "shall be to that of a Department of Labor Electronics Technician, Maintenance, I, II, and III (23181, 23182, and 23183).",
+          "asterisk": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The TSMM shall contain the following content organized in the order below:",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Front matter",
+          "content": "shall contain a cover, record of changes and table of contents.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "The cover",
+              "content": "shall include security classification or Controlled Unclassified Information (CUI) marking, document number, revision number, destruction notice, disclosure statement, export control warning statement, CUI designation indicator block, and authority notice. Front matter shall be in accordance with MIL-STD-38784B.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Warnings, cautions, and notes",
+          "content": "shall be in accordance with MIL-STD-38784B.",
+          "asterisk": false,
+          "children": []
+        },
+        {
+          "number": "3.3",
+          "title": "Introduction",
+          "content": "The Introduction shall explain that coverage in the manual is limited to TUE equipment or functions and that reference should be made to external available COTS, ACOE, or GFE service manuals for additional instruction, as applicable. The Introduction shall contain the following sections:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "Use of the manual",
+              "content": "This section shall explain the use of the manual, including the major sections and organization of the manual, text formatting and hyperlinking conventions, reference designators, and drawing number assignments.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.2",
+              "title": "Maintenance concept",
+              "content": "This section shall describe the maintenance concept for the training system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.3",
+              "title": "Safety summary",
+              "content": "This section shall provide a safety summary to include, at a minimum:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.3.1",
+                  "title": "Use of Emergency Power Off (EPO) switches and a depiction of EPO locations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.2",
+                  "title": "Step-by-step instructions for safely removing a trainee or trainees from the training device in the event of a mishap.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.3",
+                  "title": "Lethal voltages.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.4",
+                  "title": "Hazardous materials warning summary, the symbols used to identify hazardous materials, and an explanation of each symbol.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.5",
+                  "title": "Fire and smoke detection/protection for the training system.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.6",
+                  "title": "Lift and carry limitations.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.3.7",
+                  "title": "Electrostatic Discharge Sensitive (ESDS) Components.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.4",
+              "title": "Reference documents",
+              "content": "This section shall contain a list of referenced documents to include related COTS and contractor developed manuals by number and title that affect the operation and maintenance procedures of the training system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.5",
+              "title": "Acronyms, abbreviations, and definitions",
+              "content": "This section shall contain a list of non-standard acronyms, abbreviations, and definitions used throughout the manual.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.3.6",
+              "title": "Technical Publication Discrepancy Reporting (TPDR)",
+              "content": "This section shall contain the instructions for submitting a technical publication discrepancy report.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Training system overview",
+          "content": "This section shall provide an overview of the training system features, characteristics, capabilities, limitations, and units, assemblies, and subassemblies. The training system overview shall contain the following, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "Scope of operation.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "A description of training system features:",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "A list of capabilities and limitations.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "A table of leading particulars",
+              "content": "including physical characteristics of the training system (i.e., length, width, height, weight, cubic space of major assembly units) and electrical characteristics (i.e., total power factor, overall voltage, current, allowable deviation from the normal of the electrical characteristics.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "A description of the simulation equipment",
+              "content": "in unit, assembly, and subassembly order to include depictions and locations of each.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "A description of the use of the following items",
+              "content": "as applicable, as aids in troubleshooting the training system such as diagnostic programs, daily operational readiness test, built-in test, fault logic diagrams, and assembly test procedures.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.5",
+          "title": "Scheduled (preventive) maintenance",
+          "content": "This section shall contain all scheduled maintenance procedures organized by the following periodicity: daily (including pre and post operational, between missions/exercises); periodic, followed by the requirement periodicity; and special \"on condition\", followed by the requirement periodicity. The scheduled maintenance requirements shall be arranged in a logical sequence to provide a means of performing the requirements in the most rapid and accurate manner in order to ensure training system availability.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.5.1",
+              "title": "Scheduled maintenance procedures",
+              "content": "shall include, at a minimum, procedures required to examine, clean, and lubricate the training system equipment and shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.1.1",
+                  "title": "Time required to complete the procedure.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.2",
+                  "title": "Number of personnel required to complete the procedure.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.3",
+                  "title": "Safety Precautions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.4",
+                  "title": "Tools, parts, materials, and test equipment required.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.5",
+                  "title": "Cleaning solvents",
+                  "content": "Solvents shall be identified by Government specific numbers and National stock numbers.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.6",
+                  "title": "Instructions for properly maintaining",
+                  "content": "all safety devices and interlocks, with warnings and cautions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.7",
+                  "title": "Instructions for lubrication/cleaning/servicing; also types and quantities of lubricants to be applied.",
+                  "content": "Lubricants shall be identified by Government specification numbers and National stock numbers.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.8",
+                  "title": "Procedures for obtaining access to subassemblies of subcomponents.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.9",
+                  "title": "Inspection procedures for parts that deteriorate",
+                  "content": "due to cycles of usage, age, and/or other conditions.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.1.10",
+                  "title": "Illustrations to support the procedure",
+                  "content": "lubrication points, and other relevant information.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.5.2",
+              "title": "Scheduled performance checks",
+              "content": "shall contain step-by-step procedures necessary to verify that the equipment is operating within standards for all modes of operation and to detect malfunctions prior to failure. Performance checks shall contain the following:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.5.2.1",
+                  "title": "Safety Precautions.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.2",
+                  "title": "A list of tools and test equipment",
+                  "content": "identified by type, manufacturer, and model number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.3",
+                  "title": "The title of the performance checks",
+                  "content": "to be completed.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.4",
+                  "title": "Preliminary setup data required to conduct",
+                  "content": "the performance check.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.5",
+                  "title": "Detailed procedures for accomplishing the performance check",
+                  "content": "Procedures requiring lengthy and identical setup data may be presented in detail in one procedure and referenced in succeeding procedures.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.6",
+                  "title": "Values or conditions, with tolerances",
+                  "content": "indicative of normal operation.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.7",
+                  "title": "Reference to corrective maintenance procedures",
+                  "content": "to be used if the performance check is not within tolerances.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.8",
+                  "title": "Illustrations to support the performance check.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.5.2.9",
+                  "title": "No references to procedures located in other documents.",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.6",
+          "title": "Theory of Operation",
+          "content": "This section shall contain a discussion of the theory of operation necessary to provide technicians with an understanding of the interrelationships of the functional system of the overall training system to include operating theory of the support systems integrated into the training system such as commercial computers, visual systems, motion systems, Government Furnished Equipment (GFE), etc. The following information shall be included in this section:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.6.1",
+              "title": "A description of each system",
+              "content": "its purpose, interconnections, and controls and indicators.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.2",
+              "title": "A description of system interfaces.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.3",
+              "title": "The theory of operation of the systems",
+              "content": "subsystems, circuits, units, and assemblies, or subassemblies to include references to the associated functional block diagrams, logic diagrams, and simplified block and schematic diagrams.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.4",
+              "title": "Detailed descriptions required by a maintenance technician",
+              "content": "to provide the understanding necessary for fault isolation to the level of repair specified by the Government's training system maintenance concept.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.5",
+              "title": "A description of the general functioning",
+              "content": "and interfaces of the operational and COTS equipment in the training system, with references to the operational or COTS service manuals for detailed theory of operation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.6",
+              "title": "Simplified block and schematic diagrams",
+              "content": "in order to assist the maintenance technician to understand the theory of operation for the training system.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.6.7",
+              "title": "References to COTS service manuals as applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.7",
+          "title": "Unscheduled (corrective) maintenance",
+          "content": "Complete procedures shall be provided for the following categories of unscheduled maintenance and in accordance with the Government's training system maintenance concept, as applicable:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.7.1",
+              "title": "References to drawings for troubleshooting",
+              "content": "disassembly/assembly, testing, repair/replacement, adjustment, as applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.2",
+              "title": "Troubleshooting procedures to guide a technician",
+              "content": "in the logical sequence of isolating a fault to a unit, assembly, subassembly, module, or part in accordance with the Government's maintenance concept.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.7.2.1",
+                  "title": "Troubleshooting procedures",
+                  "content": "shall be table format and include the following: trouble, probable cause, troubleshooting task, and corrective action.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.7.3",
+              "title": "Detailed procedural steps required to detach",
+              "content": "a unit, assembly, subassembly, or component for replacement, test, inspection, or repair with precautions to be observed, except when the methods or procedures are obvious.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.4",
+              "title": "Instructions to inspect the disassembled equipment",
+              "content": "for damage or wear to include allowable service limits and tolerances, standards for determining when parts may safely be continued in service and when they should be replaced.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.5",
+              "title": "Detailed testing procedures required for fault isolation",
+              "content": "to the lowest replaceable unit (LRU) for all repairable assemblies and subassemblies.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.6",
+              "title": "Procedures for repair/replacement of a faulty piece part",
+              "content": "to include special cleaning or lubricating instructions.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.7",
+              "title": "Procedures for any required adjustments/realignment",
+              "content": "of the assembly following a repair action.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.8",
+              "title": "Procedures for requalification testing of a repaired unit",
+              "content": "assembly, or subassembly.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.9",
+              "title": "Corrective adjustment procedures and support information",
+              "content": "necessary to restore electrical and mechanical alignment of the simulation equipment, including all values and tolerances.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.10",
+              "title": "Calibration requirements.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.11",
+              "title": "Procedures for loading and configuring software",
+              "content": "following a maintenance action.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.7.12",
+              "title": "References to COTS service manuals, as applicable.",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-TMSS-82370.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "_schema_version": "3.0",
+  "_schema_notes": {
+    "coverage": "Authoritative schema for all DID formats \u2014 DD Form 1664 (pre-2014) and free-text (post-2014 MIL-STD-963C)",
+    "did_format": "Set to 'dd_form_1664' or 'free_text'. Determines which fields are expected to be populated.",
+    "963c_compliant": "True if the DID was prepared under MIL-STD-963C (2014 or later). False for older DIDs.",
+    "reserved_fields": "Fields marked RESERVED are present in one format but not the other. Always include them \u2014 set to empty string or empty array when not applicable.",
+    "preparation_instructions": "Official MIL-STD-963C name for what was previously called 'requirements'. Contains the numbered sections of the DID. All section numbers are normalized to strictly numeric dot-notation (1, 1.1, 1.1.1). Letter-based source numbering (2.a, 3.1.b) is converted to numeric equivalents (2.1, 3.1.2).",
+    "asterisk": "True if the requirement number is followed by * in the source document (conditional requirement)."
+  },
+  "document_number": "DI-SESS-82470",
+  "slug": "di-sess-82470",
+  "title": "Substantiation Data Report (SDR)",
+  "summary": "Specifies the format and content for a Substantiation Data Report documenting aircraft performance and characteristics, used as a source for flight manual preparation and a stand-alone reference.",
+  "approval_date": "2025-02-10",
+  "did_format": "free_text",
+  "963c_compliant": true,
+  "amsc_number": "F10531",
+  "limitation": "N/A",
+  "dtic_applicable": "No",
+  "gidep_applicable": "No",
+  "office_of_primary_responsibility": "",
+  "preparing_activity": "11 (AFLCMC/EZFT)",
+  "project_number": "SESS-2025-003",
+  "applicable_forms": "N/A",
+  "approval_limitation": "",
+  "form_version": "",
+  "use_relationship": "This Data Item Description (DID), known as the Substantiation Data Report (SDR) shall contain all the documentation necessary to evaluate aircraft performance and characteristics. This SDR will be used as a source document for flight manual preparation and as a single-source, stand-alone reference for aircraft performance characteristics.\n\nThis Data Item Description (DID) contains the format, content, and intended use information for the data product resulting from the work task described in the contract Statement of Work.",
+  "description_purpose": "",
+  "application_interrelationship": "",
+  "supersedes": [],
+  "related_dids": [],
+  "references": [
+    {
+      "label": "DLA Quick Search",
+      "url": "https://quicksearch.dla.mil/"
+    }
+  ],
+  "distribution_statement": "DISTRIBUTION STATEMENT A: Approved for public release; distribution is unlimited.",
+  "preparation_instructions": [
+    {
+      "number": "1",
+      "title": "Reference documents",
+      "content": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.\n\nThe following references are made available at https://quicksearch.dla.mil/\nDI-SESS-82328 Computational Aerodynamics Analysis Results",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "Format",
+      "content": "The SDR shall be in the contractor's format.",
+      "asterisk": false,
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "Content",
+      "content": "The SDR shall be prepared in four sections as follows:\n\nSection I - General Data\nSection II - Installed Engine Performance (May be a separate report)\nSection III - Aerodynamic Data (May be a separate report)\nSection IV - Performance Data\n\nAll data shall be presented with the aircraft in its baseline configuration and all configurations compatible with the design and alternate missions. The data source (calculated, wind tunnel, flight test) shall be identified. A complete set of the equations used and a sample problem shall be included for all analytically determined data.",
+      "asterisk": false,
+      "children": [
+        {
+          "number": "3.1",
+          "title": "SECTION I. General Data",
+          "content": "shall include at least the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "A General Arrangement Drawing, to scale, and a three-view drawing showing major dimensions",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.2",
+              "title": "Tabular Aircraft Dimensional data for the fuselage, wing, tails, nacelle/inlet geometries, pylons and any other major components",
+              "content": "The dimensional data shall include reference lengths and areas, spans, aspect ratios, wetted areas, sweeps, control surface deflections, airfoil sections used, propeller geometries, etc.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.3",
+              "title": "Weight summary including a breakdown of weight empty, basic weight, operating weight, allowable loadings, fuel capacity and design gross weight",
+              "content": "Weights for stores, suspension equipment and any other alternate mission equipment shall be provided.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.4",
+              "title": "A listing of engine, airframe, and subsystems limitations which affect mission performance, point performance and flight characteristics, etc",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.5",
+              "title": "All axis systems and terms used in the report shall be defined and sign conventions presented",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.6",
+              "title": "A description of the aircraft force and moment accounting system and reference conditions shall be provided",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.7",
+              "title": "A complete geometric description of the aircraft sufficient to enable independent aerodynamics assessment",
+              "content": "including drawings, curves, and tables in contractor format. Electronic Data information and tables are required.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.1.8",
+              "title": "A description of auxiliary intakes, exhausts, and vents",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "SECTION II. Installed Engine Performance",
+          "content": "Internal aerodynamic data shall be submitted to quantify thrust and fuel consumption for installed gas turbine engines, turboprops, piston/radial engines, and hybrid/electric propeller or fan-based propulsion systems.\n\nUnless otherwise specified, all items below should be quantified for Mach numbers, angles of attack, angles of side slip, and Reynolds numbers across the aircraft flight envelope, including static conditions. Data will encompass the complete speed/altitude envelope of the aircraft. For aircraft with service ceiling less than 15,000 feet mean seal level (MSL), the altitudes shall vary from Sea Level to maximum in increments not greater than 2,000 feet. Otherwise use altitude increments not greater than 4,000 ft. The data shall cover temperatures ranges for STD, HOT, and COLD days (per MIL-HDBK-310) plus any additional temperature requirements per the contract.\n\nThe source of each data item shall be identified. For data determined analytically, the complete set of equations with a sample problem shall be presented. For computational aerodynamics models, follow DI-SESS-82328.\n\nInternal aerodynamic data shall include:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.2.1",
+              "title": "Schematic and narrative description of internal aero surfaces",
+              "content": "with dimensioned detailed scale drawings including:",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.2.1.1",
+                  "title": "Inlet lips, highlight, and forebody system",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.2",
+                  "title": "Diffuser/duct area distribution and contours",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.3",
+                  "title": "Variable geometries with sensing/feedback techniques",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.4",
+                  "title": "Inlet shock pattern at design and off-design conditions",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.5",
+                  "title": "Bleed, bypass, auxiliary inlet doors, blow-in doors, environmental control systems (ECS) and boundary layer removal schemes",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.2.1.6",
+                  "title": "Internal and external nozzle shapes",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.2.2",
+              "title": "Inlet total pressure recovery and corrected airflow schedules",
+              "content": "for each mission segment.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.3",
+              "title": "Increments in total pressure recovery vs engine corrected airflow",
+              "content": "for auxiliary inlet doors open/closed.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.4",
+              "title": "Auxiliary inlet door open/close schedule",
+              "content": "as a function of Mach number.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.5",
+              "title": "Total pressure recovery vs airflow of any secondary airflow systems",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.6",
+              "title": "Throttle-dependent aerodynamic increments from inlet spill drag and afterbody/base drag",
+              "content": "vs engine corrected airflow.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.7",
+              "title": "Boundary layer removal system drag",
+              "content": "",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.8",
+              "title": "Installed and uninstalled engine thrust as a function of Mach number and altitude",
+              "content": "at maximum dry power.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.9",
+              "title": "Installed and uninstalled engine thrust as a function of Mach number and altitude",
+              "content": "at maximum augmentation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.10",
+              "title": "Installed and uninstalled engine fuel flow as a function of Mach number and altitude",
+              "content": "at a range of power settings from idle to max dry.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.11",
+              "title": "Installed and uninstalled engine fuel flow as a function of Mach number and altitude",
+              "content": "at max augmentation.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.12",
+              "title": "Internal drag and airflow rate of all auxiliary equipment inlets",
+              "content": "versus Mach number with accompanying dimensioned drawings.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.13",
+              "title": "Increments in installed engine thrust and fuel flow due to power extractions, bleed extractions, de-icing systems, and secondary airflow systems",
+              "content": "(such as auxiliary inlets/exhausts, vents, and environmental cooling systems) shall be provided for power settings from idle to maximum with max dry and max augmented powers shown as specific power settings.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.14",
+              "title": "The effects on engine performance shall be noted",
+              "content": "for changes in dynamic distortion, inlet pressure recovery, engine bleed, power extractions and any de-icing systems as a function of flight Mach number and throttle setting. The method for correcting estimated engine thrust and fuel flow due to the above off-design conditions shall be presented with a sample calculation to show the effects of each off-design condition.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.15",
+              "title": "Nozzle velocity and discharge coefficients",
+              "content": "as a function of nozzle pressure ratio. For internal mixing nozzles a schematic and description of the nozzle charging plane and the mixing method shall be provided. For nozzles with aft scrubbed surfaces, a schematic and description of the interface plane and control volume used for throttle dependent, and throttle independent force accounting shall be provided. Total exhaust system performance shall be based on the installed configuration. To this end, data shall be provided to indicate both installed thrust and the aft end drag contribution attributable to the particular nozzle configuration.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.16",
+              "title": "A description and analysis of a reverse thrust device",
+              "content": "shall be presented if applicable.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.17",
+              "title": "For vertical/short takeoff and landing (V/STOL) aircraft",
+              "content": "a description and analysis of the system, recovery, thrust, and corrected mass flow schedules, and transition to forward flight schedule.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.2.18",
+              "title": "For propulsion systems with propellers",
+              "content": "a description of the propeller blades, number of blades, blade incidence angle control schedule and propeller performance maps.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "SECTION III. Aerodynamic Data",
+          "content": "Aerodynamic data shall be presented with the aircraft in its baseline configuration or configurations and in those configurations compatible with the alternate and design mission. If the aircraft can be flown in a large variety of configurations, sufficient store data shall be furnished to establish these configurations. All necessary aerodynamic data needed to describe the aerospace vehicle must be presented. This data is required as a function of Mach number, thrust coefficient, center of gravity, flap and slat deflections, variations in vehicle geometry, angle of attack, altitude, etc. If a boundary layer control system is used, data substantiating the selection of the type of system and air pumping blowing equipment shall be included, along with data from which airflow quantities and pressures can be determined. Aerodynamic data shall reflect ground effect, aeroelastic and thermoelastic effects. If these effects were determined analytically, the complete set of equations and an example problem shall be presented.",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.3.1",
+              "title": "External aerodynamic data shall include",
+              "content": "",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.1.1",
+                  "title": "Variation of vehicle lift coefficient with angle of attack for cruise, takeoff and landing configurations",
+                  "content": "Cruise data shall show effects of Mach number.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.2",
+                  "title": "Lift coefficient versus total drag coefficient for cruise, take-off and landing configurations where applicable",
+                  "content": "Gear drag shall be included.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.3",
+                  "title": "Maximum lift coefficient variation as a function of Mach number and center of gravity (C.G.) location in maneuver, cruise, takeoff and landing configurations",
+                  "content": "The buffet and stall boundaries will be defined and the prediction method presented. Data shall cover the operational flight Mach number range for each configuration. If the flight controls automatically limit the angle of attack, then minimum/maximum angle of attack curves shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.4",
+                  "title": "A component skin friction drag build-up showing individual component lengths, Reynold's numbers, shape factors and roughness",
+                  "content": "shall be provided covering the operational speed and altitude regime. Individual component wetted areas and total wetted areas shall be provided.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.5",
+                  "title": "Throttle dependent aerodynamics",
+                  "content": "shall be included if applicable for the air vehicle.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.6",
+                  "title": "Variations in trimmed drag",
+                  "content": "shall be provided over the operational C.G. range.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.7",
+                  "title": "For V/STOL aircraft, low speed data shall be presented from the point at which lift supports the vehicle weight",
+                  "content": "These data shall be presented for the trimmed and untrimmed condition whenever wind tunnel data is used as the basis.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.8",
+                  "title": "Variation of aircraft pitching moment with lift coefficient, angle of attack, and control surface deflection",
+                  "content": "for several Mach numbers covering the operational range. Include drag due to surface deflection.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.9",
+                  "title": "Description of the high lift devices or systems to be used",
+                  "content": "and include type, location, weight, mechanical characteristics and aerodynamic characteristics. If maneuver flaps/slats are used, optimized schedules versus angle of attack, Mach number, altitude, and/or any other parameter, and the associated optimization justification shall be provided. Trimmed and untrimmed drag polars, lift coefficient versus angle of attack, pitching moment coefficient versus angle of attack and maximum lift coefficient versus Mach number shall be provided for the optimized schedules.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.10",
+                  "title": "For supersonic vehicles include plots of cross-sectional area distribution versus longitudinal distance",
+                  "content": "at Mach number one (1.0) for each component and for the complete vehicle. Include inlet area in this plot and indicate same.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.11",
+                  "title": "Comments shall be presented, where applicable, to describe features which may affect the system performance or flight operations",
+                  "content": "These include such arrangements as towing, parasite systems, variable geometry, unusual take-off or landing devices, etc. The design criteria, operating features, anticipated problems or limitations and expected benefits shall be discussed. If none are present, an explanation of why is to be provided. A discussion of anticipated downwash/recirculation patterns and ground effects shall be provided for V/STOL aircraft during low speed, low altitude flight and hovering in and out of ground effect.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.12",
+                  "title": "If the vehicle is to have an aerial refueling capability",
+                  "content": "the type and location of installed refueling gear, the refueling envelope, the proximity of the tanker and receiver and the included angle for the receiver pilot to view the tanker shall be submitted along with aerodynamic effects of the tanker on the receiver.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.13",
+                  "title": "The length, diameter, shape, class or type, mounting location, suspension arrangement, method of ejection, and number of all external stores",
+                  "content": "along with the installed aerodynamic characteristics.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.1.14",
+                  "title": "Incremental aerodynamic effects, such as weapons bay and bay door drag, alternate mission equipment, refueling door drag and spoiler effects",
+                  "content": "",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "number": "3.3.2",
+              "title": "The aerodynamic database shall be generated using best means/data available",
+              "content": "from flight test, wind tunnel tests, empirical and analytical methods.",
+              "asterisk": false,
+              "children": [
+                {
+                  "number": "3.3.2.1",
+                  "title": "Data based on flight tests shall include actual test points standardized to the reference conditions defined in the force and moment accounting system",
+                  "content": "These points will indicate scatter obtained during the tests and curve fairing basis. Also discuss any abnormalities. Flight test data shall include configuration description and test conditions flown. Test data reduction procedures shall be discussed and corrections for flight test instrumentation shall be identified.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.2",
+                  "title": "Data based on wind tunnel test shall include a summary of force and moment data",
+                  "content": "Wind tunnel data shall include nomenclature, sign conventions and symbols, definitions of configurations and a detailed run schedule showing those parameters that were held constant and those that were varied.",
+                  "asterisk": false,
+                  "children": [
+                    {
+                      "number": "3.3.2.2.1",
+                      "title": "Discuss criteria used for curve fairing when combining data taken from different wind facilities",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.2",
+                      "title": "Discuss different effects, such as changes in vehicle geometry and Reynolds Number on the characteristics of the aerospace vehicle",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.3",
+                      "title": "Discuss special techniques used to define a particular coefficient or derivative boundary or value",
+                      "content": "when this value is not evident in the wind tunnel data.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.4",
+                      "title": "Special emphasis shall be place on methods for determining buffet boundaries and intensities",
+                      "content": "",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.5",
+                      "title": "Flow tripping methods, tunnel and support system interference effects, tunnel characteristics",
+                      "content": "shall be presented.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.6",
+                      "title": "Means used to simulate engine power settings in aircraft model testing where applicable, in inlet testing",
+                      "content": "shall be presented.",
+                      "asterisk": false,
+                      "children": []
+                    },
+                    {
+                      "number": "3.3.2.2.7",
+                      "title": "A discussion of the methods used to correct the data to full scale conditions",
+                      "content": "shall be provided.",
+                      "asterisk": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "number": "3.3.2.3",
+                  "title": "Analytical and empirical data shall include any assumptions, justification for the assumption, applicable methods and equations and their limitations, as well as a list of references used to determine the aerodynamic coefficients",
+                  "content": "For computational aerodynamics models, follow DI-SESS-82382.",
+                  "asterisk": false,
+                  "children": []
+                },
+                {
+                  "number": "3.3.2.4",
+                  "title": "If an off-the-shelf vehicle is used in the proposal, then the aerodynamic data will be based on flight test results",
+                  "content": "corrected for any modifications made to the configuration. These changes shall be presented as an incremental effect as well as being included in the final configuration data plots. Substantiation of the modification and the basic vehicle data shall be as required above.",
+                  "asterisk": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "SECTION IV. Performance",
+          "content": "Data shall include the basic equations, assumptions used and sample calculations. Data shall include the effects of external drag changes (dCd), non-standard temperatures and weight. The data presented shall include at least the following:",
+          "asterisk": false,
+          "children": [
+            {
+              "number": "3.4.1",
+              "title": "A complete description of take-off performance as a function of gross weight, power, pressure altitude, and ambient temperature",
+              "content": "Data shall include climb gradient at the 50-foot obstacle height. The effect of reducing thrust below maximum take-off thrust on distance and climb gradients shall be shown for selected weight.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.2",
+              "title": "An altitude performance summary including rates of climb, maximum level flight speeds and structural design speeds",
+              "content": "as a function of pressure altitude for the gross weight range of the aircraft.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.3",
+              "title": "Time, fuel and distance for enroute climb for all engines operating and the most critical engine inoperative",
+              "content": "at maximum, intermediate and maximum continuous power as applicable with the combat ceilings (500 feet per minute (ft/min) subsonic, 1000 ft/min supersonic), cruise ceilings (300 ft/min subsonic, 1000 ft/min supersonic) and service ceilings (100 ft/min) identified. Include a plot of the ceilings versus weight.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.4",
+              "title": "Specific range at constant altitude as a function of Mach number (true airspeed)",
+              "content": "for the gross weight and altitude range of the aircraft for all engines operating and the most critical engine inoperative. The altitude increment shall not exceed 5,000 ft. The effect of center of gravity on range performance shall be identified.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.5",
+              "title": "Endurance speed and fuel flow as a function of altitude and gross weight",
+              "content": "for all engines operating and the most critical engine inoperative.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.6",
+              "title": "A descent summary for enroute and rapid descents",
+              "content": "which include rates of descent, time, fuel, and distance to descend and the speed and power schedule used.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.7",
+              "title": "A complete description of the landing performance as a function of gross weight and pressure altitude",
+              "content": "The landing distance will be from touchdown and 50 feet above ground for flaps up and normal flap setting.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.8",
+              "title": "All flight limitations (gross weight, airspeed, altitude) resulting from such items as structural limits thermal limits and wing stall",
+              "content": "shall be presented in this section.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.9",
+              "title": "Plots of energy maneuverability (Specific Excess Power (Ps), turn rate and radius, lift limit, speed limit)",
+              "content": "shall be included for fighter, attack and other highly maneuverable type aircraft.",
+              "asterisk": false,
+              "children": []
+            },
+            {
+              "number": "3.4.10",
+              "title": "Time, fuel, and distance summaries",
+              "content": "shall be presented for each mission considered.",
+              "asterisk": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [],
+  "appendix_pages": [],
+  "_source": {
+    "source_file": "DI-SESS-82470.pdf",
+    "extraction_date": "2026-08-12",
+    "extraction_method": "claude_cowork"
+  }
+}
